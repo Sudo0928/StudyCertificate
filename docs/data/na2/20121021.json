@@ -1,0 +1,1358 @@
+{
+  "cert_id": "na2",
+  "date": "20121021",
+  "label": "2012년 10월 21일",
+  "total_questions": 50,
+  "questions": [
+    {
+      "id": "na2_20121021_001",
+      "number": 1,
+      "subject_id": "tcpip",
+      "text": "IPv6에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IPv6는 128bit의 길이로 되어 있다."
+        },
+        {
+          "key": 2,
+          "text": "브로드 캐스트를 이용하여 IPv4와 상호운용이 가능하다."
+        },
+        {
+          "key": 3,
+          "text": "IPv6는 유니, 애니, 멀티 캐스트로 나눈다."
+        },
+        {
+          "key": 4,
+          "text": "IP Next Generation, 즉 차세대 IP라고도 불리고 있다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_002",
+      "number": 2,
+      "subject_id": "tcpip",
+      "text": "TCP 헤더 중에서 에러 제어를 위한 필드는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Offset"
+        },
+        {
+          "key": 2,
+          "text": "Checksum"
+        },
+        {
+          "key": 3,
+          "text": "Source Port"
+        },
+        {
+          "key": 4,
+          "text": "Sequence Number"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_003",
+      "number": 3,
+      "subject_id": "tcpip",
+      "text": "SSH의 사용처로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "이메일 통신의 암호화"
+        },
+        {
+          "key": 2,
+          "text": "파일 복사의 암호화"
+        },
+        {
+          "key": 3,
+          "text": "프로그램의 원격 실행"
+        },
+        {
+          "key": 4,
+          "text": "네트워크 트래픽 차단"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_004",
+      "number": 4,
+      "subject_id": "tcpip",
+      "text": "'255.255.255.224'인 서브넷에 최대 할당 가능한 호스트 수 는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "4개"
+        },
+        {
+          "key": 2,
+          "text": "8개"
+        },
+        {
+          "key": 3,
+          "text": "16개"
+        },
+        {
+          "key": 4,
+          "text": "32개"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_005",
+      "number": 5,
+      "subject_id": "tcpip",
+      "text": "패킷 전송의 최적 경로를 위해 다른 라우터들로부터 정보를 수집하여 라우팅 테이블에 저장하게 된다. 이때 사용되지 않 는 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "RIP"
+        },
+        {
+          "key": 2,
+          "text": "OSPF"
+        },
+        {
+          "key": 3,
+          "text": "CGP"
+        },
+        {
+          "key": 4,
+          "text": "EGP"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_006",
+      "number": 6,
+      "subject_id": "tcpip",
+      "text": "IP Header의 내용 중 TTL(Time To Live)의 기능을 설명한 것으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IP 패킷은 네트워크상에서 영원히 존재할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "일반적으로 라우터의 한 홉(Hop)을 통과할 때마다 TTL"
+        },
+        {
+          "key": 3,
+          "text": "Ping과 Tracert 유틸리티는 특정 호스트 컴퓨터에 접근을"
+        },
+        {
+          "key": 4,
+          "text": "IP 패킷이 네트워크상에서 얼마동안 존재 할 수 있는가를"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_007",
+      "number": 7,
+      "subject_id": "tcpip",
+      "text": "RARP(Reverse Address Resolution Protocol)에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IP Address를 하드웨어 주소로 변환하기 위해서 사용한"
+        },
+        {
+          "key": 2,
+          "text": "RFC 903에 명시되어 있고, RFC 951에 기술된 BOOTP에"
+        },
+        {
+          "key": 3,
+          "text": "디스크를 소유하지 않으면 RARP를 이용하여 인터넷 주소"
+        },
+        {
+          "key": 4,
+          "text": "Ethernet, FDDI, Token Ring 등의 근거리 통신망에서 사"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_008",
+      "number": 8,
+      "subject_id": "tcpip",
+      "text": "FTP의 기능으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "인터넷에서 파일을 송수신하는 전송규약이다."
+        },
+        {
+          "key": 2,
+          "text": "파일을 업로드 할 수 있다."
+        },
+        {
+          "key": 3,
+          "text": "다른 컴퓨터의 파일을 실행한다."
+        },
+        {
+          "key": 4,
+          "text": "서버에 접속해 자료를 전송받는다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_009",
+      "number": 9,
+      "subject_id": "tcpip",
+      "text": "DNS에 대한 설명으로 옳지 않은 것은? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
+      "options": [
+        {
+          "key": 1,
+          "text": "도메인에 대하여 IP Address를 매핑한다."
+        },
+        {
+          "key": 2,
+          "text": "IP Address를 도메인 이름으로 변환하는 기능도 있다."
+        },
+        {
+          "key": 3,
+          "text": "IP Address를 효율적으로 관리하기 위한 서비스로 IP"
+        },
+        {
+          "key": 4,
+          "text": "계층적 이름 구조를 갖는 분산형 데이터베이스로 구성되"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_010",
+      "number": 10,
+      "subject_id": "tcpip",
+      "text": "SMTP에 대한 설명 중 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "네트워크의 구성원에 패킷을 보내기 위한 하드웨어 주소"
+        },
+        {
+          "key": 2,
+          "text": "TCP/IP 프로토콜에서 데이터의 전송 서비스를 규정한다."
+        },
+        {
+          "key": 3,
+          "text": "TCP/IP 프로토콜의 IP에서 접속 없이 데이터의 전송을"
+        },
+        {
+          "key": 4,
+          "text": "인터넷상에서 전자우편(E-Mail)의 전송을 규정한다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_011",
+      "number": 11,
+      "subject_id": "tcpip",
+      "text": "호스트 컴퓨터 'icqa.or.kr'에 텔넷으로 접속하기 위해 'telnet icqa.or.kr:1094'라고 명령을 입력한 경우 '1094'의 의미는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "User ID"
+        },
+        {
+          "key": 2,
+          "text": "Port Number"
+        },
+        {
+          "key": 3,
+          "text": "IP Address"
+        },
+        {
+          "key": 4,
+          "text": "Network Address"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_012",
+      "number": 12,
+      "subject_id": "tcpip",
+      "text": "ICMP 프로토콜의 기능에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "모든 호스트가 성공적으로 통신하기 위해서 각 하드웨어"
+        },
+        {
+          "key": 2,
+          "text": "네트워크 구획 내의 모든 라우터의 주소를 결정하기 위"
+        },
+        {
+          "key": 3,
+          "text": "Ping 명령어를 사용하여 두 호스트간 연결의 신뢰성을"
+        },
+        {
+          "key": 4,
+          "text": "원래의 데이터그램이 TTL을 초과할 때 시간초과 메시지"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_013",
+      "number": 13,
+      "subject_id": "tcpip",
+      "text": "NAT(Network Address Translation)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "사설 IP 주소를 공인 IP 주소로 바꿔주는데 사용하는 통"
+        },
+        {
+          "key": 2,
+          "text": "NAT를 사용할 경우 내부 사설 IP 주소는 C Class를 사"
+        },
+        {
+          "key": 3,
+          "text": "외부 침입자가 공격하기 위해서는 사설망의 내부 사설"
+        },
+        {
+          "key": 4,
+          "text": "NAT를 이용하면 한정된 공인 IP 주소를 절약 할 수 있"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_014",
+      "number": 14,
+      "subject_id": "tcpip",
+      "text": "TCP의 프로토콜 이름과 일반 사용(Well-Known) 포트 연결 로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SMTP : 25"
+        },
+        {
+          "key": 2,
+          "text": "HTTP : 80"
+        },
+        {
+          "key": 3,
+          "text": "POP3 : 100"
+        },
+        {
+          "key": 4,
+          "text": "FTP-Data : 20"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_015",
+      "number": 15,
+      "subject_id": "tcpip",
+      "text": "TCP/IP 에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP는 전송계층(Transport Layer)프로토콜이다."
+        },
+        {
+          "key": 2,
+          "text": "IP는 네트워크계층(Network Layer)의 프로토콜이다."
+        },
+        {
+          "key": 3,
+          "text": "TCP는 전송을 담당하고, IP는 데이터의 에러검출을 담당"
+        },
+        {
+          "key": 4,
+          "text": "Telnet과 FTP는 모두 TCP/IP 프로토콜이다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_016",
+      "number": 16,
+      "subject_id": "general",
+      "text": "TCP/IP 모델에서 UDP(User Datagram Protocol)가 동작되 는 계층은? 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 2급 ◐ 2012년 10월 21일 필기 기출문제",
+      "options": [
+        {
+          "key": 1,
+          "text": "응용 계층"
+        },
+        {
+          "key": 2,
+          "text": "전송 계층"
+        },
+        {
+          "key": 3,
+          "text": "인터넷 계층"
+        },
+        {
+          "key": 4,
+          "text": "네트워크 인터페이스 계층"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_017",
+      "number": 17,
+      "subject_id": "general",
+      "text": "B Class에서 유효한 IP Address는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "33.114.17.24"
+        },
+        {
+          "key": 2,
+          "text": "190.46.283.25"
+        },
+        {
+          "key": 3,
+          "text": "130.67.13.87"
+        },
+        {
+          "key": 4,
+          "text": "223.23.94.3"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_018",
+      "number": 18,
+      "subject_id": "general",
+      "text": "중앙 집중 매체접근 제어 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Slotted Ring"
+        },
+        {
+          "key": 2,
+          "text": "Token Ring"
+        },
+        {
+          "key": 3,
+          "text": "Polling"
+        },
+        {
+          "key": 4,
+          "text": "CSMA/CD"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_019",
+      "number": 19,
+      "subject_id": "general",
+      "text": "네트워크의 관리 및 네트워크 장치와 그들의 동작을 감시, 관리하는 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SMTP"
+        },
+        {
+          "key": 2,
+          "text": "SNMP"
+        },
+        {
+          "key": 3,
+          "text": "SIP"
+        },
+        {
+          "key": 4,
+          "text": "SDP"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_020",
+      "number": 20,
+      "subject_id": "general",
+      "text": "LAN에서 사용하는 CSMA/CD 프로토콜에 대한 설명으로 옳 지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "무선랜에 사용되는 방식으로, ACK 프레임을 사용하여"
+        },
+        {
+          "key": 2,
+          "text": "송신을 원하는 호스트는 송신 전에 다른 호스트가 채널"
+        },
+        {
+          "key": 3,
+          "text": "전송하는 동안 계속적으로 채널을 감시하여 충돌이 발생"
+        },
+        {
+          "key": 4,
+          "text": "충돌이 발생하게 되면, 충돌한 데이터들은 버려지고 데"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_021",
+      "number": 21,
+      "subject_id": "general",
+      "text": "MAC방식으로 라운드로빈 기법을 사용하는 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "CSMA/CD"
+        },
+        {
+          "key": 2,
+          "text": "Token Ring"
+        },
+        {
+          "key": 3,
+          "text": "CSMA"
+        },
+        {
+          "key": 4,
+          "text": "DQDB"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_022",
+      "number": 22,
+      "subject_id": "general",
+      "text": "패킷 교환을 수행하기 위해서 패킷 교환기가 갖추어야 할 기본 기능으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "통신을 하고자 하는 단말기 사이에 가상 회선을 설정하"
+        },
+        {
+          "key": 2,
+          "text": "다수의 중계로에서 최적의 경로 선택 기능"
+        },
+        {
+          "key": 3,
+          "text": "전송량을 제어하여 수신 버퍼의 범람 방지 기능"
+        },
+        {
+          "key": 4,
+          "text": "다수의 링크를 하나의 논리 채널로 다중화 하는 기능"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_023",
+      "number": 23,
+      "subject_id": "general",
+      "text": "별도의 동기신호 없이 매 문자마다 Stop/Start 비트를 부가 하여 전송하는 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "동기식 전송 방식"
+        },
+        {
+          "key": 2,
+          "text": "직렬 전송 방식"
+        },
+        {
+          "key": 3,
+          "text": "비동기 전송 방식"
+        },
+        {
+          "key": 4,
+          "text": "문자 동기 전송 방식"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_024",
+      "number": 24,
+      "subject_id": "general",
+      "text": "데이터링크 계층(Datalink Layer)에 대한 설명으로 옳지 않 은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "전송상에 발생하는 오류를 검출한다."
+        },
+        {
+          "key": 2,
+          "text": "데이터의 표현형식을 변경한다."
+        },
+        {
+          "key": 3,
+          "text": "전송상에 발생하는 오류를 정정한다."
+        },
+        {
+          "key": 4,
+          "text": "비트들을 프레임으로 구성한다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_025",
+      "number": 25,
+      "subject_id": "general",
+      "text": "HDLC(High-level Data Link Control)에 대한 설명으로 옳지 않은 것은? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
+      "options": [
+        {
+          "key": 1,
+          "text": "문자중심의 데이터 링크 프로토콜이다."
+        },
+        {
+          "key": 2,
+          "text": "Go-Back-N ARQ 에러 방식을 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "통신 동작 모드는 NRM, ARM, ABM이 있다."
+        },
+        {
+          "key": 4,
+          "text": "프레임 형식에는 I-Frame, S-Frame, U-Frame이 있다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_026",
+      "number": 26,
+      "subject_id": "general",
+      "text": "LAN을 위해 개발된 컴퓨터 네트워크 기술로, IEEE 802.3 규약으로 표준화되어 있는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "X.25"
+        },
+        {
+          "key": 2,
+          "text": "X.75"
+        },
+        {
+          "key": 3,
+          "text": "RS-232C"
+        },
+        {
+          "key": 4,
+          "text": "Ethernet"
+        }
+      ],
+      "answer": 4,
+      "has_figure": true,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_027",
+      "number": 27,
+      "subject_id": "general",
+      "text": "10Base-5의 전송 속도는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "10Mbps"
+        },
+        {
+          "key": 2,
+          "text": "5Mbps"
+        },
+        {
+          "key": 3,
+          "text": "2Mbps"
+        },
+        {
+          "key": 4,
+          "text": "100Mbps"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_028",
+      "number": 28,
+      "subject_id": "nos",
+      "text": "Windows 2003 Server에서 NTFS의 특징으로 옳지 않은 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "FAT, HPFS 파일 시스템보다 더 큰 파일과 파티션 사이"
+        },
+        {
+          "key": 2,
+          "text": "파일과 디렉토리의 압축을 지원한다."
+        },
+        {
+          "key": 3,
+          "text": "POSIX 요구 사항을 지원한다."
+        },
+        {
+          "key": 4,
+          "text": "NTFS의 가장 큰 장점은 널리 호환된다는 것이다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_029",
+      "number": 29,
+      "subject_id": "nos",
+      "text": "tar로 묶인 'mt.tar'를 풀어내는 명령은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "tar -tvf mt.tar"
+        },
+        {
+          "key": 2,
+          "text": "tar -cvf mt.tar"
+        },
+        {
+          "key": 3,
+          "text": "tar -cvvf mt.tar"
+        },
+        {
+          "key": 4,
+          "text": "tar -xvf mt.tar"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_030",
+      "number": 30,
+      "subject_id": "nos",
+      "text": "특정한 파일을 찾고자 할 때 사용하는 Linux 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "mv"
+        },
+        {
+          "key": 2,
+          "text": "cp"
+        },
+        {
+          "key": 3,
+          "text": "find"
+        },
+        {
+          "key": 4,
+          "text": "file"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_031",
+      "number": 31,
+      "subject_id": "nos",
+      "text": "Linux에서 네트워크 설정에 관한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Linux는 Windows 시스템과 같이 완벽한 PnP 기능을 지"
+        },
+        {
+          "key": 2,
+          "text": "LAN 카드 설치는 Linux 커널에 드라이버를 포함시키거"
+        },
+        {
+          "key": 3,
+          "text": "LAN 카드를 메모리에 로딩해서 사용하려면 modprobe명"
+        },
+        {
+          "key": 4,
+          "text": "네트워크 설정은 ipconfig 로 확인 할 수 있다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_032",
+      "number": 32,
+      "subject_id": "nos",
+      "text": "Windows 2003 Server의 IIS에서 이용 가능한 서비스로 옳 지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "DHCP 서비스"
+        },
+        {
+          "key": 2,
+          "text": "NNTP 서비스"
+        },
+        {
+          "key": 3,
+          "text": "FTP 서비스"
+        },
+        {
+          "key": 4,
+          "text": "SMTP 서비스"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_033",
+      "number": 33,
+      "subject_id": "nos",
+      "text": "httpd.conf 파일을 사용하여 Apache 웹 서버를 설정하려 한다. 주요 설정 항목에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ServerRoot : 아파치 웹서버의 각종 설정 파일이 있는"
+        },
+        {
+          "key": 2,
+          "text": "Listen : 아파치 웹서버가 사용할 기본 포트(80번)를 설"
+        },
+        {
+          "key": 3,
+          "text": "DocumentRoot : 웹사이트에 사용될 각종 파일들이 위"
+        },
+        {
+          "key": 4,
+          "text": "ServerType : 서버의 실행 방법을 지정하며, Single"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_034",
+      "number": 34,
+      "subject_id": "nos",
+      "text": "SOA 레코드의 설정 값에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "주 서버 : 주 영역 서버의 도메인 주소를 입력한다."
+        },
+        {
+          "key": 2,
+          "text": "책임자 : 책임자의 주소 및 전화번호를 입력한다"
+        },
+        {
+          "key": 3,
+          "text": "최소 TTL : 각 레코드의 기본 Cache 시간을 지정한다."
+        },
+        {
+          "key": 4,
+          "text": "새로 고침 간격 : 주 서버와 보조 서버간의 통신이 두절"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_035",
+      "number": 35,
+      "subject_id": "nos",
+      "text": "Windows 2003 Server의 Active Directory 기능으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "정보 보안"
+        },
+        {
+          "key": 2,
+          "text": "정책 기반 관리"
+        },
+        {
+          "key": 3,
+          "text": "확장성"
+        },
+        {
+          "key": 4,
+          "text": "DNS와의 분리"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_036",
+      "number": 36,
+      "subject_id": "nos",
+      "text": "Windows 2003 Server의 감사 로그 관리에 관한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "개별적인 감사 로그의 등록 정보를 구성할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "이벤트 로그를 저장하고 다른 기간 동안 로그를 비교하"
+        },
+        {
+          "key": 3,
+          "text": "[등록정보]에서 '이벤트를 덮어쓰지 않음'으로 설정될 경"
+        },
+        {
+          "key": 4,
+          "text": "Window 2003 Server가 취하는 동작을 조절하기 위해서"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_037",
+      "number": 37,
+      "subject_id": "nos",
+      "text": "Windows 2003 Server의 터미널 서비스에 대한 설명으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "메인프레임 컴퓨터처럼 한 대의 서버로 여러 명의 사용"
+        },
+        {
+          "key": 2,
+          "text": "사용자에게 파일을 전송해 주는 서비스"
+        },
+        {
+          "key": 3,
+          "text": "한 대의 컴퓨터에서 네트워크 내에 있는 다른 컴퓨터들"
+        },
+        {
+          "key": 4,
+          "text": "네트워크 내에 있는 컴퓨터에 IP Address를 할당해 주는"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_038",
+      "number": 38,
+      "subject_id": "nos",
+      "text": "Windows 2003 Server에서 DHCP(Dynamic Host Configuration Protocol) 서버의 주요 기능은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "서브넷을 통해 IP Address 정보를 라우팅 한다."
+        },
+        {
+          "key": 2,
+          "text": "로컬 서브넷에 있는 컴퓨터에 IP Address 정보를 할당하"
+        },
+        {
+          "key": 3,
+          "text": "NetBIOS 이름을 IP Address로 해석한다."
+        },
+        {
+          "key": 4,
+          "text": "IP Address를 FQDN(Fully Qualified Domain Names)으"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_039",
+      "number": 39,
+      "subject_id": "equipment",
+      "text": "Linux 시스템 부팅과 함께 자동으로 마운트 되어야 할 항목 과 옵션이 정의되어 있는 파일은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "/etc/fstab"
+        },
+        {
+          "key": 2,
+          "text": "/usr/local"
+        },
+        {
+          "key": 3,
+          "text": "/mount/cdrom"
+        },
+        {
+          "key": 4,
+          "text": "/home/public_html"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_040",
+      "number": 40,
+      "subject_id": "equipment",
+      "text": "Windows 2003 Server에서 IIS를 이용하여 웹 서버를 운영 하기 위해 설정한 내용 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "보안을 위해 홈페이지 저장 공간은 NTFS로 포맷한다."
+        },
+        {
+          "key": 2,
+          "text": "한 개의 사이트에 호스트 헤더를 여러 개 사용하여 여러"
+        },
+        {
+          "key": 3,
+          "text": "대역폭을 조절하여 리소스를 효율적으로 관리한다."
+        },
+        {
+          "key": 4,
+          "text": "에러 코드를 사용자에게 알려줄 수 있도록 에러 메시지"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_041",
+      "number": 41,
+      "subject_id": "equipment",
+      "text": "Linux의 'vi' 명령어 중 변경된 내용을 저장한 후 종료하고자 할 때 사용해야 할 명령어는? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
+      "options": [
+        {
+          "key": 1,
+          "text": ":wq"
+        },
+        {
+          "key": 2,
+          "text": ":q!"
+        },
+        {
+          "key": 3,
+          "text": ":e!"
+        },
+        {
+          "key": 4,
+          "text": "$"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_042",
+      "number": 42,
+      "subject_id": "equipment",
+      "text": "Linux의 퍼미션(Permission)에 대한 설명 중 옳지 않은 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "파일의 그룹 소유권을 변경하기 위한 명령은 'chgrp'이"
+        },
+        {
+          "key": 2,
+          "text": "파일의 접근모드를 변경하기 위한 명령은 'chmod'이다."
+        },
+        {
+          "key": 3,
+          "text": "모든 사용자에게 모든 권한을 부여하려면 권한을 '666'"
+        },
+        {
+          "key": 4,
+          "text": "파일의 소유권을 변경하기 위한 명령은 'chown'이다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_043",
+      "number": 43,
+      "subject_id": "equipment",
+      "text": "Windows 2003 Server의 사용자 계정에 대한 설명으로 올 바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "새로 생성된 계정으로 로그인 하는 경우에 반드시 암호"
+        },
+        {
+          "key": 2,
+          "text": "모든 암호는 대소문자를 구분하지 않는다."
+        },
+        {
+          "key": 3,
+          "text": "일정 기간이 지나면 암호를 반드시 변경해야 한다."
+        },
+        {
+          "key": 4,
+          "text": "계정을 삭제하지 않고도 사용하지 못하도록 할 수 있다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_044",
+      "number": 44,
+      "subject_id": "equipment",
+      "text": "Linux에서 Windows 시스템 간에 파일 및 프린트 공유 등을 할 수 있게 하는 데몬은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Winshare"
+        },
+        {
+          "key": 2,
+          "text": "SAMBA"
+        },
+        {
+          "key": 3,
+          "text": "Silk"
+        },
+        {
+          "key": 4,
+          "text": "NTlink"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_045",
+      "number": 45,
+      "subject_id": "equipment",
+      "text": "Windows 2003 Server의 'netstat' 명령어로 알 수 없는 정 보는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP 접속 프로토콜 정보"
+        },
+        {
+          "key": 2,
+          "text": "ICMP 송수신 통계"
+        },
+        {
+          "key": 3,
+          "text": "UDP 대기용 Open 포트 상태"
+        },
+        {
+          "key": 4,
+          "text": "접속자 MAC 주소"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_046",
+      "number": 46,
+      "subject_id": "equipment",
+      "text": "장비간 거리가 증가하거나 케이블 손실로 인한 신호 감쇠를 재생시키기 위한 목적으로 사용되는 네트워크 장치는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Gateway"
+        },
+        {
+          "key": 2,
+          "text": "Router"
+        },
+        {
+          "key": 3,
+          "text": "Bridge"
+        },
+        {
+          "key": 4,
+          "text": "Repeater"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_047",
+      "number": 47,
+      "subject_id": "equipment",
+      "text": "Hub가 사용하는 OSI 계층은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "물리 계층"
+        },
+        {
+          "key": 2,
+          "text": "세션 계층"
+        },
+        {
+          "key": 3,
+          "text": "트랜스포트 계층"
+        },
+        {
+          "key": 4,
+          "text": "애플리케이션 계층"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_048",
+      "number": 48,
+      "subject_id": "equipment",
+      "text": "OSI 모든 계층에 동작하여 전화망이나 인터넷망과 같이 이 기종의 통신망을 상호 접속시켜 주는 장비는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "리피터"
+        },
+        {
+          "key": 2,
+          "text": "브리지"
+        },
+        {
+          "key": 3,
+          "text": "스위치"
+        },
+        {
+          "key": 4,
+          "text": "게이트웨이"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_049",
+      "number": 49,
+      "subject_id": "security",
+      "text": "아파트 LAN에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "아파트 단지의 통신실까지 광케이블을 연결하고, 각 가"
+        },
+        {
+          "key": 2,
+          "text": "전화선을 이용한 xDSL 등에 비해 상대적으로 빠른"
+        },
+        {
+          "key": 3,
+          "text": "2000년대 초반부터 이용되고 있다."
+        },
+        {
+          "key": 4,
+          "text": "다른 초고속 인터넷 방식과는 달리 동시 접속 사용자수"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20121021_050",
+      "number": 50,
+      "subject_id": "security",
+      "text": "분리된 네트워크를 연결해주며, 네트워크층 간을 연결해 주 는 기능을 하는 장치는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "브리지(Bridge)"
+        },
+        {
+          "key": 2,
+          "text": "리피터(Repeater)"
+        },
+        {
+          "key": 3,
+          "text": "라우터(Router)"
+        },
+        {
+          "key": 4,
+          "text": "모뎀(MODEM)"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    }
+  ]
+}

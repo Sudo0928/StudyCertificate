@@ -1,0 +1,1358 @@
+{
+  "cert_id": "na2",
+  "date": "20080427",
+  "label": "2008년 04월 27일",
+  "total_questions": 50,
+  "questions": [
+    {
+      "id": "na2_20080427_001",
+      "number": 1,
+      "subject_id": "tcpip",
+      "text": "IP Address의 설명 중 가장 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "같은 네트워크 구획상의 모든 호스트는 똑같은 네트워크"
+        },
+        {
+          "key": 2,
+          "text": "네트워크 구획상의 각 호스트는 같은 호스트 IP Address"
+        },
+        {
+          "key": 3,
+          "text": "네트워크 ID는 '127’ 이 될 수 없다."
+        },
+        {
+          "key": 4,
+          "text": "호스트 ID가 모두 ‘0’ 이 될 수 없다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_002",
+      "number": 2,
+      "subject_id": "tcpip",
+      "text": "TCP/IP에 대한 설명으로 가장 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP/IP에서 호스트에 대한 이름 해석 서비스는 반드시"
+        },
+        {
+          "key": 2,
+          "text": "호스트에 할당되는 IP Address 방식은 네트워크의 규모에"
+        },
+        {
+          "key": 3,
+          "text": "C Class를 사용하는 IP Address의 Subnet Mask는"
+        },
+        {
+          "key": 4,
+          "text": "인터넷 접속을 위한 기본 프로토콜이지만 좀 더 편리하게"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_003",
+      "number": 3,
+      "subject_id": "tcpip",
+      "text": "Anonymous FTP에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "일반적으로 80번 포트를 사용하여 상호 통신한다."
+        },
+        {
+          "key": 2,
+          "text": "Internet의 많은 컴퓨터들이 Anonymous FTP를 사용하여"
+        },
+        {
+          "key": 3,
+          "text": "상대방 측 컴퓨터의 계정이 없어도 파일을 송수신 할 수"
+        },
+        {
+          "key": 4,
+          "text": "\"Anonymous\" 계정으로 접속한다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_004",
+      "number": 4,
+      "subject_id": "tcpip",
+      "text": "공인 IP Address와 사설 IP Address를 매핑(Mapping)하는 기술은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "DHCP"
+        },
+        {
+          "key": 2,
+          "text": "ARP"
+        },
+        {
+          "key": 3,
+          "text": "BOOTP"
+        },
+        {
+          "key": 4,
+          "text": "NAT"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_005",
+      "number": 5,
+      "subject_id": "tcpip",
+      "text": "전자우편과 가장 관계가 적은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "POP"
+        },
+        {
+          "key": 2,
+          "text": "SMTP"
+        },
+        {
+          "key": 3,
+          "text": "@, 계정, 호스트"
+        },
+        {
+          "key": 4,
+          "text": "SNMP"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_006",
+      "number": 6,
+      "subject_id": "tcpip",
+      "text": "응용 계층 프로토콜과 그 역할이 잘못 짝지어진 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Finger - 로그인하고 있는 사용자의 정보 확인"
+        },
+        {
+          "key": 2,
+          "text": "FTP - 파일 송수신"
+        },
+        {
+          "key": 3,
+          "text": "Telnet - 원격지 시스템 로그인"
+        },
+        {
+          "key": 4,
+          "text": "SMTP - 네트워크 관리"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_007",
+      "number": 7,
+      "subject_id": "tcpip",
+      "text": "인터넷 메일 호스트 사이에 아스키 형식(ASCII Format) 이외 의 텍스트 및 화상이나 음성, 영상 등의 멀티미디어 데이터를 아스키 형식으로 변환할 필요 없이 인터넷 전자우편으로 송 신하기 위한 인터넷 표준은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SMTP"
+        },
+        {
+          "key": 2,
+          "text": "MIME"
+        },
+        {
+          "key": 3,
+          "text": "IMAP"
+        },
+        {
+          "key": 4,
+          "text": "POP"
+        }
+      ],
+      "answer": 2,
+      "has_figure": true,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_008",
+      "number": 8,
+      "subject_id": "tcpip",
+      "text": "IPv6에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IPv6는 128bit의 길이로 되어 있다."
+        },
+        {
+          "key": 2,
+          "text": "브로드 캐스트를 이용하여 IPv4와 상호 운용이 가능하다."
+        },
+        {
+          "key": 3,
+          "text": "IPv6는 유니, 애니, 멀티 캐스트로 나눈다."
+        },
+        {
+          "key": 4,
+          "text": "IP Next Generation, 즉 차세대 IP라고도 불리고 있다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_009",
+      "number": 9,
+      "subject_id": "tcpip",
+      "text": "원격에 있는 호스트 접속 시 암호화된 패스워드를 이용하여 보다 안전하게 접속할 수 있도록 rlogin과 같은 프로토콜을 보완하여 만든 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SSH"
+        },
+        {
+          "key": 2,
+          "text": "SNMP"
+        },
+        {
+          "key": 3,
+          "text": "SSL"
+        },
+        {
+          "key": 4,
+          "text": "Telnet"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_010",
+      "number": 10,
+      "subject_id": "tcpip",
+      "text": "인터넷을 경유하여 로컬 네트워크에 접근할 때, 보안을 강 화하기 위해 사용하는 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "PPP"
+        },
+        {
+          "key": 2,
+          "text": "PPTP"
+        },
+        {
+          "key": 3,
+          "text": "HDLC"
+        },
+        {
+          "key": 4,
+          "text": "CSLIP"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_011",
+      "number": 11,
+      "subject_id": "tcpip",
+      "text": "HomePNA 기술에서 데이터 전송에 사용하는 표준 전송 방 식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP/IP"
+        },
+        {
+          "key": 2,
+          "text": "CSMA/CD"
+        },
+        {
+          "key": 3,
+          "text": "HDLC"
+        },
+        {
+          "key": 4,
+          "text": "VoIP"
+        }
+      ],
+      "answer": 2,
+      "has_figure": true,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_012",
+      "number": 12,
+      "subject_id": "tcpip",
+      "text": "SNMP에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP를 이용하여 신뢰성 있는 통신을 한다."
+        },
+        {
+          "key": 2,
+          "text": "네트워크 관리를 위한 표준 프로토콜이다."
+        },
+        {
+          "key": 3,
+          "text": "응용 계층 프로토콜이다."
+        },
+        {
+          "key": 4,
+          "text": "RFC 1157에 규정 되어 있다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_013",
+      "number": 13,
+      "subject_id": "tcpip",
+      "text": "LAN의 특징으로 가장 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "광대역 전송 매체의 사용으로 고속 통신이 가능하다."
+        },
+        {
+          "key": 2,
+          "text": "라우팅과 같은 경로 선택이 필요하다."
+        },
+        {
+          "key": 3,
+          "text": "하나의 네트워크 회선 자원을 공동으로 이용할 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "네트워크에 연결된 모든 기기와 통신이 가능하다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_014",
+      "number": 14,
+      "subject_id": "tcpip",
+      "text": "라우팅 프로토콜 중 홉(Hop)의 수에 제한을 받는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SNMP"
+        },
+        {
+          "key": 2,
+          "text": "RIP"
+        },
+        {
+          "key": 3,
+          "text": "SMB"
+        },
+        {
+          "key": 4,
+          "text": "OSPF"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_015",
+      "number": 15,
+      "subject_id": "tcpip",
+      "text": "최대 전송속도는 4Mbps 이고 전송될 수 있는 가장 긴 데이 터 길이는 2,048Byte 이며, 차폐물이 가로막고 있을 경우에 는 통신이 불가능한 무선 근거리 통신기술은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Bluetooth"
+        },
+        {
+          "key": 2,
+          "text": "Home RF"
+        },
+        {
+          "key": 3,
+          "text": "IrDA"
+        },
+        {
+          "key": 4,
+          "text": "WLAN"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_016",
+      "number": 16,
+      "subject_id": "general",
+      "text": "전력선 통신에 대한 설명으로 가장 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "전력선 통신은 가정이나 사무실에 이미 구축되어 있는"
+        },
+        {
+          "key": 2,
+          "text": "전력선 통신은 신호전달을 위해 높은 대역의 주파수를"
+        },
+        {
+          "key": 3,
+          "text": "전력선 통신은 전력선을 통신매체로 사용하기 때문에 동"
+        },
+        {
+          "key": 4,
+          "text": "전력선 통신은 100KHz에서 30MHz 사이의 고주파 대역"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_017",
+      "number": 17,
+      "subject_id": "general",
+      "text": "다음에서 설명하는 통신방식은? 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 2급 ◐ 2008년 04월 27일 필기 기출문제",
+      "options": [
+        {
+          "key": 1,
+          "text": "WLAN"
+        },
+        {
+          "key": 2,
+          "text": "IrDA"
+        },
+        {
+          "key": 3,
+          "text": "UWB"
+        },
+        {
+          "key": 4,
+          "text": "Bluetooth"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_018",
+      "number": 18,
+      "subject_id": "general",
+      "text": "OSI 참조모델의 상위층 레벨 프로토콜에 해당되는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "표현 계층"
+        },
+        {
+          "key": 2,
+          "text": "네트워크 계층"
+        },
+        {
+          "key": 3,
+          "text": "데이터 링크 계층"
+        },
+        {
+          "key": 4,
+          "text": "물리 계층"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_019",
+      "number": 19,
+      "subject_id": "general",
+      "text": "공중 통신 사업자로부터 통신 회선을 임대하여 컴퓨터를 접 속시킨 후 이 컴퓨터가 갖고 있는 정보를 여러 사용자에게 재판매하는 통신 서비스 시스템은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "VAN"
+        },
+        {
+          "key": 2,
+          "text": "LAN"
+        },
+        {
+          "key": 3,
+          "text": "INS"
+        },
+        {
+          "key": 4,
+          "text": "ISDN"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_020",
+      "number": 20,
+      "subject_id": "general",
+      "text": "LAN의 Topology 중 공통 배선에 시스템의 모든 요소를 연 결하는 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "스타형"
+        },
+        {
+          "key": 2,
+          "text": "버스형"
+        },
+        {
+          "key": 3,
+          "text": "링형"
+        },
+        {
+          "key": 4,
+          "text": "결선형"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_021",
+      "number": 21,
+      "subject_id": "general",
+      "text": "고속 Ethernet의 액세스 방식에 해당되는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ALOHA"
+        },
+        {
+          "key": 2,
+          "text": "CSMA/CD"
+        },
+        {
+          "key": 3,
+          "text": "Token Bus"
+        },
+        {
+          "key": 4,
+          "text": "Token Ring"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_022",
+      "number": 22,
+      "subject_id": "general",
+      "text": "ADSL에 대한 내용으로 잘못된 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "기존의 전화회선을 이용하여 저렴한 가격으로 고속의 인"
+        },
+        {
+          "key": 2,
+          "text": "Asymmetric이란 송수신 속도가 다른 속도를 제공하기"
+        },
+        {
+          "key": 3,
+          "text": "전화국과 연결하기 위해 일반 랜 카드가 필요하며, 랜"
+        },
+        {
+          "key": 4,
+          "text": "전화국에서 5Km 내에 있어야 속도가 보장되며, 그 이상"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_023",
+      "number": 23,
+      "subject_id": "general",
+      "text": "프로토콜을 형성하는 기능 중 각 계층의 데이터에 제어 정 보를 부착하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "캡슐화"
+        },
+        {
+          "key": 2,
+          "text": "다중화"
+        },
+        {
+          "key": 3,
+          "text": "세분화"
+        },
+        {
+          "key": 4,
+          "text": "동기화"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_024",
+      "number": 24,
+      "subject_id": "general",
+      "text": "다음 사례에 적당한 네트워크 확장 방법은? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
+      "options": [
+        {
+          "key": 1,
+          "text": "공인된 IP Address를 ISP에 요청하여 라우터 및 클라이"
+        },
+        {
+          "key": 2,
+          "text": "Router의 NAT 기능을 활용한다."
+        },
+        {
+          "key": 3,
+          "text": "DHCP 기능을 사용한다."
+        },
+        {
+          "key": 4,
+          "text": "BOOTP 기능을 활용한다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_025",
+      "number": 25,
+      "subject_id": "general",
+      "text": "불특정 다수의 웹 사용자를 대상으로 글을 게시할 수 있으 며 또 다른 사용자의 글을 자유롭게 조회할 수 있는 시스템 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "BBS"
+        },
+        {
+          "key": 2,
+          "text": "FTP"
+        },
+        {
+          "key": 3,
+          "text": "DNS"
+        },
+        {
+          "key": 4,
+          "text": "E-Mail"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_026",
+      "number": 26,
+      "subject_id": "general",
+      "text": "광파이버(Optic Fiber)의 굴절률이 전파하는 광의 파장에 의 해 변화함으로써 생기는 파형의 퍼짐을 뜻하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "색 분산"
+        },
+        {
+          "key": 2,
+          "text": "구조 분산"
+        },
+        {
+          "key": 3,
+          "text": "도파로 분산"
+        },
+        {
+          "key": 4,
+          "text": "재료 분산"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_027",
+      "number": 27,
+      "subject_id": "general",
+      "text": "적외선 방식을 이용한 무선 네트워크 응용으로 가장 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "적외선 포트가 설치된 데스크 탑, 노트북, PDA 간 상호"
+        },
+        {
+          "key": 2,
+          "text": "적외선을 지원하는 주변기기(디지털 카메라, 프린터 등)"
+        },
+        {
+          "key": 3,
+          "text": "적외선을 지원하는 휴대폰과 휴대폰의 상호통신"
+        },
+        {
+          "key": 4,
+          "text": "적외선을 지원하는 휴대폰과 기지국의 상호통신"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_028",
+      "number": 28,
+      "subject_id": "nos",
+      "text": "Linux 시스템에 설치된 입출력 장치들과 마운트 될 파일시 스템의 마운트 포인터가 위치하는 디렉터리는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "/dev"
+        },
+        {
+          "key": 2,
+          "text": "/lib"
+        },
+        {
+          "key": 3,
+          "text": "/root"
+        },
+        {
+          "key": 4,
+          "text": "/mnt"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_029",
+      "number": 29,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server에서 DHCP를 사용해 IP Address가 동적으로 할당되도록 하였다. 필요에 의해 특정 클라이언트 가 특정 IP Address를 할당 받게 하기 위해서는 아래의 어 느 메뉴 항목에서 설정해야 하는가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "주소 풀"
+        },
+        {
+          "key": 2,
+          "text": "주소 임대"
+        },
+        {
+          "key": 3,
+          "text": "예약"
+        },
+        {
+          "key": 4,
+          "text": "범위 옵션"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_030",
+      "number": 30,
+      "subject_id": "nos",
+      "text": "Linux의 lilo.conf 설정파일에서 기본적으로 부팅되는 운영체 제를 선택하는 옵션은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "boot"
+        },
+        {
+          "key": 2,
+          "text": "map"
+        },
+        {
+          "key": 3,
+          "text": "default"
+        },
+        {
+          "key": 4,
+          "text": "prompt"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_031",
+      "number": 31,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server에서 그룹 계정을 사용하는 이유는 그룹에 권한을 설정하여 사용자 계정을 포함시키면 관리하 기 편리해지기 때문이다. 그룹 계정의 종류에 해당하지 않 는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Local Group"
+        },
+        {
+          "key": 2,
+          "text": "Domain Local Group"
+        },
+        {
+          "key": 3,
+          "text": "Network Group"
+        },
+        {
+          "key": 4,
+          "text": "Global Group"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_032",
+      "number": 32,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server의 기본 보안으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "최소 암호 길이의 설정"
+        },
+        {
+          "key": 2,
+          "text": "최소 암호 기간의 설정"
+        },
+        {
+          "key": 3,
+          "text": "사용자 암호 사용 기간 제한 및 암호의 복잡성 설정"
+        },
+        {
+          "key": 4,
+          "text": "User 및 Group들의 검색 허용 설정"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_033",
+      "number": 33,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server의 사용자 계정에 대한 설명으로 올 바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "새로 생성된 계정으로 로그인 하는 경우에 반드시 암호"
+        },
+        {
+          "key": 2,
+          "text": "모든 암호는 대소문자를 구분하지 않는다."
+        },
+        {
+          "key": 3,
+          "text": "일정 기간이 지나면 암호를 반드시 변경해야 한다."
+        },
+        {
+          "key": 4,
+          "text": "계정을 삭제하지 않고도 사용하지 못하도록 할 수 있다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_034",
+      "number": 34,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server가 설치되면서 자동 생성되는 그룹으 로 수정이 불가능한 그룹은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Local Group"
+        },
+        {
+          "key": 2,
+          "text": "System Group"
+        },
+        {
+          "key": 3,
+          "text": "Built-In Group"
+        },
+        {
+          "key": 4,
+          "text": "Application Group"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_035",
+      "number": 35,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server가 감사할 수 있는 이벤트의 종류를 설명한 것 중 잘못된 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "정책 변경 : 사용자 보안옵션, 사용자 권한 또는 계정 정"
+        },
+        {
+          "key": 2,
+          "text": "시스템 이벤트 : Windows 2000 보안 및 보안 로그에"
+        },
+        {
+          "key": 3,
+          "text": "디렉터리 서비스 액세스 : 사용자가 파일, 폴더 또는 프"
+        },
+        {
+          "key": 4,
+          "text": "권한 사용 : 시스템 시간 변경과 같은 사용자가 권한을"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_036",
+      "number": 36,
+      "subject_id": "nos",
+      "text": "NetBIOS 이름을 IP Address로 변환해 주는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "DNS"
+        },
+        {
+          "key": 2,
+          "text": "WINS"
+        },
+        {
+          "key": 3,
+          "text": "HOSTS"
+        },
+        {
+          "key": 4,
+          "text": "ARP"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_037",
+      "number": 37,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server의 디폴트 보안 템플릿에 관한 설명 으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "디폴트 보안 템플릿은 처음부터 시스템을 제공한다."
+        },
+        {
+          "key": 2,
+          "text": "디폴트 보안 설정은 NTFS 파일시스템 볼륨에서만 적용"
+        },
+        {
+          "key": 3,
+          "text": "Windows 2000 설치 플랫폼(Professional, Server,"
+        },
+        {
+          "key": 4,
+          "text": "디폴트 보안 템플릿은 Windows 2000 Server가 설치된"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_038",
+      "number": 38,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server의 보안 구성 작업 자동화에 관한 설 명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "명령 프롬프트에서 동적으로 실행된다."
+        },
+        {
+          "key": 2,
+          "text": "여러 컴퓨터에서 보안을 분석하거나 구성하고 컴퓨터를"
+        },
+        {
+          "key": 3,
+          "text": "템플릿이 미리 작성되어 있어야 이용 가능하다."
+        },
+        {
+          "key": 4,
+          "text": "Secedit.exe 도구를 이용한다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_039",
+      "number": 39,
+      "subject_id": "equipment",
+      "text": "Linux의 kill 명령어에 대한 설명이다. 가장 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "현재 동작 중인 프로세스를 종료하는 명령이다."
+        },
+        {
+          "key": 2,
+          "text": "kill 과 유사한 명령어 killall 은 일반적으로 프로그램 이"
+        },
+        {
+          "key": 3,
+          "text": "“kill -9 프로세스_번호”는 중단되지 않는 프로세스를 강"
+        },
+        {
+          "key": 4,
+          "text": "“kill 프로세스_번호”를 사용하면 언제나 원하는 프로세스"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_040",
+      "number": 40,
+      "subject_id": "equipment",
+      "text": "Windows 2000 Server의 “시스템 성능 모니터”의 내용으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "여러 컴퓨터의 데이터를 동시에 모니터링 할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "시스템 성능 모니터를 이용하면 네트워크 내에 모든 컴"
+        },
+        {
+          "key": 3,
+          "text": "차트, 로그, 경고, 보고서의 내용을 데이터베이스나 혹은"
+        },
+        {
+          "key": 4,
+          "text": "시스템의 정확한 작동 정보를 위한 베이스 라인을 설정"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_041",
+      "number": 41,
+      "subject_id": "equipment",
+      "text": "Windows 2000 Server에서 원격으로 서버에 접속하여 GUI 환경으로 관리자 기능을 사용할 수 있는 서비스는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "X 윈도우 서비스"
+        },
+        {
+          "key": 2,
+          "text": "WINS 서비스"
+        },
+        {
+          "key": 3,
+          "text": "NNTP 서비스"
+        },
+        {
+          "key": 4,
+          "text": "터미널 서비스"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_042",
+      "number": 42,
+      "subject_id": "equipment",
+      "text": "보조 DNS(Domain Name System)에 대한 설명으로 가장 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "도메인 데이터베이스 수정은 보조 DNS 서버와 주 DNS"
+        },
+        {
+          "key": 2,
+          "text": "결함 허용을 위해 보조 DNS 서버를 이용한다."
+        },
+        {
+          "key": 3,
+          "text": "여러 대의 보조 DNS 서버를 둘 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "주 DNS 서버가 다운되면 보조 DNS 서버 중 하나를 주"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_043",
+      "number": 43,
+      "subject_id": "equipment",
+      "text": "Windows 2000 Server에서 구성된 FTP 사이트를 변경할 때 [FTP 사이트] 탭과 관련 없는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IP 주소 및 포트"
+        },
+        {
+          "key": 2,
+          "text": "연결 수 제한"
+        },
+        {
+          "key": 3,
+          "text": "로깅 사용"
+        },
+        {
+          "key": 4,
+          "text": "익명 연결 허용"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_044",
+      "number": 44,
+      "subject_id": "equipment",
+      "text": "Windows 2000 Server의 이벤트 뷰어에서 제공되는 이벤트 유형에 관한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "오류 : 데이터 손실이나 기능 상실 같은 중대한 문제를"
+        },
+        {
+          "key": 2,
+          "text": "정보 : 서비스 수행에서 필요한 데이터 정보를 기록한다."
+        },
+        {
+          "key": 3,
+          "text": "경고 : 앞으로 발생할 수 있는 문제를 미리 알려주는 이"
+        },
+        {
+          "key": 4,
+          "text": "성공 감사 : 감사된 보안 이벤트가 성공했음을 나타낸다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_045",
+      "number": 45,
+      "subject_id": "equipment",
+      "text": "Windows 2000 Server에서 IIS(Internet Information Server) 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 2급 ◐ 2008년 04월 27일 필기 기출문제 5.0을 사용하여 구축하는 서버로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "HTTP 서버"
+        },
+        {
+          "key": 2,
+          "text": "Terminal 서버"
+        },
+        {
+          "key": 3,
+          "text": "FTP 서버"
+        },
+        {
+          "key": 4,
+          "text": "NNTP 서버"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_046",
+      "number": 46,
+      "subject_id": "equipment",
+      "text": "광섬유에서 광의 입사각 조건을 표시하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "코어(CORE)"
+        },
+        {
+          "key": 2,
+          "text": "클래드(CLAD)"
+        },
+        {
+          "key": 3,
+          "text": "모드수(MODE)"
+        },
+        {
+          "key": 4,
+          "text": "개구수(NA)"
+        }
+      ],
+      "answer": 4,
+      "has_figure": true,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_047",
+      "number": 47,
+      "subject_id": "equipment",
+      "text": "버스형 또는 데이지 체인형 네트워크의 종단에 부착하는 장 치로 신호를 흡수함으로써 다시 반향되지 않도록 하는 장비 는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Repeater"
+        },
+        {
+          "key": 2,
+          "text": "Switch"
+        },
+        {
+          "key": 3,
+          "text": "Bridge"
+        },
+        {
+          "key": 4,
+          "text": "Terminator"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_048",
+      "number": 48,
+      "subject_id": "equipment",
+      "text": "두 개의 완전한 다른 네트워크 사이의 데이터 형식(Format) 이나 프로토콜을 변환하는 장치로서 OSI 모델의 모든 계층 을 포함하여 동작하는 장비는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Bridge"
+        },
+        {
+          "key": 2,
+          "text": "Router"
+        },
+        {
+          "key": 3,
+          "text": "Gateway"
+        },
+        {
+          "key": 4,
+          "text": "Repeater"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_049",
+      "number": 49,
+      "subject_id": "security",
+      "text": "무선 랜의 구성 방식 중 무선랜 카드를 가진 컴퓨터 간의 네트워크를 구성하여 작동하는 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Infrastructure"
+        },
+        {
+          "key": 2,
+          "text": "Ad Hoc"
+        },
+        {
+          "key": 3,
+          "text": "Bridge"
+        },
+        {
+          "key": 4,
+          "text": "CSMA/CD"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20080427_050",
+      "number": 50,
+      "subject_id": "security",
+      "text": "A-빌딩에 무선 네트워크가 구축되어 있고, 근접한 B-빌딩 역시 무선 네트워크가 구성되어 있을 때, 두 빌딩간 무선 네트워크를 연결하기 위해서 사용되는 장비로 가장 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "액세스 포인트"
+        },
+        {
+          "key": 2,
+          "text": "무선 랜카드"
+        },
+        {
+          "key": 3,
+          "text": "위성 안테나"
+        },
+        {
+          "key": 4,
+          "text": "무선 브리지"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    }
+  ]
+}

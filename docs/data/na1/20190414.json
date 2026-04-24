@@ -1,0 +1,1628 @@
+{
+  "cert_id": "na1",
+  "date": "20190414",
+  "label": "2019년 04월 14일",
+  "total_questions": 60,
+  "questions": [
+    {
+      "id": "na1_20190414_001",
+      "number": 1,
+      "subject_id": "tcpip",
+      "text": "C Class인 IP Address는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "191.234.56.34"
+        },
+        {
+          "key": 2,
+          "text": "125.76.133.234"
+        },
+        {
+          "key": 3,
+          "text": "131.15.45.120"
+        },
+        {
+          "key": 4,
+          "text": "192.168.17.34"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_002",
+      "number": 2,
+      "subject_id": "tcpip",
+      "text": "IP 헤더 필드 중 단편화 금지(Don′t Fragment)를 포함하고 있는 필드는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TTL"
+        },
+        {
+          "key": 2,
+          "text": "Source IP Address"
+        },
+        {
+          "key": 3,
+          "text": "Identification"
+        },
+        {
+          "key": 4,
+          "text": "Flags"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_003",
+      "number": 3,
+      "subject_id": "tcpip",
+      "text": "IPv6에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "현재 IPv4를 대체할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "보안과 인증 확장 헤더를 사용하여 보안기능이 강화되었"
+        },
+        {
+          "key": 3,
+          "text": "IPv4에서 쉽게 전이할 수 있도록 설계되었다."
+        },
+        {
+          "key": 4,
+          "text": "32bit 주소 공간을 가진다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_004",
+      "number": 4,
+      "subject_id": "tcpip",
+      "text": "TCP 헤더의 설명으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "RST 플래그 : 데이터가 제대로 전송된 것을 알려준다."
+        },
+        {
+          "key": 2,
+          "text": "Window Size : 현재 상태의 최대 버퍼 크기를 말한다."
+        },
+        {
+          "key": 3,
+          "text": "Reserved : 수신된 Sequence Number에 대하여 예상된"
+        },
+        {
+          "key": 4,
+          "text": "FIN 플래그 : 3-Way handshaking 과정을 제의하는 플래"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_005",
+      "number": 5,
+      "subject_id": "tcpip",
+      "text": "UDP에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "가상선로 개념이 없는 비연결형 프로토콜이다."
+        },
+        {
+          "key": 2,
+          "text": "TCP보다 전송속도가 느리다."
+        },
+        {
+          "key": 3,
+          "text": "각 사용자는 16비트의 포트번호를 할당받는다."
+        },
+        {
+          "key": 4,
+          "text": "데이터 전송이 블록 단위이다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_006",
+      "number": 6,
+      "subject_id": "tcpip",
+      "text": "ICMP 프로토콜의 기능으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "여러 목적지로 동시에 보내는 멀티캐스팅 기능이 있다."
+        },
+        {
+          "key": 2,
+          "text": "두 호스트간의 연결의 신뢰성을 테스트하기 위한 반향과"
+        },
+        {
+          "key": 3,
+          "text": "′ping′ 명령어는 ICMP를 사용한다."
+        },
+        {
+          "key": 4,
+          "text": "원래의 데이터그램이 TTL을 초과하여 버려지게 되면 시간"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_007",
+      "number": 7,
+      "subject_id": "tcpip",
+      "text": "TFTP에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "시작지 호스트는 잘 받았다는 통지 메시지가 올 때까지"
+        },
+        {
+          "key": 2,
+          "text": "중요도는 떨어지지만 신속한 전송이 요구되는 파일 전송"
+        },
+        {
+          "key": 3,
+          "text": "모든 데이터는 512바이트로 된 고정된 길이의 패킷으로"
+        },
+        {
+          "key": 4,
+          "text": "보호등급을 추가하여 데이터 스트림의 위아래로 TCP 체"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_008",
+      "number": 8,
+      "subject_id": "tcpip",
+      "text": "SMTP에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "두 호스트 간 메시지 전송을 제공한다."
+        },
+        {
+          "key": 2,
+          "text": "네트워크의 구성원에 패킷을 보내기 위한 하드웨어 주소"
+        },
+        {
+          "key": 3,
+          "text": "전송에 대해 TCP를 사용한다."
+        },
+        {
+          "key": 4,
+          "text": "인터넷상에서 전자우편(E-Mail)의 전송을 규정한다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_009",
+      "number": 9,
+      "subject_id": "tcpip",
+      "text": "SSH 프로토콜이 사용하는 포트 번호는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP 22번"
+        },
+        {
+          "key": 2,
+          "text": "TCP 23번"
+        },
+        {
+          "key": 3,
+          "text": "UDP 24번"
+        },
+        {
+          "key": 4,
+          "text": "UDP 25번"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_010",
+      "number": 10,
+      "subject_id": "tcpip",
+      "text": "멀티캐스트를 지원하는 라우터가 멀티캐스트 그룹에 가입한 네트워크 내의 호스트를 관리하기 위한 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SMTP"
+        },
+        {
+          "key": 2,
+          "text": "ICMP"
+        },
+        {
+          "key": 3,
+          "text": "SCTP"
+        },
+        {
+          "key": 4,
+          "text": "IGMP"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_011",
+      "number": 11,
+      "subject_id": "tcpip",
+      "text": "IP Address ′172.16.0.0′인 경우에 이를 14개의 서브넷으로 나누어 사용하고자 할 경우 서브넷 마스크 값은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "255.255.228.0"
+        },
+        {
+          "key": 2,
+          "text": "255.255.240.0"
+        },
+        {
+          "key": 3,
+          "text": "255.255.248.0"
+        },
+        {
+          "key": 4,
+          "text": "255.255.255.192"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_012",
+      "number": 12,
+      "subject_id": "tcpip",
+      "text": "아래의 조건은 DNS 기록의 형식이다. 이에 해당되는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "정규 네임 자원 기록"
+        },
+        {
+          "key": 2,
+          "text": "주소 자원 기록"
+        },
+        {
+          "key": 3,
+          "text": "메일 교환 자원 기록"
+        },
+        {
+          "key": 4,
+          "text": "네임 서버 자원 기록"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_013",
+      "number": 13,
+      "subject_id": "tcpip",
+      "text": "FTP의 기능으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "인터넷에서 파일을 송수신하는 전송규약이다."
+        },
+        {
+          "key": 2,
+          "text": "파일을 업로드할 수 있다."
+        },
+        {
+          "key": 3,
+          "text": "다른 컴퓨터의 파일을 실행한다."
+        },
+        {
+          "key": 4,
+          "text": "서버에 접속해 자료를 전송받는다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_014",
+      "number": 14,
+      "subject_id": "tcpip",
+      "text": "RARP에 관한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "RARP 요청 패킷은 브로드캐스트 되고 RARP 응답 패킷"
+        },
+        {
+          "key": 2,
+          "text": "RARP 패킷의 형식은 ARP 패킷의 형식과 동일하지만 들"
+        },
+        {
+          "key": 3,
+          "text": "RARP는 물리 주소를 알고 있을 때 대응하는 논리 주소"
+        },
+        {
+          "key": 4,
+          "text": "RARP 메시지는 IP 데이터그램의 형태로 캡슐화 되어 전"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_015",
+      "number": 15,
+      "subject_id": "tcpip",
+      "text": "라우터를 경유하여 다른 네트워크로 갈 수 있는 프로토콜 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "NetBIOS"
+        },
+        {
+          "key": 2,
+          "text": "NetBEUI"
+        },
+        {
+          "key": 3,
+          "text": "DLC"
+        },
+        {
+          "key": 4,
+          "text": "TCP/IP"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_016",
+      "number": 16,
+      "subject_id": "general",
+      "text": "네트워크 상에서 기본 서브넷 마스크가 구현될 때, IP Address가 '203.240.155.32'인 경우 아래 설명 중 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Network ID는 '203.240.155' 이다."
+        },
+        {
+          "key": 2,
+          "text": "Network ID는 '203.240' 이다."
+        },
+        {
+          "key": 3,
+          "text": "Host ID는 '155.32'가 된다."
+        },
+        {
+          "key": 4,
+          "text": "Host ID가 '255'일 때는 루프백(Loopback)용으로 사용"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_017",
+      "number": 17,
+      "subject_id": "general",
+      "text": "TCP 세션의 성립에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "세션 성립은 TCP Three-Way Handshake 응답 확인 방"
+        },
+        {
+          "key": 2,
+          "text": "실제 순서번호는 송신 호스트에서 임의로 선택된다."
+        },
+        {
+          "key": 3,
+          "text": "세션 성립을 원하는 컴퓨터가 ACK 플래그를 '0'으로 설"
+        },
+        {
+          "key": 4,
+          "text": "송신 호스트는 데이터가 성공적으로 수신된 것을 확인하"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_018",
+      "number": 18,
+      "subject_id": "general",
+      "text": "베이스밴드(Baseband) 시스템보다 브로드밴드(Broadband) 시스템이 더 많은 데이터를 전송할 수 있는 이유는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "여러 개의 주파수로 여러 개의 채널에 접근할 수 있기"
+        },
+        {
+          "key": 2,
+          "text": "양방향 신호흐름을 지원할 수 있기 때문"
+        },
+        {
+          "key": 3,
+          "text": "서버에 데이터를 저장하였다가 한 번에 데이터를 전송할"
+        },
+        {
+          "key": 4,
+          "text": "한 번에 한 개의 신호 또는 한 개의 채널을 전송할 수"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_019",
+      "number": 19,
+      "subject_id": "general",
+      "text": "광통신 전송로의 특징으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "긴 중계기 간격"
+        },
+        {
+          "key": 2,
+          "text": "대용량 전송"
+        },
+        {
+          "key": 3,
+          "text": "비전도성"
+        },
+        {
+          "key": 4,
+          "text": "협대역"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_020",
+      "number": 20,
+      "subject_id": "general",
+      "text": "변조에 대한 설명으로 적절한 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "전달하고자 하는 신호를 목적지까지 효율적으로 보내기"
+        },
+        {
+          "key": 2,
+          "text": "단말기의 수신가능 신호에 적합한 신호를 생성하는 조직"
+        },
+        {
+          "key": 3,
+          "text": "복잡한 신호를 단순하게 하는 신호조작이다."
+        },
+        {
+          "key": 4,
+          "text": "신호에 제어신호를 추가하는 조작이다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_021",
+      "number": 21,
+      "subject_id": "general",
+      "text": "오류 검출 방식인 ARQ 방식 중에서 일정한 크기 단위로 연 속해서 프레임을 전송하고 수신측에 오류가 발견된 프레임 에 대하여 재전송 요청이 있을 경우 잘못된 프레임만을 다 시 전송하는 방법은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Stop-and-Wait ARQ"
+        },
+        {
+          "key": 2,
+          "text": "Go-back-N ARQ"
+        },
+        {
+          "key": 3,
+          "text": "Selective-repeat ARQ"
+        },
+        {
+          "key": 4,
+          "text": "Adaptive ARQ"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_022",
+      "number": 22,
+      "subject_id": "general",
+      "text": "멀티 플렉싱 방식 중 주파수 대역폭을 다수의 작은 대역폭 으로 분할 전송하는 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ATDM"
+        },
+        {
+          "key": 2,
+          "text": "CDM"
+        },
+        {
+          "key": 3,
+          "text": "FDM"
+        },
+        {
+          "key": 4,
+          "text": "STDM"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_023",
+      "number": 23,
+      "subject_id": "general",
+      "text": "OSI 7 Layer의 각 Layer 별 Data 형태로서 적당하지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Transport Layer - Segment"
+        },
+        {
+          "key": 2,
+          "text": "Network Layer - Packet"
+        },
+        {
+          "key": 3,
+          "text": "Datalink Layer - Fragment"
+        },
+        {
+          "key": 4,
+          "text": "Physical Layer - bit"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_024",
+      "number": 24,
+      "subject_id": "general",
+      "text": "Gigabit Ethernet에 대한 설명에 해당하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "MAC계층에서는 토큰 링 프로토콜을 사용한다."
+        },
+        {
+          "key": 2,
+          "text": "Gigabit Ethernet에서는 Fast Ethernet의 10배 대역폭을"
+        },
+        {
+          "key": 3,
+          "text": "Gigabit Ethernet에서는 슬롯의 크기를 512바이트로 확"
+        },
+        {
+          "key": 4,
+          "text": "현재의 Ethernet과의 호환이 어렵고, 연결 설정형 방식이"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_025",
+      "number": 25,
+      "subject_id": "general",
+      "text": "무선 랜의 구성 방식 중 무선 랜카드를 가진 컴퓨터간의 네 트워크를 구성하여 작동하는 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Infrastructure 방식"
+        },
+        {
+          "key": 2,
+          "text": "AD Hoc 방식"
+        },
+        {
+          "key": 3,
+          "text": "AP 방식"
+        },
+        {
+          "key": 4,
+          "text": "CDMA 방식"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_026",
+      "number": 26,
+      "subject_id": "general",
+      "text": "데이터 전송과정에서 먼저 전송된 패킷이 나중에 도착되어 수신측 노드에서 패킷의 순서를 바르게 제어하는 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "순서 제어"
+        },
+        {
+          "key": 2,
+          "text": "속도 제어"
+        },
+        {
+          "key": 3,
+          "text": "오류 제어"
+        },
+        {
+          "key": 4,
+          "text": "연결 제어"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_027",
+      "number": 27,
+      "subject_id": "general",
+      "text": "비동기 데이터(Asynchronous Data) 전송에 필요한 신호는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "처음과 마지막 자료(start/stop)"
+        },
+        {
+          "key": 2,
+          "text": "인터럽트(Interrupt)"
+        },
+        {
+          "key": 3,
+          "text": "상태자료(Status)"
+        },
+        {
+          "key": 4,
+          "text": "캐리(Carry)"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_028",
+      "number": 28,
+      "subject_id": "general",
+      "text": "다음 설명에 해당하는 프로세스는?- 백그라운드로 실행한 다.",
+      "options": [
+        {
+          "key": 1,
+          "text": "shell"
+        },
+        {
+          "key": 2,
+          "text": "kernel"
+        },
+        {
+          "key": 3,
+          "text": "program"
+        },
+        {
+          "key": 4,
+          "text": "deamon"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_029",
+      "number": 29,
+      "subject_id": "nos",
+      "text": "아파치 서버의 설정 파일인 ′httpd.conf′의 항목에 대한 설 명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "KeepAlive On : HTTP에 대한 접속을 끊지 않고 유지한"
+        },
+        {
+          "key": 2,
+          "text": "StartServers 5 : 웹서버가 시작할 때 다섯 번째 서버를"
+        },
+        {
+          "key": 3,
+          "text": "MaxClients 150 : 한 번에 접근 가능한 클라이언트의 개"
+        },
+        {
+          "key": 4,
+          "text": "Port 80 : 웹서버의 접속 포트 번호는 80번이다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_030",
+      "number": 30,
+      "subject_id": "nos",
+      "text": "tar로 묶인 ′mt.tar′를 풀어내는 명령은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "tar –tvf mt.tar"
+        },
+        {
+          "key": 2,
+          "text": "tar -cvf mt.tar"
+        },
+        {
+          "key": 3,
+          "text": "tar –cvvf mt.tar"
+        },
+        {
+          "key": 4,
+          "text": "tar -xvf mt.tar"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_031",
+      "number": 31,
+      "subject_id": "nos",
+      "text": "Linux에서 프로세스의 상태를 확인하고자 할 때 사용하는 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ps"
+        },
+        {
+          "key": 2,
+          "text": "w"
+        },
+        {
+          "key": 3,
+          "text": "at"
+        },
+        {
+          "key": 4,
+          "text": "cron"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_032",
+      "number": 32,
+      "subject_id": "nos",
+      "text": "Linux에서 DNS를 설치하기 위한 ′named.zone′ 파일의 SOA 레코드에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Serial : 타 네임서버가 이 정보를 유지하는 최소 유효기"
+        },
+        {
+          "key": 2,
+          "text": "Refresh : Primary 네임서버의 Zone 데이터베이스 수정"
+        },
+        {
+          "key": 3,
+          "text": "Retry : Secondary 네임서버에서 Primary 네임서버로 접"
+        },
+        {
+          "key": 4,
+          "text": "Expire : Primary 네임서버 정보의 신임 기간"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_033",
+      "number": 33,
+      "subject_id": "nos",
+      "text": "SAMBA를 통해서 할 수 있는 기능으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "하나 또는 그 이상의 파일 시스템을 공유할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "서버와 클라이언트에 설치되어있는 프린터들을 공유할"
+        },
+        {
+          "key": 3,
+          "text": "클라이언트들이 지역 네트워크 호스트들을 볼 수 있도록"
+        },
+        {
+          "key": 4,
+          "text": "메일 서버에 담긴 편지들을 자신의 컴퓨터로 가져올 수"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_034",
+      "number": 34,
+      "subject_id": "nos",
+      "text": "Linux에서 네임서버의 동작 확인 및 운영관리를 위하여 널 리 사용되는 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "nslookup"
+        },
+        {
+          "key": 2,
+          "text": "netstat"
+        },
+        {
+          "key": 3,
+          "text": "ping"
+        },
+        {
+          "key": 4,
+          "text": "traceroute"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_035",
+      "number": 35,
+      "subject_id": "nos",
+      "text": "DHCP 클라이언트에서는 지정된 간격으로 대여기간을 갱신 받게 되는데 이를 수동으로 하는 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ipconfig /renew"
+        },
+        {
+          "key": 2,
+          "text": "ipconfig /refresh"
+        },
+        {
+          "key": 3,
+          "text": "netstat /renew"
+        },
+        {
+          "key": 4,
+          "text": "netstat /refresh"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_036",
+      "number": 36,
+      "subject_id": "nos",
+      "text": "Linux에서 다음과 같은 옵션을 사용하여 사용자 계정을 추 가한 경우 설명이 잘못된 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "사용자 계정은 test이다."
+        },
+        {
+          "key": 2,
+          "text": "홈 디렉터리로는 ′/home/test′를 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "셸은 본셸을 사용한다."
+        },
+        {
+          "key": 4,
+          "text": "40일마다 패스워드를 변경하도록 설정한다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_037",
+      "number": 37,
+      "subject_id": "nos",
+      "text": "Linux의 ′ln′ 명령어에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "하드링크로 생성된 파일은 원본 파일과 inode가 같다."
+        },
+        {
+          "key": 2,
+          "text": "자신이 액세스 할 수 없는 사용권한을 가졌더라도 ′-f′"
+        },
+        {
+          "key": 3,
+          "text": "심볼릭링크를 사용할 때, 원본 파일이 삭제되어도 이 심"
+        },
+        {
+          "key": 4,
+          "text": "하드링크는 원본 파일을 삭제하더라도 다른 링크된 파일"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_038",
+      "number": 38,
+      "subject_id": "nos",
+      "text": "DHCP 서비스 이용 시 이점으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "새 컴퓨터를 구성 할 때 다시 사용되는 IP Address와 충"
+        },
+        {
+          "key": 2,
+          "text": "관리자의 단순하고 반복적인 작업에 대한 부담을 덜어"
+        },
+        {
+          "key": 3,
+          "text": "위치를 자주 바꾸는 이동 또는 휴대용 컴퓨터 사용자에"
+        },
+        {
+          "key": 4,
+          "text": "네트워크의 컴퓨터를 구성하는데 소요되는 시간을 크게"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_039",
+      "number": 39,
+      "subject_id": "nos",
+      "text": "Linux 시스템에서 '-rwxr-xr-x'와 같은 퍼미션을 나타내는 숫자는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "755"
+        },
+        {
+          "key": 2,
+          "text": "777"
+        },
+        {
+          "key": 3,
+          "text": "766"
+        },
+        {
+          "key": 4,
+          "text": "764"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_040",
+      "number": 40,
+      "subject_id": "nos",
+      "text": "Linux 시스템에서 RPM에 사용하는 옵션 '--nodeps'의 의 미는? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
+      "options": [
+        {
+          "key": 1,
+          "text": "어떤 패키지의 의존성을 무시하고 설치하고자 할 때"
+        },
+        {
+          "key": 2,
+          "text": "디렉터리를 마치 '/' 처럼 생각하고 설치하고자 할 때"
+        },
+        {
+          "key": 3,
+          "text": "패키지를 실제로 설치하지는 않고 충돌이나 의존성 문제"
+        },
+        {
+          "key": 4,
+          "text": "새로운 패키지를 지우고, 구버전의 패키지로 교체 할 때"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_041",
+      "number": 41,
+      "subject_id": "nos",
+      "text": "DNS 레코드 중 IP Address를 도메인 네임으로 역매핑하는 레코드는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SOA"
+        },
+        {
+          "key": 2,
+          "text": "A"
+        },
+        {
+          "key": 3,
+          "text": "PTR"
+        },
+        {
+          "key": 4,
+          "text": "CNAME"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_042",
+      "number": 42,
+      "subject_id": "equipment",
+      "text": "Linux 시스템의 vi 에디터에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "입력모드로 전환은 'i'를 눌러서 한다."
+        },
+        {
+          "key": 2,
+          "text": "편집모드로 전환하기 위해서는 'Esc' 키를 누르고 ':'(콜"
+        },
+        {
+          "key": 3,
+          "text": "기능키 'A'는 입력모드로 전환되어 현재 라인의 끝에 입"
+        },
+        {
+          "key": 4,
+          "text": "기능키 'a'는 입력모드로 전환되어 현재 라인의 위 라인"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_043",
+      "number": 43,
+      "subject_id": "equipment",
+      "text": "Linux에서 파일의 접근 권한 변경 시 사용되는 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "umount"
+        },
+        {
+          "key": 2,
+          "text": "greb"
+        },
+        {
+          "key": 3,
+          "text": "ifconfig"
+        },
+        {
+          "key": 4,
+          "text": "chmod"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_044",
+      "number": 44,
+      "subject_id": "equipment",
+      "text": "Linux에서 기본적으로 생성되는 디렉터리로 옳지 않은 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "/etc"
+        },
+        {
+          "key": 2,
+          "text": "/root"
+        },
+        {
+          "key": 3,
+          "text": "/grep"
+        },
+        {
+          "key": 4,
+          "text": "/home"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_045",
+      "number": 45,
+      "subject_id": "equipment",
+      "text": "Linux 시스템에서 사용자 계정의 정보를 수정하는 명령어 는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "usermod"
+        },
+        {
+          "key": 2,
+          "text": "config"
+        },
+        {
+          "key": 3,
+          "text": "profile"
+        },
+        {
+          "key": 4,
+          "text": "passwd"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_046",
+      "number": 46,
+      "subject_id": "equipment",
+      "text": "라우터 NVRAM에서 RAM으로 Configuration File을 Copy하 는 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "copy flash start"
+        },
+        {
+          "key": 2,
+          "text": "copy running-config startup-config"
+        },
+        {
+          "key": 3,
+          "text": "copy startup-config running-config"
+        },
+        {
+          "key": 4,
+          "text": "erase startup-config"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_047",
+      "number": 47,
+      "subject_id": "equipment",
+      "text": "라우터(Router)는 OSI 7 Layer 중 어느 계층에서 동작하는 가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Physical Layer"
+        },
+        {
+          "key": 2,
+          "text": "DataLink Layer"
+        },
+        {
+          "key": 3,
+          "text": "Network Layer"
+        },
+        {
+          "key": 4,
+          "text": "TCP/IP Layer"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_048",
+      "number": 48,
+      "subject_id": "equipment",
+      "text": "LAN 카드의 MAC Address에 실제로 사용하는 비트 수는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "16bit"
+        },
+        {
+          "key": 2,
+          "text": "32bit"
+        },
+        {
+          "key": 3,
+          "text": "48bit"
+        },
+        {
+          "key": 4,
+          "text": "64bit"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_049",
+      "number": 49,
+      "subject_id": "equipment",
+      "text": "다음 중 라우터에서 경로를 찾는데 사용되는 라우팅 프로토 콜의 종류로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "RIP"
+        },
+        {
+          "key": 2,
+          "text": "OSPF"
+        },
+        {
+          "key": 3,
+          "text": "IPX"
+        },
+        {
+          "key": 4,
+          "text": "EIGRP"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_050",
+      "number": 50,
+      "subject_id": "equipment",
+      "text": "RAID에 대한 설명으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "RAID는 여러 개의 디스크로 구성된 디스크 배열을 의미"
+        },
+        {
+          "key": 2,
+          "text": "RAID는 레벨 0 ~ 4 까지 모두 5개의 규약이 있다."
+        },
+        {
+          "key": 3,
+          "text": "'레벨 0'은 미러 모드라고 하는데 하나의 데이터를 여러"
+        },
+        {
+          "key": 4,
+          "text": "레벨의 의미는 데이터 입출력 속도가 빨라지는 단계에"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_051",
+      "number": 51,
+      "subject_id": "equipment",
+      "text": "시스템 침투 형태 중 IP Address를 접근 가능한 IP Address로 위장하여 침입하는 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Sniffing"
+        },
+        {
+          "key": 2,
+          "text": "Fabricate"
+        },
+        {
+          "key": 3,
+          "text": "Modify"
+        },
+        {
+          "key": 4,
+          "text": "Spoofing"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_052",
+      "number": 52,
+      "subject_id": "security",
+      "text": "Linux에서 사용자 계정 생성 시 사용자의 비밀번호에 관한 정보가 암호화되어 저장되는 곳은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "/usr/local"
+        },
+        {
+          "key": 2,
+          "text": "/etc/password"
+        },
+        {
+          "key": 3,
+          "text": "/etc/shadow"
+        },
+        {
+          "key": 4,
+          "text": "/usr/password"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_053",
+      "number": 53,
+      "subject_id": "security",
+      "text": "무차별 대입 공격이라 하며 주어진 경우의 수를 모두 대입 하여 암호를 크랙하는 기법은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Reflective XSS"
+        },
+        {
+          "key": 2,
+          "text": "Brute-Force Attack"
+        },
+        {
+          "key": 3,
+          "text": "Dictionary Attack"
+        },
+        {
+          "key": 4,
+          "text": "SQL injection"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_054",
+      "number": 54,
+      "subject_id": "security",
+      "text": "다음에서 설명하는 기술은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SQL injection"
+        },
+        {
+          "key": 2,
+          "text": "파일 업로드 공격"
+        },
+        {
+          "key": 3,
+          "text": "파일 다운 로드 공격"
+        },
+        {
+          "key": 4,
+          "text": "드라이브 다운 로드"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_055",
+      "number": 55,
+      "subject_id": "security",
+      "text": "다음에서 설명하는 키 교환 알고리즘은 무엇인가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Diffie-Hellman"
+        },
+        {
+          "key": 2,
+          "text": "3-DES"
+        },
+        {
+          "key": 3,
+          "text": "AES(Rijndael)"
+        },
+        {
+          "key": 4,
+          "text": "Seed"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_056",
+      "number": 56,
+      "subject_id": "security",
+      "text": "Linux에서 nmap를 사용하여 취약점을 점검할 때 이용하는 스크립트의 확장자는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "nse"
+        },
+        {
+          "key": 2,
+          "text": "patch"
+        },
+        {
+          "key": 3,
+          "text": "update"
+        },
+        {
+          "key": 4,
+          "text": "hotfix"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_057",
+      "number": 57,
+      "subject_id": "security",
+      "text": "전자서명의 조건에 맞지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "위조 불가 조건 (Unforgeable): 합법적인 서명자만이 전"
+        },
+        {
+          "key": 2,
+          "text": "서명자 인증 조건(Authentication) : 전자 서명의 서명자"
+        },
+        {
+          "key": 3,
+          "text": "부인 불가 조건 (Non-Repudiation) : 서명자는 서명 후"
+        },
+        {
+          "key": 4,
+          "text": "변경 불가 조건 (Unalterable) : 서명한 문서의 내용은"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_058",
+      "number": 58,
+      "subject_id": "security",
+      "text": "Apache 웹 서버 로그에서 확인 할 수 없는 정보는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "클라이언트의 IP Address"
+        },
+        {
+          "key": 2,
+          "text": "클라이언트의 요청 페이지"
+        },
+        {
+          "key": 3,
+          "text": "클라이언트의 접속 시도 날짜"
+        },
+        {
+          "key": 4,
+          "text": "클라이언트의 게시판 입력 내용"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_059",
+      "number": 59,
+      "subject_id": "security",
+      "text": "SET(Secure Electronic Transaction)에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "초기에 마스터카드, 비자카드, 마이크로소프트, 네스케이"
+        },
+        {
+          "key": 2,
+          "text": "인터넷상에서의 금융 거래 안전을 보장하기 위한 시스템"
+        },
+        {
+          "key": 3,
+          "text": "메시지의 암호화, 전자증명서, 디지털서명 등의 기능이"
+        },
+        {
+          "key": 4,
+          "text": "지불정보는 비밀키를 이용하여 암호화한다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20190414_060",
+      "number": 60,
+      "subject_id": "security",
+      "text": "시스템의 침투 형태 중 네트워크의 한 호스트에서 실행되어 다른 호스트들의 패킷 교환을 엿듣는 해킹 유형은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Sniffing"
+        },
+        {
+          "key": 2,
+          "text": "IP Spoofing"
+        },
+        {
+          "key": 3,
+          "text": "Domain Spoofing"
+        },
+        {
+          "key": 4,
+          "text": "Repudiation"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+:root {
+  /* Colors */
+  --color-primary:       #2563EB;
+  --color-primary-dark:  #1D4ED8;
+  --color-primary-light: #EFF6FF;
+  --color-success:       #16A34A;
+  --color-success-bg:    #DCFCE7;
+  --color-error:         #DC2626;
+  --color-error-bg:      #FEE2E2;
+  --color-warning:       #D97706;
+  --color-warning-bg:    #FEF3C7;
+  --color-bg:            #F1F5F9;
+  --color-surface:       #FFFFFF;
+  --color-border:        #E2E8F0;
+  --color-text:          #1E293B;
+  --color-text-muted:    #64748B;
+  --color-text-light:    #94A3B8;
+
+  /* Subject badge colors */
+  --color-tcpip:         #3B82F6;
+  --color-tcpip-bg:      #EFF6FF;
+  --color-general:       #8B5CF6;
+  --color-general-bg:    #F5F3FF;
+  --color-nos:           #F59E0B;
+  --color-nos-bg:        #FFFBEB;
+  --color-equipment:     #10B981;
+  --color-equipment-bg:  #ECFDF5;
+  --color-security:      #EF4444;
+  --color-security-bg:   #FEF2F2;
+  --color-unknown:       #6B7280;
+  --color-unknown-bg:    #F3F4F6;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Border radius */
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+  --radius-xl:  28px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 40px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.08);
+
+  /* Typography */
+  --font-sans: 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+  --font-size-xs:   12px;
+  --font-size-sm:   14px;
+  --font-size-base: 16px;
+  --font-size-lg:   18px;
+  --font-size-xl:   20px;
+  --font-size-2xl:  24px;
+  --font-size-3xl:  30px;
+
+  /* Layout */
+  --max-width: 760px;
+  --header-height: 60px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size-base);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}

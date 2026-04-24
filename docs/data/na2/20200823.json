@@ -1,0 +1,1358 @@
+{
+  "cert_id": "na2",
+  "date": "20200823",
+  "label": "2020년 08월 23일",
+  "total_questions": 50,
+  "questions": [
+    {
+      "id": "na2_20200823_001",
+      "number": 1,
+      "subject_id": "tcpip",
+      "text": "다음 중 Ping 유틸리티와 관련이 없는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ICMP 메시지를 이용한다."
+        },
+        {
+          "key": 2,
+          "text": "Echo Request 메시지를 보내고 해당 컴퓨터로부터 ICMP"
+        },
+        {
+          "key": 3,
+          "text": "TCP/IP 구성 파라미터를 확인 할 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "TCP/IP 연결성을 테스트 할 수 있다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_002",
+      "number": 2,
+      "subject_id": "tcpip",
+      "text": "TCP와 UDP의 차이점을 설명한 것 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP는 전달된 패킷에 대한 수신측의 인증이 필요하지만"
+        },
+        {
+          "key": 2,
+          "text": "TCP는 대용량의 데이터나 중요한 데이터 전송에 이용이"
+        },
+        {
+          "key": 3,
+          "text": "UDP는 네트워크가 혼잡하거나 라우팅이 복잡할 경우에는"
+        },
+        {
+          "key": 4,
+          "text": "UDP는 데이터 전송전에 반드시 송수신 간의 세션이 먼저"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_003",
+      "number": 3,
+      "subject_id": "tcpip",
+      "text": "IP Header의 내용 중 TTL(Time To Live)의 기능을 설명한 것으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IP 패킷은 네트워크상에서 영원히 존재할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "일반적으로 라우터의 한 홉(Hop)을 통과할 때마다 TTL"
+        },
+        {
+          "key": 3,
+          "text": "Ping과 Tracert 유틸리티는 특정 호스트 컴퓨터에 접근을"
+        },
+        {
+          "key": 4,
+          "text": "IP 패킷이 네트워크상에서 얼마동안 존재 할 수 있는가를"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_004",
+      "number": 4,
+      "subject_id": "tcpip",
+      "text": "IPv4 Class 중에서 멀티캐스트 용도로 사용되는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "B Class"
+        },
+        {
+          "key": 2,
+          "text": "C Class"
+        },
+        {
+          "key": 3,
+          "text": "D Class"
+        },
+        {
+          "key": 4,
+          "text": "E Class"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_005",
+      "number": 5,
+      "subject_id": "tcpip",
+      "text": "′255.255.255.224′인 서브넷에 최대 할당 가능한 호스트 수 는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "2개"
+        },
+        {
+          "key": 2,
+          "text": "6개"
+        },
+        {
+          "key": 3,
+          "text": "14개"
+        },
+        {
+          "key": 4,
+          "text": "30개"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_006",
+      "number": 6,
+      "subject_id": "tcpip",
+      "text": "IPv6 헤더 형식에서 네트워크 내에서 혼잡 상황이 발생되어 데이터그램을 버려야 하는 경우 참조되는 필드는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Version"
+        },
+        {
+          "key": 2,
+          "text": "Priority"
+        },
+        {
+          "key": 3,
+          "text": "Next Header"
+        },
+        {
+          "key": 4,
+          "text": "Hop Limit"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_007",
+      "number": 7,
+      "subject_id": "tcpip",
+      "text": "IP 패킷은 네트워크 유형에 따라 전송량에 있어 차이가 나기 때문에 적당한 크기로 분할하게 된다. 이때 기준이 되는 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TOS(Tape Operation System)"
+        },
+        {
+          "key": 2,
+          "text": "MTU(Maximum Transmission Unit)"
+        },
+        {
+          "key": 3,
+          "text": "TTL(Time-To-Live)"
+        },
+        {
+          "key": 4,
+          "text": "Port Number"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_008",
+      "number": 8,
+      "subject_id": "tcpip",
+      "text": "ARP와 RARP에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ARP와 RARP는 전송 계층에서 동작하며, 인터넷 주소와"
+        },
+        {
+          "key": 2,
+          "text": "ARP는 IP 데이터 그램을 정확한 목적지 호스트로 보내기"
+        },
+        {
+          "key": 3,
+          "text": "RARP는 로컬 디스크가 없는 네트워크상에 연결된 시스템"
+        },
+        {
+          "key": 4,
+          "text": "RARP는 MAC 주소를 알고 있는 상태에서 그 MAC 주소"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_009",
+      "number": 9,
+      "subject_id": "tcpip",
+      "text": "IP Address ′127.0.0.1′ 이 의미하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "모든 네트워크를 의미한다."
+        },
+        {
+          "key": 2,
+          "text": "사설 IP Address를 의미한다."
+        },
+        {
+          "key": 3,
+          "text": "특정한 네트워크의 모든 노드를 의미한다."
+        },
+        {
+          "key": 4,
+          "text": "루프 백 테스트용이다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_010",
+      "number": 10,
+      "subject_id": "tcpip",
+      "text": "사설 IP주소를 공인 IP주소로 바꿔주는데 사용하는 통신망 의 주소 변환 기술로, 공인 IP주소를 절약하고, 내부 사설망 을 이용하여 인터넷에 연결하므로 보안을 강화할 수 있는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "DHCP"
+        },
+        {
+          "key": 2,
+          "text": "ARP"
+        },
+        {
+          "key": 3,
+          "text": "BOOTP"
+        },
+        {
+          "key": 4,
+          "text": "NAT"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_011",
+      "number": 11,
+      "subject_id": "tcpip",
+      "text": "SNMP에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "사용자가 네트워크 문제점을 발견하기 전에 시스템 관리"
+        },
+        {
+          "key": 2,
+          "text": "데이터 전송은 UDP를 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "IP에서의 오류 제어를 위하여 사용되며, 시작지 호스트의"
+        },
+        {
+          "key": 4,
+          "text": "네트워크 장비로부터 데이터를 수집하여 네트워크 관리"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_012",
+      "number": 12,
+      "subject_id": "tcpip",
+      "text": "서버를 관리하는 Kim 사원은 회사지침으로 기존 홈페이지를 http방식에서 https방식으로 변경하라고 지시가 내려져서 https의 특징에 대하여 알아보고 있는 중이다. 다음 보기 중 에서 https의 특징으로 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "기존 http보다 암호화된 SSL/TLS를 전달한다."
+        },
+        {
+          "key": 2,
+          "text": "tcp/80번 포트를 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "udp/443번 포트를 사용한다."
+        },
+        {
+          "key": 4,
+          "text": "인증이 필요하지 않아 사용하기가 간편하다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": true,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_013",
+      "number": 13,
+      "subject_id": "tcpip",
+      "text": "네트워크를 관리하는 Kim 사원은 스위치에 원격접속시 Telnet을 이용하여 작업을 주로 진행하였지만 신규로 도입 되는 스위치에는 SSH로 접속 방법을 교체하고자 한다. 다 음 중 SSH의 특징을 검토 중 내용이 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Telnet에 비하여 보안성이 뛰어나다."
+        },
+        {
+          "key": 2,
+          "text": "ssh1은 RSA 암호화를 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "ssh2는 RSA 외 더 다양한 키교환방식을 지원한다."
+        },
+        {
+          "key": 4,
+          "text": "tcp/23번을 이용한다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_014",
+      "number": 14,
+      "subject_id": "tcpip",
+      "text": "TCP 3-Way Handshaking 연결수립 절차의 1,2,3단계 중 3 단계에서 사용되는 TCP 제어 Flag는 무엇인가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SYN"
+        },
+        {
+          "key": 2,
+          "text": "RST"
+        },
+        {
+          "key": 3,
+          "text": "SYN, ACK"
+        },
+        {
+          "key": 4,
+          "text": "ACK"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_015",
+      "number": 15,
+      "subject_id": "tcpip",
+      "text": "UDP 패킷의 헤더에 속하지 않는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Source Port"
+        },
+        {
+          "key": 2,
+          "text": "Destination Port"
+        },
+        {
+          "key": 3,
+          "text": "Window"
+        },
+        {
+          "key": 4,
+          "text": "Checksum"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_016",
+      "number": 16,
+      "subject_id": "general",
+      "text": "패킷 전송의 최적 경로를 위해 다른 라우터들로부터 정보를 수집하는데, 최대 홉이 15를 넘지 못하는 프로토콜은? 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 2급 ◐ 2020년 08월 23일 필기 기출문제",
+      "options": [
+        {
+          "key": 1,
+          "text": "RIP"
+        },
+        {
+          "key": 2,
+          "text": "OSPF"
+        },
+        {
+          "key": 3,
+          "text": "IGP"
+        },
+        {
+          "key": 4,
+          "text": "EGP"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_017",
+      "number": 17,
+      "subject_id": "general",
+      "text": "네트워크 및 서버관리자 Kim 사원은 ′www.icqa.or.kr′이라 는 사이트를 도메인에 IP 등록을 하였다. 해당 IP가 제대로 도메인에 등록되었는지 확인하는 (A)에 들어가야 할 명령어 는? (단. 윈도우 계열의 명령프롬프트(cmd)에서 실행하였 다.)",
+      "options": [
+        {
+          "key": 1,
+          "text": "ping"
+        },
+        {
+          "key": 2,
+          "text": "tracert"
+        },
+        {
+          "key": 3,
+          "text": "nbtatat"
+        },
+        {
+          "key": 4,
+          "text": "nslookup"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_018",
+      "number": 18,
+      "subject_id": "general",
+      "text": "패킷교환의 특징에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "패킷과 함께 오류제어를 함으로서 고품질/고신뢰성 통신"
+        },
+        {
+          "key": 2,
+          "text": "패킷을 전송 시에만 전송로를 사용하므로 설비 이용 효"
+        },
+        {
+          "key": 3,
+          "text": "패킷교환의 방식으로는 연결형인 가상회선방식과 비연결"
+        },
+        {
+          "key": 4,
+          "text": "복수의 상대방과는 통신이 불가능하다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_019",
+      "number": 19,
+      "subject_id": "general",
+      "text": "프로토콜의 기본적인 기능 중에서 수신측에서 데이터 전송 량이나 전송 속도 등을 조절하는 기능은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Flow Control"
+        },
+        {
+          "key": 2,
+          "text": "Error Control"
+        },
+        {
+          "key": 3,
+          "text": "Sequence Control"
+        },
+        {
+          "key": 4,
+          "text": "Connection Control"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_020",
+      "number": 20,
+      "subject_id": "general",
+      "text": "다음 (A) 안에 들어가는 용어 중 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "VLAN"
+        },
+        {
+          "key": 2,
+          "text": "NAT"
+        },
+        {
+          "key": 3,
+          "text": "VPN"
+        },
+        {
+          "key": 4,
+          "text": "Public Network"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_021",
+      "number": 21,
+      "subject_id": "general",
+      "text": "OSI 7 Layer에서 암호/복호, 인증, 압축 등의 기능이 수행 되는 계층은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Transport Layer"
+        },
+        {
+          "key": 2,
+          "text": "Datalink Layer"
+        },
+        {
+          "key": 3,
+          "text": "Presentation Layer"
+        },
+        {
+          "key": 4,
+          "text": "Application Layer"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_022",
+      "number": 22,
+      "subject_id": "general",
+      "text": "LAN의 구성형태 중 중앙의 제어점으로부터 모든 기기가 점 대 점(Point to Point) 방식으로 연결된 구성형태는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "링형 구성"
+        },
+        {
+          "key": 2,
+          "text": "스타형 구성"
+        },
+        {
+          "key": 3,
+          "text": "버스형 구성"
+        },
+        {
+          "key": 4,
+          "text": "트리형 구성"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_023",
+      "number": 23,
+      "subject_id": "general",
+      "text": "다음에서 설명하는 전송매체는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Coaxial Cable"
+        },
+        {
+          "key": 2,
+          "text": "Twisted Pair"
+        },
+        {
+          "key": 3,
+          "text": "Thin Cable"
+        },
+        {
+          "key": 4,
+          "text": "Optical Fiber"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_024",
+      "number": 24,
+      "subject_id": "general",
+      "text": "아래 내용에서 IPv6의 일반적인 특징만을 나열한 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "A, B, C, D"
+        },
+        {
+          "key": 2,
+          "text": "A, C, D, E"
+        },
+        {
+          "key": 3,
+          "text": "B, C, D, E"
+        },
+        {
+          "key": 4,
+          "text": "B, D, E, F"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_025",
+      "number": 25,
+      "subject_id": "general",
+      "text": "다음 내용 중 (A)에 들어갈 내용은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IDC (Internet Data Center)"
+        },
+        {
+          "key": 2,
+          "text": "IPS (Intrusion Prevention System)"
+        },
+        {
+          "key": 3,
+          "text": "IDS (Intrusion Detection System)"
+        },
+        {
+          "key": 4,
+          "text": "IOS (International Organization for Standardization)"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_026",
+      "number": 26,
+      "subject_id": "general",
+      "text": "다음은 몇세대 이동 통신인가? 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 2급 ◐ 2020년 08월 23일 필기 기출문제",
+      "options": [
+        {
+          "key": 1,
+          "text": "5세대 이동 통신"
+        },
+        {
+          "key": 2,
+          "text": "2세대 이동 통신"
+        },
+        {
+          "key": 3,
+          "text": "3세대 이동 통신"
+        },
+        {
+          "key": 4,
+          "text": "4세대 이동 통신"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_027",
+      "number": 27,
+      "subject_id": "general",
+      "text": "OSI 7 Layer 중 네트워크계층(Network Layer)에 속하는 장 치는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Router"
+        },
+        {
+          "key": 2,
+          "text": "Bridge"
+        },
+        {
+          "key": 3,
+          "text": "Repeater"
+        },
+        {
+          "key": 4,
+          "text": "LAN Card"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_028",
+      "number": 28,
+      "subject_id": "nos",
+      "text": "Linux에서 사용자에 대한 패스워드의 만료기간 및 시간 정 보를 변경하는 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "chage"
+        },
+        {
+          "key": 2,
+          "text": "chgrp"
+        },
+        {
+          "key": 3,
+          "text": "chmod"
+        },
+        {
+          "key": 4,
+          "text": "usermod"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_029",
+      "number": 29,
+      "subject_id": "nos",
+      "text": "Linux 디렉터리 구성에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "/tmp - 임시파일이 저장되는 디렉터리"
+        },
+        {
+          "key": 2,
+          "text": "/boot - 시스템이 부팅 될 때 부팅 가능한 커널 이미지"
+        },
+        {
+          "key": 3,
+          "text": "/var - 시스템의 로그 파일과 메일이 저장되는 위치"
+        },
+        {
+          "key": 4,
+          "text": "/usr - 사용자 계정이 위치하는 파티션 위치"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_030",
+      "number": 30,
+      "subject_id": "nos",
+      "text": "컴퓨터가 부팅될 수 있도록 Linux 운영체제의 핵이 되는 커 널을 주 기억 장소로 상주시키는데 사용되는 부트 로더는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "GRUB"
+        },
+        {
+          "key": 2,
+          "text": "MBR"
+        },
+        {
+          "key": 3,
+          "text": "CMOS"
+        },
+        {
+          "key": 4,
+          "text": "SWAP"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_031",
+      "number": 31,
+      "subject_id": "nos",
+      "text": "Linux 시스템에서 특정 파일의 권한이 ′-rwxr-x--x′ 이다. 이 파일에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "소유자는 읽기 권한, 쓰기 권한, 실행 권한을 갖는다."
+        },
+        {
+          "key": 2,
+          "text": "소유자와 같은 그룹을 제외한 다른 모든 사용자는 실행"
+        },
+        {
+          "key": 3,
+          "text": "이 파일의 모드는 ′751′ 이다."
+        },
+        {
+          "key": 4,
+          "text": "동일한 그룹에 속한 사용자는 실행 권한만을 갖는다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_032",
+      "number": 32,
+      "subject_id": "nos",
+      "text": "Linux에서 프로세스와 관련된 명령어에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "kill - 프로세스를 종료시키는 명령어"
+        },
+        {
+          "key": 2,
+          "text": "nice - 프로세스의 우선순위를 변경하는 명령어"
+        },
+        {
+          "key": 3,
+          "text": "pstree - 프로세스를 트리형태로 보여주는 명령어"
+        },
+        {
+          "key": 4,
+          "text": "top - 가장 우선순위가 높은 프로세스를 보여주는 명령"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_033",
+      "number": 33,
+      "subject_id": "nos",
+      "text": "다음은 Linux 시스템의 계정정보가 담긴 ′/etc/passwd′ 의 내용이다. 다음의 설명 중 옳지 않은 것은? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
+      "options": [
+        {
+          "key": 1,
+          "text": "사용자 계정의 ID는 ′user1′ 이다."
+        },
+        {
+          "key": 2,
+          "text": "패스워드는 ′x′ 이다."
+        },
+        {
+          "key": 3,
+          "text": "사용자의 UID와 GID는 500번이다."
+        },
+        {
+          "key": 4,
+          "text": "사용자의 기본 Shell은 ′/bin/bash′ 이다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_034",
+      "number": 34,
+      "subject_id": "nos",
+      "text": "Linux에 존재하는 데몬에 대한 설명 중 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "crond : 호스트 네임을 IP 주소로 변환하는 DNS 데몬"
+        },
+        {
+          "key": 2,
+          "text": "httpd : 리눅스에 원격 접속된 사용자에 대한 정보를 알"
+        },
+        {
+          "key": 3,
+          "text": "kerneld : 필요한 커널 모듈을 동적으로 적재해주는 데몬"
+        },
+        {
+          "key": 4,
+          "text": "named : inetd 프로토콜을 지원하는 데몬"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_035",
+      "number": 35,
+      "subject_id": "nos",
+      "text": "Linux에서 서버를 종료하기 위해 ′shutdown - h +30′을 입 력하였으나 갑자기 어떤 작업을 추가로 하게 되어 앞서 내 렸던 명령을 취소하려고 한다. 이때 필요한 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "shutdown –c"
+        },
+        {
+          "key": 2,
+          "text": "shutdown -v"
+        },
+        {
+          "key": 3,
+          "text": "shutdown –x"
+        },
+        {
+          "key": 4,
+          "text": "shutdown -z"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_036",
+      "number": 36,
+      "subject_id": "nos",
+      "text": "Linux에서 DNS의 SOA(Start Of Authority) 레코드에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Zone 파일은 항상 SOA로 시작한다."
+        },
+        {
+          "key": 2,
+          "text": "해당 Zone에 대한 네임서버를 유지하기 위한 기본적인"
+        },
+        {
+          "key": 3,
+          "text": "Refresh는 주 서버와 보조 서버의 동기 주기를 설정한"
+        },
+        {
+          "key": 4,
+          "text": "TTL 값이 길면 DNS의 부하가 늘어난다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_037",
+      "number": 37,
+      "subject_id": "nos",
+      "text": "Windows Server 2016의 DNS 서버에서 정방향/역방향 조 회 영역(Public/Inverse Domain Zone)에 대한 설명으로 올 바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "정방향 조회 영역은 도메인 주소를 IP 주소로 변환하는"
+        },
+        {
+          "key": 2,
+          "text": "정방향 조회 영역에서 이름은 ′x.x.x.in-addr.arpa′의 형"
+        },
+        {
+          "key": 3,
+          "text": "역방향 조회 영역은 도메인 주소를 IP 주소로 변환하는"
+        },
+        {
+          "key": 4,
+          "text": "역방향 조회 영역은 외부 질의에 대해 어떤 IP주소를 응"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_038",
+      "number": 38,
+      "subject_id": "nos",
+      "text": "Windows Server 2016에 설치된 DNS에서 지원하는 레코드 형식 중 실제 도메인 이름과 연결되는 가상 도메인 이름의 레코드 형식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "CNAME"
+        },
+        {
+          "key": 2,
+          "text": "MX"
+        },
+        {
+          "key": 3,
+          "text": "A"
+        },
+        {
+          "key": 4,
+          "text": "PTR"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_039",
+      "number": 39,
+      "subject_id": "equipment",
+      "text": "다음 중 웹서버인 아파치(Apache) 환경 설정 파일은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "named.conf"
+        },
+        {
+          "key": 2,
+          "text": "smb.conf"
+        },
+        {
+          "key": 3,
+          "text": "lilo.conf"
+        },
+        {
+          "key": 4,
+          "text": "httpd.conf"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_040",
+      "number": 40,
+      "subject_id": "equipment",
+      "text": "서버 담당자 Park 사원은 Windows Server 2016에서 성능 모니터를 운영하여 서버의 성능을 분석하고자 한다. 다음 중 성능 모니터로 미리 정의한 일정한 주기로 특정 데이터 를 수집하고자 성능 모니터 도구를 시작하기 위한 명령어로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "perfmon"
+        },
+        {
+          "key": 2,
+          "text": "msconfig"
+        },
+        {
+          "key": 3,
+          "text": "dfrg"
+        },
+        {
+          "key": 4,
+          "text": "secpol"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_041",
+      "number": 41,
+      "subject_id": "equipment",
+      "text": "서버 담당자 Park 사원은 Windows Server 2016에서 시스 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 2급 ◐ 2020년 08월 23일 필기 기출문제 템을 감시하고자 이벤트뷰어 서비스를 점검하려 한다. Windows Server 2016 이벤트 뷰어에는 시스템을 감시하는 4가지 항목의 Windows 로그가 있다. 다음 중 이벤트 뷰어 Windows 로그에 속하지 않는 항목은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "보안"
+        },
+        {
+          "key": 2,
+          "text": "Setup"
+        },
+        {
+          "key": 3,
+          "text": "시스템"
+        },
+        {
+          "key": 4,
+          "text": "사용자 권한"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_042",
+      "number": 42,
+      "subject_id": "equipment",
+      "text": "서버 담당자 Park 사원은 데이터를 안전하게 보호하는 일을 담당하였다. 도난 발생 시 데이터를 보호하기 위해 강력한 암호화를 사용해 데이터를 보호하는 Windows 기능을 선택 하여 로컬 보안이 없는 지사나 데이터센터의 경우 완벽한 솔루션을 지원할 수 있도록 하고자 한다. 다음 중 이러한 기능을 지원하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "BitLocker"
+        },
+        {
+          "key": 2,
+          "text": "NTLM"
+        },
+        {
+          "key": 3,
+          "text": "Encryption"
+        },
+        {
+          "key": 4,
+          "text": "vTPM"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_043",
+      "number": 43,
+      "subject_id": "equipment",
+      "text": "서버 담당자 Park 사원은 Windows Server 2016에서 사용 자 및 그룹을 관리하는 업무를 부여받았다. Windows Server 2016에는 기본적으로 3개의 로컬 사용자 계정이 생 성되어 있는데, 다음 중 기본적으로 생성되는 계정이 아닌 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Administrator"
+        },
+        {
+          "key": 2,
+          "text": "DefaultAccount"
+        },
+        {
+          "key": 3,
+          "text": "Guest"
+        },
+        {
+          "key": 4,
+          "text": "root"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_044",
+      "number": 44,
+      "subject_id": "equipment",
+      "text": "서버 담당자 Park 사원은 Hyper-V 부하와 서비스의 중단 없이 Windows Server 2012 R2 클러스터 노드에서 Windows Server 2016으로 운영체제 업그레이드를 진행하 려고 한다. 다음 중 작업에 적절한 기능은 무엇인가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "롤링 클러스터 업그레이드"
+        },
+        {
+          "key": 2,
+          "text": "중첩 가상화"
+        },
+        {
+          "key": 3,
+          "text": "gpupdate"
+        },
+        {
+          "key": 4,
+          "text": "NanoServer"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_045",
+      "number": 45,
+      "subject_id": "equipment",
+      "text": "서버 담당자 Park 사원은 Windows Server 2016에서 폴더 에 저장할 수 있는 용량을 제한하고, 특정한 파일의 유형은 업로드하지 못하도록 설정하고자 한다. 이러한 설정을 통해 서 서버 담당자는 좀 더 유연하고 안전한 파일서버를 구축 할 수 있게 된다. 다음 중 서버 담당자가 구축해야 할 적절 한 서비스는 무엇인가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "FSRM(File Server Resource Manager)"
+        },
+        {
+          "key": 2,
+          "text": "FTP(File Transfer Protocol)"
+        },
+        {
+          "key": 3,
+          "text": "DFS(Distribute File System)"
+        },
+        {
+          "key": 4,
+          "text": "Apache Server"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_046",
+      "number": 46,
+      "subject_id": "equipment",
+      "text": "로드밸런싱(Load Balancing)에 대한 설명이 맞는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "물리적인 망 구성과는 상관없이 가상적으로 구성된 근거"
+        },
+        {
+          "key": 2,
+          "text": "사용량과 처리량을 증가시키고 지연율을 낮추며 응답시"
+        },
+        {
+          "key": 3,
+          "text": "가상머신이 실행되고 있는 물리적 컴퓨터로부터 분리된"
+        },
+        {
+          "key": 4,
+          "text": "웹 브라우저와 서버 간의 통신에서 정보를 암호화하는"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_047",
+      "number": 47,
+      "subject_id": "equipment",
+      "text": "다음은 무엇에 대한 설명인가? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
+      "options": [
+        {
+          "key": 1,
+          "text": "클라이언트-서버 컴퓨팅"
+        },
+        {
+          "key": 2,
+          "text": "클라우드 컴퓨팅"
+        },
+        {
+          "key": 3,
+          "text": "웨어러블 컴퓨팅"
+        },
+        {
+          "key": 4,
+          "text": "임베디드 컴퓨팅"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_048",
+      "number": 48,
+      "subject_id": "equipment",
+      "text": "게이트웨이(Gateway)의 역할로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "전혀 다른 프로토콜을 채용한 네트워크 간의 인터페이스"
+        },
+        {
+          "key": 2,
+          "text": "트위스트 페어 케이블 사용 시 이용되는 네트워크 케이"
+        },
+        {
+          "key": 3,
+          "text": "케이블의 중계점에서 신호를 전기적으로 증폭한다."
+        },
+        {
+          "key": 4,
+          "text": "피지컬 어드레스의 캐시 테이블을 갖는다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_049",
+      "number": 49,
+      "subject_id": "security",
+      "text": "OSI 7계층 중 물리 계층에서만 사용하는 장비로써 근거리통 신망(LAN)의 전송매체상에 흐르는 신호를 정형, 증폭, 중계 하는 것은 무엇인가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Router"
+        },
+        {
+          "key": 2,
+          "text": "Repeater"
+        },
+        {
+          "key": 3,
+          "text": "Bridge"
+        },
+        {
+          "key": 4,
+          "text": "Gateway"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20200823_050",
+      "number": 50,
+      "subject_id": "security",
+      "text": "전송 매체에서 10Base-T 표기가 의미하는 바가 올바른 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "전송속도: 10kbps, 전송방식: 베이스밴드, 전송매체: 꼬"
+        },
+        {
+          "key": 2,
+          "text": "전송속도: 10Mbps, 전송방식: 브로드스밴드, 전송매체:"
+        },
+        {
+          "key": 3,
+          "text": "전송속도: 10Mbps, 전송방식: 베이스밴드, 전송매체: 꼬"
+        },
+        {
+          "key": 4,
+          "text": "전송속도: 10Mbps, 전송방식: 브로드스밴드, 전송매체:"
+        }
+      ],
+      "answer": 3,
+      "has_figure": true,
+      "explanation": null
+    }
+  ]
+}

@@ -1,0 +1,1628 @@
+{
+  "cert_id": "na1",
+  "date": "20221030",
+  "label": "2022년 10월 30일",
+  "total_questions": 60,
+  "questions": [
+    {
+      "id": "na1_20221030_001",
+      "number": 1,
+      "subject_id": "tcpip",
+      "text": "IP Address ′128.10.2.3′을 바이너리 코드로 변환한 값은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "11000000 00001010 00000010 00000011"
+        },
+        {
+          "key": 2,
+          "text": "10000000 00001010 00000010 00000011"
+        },
+        {
+          "key": 3,
+          "text": "10000000 10001010 00000010 00000011"
+        },
+        {
+          "key": 4,
+          "text": "10000000 00001010 10000010 00000011"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_002",
+      "number": 2,
+      "subject_id": "tcpip",
+      "text": "B Class에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Network ID는 128.0 ~ 191.255 이고, Host ID는 0.1 ~"
+        },
+        {
+          "key": 2,
+          "text": "IP Address가 150.32.25.3인 경우, Network ID는 150.32"
+        },
+        {
+          "key": 3,
+          "text": "Multicast 등과 같이 특수한 기능이나 실험을 위해 사용된"
+        },
+        {
+          "key": 4,
+          "text": "Host ID가 255.255일 때는 메시지가 네트워크 전체로 브"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_003",
+      "number": 3,
+      "subject_id": "tcpip",
+      "text": "네트워크 ID ′210.182.73.0′을 6개의 서브넷으로 나누고, 각 서브넷 마다 적어도 30개 이상의 Host ID를 필요로 한다. 적 절한 서브넷 마스크 값은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "255.255.255.224"
+        },
+        {
+          "key": 2,
+          "text": "255.255.255.192"
+        },
+        {
+          "key": 3,
+          "text": "255.255.255.128"
+        },
+        {
+          "key": 4,
+          "text": "255.255.255.0"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_004",
+      "number": 4,
+      "subject_id": "tcpip",
+      "text": "IPv6에서 사용되는 전송 방식이 아닌 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Anycast"
+        },
+        {
+          "key": 2,
+          "text": "Unicast"
+        },
+        {
+          "key": 3,
+          "text": "Multicast"
+        },
+        {
+          "key": 4,
+          "text": "Broadcast"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_005",
+      "number": 5,
+      "subject_id": "tcpip",
+      "text": "IPv6은 몇 비트의 Address 필드를 가지고 있는가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "32"
+        },
+        {
+          "key": 2,
+          "text": "64"
+        },
+        {
+          "key": 3,
+          "text": "128"
+        },
+        {
+          "key": 4,
+          "text": "256"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_006",
+      "number": 6,
+      "subject_id": "tcpip",
+      "text": "TCP 헤더 포맷에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Checksum은 1의 보수라 불리는 수학적 기법을 사용하여"
+        },
+        {
+          "key": 2,
+          "text": "Source 포트 32bit 필드는 TCP 연결을 위해 지역 호스트"
+        },
+        {
+          "key": 3,
+          "text": "Sequence Number 32bit 필드는 세그먼트들이 수신지 호"
+        },
+        {
+          "key": 4,
+          "text": "Data Offset 4bit 필드는 32bit 워드에서 TCP 헤더의 크"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_007",
+      "number": 7,
+      "subject_id": "tcpip",
+      "text": "IP 헤더 필드들 중 처리량, 전달 지연, 신뢰성, 우선순위 등 을 지정해 주는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IHL(IP Header Length)"
+        },
+        {
+          "key": 2,
+          "text": "TOS(Type of Service)"
+        },
+        {
+          "key": 3,
+          "text": "TTL(Time To Live)"
+        },
+        {
+          "key": 4,
+          "text": "Header Checksum"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_008",
+      "number": 8,
+      "subject_id": "tcpip",
+      "text": "UDP 헤더 포맷에 대한 설명으로 옳지 않은 것은? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
+      "options": [
+        {
+          "key": 1,
+          "text": "Source Port : 데이터를 보내는 송신측의 응용 프로세스"
+        },
+        {
+          "key": 2,
+          "text": "Destination Port : 데이터를 받는 수신측의 응용 프로세"
+        },
+        {
+          "key": 3,
+          "text": "Length : 데이터 길이를 제외한 헤더 길이이다."
+        },
+        {
+          "key": 4,
+          "text": "Checksum : 전송 중에 세그먼트가 손상되지 않았음을 확"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_009",
+      "number": 9,
+      "subject_id": "tcpip",
+      "text": "ICMP 프로토콜의 기능에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "모든 호스트가 성공적으로 통신하기 위해서 각 하드웨어"
+        },
+        {
+          "key": 2,
+          "text": "네트워크 구획 내의 모든 라우터의 주소를 결정하기 위해"
+        },
+        {
+          "key": 3,
+          "text": "Ping 명령어를 사용하여 두 호스트간 연결의 신뢰성을 테"
+        },
+        {
+          "key": 4,
+          "text": "원래의 데이터그램이 TTL을 초과할 때 시간초과 메시지를"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_010",
+      "number": 10,
+      "subject_id": "tcpip",
+      "text": "RARP에 대한 설명 중 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "시작지 호스트에서 여러 목적지 호스트로 데이터를 전송"
+        },
+        {
+          "key": 2,
+          "text": "TCP/IP 프로토콜의 IP에서 접속없이 데이터의 전송을 수"
+        },
+        {
+          "key": 3,
+          "text": "하드웨어 주소를 IP Address로 변환하기 위해서 사용한"
+        },
+        {
+          "key": 4,
+          "text": "IP에서의 오류제어를 위하여 사용되며, 시작지 호스트의"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_011",
+      "number": 11,
+      "subject_id": "tcpip",
+      "text": "다음 TCP/IP 프로토콜 가운데 가장 하위 계층에 속하는 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "UDP"
+        },
+        {
+          "key": 2,
+          "text": "FTP"
+        },
+        {
+          "key": 3,
+          "text": "IP"
+        },
+        {
+          "key": 4,
+          "text": "TCP"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_012",
+      "number": 12,
+      "subject_id": "tcpip",
+      "text": "TCP/IP protocols 환경에서 Flie 전송을 위해 사용하는 FTP protocol에 대한 설명 중 올바르게 설명한 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "파일 전송 프로토콜로 ASCII 코드를 작성된 파일만 전송"
+        },
+        {
+          "key": 2,
+          "text": "데이터 전송은 21번 포트를 사용하여 연결 제어는 20포"
+        },
+        {
+          "key": 3,
+          "text": "리눅스 환경에서 사용 가능한 명령들로 ls , pwd , get ,"
+        },
+        {
+          "key": 4,
+          "text": "서비스에 등록되지 않은 익명의 사용자을 위한 계정은"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_013",
+      "number": 13,
+      "subject_id": "tcpip",
+      "text": "다음은 RFC 1918 Private IP address에 대한 설명이다. 올 바르게 설명한 것을 고르시오.",
+      "options": [
+        {
+          "key": 1,
+          "text": "공인 IP address와 같이 공용망에서 사용될 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "외부 인터넷 연결이 안 된 장치에 할당될 수 있다."
+        },
+        {
+          "key": 3,
+          "text": "중복 할당되어 충돌된 주소는 제거될 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "공인 IP address와 함께 KR-NIC에서 할당된다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_014",
+      "number": 14,
+      "subject_id": "tcpip",
+      "text": "(A) 안에 들어가는 용어 중 올바른 것은? 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 1급 ◐ 2022년 10월 30일 필기 기출문제",
+      "options": [
+        {
+          "key": 1,
+          "text": "L2TP"
+        },
+        {
+          "key": 2,
+          "text": "SSH"
+        },
+        {
+          "key": 3,
+          "text": "PPTP"
+        },
+        {
+          "key": 4,
+          "text": "SSL"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_015",
+      "number": 15,
+      "subject_id": "tcpip",
+      "text": "네트워크 및 서버 관리자 Kim 사원은 장기간 출장명령을 받 은 관계로 회사 내부에 있는 업무용 PC에 원격데스크톱 (Terminal service)을 설정하려고 한다. 하지만 업무용 PC가 공인IP가 아니라 IP공유기 내부에 있는 사설IP로 사용 중이 다. 외부에서 이 업무용 PC에 원격데스크톱(Terminal service)을 사용하기 위한 설정에 있어 옳은 것은?[단, IP 공유기에 할당 공인 IP는 210.104.177.55, 업무용 PC에 할 당된 사설 IP(공유기 내부)는 192.168.0.22, 업무용 PC는 원격설정이 되어 있음 (TCP/3389)]",
+      "options": [
+        {
+          "key": 1,
+          "text": "방화벽에서 192.168.0.22번으로 tcp/3389번에 대한 접"
+        },
+        {
+          "key": 2,
+          "text": "IP 공유기 내부에 210.104.177.55번에 포트포워딩을 설"
+        },
+        {
+          "key": 3,
+          "text": "업무용 PC에 반드시 Windows login password를 설정"
+        },
+        {
+          "key": 4,
+          "text": "업무용 PC에 반드시 CMOS password를 설정한다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_016",
+      "number": 16,
+      "subject_id": "general",
+      "text": "HTTP의 응답 메시지(Response Message) 내의 상태 라인 (Status Line)은 응답 메시지의 상태를 나타낸다. 다음 중 클라이언트가 요청한 메소드에 대해 응답할 때, 요청된 메 소드가 성공적으로 수행되었을 경우 보내는 상태 코드는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "503"
+        },
+        {
+          "key": 2,
+          "text": "302"
+        },
+        {
+          "key": 3,
+          "text": "100"
+        },
+        {
+          "key": 4,
+          "text": "200"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_017",
+      "number": 17,
+      "subject_id": "general",
+      "text": "전자 메일의 안정적인 전송을 위해 제안된 프로토콜로 RFC 821에 규정되어 있는 메일 전송 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "POP3"
+        },
+        {
+          "key": 2,
+          "text": "IMAP"
+        },
+        {
+          "key": 3,
+          "text": "SMTP"
+        },
+        {
+          "key": 4,
+          "text": "NNTP"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_018",
+      "number": 18,
+      "subject_id": "general",
+      "text": "전송한 프레임의 순서에 관계없이 단지 손실된 프레임만을 재전송하는 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Selective-repeat ARQ"
+        },
+        {
+          "key": 2,
+          "text": "Stop-and-wait ARQ"
+        },
+        {
+          "key": 3,
+          "text": "Go-back-N ARQ"
+        },
+        {
+          "key": 4,
+          "text": "Adaptive ARQ"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_019",
+      "number": 19,
+      "subject_id": "general",
+      "text": "다음 설명에 알맞은 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP(Transmission Control Protocol)"
+        },
+        {
+          "key": 2,
+          "text": "SIP(Session Initiation Protocol)"
+        },
+        {
+          "key": 3,
+          "text": "RSVP(ReSouece reserVation Protocol)"
+        },
+        {
+          "key": 4,
+          "text": "RTP(Real-time Transfer Protocol)"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_020",
+      "number": 20,
+      "subject_id": "general",
+      "text": "광케이블을 이용하는 통신에서 저손실의 파장대를 이용하여 광 파장이 서로 다른 복수의 광 신호를 한 가닥의 광섬유에 다중화 시키는 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "코드 분할 다중 방식(CDM)"
+        },
+        {
+          "key": 2,
+          "text": "직교 분할 다중 방식(OFDM)"
+        },
+        {
+          "key": 3,
+          "text": "시간 분할 다중 방식(TDM)"
+        },
+        {
+          "key": 4,
+          "text": "파장 분할 다중 방식(WDM)"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_021",
+      "number": 21,
+      "subject_id": "general",
+      "text": "네트워크 계층에서 데이터의 단위는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "트래픽"
+        },
+        {
+          "key": 2,
+          "text": "프레임"
+        },
+        {
+          "key": 3,
+          "text": "세그먼트"
+        },
+        {
+          "key": 4,
+          "text": "패킷"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_022",
+      "number": 22,
+      "subject_id": "general",
+      "text": "다음의 설명에 해당되는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Broadband"
+        },
+        {
+          "key": 2,
+          "text": "Baseband"
+        },
+        {
+          "key": 3,
+          "text": "Multiplexing"
+        },
+        {
+          "key": 4,
+          "text": "Encapsulation"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_023",
+      "number": 23,
+      "subject_id": "general",
+      "text": "다음에서 설명하는 오류검사 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "해밍 코드"
+        },
+        {
+          "key": 2,
+          "text": "블록합 검사"
+        },
+        {
+          "key": 3,
+          "text": "순환중복 검사"
+        },
+        {
+          "key": 4,
+          "text": "패리티 검사"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_024",
+      "number": 24,
+      "subject_id": "general",
+      "text": "디지털 변조로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ASK"
+        },
+        {
+          "key": 2,
+          "text": "FSK"
+        },
+        {
+          "key": 3,
+          "text": "PM"
+        },
+        {
+          "key": 4,
+          "text": "QAM"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_025",
+      "number": 25,
+      "subject_id": "general",
+      "text": "PCM 방식에서 아날로그 신호의 디지털 신호 생성 과정으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "아날로그신호 - 표본화 - 부호화 - 양자화 - 디지털신"
+        },
+        {
+          "key": 2,
+          "text": "아날로그신호 - 표본화 - 양자화 - 부호화 - 디지털신"
+        },
+        {
+          "key": 3,
+          "text": "아날로그신호 - 양자화 - 표본화 - 부호화 - 디지털신"
+        },
+        {
+          "key": 4,
+          "text": "아날로그신호 - 양자화 - 부호화 - 표본화 - 디지털신"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_026",
+      "number": 26,
+      "subject_id": "general",
+      "text": "OSI 7 Layer에 Protocol을 연결한 것 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Application : FTP, SNMP, Telnet"
+        },
+        {
+          "key": 2,
+          "text": "Transport : TCP, SPX, UDP"
+        },
+        {
+          "key": 3,
+          "text": "DataLink : NetBIOS, NetBEUI"
+        },
+        {
+          "key": 4,
+          "text": "Network : ARP, DDP, IPX, IP"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_027",
+      "number": 27,
+      "subject_id": "general",
+      "text": "네트워크 액세스 방법에 속하지 않는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "CSMA/CA"
+        },
+        {
+          "key": 2,
+          "text": "CSMA/CD"
+        },
+        {
+          "key": 3,
+          "text": "POSIX"
+        },
+        {
+          "key": 4,
+          "text": "Token Pass"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_028",
+      "number": 28,
+      "subject_id": "general",
+      "text": "Windows Server 2016 Hyper-V에서 특정 시간 지점 이미 지를 쉽게 생성할 수 있는 기능으로 이 특정 시간 지점 이 미지를 이용해 VM의 특정 시점 상태로 손쉽게 복구할 수 있다. 이 기능을 무엇이라 하는가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Production Checkpoint"
+        },
+        {
+          "key": 2,
+          "text": "Alternate Credentials Support"
+        },
+        {
+          "key": 3,
+          "text": "Integration Service"
+        },
+        {
+          "key": 4,
+          "text": "Update Manager"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_029",
+      "number": 29,
+      "subject_id": "nos",
+      "text": "′runlevel 5′ 로 로그인 되어 있는 상태에서 Apache에 소 스컴파일 설치를 하여 ′/etc/init.d′ 의 경로에 httpd 데몬 shell script를 생성하여 정상적인 실행을 확인하였다. 해당 데몬을 재부팅후에 자동으로 실행되도록 하는 방법으로 알 맞은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "systemctl restart httpd.service"
+        },
+        {
+          "key": 2,
+          "text": "/etc/init.d/httpd restart"
+        },
+        {
+          "key": 3,
+          "text": "chkconfig --list | grep httpd"
+        },
+        {
+          "key": 4,
+          "text": "chkconfig --level 5 httpd on"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_030",
+      "number": 30,
+      "subject_id": "nos",
+      "text": "네임서버 존(Zone) 파일의 ORIGIN을 의미하는 특수 문자로 Public Domain을 의미하는 문자로 알맞은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "@"
+        },
+        {
+          "key": 2,
+          "text": "."
+        },
+        {
+          "key": 3,
+          "text": "#"
+        },
+        {
+          "key": 4,
+          "text": "$"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_031",
+      "number": 31,
+      "subject_id": "nos",
+      "text": "Apache 설정파일인 ′httpd.conf′ 에서 특정 디렉터리에 대 한 접근방식을 ′All′로 설정하고, 해당 디렉터리에 ′.htaccess′ 파일을 생성하여 옵션을 변경 할 수 있도록 해 주는 설정은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "AllowOverride"
+        },
+        {
+          "key": 2,
+          "text": "AccessFileName"
+        },
+        {
+          "key": 3,
+          "text": "Limit"
+        },
+        {
+          "key": 4,
+          "text": "Indexes"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_032",
+      "number": 32,
+      "subject_id": "nos",
+      "text": "Linux에서 키보드 실행중지 [Ctrl + c]입력 시 보내지는 시 그널로 알맞은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "1) SIGHUP"
+        },
+        {
+          "key": 2,
+          "text": "2) SIGINT"
+        },
+        {
+          "key": 3,
+          "text": "9) SIGKILL"
+        },
+        {
+          "key": 4,
+          "text": "19) SIGSTOP"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_033",
+      "number": 33,
+      "subject_id": "nos",
+      "text": "Park사원은 회사내 Windows Server 2016의 IIS를 이용해 만든 FTP서버의 설정을 패시브 모드로 바꾸고 데이터 교환 을 위한 포트를 60000~60100번 포트로 변경하고자 한다. 이 때 방화벽 Inbound Rules에서 포트를 입력할 때 올바른 형식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "21,60000-60100"
+        },
+        {
+          "key": 2,
+          "text": "21,60000:60100"
+        },
+        {
+          "key": 3,
+          "text": "20,60000:60100"
+        },
+        {
+          "key": 4,
+          "text": "20,60000-60100"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_034",
+      "number": 34,
+      "subject_id": "nos",
+      "text": "서버 담당자 Park 사원은 Hyper-V 부하와 서비스의 중단 없이 Windows Server 2012 R2 클러스터 노드에서 Windows Server 2016으로 운영체제 업그레이드를 진행하 려고 한다. 다음 중 작업에 적절한 기능은 무엇인가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "롤링 클러스터 업그레이드"
+        },
+        {
+          "key": 2,
+          "text": "중첩 가상화"
+        },
+        {
+          "key": 3,
+          "text": "gpupdate"
+        },
+        {
+          "key": 4,
+          "text": "NanoServer"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_035",
+      "number": 35,
+      "subject_id": "nos",
+      "text": "사용자 권한이 1777인 디렉터리에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "누구나 접근 가능한 디렉터리이다."
+        },
+        {
+          "key": 2,
+          "text": "누구나 모든 파일을 읽고 쓸 수 있다."
+        },
+        {
+          "key": 3,
+          "text": "누구나 모든 파일을 수정하고 삭제 할 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "누구나 서브 디렉터리를 생성 할 수 있다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_036",
+      "number": 36,
+      "subject_id": "nos",
+      "text": "Linux 시스템에서 기본적 명령과 자원을 이용하여 시스템의 사양을 살펴보려고 한다. 연결이 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "CPU 종류 조사 : cat /proc/cpuinfo"
+        },
+        {
+          "key": 2,
+          "text": "메모리 사이즈 조사 : free"
+        },
+        {
+          "key": 3,
+          "text": "디스크 사이즈 조사 : top"
+        },
+        {
+          "key": 4,
+          "text": "네트워크 인터페이스 카드 조사 : ifconfig"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_037",
+      "number": 37,
+      "subject_id": "nos",
+      "text": "BIND 관련 설정 파일에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "′named.conf′는 존(Zone) 파일의 위치, 접근 권한에 대"
+        },
+        {
+          "key": 2,
+          "text": "BIND의 설정파일은 ′named.conf′ 파일과 존 파일들로"
+        },
+        {
+          "key": 3,
+          "text": "′named.conf′ 파일 수정시 주석은 ′//′을 사용하고, 존"
+        },
+        {
+          "key": 4,
+          "text": "′named.conf′ 파일에 사용하는 도메인을 등록하고 그"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_038",
+      "number": 38,
+      "subject_id": "nos",
+      "text": "SOA 레코드의 설정 값에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "주 서버 : 주 영역 서버의 도메인 주소를 입력한다."
+        },
+        {
+          "key": 2,
+          "text": "책임자 : 책임자의 주소 및 전화번호를 입력한다."
+        },
+        {
+          "key": 3,
+          "text": "최소 TTL : 각 레코드의 기본 Cache 시간을 지정한다."
+        },
+        {
+          "key": 4,
+          "text": "새로 고침 간격 : 주 서버와 보조 서버간의 통신이 두절"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_039",
+      "number": 39,
+      "subject_id": "nos",
+      "text": "′www.microsoft.com′이란 사이트의 IP Address를 획득하 려고 할 때 Windows Server에서 'cmd'를 이용한 방법으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "netstat www.microsoft.com"
+        },
+        {
+          "key": 2,
+          "text": "nslookup www.microsoft.com"
+        },
+        {
+          "key": 3,
+          "text": "ipconfig www.microsoft.com"
+        },
+        {
+          "key": 4,
+          "text": "telnet www.microsoft.com"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_040",
+      "number": 40,
+      "subject_id": "nos",
+      "text": "Linux 파티션에 담긴 자료를 윈도우 기반 컴퓨터가 공유하 거나, 윈도우 파티션에 담긴 자료를 Linux 기반 컴퓨터가 공 유할 수 있도록 제공하는 서비스로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SAMBA"
+        },
+        {
+          "key": 2,
+          "text": "BIND"
+        },
+        {
+          "key": 3,
+          "text": "IRC"
+        },
+        {
+          "key": 4,
+          "text": "MySQL"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_041",
+      "number": 41,
+      "subject_id": "nos",
+      "text": "Linux의 ′vi′ 명령어 중 변경된 내용을 저장한 후 종료하고 자 할 때 사용해야 할 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": ":wq"
+        },
+        {
+          "key": 2,
+          "text": ":q!"
+        },
+        {
+          "key": 3,
+          "text": ":e!"
+        },
+        {
+          "key": 4,
+          "text": "$"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_042",
+      "number": 42,
+      "subject_id": "equipment",
+      "text": "Linux의 퍼미션(Permission)에 대한 설명 중 옳지 않은 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "파일의 그룹 소유권을 변경하기 위한 명령은 ′chgrp′이"
+        },
+        {
+          "key": 2,
+          "text": "파일의 접근모드를 변경하기 위한 명령은 ′chmod′이다."
+        },
+        {
+          "key": 3,
+          "text": "모든 사용자에게 모든 권한을 부여하려면 권한을 ′666′"
+        },
+        {
+          "key": 4,
+          "text": "파일의 소유권을 변경하기 위한 명령은 ′chown′이다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_043",
+      "number": 43,
+      "subject_id": "equipment",
+      "text": "Sendmail을 이용하여 메일링 리스트를 구성하려고 할 때 수 정할 파일은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "/etc/access"
+        },
+        {
+          "key": 2,
+          "text": "/etc/mail/local-host-names"
+        },
+        {
+          "key": 3,
+          "text": "/etc/aliases"
+        },
+        {
+          "key": 4,
+          "text": "/etc/mail/rejectlist"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_044",
+      "number": 44,
+      "subject_id": "equipment",
+      "text": "DNS 레코드 중 IP Address를 도메인 네임으로 역매핑하는 레코드는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SOA"
+        },
+        {
+          "key": 2,
+          "text": "A"
+        },
+        {
+          "key": 3,
+          "text": "PTR"
+        },
+        {
+          "key": 4,
+          "text": "CNAME"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_045",
+      "number": 45,
+      "subject_id": "equipment",
+      "text": "Windows Server 2016의 ′netstat′ 명령어로 알 수 없는 정 보는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP 접속 프로토콜 정보"
+        },
+        {
+          "key": 2,
+          "text": "ICMP 송수신 통계"
+        },
+        {
+          "key": 3,
+          "text": "UDP 대기용 Open 포트 상태"
+        },
+        {
+          "key": 4,
+          "text": "도메인에 할당된 IP주소 확인"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_046",
+      "number": 46,
+      "subject_id": "equipment",
+      "text": "CISCO 라우터 상에서 OSPF의 Neighbor의 상태를 확인할 수 있는 명령어로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "show ip ospf interface"
+        },
+        {
+          "key": 2,
+          "text": "show ip ospf database"
+        },
+        {
+          "key": 3,
+          "text": "show ip ospf neighbor"
+        },
+        {
+          "key": 4,
+          "text": "show ip ospf border-router"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_047",
+      "number": 47,
+      "subject_id": "equipment",
+      "text": "VLAN(Virtual LAN)에 대한 설명으로 올바르지 않는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "VLAN은 하나 이상의 물리적인 LAN에 속하는 지국들을"
+        },
+        {
+          "key": 2,
+          "text": "VLAN은 물리적 회선이 아닌 소프트웨어에 의해 논리적"
+        },
+        {
+          "key": 3,
+          "text": "지국들의 VLAN 구성을 위한 방식은 수동식, 자동식 그"
+        },
+        {
+          "key": 4,
+          "text": "VLAN의 물리적인 포트에 의한 VLAN 구성 방식은 4계층"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_048",
+      "number": 48,
+      "subject_id": "equipment",
+      "text": "리피터(Repeater)에 대한 설명으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "콜리젼 도메인(Collision Domain)을 나누어 주는 역할을"
+        },
+        {
+          "key": 2,
+          "text": "필터링과 포워딩 기능을 수행한다."
+        },
+        {
+          "key": 3,
+          "text": "전송거리 연장을 위한 장비이다."
+        },
+        {
+          "key": 4,
+          "text": "브로드캐스트 도메인(Broadcast Domain)을 나누어 주는"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_049",
+      "number": 49,
+      "subject_id": "equipment",
+      "text": "서로 다른 형태의 네트워크를 상호 접속하는 장치로 필요할 경우 프로토콜 변환을 수행하는 장치는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Frame Relay Access Device"
+        },
+        {
+          "key": 2,
+          "text": "Remote Access Server"
+        },
+        {
+          "key": 3,
+          "text": "Gateway"
+        },
+        {
+          "key": 4,
+          "text": "Switching Hub"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_050",
+      "number": 50,
+      "subject_id": "equipment",
+      "text": "내부 도메인 라우팅(Intra-domian Routing 또는 Intra-AS Routing) 프로토콜에 해당되지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "RIP"
+        },
+        {
+          "key": 2,
+          "text": "OFPF"
+        },
+        {
+          "key": 3,
+          "text": "IS-IS"
+        },
+        {
+          "key": 4,
+          "text": "BGP"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_051",
+      "number": 51,
+      "subject_id": "equipment",
+      "text": "네트워크를 관리하는 Kim은 옆 회사에서 DNS 스푸핑 공격 을 당해서 일부 계정이 해킹당헀고 이로 인해 개인정보 유 출이 발생하게 되었음을 전해들었다. Kim의 회사에 DNS 스 푸핑 공격을 막기 위해서 보안조치를 회사전체에 매뉴얼을 작성하여 전 부서에 발송하였다. 매뉴얼에 들어갈 내용이 아닌 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "전체 서버 및 업무용 PC의 비밀번호를 변경한다."
+        },
+        {
+          "key": 2,
+          "text": "네트워크 트래픽을 지속적으로 감시한다."
+        },
+        {
+          "key": 3,
+          "text": "Hosts 파일전체를 검사하고 중요 사이트를 미리 기재해"
+        },
+        {
+          "key": 4,
+          "text": "Gateway의 mac address를 동적으로 변환한다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_052",
+      "number": 52,
+      "subject_id": "security",
+      "text": "Brute Force 공격에 대한 설명으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "암호문을 풀기 위해 모든 가능한 암호 키 조합을 적용해"
+        },
+        {
+          "key": 2,
+          "text": "대량의 트래픽을 유발해 네트워크 대역폭을 점유하는 형"
+        },
+        {
+          "key": 3,
+          "text": "네트워크상의 패킷을 가로채 내용을 분석해 정보를 알아"
+        },
+        {
+          "key": 4,
+          "text": "공개 소프트웨어를 통해 다른 사람의 컴퓨터에 침입하여"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_053",
+      "number": 53,
+      "subject_id": "security",
+      "text": "피싱(Phishing)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "개인 정보(Private Data)와 낚시(Fishing)의 합성어로 해"
+        },
+        {
+          "key": 2,
+          "text": "사회 공학적 방법 및 기술적 은닉기법을 이용해서 민감"
+        },
+        {
+          "key": 3,
+          "text": "최근에는 DNS 하이재킹 등을 이용하여 사용자를 위장"
+        },
+        {
+          "key": 4,
+          "text": "개인 정보의 획득을 위해, 은행과 같은 주요 사이트의"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_054",
+      "number": 54,
+      "subject_id": "security",
+      "text": "넷스케이프사에서 전자상거래 등의 보안을 위해 개발한 암 호화 프로토콜로, 서버와 클라이언트 간 인증방식으로 RSA 방식과 X.509를 사용하고, 실제 암호화된 정보는 새로운 암 호화 소켓채널을 통해 전송하는 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "S-HTTP(Secure Hypertext Transfer Protocol)"
+        },
+        {
+          "key": 2,
+          "text": "SET(Secure Electronic Transaction)"
+        },
+        {
+          "key": 3,
+          "text": "SSL(Secure Sockets Layer)"
+        },
+        {
+          "key": 4,
+          "text": "SSH(Secure Shell)"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_055",
+      "number": 55,
+      "subject_id": "security",
+      "text": "다음 전자 우편 보안 기술의 종류에 해당하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "PEM(Privacy Enhanced Mail)"
+        },
+        {
+          "key": 2,
+          "text": "S/MIME(Secure Multi-Purpose Internet Mail"
+        },
+        {
+          "key": 3,
+          "text": "PGP(Pretty Good Privacy)"
+        },
+        {
+          "key": 4,
+          "text": "SMTP"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_056",
+      "number": 56,
+      "subject_id": "security",
+      "text": "다음은 ′/etc/passwd′ 파일의 내용과 ′/etc/group′ 파일의 내용 일부 이다. 이에 대한 설명으로 적절한 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "john의 그룹 ID는 200 이다."
+        },
+        {
+          "key": 2,
+          "text": "john은 Developer 그룹을 주그룹으로 갖는다."
+        },
+        {
+          "key": 3,
+          "text": "peter는 john과 함께 Developer Group에 속한다."
+        },
+        {
+          "key": 4,
+          "text": "peter와 john은 모든 파일들에 대해서 같은 권한을 갖는"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_057",
+      "number": 57,
+      "subject_id": "security",
+      "text": "서로 다른 메시지가 같은 해쉬값이 되지 않도록 하는 해쉬 함수의 성질은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "충돌 저항성"
+        },
+        {
+          "key": 2,
+          "text": "비트 길이"
+        },
+        {
+          "key": 3,
+          "text": "키 길이"
+        },
+        {
+          "key": 4,
+          "text": "엔트로피(entropy)"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_058",
+      "number": 58,
+      "subject_id": "security",
+      "text": "회사의 사설 네트워크와 외부의 공중 네트워크 사이에 중립 지역으로 삽입된 소형 네트워크를 의미하는 용어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "DMZ"
+        },
+        {
+          "key": 2,
+          "text": "Proxy"
+        },
+        {
+          "key": 3,
+          "text": "Session"
+        },
+        {
+          "key": 4,
+          "text": "Packet"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_059",
+      "number": 59,
+      "subject_id": "security",
+      "text": "암호화 기법 중 공개키 암호기법에 해당하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "RSA"
+        },
+        {
+          "key": 2,
+          "text": "RC4"
+        },
+        {
+          "key": 3,
+          "text": "IDEA"
+        },
+        {
+          "key": 4,
+          "text": "DES"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20221030_060",
+      "number": 60,
+      "subject_id": "security",
+      "text": "정보 보안 기능에 대한 용어 설명이 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "접근 통제 : 비인가자가 컴퓨터 시스템에 액세스하지 못"
+        },
+        {
+          "key": 2,
+          "text": "인증 : 전문 발신자와 수신자를 정확히 식별하고 제삼자"
+        },
+        {
+          "key": 3,
+          "text": "부인 방지 : 데이터에 불법적으로 접근하는 것을 막기"
+        },
+        {
+          "key": 4,
+          "text": "무결성 : 인가자 이외는 전문을 변경할 수 없게 하는 것"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    }
+  ]
+}

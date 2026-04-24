@@ -1,0 +1,1358 @@
+{
+  "cert_id": "na2",
+  "date": "20101012",
+  "label": "2010년 10월 12일",
+  "total_questions": 50,
+  "questions": [
+    {
+      "id": "na2_20101012_001",
+      "number": 1,
+      "subject_id": "tcpip",
+      "text": "도메인 이름을 알고 있는 호스트의 IP Address를 알아내는 데 사용되는 서비스로, 일반적으로 ISP(Internet Service Provider)에서 IP를 할당받을 때 같이 신청하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Inverse Domain"
+        },
+        {
+          "key": 2,
+          "text": "Generic Domain"
+        },
+        {
+          "key": 3,
+          "text": "Country Domain"
+        },
+        {
+          "key": 4,
+          "text": "Administrative Domain"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_002",
+      "number": 2,
+      "subject_id": "tcpip",
+      "text": "아래에서 설명하는 기술의 명칭은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "WLAN"
+        },
+        {
+          "key": 2,
+          "text": "HomeRF"
+        },
+        {
+          "key": 3,
+          "text": "ZigBee"
+        },
+        {
+          "key": 4,
+          "text": "IrDA"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_003",
+      "number": 3,
+      "subject_id": "tcpip",
+      "text": "C Class의 IP Address에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Network ID는 “192.0.0 ~ 223.255.255”이고, Host ID는"
+        },
+        {
+          "key": 2,
+          "text": "IP Address가 203.240.155.32 인 경우, Network ID는"
+        },
+        {
+          "key": 3,
+          "text": "통신망의 관리자는 Host ID \"0\", \"255\"를 제외하고, 254"
+        },
+        {
+          "key": 4,
+          "text": "Host ID가 255일 때는 메시지가 네트워크 전체로 브로드"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_004",
+      "number": 4,
+      "subject_id": "tcpip",
+      "text": "OSI 7 Layer 중에서 IEEE 802.11에서 다루는 계층 범위로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "물리 계층"
+        },
+        {
+          "key": 2,
+          "text": "물리 계층, 데이터링크 계층"
+        },
+        {
+          "key": 3,
+          "text": "물리 계층, 데이터링크 계층, 네트워크 계층"
+        },
+        {
+          "key": 4,
+          "text": "물리 계층, 데이터링크 계층, 네트워크 계층, 전송 계층"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_005",
+      "number": 5,
+      "subject_id": "tcpip",
+      "text": "Link State 알고리즘을 이용해 서로에게 자신의 현재 상태를 알려주며 네트워크 내 통신을 위해 사용하는 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "OSPF"
+        },
+        {
+          "key": 2,
+          "text": "IDRP"
+        },
+        {
+          "key": 3,
+          "text": "EGP"
+        },
+        {
+          "key": 4,
+          "text": "BGP"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_006",
+      "number": 6,
+      "subject_id": "tcpip",
+      "text": "IP Address를 하드웨어 주소로 대응시키기 위해 사용되는 프 로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ARP"
+        },
+        {
+          "key": 2,
+          "text": "RARP"
+        },
+        {
+          "key": 3,
+          "text": "ICMP"
+        },
+        {
+          "key": 4,
+          "text": "IGMP"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_007",
+      "number": 7,
+      "subject_id": "tcpip",
+      "text": "ICMP의 Message Type 필드 번호와 유형이 잘못 연결된 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "0 - Echo Reply"
+        },
+        {
+          "key": 2,
+          "text": "8 - Echo Request"
+        },
+        {
+          "key": 3,
+          "text": "12 - Timestamp Request"
+        },
+        {
+          "key": 4,
+          "text": "17 - Address Mask Request"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_008",
+      "number": 8,
+      "subject_id": "tcpip",
+      "text": "Bluetooth 기술에 대한 설명으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "주파수 호핑 속도가 빠른 DSSS(Direct Sequence Spread"
+        },
+        {
+          "key": 2,
+          "text": "1대의 Master가 7대까지의 Slave를 연결하는 피코넷"
+        },
+        {
+          "key": 3,
+          "text": "주요 통신방식은 FDD(Frequency Division Duplex) 방식"
+        },
+        {
+          "key": 4,
+          "text": "부품의 전력 소모량이 크고, 그 부피도 큰 편이므로 소형"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_009",
+      "number": 9,
+      "subject_id": "tcpip",
+      "text": "TCP/IP 프로토콜 중 응용 계층에서 동작하지 않는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SMTP"
+        },
+        {
+          "key": 2,
+          "text": "Telnet"
+        },
+        {
+          "key": 3,
+          "text": "FTP"
+        },
+        {
+          "key": 4,
+          "text": "IGMP"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_010",
+      "number": 10,
+      "subject_id": "tcpip",
+      "text": "USB에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "USB 1.1 규격은 Low Speed(1.5Mbps)와 Full"
+        },
+        {
+          "key": 2,
+          "text": "USB 1.1 규격의 Host Controller에서 USB 2.0 장치 연"
+        },
+        {
+          "key": 3,
+          "text": "모든 USB 1.1 규격 장치들은 USB 2.0 규격 장치들과"
+        },
+        {
+          "key": 4,
+          "text": "USB 장치는 PC와 Master - Slave 관계를 갖는다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_011",
+      "number": 11,
+      "subject_id": "tcpip",
+      "text": "Telnet을 이용하여 상대방 컴퓨터에 접속을 시도하려고 한 다. 상대방 컴퓨터에게 일정한 데이터를 보내 상대방 컴퓨 터의 정상 동작 여부를 확인하고 싶을 때 사용하는 명령어 는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ping"
+        },
+        {
+          "key": 2,
+          "text": "nslookup"
+        },
+        {
+          "key": 3,
+          "text": "netstat"
+        },
+        {
+          "key": 4,
+          "text": "finger"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_012",
+      "number": 12,
+      "subject_id": "tcpip",
+      "text": "BGP에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "다른 AS상에 있는 라우터들 사이의 통신 프로토콜이다."
+        },
+        {
+          "key": 2,
+          "text": "UDP를 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "Distance-Vector Protocol이다."
+        },
+        {
+          "key": 4,
+          "text": "Exterior Gateway Protocol이다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_013",
+      "number": 13,
+      "subject_id": "tcpip",
+      "text": "rlogin과 같은 초기 유닉스 계열 명령어에 보안 기능을 보완 하여 원격지에 있는 호스트를 보다 안전하게 접속할 수 있 는 응용 계층 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SSH"
+        },
+        {
+          "key": 2,
+          "text": "RSH"
+        },
+        {
+          "key": 3,
+          "text": "RIP"
+        },
+        {
+          "key": 4,
+          "text": "CMIP"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_014",
+      "number": 14,
+      "subject_id": "tcpip",
+      "text": "UDP 세션을 이용하여 네트워크를 관리하는데 사용되는 프 로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "CMIP"
+        },
+        {
+          "key": 2,
+          "text": "SMTP"
+        },
+        {
+          "key": 3,
+          "text": "SNMP"
+        },
+        {
+          "key": 4,
+          "text": "TFTP"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_015",
+      "number": 15,
+      "subject_id": "tcpip",
+      "text": "하나의 서버는 서로 다른 서비스를 제공하고 있으며, 이 서 비스는 포트라고 불리는 서로 다른 문을 통하여 제공된다. 다음은 서버가 일반적으로 사용하는 포트 번호를 나타내고 있다. 서비스에 따른 포트 번호가 잘못 짝지어진 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "FTP - 11"
+        },
+        {
+          "key": 2,
+          "text": "SSH - 22"
+        },
+        {
+          "key": 3,
+          "text": "Telnet - 23"
+        },
+        {
+          "key": 4,
+          "text": "SMTP - 25"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_016",
+      "number": 16,
+      "subject_id": "general",
+      "text": "DNS에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "다른 호스트에 접근하고자 할 때 기억하기 어려운 IP"
+        },
+        {
+          "key": 2,
+          "text": "호스트 이름에 대한 분산 데이터베이스이다."
+        },
+        {
+          "key": 3,
+          "text": "호스트 이름은 단순한 나열이 아니라 하나의 논리적인"
+        },
+        {
+          "key": 4,
+          "text": "호스트 이름은 영문자와 숫자 그리고 \"@\", \"#\"과 같은"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_017",
+      "number": 17,
+      "subject_id": "general",
+      "text": "TCP와 UDP의 차이점을 설명한 것 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP는 전 이중방식 스트림 중심의 연결형 프로토콜이고,"
+        },
+        {
+          "key": 2,
+          "text": "TCP는 전달된 패킷에 대한 수신측의 인증이 필요하지만"
+        },
+        {
+          "key": 3,
+          "text": "TCP는 보통 중요한 사용자 데이터 전송에, UDP는 시스"
+        },
+        {
+          "key": 4,
+          "text": "UDP는 TCP에 비해 오버헤드가 크다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_018",
+      "number": 18,
+      "subject_id": "general",
+      "text": "오류 검출 방법 중 단일비트 수정이 가능한 중복 검사 방법 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "해밍코드 중복검사"
+        },
+        {
+          "key": 2,
+          "text": "순환 중복검사"
+        },
+        {
+          "key": 3,
+          "text": "세로 중복검사"
+        },
+        {
+          "key": 4,
+          "text": "체크섬 중복검사"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_019",
+      "number": 19,
+      "subject_id": "general",
+      "text": "멀티 포인트 방식에서 중앙 컴퓨터가 주변의 터미널로 데이 터를 전송하고자 하는 경우, 수신측 터미널의 상태를 확인 하는 절차는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Contention"
+        },
+        {
+          "key": 2,
+          "text": "Polling"
+        },
+        {
+          "key": 3,
+          "text": "Selection"
+        },
+        {
+          "key": 4,
+          "text": "Routing"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_020",
+      "number": 20,
+      "subject_id": "general",
+      "text": "망 연동 장치 중 데이터링크 계층에서 동작하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Bridge"
+        },
+        {
+          "key": 2,
+          "text": "Router"
+        },
+        {
+          "key": 3,
+          "text": "Repeater"
+        },
+        {
+          "key": 4,
+          "text": "Gateway"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_021",
+      "number": 21,
+      "subject_id": "general",
+      "text": "가상 회선방식의 특징으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "연결형 서비스를 제공한다."
+        },
+        {
+          "key": 2,
+          "text": "비 연결형 서비스를 제공한다."
+        },
+        {
+          "key": 3,
+          "text": "연결설정 작업 시, 시간 지연이 없다."
+        },
+        {
+          "key": 4,
+          "text": "가장 대표적인 방식이 인터넷이다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_022",
+      "number": 22,
+      "subject_id": "general",
+      "text": "2.4GHz 대역으로 11Mbps 속도를 제공하며, 주로 지하철이 나 학교 등에서 무선 LAN 서비스를 제공하는 데 사용되는 표준에 해당되는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IEEE 802.11a"
+        },
+        {
+          "key": 2,
+          "text": "IEEE 802.11b"
+        },
+        {
+          "key": 3,
+          "text": "IEEE 802.11f"
+        },
+        {
+          "key": 4,
+          "text": "IEEE 802.11g"
+        }
+      ],
+      "answer": 2,
+      "has_figure": true,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_023",
+      "number": 23,
+      "subject_id": "general",
+      "text": "OSI 7 Layer 중 물리적 링크 간의 신뢰성 있는 정보 전송을 제공하며 동기화, 에러 제어, 흐름 제어로서 데이터의 블록 을 전송하는 기능을 가진 계층은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "물리 계층"
+        },
+        {
+          "key": 2,
+          "text": "데이터링크 계층"
+        },
+        {
+          "key": 3,
+          "text": "트랜스포트 계층"
+        },
+        {
+          "key": 4,
+          "text": "네트워크 계층"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_024",
+      "number": 24,
+      "subject_id": "general",
+      "text": "IEEE에서 표준화된 저속 Ethernet 방식은 전송매체와 전송 속도에 따라 xBase-y 또는 xBroad-y형태의 이름을 갖는다. 여기서 x와 y의 의미로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "x : 전송속도, y : 비트 에러율"
+        },
+        {
+          "key": 2,
+          "text": "x : 전송속도, y : 리피터 없이 전송가능 최대거리"
+        },
+        {
+          "key": 3,
+          "text": "x : 비트 에러율, y : 전송속도"
+        },
+        {
+          "key": 4,
+          "text": "x : 리피터 없이 전송가능 최대거리, y : 전송속도"
+        }
+      ],
+      "answer": 2,
+      "has_figure": true,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_025",
+      "number": 25,
+      "subject_id": "general",
+      "text": "여러 개의 물리적인 LAN 세그먼트간의 연동(브리지 레벨)을 수행하는 LAN 스위치에 DTE들을 논리적으로 구분되는 가 상 그룹으로 분리할 수 있는 기능을 부여한 LAN은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Fast Ethernet"
+        },
+        {
+          "key": 2,
+          "text": "ATM LAN"
+        },
+        {
+          "key": 3,
+          "text": "VLAN"
+        },
+        {
+          "key": 4,
+          "text": "Gigabit Ethernet"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_026",
+      "number": 26,
+      "subject_id": "general",
+      "text": "LAN에서 사용하는 CSMA/CD 프로토콜에 대한 설명으로 옳 지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "무선랜에 사용되는 방식으로, ACK 프레임을 사용하여"
+        },
+        {
+          "key": 2,
+          "text": "송신을 원하는 호스트는 송신 전에 다른 호스트가 채널"
+        },
+        {
+          "key": 3,
+          "text": "전송하는 동안 계속적으로 채널을 감시하여 충돌이 발생"
+        },
+        {
+          "key": 4,
+          "text": "충돌이 발생하게 되면, 충돌한 데이터들은 버려지고 데"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_027",
+      "number": 27,
+      "subject_id": "general",
+      "text": "AP(Access Point) 중심으로 여러 대의 노드가 연결되어 하 나의 무선 네트워크 단위로 형성하는 무선 LAN 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Infrastructure"
+        },
+        {
+          "key": 2,
+          "text": "Ad-Hoc"
+        },
+        {
+          "key": 3,
+          "text": "Smart"
+        },
+        {
+          "key": 4,
+          "text": "PCMCIA"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_028",
+      "number": 28,
+      "subject_id": "nos",
+      "text": "DNS Record Type 중 Domain Name을 IP Address로 바꿔 주는 레코드는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SOA"
+        },
+        {
+          "key": 2,
+          "text": "NS"
+        },
+        {
+          "key": 3,
+          "text": "A"
+        },
+        {
+          "key": 4,
+          "text": "CNAME"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_029",
+      "number": 29,
+      "subject_id": "nos",
+      "text": "Linux 시스템에서 기존에 설정된 crontab을 삭제하려고 할 때 올바른 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "crontab -u"
+        },
+        {
+          "key": 2,
+          "text": "crontab -e"
+        },
+        {
+          "key": 3,
+          "text": "crontab -l"
+        },
+        {
+          "key": 4,
+          "text": "crontab -r"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_030",
+      "number": 30,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server에서 NetBIOS 이름을 IP Address로 풀이하는 역할을 하는 서비스는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "DNS"
+        },
+        {
+          "key": 2,
+          "text": "WINS"
+        },
+        {
+          "key": 3,
+          "text": "DHCP"
+        },
+        {
+          "key": 4,
+          "text": "FTP"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_031",
+      "number": 31,
+      "subject_id": "nos",
+      "text": "Linux 시스템에서 tar로 묶으면서 동시에 bzip2로 압축하는 명령어 형식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "tar -xjvf"
+        },
+        {
+          "key": 2,
+          "text": "tar -cvfz"
+        },
+        {
+          "key": 3,
+          "text": "tar -cjvf"
+        },
+        {
+          "key": 4,
+          "text": "tar -xvfz"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_032",
+      "number": 32,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server에서 DHCP 범위 (Dynamic Host Configuration Protocol Scope) 혹은 주소 풀(Address Pool)을 만들 때 주의할 점이 아닌 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "모든 DHCP 서버는 최소한 하나의 DHCP 범위를 반드시"
+        },
+        {
+          "key": 2,
+          "text": "DHCP 주소 범위에서 정적으로 할당되어야하는 주소가"
+        },
+        {
+          "key": 3,
+          "text": "네트워크에 여러 DHCP 서버를 운영할 경우에는 DHCP"
+        },
+        {
+          "key": 4,
+          "text": "하나의 서브넷에는 여러 개의 DHCP 범위가 사용될 수"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_033",
+      "number": 33,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server의 관리도구 중 로컬 보안 설정을 통 해 설정 가능한 보안정책이 아닌 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "계정의 최소 암호 길이의 설정"
+        },
+        {
+          "key": 2,
+          "text": "계정의 최소 암호 기간의 설정"
+        },
+        {
+          "key": 3,
+          "text": "잘못된 암호를 입력하여 로그온 실패 시 계정이 잠기는"
+        },
+        {
+          "key": 4,
+          "text": "User 및 Group들의 로컬 파일 검색 허용 설정"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_034",
+      "number": 34,
+      "subject_id": "nos",
+      "text": "관리자가 계정을 만들지 않더라도 자동으로 Windows 2000 Server 설치와 함께 만들어지는 계정은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "글로벌 사용자 계정"
+        },
+        {
+          "key": 2,
+          "text": "내장(BUILT-IN)된 계정"
+        },
+        {
+          "key": 3,
+          "text": "외부 사용자 계정"
+        },
+        {
+          "key": 4,
+          "text": "도메인 사용자 계정"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_035",
+      "number": 35,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server에서 백업의 종류와 설명이 바르게 연결된 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "보통 백업 : 수행하는 날짜에 수정된 모든 파일을 복사"
+        },
+        {
+          "key": 2,
+          "text": "매일 백업 : 선택된 모든 파일을 복사하고 보관 속성을"
+        },
+        {
+          "key": 3,
+          "text": "차등 백업 : 보통 백업이나 증분 백업을 수행하기 전에"
+        },
+        {
+          "key": 4,
+          "text": "복사 백업 : 선택된 모든 파일을 복사하지만 보관 속성"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_036",
+      "number": 36,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server에서 이용할 수 있는 TCP/IP 유틸리 티가 아닌 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ping"
+        },
+        {
+          "key": 2,
+          "text": "ifconfig"
+        },
+        {
+          "key": 3,
+          "text": "hostname"
+        },
+        {
+          "key": 4,
+          "text": "tracert"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_037",
+      "number": 37,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server에서 사용되는 가상 메모리에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "하드디스크의 일부를 메모리처럼 사용하는 방법이다."
+        },
+        {
+          "key": 2,
+          "text": "서버의 성능에 영향을 미친다."
+        },
+        {
+          "key": 3,
+          "text": "각 드라이브 별로 필요한 크기만큼 가상메모리를 설정할"
+        },
+        {
+          "key": 4,
+          "text": "가상 메모리로 사용할 드라이브는, 가상 메모리의 크기"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_038",
+      "number": 38,
+      "subject_id": "nos",
+      "text": "Windows 2000 Server의 그룹 중 파일이나 폴더의 소유권 을 변경할 수 있는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Users"
+        },
+        {
+          "key": 2,
+          "text": "Replicator"
+        },
+        {
+          "key": 3,
+          "text": "Administrators"
+        },
+        {
+          "key": 4,
+          "text": "Backup Operators"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_039",
+      "number": 39,
+      "subject_id": "equipment",
+      "text": "Windows 2000 Server에서 secedit 명령 구문과 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "secedit /analyze : 데이터베이스의 기준선 설정과 비교"
+        },
+        {
+          "key": 2,
+          "text": "secedit /export : 데이터베이스에 저장된 보안 설정을"
+        },
+        {
+          "key": 3,
+          "text": "secedit /delete : 현재 진행 중인 보안설정을 삭제한다."
+        },
+        {
+          "key": 4,
+          "text": "secedit /configure : 데이터베이스에 저장된 설정을 적"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_040",
+      "number": 40,
+      "subject_id": "equipment",
+      "text": "Windows 2000 Server의 동적 디스크는 복수의 디스크 빈 공간으로부터 만들어진 저장 단위인 볼륨(Volume)으로 만들 어진다. 볼륨에 대한 설명 중 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "스트라이프 볼륨 : 여러 디스크를 하나의 볼륨으로 지정"
+        },
+        {
+          "key": 2,
+          "text": "스팬 볼륨 : 여러 디스크를 하나의 볼륨으로 사용하며,"
+        },
+        {
+          "key": 3,
+          "text": "RAID-5 볼륨 : 최고의 성능을 기대할 수 있지만, 고장"
+        },
+        {
+          "key": 4,
+          "text": "미러 볼륨 : 같은 내용을 갖는 단순 볼륨을 동시에 두개"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_041",
+      "number": 41,
+      "subject_id": "equipment",
+      "text": "시스템 성능 모니터에서 체크되는 요소로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "이벤트(Event)"
+        },
+        {
+          "key": 2,
+          "text": "객체(Object)"
+        },
+        {
+          "key": 3,
+          "text": "카운터(Counter)"
+        },
+        {
+          "key": 4,
+          "text": "인스턴스(Instance)"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_042",
+      "number": 42,
+      "subject_id": "equipment",
+      "text": "Windows 2000 Server 설치 도중에 파티션을 어떤 File System으로 포맷할 것인지를 결정해야 한다. Windows 2000 Server에서 기본적으로 지원하지 않는 파티션은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "NTFS"
+        },
+        {
+          "key": 2,
+          "text": "FAT"
+        },
+        {
+          "key": 3,
+          "text": "NFS"
+        },
+        {
+          "key": 4,
+          "text": "FAT32"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_043",
+      "number": 43,
+      "subject_id": "equipment",
+      "text": "Windows 2000 Server에서 파티션을 FAT에서 NTFS로 변환 하는 명령은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Convert C: /FS:FAT"
+        },
+        {
+          "key": 2,
+          "text": "Convert C: /NTFS:FAT"
+        },
+        {
+          "key": 3,
+          "text": "Convert C: /FAT:NTFS"
+        },
+        {
+          "key": 4,
+          "text": "Convert C: /FS:NTFS"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_044",
+      "number": 44,
+      "subject_id": "equipment",
+      "text": "Windows 2000 Server에서 여러 사용자 계정을 만들 경우 홈 디렉터리로 지정할 최종 경로에서 사용자 이름대신 사용 하는 시스템 변수는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "%username%"
+        },
+        {
+          "key": 2,
+          "text": "%userdomain%"
+        },
+        {
+          "key": 3,
+          "text": "%homeshare%"
+        },
+        {
+          "key": 4,
+          "text": "%homedrive%"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_045",
+      "number": 45,
+      "subject_id": "equipment",
+      "text": "Windows 2000 Server에서 시스템 인터페이스 정보를 출력 하면서 송수신 패킷 수 및 오류 수, 충돌 횟수, 현재 출력 큐에 대기 중인 패킷 등에 관한 정보를 제공하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ARP"
+        },
+        {
+          "key": 2,
+          "text": "Netstat"
+        },
+        {
+          "key": 3,
+          "text": "Filter"
+        },
+        {
+          "key": 4,
+          "text": "ICMP"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_046",
+      "number": 46,
+      "subject_id": "equipment",
+      "text": "물리계층의 연동 장비로 신호를 재생하는데 사용되는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Repeater"
+        },
+        {
+          "key": 2,
+          "text": "Brouter"
+        },
+        {
+          "key": 3,
+          "text": "Router"
+        },
+        {
+          "key": 4,
+          "text": "Gateway"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_047",
+      "number": 47,
+      "subject_id": "equipment",
+      "text": "Dummy Hub에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "신호를 재생 및 증폭한다."
+        },
+        {
+          "key": 2,
+          "text": "LAN이 보유한 대역폭을 연결된 PC의 수만큼 나누어서"
+        },
+        {
+          "key": 3,
+          "text": "PC의 수가 증가하여도 특정 전송 속도를 보장한다."
+        },
+        {
+          "key": 4,
+          "text": "네트워크에 연결된 각 PC를 트리 구조로 연결하는데 사"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_048",
+      "number": 48,
+      "subject_id": "equipment",
+      "text": "광섬유에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "매우 가느다란 유리 섬유를 이용해 정보를 보내는 것으"
+        },
+        {
+          "key": 2,
+          "text": "전기적인 간섭을 받지 않는다."
+        },
+        {
+          "key": 3,
+          "text": "동축케이블보다 무게가 적고, 직경이 작다."
+        },
+        {
+          "key": 4,
+          "text": "광신호를 변복조하기 위한 별도의 장비가 필요 없으므"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_049",
+      "number": 49,
+      "subject_id": "security",
+      "text": "아래에서 설명하는 전송 매체에 해당하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Thick-Net"
+        },
+        {
+          "key": 2,
+          "text": "Thin-Net"
+        },
+        {
+          "key": 3,
+          "text": "UTP Cable"
+        },
+        {
+          "key": 4,
+          "text": "Fiber Optic"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20101012_050",
+      "number": 50,
+      "subject_id": "security",
+      "text": "Cisco 2500의 Privileged Mode에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Configuration File의 초기 설정이 이루어지지 않았을 경"
+        },
+        {
+          "key": 2,
+          "text": "User Mode에서 Privileged Mode로 이동하려면 Disable"
+        },
+        {
+          "key": 3,
+          "text": "라우터의 환경을 조정한다."
+        },
+        {
+          "key": 4,
+          "text": "Privileged Mode의 Prompt가 ‘#’으로 나타난다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    }
+  ]
+}

@@ -1,0 +1,876 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-04-24T08:45:41.094874Z",
+  "certifications": [
+    {
+      "id": "na1",
+      "name": "네트워크관리사 1급",
+      "name_en": "Network Administrator Level 1",
+      "data_path": "data/na1/",
+      "question_count": 60,
+      "subjects": [
+        {
+          "id": "tcpip",
+          "name": "TCP/IP",
+          "question_count": 15
+        },
+        {
+          "id": "general",
+          "name": "네트워크 일반",
+          "question_count": 13
+        },
+        {
+          "id": "nos",
+          "name": "NOS",
+          "question_count": 13
+        },
+        {
+          "id": "equipment",
+          "name": "네트워크 운용기기",
+          "question_count": 10
+        },
+        {
+          "id": "security",
+          "name": "정보보호개론",
+          "question_count": 9
+        }
+      ],
+      "exams": [
+        {
+          "date": "20040509",
+          "label": "2004년 05월 09일",
+          "file": "20040509.json",
+          "question_count": 60
+        },
+        {
+          "date": "20041024",
+          "label": "2004년 10월 24일",
+          "file": "20041024.json",
+          "question_count": 60
+        },
+        {
+          "date": "20050501",
+          "label": "2005년 05월 01일",
+          "file": "20050501.json",
+          "question_count": 60
+        },
+        {
+          "date": "20050911",
+          "label": "2005년 09월 11일",
+          "file": "20050911.json",
+          "question_count": 60
+        },
+        {
+          "date": "20060514",
+          "label": "2006년 05월 14일",
+          "file": "20060514.json",
+          "question_count": 60
+        },
+        {
+          "date": "20060924",
+          "label": "2006년 09월 24일",
+          "file": "20060924.json",
+          "question_count": 60
+        },
+        {
+          "date": "20070401",
+          "label": "2007년 04월 01일",
+          "file": "20070401.json",
+          "question_count": 60
+        },
+        {
+          "date": "20070916",
+          "label": "2007년 09월 16일",
+          "file": "20070916.json",
+          "question_count": 60
+        },
+        {
+          "date": "20080406",
+          "label": "2008년 04월 06일",
+          "file": "20080406.json",
+          "question_count": 60
+        },
+        {
+          "date": "20080928",
+          "label": "2008년 09월 28일",
+          "file": "20080928.json",
+          "question_count": 60
+        },
+        {
+          "date": "20090405",
+          "label": "2009년 04월 05일",
+          "file": "20090405.json",
+          "question_count": 60
+        },
+        {
+          "date": "20090927",
+          "label": "2009년 09월 27일",
+          "file": "20090927.json",
+          "question_count": 60
+        },
+        {
+          "date": "20100509",
+          "label": "2010년 05월 09일",
+          "file": "20100509.json",
+          "question_count": 60
+        },
+        {
+          "date": "20101003",
+          "label": "2010년 10월 03일",
+          "file": "20101003.json",
+          "question_count": 60
+        },
+        {
+          "date": "20110424",
+          "label": "2011년 04월 24일",
+          "file": "20110424.json",
+          "question_count": 60
+        },
+        {
+          "date": "20111009",
+          "label": "2011년 10월 09일",
+          "file": "20111009.json",
+          "question_count": 60
+        },
+        {
+          "date": "20120408",
+          "label": "2012년 04월 08일",
+          "file": "20120408.json",
+          "question_count": 60
+        },
+        {
+          "date": "20120916",
+          "label": "2012년 09월 16일",
+          "file": "20120916.json",
+          "question_count": 60
+        },
+        {
+          "date": "20130407",
+          "label": "2013년 04월 07일",
+          "file": "20130407.json",
+          "question_count": 60
+        },
+        {
+          "date": "20131006",
+          "label": "2013년 10월 06일",
+          "file": "20131006.json",
+          "question_count": 60
+        },
+        {
+          "date": "20140406",
+          "label": "2014년 04월 06일",
+          "file": "20140406.json",
+          "question_count": 60
+        },
+        {
+          "date": "20141012",
+          "label": "2014년 10월 12일",
+          "file": "20141012.json",
+          "question_count": 60
+        },
+        {
+          "date": "20150405",
+          "label": "2015년 04월 05일",
+          "file": "20150405.json",
+          "question_count": 60
+        },
+        {
+          "date": "20151018",
+          "label": "2015년 10월 18일",
+          "file": "20151018.json",
+          "question_count": 60
+        },
+        {
+          "date": "20160410",
+          "label": "2016년 04월 10일",
+          "file": "20160410.json",
+          "question_count": 60
+        },
+        {
+          "date": "20161009",
+          "label": "2016년 10월 09일",
+          "file": "20161009.json",
+          "question_count": 60
+        },
+        {
+          "date": "20170409",
+          "label": "2017년 04월 09일",
+          "file": "20170409.json",
+          "question_count": 60
+        },
+        {
+          "date": "20171029",
+          "label": "2017년 10월 29일",
+          "file": "20171029.json",
+          "question_count": 60
+        },
+        {
+          "date": "20180408",
+          "label": "2018년 04월 08일",
+          "file": "20180408.json",
+          "question_count": 60
+        },
+        {
+          "date": "20181028",
+          "label": "2018년 10월 28일",
+          "file": "20181028.json",
+          "question_count": 60
+        },
+        {
+          "date": "20190414",
+          "label": "2019년 04월 14일",
+          "file": "20190414.json",
+          "question_count": 60
+        },
+        {
+          "date": "20191027",
+          "label": "2019년 10월 27일",
+          "file": "20191027.json",
+          "question_count": 60
+        },
+        {
+          "date": "20200524",
+          "label": "2020년 05월 24일",
+          "file": "20200524.json",
+          "question_count": 60
+        },
+        {
+          "date": "20201025",
+          "label": "2020년 10월 25일",
+          "file": "20201025.json",
+          "question_count": 60
+        },
+        {
+          "date": "20210411",
+          "label": "2021년 04월 11일",
+          "file": "20210411.json",
+          "question_count": 60
+        },
+        {
+          "date": "20211024",
+          "label": "2021년 10월 24일",
+          "file": "20211024.json",
+          "question_count": 60
+        },
+        {
+          "date": "20220410",
+          "label": "2022년 04월 10일",
+          "file": "20220410.json",
+          "question_count": 60
+        },
+        {
+          "date": "20221030",
+          "label": "2022년 10월 30일",
+          "file": "20221030.json",
+          "question_count": 60
+        },
+        {
+          "date": "20230409",
+          "label": "2023년 04월 09일",
+          "file": "20230409.json",
+          "question_count": 60
+        },
+        {
+          "date": "20231029",
+          "label": "2023년 10월 29일",
+          "file": "20231029.json",
+          "question_count": 60
+        },
+        {
+          "date": "20240421",
+          "label": "2024년 04월 21일",
+          "file": "20240421.json",
+          "question_count": 60
+        },
+        {
+          "date": "20241027",
+          "label": "2024년 10월 27일",
+          "file": "20241027.json",
+          "question_count": 60
+        },
+        {
+          "date": "20250420",
+          "label": "2025년 04월 20일",
+          "file": "20250420.json",
+          "question_count": 60
+        },
+        {
+          "date": "20251026",
+          "label": "2025년 10월 26일",
+          "file": "20251026.json",
+          "question_count": 60
+        }
+      ]
+    },
+    {
+      "id": "na2",
+      "name": "네트워크관리사 2급",
+      "name_en": "Network Administrator Level 2",
+      "data_path": "data/na2/",
+      "question_count": 50,
+      "subjects": [
+        {
+          "id": "tcpip",
+          "name": "TCP/IP",
+          "question_count": 15
+        },
+        {
+          "id": "general",
+          "name": "네트워크 일반",
+          "question_count": 12
+        },
+        {
+          "id": "nos",
+          "name": "NOS",
+          "question_count": 11
+        },
+        {
+          "id": "equipment",
+          "name": "네트워크 운용기기",
+          "question_count": 10
+        },
+        {
+          "id": "security",
+          "name": "정보보호개론",
+          "question_count": 2
+        }
+      ],
+      "exams": [
+        {
+          "date": "20040215",
+          "label": "2004년 02월 15일",
+          "file": "20040215.json",
+          "question_count": 50
+        },
+        {
+          "date": "20040425",
+          "label": "2004년 04월 25일",
+          "file": "20040425.json",
+          "question_count": 50
+        },
+        {
+          "date": "20040718",
+          "label": "2004년 07월 18일",
+          "file": "20040718.json",
+          "question_count": 50
+        },
+        {
+          "date": "20041010",
+          "label": "2004년 10월 10일",
+          "file": "20041010.json",
+          "question_count": 50
+        },
+        {
+          "date": "20050130",
+          "label": "2005년 01월 30일",
+          "file": "20050130.json",
+          "question_count": 50
+        },
+        {
+          "date": "20050417",
+          "label": "2005년 04월 17일",
+          "file": "20050417.json",
+          "question_count": 50
+        },
+        {
+          "date": "20050717",
+          "label": "2005년 07월 17일",
+          "file": "20050717.json",
+          "question_count": 50
+        },
+        {
+          "date": "20051016",
+          "label": "2005년 10월 16일",
+          "file": "20051016.json",
+          "question_count": 50
+        },
+        {
+          "date": "20060122",
+          "label": "2006년 01월 22일",
+          "file": "20060122.json",
+          "question_count": 50
+        },
+        {
+          "date": "20060423",
+          "label": "2006년 04월 23일",
+          "file": "20060423.json",
+          "question_count": 50
+        },
+        {
+          "date": "20060716",
+          "label": "2006년 07월 16일",
+          "file": "20060716.json",
+          "question_count": 50
+        },
+        {
+          "date": "20061015",
+          "label": "2006년 10월 15일",
+          "file": "20061015.json",
+          "question_count": 50
+        },
+        {
+          "date": "20070128",
+          "label": "2007년 01월 28일",
+          "file": "20070128.json",
+          "question_count": 50
+        },
+        {
+          "date": "20070415",
+          "label": "2007년 04월 15일",
+          "file": "20070415.json",
+          "question_count": 50
+        },
+        {
+          "date": "20070701",
+          "label": "2007년 07월 01일",
+          "file": "20070701.json",
+          "question_count": 50
+        },
+        {
+          "date": "20071021",
+          "label": "2007년 10월 21일",
+          "file": "20071021.json",
+          "question_count": 50
+        },
+        {
+          "date": "20080203",
+          "label": "2008년 02월 03일",
+          "file": "20080203.json",
+          "question_count": 50
+        },
+        {
+          "date": "20080427",
+          "label": "2008년 04월 27일",
+          "file": "20080427.json",
+          "question_count": 50
+        },
+        {
+          "date": "20080720",
+          "label": "2008년 07월 20일",
+          "file": "20080720.json",
+          "question_count": 50
+        },
+        {
+          "date": "20081019",
+          "label": "2008년 10월 19일",
+          "file": "20081019.json",
+          "question_count": 50
+        },
+        {
+          "date": "20090208",
+          "label": "2009년 02월 08일",
+          "file": "20090208.json",
+          "question_count": 50
+        },
+        {
+          "date": "20090426",
+          "label": "2009년 04월 26일",
+          "file": "20090426.json",
+          "question_count": 50
+        },
+        {
+          "date": "20090726",
+          "label": "2009년 07월 26일",
+          "file": "20090726.json",
+          "question_count": 50
+        },
+        {
+          "date": "20091018",
+          "label": "2009년 10월 18일",
+          "file": "20091018.json",
+          "question_count": 50
+        },
+        {
+          "date": "20100131",
+          "label": "2010년 01월 31일",
+          "file": "20100131.json",
+          "question_count": 50
+        },
+        {
+          "date": "20100425",
+          "label": "2010년 04월 25일",
+          "file": "20100425.json",
+          "question_count": 50
+        },
+        {
+          "date": "20100718",
+          "label": "2010년 07월 18일",
+          "file": "20100718.json",
+          "question_count": 50
+        },
+        {
+          "date": "20101012",
+          "label": "2010년 10월 12일",
+          "file": "20101012.json",
+          "question_count": 50
+        },
+        {
+          "date": "20110130",
+          "label": "2011년 01월 30일",
+          "file": "20110130.json",
+          "question_count": 50
+        },
+        {
+          "date": "20110501",
+          "label": "2011년 05월 01일",
+          "file": "20110501.json",
+          "question_count": 50
+        },
+        {
+          "date": "20110724",
+          "label": "2011년 07월 24일",
+          "file": "20110724.json",
+          "question_count": 50
+        },
+        {
+          "date": "20111023",
+          "label": "2011년 10월 23일",
+          "file": "20111023.json",
+          "question_count": 50
+        },
+        {
+          "date": "20120115",
+          "label": "2012년 01월 15일",
+          "file": "20120115.json",
+          "question_count": 50
+        },
+        {
+          "date": "20120429",
+          "label": "2012년 04월 29일",
+          "file": "20120429.json",
+          "question_count": 50
+        },
+        {
+          "date": "20120722",
+          "label": "2012년 07월 22일",
+          "file": "20120722.json",
+          "question_count": 50
+        },
+        {
+          "date": "20121021",
+          "label": "2012년 10월 21일",
+          "file": "20121021.json",
+          "question_count": 50
+        },
+        {
+          "date": "20130127",
+          "label": "2013년 01월 27일",
+          "file": "20130127.json",
+          "question_count": 50
+        },
+        {
+          "date": "20130428",
+          "label": "2013년 04월 28일",
+          "file": "20130428.json",
+          "question_count": 50
+        },
+        {
+          "date": "20130721",
+          "label": "2013년 07월 21일",
+          "file": "20130721.json",
+          "question_count": 50
+        },
+        {
+          "date": "20131020",
+          "label": "2013년 10월 20일",
+          "file": "20131020.json",
+          "question_count": 50
+        },
+        {
+          "date": "20140126",
+          "label": "2014년 01월 26일",
+          "file": "20140126.json",
+          "question_count": 50
+        },
+        {
+          "date": "20140427",
+          "label": "2014년 04월 27일",
+          "file": "20140427.json",
+          "question_count": 50
+        },
+        {
+          "date": "20140727",
+          "label": "2014년 07월 27일",
+          "file": "20140727.json",
+          "question_count": 50
+        },
+        {
+          "date": "20141026",
+          "label": "2014년 10월 26일",
+          "file": "20141026.json",
+          "question_count": 50
+        },
+        {
+          "date": "20150201",
+          "label": "2015년 02월 01일",
+          "file": "20150201.json",
+          "question_count": 50
+        },
+        {
+          "date": "20150426",
+          "label": "2015년 04월 26일",
+          "file": "20150426.json",
+          "question_count": 50
+        },
+        {
+          "date": "20150726",
+          "label": "2015년 07월 26일",
+          "file": "20150726.json",
+          "question_count": 50
+        },
+        {
+          "date": "20151025",
+          "label": "2015년 10월 25일",
+          "file": "20151025.json",
+          "question_count": 50
+        },
+        {
+          "date": "20160131",
+          "label": "2016년 01월 31일",
+          "file": "20160131.json",
+          "question_count": 49
+        },
+        {
+          "date": "20160424",
+          "label": "2016년 04월 24일",
+          "file": "20160424.json",
+          "question_count": 50
+        },
+        {
+          "date": "20160724",
+          "label": "2016년 07월 24일",
+          "file": "20160724.json",
+          "question_count": 50
+        },
+        {
+          "date": "20161023",
+          "label": "2016년 10월 23일",
+          "file": "20161023.json",
+          "question_count": 12
+        },
+        {
+          "date": "20170205",
+          "label": "2017년 02월 05일",
+          "file": "20170205.json",
+          "question_count": 50
+        },
+        {
+          "date": "20170423",
+          "label": "2017년 04월 23일",
+          "file": "20170423.json",
+          "question_count": 50
+        },
+        {
+          "date": "20170716",
+          "label": "2017년 07월 16일",
+          "file": "20170716.json",
+          "question_count": 50
+        },
+        {
+          "date": "20171022",
+          "label": "2017년 10월 22일",
+          "file": "20171022.json",
+          "question_count": 50
+        },
+        {
+          "date": "20180204",
+          "label": "2018년 02월 04일",
+          "file": "20180204.json",
+          "question_count": 50
+        },
+        {
+          "date": "20180422",
+          "label": "2018년 04월 22일",
+          "file": "20180422.json",
+          "question_count": 50
+        },
+        {
+          "date": "20180715",
+          "label": "2018년 07월 15일",
+          "file": "20180715.json",
+          "question_count": 50
+        },
+        {
+          "date": "20181021",
+          "label": "2018년 10월 21일",
+          "file": "20181021.json",
+          "question_count": 50
+        },
+        {
+          "date": "20190217",
+          "label": "2019년 02월 17일",
+          "file": "20190217.json",
+          "question_count": 50
+        },
+        {
+          "date": "20190519",
+          "label": "2019년 05월 19일",
+          "file": "20190519.json",
+          "question_count": 50
+        },
+        {
+          "date": "20190825",
+          "label": "2019년 08월 25일",
+          "file": "20190825.json",
+          "question_count": 50
+        },
+        {
+          "date": "20191110",
+          "label": "2019년 11월 10일",
+          "file": "20191110.json",
+          "question_count": 50
+        },
+        {
+          "date": "20200216",
+          "label": "2020년 02월 16일",
+          "file": "20200216.json",
+          "question_count": 50
+        },
+        {
+          "date": "20200517",
+          "label": "2020년 05월 17일",
+          "file": "20200517.json",
+          "question_count": 50
+        },
+        {
+          "date": "20200823",
+          "label": "2020년 08월 23일",
+          "file": "20200823.json",
+          "question_count": 50
+        },
+        {
+          "date": "20201108",
+          "label": "2020년 11월 08일",
+          "file": "20201108.json",
+          "question_count": 50
+        },
+        {
+          "date": "20210228",
+          "label": "2021년 02월 28일",
+          "file": "20210228.json",
+          "question_count": 50
+        },
+        {
+          "date": "20210530",
+          "label": "2021년 05월 30일",
+          "file": "20210530.json",
+          "question_count": 50
+        },
+        {
+          "date": "20210829",
+          "label": "2021년 08월 29일",
+          "file": "20210829.json",
+          "question_count": 14
+        },
+        {
+          "date": "20211114",
+          "label": "2021년 11월 14일",
+          "file": "20211114.json",
+          "question_count": 50
+        },
+        {
+          "date": "20220227",
+          "label": "2022년 02월 27일",
+          "file": "20220227.json",
+          "question_count": 50
+        },
+        {
+          "date": "20220522",
+          "label": "2022년 05월 22일",
+          "file": "20220522.json",
+          "question_count": 50
+        },
+        {
+          "date": "20220821",
+          "label": "2022년 08월 21일",
+          "file": "20220821.json",
+          "question_count": 50
+        },
+        {
+          "date": "20221106",
+          "label": "2022년 11월 06일",
+          "file": "20221106.json",
+          "question_count": 50
+        },
+        {
+          "date": "20230226",
+          "label": "2023년 02월 26일",
+          "file": "20230226.json",
+          "question_count": 50
+        },
+        {
+          "date": "20230521",
+          "label": "2023년 05월 21일",
+          "file": "20230521.json",
+          "question_count": 50
+        },
+        {
+          "date": "20230820",
+          "label": "2023년 08월 20일",
+          "file": "20230820.json",
+          "question_count": 50
+        },
+        {
+          "date": "20231105",
+          "label": "2023년 11월 05일",
+          "file": "20231105.json",
+          "question_count": 50
+        },
+        {
+          "date": "20240225",
+          "label": "2024년 02월 25일",
+          "file": "20240225.json",
+          "question_count": 50
+        },
+        {
+          "date": "20240519",
+          "label": "2024년 05월 19일",
+          "file": "20240519.json",
+          "question_count": 50
+        },
+        {
+          "date": "20240825",
+          "label": "2024년 08월 25일",
+          "file": "20240825.json",
+          "question_count": 50
+        },
+        {
+          "date": "20241103",
+          "label": "2024년 11월 03일",
+          "file": "20241103.json",
+          "question_count": 50
+        },
+        {
+          "date": "20250223",
+          "label": "2025년 02월 23일",
+          "file": "20250223.json",
+          "question_count": 50
+        },
+        {
+          "date": "20250525",
+          "label": "2025년 05월 25일",
+          "file": "20250525.json",
+          "question_count": 50
+        },
+        {
+          "date": "20250824",
+          "label": "2025년 08월 24일",
+          "file": "20250824.json",
+          "question_count": 50
+        },
+        {
+          "date": "20251102",
+          "label": "2025년 11월 02일",
+          "file": "20251102.json",
+          "question_count": 50
+        },
+        {
+          "date": "20260201",
+          "label": "2026년 02월 01일",
+          "file": "20260201.json",
+          "question_count": 50
+        }
+      ]
+    }
+  ]
+}

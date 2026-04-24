@@ -1,0 +1,369 @@
+{
+  "cert_id": "na2",
+  "date": "20210829",
+  "label": "2021년 08월 29일",
+  "total_questions": 14,
+  "questions": [
+    {
+      "id": "na2_20210829_001",
+      "number": 1,
+      "subject_id": "tcpip",
+      "text": "서브넷 마스크(Subnet Mask)에 대한 설명으로 옳지 않은 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "A, B, C Class 대역의 IP Address는 모두 같은 서브넷"
+        },
+        {
+          "key": 2,
+          "text": "하나의 네트워크 클래스를 여러 개의 네트워크로 분리하"
+        },
+        {
+          "key": 3,
+          "text": "서브넷 마스크는 목적지 호스트의 IP Address가 동일 네"
+        },
+        {
+          "key": 4,
+          "text": "서브넷 마스크를 이용하면, Traffic 관리 및 제어가 가능"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20210829_002",
+      "number": 2,
+      "subject_id": "tcpip",
+      "text": "TCP/IP Protocol 군에서 네트워크 계층의 프로토콜로만 연결 된 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP - UDP – IP"
+        },
+        {
+          "key": 2,
+          "text": "ICMP - IP - IGMP"
+        },
+        {
+          "key": 3,
+          "text": "FTP - SMTP – Telnet"
+        },
+        {
+          "key": 4,
+          "text": "ARP - RARP - TCP"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20210829_003",
+      "number": 3,
+      "subject_id": "tcpip",
+      "text": "IP Address 중 Class가 다른 주소는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "191.234.149.32"
+        },
+        {
+          "key": 2,
+          "text": "198.236.115.33"
+        },
+        {
+          "key": 3,
+          "text": "222.236.138.34"
+        },
+        {
+          "key": 4,
+          "text": "195.236.126.35"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20210829_004",
+      "number": 4,
+      "subject_id": "tcpip",
+      "text": "C Class의 네트워크를 서브넷으로 나누어 각 서브넷에 4~5 대의 PC를 접속해야 할 때, 서브넷 마스크 값으로 올바른 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "255.255.255.240"
+        },
+        {
+          "key": 2,
+          "text": "255.255.0.192"
+        },
+        {
+          "key": 3,
+          "text": "255.255.255.248"
+        },
+        {
+          "key": 4,
+          "text": "255.255.255.0"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20210829_005",
+      "number": 5,
+      "subject_id": "tcpip",
+      "text": "IP 헤더에 포함이 되지 않는 필드는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ACK"
+        },
+        {
+          "key": 2,
+          "text": "Version"
+        },
+        {
+          "key": 3,
+          "text": "Header checksum"
+        },
+        {
+          "key": 4,
+          "text": "Header length"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20210829_006",
+      "number": 6,
+      "subject_id": "tcpip",
+      "text": "TCP 프로토콜에서 사용하는 흐름제어 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "GO-Back-N"
+        },
+        {
+          "key": 2,
+          "text": "선택적 재전송"
+        },
+        {
+          "key": 3,
+          "text": "Sliding Window"
+        },
+        {
+          "key": 4,
+          "text": "Idle-RQ"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20210829_007",
+      "number": 7,
+      "subject_id": "tcpip",
+      "text": "TFTP 프로토콜에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Trivial File Transfer Protocol의 약어이다."
+        },
+        {
+          "key": 2,
+          "text": "네트워크를 통한 파일 전송 서비스이다."
+        },
+        {
+          "key": 3,
+          "text": "3방향 핸드셰이킹 방법인 TCP 세션을 통해 전송한다."
+        },
+        {
+          "key": 4,
+          "text": "신속한 파일의 전송을 원할 경우에는 FTP보다 훨씬 큰"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20210829_008",
+      "number": 8,
+      "subject_id": "tcpip",
+      "text": "SNMP에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP를 이용하여 신뢰성 있는 통신을 한다."
+        },
+        {
+          "key": 2,
+          "text": "네트워크 관리를 위한 표준 프로토콜이다."
+        },
+        {
+          "key": 3,
+          "text": "응용 계층 프로토콜이다."
+        },
+        {
+          "key": 4,
+          "text": "RFC 1157에 규정되어 있다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20210829_009",
+      "number": 9,
+      "subject_id": "tcpip",
+      "text": "사설 IP주소를 공인 IP주소로 바꿔주는데 사용하는 통신망의 주소 변환 기술로, 공인 IP주소를 절약하고, 내부 사설망을 이용하여 인터넷에 연결하므로 보안을 강화할 수 있는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "DHCP"
+        },
+        {
+          "key": 2,
+          "text": "ARP"
+        },
+        {
+          "key": 3,
+          "text": "BOOTP"
+        },
+        {
+          "key": 4,
+          "text": "NAT"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20210829_010",
+      "number": 10,
+      "subject_id": "tcpip",
+      "text": "다음 지문에 표기된 IPv6 주소는 요약된 표현이다. 보기 중 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com 요약되기 전 상태는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "2000:00AB:0001:0000:0001:0002"
+        },
+        {
+          "key": 2,
+          "text": "2000:00AB:0001:0000:0000:0000:0001:0002"
+        },
+        {
+          "key": 3,
+          "text": "2000:AB00:1000:0000:1000:2000"
+        },
+        {
+          "key": 4,
+          "text": "2000:AB00:1000:0000:0000:0000:1000:2000"
+        }
+      ],
+      "answer": 2,
+      "has_figure": true,
+      "explanation": null
+    },
+    {
+      "id": "na2_20210829_011",
+      "number": 11,
+      "subject_id": "tcpip",
+      "text": "ICMP 메시지의 타입번호와 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "타입 0 : Echo Request (에코 요청)"
+        },
+        {
+          "key": 2,
+          "text": "타입 3 : Destination Unreachable (목적지 도달 불가)"
+        },
+        {
+          "key": 3,
+          "text": "타입 5 : Redirect (경로 재지정)"
+        },
+        {
+          "key": 4,
+          "text": "타입 11 : Time Exceeded (시간 초과)"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20210829_012",
+      "number": 12,
+      "subject_id": "tcpip",
+      "text": "네트워크를 관리하는 Kim 사원은 스위치에 원격접속시 Telnet을 이용하여 작업을 주로 진행하였지만 신규로 도입 되는 스위치에는 SSH로 접속 방법을 교체하고자 한다. 다 음 중 SSH의 특징으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Telnet에 비하여 보안성이 뛰어나다."
+        },
+        {
+          "key": 2,
+          "text": "ssh1은 RSA 암호화를 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "ssh2는 RSA 외 더 다양한 키교환방식을 지원한다."
+        },
+        {
+          "key": 4,
+          "text": "tcp/23번을 이용한다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20210829_013",
+      "number": 13,
+      "subject_id": "tcpip",
+      "text": "다음 보기 중에 RIP Routing Protocol에 대한 설명으로 옳 지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "디스턴스 벡터(Distance Vector) 라우팅 프로토콜이다."
+        },
+        {
+          "key": 2,
+          "text": "메트릭은 Hop Count를 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "표준 프로토콜이기 때문에 대부분의 라우터가 지원한다."
+        },
+        {
+          "key": 4,
+          "text": "RIPv1, RIPv2 모두 멀티캐스트를 이용하여 광고한다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": true,
+      "explanation": null
+    },
+    {
+      "id": "na2_20210829_014",
+      "number": 14,
+      "subject_id": "tcpip",
+      "text": "네트워크주소 210.212.100.0과 서브넷마스크 255.255.255.224인 네트워크에서 브로드캐스트주소는 무엇 인가? (문제 오류로 가답안 발표시 2번으로 발표되었으나,",
+      "options": [],
+      "answer": 2,
+      "has_figure": true,
+      "explanation": null
+    }
+  ]
+}

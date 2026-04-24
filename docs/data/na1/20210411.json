@@ -1,0 +1,1628 @@
+{
+  "cert_id": "na1",
+  "date": "20210411",
+  "label": "2021년 04월 11일",
+  "total_questions": 60,
+  "questions": [
+    {
+      "id": "na1_20210411_001",
+      "number": 1,
+      "subject_id": "tcpip",
+      "text": "TCP/IP 에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP는 전송계층(Transport Layer)프로토콜이다."
+        },
+        {
+          "key": 2,
+          "text": "IP는 네트워크계층(Network Layer)의 프로토콜이다."
+        },
+        {
+          "key": 3,
+          "text": "TCP는 전송을 담당하고, IP는 데이터의 에러검출을 담당"
+        },
+        {
+          "key": 4,
+          "text": "Telnet과 FTP는 모두 TCP/IP 프로토콜이다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_002",
+      "number": 2,
+      "subject_id": "tcpip",
+      "text": "IP Header Fields에 대한 내용 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Version - 4bits"
+        },
+        {
+          "key": 2,
+          "text": "TTL - 16bits"
+        },
+        {
+          "key": 3,
+          "text": "Type of Service - 8bits"
+        },
+        {
+          "key": 4,
+          "text": "Header Checksum - 16bits"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_003",
+      "number": 3,
+      "subject_id": "tcpip",
+      "text": "IP Address 할당에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "198.34.45.255는 개별 호스트에 할당 가능한 주소이다."
+        },
+        {
+          "key": 2,
+          "text": "127.X.X.X는 Loopback으로 사용되는 특별한 주소이다."
+        },
+        {
+          "key": 3,
+          "text": "167.34.0.0은 네트워크를 나타내는 대표 주소이므로 개별"
+        },
+        {
+          "key": 4,
+          "text": "호스트 ID의 모든 비트가 1로 채워진 경우는 브로드캐스"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_004",
+      "number": 4,
+      "subject_id": "tcpip",
+      "text": "IP Address ′138.212.30.25′가 속하는 Class는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "A Class"
+        },
+        {
+          "key": 2,
+          "text": "B Class"
+        },
+        {
+          "key": 3,
+          "text": "C Class"
+        },
+        {
+          "key": 4,
+          "text": "D Class"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_005",
+      "number": 5,
+      "subject_id": "tcpip",
+      "text": "서브넷 마스크에 대한 설명으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IP Address에서 네트워크 Address와 호스트 Address를"
+        },
+        {
+          "key": 2,
+          "text": "여러 개의 네트워크 Address를 하나의 Address로 통합한"
+        },
+        {
+          "key": 3,
+          "text": "Address는 효율적으로 관리하나 트래픽 관리 및 제어가"
+        },
+        {
+          "key": 4,
+          "text": "불필요한 Broadcasting Message는 제한 할 수 없다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_006",
+      "number": 6,
+      "subject_id": "tcpip",
+      "text": "서브넷이 최대 25개의 IP Address를 필요로 할 때, 서브넷 마스크로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "255.255.255.192"
+        },
+        {
+          "key": 2,
+          "text": "255.255.255.224"
+        },
+        {
+          "key": 3,
+          "text": "255.255.192.0"
+        },
+        {
+          "key": 4,
+          "text": "255.255.224.0"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_007",
+      "number": 7,
+      "subject_id": "tcpip",
+      "text": "IPv6에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "확장된 헤더에 선택사항들을 기술할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "멀티캐스트를 새로 도입하였다."
+        },
+        {
+          "key": 3,
+          "text": "특정한 흐름에 속해 있는 패킷들을 인식할 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "패킷의 출처 인증, 데이터 무결성의 보장 및 비밀의 보장"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_008",
+      "number": 8,
+      "subject_id": "tcpip",
+      "text": "SMTP에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "두 호스트 간 메시지 전송을 제공한다."
+        },
+        {
+          "key": 2,
+          "text": "네트워크의 구성원에 패킷을 보내기 위한 하드웨어 주소"
+        },
+        {
+          "key": 3,
+          "text": "전송에 대해 TCP를 사용한다."
+        },
+        {
+          "key": 4,
+          "text": "인터넷상에서 전자우편(E-Mail)의 전송을 규정한다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_009",
+      "number": 9,
+      "subject_id": "tcpip",
+      "text": "아래의 조건은 DNS 기록의 형식이다. 이에 해당되는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "정규 네임 자원 기록"
+        },
+        {
+          "key": 2,
+          "text": "주소 자원 기록"
+        },
+        {
+          "key": 3,
+          "text": "메일 교환 자원 기록"
+        },
+        {
+          "key": 4,
+          "text": "네임 서버 자원 기록"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_010",
+      "number": 10,
+      "subject_id": "tcpip",
+      "text": "FTP 서버에 접속 후 ′ls -al′ 명령어를 통해 얻은 결과 중 일부이다. 맨 앞의 ′d′가 의미하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "링크 파일"
+        },
+        {
+          "key": 2,
+          "text": "디렉터리"
+        },
+        {
+          "key": 3,
+          "text": "삭제된 파일"
+        },
+        {
+          "key": 4,
+          "text": "임시 파일"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_011",
+      "number": 11,
+      "subject_id": "tcpip",
+      "text": "SSH 프로토콜이 사용하는 포트 번호는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP 22번"
+        },
+        {
+          "key": 2,
+          "text": "TCP 23번"
+        },
+        {
+          "key": 3,
+          "text": "UDP 24번"
+        },
+        {
+          "key": 4,
+          "text": "UDP 25번"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_012",
+      "number": 12,
+      "subject_id": "tcpip",
+      "text": "지역 네트워크 구획에서 호스트가 다른 호스트와 통신하려 할 때, ARP 과정을 서술한 것 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "시작지의 호스트는 자신이 가지고 있는 ARP 캐시를 검"
+        },
+        {
+          "key": 2,
+          "text": "각 호스트는 목적지 호스트의 IP Address가 ARP 패킷에"
+        },
+        {
+          "key": 3,
+          "text": "목적지 호스트는 자신의 IP Address와 MAC Address를"
+        },
+        {
+          "key": 4,
+          "text": "시작지 호스트는 IP Address와 MAC Address를 시작지"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_013",
+      "number": 13,
+      "subject_id": "tcpip",
+      "text": "UDP에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "가상선로 개념이 없는 비연결형 프로토콜이다."
+        },
+        {
+          "key": 2,
+          "text": "TCP보다 전송속도가 느리다."
+        },
+        {
+          "key": 3,
+          "text": "각 사용자는 16비트의 포트번호를 할당받는다."
+        },
+        {
+          "key": 4,
+          "text": "데이터 전송이 블록 단위이다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_014",
+      "number": 14,
+      "subject_id": "tcpip",
+      "text": "Windows Server의 ′netstat′ 명령 중 이더넷 인터페이스와 프로토콜별 통계결과를 출력하는 명령은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Netstat –r -b"
+        },
+        {
+          "key": 2,
+          "text": "Netstat -a -n"
+        },
+        {
+          "key": 3,
+          "text": "Netstat –o -a"
+        },
+        {
+          "key": 4,
+          "text": "Netstat -e -s"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_015",
+      "number": 15,
+      "subject_id": "tcpip",
+      "text": "IP Address가 ′165.132.10.21′일 때 해당 Class와 사설 IP 대역을 바르게 짝지은 것은? (단, 서브넷 마스크는 Class에 맞는 기본 서브넷 마스크를 사용한다.)",
+      "options": [
+        {
+          "key": 1,
+          "text": "B Class , 사설 IP 대역 : 172.16.0.0 ~"
+        },
+        {
+          "key": 2,
+          "text": "B Class , 사설 IP 대역 : 162.32.0.0 ~"
+        },
+        {
+          "key": 3,
+          "text": "A Class , 사설 IP 대역 : 10.0.0.0 ~ 10.255.255.255"
+        },
+        {
+          "key": 4,
+          "text": "C Class , 사설 IP 대역 : 192.168.0.0 ~"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_016",
+      "number": 16,
+      "subject_id": "general",
+      "text": "망 내 교환 장비들이 오류 상황에 대한 보고를 할 수 있게 하고, 예상하지 못한 상황이 발생한 경우 이를 알릴 수 있 도록 지원하는 프로토콜은? 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 1급 ◐ 2021년 04월 11일 필기 기출문제",
+      "options": [
+        {
+          "key": 1,
+          "text": "ARP"
+        },
+        {
+          "key": 2,
+          "text": "RARP"
+        },
+        {
+          "key": 3,
+          "text": "ICMP"
+        },
+        {
+          "key": 4,
+          "text": "RIP"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_017",
+      "number": 17,
+      "subject_id": "general",
+      "text": "멀티캐스트를 지원하는 라우터가 멀티캐스트 그룹에 가입한 네트워크 내의 호스트를 관리하기 위한 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SMTP"
+        },
+        {
+          "key": 2,
+          "text": "ICMP"
+        },
+        {
+          "key": 3,
+          "text": "SCTP"
+        },
+        {
+          "key": 4,
+          "text": "IGMP"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_018",
+      "number": 18,
+      "subject_id": "general",
+      "text": "홈오토메이션, 산업용기기 자동화, 물류 및 환경 모니터링 등 무선 네트워킹에서 10~20M 내외의 근거리 통신시장과 최근 주목받고 있는 유비쿼터스 컴퓨팅를 위한 기술로서, 저 비용, 저 전력의 저속 데이터 전송의 특징과 하나의 무 선네트워크에 255대의 기기 연결이 가능한 이 기술은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Bluetooth"
+        },
+        {
+          "key": 2,
+          "text": "무선 LAN"
+        },
+        {
+          "key": 3,
+          "text": "Zigbee"
+        },
+        {
+          "key": 4,
+          "text": "WiBro"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_019",
+      "number": 19,
+      "subject_id": "general",
+      "text": "변조에 대한 설명으로 적절한 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "전달하고자 하는 신호를 목적지까지 효율적으로 보내기"
+        },
+        {
+          "key": 2,
+          "text": "단말기의 수신가능 신호에 적합한 신호를 생성하는 조직"
+        },
+        {
+          "key": 3,
+          "text": "복잡한 신호를 단순하게 하는 신호조작이다."
+        },
+        {
+          "key": 4,
+          "text": "신호에 제어신호를 추가하는 조작이다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_020",
+      "number": 20,
+      "subject_id": "general",
+      "text": "오류 검출 방식인 ARQ 방식 중에서 일정한 크기 단위로 연 속해서 프레임을 전송하고 수신측에 오류가 발견된 프레임 에 대하여 재전송 요청이 있을 경우 잘못된 프레임만을 다 시 전송하는 방법은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Stop-and-Wait ARQ"
+        },
+        {
+          "key": 2,
+          "text": "Go-back-N ARQ"
+        },
+        {
+          "key": 3,
+          "text": "Selective-repeat ARQ"
+        },
+        {
+          "key": 4,
+          "text": "Adaptive ARQ"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_021",
+      "number": 21,
+      "subject_id": "general",
+      "text": "멀티 플렉싱 방식 중 주파수 대역폭을 다수의 작은 대역폭 으로 분할 전송하는 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ATDM"
+        },
+        {
+          "key": 2,
+          "text": "CDM"
+        },
+        {
+          "key": 3,
+          "text": "FDM"
+        },
+        {
+          "key": 4,
+          "text": "STDM"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_022",
+      "number": 22,
+      "subject_id": "general",
+      "text": "성형 토폴로지의 특징으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "중앙 제어 노드가 통신상의 모든 제어를 관리한다."
+        },
+        {
+          "key": 2,
+          "text": "설치가 용이하나 비용이 많이 든다."
+        },
+        {
+          "key": 3,
+          "text": "중앙 제어노드 작동불능 시 전체 네트워크가 정지한다."
+        },
+        {
+          "key": 4,
+          "text": "모든 장치를 직접 쌍으로 연결할 수 있다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_023",
+      "number": 23,
+      "subject_id": "general",
+      "text": "트랜스포트 계층의 주된 기능에 해당하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "망 종단 간 데이터의 전달"
+        },
+        {
+          "key": 2,
+          "text": "링크 간 프레임 전송"
+        },
+        {
+          "key": 3,
+          "text": "노드 간 패킷 전송"
+        },
+        {
+          "key": 4,
+          "text": "물리매체에 비트 열 전송"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_024",
+      "number": 24,
+      "subject_id": "general",
+      "text": "OSI 7 Layer의 각 Layer 별 Data 형태로서 적당하지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Transport Layer - Segment"
+        },
+        {
+          "key": 2,
+          "text": "Network Layer - Packet"
+        },
+        {
+          "key": 3,
+          "text": "Datalink Layer - Fragment"
+        },
+        {
+          "key": 4,
+          "text": "Physical Layer - bit"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_025",
+      "number": 25,
+      "subject_id": "general",
+      "text": "데이터 전송 운영 방법에서 수신측에 n개의 데이터 블록을 수신할 수 있는 버퍼 저장 공간을 확보하고, 송신측은 확인 신호 없이 n개의 데이터 블록을 전송하며, 수신측은 버퍼가 찬 경우 제어정보를 송신측에 보내서 송신을 일시 정지시키 는 흐름제어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "블록"
+        },
+        {
+          "key": 2,
+          "text": "모듈러"
+        },
+        {
+          "key": 3,
+          "text": "Xon/Xoff"
+        },
+        {
+          "key": 4,
+          "text": "Window"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_026",
+      "number": 26,
+      "subject_id": "general",
+      "text": "CRC(Cyclic Redundancy Checking) 에러검출 방법에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "프레임이 수신되면 수신기는 같은 제수(Generator)를 사"
+        },
+        {
+          "key": 2,
+          "text": "CRC 비트를 만들기 위해 논리합 연산을 수행한다."
+        },
+        {
+          "key": 3,
+          "text": "전체 블록 검사를 위해 메시지는 하나의 긴 이진수로 간"
+        },
+        {
+          "key": 4,
+          "text": "메시지를 특정한 이진 소수에 의해 나눈 후 나머지를 송"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_027",
+      "number": 27,
+      "subject_id": "general",
+      "text": "OSI 7 Layer 별로 역할을 잘못 연결한 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Application - 데이터 표현, 코드 포맷 제공"
+        },
+        {
+          "key": 2,
+          "text": "Session - 두 호스트 간에 어플리케이션을 위한 커넥션"
+        },
+        {
+          "key": 3,
+          "text": "Network - 데이터를 전송하는 최적의 경로선택"
+        },
+        {
+          "key": 4,
+          "text": "Physical - 시스템 사이에서 물리적인 전송을 담당"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_028",
+      "number": 28,
+      "subject_id": "general",
+      "text": "네트워크 담당자 John은 Windows Server 2016을 활용하여 리소스 모니터를 통해 네트워크를 모니터링 하고 있다. 네 트워크 모니터링 항목으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "네트워크 활동이 있는 프로세스"
+        },
+        {
+          "key": 2,
+          "text": "네트워크 활동"
+        },
+        {
+          "key": 3,
+          "text": "IP 연결"
+        },
+        {
+          "key": 4,
+          "text": "수신 대기 포트"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_029",
+      "number": 29,
+      "subject_id": "nos",
+      "text": "서버 담당자 Kang 사원은 Windows Server 2016의 이벤트 뷰어를 통해 감사 정책에 따른 로그 정보를 학인하여 서버 의 상태를 지속적으로 체크하고 있다. 하드웨어 이벤트와 관련한 항목으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "사용자 지정 보기"
+        },
+        {
+          "key": 2,
+          "text": "Windows 로그"
+        },
+        {
+          "key": 3,
+          "text": "응용 프로그램 및 서비스 로그"
+        },
+        {
+          "key": 4,
+          "text": "구독"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_030",
+      "number": 30,
+      "subject_id": "nos",
+      "text": "서버 담당자 Park 대리는 Windows Server 2016을 이용하 여 자동으로 보안 템플릿을 만들어 시스템에 적용하고 분석 하는데 SecEdit.exe 도구를 사용하고자 한다. SecEdit.exe 도구를 사용하여 시스템에 적용할 보안 영역에 대한 설명으 로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SECURITYPOLICY : 시스템에 대한 로컬 정책 및 도메인"
+        },
+        {
+          "key": 2,
+          "text": "GROUP_MGMT : 보안 템플릿에 지정된 관리 그룹"
+        },
+        {
+          "key": 3,
+          "text": "USER_RIGHTS : 사용자 로그온 권한 및 사용 권한 부여"
+        },
+        {
+          "key": 4,
+          "text": "SERVICES : 정의된 모든 서비스"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_031",
+      "number": 31,
+      "subject_id": "nos",
+      "text": "서버 관리자 Scott 사원은 Windows Server 2016 운영체제 를 기반으로 데이터베이스를 운영하고 있다. 데이터 저장장 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 1급 ◐ 2021년 04월 11일 필기 기출문제 치의 분실에 의한 개인정보가 누출되지 않도록 하기 위하여 BitLocker 기술을 활용하고자 한다. BitLocker 기술에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "BitLocker 기능을 사용하기 위해서는 TPM이 장착된 메"
+        },
+        {
+          "key": 2,
+          "text": "고정 데이터, 운영 체제, 이동식 데이터 드라이브에 대한"
+        },
+        {
+          "key": 3,
+          "text": "볼륨 또는 디스크를 통째로 잠그는 기능으로, 파일이나"
+        },
+        {
+          "key": 4,
+          "text": "드라이브 잠금 해제를 위한 암호를 분실한 경우, 48자리"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_032",
+      "number": 32,
+      "subject_id": "nos",
+      "text": "Windows Server 2016 보안을 위한 윈도우 인증의 구성요 소에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "LSA : 모든 계정의 로그인에 대한 검증을 하고 시스템"
+        },
+        {
+          "key": 2,
+          "text": "SAM : 사용자와 그룹 계정 정보에 대한 데이터베이스를"
+        },
+        {
+          "key": 3,
+          "text": "SRM : 사용자에게 SID를 부여하고, 파일이나 디렉토리"
+        },
+        {
+          "key": 4,
+          "text": "GINA : 사용자가 입력한 아이디와 패스워드를 SAM에"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_033",
+      "number": 33,
+      "subject_id": "nos",
+      "text": "서버 담당자 Kim 대리는 Windows Server 2016을 사용하여 보안 설정을 하려고 한다. 로컬 그룹 정책 편집기(로컬 컴퓨 터 정책)로 보안 설정을 할 수 있는 항목으로 옳지 않은 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "공개 키 정책"
+        },
+        {
+          "key": 2,
+          "text": "정책 기반 QoS"
+        },
+        {
+          "key": 3,
+          "text": "고급 감사 정책 구성"
+        },
+        {
+          "key": 4,
+          "text": "소프트웨어 제한 정책"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_034",
+      "number": 34,
+      "subject_id": "nos",
+      "text": "리눅스 서버 관리자인 Han 과장은 iptables를 이용하여 패 킷을 필터링하는 방화벽으로 사용하고 있다. Iptables 규칙 의 설정 파라미터인 커맨드에 대한 설명으로 옳지 않은 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "iptables -A : 패킷 필터링 규칙을 설명하는데 사용한다."
+        },
+        {
+          "key": 2,
+          "text": "iptables -D : 패킷 필터링 규칙을 삭제하는데 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "iptables -L : 패킷 필터링 규칙을 표시하는데 사용한다."
+        },
+        {
+          "key": 4,
+          "text": "iptables -F : 패킷 필터링 규칙을 삭제하는데 사용한다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_035",
+      "number": 35,
+      "subject_id": "nos",
+      "text": "서버 관리자인 Lee 사원은 리눅스와 윈도우즈 운영체제 사 이에 자료 공유 등을 위하여 삼바를 사용한다. 삼바와 관련 한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "삼바의 접근 관련 설정 파일은 ′/etc/samba/smb.conf′"
+        },
+        {
+          "key": 2,
+          "text": "리눅스에서 윈도우 서버로 접속할 때 ′smbclient′ 명령어"
+        },
+        {
+          "key": 3,
+          "text": "리눅스에 공유된 디렉토리를 마운트할 때 ′mount.cifs′"
+        },
+        {
+          "key": 4,
+          "text": "삼바 서버에서 클라이언트의 연결상태를 확인하는 명령"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_036",
+      "number": 36,
+      "subject_id": "nos",
+      "text": "시스템 담당자인 LEE 사원은 현재 디렉토리 아래에서 최근 1주일 이내에 수정된 파일들을 검색하고, 해당하는 파일들 을 자세히 보고자 한다. 이를 위한 명령어와 옵션으로 올바 른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "find . -mtime +7 -exec ls -al {} ＼;"
+        },
+        {
+          "key": 2,
+          "text": "find . -mtime -7 -exec ls -al {} ＼;"
+        },
+        {
+          "key": 3,
+          "text": "find . -atime +7 -exec ls -al {} ＼;"
+        },
+        {
+          "key": 4,
+          "text": "find . -atime -7 -exec ls -al {} ＼;"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_037",
+      "number": 37,
+      "subject_id": "nos",
+      "text": "서버 관리자 KIM 사원은 웹서버의 설정파일인 ′httpd.conf′ 을 관리자 계정을 가진 사용자일지라도 파일의 내용 및 이 름을 변경하거나 삭제가 불가능하도록 해당 파일의 속성을 확인하고, 적절한 속성을 설정하고자 한다. 이를 위한 명령 어와 옵션으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ls -al, chmod 744"
+        },
+        {
+          "key": 2,
+          "text": "lsattr -a, chmod 744"
+        },
+        {
+          "key": 3,
+          "text": "ls -al, chattr +I"
+        },
+        {
+          "key": 4,
+          "text": "lsattr -a, chattr +i"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_038",
+      "number": 38,
+      "subject_id": "nos",
+      "text": "Linux에서 DNS를 설치하기 위한 ′named.zone′ 파일의 SOA 레코드에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Serial : 타 네임서버가 이 정보를 유지하는 최소 유효기"
+        },
+        {
+          "key": 2,
+          "text": "Refresh : Primary 네임서버의 Zone 데이터베이스 수정"
+        },
+        {
+          "key": 3,
+          "text": "Retry : Secondary 네임서버에서 Primary 네임서버로 접"
+        },
+        {
+          "key": 4,
+          "text": "Expire : Primary 네임서버 정보의 신임 기간"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_039",
+      "number": 39,
+      "subject_id": "nos",
+      "text": "Linux 시스템에서 ′chmod 644 index.html′라는 명령어를 사용하였을 때, ′index.html′ 파일에 변화되는 내용으로 옳 은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "소유자의 권한은 읽기, 쓰기가 가능하며, 그룹과 그 외의"
+        },
+        {
+          "key": 2,
+          "text": "소유자의 권한은 읽기, 쓰기, 실행이 가능하며, 그룹과"
+        },
+        {
+          "key": 3,
+          "text": "소유자의 권한은 쓰기만 가능하며, 그룹과 그 외의 사용"
+        },
+        {
+          "key": 4,
+          "text": "소유자의 권한은 읽기만 가능하며, 그룹과 그 외의 사용"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_040",
+      "number": 40,
+      "subject_id": "nos",
+      "text": "DNS 레코드 중 IP Address를 도메인 네임으로 역매핑하는 레코드는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SOA"
+        },
+        {
+          "key": 2,
+          "text": "A"
+        },
+        {
+          "key": 3,
+          "text": "PTR"
+        },
+        {
+          "key": 4,
+          "text": "CNAME"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_041",
+      "number": 41,
+      "subject_id": "nos",
+      "text": "Linux 명령어 중 사용자 그룹을 생성하기 위해 사용되는 명 령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "groups"
+        },
+        {
+          "key": 2,
+          "text": "mkgroup"
+        },
+        {
+          "key": 3,
+          "text": "groupstart"
+        },
+        {
+          "key": 4,
+          "text": "groupadd"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_042",
+      "number": 42,
+      "subject_id": "equipment",
+      "text": "Linux의 ′ln′ 명령어에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "하드링크로 생성된 파일은 원본 파일과 inode가 같다."
+        },
+        {
+          "key": 2,
+          "text": "자신이 액세스 할 수 없는 사용권한을 가졌더라도 ′-f′"
+        },
+        {
+          "key": 3,
+          "text": "심볼릭링크를 사용할 때, 원본 파일이 삭제되어도 이 심"
+        },
+        {
+          "key": 4,
+          "text": "하드링크는 원본 파일을 삭제하더라도 다른 링크된 파일"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_043",
+      "number": 43,
+      "subject_id": "equipment",
+      "text": "Linux에서 다음과 같은 옵션을 사용하여 사용자 계정을 추 가한 경우 설명이 잘못된 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "사용자 계정은 test이다."
+        },
+        {
+          "key": 2,
+          "text": "홈 디렉터리로는 ′/home/test′를 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "셸은 본셸을 사용한다."
+        },
+        {
+          "key": 4,
+          "text": "40일마다 패스워드를 변경하도록 설정한다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_044",
+      "number": 44,
+      "subject_id": "equipment",
+      "text": "Linux에서 주어진 명령어의 매뉴얼(도움말, 옵션 등)을 출력 하기 위해 사용되는 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ps"
+        },
+        {
+          "key": 2,
+          "text": "fine"
+        },
+        {
+          "key": 3,
+          "text": "man"
+        },
+        {
+          "key": 4,
+          "text": "ls"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_045",
+      "number": 45,
+      "subject_id": "equipment",
+      "text": "DHCP 서비스 이용 시 이점으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "새 컴퓨터를 구성 할 때 다시 사용되는 IP Address와 충"
+        },
+        {
+          "key": 2,
+          "text": "관리자의 단순하고 반복적인 작업에 대한 부담을 덜어"
+        },
+        {
+          "key": 3,
+          "text": "위치를 자주 바꾸는 이동 또는 휴대용 컴퓨터 사용자에"
+        },
+        {
+          "key": 4,
+          "text": "네트워크의 컴퓨터를 구성하는데 소요되는 시간을 크게"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_046",
+      "number": 46,
+      "subject_id": "equipment",
+      "text": "다음의 (A)에 들어갈 알맞은 용어는 무엇인가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "WAS (Web Application Server)"
+        },
+        {
+          "key": 2,
+          "text": "DNS (Domain Name System)"
+        },
+        {
+          "key": 3,
+          "text": "RAS (Remote Access Server)"
+        },
+        {
+          "key": 4,
+          "text": "NAT (Network Address Translation)"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_047",
+      "number": 47,
+      "subject_id": "equipment",
+      "text": "라우터(Router)는 OSI 7 Layer 중 어느 계층에서 동작하는 가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Physical Layer"
+        },
+        {
+          "key": 2,
+          "text": "DataLink Laye"
+        },
+        {
+          "key": 3,
+          "text": "Network Layer"
+        },
+        {
+          "key": 4,
+          "text": "TCP/IP Layer"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_048",
+      "number": 48,
+      "subject_id": "equipment",
+      "text": "다음 중 라우터에서 경로를 찾는데 사용되는 라우팅 프로토 콜의 종류로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "RIP"
+        },
+        {
+          "key": 2,
+          "text": "OSPF"
+        },
+        {
+          "key": 3,
+          "text": "IPX"
+        },
+        {
+          "key": 4,
+          "text": "EIGRP"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_049",
+      "number": 49,
+      "subject_id": "equipment",
+      "text": "네트워크 장비 중 Repeater의 특징으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "회선상의 전자기 또는 광학 신호를 증폭하여 네트워크의"
+        },
+        {
+          "key": 2,
+          "text": "OSI 7 Layer 중 물리적 계층에 해당하며 두 개의 포트를"
+        },
+        {
+          "key": 3,
+          "text": "HUB에 Repeater 회로가 내장되어 Repeater를 대신하여"
+        },
+        {
+          "key": 4,
+          "text": "단일 네트워크에는 여러 대의 Repeater를 사용 할 수가"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_050",
+      "number": 50,
+      "subject_id": "equipment",
+      "text": "LAN 카드의 MAC Address에 실제로 사용하는 비트 수는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "16bit"
+        },
+        {
+          "key": 2,
+          "text": "32bit"
+        },
+        {
+          "key": 3,
+          "text": "48bit"
+        },
+        {
+          "key": 4,
+          "text": "64bit"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_051",
+      "number": 51,
+      "subject_id": "equipment",
+      "text": "무차별 대입 공격이라 하며 주어진 경우의 수를 모두 대입 하여 암호를 크랙하는 기법은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Reflective XSS"
+        },
+        {
+          "key": 2,
+          "text": "Brute-Force Attack"
+        },
+        {
+          "key": 3,
+          "text": "Dictionary Attack"
+        },
+        {
+          "key": 4,
+          "text": "SQL injection"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_052",
+      "number": 52,
+      "subject_id": "security",
+      "text": "다음에서 설명하는 기술은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SQL injection"
+        },
+        {
+          "key": 2,
+          "text": "파일 업로드 공격"
+        },
+        {
+          "key": 3,
+          "text": "파일 다운 로드 공격"
+        },
+        {
+          "key": 4,
+          "text": "드라이브 다운 로드"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_053",
+      "number": 53,
+      "subject_id": "security",
+      "text": "다음 중 스니핑(Sniffing) 해킹 방법에 대한 설명으로 가장 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Ethernet Device 모드를 Promiscuous 모드로 전환하여"
+        },
+        {
+          "key": 2,
+          "text": "TCP/IP 패킷의 내용을 변조하여 자신을 위장한다."
+        },
+        {
+          "key": 3,
+          "text": "스텝 영역에 Strcpy와 같은 함수를 이용해 넘겨받은 인"
+        },
+        {
+          "key": 4,
+          "text": "클라이언트로 하여금 다른 Java Applet을 실행시키도록"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_054",
+      "number": 54,
+      "subject_id": "security",
+      "text": "다음에서 설명하는 키 교환 알고리즘은 무엇인가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Diffie-Hellman"
+        },
+        {
+          "key": 2,
+          "text": "3-DES"
+        },
+        {
+          "key": 3,
+          "text": "AES(Rijndael)"
+        },
+        {
+          "key": 4,
+          "text": "Seed"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_055",
+      "number": 55,
+      "subject_id": "security",
+      "text": "DoS(Denial of Service)의 개념으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "다량의 패킷을 목적지 서버로 전송하여 서비스를 불가능"
+        },
+        {
+          "key": 2,
+          "text": "로컬 호스트의 프로세스를 과도하게 fork 함으로써 서비"
+        },
+        {
+          "key": 3,
+          "text": "서비스 대기 중인 포트에 특정 메시지를 다량으로 보내"
+        },
+        {
+          "key": 4,
+          "text": "Internet Explorer를 사용하여 특정권한을 취득하는 행위"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_056",
+      "number": 56,
+      "subject_id": "security",
+      "text": "5명의 사용자가 대칭키(Symmetric Key)를 사용하여 주고받 는 메시지를 암호화하기 위해서 필요한 총 키의 수는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "2개"
+        },
+        {
+          "key": 2,
+          "text": "5개"
+        },
+        {
+          "key": 3,
+          "text": "10개"
+        },
+        {
+          "key": 4,
+          "text": "1개"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_057",
+      "number": 57,
+      "subject_id": "security",
+      "text": "Linux 시스템에서 패스워드의 유효 기간을 정하는데 사용될 수 없는 방법은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "'/etc/login.defs' 의 설정을 사용자 account 생성 시 지"
+        },
+        {
+          "key": 2,
+          "text": "chown 명령을 활용하여 지정"
+        },
+        {
+          "key": 3,
+          "text": "'/etc/default/useradd' 파일의 설정을 account 생성 시"
+        },
+        {
+          "key": 4,
+          "text": "change 명령을 활용하여 지정"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_058",
+      "number": 58,
+      "subject_id": "security",
+      "text": "SET(Secure Electronic Transaction)에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "초기에 마스터카드, 비자카드, 마이크로소프트, 네스케이"
+        },
+        {
+          "key": 2,
+          "text": "인터넷상에서의 금융 거래 안전을 보장하기 위한 시스템"
+        },
+        {
+          "key": 3,
+          "text": "메시지의 암호화, 전자증명서, 디지털서명 등의 기능이"
+        },
+        {
+          "key": 4,
+          "text": "지불정보는 비밀키를 이용하여 암호화한다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_059",
+      "number": 59,
+      "subject_id": "security",
+      "text": "Apache 웹 서버 로그에서 확인 할 수 없는 정보는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "클라이언트의 IP Address"
+        },
+        {
+          "key": 2,
+          "text": "클라이언트의 요청 페이지"
+        },
+        {
+          "key": 3,
+          "text": "클라이언트의 접속 시도 날짜"
+        },
+        {
+          "key": 4,
+          "text": "클라이언트의 게시판 입력 내용"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na1_20210411_060",
+      "number": 60,
+      "subject_id": "security",
+      "text": "S/MIME에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "전자우편 보안 서비스로, HTTP에서는 사용이 불가능하"
+        },
+        {
+          "key": 2,
+          "text": "X.509 형태의 S/MIME 인증서를 발행하여 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "전자 서명과 암호화를 동시에 사용할 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "대칭키 암호 알고리즘을 사용하여 전자우편을 암호화 한"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    }
+  ]
+}

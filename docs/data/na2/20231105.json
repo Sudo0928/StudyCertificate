@@ -1,0 +1,1358 @@
+{
+  "cert_id": "na2",
+  "date": "20231105",
+  "label": "2023년 11월 05일",
+  "total_questions": 50,
+  "questions": [
+    {
+      "id": "na2_20231105_001",
+      "number": 1,
+      "subject_id": "tcpip",
+      "text": "C Class의 네트워크 주소가 ′192.168.10.0′ 이고, 서브넷 마 스크가 ′255.255.255.240′ 일 때, 최대 사용 가능한 호스트 수는?(단, 네트워크 주소와 브로드캐스트 호스트는 제외한 다.)",
+      "options": [
+        {
+          "key": 1,
+          "text": "10개"
+        },
+        {
+          "key": 2,
+          "text": "14개"
+        },
+        {
+          "key": 3,
+          "text": "26개"
+        },
+        {
+          "key": 4,
+          "text": "32개"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_002",
+      "number": 2,
+      "subject_id": "tcpip",
+      "text": "IPv6 헤더 형식에서 네트워크 내에서 데이터그램의 생존 기 간과 관련되는 필드는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Version"
+        },
+        {
+          "key": 2,
+          "text": "Priority"
+        },
+        {
+          "key": 3,
+          "text": "Next Header"
+        },
+        {
+          "key": 4,
+          "text": "Hop Limit"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_003",
+      "number": 3,
+      "subject_id": "tcpip",
+      "text": "TCP가 제공하는 기능으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "종단 간 흐름 제어를 위해 동적 윈도우(Dynamic Sliding"
+        },
+        {
+          "key": 2,
+          "text": "한 번에 많은 데이터의 전송에 유리하기 때문에 화상 통"
+        },
+        {
+          "key": 3,
+          "text": "송수신되는 데이터의 에러를 제어함으로서 신뢰성 있는"
+        },
+        {
+          "key": 4,
+          "text": "Three Way Handshaking 과정을 통해 데이터를 주고받는"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_004",
+      "number": 4,
+      "subject_id": "tcpip",
+      "text": "UDP 헤더 구조에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Source Port - 송신측 응용 프로세스 포트 번호 필드"
+        },
+        {
+          "key": 2,
+          "text": "Destination Port - 선택적 필드로 사용하지 않을 때는"
+        },
+        {
+          "key": 3,
+          "text": "Checksum - 오류 검사를 위한 필드"
+        },
+        {
+          "key": 4,
+          "text": "Length - UDP 헤더와 데이터 부분을 포함한 데이터 그"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_005",
+      "number": 5,
+      "subject_id": "tcpip",
+      "text": "프로토콜과 일반적으로 사용되는 포트번호(Well-Known Port) 의 연결이 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "FTP : 21번"
+        },
+        {
+          "key": 2,
+          "text": "Telnet : 23번"
+        },
+        {
+          "key": 3,
+          "text": "HTTP : 180번"
+        },
+        {
+          "key": 4,
+          "text": "SMTP : 25번"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_006",
+      "number": 6,
+      "subject_id": "tcpip",
+      "text": "사설 IP주소를 공인 IP주소로 바꿔주는데 사용하는 통신망의 주소 변환 기술로, 공인 IP주소를 절약하고, 내부 사설망을 이용하여 인터넷에 연결하므로 보안을 강화할 수 있는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "DHCP"
+        },
+        {
+          "key": 2,
+          "text": "ARP"
+        },
+        {
+          "key": 3,
+          "text": "BOOTP"
+        },
+        {
+          "key": 4,
+          "text": "NAT"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_007",
+      "number": 7,
+      "subject_id": "tcpip",
+      "text": "Ethernet 같은 네트워크가 제공하는 브로드캐스트 기능을 사 용하여 목적지 IP Address에 물리적 하드웨어 주소를 매핑시 키는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ARP"
+        },
+        {
+          "key": 2,
+          "text": "RARP"
+        },
+        {
+          "key": 3,
+          "text": "DNS"
+        },
+        {
+          "key": 4,
+          "text": "DHCP"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_008",
+      "number": 8,
+      "subject_id": "tcpip",
+      "text": "SNMP에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP를 이용하여 신뢰성 있는 통신을 한다."
+        },
+        {
+          "key": 2,
+          "text": "네트워크 관리를 위한 표준 프로토콜이다."
+        },
+        {
+          "key": 3,
+          "text": "응용 계층 프로토콜이다."
+        },
+        {
+          "key": 4,
+          "text": "RFC 1157에 규정되어 있다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_009",
+      "number": 9,
+      "subject_id": "tcpip",
+      "text": "다음 지문에 표기된 IPv6 주소는 요약된 표현이다. 보기 중 요약되기 전 상태는? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
+      "options": [
+        {
+          "key": 1,
+          "text": "2000:00AB:0001:0000:0001:0002"
+        },
+        {
+          "key": 2,
+          "text": "2000:00AB:0001:0000:0000:0000:0001:0002"
+        },
+        {
+          "key": 3,
+          "text": "2000:AB00:1000:0000:1000:2000"
+        },
+        {
+          "key": 4,
+          "text": "2000:AB00:1000:0000:0000:0000:1000:2000"
+        }
+      ],
+      "answer": 2,
+      "has_figure": true,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_010",
+      "number": 10,
+      "subject_id": "tcpip",
+      "text": "네트워크와 서버를 관리하는 Kim 사원은 인터넷이 느려졌다 는 민원을 받았다. 이를 해결하기 위해서 해당 ISP 주소쪽 으로 명령어(A)를 입력하였더니 다소 지연이 있었음을 발견 하였다. 이 사항을 확인하기 위해서 (A)에 들어가야 할 명령 어는?(단, 윈도우 계열의 명령프롬프트(cmd)에서 실행하였 다.)",
+      "options": [
+        {
+          "key": 1,
+          "text": "nslookup"
+        },
+        {
+          "key": 2,
+          "text": "tracert"
+        },
+        {
+          "key": 3,
+          "text": "ping"
+        },
+        {
+          "key": 4,
+          "text": "traceroute"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_011",
+      "number": 11,
+      "subject_id": "tcpip",
+      "text": "네트워크주소 ′210.212.100.0′과 서브넷마스크 ′ 255.255.255.224′인 네트워크에서 브로드캐스트 주소는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "210.212.100.30"
+        },
+        {
+          "key": 2,
+          "text": "210.212.100.31"
+        },
+        {
+          "key": 3,
+          "text": "210.212.102.32"
+        },
+        {
+          "key": 4,
+          "text": "210.212.103.64"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_012",
+      "number": 12,
+      "subject_id": "tcpip",
+      "text": "IPv4 Address 중 네트워크 ID가 ′127′로 시작하는 주소의 용도는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "제한적 브로드캐스트 주소"
+        },
+        {
+          "key": 2,
+          "text": "B Class의 멀티캐스트 주소"
+        },
+        {
+          "key": 3,
+          "text": "C Class의 사설(Private) IP 주소"
+        },
+        {
+          "key": 4,
+          "text": "루프백(Loopback) 주소"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_013",
+      "number": 13,
+      "subject_id": "tcpip",
+      "text": "ICMP(Internet Control Message Protocol)에 대한 설명 중 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "예외적으로 발생되는 이벤트에 대해 이를 알릴 수 있도"
+        },
+        {
+          "key": 2,
+          "text": "비대칭 프로토콜이고 TTL(Time To Live)를 제공한다."
+        },
+        {
+          "key": 3,
+          "text": "네트워크 망간 장비들의 오류 상황에 대해 공유할 수 있"
+        },
+        {
+          "key": 4,
+          "text": "호스트의 물리적 주소를 제공한다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_014",
+      "number": 14,
+      "subject_id": "tcpip",
+      "text": "네트워크 계층에서 IP(Internet Protocol)는 핵심 프로토콜이 다. 단편화 작업 중 분할되는 Data를 구별하기 위한 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "DF Flag"
+        },
+        {
+          "key": 2,
+          "text": "서비스 타입"
+        },
+        {
+          "key": 3,
+          "text": "오프셋"
+        },
+        {
+          "key": 4,
+          "text": "TTL"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_015",
+      "number": 15,
+      "subject_id": "tcpip",
+      "text": "(A) 안에 들어가는 용어 중 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "L1 스위치"
+        },
+        {
+          "key": 2,
+          "text": "L2 스위치"
+        },
+        {
+          "key": 3,
+          "text": "L3 스위치"
+        },
+        {
+          "key": 4,
+          "text": "L4 스위치"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_016",
+      "number": 16,
+      "subject_id": "general",
+      "text": "네트워크를 관리하는 Kim은 사내 네트워크의 성능 향상을 위하여 MTU(Maximum Transmission Unit)를 고려하고 있 다. 다음 중 MTU에 대한 설명 중 옳은 것은? 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 2급 ◐ 2023년 11월 05일 필기 기출문제",
+      "options": [
+        {
+          "key": 1,
+          "text": "인터넷 IPv4기준시 최소 1280 바이트의 값을 가진다."
+        },
+        {
+          "key": 2,
+          "text": "인터넷 IPv6기준시 최소 68 바이트의 값을 가진다."
+        },
+        {
+          "key": 3,
+          "text": "Ethernet 구현에서 대부분의 IP는 Ethernet V2 프레임의"
+        },
+        {
+          "key": 4,
+          "text": "MTU의 크기는 항상 1500 바이트로 고정되어 있다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_017",
+      "number": 17,
+      "subject_id": "general",
+      "text": "TCP/IP에서 Multicast에 대한 설명으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "하나의 호스트가 네트워크 내의 정해진 호스트 그룹으로"
+        },
+        {
+          "key": 2,
+          "text": "하나의 호스트가 네트워크 내의 모든 호스트에게 메시지"
+        },
+        {
+          "key": 3,
+          "text": "하나의 호스트가 네트워크 내의 하나의 호스트로 메시지"
+        },
+        {
+          "key": 4,
+          "text": "하나의 호스트가 다시 자기 자신에게 메시지를 보내는"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_018",
+      "number": 18,
+      "subject_id": "general",
+      "text": "다음 (A) 안에 들어가는 용어 중 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "VLAN"
+        },
+        {
+          "key": 2,
+          "text": "NAT"
+        },
+        {
+          "key": 3,
+          "text": "VPN"
+        },
+        {
+          "key": 4,
+          "text": "Public Network"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_019",
+      "number": 19,
+      "subject_id": "general",
+      "text": "전송을 받는 개체에서 발송지로부터 오는 데이터의 양이나 속도를 제한하는 프로토콜의 기능을 나타내는 용어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "에러 제어"
+        },
+        {
+          "key": 2,
+          "text": "순서 제어"
+        },
+        {
+          "key": 3,
+          "text": "흐름 제어"
+        },
+        {
+          "key": 4,
+          "text": "접속 제어"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_020",
+      "number": 20,
+      "subject_id": "general",
+      "text": "IEEE 802 프로토콜의 연결이 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IEEE 802.3 : 토큰 버스"
+        },
+        {
+          "key": 2,
+          "text": "IEEE 802.4 : 토큰 링"
+        },
+        {
+          "key": 3,
+          "text": "IEEE 802.11 : 무선 LAN"
+        },
+        {
+          "key": 4,
+          "text": "IEEE 802.5 : CSMA/CD"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_021",
+      "number": 21,
+      "subject_id": "general",
+      "text": "OSI 7 Layer 중 세션계층의 역할로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "대화 제어"
+        },
+        {
+          "key": 2,
+          "text": "에러 제어"
+        },
+        {
+          "key": 3,
+          "text": "연결 설정 종료"
+        },
+        {
+          "key": 4,
+          "text": "동기화"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_022",
+      "number": 22,
+      "subject_id": "general",
+      "text": "다음 중 무선LAN 보안을 위해 가장 강력한 방법은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "WEP(Wired Equivalent Privacy)"
+        },
+        {
+          "key": 2,
+          "text": "WPA(Wi-Fi Protected Access)"
+        },
+        {
+          "key": 3,
+          "text": "WPA2(IEEE802.11i)"
+        },
+        {
+          "key": 4,
+          "text": "MAC주소필터링"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_023",
+      "number": 23,
+      "subject_id": "general",
+      "text": "다음은 네트워크 구축에 필요한 매체에 관한 내용이다. 해 당 내용에 대하여 잘못 서술된 항목은? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
+      "options": [
+        {
+          "key": 1,
+          "text": "단일모드(Single-mode)는 가격이 비싸고 고속전송에 유"
+        },
+        {
+          "key": 2,
+          "text": "Optical Fiber Cable은 코어와 클래딩의 굴절률 차이에"
+        },
+        {
+          "key": 3,
+          "text": "Optical Fiber Cable을 사용하는 경우 일반적으로 발광"
+        },
+        {
+          "key": 4,
+          "text": "Optical Fiber Cable은 구조상 전기적인 신호가 아닌 광"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_024",
+      "number": 24,
+      "subject_id": "general",
+      "text": "다음은 이동 통신(디지털 셀룰러 시스템)에 관한 내용이다. (A) 안에 들어가는 용어 중 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "기지국 제어기 (BSC, Base Station Controller)"
+        },
+        {
+          "key": 2,
+          "text": "홈 위치 등록기 (HLR, Home Location Register)"
+        },
+        {
+          "key": 3,
+          "text": "방문자 위치 등록기 (VLR, Visitor Location Register)"
+        },
+        {
+          "key": 4,
+          "text": "운용 보존국 (OMC, Operation and Maintenance"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_025",
+      "number": 25,
+      "subject_id": "general",
+      "text": "( ) 안에 공통으로 들어가는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "위키"
+        },
+        {
+          "key": 2,
+          "text": "블로그"
+        },
+        {
+          "key": 3,
+          "text": "플랫폼"
+        },
+        {
+          "key": 4,
+          "text": "클라우드"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_026",
+      "number": 26,
+      "subject_id": "general",
+      "text": "다음은 Home Network에 사용되는 기술 중 WPAN(Wireless Personal Area Network)에 대한 설명이다. (A),(B),(C) 안에 들어갈 표준을 순서대로 나열한 것은? 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 2급 ◐ 2023년 11월 05일 필기 기출문제",
+      "options": [
+        {
+          "key": 1,
+          "text": "802.11.1 – 802.11.3 – 802.11.4"
+        },
+        {
+          "key": 2,
+          "text": "802.11a – 802.11b – 802.11c"
+        },
+        {
+          "key": 3,
+          "text": "802.15.1 – 802.15.3 – 802.15.4"
+        },
+        {
+          "key": 4,
+          "text": "802.16.1 – 802.16.3 – 802.16.4"
+        }
+      ],
+      "answer": 3,
+      "has_figure": true,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_027",
+      "number": 27,
+      "subject_id": "general",
+      "text": "다음은 네트워크 시스템/장비 구축에 관한 내용이다. (A) 안 에 들어가는 용어 중 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "NAS (Network-Attached Storage)"
+        },
+        {
+          "key": 2,
+          "text": "SCSI (Small Computer System Interface)"
+        },
+        {
+          "key": 3,
+          "text": "DAS (Direct-Attached Storage)"
+        },
+        {
+          "key": 4,
+          "text": "RAID (Redundant Array of Independent Disks)"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_028",
+      "number": 28,
+      "subject_id": "nos",
+      "text": "Linux 시스템에 좀비 프로세스가 많이 생겨 시스템을 재부 팅하려고 한다. 현재 Linux 시스템에 접속해 있는 사용자에 게 메시지를 전달하고, 5분 후에 시스템을 재부팅시키는 명 령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "shutdown -r now 'Warning! After 5 minutes will be"
+        },
+        {
+          "key": 2,
+          "text": "shutdown now 'Warning! After 5 minutes will be"
+        },
+        {
+          "key": 3,
+          "text": "shutdown -r +5 'Warning! After 5 minutes will be"
+        },
+        {
+          "key": 4,
+          "text": "shutdown +5 'Warning! After 5 minutes will be"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_029",
+      "number": 29,
+      "subject_id": "nos",
+      "text": "Linux 시스템에 있는 부트 로더로서 Linux 뿐만 아니라 다 른 운영체제와의 멀티부팅 기능도 지원해주는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "CMOS"
+        },
+        {
+          "key": 2,
+          "text": "BASH"
+        },
+        {
+          "key": 3,
+          "text": "GRUB"
+        },
+        {
+          "key": 4,
+          "text": "ROOT"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_030",
+      "number": 30,
+      "subject_id": "nos",
+      "text": "Windows Server 2016에서 지원하는 Hyper-V에 대한 설명 으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "하드웨어 사용율을 높여준다."
+        },
+        {
+          "key": 2,
+          "text": "서버 가용성이 줄어든다."
+        },
+        {
+          "key": 3,
+          "text": "유지비용을 줄일 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "개발 및 테스트의 효율성을 향상시킨다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_031",
+      "number": 31,
+      "subject_id": "nos",
+      "text": "Linux 시스템에서 특정 파일의 권한이 ′-rwxr-x--x′ 이다. 이 파일에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "소유자는 읽기 권한, 쓰기 권한, 실행 권한을 갖는다."
+        },
+        {
+          "key": 2,
+          "text": "소유자와 같은 그룹을 제외한 다른 모든 사용자는 실행"
+        },
+        {
+          "key": 3,
+          "text": "이 파일의 모드는 ′751′ 이다."
+        },
+        {
+          "key": 4,
+          "text": "동일한 그룹에 속한 사용자는 실행 권한만을 갖는다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_032",
+      "number": 32,
+      "subject_id": "nos",
+      "text": "서버 담당자 Park 사원은 데이터를 안전하게 보호하는 일을 담당하고 있다. 도난 발생 시 데이터를 보호하기 위해 강력 한 암호화를 사용해 데이터를 보호하는 Windows 기능을 선 택하여 로컬 보안이 없는 지사나 데이터센터의 경우 적절한 솔루션을 지원할 수 있도록 하고자 한다. 다음 중 이러한 기능을 지원하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "BitLocker"
+        },
+        {
+          "key": 2,
+          "text": "NTLM"
+        },
+        {
+          "key": 3,
+          "text": "Encryption"
+        },
+        {
+          "key": 4,
+          "text": "vTPM"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_033",
+      "number": 33,
+      "subject_id": "nos",
+      "text": "웹서버 담당자 Kim은 디렉터리 리스팅 방지, 심볼릭 링크 사용방지, SSI(Server-Side Includes)사용 제한, CGI실행 디 렉터리 제한 등의 보안 설정을 진행하려고 한다. Apache 서버의 설정 파일 이름은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "httpd.conf"
+        },
+        {
+          "key": 2,
+          "text": "httpd-default.conf"
+        },
+        {
+          "key": 3,
+          "text": "httpd-vhosts.conf"
+        },
+        {
+          "key": 4,
+          "text": "httpd-mpm.conf"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_034",
+      "number": 34,
+      "subject_id": "nos",
+      "text": "네트워크를 관리하는 Kim 사원은 네트워크 연결을 구축하거 나 문제를 해결할 때 패킷이 출발지에서 목적지까지 가는 경로를 살펴볼 수 있도록 네트워크 명령어를 사용하고자 한 다. 이 명령은 ′tracert′에서 수행하는 동일한 정보를 보여주 면서 홉과 다른 세부 정보사이의 시간에 관한 정보를 출력 이 끝날 때까지 저장한다. Kim 사원이 사용할 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ping"
+        },
+        {
+          "key": 2,
+          "text": "nslookup"
+        },
+        {
+          "key": 3,
+          "text": "pathping"
+        },
+        {
+          "key": 4,
+          "text": "nbtstat"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_035",
+      "number": 35,
+      "subject_id": "nos",
+      "text": "Linux의 VI편집기를 이용하여 파일의 내용을 수정할 때, 다 음 내용을 만족하는 치환명령문은?",
+      "options": [
+        {
+          "key": 1,
+          "text": ":10,20s/old/new"
+        },
+        {
+          "key": 2,
+          "text": ":10,20s/old/new/g"
+        },
+        {
+          "key": 3,
+          "text": ":10,20r/old/new"
+        },
+        {
+          "key": 4,
+          "text": ":10,20r/old/new/a"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_036",
+      "number": 36,
+      "subject_id": "nos",
+      "text": "Linux 시스템에서 일반적으로 사용자 암호 정보를 가지는 디렉터리는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "/etc"
+        },
+        {
+          "key": 2,
+          "text": "/sbin"
+        },
+        {
+          "key": 3,
+          "text": "/home"
+        },
+        {
+          "key": 4,
+          "text": "/lib"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_037",
+      "number": 37,
+      "subject_id": "nos",
+      "text": "Windows Server 2016의 ′netstat′ 명령 중 라우팅 테이블 을 확인할 수 있는 명령 옵션은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "netstat –a"
+        },
+        {
+          "key": 2,
+          "text": "netstat –r"
+        },
+        {
+          "key": 3,
+          "text": "netstat –n"
+        },
+        {
+          "key": 4,
+          "text": "netstat -s"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_038",
+      "number": 38,
+      "subject_id": "nos",
+      "text": "Linux 시스템 프로세스들의 전반적인 상태를 실시간으로 관 리하거나 시스템 사용량을 모니터링할 수 있는 명령어는? 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 2급 ◐ 2023년 11월 05일 필기 기출문제",
+      "options": [
+        {
+          "key": 1,
+          "text": "ps"
+        },
+        {
+          "key": 2,
+          "text": "top"
+        },
+        {
+          "key": 3,
+          "text": "kill"
+        },
+        {
+          "key": 4,
+          "text": "nice"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_039",
+      "number": 39,
+      "subject_id": "equipment",
+      "text": "Windows Server 2016의 이벤트 뷰어에서 보안 로그 필터 링 시 사용할 수 있는 이벤트 수준으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "중요"
+        },
+        {
+          "key": 2,
+          "text": "경고"
+        },
+        {
+          "key": 3,
+          "text": "오류"
+        },
+        {
+          "key": 4,
+          "text": "정보"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_040",
+      "number": 40,
+      "subject_id": "equipment",
+      "text": "서버 관리자 Kim 사원은 BIND를 설치하고 정상적인 서비스 를 위하여 환경설정 파일인 ′/etc/named.conf′ 파일의 내용 을 수정하려고 한다. 환경설정 항목에 대한 설명으로 올바 른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "′listen-on′은 네임 서버에 접속이 허용된 컴퓨터의 IP주"
+        },
+        {
+          "key": 2,
+          "text": "′directory′는 네임 서버의 환경설정 파일이 위치하는 절"
+        },
+        {
+          "key": 3,
+          "text": "′dump-file′은 도매인 정보의 오류 정보를 출력할 때 사"
+        },
+        {
+          "key": 4,
+          "text": "′allow-query′는 클라이언트에 대한 도메인 이름 요청의"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_041",
+      "number": 41,
+      "subject_id": "equipment",
+      "text": "Windows Server 2016에서 Windows의 서버 코어 버전과 Hyper-V 서버 2016에서 제공하는 기능으로, 이 기능은 Windows에서 가장 일반적인 작업을 수행하는 시간을 줄여 주는 간단한 인터페이스를 갖는 커맨드라인이다. 직관적인 숫자 메뉴를 통해 Windows 구성을 수월하게 수행할 수 있 는 이 기능은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ipconfig"
+        },
+        {
+          "key": 2,
+          "text": "ifconfig"
+        },
+        {
+          "key": 3,
+          "text": "sconfig"
+        },
+        {
+          "key": 4,
+          "text": "msconfig"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_042",
+      "number": 42,
+      "subject_id": "equipment",
+      "text": "Windows Server 2016의 그룹계정에 대한 설명이다. 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Administrators 그룹은 모든 권한을 가지는 그룹으로서"
+        },
+        {
+          "key": 2,
+          "text": "Backup Operators 그룹은 파일을 백업하고 복구할 수"
+        },
+        {
+          "key": 3,
+          "text": "Guests 그룹은 로그인할 때 임시 프로필을 만들고 로그"
+        },
+        {
+          "key": 4,
+          "text": "Users 그룹은 사용자 계정을 생성하면 기본적으로 소속"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_043",
+      "number": 43,
+      "subject_id": "equipment",
+      "text": "Linux 시스템의 vi 에디터를 사용하여 텍스트를 입력한 후 저장하지 않았을 때, 바로 종료가 되지 않는 명령은?",
+      "options": [
+        {
+          "key": 1,
+          "text": ":wq"
+        },
+        {
+          "key": 2,
+          "text": ":wq!"
+        },
+        {
+          "key": 3,
+          "text": ":q!"
+        },
+        {
+          "key": 4,
+          "text": ":q"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_044",
+      "number": 44,
+      "subject_id": "equipment",
+      "text": "서버관리자 Kim씨는 서버에 대한 상태를 확인하기 위해 ′ /etc/check.sh′ 스크립트를 작성하였다. 해당 스크립트를 매 주 월요일 오전 10시에 실행시키려고 할때, crontab 파일 설정으로 알맞은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "10 0 * * 1 /etc/check.sh"
+        },
+        {
+          "key": 2,
+          "text": "0 10 * * 1 /etc/check.sh"
+        },
+        {
+          "key": 3,
+          "text": "10 0 * * 0 /etc/check.sh"
+        },
+        {
+          "key": 4,
+          "text": "0 10 * * 0 /etc/check.sh"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_045",
+      "number": 45,
+      "subject_id": "equipment",
+      "text": "Windows Server 2016에서 클라이언트의 Host Name, IP 주소, 서브넷 마스크, DNS Server, 기본 게이트웨이 등의 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com 설정 사항을 볼 수 있는 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "arp –a"
+        },
+        {
+          "key": 2,
+          "text": "ipconfig /all"
+        },
+        {
+          "key": 3,
+          "text": "convert"
+        },
+        {
+          "key": 4,
+          "text": "netstat"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_046",
+      "number": 46,
+      "subject_id": "equipment",
+      "text": "현재 LAN 카드의 MAC Address는 몇 비트의 번호체계인 가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "32 비트"
+        },
+        {
+          "key": 2,
+          "text": "48 비트"
+        },
+        {
+          "key": 3,
+          "text": "64 비트"
+        },
+        {
+          "key": 4,
+          "text": "128 비트"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_047",
+      "number": 47,
+      "subject_id": "equipment",
+      "text": "RAID 시스템 중 한 드라이브에 기록되는 모든 데이터를 다 른 드라이브에 복사해 놓는 방법으로 복구 능력을 제공하 며, ′Mirroring′으로 불리는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "RAID 0"
+        },
+        {
+          "key": 2,
+          "text": "RAID 1"
+        },
+        {
+          "key": 3,
+          "text": "RAID 3"
+        },
+        {
+          "key": 4,
+          "text": "RAID 4"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_048",
+      "number": 48,
+      "subject_id": "equipment",
+      "text": "기존의 IP Routing 데이터 전송 방식과 다르게, 데이터의 목적지 IP 주소를 확인하는 대신 ′Label′이라고 불리는 패킷 에 더해진 식별자를 확인하여 목적지까지 데이터를 전달 및 포워딩을 실시하며, 짧고 고정된 길이의 라벨을 이용하여 L2 스위칭에 의해 고속으로 패킷을 전달하는 기술은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "VPN(Virtual Private Network)"
+        },
+        {
+          "key": 2,
+          "text": "MSPP(Multiservice Provisioning Platform)"
+        },
+        {
+          "key": 3,
+          "text": "MPLS(Multiprotocol Label Switching)"
+        },
+        {
+          "key": 4,
+          "text": "ROUTER"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_049",
+      "number": 49,
+      "subject_id": "security",
+      "text": "과거 IP관리 시스템에서 발전한 솔루션으로서 네트워크 통 제를 강화한, 아래 설명하는 시스템은 무엇인가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "F/W(Firewall)"
+        },
+        {
+          "key": 2,
+          "text": "IDS(Intrusion Detection System)"
+        },
+        {
+          "key": 3,
+          "text": "IPS(Intrusion Prevention System)"
+        },
+        {
+          "key": 4,
+          "text": "NAC(Network Access Control)"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20231105_050",
+      "number": 50,
+      "subject_id": "security",
+      "text": "라우터에서 ′show running-config′ 란 명령어로 내용을 확 인할 수 있는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ROM"
+        },
+        {
+          "key": 2,
+          "text": "RAM"
+        },
+        {
+          "key": 3,
+          "text": "NVRAM"
+        },
+        {
+          "key": 4,
+          "text": "FLASH"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    }
+  ]
+}

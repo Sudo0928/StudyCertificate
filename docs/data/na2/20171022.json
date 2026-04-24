@@ -1,0 +1,1358 @@
+{
+  "cert_id": "na2",
+  "date": "20171022",
+  "label": "2017년 10월 22일",
+  "total_questions": 50,
+  "questions": [
+    {
+      "id": "na2_20171022_001",
+      "number": 1,
+      "subject_id": "tcpip",
+      "text": "서브넷 마스크(Subnet Mask)에 대한 설명 중 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IP Address에서 Network Address와 Host Address를 구"
+        },
+        {
+          "key": 2,
+          "text": "하나의 Network를 두 개 이상의 Network로 나눌 수 없"
+        },
+        {
+          "key": 3,
+          "text": "IP Address는 효율적으로 관리하나 트래픽 관리 및 제어"
+        },
+        {
+          "key": 4,
+          "text": "불필요한 브로드캐스트 메시지를 제한할 수 없다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_002",
+      "number": 2,
+      "subject_id": "tcpip",
+      "text": "'10.0.0.0/8' 인 네트워크에서 115개의 서브넷을 만들기 위해 필요한 서브넷 마스크는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "255.0.0.0"
+        },
+        {
+          "key": 2,
+          "text": "255.128.0.0"
+        },
+        {
+          "key": 3,
+          "text": "255.224.0.0"
+        },
+        {
+          "key": 4,
+          "text": "255.254.0.0"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_003",
+      "number": 3,
+      "subject_id": "tcpip",
+      "text": "IPv4와 IPv6를 비교 설명한 것 중 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IPv4는 자체적으로 IPsec과 같은 보안 프로토콜을 내장하"
+        },
+        {
+          "key": 2,
+          "text": "IPv4는 필드 구분을 위해 '.'을 사용하고, IPv6는 ';'으로"
+        },
+        {
+          "key": 3,
+          "text": "IPv4의 각 필드는 10진수로 표시되나, IPv6의 각 필드는"
+        },
+        {
+          "key": 4,
+          "text": "IPv4는 4개의 16bit 정수로 나누어지나, IPv6는 8개의"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_004",
+      "number": 4,
+      "subject_id": "tcpip",
+      "text": "TCP 헤더의 설명으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "RST 플래그 : 데이터가 제대로 전송된 것을 알려준다."
+        },
+        {
+          "key": 2,
+          "text": "Window Size : 현재 상태의 최대 버퍼 크기를 말한다."
+        },
+        {
+          "key": 3,
+          "text": "Reserved : 수신된 Sequence Number에 대하여 예상된"
+        },
+        {
+          "key": 4,
+          "text": "FIN 플래그 : 3-Way handshaking 과정을 제의하는 플래"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_005",
+      "number": 5,
+      "subject_id": "tcpip",
+      "text": "TCP/IP 4 Layer 중 전송 계층에 속하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Telnet"
+        },
+        {
+          "key": 2,
+          "text": "FTP"
+        },
+        {
+          "key": 3,
+          "text": "IP"
+        },
+        {
+          "key": 4,
+          "text": "TCP"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_006",
+      "number": 6,
+      "subject_id": "tcpip",
+      "text": "IP 패킷의 구조에서 헤더 부분에 들어가는 항목으로 옳지 않 은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Version"
+        },
+        {
+          "key": 2,
+          "text": "Total Length"
+        },
+        {
+          "key": 3,
+          "text": "TTL(Time to Live)"
+        },
+        {
+          "key": 4,
+          "text": "Data"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_007",
+      "number": 7,
+      "subject_id": "tcpip",
+      "text": "망 내 교환 장비들이 오류 상황에 대한 보고를 할 수 있게 하고, 예상하지 못한 상황이 발생한 경우 이를 알릴 수 있도 록 지원하는 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ARP"
+        },
+        {
+          "key": 2,
+          "text": "RARP"
+        },
+        {
+          "key": 3,
+          "text": "ICMP"
+        },
+        {
+          "key": 4,
+          "text": "RIP"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_008",
+      "number": 8,
+      "subject_id": "tcpip",
+      "text": "TFTP에 대한 설명으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP/IP 프로토콜에서 데이터의 전송 서비스를 규정한다."
+        },
+        {
+          "key": 2,
+          "text": "인터넷상에서 전자우편(E-mail)의 전송을 규정한다."
+        },
+        {
+          "key": 3,
+          "text": "UDP 프로토콜을 사용하여 두 호스트 사이에 파일 전송을"
+        },
+        {
+          "key": 4,
+          "text": "네트워크의 구성원에 패킷을 보내기 위한 하드웨어 주소"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_009",
+      "number": 9,
+      "subject_id": "tcpip",
+      "text": "ARP의 기능에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "모든 호스트가 성공적으로 통신하기 위해서 각 하드웨어"
+        },
+        {
+          "key": 2,
+          "text": "목적지 호스트의 IP Address를 MAC Address로 바꾸는"
+        },
+        {
+          "key": 3,
+          "text": "기본적으로 ARP 캐시(Cache)를 사용하지 않으며, 매번"
+        },
+        {
+          "key": 4,
+          "text": "ARP 캐시(Cache)는 MAC Address와 IP Address의 리스"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_010",
+      "number": 10,
+      "subject_id": "tcpip",
+      "text": "네트워크 장비를 관리 감시하기 위한 목적으로 TCP/IP 상에 정의된 응용 계층의 프로토콜로, 네트워크 관리자가 네트워 크 성능을 관리하고 네트워크 문제점을 찾아 수정하는데 도 움을 주는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SNMP"
+        },
+        {
+          "key": 2,
+          "text": "CMIP"
+        },
+        {
+          "key": 3,
+          "text": "SMTP"
+        },
+        {
+          "key": 4,
+          "text": "POP"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_011",
+      "number": 11,
+      "subject_id": "tcpip",
+      "text": "라우팅 정보를 교환하기 위해 네트워크 컴퓨터에 의해 사용 되는 프로토콜로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IGRP"
+        },
+        {
+          "key": 2,
+          "text": "SMTP"
+        },
+        {
+          "key": 3,
+          "text": "OSPF"
+        },
+        {
+          "key": 4,
+          "text": "BGP"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_012",
+      "number": 12,
+      "subject_id": "tcpip",
+      "text": "IGMP에 대한 설명 중 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "라우터가 주어진 멀티캐스트 그룹에 속한 호스트 존재"
+        },
+        {
+          "key": 2,
+          "text": "IP Address를 물리적인 랜카드 주소로 변환시키는 주소"
+        },
+        {
+          "key": 3,
+          "text": "신뢰성이 있는 연결형 프로토콜"
+        },
+        {
+          "key": 4,
+          "text": "신뢰성이 없는 비연결형 프로토콜"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_013",
+      "number": 13,
+      "subject_id": "tcpip",
+      "text": "RARP 과정에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "RARP 요청은 송신 호스트가 송신자이고, 목적 호스트이"
+        },
+        {
+          "key": 2,
+          "text": "클라이언트 호스트는 RARP 메시지를 RARP 서버로 보낸"
+        },
+        {
+          "key": 3,
+          "text": "RARP 서버는 반드시 송신 호스트와 같은 네트워크 세그"
+        },
+        {
+          "key": 4,
+          "text": "RARP는 동적으로 IP Address를 할당할 수 있다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_014",
+      "number": 14,
+      "subject_id": "tcpip",
+      "text": "IP에 관한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "비신뢰성 서비스"
+        },
+        {
+          "key": 2,
+          "text": "비연결형 서비스"
+        },
+        {
+          "key": 3,
+          "text": "데이터그램 형태의 전송"
+        },
+        {
+          "key": 4,
+          "text": "에러 제어"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_015",
+      "number": 15,
+      "subject_id": "tcpip",
+      "text": "RIP 프로토콜의 일반적인 특징을 기술한 것으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "RIP 메시지는 전송계층의 UDP 데이터그램에 의해 운반"
+        },
+        {
+          "key": 2,
+          "text": "각 라우터는 이웃 라우터들로부터 수신한 정보를 이용하"
+        },
+        {
+          "key": 3,
+          "text": "멀티캐스팅을 지원한다."
+        },
+        {
+          "key": 4,
+          "text": "네트워크의 상황 변화에 즉시 대처하지 못한다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_016",
+      "number": 16,
+      "subject_id": "general",
+      "text": "'C Class'인 IP Adress에 대한 보기의 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "서브넷 마스크로 '255.255.255.0'을 사용했을 경우,"
+        },
+        {
+          "key": 2,
+          "text": "서브넷 마스크로 '255.255.255.0'을 사용했을 경우,"
+        },
+        {
+          "key": 3,
+          "text": "C Class에서는 서브넷 마스크로 '255.255.255.128'은 사"
+        },
+        {
+          "key": 4,
+          "text": "C Class에서 네 개의 네트워크로 나누고자 한다면, 실제"
+        }
+      ],
+      "answer": 3,
+      "has_figure": true,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_017",
+      "number": 17,
+      "subject_id": "general",
+      "text": "프로토콜과 일반적으로 사용되는(Well Known) 포트번호의 연결이 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "FTP : 21번"
+        },
+        {
+          "key": 2,
+          "text": "Telnet : 23번"
+        },
+        {
+          "key": 3,
+          "text": "HTTP : 180번"
+        },
+        {
+          "key": 4,
+          "text": "SMTP : 25번"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_018",
+      "number": 18,
+      "subject_id": "general",
+      "text": "멀티 플렉싱 방식 중 주파수 대역폭을 다수의 작은 대역폭 으로 분할 전송하는 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ATDM(Asynchronous Time Division Multiplexing)"
+        },
+        {
+          "key": 2,
+          "text": "CDM(Code Division Multiplexing)"
+        },
+        {
+          "key": 3,
+          "text": "FDM(Frequency Division Multiplexing)"
+        },
+        {
+          "key": 4,
+          "text": "STDM(Synchronous Time Division Multiplexing)"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_019",
+      "number": 19,
+      "subject_id": "general",
+      "text": "Bus 토폴로지(Topology)에 대한 설명으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "스타 토폴로지보다 네트워크를 구축하는데 더 많은 케이"
+        },
+        {
+          "key": 2,
+          "text": "각 스테이션이 중앙 스위치에 연결된다."
+        },
+        {
+          "key": 3,
+          "text": "터미네이터(Terminator)가 시그널의 반사를 방지하기 위"
+        },
+        {
+          "key": 4,
+          "text": "토큰이라는 비트의 패턴이 원형을 이루며 한 컴퓨터에서"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_020",
+      "number": 20,
+      "subject_id": "general",
+      "text": "패킷 교환 방식의 단점이 아닌 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "선로 장애 시 복구가 어렵다."
+        },
+        {
+          "key": 2,
+          "text": "패킷 교환을 위한 소프트웨어 및 하드웨어가 복잡하다."
+        },
+        {
+          "key": 3,
+          "text": "큐잉(queuing) 지연이 존재한다."
+        },
+        {
+          "key": 4,
+          "text": "각 패킷마다 주소를 위한 오버헤드가 존재한다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_021",
+      "number": 21,
+      "subject_id": "general",
+      "text": "IEEE 802 프로토콜의 연결이 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IEEE 802.3 : 토큰 버스"
+        },
+        {
+          "key": 2,
+          "text": "IEEE 802.4 : 토큰 링"
+        },
+        {
+          "key": 3,
+          "text": "IEEE 802.11 : 무선 LAN"
+        },
+        {
+          "key": 4,
+          "text": "IEEE 802.5 : CSMA/CD"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_022",
+      "number": 22,
+      "subject_id": "general",
+      "text": "다음 (A) 안에 들어가는 용어 중 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "VLAN"
+        },
+        {
+          "key": 2,
+          "text": "NAT"
+        },
+        {
+          "key": 3,
+          "text": "VPN"
+        },
+        {
+          "key": 4,
+          "text": "Public Network"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_023",
+      "number": 23,
+      "subject_id": "general",
+      "text": "(A) 안에 맞는 용어로 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "QoS (Quality of Service)"
+        },
+        {
+          "key": 2,
+          "text": "F/W (Fire Wall)"
+        },
+        {
+          "key": 3,
+          "text": "IPS (Intrusion Prevention System)"
+        },
+        {
+          "key": 4,
+          "text": "IDS (Intrusion Detection System)"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_024",
+      "number": 24,
+      "subject_id": "general",
+      "text": "데이터 통신망에서 정보를 교환하는 방식 중 옳지 않은 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "메시지 교환"
+        },
+        {
+          "key": 2,
+          "text": "패킷 교환"
+        },
+        {
+          "key": 3,
+          "text": "망 교환"
+        },
+        {
+          "key": 4,
+          "text": "회선 교환"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_025",
+      "number": 25,
+      "subject_id": "general",
+      "text": "하나의 회선을 여러 사용자들이 동시에 채널을 나누어 사용 할 수 있도록 하는 방법은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "엔코딩"
+        },
+        {
+          "key": 2,
+          "text": "멀티 플렉싱"
+        },
+        {
+          "key": 3,
+          "text": "디코딩"
+        },
+        {
+          "key": 4,
+          "text": "흐름 제어"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_026",
+      "number": 26,
+      "subject_id": "general",
+      "text": "데이터링크 계층(Datalink Layer)에 대한 설명으로 옳지 않 은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "전송상에 발생하는 오류를 검출한다."
+        },
+        {
+          "key": 2,
+          "text": "데이터의 표현형식을 변경한다."
+        },
+        {
+          "key": 3,
+          "text": "전송상에 발생하는 오류를 정정한다."
+        },
+        {
+          "key": 4,
+          "text": "비트들을 프레임으로 구성한다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_027",
+      "number": 27,
+      "subject_id": "general",
+      "text": "PCM 변조 방식의 변조과정 순서를 올바르게 나열한 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "표본화-양자화-압축-부호화"
+        },
+        {
+          "key": 2,
+          "text": "표본화-압축-양자화-부호화"
+        },
+        {
+          "key": 3,
+          "text": "표본화-부호화-양자화-압축"
+        },
+        {
+          "key": 4,
+          "text": "표본화-양자화-부호화-압축"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_028",
+      "number": 28,
+      "subject_id": "nos",
+      "text": "Linux에서 사용자가 현재 작업 중인 디렉터리의 경로를 절 대경로 방식으로 보여주는 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "cd"
+        },
+        {
+          "key": 2,
+          "text": "man"
+        },
+        {
+          "key": 3,
+          "text": "pwd"
+        },
+        {
+          "key": 4,
+          "text": "cron"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_029",
+      "number": 29,
+      "subject_id": "nos",
+      "text": "tar로 묶인 'mt.tar'를 풀어내는 명령은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "tar –tvf mt.tar"
+        },
+        {
+          "key": 2,
+          "text": "tar -cvf mt.tar"
+        },
+        {
+          "key": 3,
+          "text": "tar –cvvf mt.tar"
+        },
+        {
+          "key": 4,
+          "text": "tar -xvf mt.tar"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_030",
+      "number": 30,
+      "subject_id": "nos",
+      "text": "Linux에서 네트워크 설정에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Linux는 Windows 시스템과 같이 완벽한 PnP 기능을 지"
+        },
+        {
+          "key": 2,
+          "text": "LAN 카드 설치는 Linux 커널에 드라이버를 포함시키거"
+        },
+        {
+          "key": 3,
+          "text": "LAN 카드를 메모리에 로딩해서 사용하려면 'modprobe'"
+        },
+        {
+          "key": 4,
+          "text": "네트워크 설정은 'ipconfig' 로 확인 할 수 있다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_031",
+      "number": 31,
+      "subject_id": "nos",
+      "text": "Windows Server 2008 R2에서 IIS 관리자의 기능으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "웹 사이트의 기본 웹 문서 폴더를 변경할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "기본 웹 문서를 추가하거나 기본 웹 문서들의 우선순위"
+        },
+        {
+          "key": 3,
+          "text": "가상 디렉터리의 이름은 실제 경로의 이름과 동일하게"
+        },
+        {
+          "key": 4,
+          "text": "디렉터리 검색기능을 활성화하면 기본 문서가 없을 때"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_032",
+      "number": 32,
+      "subject_id": "nos",
+      "text": "Windows Server 2008 R2에 설치된 DNS에서 지원하는 레 코드 형식 중 실제 도메인 이름과 연결되는 가상 도메인 이 름의 레코드 형식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "CNAME"
+        },
+        {
+          "key": 2,
+          "text": "MX"
+        },
+        {
+          "key": 3,
+          "text": "A"
+        },
+        {
+          "key": 4,
+          "text": "PTR"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_033",
+      "number": 33,
+      "subject_id": "nos",
+      "text": "Windows Server 2008 R2에서 DHCP 서버 구성 시 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "특정 호스트에게 항상 같은 IP 주소를 부여하려면 그 호"
+        },
+        {
+          "key": 2,
+          "text": "특정 호스트에게 IP 주소 부여를 허가하거나 거부하려면"
+        },
+        {
+          "key": 3,
+          "text": "클라이언트가 도메인 이름 조회를 할 수 있게 하려면"
+        },
+        {
+          "key": 4,
+          "text": "DHCPv6 클라이언트가 DHCP 서버로부터 IPv6 주소를"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_034",
+      "number": 34,
+      "subject_id": "nos",
+      "text": "Windows Server 2008 R2의 Active Directory에 대한 설명 중 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "액티브 디렉터리상의 모든 개체는 고유한 식별자를 가진"
+        },
+        {
+          "key": 2,
+          "text": "개체는 이동하거나 이름을 수정할 수 있다."
+        },
+        {
+          "key": 3,
+          "text": "개체의 식별자는 변경할 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "개체들은 디렉터리 개체에 의해 식별되는 데이터를 가지"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_035",
+      "number": 35,
+      "subject_id": "nos",
+      "text": "Windows Server 2008 R2의 Hyper-V에 관한 설명으로 옳 지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "하드웨어 데이터 실행 방지(DEP)가 필요하다."
+        },
+        {
+          "key": 2,
+          "text": "서버관리자의 역할 추가를 통하여 Hyper-V 서비스를 제"
+        },
+        {
+          "key": 3,
+          "text": "스냅숏을 통하여 특정 시점을 기록 할 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "하나의 서버에는 하나의 가상 컴퓨터만 사용할 수 있다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_036",
+      "number": 36,
+      "subject_id": "nos",
+      "text": "리눅스 시스템에서 마운트 되었는지 확인 사용하는 명령어 로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "fdisk"
+        },
+        {
+          "key": 2,
+          "text": "mount"
+        },
+        {
+          "key": 3,
+          "text": "df"
+        },
+        {
+          "key": 4,
+          "text": "cat /etc/mtab"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_037",
+      "number": 37,
+      "subject_id": "nos",
+      "text": "Linux의 아파치(Apache) 설정파일(httpd.conf)에서 설정 가 능한 옵션에 대한 설명 중 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Port : 포트번호를 지정한다."
+        },
+        {
+          "key": 2,
+          "text": "DocumentRoot : 아파치 설정과 관련된 문서의 위치를"
+        },
+        {
+          "key": 3,
+          "text": "Timeout : 클라이언트의 요청을 받는데 걸리는 시간으로"
+        },
+        {
+          "key": 4,
+          "text": "MaxClients : 웹서버에 동시에 접속할 수 있는 클라이언"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_038",
+      "number": 38,
+      "subject_id": "nos",
+      "text": "Windows Server 2008 R2에서 보안 템플릿에 대한 설명으 로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "로컬 컴퓨터에 보안 템플릿을 적용하려면 보안 구성 및"
+        },
+        {
+          "key": 2,
+          "text": "보안 템플릿은 계정 정책, 로컬 정책, 이벤트 로그, 시스"
+        },
+        {
+          "key": 3,
+          "text": "그룹 정책으로 보안 설정이 확장 되었으나, 조직 구성"
+        },
+        {
+          "key": 4,
+          "text": "보안 템플릿 서식 파일은 텍스트 기반 '.inf' 파일로 저장"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_039",
+      "number": 39,
+      "subject_id": "equipment",
+      "text": "Windows Server 2008 R2 시스템에서 발생한 사건을 추적 하는데 사용되는 최적의 방법으로, 파일 접근, 시스템 로그 온, 시스템 구성 변경과 같은 자원 사용에 관련된 정보를 수집하는 데 감사를 사용할 수 있다. 감사를 구성한 동작이 발생하면 동작은 시스템의 어느 로그에 기록되는가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "전달된 이벤트 로그"
+        },
+        {
+          "key": 2,
+          "text": "보안 로그"
+        },
+        {
+          "key": 3,
+          "text": "응용프로그램 로그"
+        },
+        {
+          "key": 4,
+          "text": "설치 로그"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_040",
+      "number": 40,
+      "subject_id": "equipment",
+      "text": "리눅스의 네임 서버(DNS) 데몬이 시작될 때 가장 먼저 읽는 파일로 여러 개의 영역(zone)에 대한 설정 파일들의 위치 정보를 갖고 있는 파일은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "/var/named.conf"
+        },
+        {
+          "key": 2,
+          "text": "/var/named/zone"
+        },
+        {
+          "key": 3,
+          "text": "/etc/named.conf"
+        },
+        {
+          "key": 4,
+          "text": "/etc/named/zone"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_041",
+      "number": 41,
+      "subject_id": "equipment",
+      "text": "Linux 시스템에서 삼바서버(Samba Server)의 환경 설정파 일은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "samba.conf"
+        },
+        {
+          "key": 2,
+          "text": "smbusers"
+        },
+        {
+          "key": 3,
+          "text": "lmhosts"
+        },
+        {
+          "key": 4,
+          "text": "smb.conf"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_042",
+      "number": 42,
+      "subject_id": "equipment",
+      "text": "아파치 웹서버의 서버 측 에러 메시지 내용으로 맞는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "502 (Service Unvailable) : 클라이언트 요청 내용에는"
+        },
+        {
+          "key": 2,
+          "text": "501 (Not Implemented) : 클라이언트의 서비스 요청 내"
+        },
+        {
+          "key": 3,
+          "text": "503 (Bad Request) : 게이트웨이의 경로를 잘못 지정해"
+        },
+        {
+          "key": 4,
+          "text": "500 (Internal Server Error) : 서버에 보낸 요청 메시지"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_043",
+      "number": 43,
+      "subject_id": "equipment",
+      "text": "Windows Server 2008 R2에서 사용자 프로필 관리에 대한 설명으로 옳지 않는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "로컬 프로필은 사용자가 로그온할 때 프로필을 생성한"
+        },
+        {
+          "key": 2,
+          "text": "관리자가 생성한 로밍 프로필은 서버에 저장된다."
+        },
+        {
+          "key": 3,
+          "text": "필수 프로필은 누구나 수정할 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "로컬 프로필은 로컬 컴퓨터의 하드디스크에 저장된다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_044",
+      "number": 44,
+      "subject_id": "equipment",
+      "text": "Windows Server 2008 R2에서 DNS 서버 구성 시 보조 영 역에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "보조 DNS 서버를 설정하는 것이다."
+        },
+        {
+          "key": 2,
+          "text": "주 DNS 서버로부터 영역 DB를 받아오지만, 모든 DB 복"
+        },
+        {
+          "key": 3,
+          "text": "주 DNS 서버로부터 받아온 DB를 수정하거나 삭제할 수"
+        },
+        {
+          "key": 4,
+          "text": "보조 DNS 서버를 두는 이유는 내결함성을 높이기 위한"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_045",
+      "number": 45,
+      "subject_id": "equipment",
+      "text": "Linux 시스템에서 'chmod 644 index.html'라는 명령어를 사 용하였을 때, 'index.html' 파일에 변화되는 내용으로 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "소유자의 권한은 읽기, 쓰기가 가능하며, 그룹과 그 외의"
+        },
+        {
+          "key": 2,
+          "text": "소유자의 권한은 읽기, 쓰기, 실행이 가능하며, 그룹과"
+        },
+        {
+          "key": 3,
+          "text": "소유자의 권한은 쓰기만 가능하며, 그룹과 그 외의 사용"
+        },
+        {
+          "key": 4,
+          "text": "소유자의 권한은 읽기만 가능하며, 그룹과 그 외의 사용"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_046",
+      "number": 46,
+      "subject_id": "equipment",
+      "text": "다음 전송 매체 중 신호 전달 거리가 길고, 속도가 가장 빠 른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "꼬임선"
+        },
+        {
+          "key": 2,
+          "text": "동축케이블"
+        },
+        {
+          "key": 3,
+          "text": "광섬유"
+        },
+        {
+          "key": 4,
+          "text": "2-선식 개방 선로"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_047",
+      "number": 47,
+      "subject_id": "equipment",
+      "text": "IP Address의 부족과 내부 네트워크 주소의 보안을 위해 사 용하는 방법 중 하나로, 내부에서는 사설 IP Address를 사 용하고 외부 네트워크로 나가는 주소는 공인 IP Address를 사용하도록 하는 IP Address 변환 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "DHCP 방식"
+        },
+        {
+          "key": 2,
+          "text": "IPv6 방식"
+        },
+        {
+          "key": 3,
+          "text": "NAT 방식"
+        },
+        {
+          "key": 4,
+          "text": "MAC Address 방식"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_048",
+      "number": 48,
+      "subject_id": "equipment",
+      "text": "네트워크 장비인 라우터에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP/IP의 트래픽 경로를 제어할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "트래픽상의 신호재생과 증폭을 하여 유효거리를 확장할"
+        },
+        {
+          "key": 3,
+          "text": "OSI 7 Layer에서 3계층에 해당한다."
+        },
+        {
+          "key": 4,
+          "text": "분리된 네트워크를 연결해준다."
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_049",
+      "number": 49,
+      "subject_id": "security",
+      "text": "RAID에 관한 설명 중 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "하나의 RAID는 운영체계에게 논리적으로는 여러 개의"
+        },
+        {
+          "key": 2,
+          "text": "모든 디스크의 스트립은 인터리브(Interleave)되어 있으"
+        },
+        {
+          "key": 3,
+          "text": "RAID-0 방식은 스트립은 가지고 있지만 데이터를 중복"
+        },
+        {
+          "key": 4,
+          "text": "RAID에는 중복되지 않는 어레이를 사용하는 형식은 없"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": null
+    },
+    {
+      "id": "na2_20171022_050",
+      "number": 50,
+      "subject_id": "security",
+      "text": "Star Topology에서 동시에 2개 이상의 연결을 할수 있는 장 비로써 각 포트마다 전용 할당이 가능하고, 연결된 장치 수 량에 영향을 받지 아니하며 속도가 떨어지지 않고 사용이 가능한 장치는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Router"
+        },
+        {
+          "key": 2,
+          "text": "Switch HUB"
+        },
+        {
+          "key": 3,
+          "text": "Repeater"
+        },
+        {
+          "key": 4,
+          "text": "Dummy HUB"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": null
+    }
+  ]
+}

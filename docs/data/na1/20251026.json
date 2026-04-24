@@ -1,0 +1,2168 @@
+{
+  "cert_id": "na1",
+  "date": "20251026",
+  "label": "2025년 10월 26일",
+  "total_questions": 60,
+  "questions": [
+    {
+      "id": "na1_20251026_001",
+      "number": 1,
+      "subject_id": "tcpip",
+      "text": "IP 헤더 필드들 중 처리량, 전달 지연, 신뢰성, 우선순위 등 을 지정해 주는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IHL(IP Header Length)"
+        },
+        {
+          "key": 2,
+          "text": "TOS(Type of Service)"
+        },
+        {
+          "key": 3,
+          "text": "TTL(Time To Live)"
+        },
+        {
+          "key": 4,
+          "text": "Header Checksum"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "TOS(Type of Service) 필드는 IP 패킷의 처리량, 지연, 신뢰성, 우선순위를 지정합니다.",
+        "why_correct": "IP 헤더의 TOS(Type of Service) 필드는 8비트로 구성되어 있으며, QoS(Quality of Service)를 위해 패킷의 처리 방식을 지정합니다. 처리량(Throughput), 전달 지연(Delay), 신뢰성(Reliability), 우선순위(Precedence) 등을 설정합니다.",
+        "why_wrong": {
+          "1": "IHL은 IP 헤더의 길이를 32비트 워드 단위로 나타냅니다.",
+          "3": "TTL은 패킷의 최대 홉 수를 나타내어 무한 루프를 방지합니다.",
+          "4": "Header Checksum은 IP 헤더의 오류를 검사합니다."
+        },
+        "key_concept": "IP 헤더 TOS 필드"
+      }
+    },
+    {
+      "id": "na1_20251026_002",
+      "number": 2,
+      "subject_id": "tcpip",
+      "text": "TCP 헤더 포맷에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Checksum은 1의 보수라 불리는 수학적 기법을 사용하여"
+        },
+        {
+          "key": 2,
+          "text": "Source 포트 32bit 필드는 TCP 연결을 위해 지역 호스트"
+        },
+        {
+          "key": 3,
+          "text": "Sequence Number 32bit 필드는 세그먼트들이 수신지 호"
+        },
+        {
+          "key": 4,
+          "text": "Data Offset 4bit 필드는 32bit 워드에서 TCP 헤더의 크"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "TCP 소스 포트는 16비트 필드입니다(32비트가 아님).",
+        "why_correct": "TCP 헤더에서 Source Port와 Destination Port는 각각 16비트 필드입니다(총 포트 범위: 0~65535). 32비트라는 설명은 틀렸습니다.",
+        "why_wrong": {
+          "1": "Checksum은 1의 보수 방식으로 오류를 검사합니다 (올바름).",
+          "3": "Sequence Number는 32비트로 데이터 순서를 보장합니다 (올바름).",
+          "4": "Data Offset은 4비트로 TCP 헤더 크기를 32비트 워드 단위로 나타냅니다 (올바름)."
+        },
+        "key_concept": "TCP 헤더 포트 필드 크기"
+      }
+    },
+    {
+      "id": "na1_20251026_003",
+      "number": 3,
+      "subject_id": "tcpip",
+      "text": "TCP의 프로토콜 이름과 일반 사용(Well-Known) 포트 연결 로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SMTP : 25"
+        },
+        {
+          "key": 2,
+          "text": "HTTP : 80"
+        },
+        {
+          "key": 3,
+          "text": "POP3 : 100"
+        },
+        {
+          "key": 4,
+          "text": "FTP-Data : 20"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "POP3의 잘 알려진 포트는 110번이며, 100번이 아닙니다.",
+        "why_correct": "POP3(Post Office Protocol version 3)는 이메일 수신 프로토콜로 TCP/110 포트를 사용합니다. 100번 포트는 POP3가 아닙니다.",
+        "why_wrong": {
+          "1": "SMTP는 TCP/25 포트를 사용합니다 (올바름).",
+          "2": "HTTP는 TCP/80 포트를 사용합니다 (올바름).",
+          "4": "FTP-Data는 TCP/20 포트를 사용합니다 (올바름)."
+        },
+        "key_concept": "POP3 포트 번호 (110)"
+      }
+    },
+    {
+      "id": "na1_20251026_004",
+      "number": 4,
+      "subject_id": "tcpip",
+      "text": "IP Address 할당에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "198.34.45.255는 개별 호스트에 할당 가능한 주소이다."
+        },
+        {
+          "key": 2,
+          "text": "127.0.0.1은 로컬 Loopback으로 사용되는 특별한 주소이"
+        },
+        {
+          "key": 3,
+          "text": "172.16.0.0은 네트워크를 나타내는 대표 주소이므로 개별"
+        },
+        {
+          "key": 4,
+          "text": "220.148.120.256은 사용할 수 없는 주소이다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "198.34.45.255는 브로드캐스트 주소이므로 개별 호스트에 할당할 수 없습니다.",
+        "why_correct": "각 서브넷의 마지막 주소(모든 호스트 비트가 1)는 브로드캐스트 주소로 예약되어 있어 개별 호스트에 할당할 수 없습니다. 198.34.45.0/24 서브넷에서 198.34.45.255가 브로드캐스트 주소입니다.",
+        "why_wrong": {
+          "2": "127.0.0.1은 루프백 주소로 특별히 예약된 주소입니다 (올바름).",
+          "3": "172.16.0.0은 서브넷 네트워크 대표 주소이므로 호스트에 할당 불가합니다 (올바름).",
+          "4": "220.148.120.256은 각 옥텟이 0~255여야 하므로 유효하지 않은 주소입니다 (올바름)."
+        },
+        "key_concept": "브로드캐스트 주소"
+      }
+    },
+    {
+      "id": "na1_20251026_005",
+      "number": 5,
+      "subject_id": "tcpip",
+      "text": "네트워크 ID가 ′203.253.55.0′인 네트워크에서 각 서브넷은 25개 호스트가 필요하고 가장 많은 서브넷 유지를 원할 때 가장 적절한 서브넷 마스크 값은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "255.255.255.240"
+        },
+        {
+          "key": 2,
+          "text": "255.255.255.248"
+        },
+        {
+          "key": 3,
+          "text": "255.255.255.224"
+        },
+        {
+          "key": 4,
+          "text": "255.255.255.192"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "255.255.255.224(/27)는 서브넷당 32개 주소(호스트 30개)로 25개 호스트 요구를 충족하면서 서브넷 수를 최대화합니다.",
+        "why_correct": "C 클래스 주소에서 25개 호스트를 수용하려면 5비트(2^5-2=30 ≥ 25)가 필요합니다. 3비트를 서브넷에 사용하면 서브넷 마스크는 11100000 = 224, 즉 255.255.255.224입니다. 서브넷 수는 최대(8-3=5비트 → 6개 서브넷, 그 중 3비트 사용시 8개)가 됩니다.",
+        "why_wrong": {
+          "1": "255.255.255.240(/28)은 호스트 14개만 지원하여 25개 요구 미충족입니다.",
+          "2": "255.255.255.248(/29)은 호스트 6개만 지원하여 25개 요구 미충족입니다.",
+          "4": "255.255.255.192(/26)는 호스트 62개 지원으로 요구 충족이나 서브넷 수가 줄어 최적이 아닙니다."
+        },
+        "key_concept": "IPv4 서브네팅 계산"
+      }
+    },
+    {
+      "id": "na1_20251026_006",
+      "number": 6,
+      "subject_id": "tcpip",
+      "text": "IPv6 프로토콜의 구조는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "32비트"
+        },
+        {
+          "key": 2,
+          "text": "64비트"
+        },
+        {
+          "key": 3,
+          "text": "128비트"
+        },
+        {
+          "key": 4,
+          "text": "256비트"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "IPv6 주소는 128비트 구조입니다.",
+        "why_correct": "IPv6(Internet Protocol version 6)는 128비트(16바이트) 주소 체계를 사용합니다. 콜론(:)으로 구분된 8개의 16진수 그룹(각 16비트)으로 표현됩니다. IPv4의 32비트보다 4배 더 많은 주소를 제공합니다.",
+        "why_wrong": {
+          "1": "32비트는 IPv4의 주소 크기입니다.",
+          "2": "64비트는 IPv6 주소 크기가 아닙니다.",
+          "4": "256비트는 IPv6 주소 크기가 아닙니다."
+        },
+        "key_concept": "IPv6 128비트 주소"
+      }
+    },
+    {
+      "id": "na1_20251026_007",
+      "number": 7,
+      "subject_id": "tcpip",
+      "text": "IPv6를 IPv4와 비교할 때 기대효과라 할 수 없는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IPv4에 비해 더 많은 호스트를 사용할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "옵션을 이용하여 효율적이고 다양한 서비스가 가능하며"
+        },
+        {
+          "key": 3,
+          "text": "라우터의 부담을 줄이고 네트워크 부하를 분산시킬 수 있"
+        },
+        {
+          "key": 4,
+          "text": "더 넓은 지역으로의 브로드 캐스트가 가능하다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "IPv6는 브로드캐스트를 폐지하고 멀티캐스트/애니캐스트를 사용합니다. 더 넓은 브로드캐스트는 기대효과가 아닙니다.",
+        "why_correct": "IPv6는 브로드캐스트(Broadcast)를 지원하지 않습니다. 대신 멀티캐스트와 애니캐스트를 사용하여 네트워크 효율을 높입니다. 따라서 '더 넓은 브로드캐스트'는 IPv6의 기대효과가 아닙니다.",
+        "why_wrong": {
+          "1": "IPv6는 128비트로 더 많은 IP 주소를 제공합니다 (기대효과 맞음).",
+          "2": "IPv6 확장 헤더로 효율적인 서비스가 가능합니다 (기대효과 맞음).",
+          "3": "IPv6는 라우터 부담을 줄이는 간소화된 헤더 구조를 가집니다 (기대효과 맞음)."
+        },
+        "key_concept": "IPv6 브로드캐스트 폐지"
+      }
+    },
+    {
+      "id": "na1_20251026_008",
+      "number": 8,
+      "subject_id": "tcpip",
+      "text": "TCP 프로토콜에 대한 설명으로 옳지 않은 것은? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
+      "options": [
+        {
+          "key": 1,
+          "text": "두 호스트 사이에 믿을 수 있는 연결 지향적인 전송을 제"
+        },
+        {
+          "key": 2,
+          "text": "송수신되는 데이터의 흐름을 감시하고 에러를 제어한다."
+        },
+        {
+          "key": 3,
+          "text": "신뢰성 있는 데이터 전송을 보장한다."
+        },
+        {
+          "key": 4,
+          "text": "TCP는 UDP보다 더 빨리 정보를 전송한다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "TCP는 UDP보다 빠르지 않습니다. 오히려 TCP가 더 느리고 UDP가 더 빠릅니다.",
+        "why_correct": "TCP는 연결 설정(3-way handshake), 오류 제어, 흐름 제어, 순서 보장 등 다양한 기능으로 인해 UDP보다 오버헤드가 많고 느립니다. 빠른 전송이 필요할 때 UDP를 사용합니다.",
+        "why_wrong": {
+          "1": "TCP는 연결 지향적이고 신뢰적인 전송을 제공합니다 (올바름).",
+          "2": "TCP는 흐름 제어(Sliding Window)와 오류 제어(재전송)를 수행합니다 (올바름).",
+          "3": "TCP는 신뢰성 있는 데이터 전송을 보장합니다 (올바름)."
+        },
+        "key_concept": "TCP vs UDP 속도"
+      }
+    },
+    {
+      "id": "na1_20251026_009",
+      "number": 9,
+      "subject_id": "tcpip",
+      "text": "Multicast용으로 사용되는 IP Address는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "163.152.71.86"
+        },
+        {
+          "key": 2,
+          "text": "128.134.2.51"
+        },
+        {
+          "key": 3,
+          "text": "213.122.1.45"
+        },
+        {
+          "key": 4,
+          "text": "231.159.61.29"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "231.159.61.29는 클래스 D(224.0.0.0~239.255.255.255) 멀티캐스트 주소입니다.",
+        "why_correct": "멀티캐스트 주소는 클래스 D로 224.0.0.0~239.255.255.255 범위입니다. 231.159.61.29는 이 범위에 속하므로 멀티캐스트 주소입니다.",
+        "why_wrong": {
+          "1": "163.152.71.86은 클래스 B 유니캐스트 주소입니다.",
+          "2": "128.134.2.51은 클래스 B 유니캐스트 주소입니다.",
+          "3": "213.122.1.45는 클래스 C 유니캐스트 주소입니다."
+        },
+        "key_concept": "멀티캐스트 주소 클래스 D"
+      }
+    },
+    {
+      "id": "na1_20251026_010",
+      "number": 10,
+      "subject_id": "tcpip",
+      "text": "ARP 브로드캐스트를 이용해서 다른 장비에게 네트워크에 있는 자신의 존재를 알리는 목적으로만 사용되는 ARP 변형 프로토콜로, 같은 IP Address의 중복 사용을 방지하는 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Reverse ARP"
+        },
+        {
+          "key": 2,
+          "text": "Inverse ARP"
+        },
+        {
+          "key": 3,
+          "text": "DHCP ARP"
+        },
+        {
+          "key": 4,
+          "text": "Gratuitous ARP"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "Gratuitous ARP는 자신의 IP-MAC 매핑을 네트워크에 알리기 위해 자신에게 보내는 ARP입니다.",
+        "why_correct": "Gratuitous ARP(무상 ARP)는 호스트가 IP 충돌 감지, MAC 주소 변경 알림, ARP 캐시 갱신 목적으로 자신의 IP를 대상으로 ARP Request를 브로드캐스트하는 방식입니다.",
+        "why_wrong": {
+          "1": "Reverse ARP(RARP)는 MAC 주소로 IP 주소를 알아내는 프로토콜입니다.",
+          "2": "Inverse ARP는 ATM/프레임 릴레이에서 DLCI로 IP를 알아내는 프로토콜입니다.",
+          "3": "DHCP ARP는 표준 프로토콜 명칭이 아닙니다."
+        },
+        "key_concept": "Gratuitous ARP"
+      }
+    },
+    {
+      "id": "na1_20251026_011",
+      "number": 11,
+      "subject_id": "tcpip",
+      "text": "IGMP 패킷의 필드에 대한 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "체크섬(Checksum)은 데이터가 전송 도중에 문제가 생기"
+        },
+        {
+          "key": 2,
+          "text": "Message Type은 질의 보고서 등의 메시지 종류를 나타"
+        },
+        {
+          "key": 3,
+          "text": "Version 필드에는 값이 0으로 설정된다."
+        },
+        {
+          "key": 4,
+          "text": "그룹 동보 통신에 포함된 그룹에서 질의를 요청할 때 이"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "IGMP Version 필드의 값은 1 또는 2 등이며, 0으로 설정되지 않습니다.",
+        "why_correct": "IGMPv1 패킷의 Version 필드 값은 1, IGMPv2는 2입니다. 0으로 설정된다는 설명은 잘못된 것입니다.",
+        "why_wrong": {
+          "1": "체크섬은 IGMP 데이터 전송 오류를 검사합니다 (올바름).",
+          "2": "Message Type은 멤버십 쿼리/리포트 등 메시지 종류를 나타냅니다 (올바름).",
+          "4": "그룹 질의 시 그룹 주소 필드를 사용합니다 (올바름)."
+        },
+        "key_concept": "IGMP Version 필드"
+      }
+    },
+    {
+      "id": "na1_20251026_012",
+      "number": 12,
+      "subject_id": "tcpip",
+      "text": "UDP 헤더 포맷에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Source Port : 데이터를 보내는 송신측의 응용 프로세스"
+        },
+        {
+          "key": 2,
+          "text": "Destination Port : 데이터를 받는 수신측의 응용 프로세"
+        },
+        {
+          "key": 3,
+          "text": "Length : 데이터 길이를 제외한 헤더 길이이다."
+        },
+        {
+          "key": 4,
+          "text": "Checksum : 전송 중에 세그먼트가 손상되지 않았음을"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "UDP의 Length 필드는 헤더와 데이터를 합친 전체 길이입니다(헤더만이 아님).",
+        "why_correct": "UDP Length 필드는 UDP 헤더(8바이트)와 데이터(페이로드)를 합친 전체 UDP 세그먼트의 길이를 바이트 단위로 나타냅니다. 헤더 길이만을 나타내지 않습니다.",
+        "why_wrong": {
+          "1": "Source Port는 송신 측 응용 프로세스의 포트 번호입니다 (올바름).",
+          "2": "Destination Port는 수신 측 응용 프로세스의 포트 번호입니다 (올바름).",
+          "4": "Checksum은 세그먼트 손상 여부를 확인합니다 (올바름)."
+        },
+        "key_concept": "UDP Length 필드"
+      }
+    },
+    {
+      "id": "na1_20251026_013",
+      "number": 13,
+      "subject_id": "tcpip",
+      "text": "IEEE 802.1AB 표준으로, 네트워크 장치 간 소프트웨어 버 전, 포트 번호, 호스트 이름, IP 주소 등의 정보를 송수신하 고 메모리에 캐시하는 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "LLDP"
+        },
+        {
+          "key": 2,
+          "text": "STP"
+        },
+        {
+          "key": 3,
+          "text": "IGMP"
+        },
+        {
+          "key": 4,
+          "text": "TFTP"
+        }
+      ],
+      "answer": 1,
+      "has_figure": true,
+      "explanation": {
+        "correct_summary": "LLDP(IEEE 802.1AB)는 네트워크 장치가 서로의 정보(소프트웨어 버전, 포트, IP 등)를 교환하는 프로토콜입니다.",
+        "why_correct": "LLDP(Link Layer Discovery Protocol)는 IEEE 802.1AB 표준으로, 네트워크 장비들이 인접 장치의 정보(시스템 이름, 포트, IP 주소, 시스템 기능 등)를 자동으로 교환하여 네트워크 토폴로지를 파악합니다.",
+        "why_wrong": {
+          "2": "STP(Spanning Tree Protocol)는 네트워크 루프를 방지하는 프로토콜입니다.",
+          "3": "IGMP는 멀티캐스트 그룹 관리 프로토콜입니다.",
+          "4": "TFTP는 단순 파일 전송 프로토콜입니다."
+        },
+        "key_concept": "LLDP IEEE 802.1AB"
+      }
+    },
+    {
+      "id": "na1_20251026_014",
+      "number": 14,
+      "subject_id": "tcpip",
+      "text": "회사 내 네트워크 및 서버 관리자 Park 대리는 최근 웹 트 래픽이 급증하여 단일 서버로는 모든 요청을 처리할 수 없 는 상황을 직면했다. 이를 해결하기 위해 권위서버에서 하 나의 도메인에 여러 IP 주소를 등록해 두면 DNS 쿼리를 받 을 때마다 순서대로 다른 IP 주소를 반환하게 하여 부하를 분산시켰다. Park 대리가 적용한 기술은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "라운드 로빈(Round Robin) DNS"
+        },
+        {
+          "key": 2,
+          "text": "리버스 프록시 (Reverse Proxy)"
+        },
+        {
+          "key": 3,
+          "text": "DNSSEC (DNS Security Extensions)"
+        },
+        {
+          "key": 4,
+          "text": "CDN (Content Delivery Network)"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "라운드 로빈 DNS는 하나의 도메인에 여러 IP를 등록하여 DNS 응답 시 순환하며 부하를 분산합니다.",
+        "why_correct": "라운드 로빈 DNS는 DNS 서버가 동일한 도메인에 대해 여러 IP 주소를 등록하고 쿼리마다 다른 IP를 반환하여 서버 부하를 분산합니다. 추가 장비 없이 간단하게 구현 가능한 DNS 기반 부하 분산 방식입니다.",
+        "why_wrong": {
+          "2": "리버스 프록시는 클라이언트 대신 서버에서 요청을 처리하는 중간 서버입니다.",
+          "3": "DNSSEC은 DNS 응답의 무결성을 검증하는 보안 확장입니다.",
+          "4": "CDN은 전 세계 엣지 서버에 콘텐츠를 캐싱하여 배포하는 서비스입니다."
+        },
+        "key_concept": "라운드 로빈 DNS"
+      }
+    },
+    {
+      "id": "na1_20251026_015",
+      "number": 15,
+      "subject_id": "tcpip",
+      "text": "특정 웹 서비스에 접속 시 한 호스트는 여러 웹 브라우저를 통해 접속을 할 수 있다. 이와 같은 Multiple session이 가 능한 것은 TCP/IP 주소 체계 중 어느 주소를 사용하기 때문 인가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "URL 주소"
+        },
+        {
+          "key": 2,
+          "text": "IP Address"
+        },
+        {
+          "key": 3,
+          "text": "MAC Address"
+        },
+        {
+          "key": 4,
+          "text": "Socket Address"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "소켓 주소(Socket Address)는 IP 주소 + 포트 번호의 조합으로 다중 세션을 구별합니다.",
+        "why_correct": "소켓(Socket)은 IP 주소와 포트 번호의 조합으로, 동일한 호스트에서 여러 웹 브라우저나 탭이 각기 다른 포트 번호를 가진 소켓을 통해 동시에 여러 세션(연결)을 유지할 수 있습니다.",
+        "why_wrong": {
+          "1": "URL은 웹 리소스 위치 표기이며 세션 구별 기능이 없습니다.",
+          "2": "IP 주소만으로는 같은 호스트의 여러 세션을 구별할 수 없습니다.",
+          "3": "MAC 주소는 데이터 링크 계층 물리 주소로 세션 관리와 무관합니다."
+        },
+        "key_concept": "소켓 주소 (IP+Port)"
+      }
+    },
+    {
+      "id": "na1_20251026_016",
+      "number": 16,
+      "subject_id": "general",
+      "text": "RFC 790 ′ASSIGNED NUMBERS’ 기준 IPv4 프로토콜 번호 로 적절하지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ICMP : 1"
+        },
+        {
+          "key": 2,
+          "text": "IGMP : 2"
+        },
+        {
+          "key": 3,
+          "text": "TCP : 16"
+        },
+        {
+          "key": 4,
+          "text": "UDP : 17"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "TCP의 프로토콜 번호는 6번입니다(16번이 아님).",
+        "why_correct": "RFC 790에서 정의한 IPv4 프로토콜 번호: ICMP=1, IGMP=2, TCP=6, UDP=17입니다. TCP의 프로토콜 번호가 16이라는 설명은 잘못되었습니다.",
+        "why_wrong": {
+          "1": "ICMP의 프로토콜 번호는 1입니다 (올바름).",
+          "2": "IGMP의 프로토콜 번호는 2입니다 (올바름).",
+          "4": "UDP의 프로토콜 번호는 17입니다 (올바름)."
+        },
+        "key_concept": "IP 프로토콜 번호 (TCP=6)"
+      }
+    },
+    {
+      "id": "na1_20251026_017",
+      "number": 17,
+      "subject_id": "general",
+      "text": "DHCP 프로토콜에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "DHCP 서버는 네트워크에 연결된 클라이언트 디바이스"
+        },
+        {
+          "key": 2,
+          "text": "서브넷 마스크, 기본 게이트웨이, DNS 서버 등의 구성"
+        },
+        {
+          "key": 3,
+          "text": "클라이언트는 TCP 프로토콜을 사용한다."
+        },
+        {
+          "key": 4,
+          "text": "DHCP 서버와 클라이언트 간의 통신에 사용되는 포트"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "DHCP 클라이언트는 UDP를 사용합니다(TCP가 아님).",
+        "why_correct": "DHCP는 UDP/67(서버), UDP/68(클라이언트) 포트를 사용합니다. 연결 설정 전에 IP를 동적 할당해야 하므로 연결형 프로토콜인 TCP 대신 비연결형 UDP를 사용합니다.",
+        "why_wrong": {
+          "1": "DHCP 서버는 클라이언트에게 IP, 서브넷 마스크, 게이트웨이, DNS 등을 자동 할당합니다 (올바름).",
+          "2": "DHCP는 서브넷 마스크, 게이트웨이, DNS 서버 정보를 함께 제공합니다 (올바름).",
+          "4": "DHCP는 UDP/67(서버), UDP/68(클라이언트) 포트를 사용합니다 (올바름)."
+        },
+        "key_concept": "DHCP UDP 프로토콜"
+      }
+    },
+    {
+      "id": "na1_20251026_018",
+      "number": 18,
+      "subject_id": "general",
+      "text": "(A) 안에 들어가는 용어 중 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "OpenFlow"
+        },
+        {
+          "key": 2,
+          "text": "SNMP(Simple Network Management Protocol)"
+        },
+        {
+          "key": 3,
+          "text": "XMPP(Extensible Messaging and Presence Protocol)"
+        },
+        {
+          "key": 4,
+          "text": "CLI(Command Line Interface)"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "OpenFlow는 SDN(소프트웨어 정의 네트워킹)의 제어 평면과 데이터 평면을 분리하는 프로토콜입니다.",
+        "why_correct": "OpenFlow는 SDN 구현을 위한 표준 인터페이스로, 컨트롤러가 스위치/라우터의 포워딩 테이블을 원격으로 제어할 수 있게 합니다. 네트워크의 중앙 집중식 제어를 가능하게 합니다.",
+        "why_wrong": {
+          "2": "SNMP는 네트워크 장치를 모니터링하고 관리하는 프로토콜입니다.",
+          "3": "XMPP는 인스턴트 메시징을 위한 XML 기반 프로토콜입니다.",
+          "4": "CLI는 명령줄 인터페이스로 직접 장치를 관리합니다."
+        },
+        "key_concept": "OpenFlow SDN"
+      }
+    },
+    {
+      "id": "na1_20251026_019",
+      "number": 19,
+      "subject_id": "general",
+      "text": "지문에서 설명하는 셀룰러 무선네트워크 기술은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "셀 섹터링"
+        },
+        {
+          "key": 2,
+          "text": "셀 나누기"
+        },
+        {
+          "key": 3,
+          "text": "마이크로셀"
+        },
+        {
+          "key": 4,
+          "text": "주파수 빌리기"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "셀 나누기(Cell Splitting)는 수요가 많은 지역의 셀을 더 작은 셀로 분리하여 용량을 늘리는 기술입니다.",
+        "why_correct": "셀 나누기(Cell Splitting)는 셀룰러 네트워크에서 트래픽이 많은 셀을 여러 개의 작은 셀로 나눠 동일 주파수 재사용을 통해 네트워크 용량을 증가시키는 기술입니다.",
+        "why_wrong": {
+          "1": "셀 섹터링은 하나의 기지국을 방향성 안테나로 여러 섹터로 나누는 기술입니다.",
+          "3": "마이크로셀은 좁은 지역(쇼핑몰, 지하철 등)을 커버하는 소형 기지국입니다.",
+          "4": "주파수 빌리기는 주파수 대역을 임시 대여하는 개념입니다."
+        },
+        "key_concept": "셀 나누기 (Cell Splitting)"
+      }
+    },
+    {
+      "id": "na1_20251026_020",
+      "number": 20,
+      "subject_id": "general",
+      "text": "다음 설명에 알맞은 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP(Transmission Control Protocol)"
+        },
+        {
+          "key": 2,
+          "text": "SIP(Session Initiation Protocol)"
+        },
+        {
+          "key": 3,
+          "text": "RSVP(ReSouece reserVation Protocol)"
+        },
+        {
+          "key": 4,
+          "text": "RTP(Real-time Transfer Protocol)"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "RTP(Real-time Transfer Protocol)는 실시간 음성·영상 데이터 전송을 위한 프로토콜입니다.",
+        "why_correct": "RTP는 인터넷에서 실시간 음성/영상 전송을 위해 설계된 프로토콜로, UDP 위에서 동작하며 타임스탬프, 시퀀스 번호로 미디어 동기화를 지원합니다. VoIP, 영상 스트리밍 등에 사용됩니다.",
+        "why_wrong": {
+          "1": "TCP는 신뢰적 연결형 전송 프로토콜입니다.",
+          "2": "SIP는 멀티미디어 세션 설정/종료를 위한 시그널링 프로토콜입니다.",
+          "3": "RSVP는 네트워크에서 QoS를 위한 대역폭 예약 프로토콜입니다."
+        },
+        "key_concept": "RTP 실시간 전송"
+      }
+    },
+    {
+      "id": "na1_20251026_021",
+      "number": 21,
+      "subject_id": "general",
+      "text": "사내 TCP 기반 파일 전송 시스템에서 수신 서버는 버퍼에 최대 n개의 세그먼트를 저장할 수 있다. 서버는 수신 윈도 (rwnd) 크기를 송신 측에 알리고, 클라이언트는 ACK 없이 최대 n개의 세그먼트를 연속 전송한다. 서버 버퍼가 가득 차면 수신 윈도 크기를 0으로 알려 전송을 일시 중단시킨 다. 이 동작에 해당하는 흐름 제어 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "정지-대기(Stop-and-Wait)"
+        },
+        {
+          "key": 2,
+          "text": "슬라이딩 윈도(Sliding Window)"
+        },
+        {
+          "key": 3,
+          "text": "XON/XOFF 소프트웨어 흐름 제어"
+        },
+        {
+          "key": 4,
+          "text": "토큰 버킷(Token Bucket) 레이트 제어"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "슬라이딩 윈도(Sliding Window)는 수신 버퍼 크기에 따라 여러 프레임을 연속 전송하는 흐름 제어 방식입니다.",
+        "why_correct": "슬라이딩 윈도 프로토콜은 수신 측 버퍼(rwnd) 크기를 기준으로 송신 측이 ACK 없이 전송할 수 있는 최대 데이터량(윈도 크기)을 조절합니다. 여러 세그먼트를 연속 전송하여 네트워크 효율을 높입니다.",
+        "why_wrong": {
+          "1": "정지-대기(Stop-and-Wait)는 한 번에 하나씩 전송하고 ACK를 기다리는 방식입니다.",
+          "3": "XON/XOFF는 소프트웨어 흐름 제어로, 특수 문자로 전송 시작/중지를 신호합니다.",
+          "4": "토큰 버킷은 네트워크 트래픽 폴리싱/쉐이핑 알고리즘입니다."
+        },
+        "key_concept": "슬라이딩 윈도 흐름 제어"
+      }
+    },
+    {
+      "id": "na1_20251026_022",
+      "number": 22,
+      "subject_id": "general",
+      "text": "MSPP (Multi Service Provisioning Platform)에 대한 설명이 올바르지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "MSPP 장비는 단일 장비상에서 전용선, 이더넷, SAN,"
+        },
+        {
+          "key": 2,
+          "text": "MSPP 망은 point-point 망, point-multi point 망, 링형"
+        },
+        {
+          "key": 3,
+          "text": "MSPP는 BLSR, UPSR 등의 회선 복구 알고리즘을 사용"
+        },
+        {
+          "key": 4,
+          "text": "MSPP의 GFC 기술은 복수의 물리적 신호를 그루핑, 이"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "MSPP의 GFC 기술은 복수의 물리 신호를 그루핑하는 기술이 아니라, GFP가 그 역할을 합니다.",
+        "why_correct": "MSPP(Multi Service Provisioning Platform)에서 다양한 신호를 그루핑하고 이더넷 등의 패킷을 SONET/SDH 망에 효율적으로 매핑하는 기술은 GFP(Generic Framing Procedure)입니다. GFC는 ATM의 Generic Flow Control 필드입니다.",
+        "why_wrong": {
+          "1": "MSPP는 단일 장비에서 전용선, 이더넷, SAN 등 다양한 서비스를 제공합니다 (올바름).",
+          "2": "MSPP 망은 P-P, P-MP, 링형 등 다양한 토폴로지를 지원합니다 (올바름).",
+          "3": "MSPP는 BLSR, UPSR 등의 회선 복구 기능을 제공합니다 (올바름)."
+        },
+        "key_concept": "MSPP GFP vs GFC"
+      }
+    },
+    {
+      "id": "na1_20251026_023",
+      "number": 23,
+      "subject_id": "general",
+      "text": "다음은 무선 네트워크에 관한 내용이다. 해당 내용에 대하 여 잘못 서술된 항목은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IEEE 802.11은 숨겨진 노드 문제를 해결하기 위해서"
+        },
+        {
+          "key": 2,
+          "text": "Wifi-5라고 하는 IEEE 802.11ad는 VR환경을 지원하기"
+        },
+        {
+          "key": 3,
+          "text": "Wifi-6는 IEEE 802.11ax로 IEEE 802.11ac의 후속 버전"
+        },
+        {
+          "key": 4,
+          "text": "IEEE 802.11ac는 IEEE 802.11n을 기반으로 5GHz 대역"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "Wi-Fi 6는 802.11ax이고, 802.11ad는 WiGig(60GHz)로 Wi-Fi 6와 다릅니다.",
+        "why_correct": "IEEE 802.11ad는 'Wifi-5'가 아니라 WiGig(60GHz 대역, 7Gbps 전송률)입니다. Wifi-5는 802.11ac이고, Wifi-6는 802.11ax입니다. 802.11ad는 VR 환경 지원 목적이 맞지만 Wifi-5라는 명칭이 틀렸습니다.",
+        "why_wrong": {
+          "1": "802.11은 숨겨진 노드 문제 해결을 위해 RTS/CTS를 사용합니다 (올바름).",
+          "3": "Wifi-6(802.11ax)는 802.11ac의 후속 버전입니다 (올바름).",
+          "4": "802.11ac는 802.11n 기반으로 5GHz에서 동작합니다 (올바름)."
+        },
+        "key_concept": "802.11ad vs 802.11ax"
+      }
+    },
+    {
+      "id": "na1_20251026_024",
+      "number": 24,
+      "subject_id": "general",
+      "text": "광섬유 케이블의 재료손실에 해당되지 않는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Microbending"
+        },
+        {
+          "key": 2,
+          "text": "Rayleigh"
+        },
+        {
+          "key": 3,
+          "text": "Raman"
+        },
+        {
+          "key": 4,
+          "text": "Brillouin"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "Microbending(미소굴곡 손실)은 기계적 스트레스로 인한 손실로, 재료 손실이 아닌 구조적 손실입니다.",
+        "why_correct": "광섬유 재료 손실에는 흡수 손실(Rayleigh 산란 포함), Raman 산란, Brillouin 산란이 있습니다. Microbending은 외부 압력이나 구부러짐으로 인한 기계적(구조적) 손실이며 재료 손실이 아닙니다.",
+        "why_wrong": {
+          "2": "Rayleigh 산란은 광섬유 유리 재료의 불균일성으로 인한 재료 손실입니다.",
+          "3": "Raman 산란은 비선형 광학 효과로 발생하는 재료 관련 손실입니다.",
+          "4": "Brillouin 산란은 음파와의 상호작용으로 발생하는 비선형 재료 손실입니다."
+        },
+        "key_concept": "광섬유 재료 손실 종류"
+      }
+    },
+    {
+      "id": "na1_20251026_025",
+      "number": 25,
+      "subject_id": "general",
+      "text": "국제 표준기관 NIST(미국국립표준기술연구소) 에서 정의한 클라우드 서비스 주요 특성으로 옳지 않은 것은? 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 1급 ◐ 2025년 10월 26일 필기 기출문제",
+      "options": [
+        {
+          "key": 1,
+          "text": "주문형 셀프서비스(On-demand Self-service)"
+        },
+        {
+          "key": 2,
+          "text": "광범위한 네트워크 액세스(Broad Network Access)"
+        },
+        {
+          "key": 3,
+          "text": "신속한 탄력성(Rapid Elasticity and Scalability)"
+        },
+        {
+          "key": 4,
+          "text": "멀티 에이전트(Multi-Agent)"
+        }
+      ],
+      "answer": 4,
+      "has_figure": true,
+      "explanation": {
+        "correct_summary": "멀티 에이전트(Multi-Agent)는 NIST 클라우드 5대 특성이 아닙니다.",
+        "why_correct": "NIST가 정의한 클라우드 컴퓨팅 5대 필수 특성: ①주문형 셀프서비스, ②광범위한 네트워크 액세스, ③자원 풀링(Resource Pooling), ④신속한 탄력성, ⑤측정 가능한 서비스(Measured Service). 멀티 에이전트는 포함되지 않습니다.",
+        "why_wrong": {
+          "1": "주문형 셀프서비스는 NIST 클라우드 필수 특성입니다 (올바름).",
+          "2": "광범위한 네트워크 액세스는 NIST 클라우드 필수 특성입니다 (올바름).",
+          "3": "신속한 탄력성은 NIST 클라우드 필수 특성입니다 (올바름)."
+        },
+        "key_concept": "NIST 클라우드 5대 특성"
+      }
+    },
+    {
+      "id": "na1_20251026_026",
+      "number": 26,
+      "subject_id": "general",
+      "text": "클라우드를 관리하기 위해 SSL VPN을 이용 원격 접속하려 고 한다. 다음 중 SSL VPN 사용에 있어 보기 중 가장 취약 한 설정은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SSL 3.0 버전을 사용한다."
+        },
+        {
+          "key": 2,
+          "text": "2 Factor를 통해 사용자를 인증한다."
+        },
+        {
+          "key": 3,
+          "text": "AES256 알고리즘을 사용한다."
+        },
+        {
+          "key": 4,
+          "text": "SHA-224 알고리즘을 사용한다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": true,
+      "explanation": {
+        "correct_summary": "SSL 3.0은 알려진 취약점(POODLE 등)이 있어 사용해서는 안 됩니다.",
+        "why_correct": "SSL 3.0은 POODLE(Padding Oracle On Downgraded Legacy Encryption) 취약점 등으로 인해 이미 폐기된 프로토콜입니다. 현재는 TLS 1.2 이상을 사용해야 합니다. 2 Factor 인증, AES256, SHA-224는 비교적 안전한 방법입니다.",
+        "why_wrong": {
+          "2": "2 Factor(이중 인증)는 보안을 강화하는 방법입니다 (안전).",
+          "3": "AES256은 강력한 대칭 암호화 알고리즘입니다 (안전).",
+          "4": "SHA-224는 SHA-2 계열 해시 알고리즘으로 보안성이 있습니다 (안전)."
+        },
+        "key_concept": "SSL 3.0 취약점"
+      }
+    },
+    {
+      "id": "na1_20251026_027",
+      "number": 27,
+      "subject_id": "general",
+      "text": "클라우드 컴퓨팅에 접근하는 사용자를 식별하여 불법적인 사용자의 접근을 차단하는 보안 속성은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "인증"
+        },
+        {
+          "key": 2,
+          "text": "가용성"
+        },
+        {
+          "key": 3,
+          "text": "감사"
+        },
+        {
+          "key": 4,
+          "text": "권한"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "인증(Authentication)은 접속 사용자의 신원을 확인하여 불법적인 접근을 차단합니다.",
+        "why_correct": "인증(Authentication)은 사용자가 주장하는 신원이 올바른지 확인하는 과정입니다. ID/패스워드, 인증서, 생체인식 등의 방법으로 불법 사용자의 접근을 차단합니다.",
+        "why_wrong": {
+          "2": "가용성(Availability)은 시스템이 정상적으로 사용 가능한 상태를 유지하는 보안 속성입니다.",
+          "3": "감사(Audit)는 보안 이벤트를 기록하고 추적하는 것입니다.",
+          "4": "권한(Authorization)은 인증된 사용자가 특정 리소스에 접근할 수 있는지 결정하는 것입니다."
+        },
+        "key_concept": "인증 (Authentication)"
+      }
+    },
+    {
+      "id": "na1_20251026_028",
+      "number": 28,
+      "subject_id": "general",
+      "text": "아래 내용은 Linux의 어떤 명령을 사용한 결과인가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ping"
+        },
+        {
+          "key": 2,
+          "text": "nslookup"
+        },
+        {
+          "key": 3,
+          "text": "traceroute"
+        },
+        {
+          "key": 4,
+          "text": "route"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "traceroute는 목적지까지의 경로(홉)와 각 홉의 응답 시간을 표시합니다.",
+        "why_correct": "traceroute(Linux) 또는 tracert(Windows)는 패킷이 목적지까지 거치는 중간 라우터(홉)의 IP 주소와 응답 시간을 TTL을 증가시켜가며 측정합니다. 네트워크 경로 추적에 사용됩니다.",
+        "why_wrong": {
+          "1": "ping은 대상 호스트의 응답 여부와 왕복 시간을 측정합니다.",
+          "2": "nslookup은 DNS 이름 조회에 사용합니다.",
+          "4": "route는 라우팅 테이블을 확인하고 설정합니다."
+        },
+        "key_concept": "traceroute 경로 추적"
+      }
+    },
+    {
+      "id": "na1_20251026_029",
+      "number": 29,
+      "subject_id": "nos",
+      "text": "SOA 레코드에서 2차 네임서버가 1차 네임서버에 접속하여 Zone의 변경 여부를 검사할 주기에 해당되는 세부 설정항 목은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Serial"
+        },
+        {
+          "key": 2,
+          "text": "Refresh"
+        },
+        {
+          "key": 3,
+          "text": "Retry"
+        },
+        {
+          "key": 4,
+          "text": "Expire"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "SOA 레코드의 Refresh는 2차 네임서버가 1차 서버에 접속하여 존 변경을 확인하는 주기입니다.",
+        "why_correct": "SOA 레코드 필드: Serial(버전 번호), Refresh(2차→1차 체크 주기), Retry(실패 시 재시도 간격), Expire(2차 서버 데이터 유효 기간). Refresh가 존 변경 여부 검사 주기입니다.",
+        "why_wrong": {
+          "1": "Serial은 존 파일의 버전 번호로, 변경 시 증가시켜 2차 서버가 업데이트를 인식합니다.",
+          "3": "Retry는 Refresh 실패 시 재시도 간격입니다.",
+          "4": "Expire는 2차 서버가 1차 서버에 연결하지 못할 때 데이터를 신뢰할 수 있는 최대 기간입니다."
+        },
+        "key_concept": "SOA Refresh 필드"
+      }
+    },
+    {
+      "id": "na1_20251026_030",
+      "number": 30,
+      "subject_id": "nos",
+      "text": "Linux에서 kill 명령어를 사용하여 해당 프로세스를 중단하려 고 하는데, 중단하고자 하는 프로세스의 번호(PID)를 모를 경우 사용하는 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ps"
+        },
+        {
+          "key": 2,
+          "text": "man"
+        },
+        {
+          "key": 3,
+          "text": "help"
+        },
+        {
+          "key": 4,
+          "text": "ls"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "ps 명령어로 실행 중인 프로세스 목록과 PID를 확인할 수 있습니다.",
+        "why_correct": "ps(Process Status) 명령어는 현재 실행 중인 프로세스의 PID, 상태, CPU 사용률 등을 표시합니다. 'ps aux'나 'ps -ef' 명령으로 전체 프로세스 목록과 PID를 확인한 후 kill 명령으로 종료합니다.",
+        "why_wrong": {
+          "2": "man은 명령어 매뉴얼 페이지를 표시합니다.",
+          "3": "help는 셸 내장 명령어 도움말을 표시합니다.",
+          "4": "ls는 디렉터리 내 파일 목록을 표시합니다."
+        },
+        "key_concept": "ps 프로세스 확인"
+      }
+    },
+    {
+      "id": "na1_20251026_031",
+      "number": 31,
+      "subject_id": "nos",
+      "text": "네트워크 어댑터가 자신에게 오는 패킷뿐만 아니라 네트워 크를 통과하는 모든 패킷을 받아들이는 네트워크 설정 모드 는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Promiscuous 모드"
+        },
+        {
+          "key": 2,
+          "text": "Quick 모드"
+        },
+        {
+          "key": 3,
+          "text": "Standard 모드"
+        },
+        {
+          "key": 4,
+          "text": "Thorough 모드"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "Promiscuous 모드는 자신의 MAC 주소와 무관하게 네트워크의 모든 패킷을 수신하는 설정입니다.",
+        "why_correct": "Promiscuous 모드(무차별 모드)로 설정된 네트워크 어댑터는 자신의 MAC 주소와 무관하게 세그먼트를 지나는 모든 프레임을 캡처합니다. 네트워크 분석 도구(Wireshark 등)가 이 모드를 사용합니다.",
+        "why_wrong": {
+          "2": "Quick 모드는 존재하지 않는 네트워크 설정 모드입니다.",
+          "3": "Standard 모드는 존재하지 않는 네트워크 설정 모드입니다.",
+          "4": "Thorough 모드는 존재하지 않는 네트워크 설정 모드입니다."
+        },
+        "key_concept": "Promiscuous 모드"
+      }
+    },
+    {
+      "id": "na1_20251026_032",
+      "number": 32,
+      "subject_id": "nos",
+      "text": "Linux에서 ′/tmp/test.txt′ 파일의 inode 값을 확인할 수 있 는 명령어로 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "inode /tmp/test.txt"
+        },
+        {
+          "key": 2,
+          "text": "stat /tmp/test.txt"
+        },
+        {
+          "key": 3,
+          "text": "ls –l /tmp/test.txt"
+        },
+        {
+          "key": 4,
+          "text": "vi /tmp/test.txt"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "stat 명령어는 파일의 inode 번호를 포함한 상세 정보를 표시합니다.",
+        "why_correct": "stat 명령어는 파일의 inode 번호, 크기, 블록, 파일 타입, 권한, 링크 수, 소유자, 그룹, 접근/수정/변경 시간 등 상세 정보를 표시합니다.",
+        "why_wrong": {
+          "1": "inode는 Linux 명령어가 아닙니다.",
+          "3": "ls -l은 파일 권한, 소유자, 크기, 수정 시간 등을 표시하지만 inode 번호는 ls -i로 확인합니다.",
+          "4": "vi는 텍스트 편집기입니다."
+        },
+        "key_concept": "stat 명령어 inode 확인"
+      }
+    },
+    {
+      "id": "na1_20251026_033",
+      "number": 33,
+      "subject_id": "nos",
+      "text": "서버 담당자 Park 사원은 Linux 서버를 업그레이드 하기 위 하여 시스템을 종료하고자 한다. 다음 명령어 중 다른 하나 는? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
+      "options": [
+        {
+          "key": 1,
+          "text": "poweroff –p"
+        },
+        {
+          "key": 2,
+          "text": "halt -p"
+        },
+        {
+          "key": 3,
+          "text": "shutdown –c"
+        },
+        {
+          "key": 4,
+          "text": "init 0"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "shutdown -c는 예약된 종료를 취소하는 명령이며, 시스템을 종료하지 않습니다.",
+        "why_correct": "poweroff -p, halt -p, init 0은 모두 시스템을 즉시 종료합니다. shutdown -c는 예약된 shutdown 명령을 취소(cancel)하는 옵션으로, 시스템을 종료하지 않고 나머지와 다릅니다.",
+        "why_wrong": {
+          "1": "poweroff -p는 시스템을 종료하고 전원을 끕니다.",
+          "2": "halt -p는 시스템을 종료하고 전원을 끕니다.",
+          "4": "init 0은 런레벨 0(시스템 종료)으로 전환합니다."
+        },
+        "key_concept": "shutdown -c 취소 명령"
+      }
+    },
+    {
+      "id": "na1_20251026_034",
+      "number": 34,
+      "subject_id": "nos",
+      "text": "시스템 관리자 Kim은 IIS 웹 서버에서 30MB 초과 파일 업 로드 시 404.13 오류가 발생함을 확인했다. 올바른 해결 방 법은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "[사이트 홈] → [요청 필터링] → [기능 설정 편집…]"
+        },
+        {
+          "key": 2,
+          "text": "[사이트 홈] → [요청 필터링] → [기능 설정 편집…]"
+        },
+        {
+          "key": 3,
+          "text": "[사이트 홈] → [HTTP 응답 헤더]에서 헤더를 추가하여"
+        },
+        {
+          "key": 4,
+          "text": "[사이트 홈] → [압축]에서 동적 압축을 사용하여 업로"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "IIS에서 대용량 파일 업로드 제한은 [요청 필터링] → [기능 설정 편집]에서 최대 허용 콘텐츠 길이를 변경합니다.",
+        "why_correct": "IIS에서 404.13 오류는 요청 본문 크기 초과 시 발생합니다. 해결 방법은 [사이트 홈] → [요청 필터링] → [기능 설정 편집]에서 '최대 허용 콘텐츠 길이(바이트)' 값을 증가시키는 것입니다.",
+        "why_wrong": {
+          "2": "동일 메뉴지만 설정 방법이 다른 경우 1번과 2번의 차이는 세부 경로나 설정 값의 차이입니다.",
+          "3": "HTTP 응답 헤더 설정은 업로드 크기 제한과 무관합니다.",
+          "4": "압축 설정은 업로드 크기 제한과 무관합니다."
+        },
+        "key_concept": "IIS 요청 필터링 업로드 제한"
+      }
+    },
+    {
+      "id": "na1_20251026_035",
+      "number": 35,
+      "subject_id": "nos",
+      "text": "시스템 관리자 Kim은 아파치 웹 서버에 추가로 도메인을 운 영하고자 한다. 괄호에 들어갈 내용으로 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "㉠ DocumentRoot - ㉡ VirtualHost - ㉢ ServerName"
+        },
+        {
+          "key": 2,
+          "text": "㉠ ServerName - ㉡ VirtualHost - ㉢ DocumentRoot"
+        },
+        {
+          "key": 3,
+          "text": "㉠ VirtualHost - ㉡ DocumentRoot - ㉢ ServerName"
+        },
+        {
+          "key": 4,
+          "text": "㉠ VirtualHost - ㉡ ServerName - ㉢ DocumentRoot"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "Apache 가상 호스트 설정 순서: VirtualHost 블록 → DocumentRoot → ServerName.",
+        "why_correct": "Apache httpd.conf에서 가상 호스트 설정은: <VirtualHost *:80> 블록을 열고, DocumentRoot로 웹 루트를 지정하고, ServerName으로 도메인명을 지정하는 순서입니다.",
+        "why_wrong": {
+          "1": "DocumentRoot가 VirtualHost보다 먼저 오는 순서는 잘못되었습니다.",
+          "2": "ServerName이 VirtualHost보다 먼저 오는 순서는 잘못되었습니다.",
+          "4": "VirtualHost 내에서 ServerName이 DocumentRoot보다 먼저 오는 순서입니다."
+        },
+        "key_concept": "Apache VirtualHost 설정"
+      }
+    },
+    {
+      "id": "na1_20251026_036",
+      "number": 36,
+      "subject_id": "nos",
+      "text": "데이터 관리자 Lee 대리는 Windows Server Backup을 사 용하여 증분백업을 진행하고자 한다. Windows Server Backup 의 백업 성능 최적화 중 증분백업에 해당되는 옵션 을 고르시오.",
+      "options": [
+        {
+          "key": 1,
+          "text": "기본 백업 성능"
+        },
+        {
+          "key": 2,
+          "text": "빠른 백업 성능"
+        },
+        {
+          "key": 3,
+          "text": "최적화 백업 성능"
+        },
+        {
+          "key": 4,
+          "text": "일부 백업 성능"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "Windows Server Backup에서 증분 백업을 수행하려면 '빠른 백업 성능'을 선택해야 합니다.",
+        "why_correct": "Windows Server Backup의 백업 성능 설정에서 '빠른 백업 성능(VSS 증분 백업)'을 선택하면 마지막 백업 이후 변경된 데이터만 백업하는 증분 백업을 수행합니다.",
+        "why_wrong": {
+          "1": "기본 백업 성능은 전체 백업(VSS 전체 백업)을 수행합니다.",
+          "3": "최적화 백업 성능은 존재하지 않는 옵션입니다.",
+          "4": "일부 백업 성능은 존재하지 않는 옵션입니다."
+        },
+        "key_concept": "Windows 증분 백업"
+      }
+    },
+    {
+      "id": "na1_20251026_037",
+      "number": 37,
+      "subject_id": "nos",
+      "text": "그림은 DNS 관리자에서 레코드를 설정하는 화면이다. 웹 서비스(www)와 FTP(ftp)에 대한 호스트 이름을 IP 주소로 등록하려고 한다. ′icqa1.or.kr′ 영역을 마우스 오른쪽 단추 로 클릭하여 값을 입력해 추가할 때, 선택해야 할 메뉴로 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "새 별칭(CNAME)"
+        },
+        {
+          "key": 2,
+          "text": "새 MX(메일 교환기)"
+        },
+        {
+          "key": 3,
+          "text": "DNSSEC"
+        },
+        {
+          "key": 4,
+          "text": "새 호스트(A 또는 AAAA)"
+        }
+      ],
+      "answer": 4,
+      "has_figure": true,
+      "explanation": {
+        "correct_summary": "새 호스트(A 또는 AAAA) 레코드는 호스트 이름을 IPv4 또는 IPv6 주소로 매핑합니다.",
+        "why_correct": "DNS에서 www나 ftp 같은 호스트 이름을 IP 주소로 매핑하려면 A 레코드(IPv4) 또는 AAAA 레코드(IPv6)를 생성합니다. DNS 관리자의 '새 호스트(A 또는 AAAA)' 메뉴에서 설정합니다.",
+        "why_wrong": {
+          "1": "새 별칭(CNAME)은 기존 도메인에 별칭을 만듭니다.",
+          "2": "새 MX는 메일 서버를 지정합니다.",
+          "3": "DNSSEC은 DNS 보안 확장 기능입니다."
+        },
+        "key_concept": "DNS A 레코드 설정"
+      }
+    },
+    {
+      "id": "na1_20251026_038",
+      "number": 38,
+      "subject_id": "nos",
+      "text": "서버 관리자 Kim 대리는 Windows Server의 CMD 명령어로 DNS 리소스 레코드 캐시를 초기화하려고 한다. 다음 중 알 맞은 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "dnscmd /ageallrecords"
+        },
+        {
+          "key": 2,
+          "text": "dnscmd /zonedelete"
+        },
+        {
+          "key": 3,
+          "text": "dnscmd /clearcache"
+        },
+        {
+          "key": 4,
+          "text": "dnscmd /recorddelete"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "dnscmd /clearcache는 DNS 서버의 리소스 레코드 캐시를 초기화합니다.",
+        "why_correct": "dnscmd는 DNS 서버 관리 명령줄 도구입니다. /clearcache 옵션은 DNS 서버에 캐시된 모든 리소스 레코드를 삭제하여 캐시를 초기화합니다.",
+        "why_wrong": {
+          "1": "dnscmd /ageallrecords는 레코드의 타임스탬프를 갱신합니다.",
+          "2": "dnscmd /zonedelete는 DNS 존을 삭제합니다.",
+          "4": "dnscmd /recorddelete는 특정 레코드를 삭제합니다."
+        },
+        "key_concept": "dnscmd /clearcache"
+      }
+    },
+    {
+      "id": "na1_20251026_039",
+      "number": 39,
+      "subject_id": "nos",
+      "text": "서버 관리자 Park 과장은 Linux 시스템의 umask 값을 022 로 설정했고, 재부팅 후에도 umask 값이 초기화되지 않고 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 1급 ◐ 2025년 10월 26일 필기 기출문제 유지되도록 하려 한다. Linux 시스템 내 모든 사용자에 적용 되도록 설정해야 하는 파일을 고르시오.",
+      "options": [
+        {
+          "key": 1,
+          "text": "/etc/inittab"
+        },
+        {
+          "key": 2,
+          "text": "/etc/profile"
+        },
+        {
+          "key": 3,
+          "text": "/etc/crontab"
+        },
+        {
+          "key": 4,
+          "text": "/etc/fstab"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "/etc/profile은 시스템 전체 셸 환경 설정 파일로, umask 등 환경 변수 설정이 재부팅 후에도 유지됩니다.",
+        "why_correct": "/etc/profile은 사용자 로그인 시 실행되는 시스템 전역 셸 초기화 파일입니다. 여기에 umask 값을 설정하면 재부팅 후에도 설정이 유지됩니다. 개별 사용자는 ~/.bashrc나 ~/.profile에 설정합니다.",
+        "why_wrong": {
+          "1": "/etc/inittab은 init 프로세스 설정 파일(SysV init)입니다.",
+          "3": "/etc/crontab은 시스템 cron 작업을 정의하는 파일입니다.",
+          "4": "/etc/fstab은 파일 시스템 자동 마운트 설정 파일입니다."
+        },
+        "key_concept": "/etc/profile umask 영구 설정"
+      }
+    },
+    {
+      "id": "na1_20251026_040",
+      "number": 40,
+      "subject_id": "nos",
+      "text": "Linux 서버 관리자인 Han 과장은 레거시 iptables를 사용해 패킷 필터링 방화벽을 운영 중이다. iptables 규칙의 설정 파라미터인 커맨드(Command)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "iptables -A : 패킷 필터링 규칙을 설명하는 데 사용한"
+        },
+        {
+          "key": 2,
+          "text": "iptables -D : 패킷 필터링 규칙을 삭제하는 데 사용한"
+        },
+        {
+          "key": 3,
+          "text": "iptables -L : 패킷 필터링 규칙을 표시하는 데 사용한"
+        },
+        {
+          "key": 4,
+          "text": "iptables -F : 패킷 필터링 규칙을 삭제하는 데 사용한"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "iptables -A는 규칙을 '추가'하는 옵션이지, 규칙을 '설명'하는 것이 아닙니다.",
+        "why_correct": "iptables -A(Append)는 체인의 끝에 규칙을 추가합니다. '패킷 필터링 규칙을 설명하는 데 사용'이라는 설명은 잘못되었습니다.",
+        "why_wrong": {
+          "2": "iptables -D(Delete)는 지정한 규칙을 삭제합니다 (올바름).",
+          "3": "iptables -L(List)는 현재 적용된 규칙 목록을 표시합니다 (올바름).",
+          "4": "iptables -F(Flush)는 체인의 모든 규칙을 삭제합니다 (올바름)."
+        },
+        "key_concept": "iptables -A 규칙 추가"
+      }
+    },
+    {
+      "id": "na1_20251026_041",
+      "number": 41,
+      "subject_id": "nos",
+      "text": "서버관리자 Choi 사원은 구형 시스템(glibc 2.4 이하 등)에 서, 도메인 해석 시 DNS를 먼저, 이후 ′/etc/hosts′를 사용 하도록 설정하려 한다. 올바른 파일과 설정은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "′/etc/bind.conf′, ′order dns, hosts′"
+        },
+        {
+          "key": 2,
+          "text": "′/etc/host.conf′, ′order bind, hosts′"
+        },
+        {
+          "key": 3,
+          "text": "′/etc/dns.conf′, ′order dns, hosts′"
+        },
+        {
+          "key": 4,
+          "text": "′/etc/zone.conf′, ′order bind, hosts′"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "/etc/host.conf에서 'order bind, hosts'로 DNS 먼저, 그 다음 /etc/hosts 순서를 설정합니다.",
+        "why_correct": "구형 glibc(2.4 이하)에서 이름 해석 순서는 /etc/host.conf 파일에서 'order' 지시자로 설정합니다. 'bind'는 DNS, 'hosts'는 /etc/hosts를 의미합니다. 현재 시스템은 /etc/nsswitch.conf를 사용합니다.",
+        "why_wrong": {
+          "1": "/etc/bind.conf는 BIND DNS 서버 설정 파일이며 이름 해석 순서 설정 파일이 아닙니다.",
+          "3": "/etc/dns.conf는 존재하지 않는 파일입니다.",
+          "4": "/etc/zone.conf는 존재하지 않는 파일입니다."
+        },
+        "key_concept": "/etc/host.conf 이름 해석 순서"
+      }
+    },
+    {
+      "id": "na1_20251026_042",
+      "number": 42,
+      "subject_id": "equipment",
+      "text": "서버 관리자 Park 사원은 Windows Server 2022 시스템의 디스크 사용에 대한 용량을 제한하는 쿼터를 설정하려고 한 다. NTFS 쿼터와 FSRM 쿼터에 대한 설명으로 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "NTFS 쿼터는 폴더 단위로 용량을 제한한다."
+        },
+        {
+          "key": 2,
+          "text": "FSRM 쿼터는 볼륨 단위로 용량을 제한한다."
+        },
+        {
+          "key": 3,
+          "text": "NTFS 쿼터는 사용자별(소유자별) 공간을 할당·제한한다."
+        },
+        {
+          "key": 4,
+          "text": "FSRM 쿼터는 볼륨이 사용할 수 있는 총용량을 제한한"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "NTFS 쿼터는 사용자별(소유자별)로 디스크 공간을 할당·제한합니다.",
+        "why_correct": "Windows NTFS 쿼터는 볼륨(드라이브) 단위로 설정하지만, 각 사용자(파일 소유자)별로 사용 공간을 제한합니다. FSRM(File Server Resource Manager) 쿼터는 폴더 단위로 용량을 제한하는 기능을 제공합니다.",
+        "why_wrong": {
+          "1": "NTFS 쿼터는 볼륨 단위이며, 폴더 단위는 FSRM 쿼터입니다.",
+          "2": "FSRM 쿼터는 폴더 단위로 용량을 제한합니다 (볼륨 단위가 아님).",
+          "4": "볼륨 전체 총용량 제한은 FSRM의 볼륨 쿼터 기능입니다."
+        },
+        "key_concept": "NTFS 쿼터 vs FSRM 쿼터"
+      }
+    },
+    {
+      "id": "na1_20251026_043",
+      "number": 43,
+      "subject_id": "equipment",
+      "text": "서버 담당자 Park 사원은 다양한 방법으로 그룹 정책 개체 에 관한 정보를 표시하고자 ′gpresult′ 명령을 사용하고자 한다. 이 명령은 클라이언트 컴퓨터나 서버에 적용되며, 적 용할 정책을 결정할 때 특히 유용하며, 특정 정책이 적용되 지 않은 이유를 알아내려 할 때 더욱 유용하다. 다음 중 ′ gpresult′ 명령의 옵션에 대한 설명으로 올바르지 않은 것 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "/s : 자세한 정책 정보를 표시한다."
+        },
+        {
+          "key": 2,
+          "text": "/u : 명령을 실행할 사용자 컨텍스트를 지정한다."
+        },
+        {
+          "key": 3,
+          "text": "/p : 제공된 사용자 컨텍스트에 대한 암호를 지정한다."
+        },
+        {
+          "key": 4,
+          "text": "/scope : 사용자 또는 컴퓨터 설정이 표시될 것인지 지"
+        }
+      ],
+      "answer": 1,
+      "has_figure": true,
+      "explanation": {
+        "correct_summary": "gpresult /s는 원격 컴퓨터를 지정하는 옵션이며, '자세한 정책 정보'를 표시하는 것은 /v(verbose) 옵션입니다.",
+        "why_correct": "gpresult 명령어 옵션: /s [컴퓨터명]은 원격 컴퓨터 지정, /u는 사용자 컨텍스트 지정, /p는 암호 지정, /scope는 사용자/컴퓨터 설정 표시 선택, /v는 자세한 정책 정보 표시입니다. /s를 '자세한 정책 정보'로 설명한 것이 틀렸습니다.",
+        "why_wrong": {
+          "2": "/u는 명령을 실행할 사용자 컨텍스트를 지정합니다 (올바름).",
+          "3": "/p는 지정된 사용자 컨텍스트의 암호를 지정합니다 (올바름).",
+          "4": "/scope는 사용자 또는 컴퓨터 설정 표시를 지정합니다 (올바름)."
+        },
+        "key_concept": "gpresult /s 옵션"
+      }
+    },
+    {
+      "id": "na1_20251026_044",
+      "number": 44,
+      "subject_id": "equipment",
+      "text": "Windows Server 2022에서 PowerShell을 이용해 IIS를 설치 할 때 사용할 명령어로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Install-WindowsFeature -Name Web-Server"
+        },
+        {
+          "key": 2,
+          "text": "Install-WindowsFeature"
+        },
+        {
+          "key": 3,
+          "text": "Install-WindowsFeature"
+        },
+        {
+          "key": 4,
+          "text": "Install-WindowsFeature"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "Install-WindowsFeature -Name Web-Server는 IIS를 설치하는 PowerShell 명령어입니다.",
+        "why_correct": "Windows Server 2022에서 PowerShell로 IIS를 설치하려면 Install-WindowsFeature -Name Web-Server 명령을 사용합니다. -IncludeManagementTools를 추가하면 관리 도구도 함께 설치됩니다.",
+        "why_wrong": {
+          "2": "Install-WindowsFeature만으로는 어떤 기능을 설치할지 지정하지 않아 불완전합니다.",
+          "3": "위와 동일한 이유로 불완전합니다.",
+          "4": "위와 동일한 이유로 불완전합니다."
+        },
+        "key_concept": "PowerShell IIS 설치"
+      }
+    },
+    {
+      "id": "na1_20251026_045",
+      "number": 45,
+      "subject_id": "equipment",
+      "text": "서버 관리자 Lee 사원은 Linux와 Windows 운영체제 간에 자료를 공유하기 위해 삼바(Samba) 서비스를 사용하고자 한다. 다음 중 삼바와 관련한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "삼바의 접근 관련 설정 파일은 ′/etc/samba/smb.conf′"
+        },
+        {
+          "key": 2,
+          "text": "Linux에서 Windows 서버로 접속할 때 ′smbclient′ 명령"
+        },
+        {
+          "key": 3,
+          "text": "Linux에 공유된 디렉터리를 마운트할 때 ′mount.nfs′ 명"
+        },
+        {
+          "key": 4,
+          "text": "삼바 서버에서 클라이언트의 연결상태를 확인하는 명령"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "Linux에서 Samba 공유를 마운트할 때는 mount.nfs가 아닌 mount.cifs(또는 mount -t cifs)를 사용합니다.",
+        "why_correct": "Samba는 SMB/CIFS 프로토콜을 사용합니다. Linux에서 Samba 공유 디렉터리를 마운트할 때는 mount -t cifs 또는 mount.cifs를 사용합니다. mount.nfs는 NFS(Network File System) 마운트에 사용됩니다.",
+        "why_wrong": {
+          "1": "Samba 설정 파일은 /etc/samba/smb.conf입니다 (올바름).",
+          "2": "Linux에서 Windows 서버에 접속할 때 smbclient를 사용합니다 (올바름).",
+          "4": "Samba 연결 상태 확인 명령으로 smbstatus를 사용합니다 (올바름)."
+        },
+        "key_concept": "Samba mount.cifs"
+      }
+    },
+    {
+      "id": "na1_20251026_046",
+      "number": 46,
+      "subject_id": "equipment",
+      "text": "라우팅 프로토콜은 경로 선택을 위해 메트릭(metric) 값을 사용하며, 이 값은 라우팅 테이블의 경로와 함께 저장된다. 다음 중 매트릭의 종류에 해당되지 않는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "대역폭(Bandwidth)"
+        },
+        {
+          "key": 2,
+          "text": "포트 번호(Port number)"
+        },
+        {
+          "key": 3,
+          "text": "지연(Delay)"
+        },
+        {
+          "key": 4,
+          "text": "코스트(Cost)"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "포트 번호(Port number)는 라우팅 메트릭 값으로 사용되지 않습니다.",
+        "why_correct": "라우팅 메트릭(Metric)은 최적 경로 선택을 위한 값으로 대역폭(Bandwidth), 지연(Delay), 신뢰성(Reliability), 코스트(Cost), 홉 수(Hop Count) 등이 사용됩니다. 포트 번호는 전송 계층 정보로 라우팅 메트릭에 해당하지 않습니다.",
+        "why_wrong": {
+          "1": "대역폭은 링크의 전송 속도로 메트릭에 사용됩니다 (올바름).",
+          "3": "지연은 패킷이 링크를 통해 전달되는 시간으로 메트릭에 사용됩니다 (올바름).",
+          "4": "코스트는 관리자가 설정하는 경로 비용으로 메트릭에 사용됩니다 (올바름)."
+        },
+        "key_concept": "라우팅 메트릭"
+      }
+    },
+    {
+      "id": "na1_20251026_047",
+      "number": 47,
+      "subject_id": "equipment",
+      "text": "VLAN(Virtual LAN)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "VLAN은 하나 이상의 물리적 LAN에 속한 단말(호스트)들"
+        },
+        {
+          "key": 2,
+          "text": "VLAN은 물리적 회선이 아닌 소프트웨어 설정에 의해 논"
+        },
+        {
+          "key": 3,
+          "text": "단말들의 VLAN 구성 방식에는 정적(포트 기반)과 동적"
+        },
+        {
+          "key": 4,
+          "text": "포트 기반 VLAN은 전송계층(L4) 포트 번호를 사용해"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "포트 기반 VLAN은 L2(데이터 링크) 스위치 포트를 사용하며, L4 포트 번호와 무관합니다.",
+        "why_correct": "포트 기반(정적) VLAN은 스위치의 물리적 포트를 특정 VLAN에 할당합니다. L4 전송 계층의 포트 번호(TCP/UDP)를 사용하는 것이 아닙니다. VLAN은 L2(데이터 링크 계층)에서 구현됩니다.",
+        "why_wrong": {
+          "1": "VLAN은 물리적으로 다른 LAN에 있는 단말들을 논리적으로 그룹화합니다 (올바름).",
+          "2": "VLAN은 소프트웨어 설정으로 논리적 네트워크를 구성합니다 (올바름).",
+          "3": "VLAN 구성 방식에는 정적(포트 기반)과 동적(MAC, 프로토콜 기반) 방식이 있습니다 (올바름)."
+        },
+        "key_concept": "VLAN 포트 기반 구성"
+      }
+    },
+    {
+      "id": "na1_20251026_048",
+      "number": 48,
+      "subject_id": "equipment",
+      "text": "Dual-stack(IPv4/IPv6) 네트워크에서 OSPF 이웃 상태를 점 검하려고 한다. IPv6 링크의 이웃 상태를 직접 확인하는 명 령은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "show ip ospf neighbor"
+        },
+        {
+          "key": 2,
+          "text": "show ip ospf interface"
+        },
+        {
+          "key": 3,
+          "text": "show ipv6 ospf neighbor"
+        },
+        {
+          "key": 4,
+          "text": "show ip route ospf"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "show ipv6 ospf neighbor는 IPv6 링크의 OSPFv3 이웃 상태를 확인하는 명령어입니다.",
+        "why_correct": "IPv6 네트워크에서 OSPF(OSPFv3)를 사용할 때 이웃 상태를 확인하려면 'show ipv6 ospf neighbor' 명령을 사용합니다. IPv4용 'show ip ospf neighbor'와 구분됩니다.",
+        "why_wrong": {
+          "1": "show ip ospf neighbor는 IPv4 OSPF 이웃 상태를 표시합니다.",
+          "2": "show ip ospf interface는 IPv4 OSPF 인터페이스 정보를 표시합니다.",
+          "4": "show ip route ospf는 IPv4 OSPF 라우팅 테이블을 표시합니다."
+        },
+        "key_concept": "show ipv6 ospf neighbor"
+      }
+    },
+    {
+      "id": "na1_20251026_049",
+      "number": 49,
+      "subject_id": "equipment",
+      "text": "다음 중 Auto MDI-X를 지원하지 않거나 비활성화된 10/100Mbps 장비끼리 직접 연결할 때, 크로스 케이블이 필 요한 조합은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "스위치(10/100, Auto MDI-X 미지원) ↔ 스위치(10/100,"
+        },
+        {
+          "key": 2,
+          "text": "스위치(기가비트, Auto MDI-X 지원) ↔ PC(기가비트"
+        },
+        {
+          "key": 3,
+          "text": "스위치(기가비트, Auto MDI-X 지원) ↔ 라우터(기가비트"
+        },
+        {
+          "key": 4,
+          "text": "스위치(기가비트, Auto MDI-X 지원) ↔ 무선 AP(기가비"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "Auto MDI-X 미지원 스위치끼리 직접 연결할 때 크로스 케이블이 필요합니다.",
+        "why_correct": "Auto MDI-X 기능이 없거나 비활성화된 동일 종류의 장비(스위치↔스위치, PC↔PC)를 직접 연결할 때는 크로스(Cross) 케이블이 필요합니다. Auto MDI-X가 활성화된 기가비트 장비는 자동으로 핀 배열을 조정합니다.",
+        "why_wrong": {
+          "2": "Auto MDI-X 지원 기가비트 스위치↔PC는 자동 조정으로 스트레이트 케이블도 사용 가능합니다.",
+          "3": "Auto MDI-X 지원 장비끼리는 스트레이트 케이블도 사용 가능합니다.",
+          "4": "Auto MDI-X 지원 장비끼리는 스트레이트 케이블도 사용 가능합니다."
+        },
+        "key_concept": "크로스 케이블 Auto MDI-X"
+      }
+    },
+    {
+      "id": "na1_20251026_050",
+      "number": 50,
+      "subject_id": "equipment",
+      "text": "사내 레거시 구간(10/100Mbps 장비 일부 잔존, 허브 일부 사용)에서 300m 구리 구간을 광으로 대체하면서 리피터/미 디어 컨버터 투입을 검토 중이다. 다음 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "리피터(또는 단순 미디어 컨버터)는 물리 계층(L1)에서"
+        },
+        {
+          "key": 2,
+          "text": "허브/리피터를 추가하면 충돌 도메인이 확장되어"
+        },
+        {
+          "key": 3,
+          "text": "리피터를 추가하면 브로드캐스트 도메인이 분리되어"
+        },
+        {
+          "key": 4,
+          "text": "광 구간 확장 시 리피터/미디어 컨버터를 사용할 수 있"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "리피터를 추가해도 브로드캐스트 도메인은 분리되지 않고 오히려 확장됩니다.",
+        "why_correct": "리피터와 허브는 물리 계층(L1) 장비로, 신호를 재생성하여 전달하지만 브로드캐스트 도메인이나 충돌 도메인을 분리하지 못합니다. 오히려 연결된 모든 장비가 동일한 충돌 도메인과 브로드캐스트 도메인에 속하게 됩니다. 브로드캐스트 도메인을 분리하려면 라우터나 L3 스위치가 필요합니다.",
+        "why_wrong": {
+          "1": "리피터(단순 미디어 컨버터)는 L1에서 신호를 증폭/변환합니다 (올바름).",
+          "2": "허브/리피터 추가 시 충돌 도메인이 확장됩니다 (올바름).",
+          "4": "광 구간 확장에 리피터/미디어 컨버터를 사용할 수 있습니다 (올바름)."
+        },
+        "key_concept": "리피터 브로드캐스트 도메인"
+      }
+    },
+    {
+      "id": "na1_20251026_051",
+      "number": 51,
+      "subject_id": "equipment",
+      "text": "다음 중 방화벽(UFW)에서 포트를 허용하기 위한 명령어와 서비스 매핑이 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ufw allow 22 / SSH"
+        },
+        {
+          "key": 2,
+          "text": "ufw allow 25 / SMTP"
+        },
+        {
+          "key": 3,
+          "text": "ufw allow 123 / NTP"
+        },
+        {
+          "key": 4,
+          "text": "ufw allow 143 / POP3"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "UFW에서 포트 143은 IMAP이며, POP3는 포트 110입니다.",
+        "why_correct": "포트 번호: SSH=22, SMTP=25, NTP=123, IMAP=143, POP3=110입니다. 'ufw allow 143 / POP3'은 잘못된 매핑으로, 143번은 IMAP 프로토콜입니다.",
+        "why_wrong": {
+          "1": "ufw allow 22는 SSH(포트 22) 허용으로 올바른 매핑입니다.",
+          "2": "ufw allow 25는 SMTP(포트 25) 허용으로 올바른 매핑입니다.",
+          "3": "ufw allow 123은 NTP(포트 123) 허용으로 올바른 매핑입니다."
+        },
+        "key_concept": "IMAP 포트 143 vs POP3 포트 110"
+      }
+    },
+    {
+      "id": "na1_20251026_052",
+      "number": 52,
+      "subject_id": "security",
+      "text": "다음 중 Windows Server 2022에서 제공하는 감사 이벤트 로 옳게 짝지어진 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "가, 나"
+        },
+        {
+          "key": 2,
+          "text": "가, 나, 다"
+        },
+        {
+          "key": 3,
+          "text": "가, 다, 라"
+        },
+        {
+          "key": 4,
+          "text": "가, 나, 다, 라"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "Windows Server 2022 감사 이벤트에서 가, 나, 다가 올바르게 짝지어진 항목입니다.",
+        "why_correct": "Windows 보안 감사에서 로그온 성공/실패(가), 계정 관리(나), 개체 액세스(다)는 표준 감사 이벤트입니다. 모든 항목이 올바르면 가, 나, 다, 라 모두가 맞지만, 라에 잘못된 설명이 포함되어 가, 나, 다만 올바릅니다.",
+        "why_wrong": {
+          "1": "가, 나만으로는 불충분합니다.",
+          "3": "가, 다, 라에서 라의 설명이 올바르지 않습니다.",
+          "4": "가, 나, 다, 라 모두 포함하지만 라에 오류가 있습니다."
+        },
+        "key_concept": "Windows 감사 이벤트"
+      }
+    },
+    {
+      "id": "na1_20251026_053",
+      "number": 53,
+      "subject_id": "security",
+      "text": "다음 괄호( )안에 맞는 것을 고르시오.",
+      "options": [
+        {
+          "key": 1,
+          "text": "DoH(DNS over HTTPS)"
+        },
+        {
+          "key": 2,
+          "text": "DoT(DNS over TLS)"
+        },
+        {
+          "key": 3,
+          "text": "TLS(Transport Layer Security)"
+        },
+        {
+          "key": 4,
+          "text": "VPN(Virtual Private Network)"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "DoH(DNS over HTTPS)는 DNS 쿼리를 HTTPS를 통해 암호화하여 프라이버시를 보호합니다.",
+        "why_correct": "DoH(DNS over HTTPS)는 기존 평문 DNS 쿼리를 HTTPS(TCP/443) 채널로 암호화하여 전송합니다. DNS 쿼리 내용이 인터넷 서비스 제공자나 중간자에게 노출되는 것을 방지합니다.",
+        "why_wrong": {
+          "2": "DoT(DNS over TLS)는 DNS를 TLS 채널(TCP/853)로 암호화합니다.",
+          "3": "TLS는 전송 계층 보안 프로토콜 자체입니다.",
+          "4": "VPN은 가상 사설 네트워크로 전체 트래픽을 암호화합니다."
+        },
+        "key_concept": "DoH DNS over HTTPS"
+      }
+    },
+    {
+      "id": "na1_20251026_054",
+      "number": 54,
+      "subject_id": "security",
+      "text": "Linux 서버 port open 정보를 아래와 같이 확인한 결과, 서 버 담당자가 열지 않은 특정 port 10080이 열려있는 것을 확인하였다. 악성코드 감염이 의심되어 해당 port를 사용하 는 프로세스 파일 정보를 확인하려 할 때, 가장 알맞은 명 령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "stat /proc/18335/exe"
+        },
+        {
+          "key": 2,
+          "text": "whereis TCPAgent"
+        },
+        {
+          "key": 3,
+          "text": "search 18335"
+        },
+        {
+          "key": 4,
+          "text": "find / -name 18335"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "stat /proc/18335/exe는 PID 18335 프로세스의 실행 파일 경로를 확인합니다.",
+        "why_correct": "Linux에서 /proc/[PID]/exe는 실행 중인 프로세스의 실행 파일에 대한 심볼릭 링크입니다. stat /proc/18335/exe 명령으로 해당 PID의 프로세스가 어떤 프로그램인지 확인할 수 있습니다.",
+        "why_wrong": {
+          "2": "whereis TCPAgent는 TCPAgent라는 명령어의 위치를 찾지만, PID로 실행 파일을 확인하는 방법이 아닙니다.",
+          "3": "search 18335는 존재하지 않는 명령어입니다.",
+          "4": "find / -name 18335는 18335라는 이름의 파일을 찾지만, PID와 연결된 실행 파일을 찾는 방법이 아닙니다."
+        },
+        "key_concept": "proc/PID/exe 프로세스 확인"
+      }
+    },
+    {
+      "id": "na1_20251026_055",
+      "number": 55,
+      "subject_id": "security",
+      "text": "네트워크 담당자 Kim 사원은 Linux 서버에서 SSH(Secure Shell)를 통한 원격 접속 보안을 강화하려고 한다. 다음 중 SSH 보안을 향상시키기 위한 방법으로 가장 적절하지 않은 것은? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
+      "options": [
+        {
+          "key": 1,
+          "text": "방화벽/보안그룹으로 SSH 허용 IP를 화이트리스트로 제"
+        },
+        {
+          "key": 2,
+          "text": "PermitRootLogin=yes 설정으로 root 로그인 차단"
+        },
+        {
+          "key": 3,
+          "text": "공개키 인증 사용 및 PasswordAuthentication no 설정"
+        },
+        {
+          "key": 4,
+          "text": "Fail2Ban과 같은 도구를 사용하여 무차별 대입 공격 방"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "PermitRootLogin=yes는 root 로그인을 허용하므로 보안 강화와 반대입니다.",
+        "why_correct": "SSH 보안 강화를 위해서는 PermitRootLogin을 no로 설정하여 root 직접 로그인을 차단해야 합니다. 'PermitRootLogin=yes'는 보안을 약화시키는 잘못된 설정입니다.",
+        "why_wrong": {
+          "1": "방화벽으로 SSH 허용 IP를 화이트리스트로 제한하는 것은 보안 강화 방법입니다 (올바름).",
+          "3": "공개키 인증 사용 및 PasswordAuthentication no는 강력한 보안 설정입니다 (올바름).",
+          "4": "Fail2Ban은 무차별 대입 공격을 자동으로 차단하는 보안 도구입니다 (올바름)."
+        },
+        "key_concept": "SSH PermitRootLogin 설정"
+      }
+    },
+    {
+      "id": "na1_20251026_056",
+      "number": 56,
+      "subject_id": "security",
+      "text": "네트워크관리사 Kim 사원은 Windows Server 2022에서 보 안 설정을 점검 중이다. 다음 중 Windows Server의 보안 정책 구성과 관련된 내용으로 적절하지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "계정 잠금 정책을 설정하여 무단 로그인 시도를 제한한"
+        },
+        {
+          "key": 2,
+          "text": "감사 정책을 활성화하여 보안 이벤트를 기록하고 모니터"
+        },
+        {
+          "key": 3,
+          "text": "로컬 보안 정책에서 방화벽 규칙을 생성하여 트래픽을"
+        },
+        {
+          "key": 4,
+          "text": "암호 정책을 설정하여 암호 복잡성을 요구한다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "로컬 보안 정책에서 방화벽 규칙을 생성하는 것은 방화벽 설정 위치가 아닌 Windows Defender 방화벽에서 합니다.",
+        "why_correct": "Windows 방화벽 규칙은 '로컬 보안 정책'이 아닌 '고급 보안이 포함된 Windows Defender 방화벽'(wf.msc)에서 생성합니다. 로컬 보안 정책은 계정 정책, 감사 정책, 암호 정책 등을 설정합니다.",
+        "why_wrong": {
+          "1": "계정 잠금 정책은 로컬 보안 정책에서 설정합니다 (올바름).",
+          "2": "감사 정책은 로컬 보안 정책에서 설정합니다 (올바름).",
+          "4": "암호 정책(복잡성 요구)은 로컬 보안 정책에서 설정합니다 (올바름)."
+        },
+        "key_concept": "Windows 방화벽 설정 위치"
+      }
+    },
+    {
+      "id": "na1_20251026_057",
+      "number": 57,
+      "subject_id": "security",
+      "text": "다음 지문이 설명하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "PGP(Pretty Good Privacy)"
+        },
+        {
+          "key": 2,
+          "text": "PPP(Point to Point Protocol)"
+        },
+        {
+          "key": 3,
+          "text": "AH(Authentication Header)"
+        },
+        {
+          "key": 4,
+          "text": "IKE(Internet Key Exchange)"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "PGP(Pretty Good Privacy)는 이메일 암호화와 디지털 서명을 위한 프로그램입니다.",
+        "why_correct": "PGP는 공개키 암호화 방식을 사용하여 이메일 내용을 암호화하고 디지털 서명을 붙여 발신자를 인증하는 프로그램입니다. 웹 신뢰(Web of Trust) 방식으로 공개키를 관리합니다.",
+        "why_wrong": {
+          "2": "PPP는 점대점 직렬 연결 프로토콜입니다.",
+          "3": "AH(Authentication Header)는 IPsec의 인증 헤더 프로토콜입니다.",
+          "4": "IKE는 IPsec의 키 교환 프로토콜입니다."
+        },
+        "key_concept": "PGP 이메일 암호화"
+      }
+    },
+    {
+      "id": "na1_20251026_058",
+      "number": 58,
+      "subject_id": "security",
+      "text": "네트워크를 관리하는 Kim은 옆 회사에서 DNS 스푸핑 공격 을 당해서 일부 계정이 해킹당했고 이로 인해 개인정보 유 출이 발생하게 되었음을 전해들었다. Kim의 회사에서는 DNS 스푸핑 공격을 막기 위한 보안조치 매뉴얼을 작성하여 전 부서에 발송하였다. 매뉴얼에 들어갈 내용이 아닌 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "전체 서버 및 업무용 PC의 비밀번호를 즉시 변경한다."
+        },
+        {
+          "key": 2,
+          "text": "네트워크 트래픽과 DNS 로그를 지속적으로 모니터링한"
+        },
+        {
+          "key": 3,
+          "text": "Hosts 파일의 무결성을 점검해 악성 엔트리를 제거한다."
+        },
+        {
+          "key": 4,
+          "text": "게이트웨이의 MAC 주소를 주기적으로 변경한다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "게이트웨이의 MAC 주소를 주기적으로 변경하는 것은 DNS 스푸핑 대응에 효과적이지 않습니다.",
+        "why_correct": "DNS 스푸핑 대응 방법: 비밀번호 변경, 네트워크/DNS 로그 모니터링, Hosts 파일 무결성 점검 등이 실질적인 대응입니다. 게이트웨이 MAC 주소 변경은 ARP 스푸핑 방지와 관련이 있으며 DNS 스푸핑 대응에 직접적 효과가 없습니다.",
+        "why_wrong": {
+          "1": "침해 후 비밀번호 즉시 변경은 필수적인 대응입니다 (올바름).",
+          "2": "지속적인 네트워크/DNS 로그 모니터링으로 추가 공격을 탐지합니다 (올바름).",
+          "3": "Hosts 파일의 악성 엔트리 제거로 DNS 스푸핑 흔적을 제거합니다 (올바름)."
+        },
+        "key_concept": "DNS 스푸핑 대응"
+      }
+    },
+    {
+      "id": "na1_20251026_059",
+      "number": 59,
+      "subject_id": "security",
+      "text": "내ㆍ외부 정보의 흐름을 실시간으로 차단하기 위해 해커 침 입 패턴에 대한 추적과 유해 정보를 감시하는 보안 시스템 은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IPS"
+        },
+        {
+          "key": 2,
+          "text": "FireWall"
+        },
+        {
+          "key": 3,
+          "text": "L7 Switch"
+        },
+        {
+          "key": 4,
+          "text": "ESM"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "IPS(침입 방지 시스템)는 해커 침입 패턴을 추적하고 유해 정보를 감시하여 실시간으로 차단합니다.",
+        "why_correct": "IPS(Intrusion Prevention System)는 IDS(침입 탐지)에서 발전하여 실시간으로 악성 트래픽을 탐지하고 자동으로 차단하는 보안 시스템입니다. 해커 침입 패턴 분석, 유해 정보 감시 및 실시간 차단이 주요 기능입니다.",
+        "why_wrong": {
+          "2": "방화벽(FireWall)은 규칙 기반으로 패킷을 허용/차단하지만 침입 패턴 분석 기능은 제한적입니다.",
+          "3": "L7 스위치는 응용 계층 기반 트래픽 분산 장비입니다.",
+          "4": "ESM(Enterprise Security Management)은 통합 보안 관리 시스템입니다."
+        },
+        "key_concept": "IPS 침입 방지 시스템"
+      }
+    },
+    {
+      "id": "na1_20251026_060",
+      "number": 60,
+      "subject_id": "security",
+      "text": "하이브리드 환경에서, 인터넷 사용자가 접속하는 리버스 프 록시/WAF/프런트 웹 서버를 내부 업무망과 분리하기 위해 사설망과 공용망(인터넷) 사이에 둔 중간 네트워크 세그먼트 를 무엇이라 하는가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "DMZ (Demilitarized Zone)"
+        },
+        {
+          "key": 2,
+          "text": "ZTNA (Zero Trust Network Access)"
+        },
+        {
+          "key": 3,
+          "text": "SASE (Secure Access Service Edge)"
+        },
+        {
+          "key": 4,
+          "text": "VLAN (Virtual LAN)"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "DMZ(비무장지대)는 외부와 내부 네트워크 사이에 위치한 보안 완충 구역입니다.",
+        "why_correct": "DMZ(Demilitarized Zone)는 인터넷과 내부 업무망 사이에 위치하는 네트워크 구간으로, 웹 서버, 리버스 프록시, WAF 등 외부에서 접근이 필요한 서버를 배치합니다. 내부망과 외부망을 분리하여 보안을 강화합니다.",
+        "why_wrong": {
+          "2": "ZTNA는 제로 트러스트 원칙 기반의 원격 접근 제어 솔루션입니다.",
+          "3": "SASE는 SD-WAN과 클라우드 보안을 통합한 서비스입니다.",
+          "4": "VLAN은 논리적 네트워크 분리 기술이지만 물리적 DMZ 구성과 다릅니다."
+        },
+        "key_concept": "DMZ 비무장지대"
+      }
+    }
+  ]
+}
