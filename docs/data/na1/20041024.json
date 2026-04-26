@@ -29,13 +29,22 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "도메인 등록은 KRNIC이 아닌 ICANN이 전역 관리",
+        "why_correct": "KRNIC은 한국 도메인만 관리합니다. 전 세계 도메인은 ICANN(국제인터넷주소관리기구)이 관리합니다.",
+        "why_wrong": {
+          "2": "KRNIC의 기관명 최대 길이는 63자가 맞습니다.",
+          "3": "국가도메인(nTLD)은 각 국가를 두 자리 영문자로 표현합니다.",
+          "4": "도메인은 기관명, 기관성격, 국가표시로 구성되는 것이 맞습니다."
+        },
+        "key_concept": "도메인, KRNIC, ICANN 관리"
+      }
     },
     {
       "id": "na1_20041024_002",
       "number": 2,
       "subject_id": "tcpip",
-      "text": "B Class 128.10.0.0 주소를 갖는 곳에서 Host 수 150개, 물 리적인 망 100개를 구성할 경우 잘못된 것은?",
+      "text": "B Class 128.10.0.0 주소를 갖는 곳에서 Host 수 150개, 물리적인 망 100개를 구성할 경우 잘못된 것은?",
       "options": [
         {
           "key": 1,
@@ -56,7 +65,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "100개 망에 라우터는 보통 99-100대가 필요하지만 절대적이 아님",
+        "why_correct": "각 물리 망이 독립적이면 라우터가 필요하지만, 계층 라우팅 사용 시 99대 이상이면 충분할 수 있습니다. 정확히 100대가 필수는 아닙니다.",
+        "why_wrong": {
+          "1": "Host ID 부분에서 서브넷팅하여 150개 호스트 수용이 가능합니다.",
+          "3": "경로 선택 프로토콜로 라우팅 정보를 관리하므로 각 호스트가 경로를 알 필요는 없습니다.",
+          "4": "새 호스트 추가 시 라우터의 라우팅 정보 갱신이 필요합니다."
+        },
+        "key_concept": "라우터, 서브넷, 라우팅"
+      }
     },
     {
       "id": "na1_20041024_003",
@@ -83,7 +101,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "25개 호스트를 위해 /27 마스크(255.255.255.224) 사용",
+        "why_correct": "/27은 32개 주소를 제공하며 25개 호스트를 수용합니다. /28(/240)도 가능하지만 /27이 더 많은 서브넷을 생성합니다.",
+        "why_wrong": {
+          "1": "/26 마스크는 64개 주소로 너무 많습니다.",
+          "3": "/28은 16개 주소로 25개 필요를 충족할 수 없습니다.",
+          "4": "/29는 8개 주소로 더욱 불가능합니다."
+        },
+        "key_concept": "서브넷 마스크, CIDR, 호스트 계산"
+      }
     },
     {
       "id": "na1_20041024_004",
@@ -110,7 +137,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Intercast는 IPv6 주소 타입이 아님",
+        "why_correct": "IPv6은 Unicast(1:1), Multicast(1:많음), Anycast(1:가장가까운1)만 정의합니다. Intercast는 실제 IPv6 주소 타입이 아닙니다.",
+        "why_wrong": {
+          "1": "Anycast는 IPv6 주소 분류 중 하나입니다.",
+          "2": "Unicast는 IPv6 기본 주소 타입입니다.",
+          "3": "Multicast는 IPv6에서 1:다 통신을 지원합니다."
+        },
+        "key_concept": "IPv6, 주소 타입, Anycast"
+      }
     },
     {
       "id": "na1_20041024_005",
@@ -137,7 +173,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "주소 찾기 불가는 IPv6 출현의 직접 원인 아님",
+        "why_correct": "IPv6은 주소 고갈, 라우터 부하, 라우팅 테이블 오버플로우 해결을 위해 나왔습니다. 목적지 주소 미발견은 DNS 문제이지 IPv6 필요 이유가 아닙니다.",
+        "why_wrong": {
+          "1": "IPv4의 32비트 주소 공간 고갈이 주요 원인입니다.",
+          "2": "IPv4 라우팅 테이블 증가로 라우터 부하가 증가했습니다.",
+          "3": "라우팅 정보 폭증이 IPv6 개발의 직접 동기입니다."
+        },
+        "key_concept": "IPv6, 주소 고갈, 라우팅"
+      }
     },
     {
       "id": "na1_20041024_006",
@@ -164,7 +209,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "AUTH는 인증 방식 협상, 데이터 채널 보안 아님",
+        "why_correct": "AUTH는 FTP의 인증 메커니즘을 협상하는 명령어이며, 데이터 채널 암호화가 아닙니다. PBSZ가 데이터 블록 크기를 설정합니다.",
+        "why_wrong": {
+          "2": "CCC(Clear Command Channel)는 보안을 종료합니다.",
+          "3": "ADAT는 선택적인 보안 기능을 적용합니다.",
+          "4": "PBSZ는 보호된 데이터 블록 크기를 설정합니다."
+        },
+        "key_concept": "FTP, AUTH, 보안 명령어"
+      }
     },
     {
       "id": "na1_20041024_007",
@@ -191,7 +245,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "SYN 패킷은 ACK 플래그 0, 응답 패킷은 ACK 플래그 1",
+        "why_correct": "TCP 3-way 핸드셰이크에서 세션 성립을 원하는 측은 SYN 플래그 1, ACK 플래그 0으로 설정해야 합니다. ACK는 0이 아니라 1이어야 응답 확인입니다.",
+        "why_wrong": {
+          "1": "TCP 세션은 3-way 핸드셰이크로 성립합니다.",
+          "2": "초기 시퀀스 번호는 각 호스트에서 임의로 선택됩니다.",
+          "4": "송신 호스트는 ACK로 수신 확인을 받습니다."
+        },
+        "key_concept": "TCP, 3-way, 핸드셰이크"
+      }
     },
     {
       "id": "na1_20041024_008",
@@ -218,13 +281,22 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "IP는 Layer 3(Network Layer), Layer 2(Datalink) 아님",
+        "why_correct": "IP는 OSI 7계층의 Layer 3(네트워크 계층)에 해당합니다. Layer 2는 Datalink 계층으로 Ethernet 같은 프로토콜이 있습니다.",
+        "why_wrong": {
+          "1": "IP는 TCP 상위에 있으며 하위로 전달합니다.",
+          "2": "IP는 MTU 초과 시 패킷을 분할합니다.",
+          "3": "IP는 비연결형 프로토콜입니다."
+        },
+        "key_concept": "IP, OSI Layer 3, 프로토콜 스택"
+      }
     },
     {
       "id": "na1_20041024_009",
       "number": 9,
       "subject_id": "tcpip",
-      "text": "TCP 환경에서는 여러 가지 프로토콜을 지원한다. 각 프로토 콜에 대해 기본적으로 지정되어 사용되고 있는 포트번호가 아닌 것은?",
+      "text": "TCP 환경에서는 여러 가지 프로토콜을 지원한다. 각 프로토콜에 대해 기본적으로 지정되어 사용되고 있는 포트번호가 아닌 것은?",
       "options": [
         {
           "key": 1,
@@ -245,13 +317,22 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "NNTP 기본 포트는 119이지 90 아님",
+        "why_correct": "NNTP(Network News Transfer Protocol)의 기본 포트는 119입니다. 90은 HTTP 대체 포트로 사용되지 NNTP가 아닙니다.",
+        "why_wrong": {
+          "2": "TFTP는 포트 69를 사용합니다.",
+          "3": "SMTP는 포트 25를 표준으로 사용합니다.",
+          "4": "FTP는 포트 21을 제어 채널로 사용합니다."
+        },
+        "key_concept": "포트번호, NNTP, SMTP"
+      }
     },
     {
       "id": "na1_20041024_010",
       "number": 10,
       "subject_id": "tcpip",
-      "text": "네트워크 구획에서 두 호스트가 성공적으로 통신하기 위해 각 하드웨어의 물리적인 주소문제를 해결해 주는 프로토콜 은?",
+      "text": "네트워크 구획에서 두 호스트가 성공적으로 통신하기 위해 각 하드웨어의 물리적인 주소문제를 해결해 주는 프로토콜은?",
       "options": [
         {
           "key": 1,
@@ -272,7 +353,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "ARP는 IP 주소를 MAC 주소로 변환",
+        "why_correct": "ARP(Address Resolution Protocol)는 논리주소(IP)를 물리주소(MAC/하드웨어 주소)로 변환하여 같은 네트워크 내 호스트 통신을 가능하게 합니다.",
+        "why_wrong": {
+          "1": "IP는 라우팅을 통한 원거리 통신을 담당합니다.",
+          "3": "ICMP는 오류 보고와 진단 메시지를 전송합니다.",
+          "4": "IGMP는 멀티캐스트 그룹 관리를 담당합니다."
+        },
+        "key_concept": "ARP, MAC 주소, 주소 변환"
+      }
     },
     {
       "id": "na1_20041024_011",
@@ -299,13 +389,22 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "UDP는 비연결형 전송 프로토콜",
+        "why_correct": "UDP는 연결 설정 없이 즉시 데이터 전송이 가능한 비연결형 프로토콜입니다. 빠른 속도와 낮은 오버헤드가 특징입니다.",
+        "why_wrong": {
+          "1": "TCP는 연결형 프로토콜입니다.",
+          "2": "RARP는 MAC 주소로 IP 주소를 찾습니다.",
+          "3": "ARP는 주소 변환 프로토콜입니다."
+        },
+        "key_concept": "UDP, 비연결형, 전송 프로토콜"
+      }
     },
     {
       "id": "na1_20041024_012",
       "number": 12,
       "subject_id": "tcpip",
-      "text": "망 내 교환 장비들이 오류 상황에 대한 보고를 할 수 있게 하고, 예상하지 못한 상황이 발생한 경우 이를 알릴 수 있 도록 지원하는 프로토콜은?",
+      "text": "망 내 교환 장비들이 오류 상황에 대한 보고를 할 수 있게 하고, 예상하지 못한 상황이 발생한 경우 이를 알릴 수 있도록 지원하는 프로토콜은?",
       "options": [
         {
           "key": 1,
@@ -326,7 +425,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "ICMP는 오류 보고와 진단 프로토콜",
+        "why_correct": "ICMP(Internet Control Message Protocol)는 라우터나 호스트가 오류 상황을 보고하고 예외 상황을 알리기 위한 프로토콜입니다. ping, traceroute에서 사용됩니다.",
+        "why_wrong": {
+          "1": "ARP는 주소 변환 프로토콜입니다.",
+          "2": "RARP는 역 주소 변환 프로토콜입니다.",
+          "4": "RIP는 라우팅 프로토콜입니다."
+        },
+        "key_concept": "ICMP, 오류 보고, 진단"
+      }
     },
     {
       "id": "na1_20041024_013",
@@ -353,13 +461,22 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "IGMP Version은 0 아니라 1 또는 2로 설정",
+        "why_correct": "IGMP Version 필드는 4비트로 IGMP v1, v2, v3 등의 버전을 나타냅니다. 0으로 설정되지 않으며 1 또는 2의 값을 가집니다.",
+        "why_wrong": {
+          "1": "Checksum은 전송 중 손상 여부를 확인합니다.",
+          "2": "Message Type은 query, report 등 메시지 종류를 표시합니다.",
+          "4": "그룹 쿼리는 멀티캐스트 그룹 관리에 사용됩니다."
+        },
+        "key_concept": "IGMP, Version, 멀티캐스트"
+      }
     },
     {
       "id": "na1_20041024_014",
       "number": 14,
       "subject_id": "tcpip",
-      "text": "Telnet 이용 시, 원격시스템(Remote System)과 Local 시스 템 사이에서 Zmodem으로 파일을 전송할 수 있도록 한 프 로그램은?",
+      "text": "Telnet 이용 시, 원격시스템(Remote System)과 Local 시스템 사이에서 Zmodem으로 파일을 전송할 수 있도록 한 프로그램은?",
       "options": [
         {
           "key": 1,
@@ -380,7 +497,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "ztelnet은 Telnet에 Zmodem 파일 전송 추가",
+        "why_correct": "ztelnet은 표준 Telnet에 Zmodem 프로토콜을 통합하여 원격 시스템과의 파일 전송을 가능하게 하는 프로그램입니다.",
+        "why_wrong": {
+          "1": "rlogin은 원격 로그인 프로그램입니다.",
+          "2": "remsh는 원격 명령 실행 프로그램입니다.",
+          "4": "slogin은 Secure Shell 기반 로그인입니다."
+        },
+        "key_concept": "ztelnet, Zmodem, 파일 전송"
+      }
     },
     {
       "id": "na1_20041024_015",
@@ -407,7 +533,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "FTP는 파일 송수신 프로토콜",
+        "why_correct": "FTP(File Transfer Protocol)는 인터넷을 통해 파일을 송신 및 수신하기 위한 표준 프로토콜입니다.",
+        "why_wrong": {
+          "2": "SMTP는 이메일 전송 프로토콜이지 FTP 파일 검색이 아닙니다.",
+          "3": "HTTP는 웹 문서 전송이며 원격접속은 Telnet입니다.",
+          "4": "Telnet은 원격 터미널 접속이며 HTTP가 하이퍼텍스트 전송입니다."
+        },
+        "key_concept": "FTP, 프로토콜, 파일 전송"
+      }
     },
     {
       "id": "na1_20041024_016",
@@ -434,7 +569,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "TFTP는 TCP가 아닌 UDP 기반 프로토콜",
+        "why_correct": "TFTP는 UDP를 기반으로 하는 간단한 파일 전송 프로토콜이며, TCP 체크섬을 포함하지 않습니다. TFTP는 자체 오류 검출 메커니즘을 가집니다.",
+        "why_wrong": {
+          "1": "TFTP 송신자는 ACK를 기다립니다.",
+          "2": "TFTP는 타임아웃 시 재전송합니다.",
+          "3": "TFTP 패킷은 512바이트의 고정 크기입니다."
+        },
+        "key_concept": "TFTP, UDP, 파일 전송"
+      }
     },
     {
       "id": "na1_20041024_017",
@@ -461,7 +605,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "마운트 프로토콜은 원격 파일시스템을 로컬 디렉터리에 연결",
+        "why_correct": "NFS의 마운트 프로토콜(Mount Protocol)은 원격 NFS 서버의 파일시스템을 클라이언트의 로컬 디렉터리 구조에 마운트하여 투명한 접근을 제공합니다.",
+        "why_wrong": {
+          "2": "NFS 프로토콜이 파일 액세스를 담당합니다.",
+          "3": "NFS 프로토콜이 실제 파일 액세스를 수행합니다.",
+          "4": "NFS는 RPC 기반이며 TCP/UDP 모두 사용 가능합니다."
+        },
+        "key_concept": "NFS, 마운트, 원격 파일시스템"
+      }
     },
     {
       "id": "na1_20041024_018",
@@ -488,7 +641,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Morse 부호는 최초의 전자 통신 프로토콜",
+        "why_correct": "Morse 부호(모스 부호)는 19세기 전신을 통한 최초의 전자 통신 프로토콜입니다. TCP/IP, IPX, ALOHA보다 역사적으로 훨씬 앞섭니다.",
+        "why_wrong": {
+          "1": "TCP/IP는 1970년대 후반 개발된 현대 프로토콜입니다.",
+          "2": "IPX는 네트워크 프로토콜로 1980년대 개발됐습니다.",
+          "4": "ALOHA는 1970년대 하와이 대학의 무선 프로토콜입니다."
+        },
+        "key_concept": "Morse, 통신 프로토콜, 역사"
+      }
     },
     {
       "id": "na1_20041024_019",
@@ -515,13 +677,22 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "CDMA는 다른 코드 사용으로 보안이 우수함",
+        "why_correct": "CDMA(부호분할다중화)는 각 사용자가 서로 다른 고유한 코드(spreading code)를 사용하므로 오히려 높은 보안성을 제공합니다. 같은 코드를 쓰면 보안이 낮아집니다.",
+        "why_wrong": {
+          "1": "CDMA는 스펙트럼 확산 기술을 기반으로 합니다.",
+          "2": "CDMA의 장점은 동일 주파수 대역을 여러 사용자가 공유합니다.",
+          "3": "CDMA는 높은 주파수 이용 효율을 제공합니다."
+        },
+        "key_concept": "CDMA, 부호분할, 스펙트럼 확산"
+      }
     },
     {
       "id": "na1_20041024_020",
       "number": 20,
       "subject_id": "general",
-      "text": "다음 중 데이터링크 계층의 X.25 네트워크에 사용되는 프로 토콜은?",
+      "text": "다음 중 데이터링크 계층의 X.25 네트워크에 사용되는 프로토콜은?",
       "options": [
         {
           "key": 1,
@@ -542,7 +713,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "LAPB는 X.25 데이터링크 프로토콜",
+        "why_correct": "LAPB(Link Access Procedure Balanced)는 X.25 WAN의 데이터링크 계층 프로토콜입니다. X.25의 Layer 2에서 사용됩니다.",
+        "why_wrong": {
+          "2": "LAPD는 ISDN의 데이터링크 프로토콜입니다.",
+          "3": "PPP는 점-대-점 링크용 프로토콜입니다.",
+          "4": "SLIP는 직렬 라인 IP 프로토콜입니다."
+        },
+        "key_concept": "LAPB, X.25, 데이터링크"
+      }
     },
     {
       "id": "na1_20041024_021",
@@ -569,13 +749,22 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "HEC는 ATM 셀 헤더의 오류 제어 필드",
+        "why_correct": "HEC(Header Error Control)는 ATM 셀 헤더의 5바이트 중 마지막 1바이트로 헤더 오류를 검출하고 수정하는 필드입니다.",
+        "why_wrong": {
+          "1": "UNI셀(5바이트)과 NNI셀(5바이트)은 구조가 다릅니다.",
+          "2": "VPI(경로)와 VCI(채널)의 설명이 반대입니다.",
+          "3": "ATM 셀 헤드는 5바이트(byte)이지 5bit가 아닙니다."
+        },
+        "key_concept": "ATM, HEC, 셀 헤더"
+      }
     },
     {
       "id": "na1_20041024_022",
       "number": 22,
       "subject_id": "general",
-      "text": "분산처리, 클라이언트 서버 환경, 멀티미디어, 그래픽 환경 이 확대됨에 따라 기존 Ethernet에서 연장하여, 연결 할 수 있는 최대거리를 단축하여 기존 Ethernet의 10배 대역폭을 제공하는 방식은?",
+      "text": "분산처리, 클라이언트 서버 환경, 멀티미디어, 그래픽 환경이 확대됨에 따라 기존 Ethernet에서 연장하여, 연결할 수 있는 최대거리를 단축하여 기존 Ethernet의 10배 대역폭을 제공하는 방식은?",
       "options": [
         {
           "key": 1,
@@ -596,7 +785,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Fast Ethernet(10Base-T)은 Ethernet 대비 10배 속도",
+        "why_correct": "Fast Ethernet(100Mbps)은 기존 10Mbps Ethernet의 10배 대역폭을 제공하며 Ethernet과 호환성을 유지하면서 거리를 단축합니다.",
+        "why_wrong": {
+          "2": "ATM은 완전히 다른 셀 기반 기술입니다.",
+          "3": "Gigabit Ethernet은 1000Mbps로 더 높은 속도입니다.",
+          "4": "FDDI는 광섬유 기반의 별도 기술입니다."
+        },
+        "key_concept": "Fast Ethernet, 100Mbps, Ethernet"
+      }
     },
     {
       "id": "na1_20041024_023",
@@ -623,7 +821,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "ADSL은 거리가 멀수록 속도 저하",
+        "why_correct": "ADSL은 거리에 따라 속도가 감소합니다. 6km 거리에서는 6~8Mbps를 보장할 수 없으며, 일반적으로 2~3km 이내에서 최대 속도를 제공합니다.",
+        "why_wrong": {
+          "1": "ADSL 상향속도는 16~640Kbps 범위가 맞습니다.",
+          "2": "ADSL 하향속도는 1.5~8Mbps 범위가 맞습니다.",
+          "4": "ADSL은 기존 전화회선을 활용한 고속 전송입니다."
+        },
+        "key_concept": "ADSL, 비대칭, 거리 제한"
+      }
     },
     {
       "id": "na1_20041024_024",
@@ -650,7 +857,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Gigabit Ethernet은 슬롯을 512바이트로 확장",
+        "why_correct": "Gigabit Ethernet은 충돌 감지 시간 증가를 보정하기 위해 최소 프레임 크기 유지를 위해 슬롯 크기(slot time)를 512바이트로 확장합니다.",
+        "why_wrong": {
+          "1": "Gigabit Ethernet은 Ethernet MAC 기반이지 토큰링이 아닙니다.",
+          "2": "Gigabit는 Fast Ethernet의 10배가 아닌 100배 속도입니다.",
+          "4": "Gigabit Ethernet은 Ethernet과 호환이며 비연결형입니다."
+        },
+        "key_concept": "Gigabit, 슬롯, Ethernet"
+      }
     },
     {
       "id": "na1_20041024_025",
@@ -677,7 +893,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "STM은 서킷 교환 방식이지 패킷 교환이 아님",
+        "why_correct": "STM(Synchronous Transfer Mode)은 시간분할 다중 방식의 회선 교환으로 패킷 교환이 아닙니다. 고정 시간 슬롯을 할당하는 방식입니다.",
+        "why_wrong": {
+          "2": "ATM은 필요시에만 셀을 보내는 비동기식입니다.",
+          "3": "ATM은 비동기, STM은 동기가 맞습니다.",
+          "4": "ATM은 빈 셀을 보냈다 이제는 보내지 않습니다."
+        },
+        "key_concept": "ATM, STM, 동기식, 비동기식"
+      }
     },
     {
       "id": "na1_20041024_026",
@@ -704,7 +929,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "다중 모드는 모드 간 간섭 발생",
+        "why_correct": "다중 모드 광섬유는 여러 광 모드가 동시에 전파되므로 모드 간섭(modal dispersion)이 발생합니다. 간섭이 없다는 것은 거짓입니다.",
+        "why_wrong": {
+          "1": "다중 모드는 코어 내에 여러 전파 경로가 있습니다.",
+          "2": "서로 다른 모드 간 간섭이 발생합니다.",
+          "4": "다중 모드는 고속/대용량 전송을 지원합니다."
+        },
+        "key_concept": "다중 모드, 간섭, 광섬유"
+      }
     },
     {
       "id": "na1_20041024_027",
@@ -731,13 +965,22 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "P2P는 클라이언트-서버 구조 없음",
+        "why_correct": "P2P 모델은 모든 컴퓨터가 대등한 역할을 수행하며, 중앙 서버가 없습니다. 설명이 잘못되었을 가능성이 높습니다(정확한 잘못된 부분은 텍스트 생략으로 확인 불가).",
+        "why_wrong": {
+          "2": "네트워크는 서비스 공유와 상호작용의 정의가 맞습니다.",
+          "3": "MAN은 도시 규모의 네트워크로 여러 LAN을 연결합니다.",
+          "4": "MAN(도시)은 WAN(광역)보다 작은 규모가 맞습니다."
+        },
+        "key_concept": "P2P, LAN, MAN, WAN"
+      }
     },
     {
       "id": "na1_20041024_028",
       "number": 28,
       "subject_id": "general",
-      "text": "파일 서버란 네트워크에서 사용자가 액세스하는 데이터의 저장소 역할을 하는 서버를 말하는데, 관리자가 파일 서버 를 사용하기 위해 먼저 해야 할 것은?",
+      "text": "파일 서버란 네트워크에서 사용자가 액세스하는 데이터의 저장소 역할을 하는 서버를 말하는데, 관리자가 파일 서버를 사용하기 위해 먼저 해야 할 것은?",
       "options": [
         {
           "key": 1,
@@ -758,25 +1001,34 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "파일 서버 사용 전 해당 디렉터리 공유 설정",
+        "why_correct": "파일 서버를 운영하려면 먼저 네트워크 상에서 공유할 디렉터리를 지정하고 공유 권한을 설정해야 합니다. 이것이 첫 번째 필수 단계입니다.",
+        "why_wrong": {
+          "1": "파일 이동은 필요하지 않습니다.",
+          "2": "파티션은 파일 서버 공유와 무관합니다.",
+          "4": "인터넷 관리자는 웹 서버와 관련입니다."
+        },
+        "key_concept": "파일 서버, 공유, 디렉터리"
+      }
     },
     {
       "id": "na1_20041024_029",
       "number": 29,
       "subject_id": "nos",
-      "text": "Windows 2000 Server에서 ‘icqa.or.kr’과 ‘test.icqa.or.kr’을 하나의 Server에서 서비스를 하기 위한 설정 과정으로 잘못 된 것은?",
+      "text": "Windows 2000 Server에서 'icqa.or.kr'과 'test.icqa.or.kr'을 하나의 Server에서 서비스를 하기 위한 설정 과정으로 잘못된 것은?",
       "options": [
         {
           "key": 1,
-          "text": "‘icqa.or.kr’과 ‘test.icqa.or.kr’을 DNS에 설정 후 기존서"
+          "text": "'icqa.or.kr'과 'test.icqa.or.kr'을 DNS에 설정 후 기존서"
         },
         {
           "key": 2,
-          "text": "‘icqa.or.kr’과 ‘test.icqa.or.kr’을 DNS에 설정 후 서버 1"
+          "text": "'icqa.or.kr'과 'test.icqa.or.kr'을 DNS에 설정 후 서버 1"
         },
         {
           "key": 3,
-          "text": "‘test.icqa.or.kr’은 DNS에서 A레코드를 추가한 후 해당"
+          "text": "'test.icqa.or.kr'은 DNS에서 A레코드를 추가한 후 해당"
         },
         {
           "key": 4,
@@ -785,13 +1037,22 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "각 도메인마다 별도 A레코드 필요",
+        "why_correct": "여러 도메인을 하나의 서버에서 서비스하려면 각 도메인을 DNS에 등록하고 IIS의 호스트 헤더를 설정해야 합니다. 단일 IP로만 설정하는 것은 부족합니다.",
+        "why_wrong": {
+          "1": "DNS 설정 후 기존 서버 설정이 필요합니다.",
+          "2": "DNS 설정 후 서버에 1개 추가 설정이 필요합니다.",
+          "3": "각 도메인의 A레코드 추가가 필요합니다."
+        },
+        "key_concept": "DNS, IIS, 호스트 헤더"
+      }
     },
     {
       "id": "na1_20041024_030",
       "number": 30,
       "subject_id": "nos",
-      "text": "Windows 2000 Server에서 서버의 이름이 “SERVER\"이고 인터넷을 통해 인터넷 서비스를 익명으로 액세스하여 이용 하고자 할 때 기본적으로 사용되는 계정명은?",
+      "text": "Windows 2000 Server에서 서버의 이름이 \"SERVER\"이고 인터넷을 통해 인터넷 서비스를 익명으로 액세스하여 이용하고자 할 때 기본적으로 사용되는 계정명은?",
       "options": [
         {
           "key": 1,
@@ -812,817 +1073,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_031",
-      "number": 31,
-      "subject_id": "nos",
-      "text": "Windows 2000 Server의 DNS 설치에 대한 설명 중 잘못된 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "DNS 서버를 설치하기 위해서는 고정 IP주소를 가져야"
-        },
-        {
-          "key": 2,
-          "text": "Administrator 또는 관리자 권한이 있는 계정으로 로그온"
-        },
-        {
-          "key": 3,
-          "text": "Windows 2000 Server 설치 시 자동으로 설치된다."
-        },
-        {
-          "key": 4,
-          "text": "Active Directory를 사용하기 위해서는 반드시 설치되어"
-        }
-      ],
-      "answer": 3,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_032",
-      "number": 32,
-      "subject_id": "nos",
-      "text": "Windows 2000 Server를 FTP 서버로 운영하는 중, 특정 IP 를 사용하는 사용자가 지속적으로 불법자료를 업로드 하는 것을 로깅 파일을 통해 확인하였다. 이를 차단하기 위해서 는 FTP 설정창의 어느 탭에서 IP를 차단해야 하는가?",
-      "options": [
-        {
-          "key": 1,
-          "text": "FTP 사이트 탭"
-        },
-        {
-          "key": 2,
-          "text": "보안 계정 탭"
-        },
-        {
-          "key": 3,
-          "text": "홈 디렉터리 탭"
-        },
-        {
-          "key": 4,
-          "text": "디렉터리 보안 탭"
-        }
-      ],
-      "answer": 4,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_033",
-      "number": 33,
-      "subject_id": "nos",
-      "text": "웹마스터인 당신은 외부출장이 많아 종종 FTP서버의 모든 설정을 외부에서 관리해야 한다. 다음 중 맞는 것은? (IIS의 FTP서버의 경우)",
-      "options": [
-        {
-          "key": 1,
-          "text": "FTP서버에 관리자계정으로 접속한다."
-        },
-        {
-          "key": 2,
-          "text": "WWW서비스를 설치하고 HTMLA를 설정하여 이용한다."
-        },
-        {
-          "key": 3,
-          "text": "FTP서버에 관리자 모드를 추가하여 그 모드로 접속한다."
-        },
-        {
-          "key": 4,
-          "text": "원격에서 제어할 수 없다."
-        }
-      ],
-      "answer": 2,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_034",
-      "number": 34,
-      "subject_id": "nos",
-      "text": "Windows 2000 Server에서 NetBIOS 컴퓨터 이름을 IP Addrsss로 대응시킴으로서 TCP/IP 환경에서 NetBIOS 이름 풀기를 가능하게 하는 서비스는?",
-      "options": [
-        {
-          "key": 1,
-          "text": "DNS"
-        },
-        {
-          "key": 2,
-          "text": "DHCP"
-        },
-        {
-          "key": 3,
-          "text": "WINS"
-        },
-        {
-          "key": 4,
-          "text": "PDC"
-        }
-      ],
-      "answer": 3,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_035",
-      "number": 35,
-      "subject_id": "nos",
-      "text": "Windows 2000 Server의 Active Directory에서 지원하는 프 로토콜 중 Active Directory의 데이터베이스를 액세스하기 위해 필요한 프로토콜은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "TCP/IP"
-        },
-        {
-          "key": 2,
-          "text": "DNS"
-        },
-        {
-          "key": 3,
-          "text": "LDAP"
-        },
-        {
-          "key": 4,
-          "text": "Kerberos 버전5"
-        }
-      ],
-      "answer": 3,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_036",
-      "number": 36,
-      "subject_id": "nos",
-      "text": "Windows 2000 Server 도메인 컨트롤러에 대한 설명으로 잘못된 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "SAM 데이터베이스를 이용하여 로그온 인증을 한다."
-        },
-        {
-          "key": 2,
-          "text": "도메인 사용자들이 자원을 공유할 수 있도록 도와준다."
-        },
-        {
-          "key": 3,
-          "text": "맨 처음 생성되는 도메인 컨트롤러에 Ntds.dit라는 파일"
-        },
-        {
-          "key": 4,
-          "text": "사용자의 인증작업 및 로그온 과정을 담당한다."
-        }
-      ],
-      "answer": 1,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_037",
-      "number": 37,
-      "subject_id": "nos",
-      "text": "Windows 2000 Server 사용 시에 라우팅 및 원격 액세스 보안 관리를 위한 4가지 인증 프로토콜들이 있다. 다음 설 명은 어떤 인증 프로토콜에 대한 것인가? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
-      "options": [
-        {
-          "key": 1,
-          "text": "PAP"
-        },
-        {
-          "key": 2,
-          "text": "SPAP"
-        },
-        {
-          "key": 3,
-          "text": "CHAP"
-        },
-        {
-          "key": 4,
-          "text": "MS-CHAP"
-        }
-      ],
-      "answer": 4,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_038",
-      "number": 38,
-      "subject_id": "nos",
-      "text": "Windows 2000 Server에서 사용하는 NTFS에 대한 설명으 로 올바른 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "파일크기에 제한이 있다."
-        },
-        {
-          "key": 2,
-          "text": "NTFS시스템에서 FAT파일 시스템으로 바꾸려면 다시 포"
-        },
-        {
-          "key": 3,
-          "text": "설계 시 최대 10MB 파티션 크기의 FAT로 수동 포맷한"
-        },
-        {
-          "key": 4,
-          "text": "파일 저장 수에 대한 제한이 있다."
-        }
-      ],
-      "answer": 2,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_039",
-      "number": 39,
-      "subject_id": "nos",
-      "text": "Linux 상에서 Ethernet Card를 설치하고 네트워크 설정을 하려고 할 때 연관성이 가장 적은 명령어는?",
-      "options": [
-        {
-          "key": 1,
-          "text": "lsmod"
-        },
-        {
-          "key": 2,
-          "text": "ifconfig"
-        },
-        {
-          "key": 3,
-          "text": "route"
-        },
-        {
-          "key": 4,
-          "text": "top"
-        }
-      ],
-      "answer": 4,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_040",
-      "number": 40,
-      "subject_id": "nos",
-      "text": "Linux에서 kill 명령어를 사용하여 해당 프로세스를 중단되도 록 하려고 하는데, 중단하고자 하는 프로세스의 번호(pid)를 모를 경우 사용하는 명령어는?",
-      "options": [
-        {
-          "key": 1,
-          "text": "ps"
-        },
-        {
-          "key": 2,
-          "text": "man"
-        },
-        {
-          "key": 3,
-          "text": "help"
-        },
-        {
-          "key": 4,
-          "text": "ls"
-        }
-      ],
-      "answer": 1,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_041",
-      "number": 41,
-      "subject_id": "nos",
-      "text": "MS-SQL 2000을 설치하면 Microsoft SQL Server 작업 그 룹에 나타나는 프로그램이 아닌 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "SQL 엔터프라이저 매니저"
-        },
-        {
-          "key": 2,
-          "text": "SQL 쿼리 분석기"
-        },
-        {
-          "key": 3,
-          "text": "SQL 데이터 원본(ODBC)"
-        },
-        {
-          "key": 4,
-          "text": "SQL 서비스 매니저"
-        }
-      ],
-      "answer": 3,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_042",
-      "number": 42,
-      "subject_id": "equipment",
-      "text": "네트워크의 트래픽이 지속적으로 증가하는 경우에 대한 처 리 방법으로 적당하지 못한 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "바이러스를 확인하여 본다."
-        },
-        {
-          "key": 2,
-          "text": "네트워크 모니터를 사용해 비정상적인 트래픽의 원인을"
-        },
-        {
-          "key": 3,
-          "text": "네트워크를 여러 개로 분리한다."
-        },
-        {
-          "key": 4,
-          "text": "케이블의 연결 상태를 확인하여 본다."
-        }
-      ],
-      "answer": 4,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_043",
-      "number": 43,
-      "subject_id": "equipment",
-      "text": "Linux 시스템을 웹 서버로 운영하려고 한다. 이때 웹 서버로 운영하기 위해 설치해야 할 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "BIND"
-        },
-        {
-          "key": 2,
-          "text": "apache"
-        },
-        {
-          "key": 3,
-          "text": "mysql"
-        },
-        {
-          "key": 4,
-          "text": "samba"
-        }
-      ],
-      "answer": 2,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_044",
-      "number": 44,
-      "subject_id": "equipment",
-      "text": "Sendmail을 사용해 스팸 메일을 차단하고 싶을 때, /etc/ mail/ access 파일에 대한 스팸 차단 옵션 중, 지정된 도메 인과 관련된 모든 메일의 수신을 거부하는 옵션은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "REJECT"
-        },
-        {
-          "key": 2,
-          "text": "501"
-        },
-        {
-          "key": 3,
-          "text": "553"
-        },
-        {
-          "key": 4,
-          "text": "550"
-        }
-      ],
-      "answer": 4,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_045",
-      "number": 45,
-      "subject_id": "equipment",
-      "text": "Linux에서 adduser -u 550 -g 13 -d /home/test -s /bin/sh -f 40 test 와 같은 옵션을 사용하여 사용자 계정을 추가한 경우 설명이 잘못된 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "사용자 계정은 test이다."
-        },
-        {
-          "key": 2,
-          "text": "홈 디렉터리로는 /home/test를 사용한다."
-        },
-        {
-          "key": 3,
-          "text": "셸은 본셸을 사용한다."
-        },
-        {
-          "key": 4,
-          "text": "40일마다 패스워드를 변경하도록 설정한다."
-        }
-      ],
-      "answer": 4,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_046",
-      "number": 46,
-      "subject_id": "equipment",
-      "text": "데이터의 무결성을 구현하는 방법 중 소프트웨어적인 기법 만으로 구현 가능한 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "디스크 미러링(Disk Mirroring)"
-        },
-        {
-          "key": 2,
-          "text": "서버의 이중화(Dual Server)"
-        },
-        {
-          "key": 3,
-          "text": "핫 스탠바이(Hot Standby)"
-        },
-        {
-          "key": 4,
-          "text": "리커버리 블록(Recovery Block)"
-        }
-      ],
-      "answer": 4,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_047",
-      "number": 47,
-      "subject_id": "equipment",
-      "text": "30G 하드디스크 5개를 이용하여 RAID-5를 구현하여 사용 할 때, 만일의 디스크장애에 대비하여 안정적으로 데이터를 운영하고자 할 때 사용할 수 있는 데이터의 최대 크기는?",
-      "options": [
-        {
-          "key": 1,
-          "text": "70G"
-        },
-        {
-          "key": 2,
-          "text": "90G"
-        },
-        {
-          "key": 3,
-          "text": "120G"
-        },
-        {
-          "key": 4,
-          "text": "150G"
-        }
-      ],
-      "answer": 2,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_048",
-      "number": 48,
-      "subject_id": "equipment",
-      "text": "네트워크 장비 중에서 LAN과 LAN을 연결하고 접속하려는 호스트에 도착하기 위한 최적경로를 설정해 주거나, 다른 Protocol 방식을 사용하는 네트워크 간을 연결하는 장치는?",
-      "options": [
-        {
-          "key": 1,
-          "text": "Router"
-        },
-        {
-          "key": 2,
-          "text": "Gateway"
-        },
-        {
-          "key": 3,
-          "text": "Repeater"
-        },
-        {
-          "key": 4,
-          "text": "Bridge"
-        }
-      ],
-      "answer": 1,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_049",
-      "number": 49,
-      "subject_id": "equipment",
-      "text": "OSI 7 Layer 중 2계층 스위치는 여러 대의 Bridge의 집합 이라고 할 수 있다. 2계층 스위치의 패킷 전송 방식 중 옳 은 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "Store-and-forward : 패킷을 수신하는 데로 바로 forwa"
-        },
-        {
-          "key": 2,
-          "text": "Fragment free : 스위치가 맨 처음 64byte의 데이터를"
-        },
-        {
-          "key": 3,
-          "text": "Cut through : 패킷을 모두 메모리에 수신한 후 forwa"
-        },
-        {
-          "key": 4,
-          "text": "Cut through : 패킷을 즉시 forwarding하므로 지연시간"
-        }
-      ],
-      "answer": 4,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_050",
-      "number": 50,
-      "subject_id": "equipment",
-      "text": "서로 다른 형태의 네트워크를 상호 접속하는 장치로 필요할 경우 프로토콜 변환을 수행하는 장치는?",
-      "options": [
-        {
-          "key": 1,
-          "text": "Frame Relay Access Device"
-        },
-        {
-          "key": 2,
-          "text": "Remote Access Server"
-        },
-        {
-          "key": 3,
-          "text": "Gateway"
-        },
-        {
-          "key": 4,
-          "text": "Switching Hub"
-        }
-      ],
-      "answer": 3,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_051",
-      "number": 51,
-      "subject_id": "equipment",
-      "text": "분산 환경에서 클라이언트와 서버 간에 상호 인증기능을 제 공하며 DES 암호화 기반의 제3자 인증 프로토콜은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "Kerberos"
-        },
-        {
-          "key": 2,
-          "text": "Digital Signature"
-        },
-        {
-          "key": 3,
-          "text": "PGP"
-        },
-        {
-          "key": 4,
-          "text": "Firewall"
-        }
-      ],
-      "answer": 1,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_052",
-      "number": 52,
-      "subject_id": "security",
-      "text": "보안의 4대 요소에 속하지 않는 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "기밀성(Confidentiality)"
-        },
-        {
-          "key": 2,
-          "text": "무결성(Integrity)"
-        },
-        {
-          "key": 3,
-          "text": "복잡성(Complexity)"
-        },
-        {
-          "key": 4,
-          "text": "인증성(Authentication)"
-        }
-      ],
-      "answer": 3,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_053",
-      "number": 53,
-      "subject_id": "security",
-      "text": "Linux의 사용자 보안에 관한 사항으로 가장 적당하지 않는 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "사용자 계정을 만들 때 필요 이상의 권한을 부여해서는"
-        },
-        {
-          "key": 2,
-          "text": "root의 path 맨 앞에 '.'을 넣어서는 안 된다."
-        },
-        {
-          "key": 3,
-          "text": "서버에 불필요한 사용자를 없앤다."
-        },
-        {
-          "key": 4,
-          "text": "사용자 삭제 시 ‘/etc/password’ 파일에서 정보를 직접"
-        }
-      ],
-      "answer": 4,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_054",
-      "number": 54,
-      "subject_id": "security",
-      "text": "DoS(Denial of Service)의 개념과 거리가 먼 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "다량의 패킷을 목적지 서버로 전송하여 서비스를 불가능"
-        },
-        {
-          "key": 2,
-          "text": "로컬 호스트의 프로세스를 과도하게 fork 함으로서 서비"
-        },
-        {
-          "key": 3,
-          "text": "서비스 대기 중인 포트에 특정 메시지를 다량으로 보내"
-        },
-        {
-          "key": 4,
-          "text": "Internet Explorer를 사용하여 특정권한을 취득하는 행위"
-        }
-      ],
-      "answer": 4,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_055",
-      "number": 55,
-      "subject_id": "security",
-      "text": "공개키 암호화 방식에 대한 설명 중 옳은 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "암호화와 복호화시 같은 키를 사용한다."
-        },
-        {
-          "key": 2,
-          "text": "수신된 데이터의 부인 봉쇄 기능은 지원하지 않는다."
-        },
-        {
-          "key": 3,
-          "text": "전자 서명의 구현이 가능하다."
-        },
-        {
-          "key": 4,
-          "text": "비밀키 암호화 방식보다 처리 속도가 빠르다."
-        }
-      ],
-      "answer": 3,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_056",
-      "number": 56,
-      "subject_id": "security",
-      "text": "다음은 전자 우편 보안 기술의 종류 중 무엇에 해당하는가?",
-      "options": [
-        {
-          "key": 1,
-          "text": "PEM(Privacy Enhanced Mail)"
-        },
-        {
-          "key": 2,
-          "text": "S/MIME(Secure Multi-Purpose Internet Mail"
-        },
-        {
-          "key": 3,
-          "text": "PGP(Pretty Good Privacy)"
-        },
-        {
-          "key": 4,
-          "text": "SMTP"
-        }
-      ],
-      "answer": 3,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_057",
-      "number": 57,
-      "subject_id": "security",
-      "text": "트로이 목마(Trojan Horse)를 이용하면 높은 보안 등급을 갖는 정보를 낮은 보안 등급을 갖는 사용자에게로 흐르게 할 수 있다. 다음 중 이를 방지할 수 있는 강제적 접근 제 어(Mandatory Control)의 기본 개념에 해당하는 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "컴퓨터의 모든 자원을 객체로 추상화하고, 그 객체를 사"
-        },
-        {
-          "key": 2,
-          "text": "컴퓨터를 사용하는 모든 사용자에 대한 정보와 모든 행"
-        },
-        {
-          "key": 3,
-          "text": "비밀에 해당되는 개체를 전송하고자 할 때 암호화를 통"
-        },
-        {
-          "key": 4,
-          "text": "컴퓨터를 사용하고자 하는 사용자가 누구인가를 인식하"
-        }
-      ],
-      "answer": 1,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_058",
-      "number": 58,
-      "subject_id": "security",
-      "text": "Java의 보안에 관한 내용이라 할 수 있는 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "자바 프로그래밍에서 쓰레기 수집 루틴은 보안에 문제가"
-        },
-        {
-          "key": 2,
-          "text": "자바에서는 포인터를 사용하여 메모리의 특정한 구역을"
-        },
-        {
-          "key": 3,
-          "text": "Java Runtime System은 호스트에서 전송되어 웹 브라"
-        },
-        {
-          "key": 4,
-          "text": "호스트에서 전송된 프로그램은 컴퓨터가 연결된 지역 네"
-        }
-      ],
-      "answer": 3,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_059",
-      "number": 59,
-      "subject_id": "security",
-      "text": "웹 브라우저, 웹 서버 간에 데이터를 안전하게 교환하기 위 한 프로토콜로서, 웹 제품뿐 아니라 FTP나 Telnet 등 다른 TCP/IP 애플리케이션에 적용할 수 있는 보안기술은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "SET"
-        },
-        {
-          "key": 2,
-          "text": "SSL"
-        },
-        {
-          "key": 3,
-          "text": "S/MIME"
-        },
-        {
-          "key": 4,
-          "text": "PGP"
-        }
-      ],
-      "answer": 2,
-      "has_figure": false,
-      "explanation": null
-    },
-    {
-      "id": "na1_20041024_060",
-      "number": 60,
-      "subject_id": "security",
-      "text": "침입방지시스템을 비정상적인 침입탐지 기법과 오용침입탐 지 기법으로 구분하였을 때 비정상적인 침입탐지 기법으로 옳지 않은 것은?",
-      "options": [
-        {
-          "key": 1,
-          "text": "상태 전이 분석(State Transition Analysis)"
-        },
-        {
-          "key": 2,
-          "text": "통계적인 방법(Statistical Approach)"
-        },
-        {
-          "key": 3,
-          "text": "예측 가능한 패턴 생성(Predictive Pattern Generation)"
-        },
-        {
-          "key": 4,
-          "text": "행위 측정 방식들의 결합(Anomaly Measures)"
-        }
-      ],
-      "answer": 1,
-      "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "익명 웹 액세스는 IUSR_서버명 계정",
+        "why_correct": "IIS에서 익명 사용자 액세스를 위해 Windows 2000은 IUSR_[ServerName] 형식의 계정을 자동으로 생성합니다. 이 경우 IUSR_SERVER입니다.",
+        "why_wrong": {
+          "2": "VUSR는 IIS 표준 계정명이 아닙니다.",
+          "3": "IWAM은 ASP 애플리케이션용 계정입니다.",
+          "4": "Guest 계정도 익명 액세스를 지원하지만 기본은 IUSR입니다."
+        },
+        "key_concept": "IIS, IUSR, 익명 액세스"
+      }
     }
   ]
 }

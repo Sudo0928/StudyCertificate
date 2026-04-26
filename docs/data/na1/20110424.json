@@ -29,7 +29,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "네트워크 ID의 비트(bit)가 모두 '1'일 때는 지역 네트워크",
+        "why_correct": "네트워크 ID의 비트(bit)가 모두 '1'일 때는 지역 네트워크이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "같은 네트워크 구획상의 호스트는 똑같은 네트워은/는 올바르지 않습니다.",
+          "2": "네트워크 구획상의 각 호스트는 유일한 호스트 은/는 올바르지 않습니다.",
+          "3": "네트워크 ID가 '127'로 시작하는 주소는 은/는 올바르지 않습니다."
+        },
+        "key_concept": "IP, TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_002",
@@ -56,7 +65,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Manchester",
+        "why_correct": "Manchester이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "이 선택지는 틀렸습니다.",
+          "2": "이 선택지는 틀렸습니다.",
+          "4": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_003",
@@ -83,7 +101,16 @@
       ],
       "answer": 3,
       "has_figure": true,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "IEEE 802.11g : FHSS",
+        "why_correct": "IEEE 802.11g : FHSS이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "IEEE 802.11a : OFDM은/는 올바르지 않습니다.",
+          "2": "IEEE 802.11b : HR-DSSS은/는 올바르지 않습니다.",
+          "4": "IEEE 802.11n : OFDM은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_004",
@@ -110,7 +137,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "POP3 : 100",
+        "why_correct": "POP3 : 100이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "SMTP : 25은/는 올바르지 않습니다.",
+          "2": "HTTP : 80은/는 올바르지 않습니다.",
+          "4": "FTP-Data : 20은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP, TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_005",
@@ -137,7 +173,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "물리적인 망 100개가 구성되므로 라우터도 100대가 필요",
+        "why_correct": "물리적인 망 100개가 구성되므로 라우터도 100대가 필요이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "물리적인 망 구조를 고려할 필요 없이 host은/는 올바르지 않습니다.",
+          "3": "150개 호스트 사이에 있는 모든 라우터는 각은/는 올바르지 않습니다.",
+          "4": "새로운 호스트가 추가되면 라우터의 라우팅 정보은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_006",
@@ -164,7 +209,16 @@
       ],
       "answer": 4,
       "has_figure": true,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "(라) - 323998683",
+        "why_correct": "(라) - 323998683이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "(가) - 323998684은/는 올바르지 않습니다.",
+          "2": "(나) - 214506350은/는 올바르지 않습니다.",
+          "3": "(다) - 214506351은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP, TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_007",
@@ -191,7 +245,16 @@
       ],
       "answer": 1,
       "has_figure": true,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "E-Mail : SMTP를 이용하여 E-Mail을 전송할 수 있다.",
+        "why_correct": "E-Mail : SMTP를 이용하여 E-Mail을 전송할 수 있다.이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "WWW : NNTP를 이용하여 인터넷 문서를 은/는 올바르지 않습니다.",
+          "3": "Telnet : SNMP를 이용하여 서버에 로은/는 올바르지 않습니다.",
+          "4": "Usenet - ICMP를 이용하여 원하는 게은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_008",
@@ -218,7 +281,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "도메인 네임에 컴마(,), 언더바(_) 등의 기호를 사용할 수",
+        "why_correct": "도메인 네임에 컴마(,), 언더바(_) 등의 기호를 사용할 수이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "최상위 도메인은 일반 도메인과 국가 도메인으로은/는 올바르지 않습니다.",
+          "3": "도메인 네임의 길이는 최대 256자까지 가능하은/는 올바르지 않습니다.",
+          "4": "도메인 네임은 문자로 되어 있고, IP Add은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_009",
@@ -245,7 +317,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "IP Address에서 Network Address와 Host Address를 구",
+        "why_correct": "IP Address에서 Network Address와 Host Address를 구이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "하나의 Network를 두 개 이상의 Netw은/는 올바르지 않습니다.",
+          "3": "IP Address는 효율적으로 관리하나 트래은/는 올바르지 않습니다.",
+          "4": "불필요한 브로드캐스트 메시지를 제한할 수 없다은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_010",
@@ -272,7 +353,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "멀티캐스트를 새로 도입하였다.",
+        "why_correct": "멀티캐스트를 새로 도입하였다.이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "확장된 헤더에 선택사항들을 기술할 수 있다.은/는 올바르지 않습니다.",
+          "3": "특정한 흐름에 속해 있는 패킷들을 인식할 수 은/는 올바르지 않습니다.",
+          "4": "패킷의 출처 인증, 데이터 무결성의 보장 및 은/는 올바르지 않습니다."
+        },
+        "key_concept": "IP, TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_011",
@@ -299,7 +389,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "2번이 올바른 설명",
+        "why_correct": "mget이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "이 선택지는 틀렸습니다.",
+          "3": "이 선택지는 틀렸습니다.",
+          "4": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "FTP, TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_012",
@@ -326,7 +425,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "2번이 올바른 설명",
+        "why_correct": "UDP이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "이 선택지는 틀렸습니다.",
+          "3": "이 선택지는 틀렸습니다.",
+          "4": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_013",
@@ -353,7 +461,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Network ID는 203.240.155이다.",
+        "why_correct": "Network ID는 203.240.155이다.이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "Network ID는 203.240 이다.은/는 올바르지 않습니다.",
+          "3": "Host ID는 155.32가 된다.은/는 올바르지 않습니다.",
+          "4": "Host ID가 255일 때는 루프백(Loop은/는 올바르지 않습니다."
+        },
+        "key_concept": "IP, TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_014",
@@ -380,7 +497,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "3번이 올바른 설명",
+        "why_correct": "128이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "이 선택지는 틀렸습니다.",
+          "2": "이 선택지는 틀렸습니다.",
+          "4": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "IP, TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_015",
@@ -407,7 +533,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "2번이 올바른 설명",
+        "why_correct": "ICMP이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "이 선택지는 틀렸습니다.",
+          "3": "이 선택지는 틀렸습니다.",
+          "4": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "TCP/IP"
+      }
     },
     {
       "id": "na1_20110424_016",
@@ -434,7 +569,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "기본적으로 ARP 캐시(Cache)를 사용하지 않으며, 매번",
+        "why_correct": "기본적으로 ARP 캐시(Cache)를 사용하지 않으며, 매번이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "모든 호스트가 성공적으로 통신하기 위해서 각 은/는 올바르지 않습니다.",
+          "2": "목적지 호스트의 IP Address를 MAC 은/는 올바르지 않습니다.",
+          "4": "ARP 캐시(Cache)는 MAC Addres은/는 올바르지 않습니다."
+        },
+        "key_concept": "ARP, 네트워크 일반"
+      }
     },
     {
       "id": "na1_20110424_017",
@@ -461,7 +605,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "4번이 올바른 설명",
+        "why_correct": "TCP이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "Telnet은/는 올바르지 않습니다.",
+          "2": "이 선택지는 틀렸습니다.",
+          "3": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "TCP, 네트워크 일반"
+      }
     },
     {
       "id": "na1_20110424_018",
@@ -488,7 +641,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "N(N-1)/2",
+        "why_correct": "N(N-1)/2이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "N!(N-1)/2은/는 올바르지 않습니다.",
+          "3": "2N(N+1)/2은/는 올바르지 않습니다.",
+          "4": "N(N+1)/2은/는 올바르지 않습니다."
+        },
+        "key_concept": "네트워크 일반"
+      }
     },
     {
       "id": "na1_20110424_019",
@@ -515,7 +677,16 @@
       ],
       "answer": 2,
       "has_figure": true,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "ICO(International Computing Organization)",
+        "why_correct": "ICO(International Computing Organization)이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "ITU(International Telecom은/는 올바르지 않습니다.",
+          "3": "ISO(International Organiz은/는 올바르지 않습니다.",
+          "4": "EIA(Electronic Industries은/는 올바르지 않습니다."
+        },
+        "key_concept": "네트워크 일반"
+      }
     },
     {
       "id": "na1_20110424_020",
@@ -542,7 +713,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "신호의 형태가 이산적이다.",
+        "why_correct": "신호의 형태가 이산적이다.이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "신호의 형태가 연속적이다.은/는 올바르지 않습니다.",
+          "2": "신호의 표현은 진폭과 주파수이다.은/는 올바르지 않습니다.",
+          "3": "신호의 단위는 Hz이다.은/는 올바르지 않습니다."
+        },
+        "key_concept": "네트워크 일반"
+      }
     },
     {
       "id": "na1_20110424_021",
@@ -569,7 +749,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "4번이 올바른 설명",
+        "why_correct": "복합모드이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "다중모드 계단형은/는 올바르지 않습니다.",
+          "2": "다중모드 언덕형은/는 올바르지 않습니다.",
+          "3": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "네트워크 일반"
+      }
     },
     {
       "id": "na1_20110424_022",
@@ -596,7 +785,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Selective-repeat ARQ",
+        "why_correct": "Selective-repeat ARQ이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "Stop-and-Wait ARQ은/는 올바르지 않습니다.",
+          "2": "Go-back-N ARQ은/는 올바르지 않습니다.",
+          "4": "Adaptive ARQ은/는 올바르지 않습니다."
+        },
+        "key_concept": "네트워크 일반"
+      }
     },
     {
       "id": "na1_20110424_023",
@@ -623,7 +821,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "1번이 올바른 설명",
+        "why_correct": "FM이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "이 선택지는 틀렸습니다.",
+          "3": "이 선택지는 틀렸습니다.",
+          "4": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "네트워크 일반"
+      }
     },
     {
       "id": "na1_20110424_024",
@@ -650,7 +857,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "가상회선교환방식",
+        "why_correct": "가상회선교환방식이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "회선교환방식은/는 올바르지 않습니다.",
+          "2": "데이터그램방식은/는 올바르지 않습니다.",
+          "4": "메시지교환방식은/는 올바르지 않습니다."
+        },
+        "key_concept": "네트워크 일반"
+      }
     },
     {
       "id": "na1_20110424_025",
@@ -677,7 +893,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "2번이 올바른 설명",
+        "why_correct": "SNMP이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "이 선택지는 틀렸습니다.",
+          "3": "이 선택지는 틀렸습니다.",
+          "4": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "네트워크 일반"
+      }
     },
     {
       "id": "na1_20110424_026",
@@ -704,7 +929,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "네트워크에 연결된 각각의 컴퓨터가 클라이언트인 동시",
+        "why_correct": "네트워크에 연결된 각각의 컴퓨터가 클라이언트인 동시이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "클라이언트/서버 시스템을 말한다.은/는 올바르지 않습니다.",
+          "2": "노드와 노드간의 메시지 전달은 반드시 서버를 은/는 올바르지 않습니다.",
+          "4": "데이터베이스 공유 서비스에 적합하고, 네트워크은/는 올바르지 않습니다."
+        },
+        "key_concept": "네트워크 일반"
+      }
     },
     {
       "id": "na1_20110424_027",
@@ -731,7 +965,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "1번이 올바른 설명",
+        "why_correct": "ATM이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "이 선택지는 틀렸습니다.",
+          "3": "이 선택지는 틀렸습니다.",
+          "4": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "네트워크 일반"
+      }
     },
     {
       "id": "na1_20110424_028",
@@ -758,7 +1001,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "2번이 올바른 설명",
+        "why_correct": "TCP/IP이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "이 선택지는 틀렸습니다.",
+          "3": "이 선택지는 틀렸습니다.",
+          "4": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "Windows, 네트워크 일반"
+      }
     },
     {
       "id": "na1_20110424_029",
@@ -785,7 +1037,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "3번이 올바른 설명",
+        "why_correct": "update이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "select은/는 올바르지 않습니다.",
+          "2": "insert은/는 올바르지 않습니다.",
+          "4": "delete은/는 올바르지 않습니다."
+        },
+        "key_concept": "NOS"
+      }
     },
     {
       "id": "na1_20110424_030",
@@ -812,7 +1073,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "암호 변경할 수 없음",
+        "why_correct": "암호 변경할 수 없음이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "다음 로그온할 때 반드시 암호 변경은/는 올바르지 않습니다.",
+          "3": "암호 사용 기간 제한 없음은/는 올바르지 않습니다.",
+          "4": "계정 사용 안함은/는 올바르지 않습니다."
+        },
+        "key_concept": "NOS"
+      }
     },
     {
       "id": "na1_20110424_031",
@@ -839,7 +1109,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "3번이 올바른 설명",
+        "why_correct": "WINS이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "이 선택지는 틀렸습니다.",
+          "2": "이 선택지는 틀렸습니다.",
+          "4": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "TCP, NOS"
+      }
     },
     {
       "id": "na1_20110424_032",
@@ -866,7 +1145,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "IUSER_ICQA2007",
+        "why_correct": "IUSER_ICQA2007이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "Anonymous은/는 올바르지 않습니다.",
+          "3": "Anonymous_ICQA2007은/는 올바르지 않습니다.",
+          "4": "Guest_ICQA2007은/는 올바르지 않습니다."
+        },
+        "key_concept": "Windows, NOS"
+      }
     },
     {
       "id": "na1_20110424_033",
@@ -893,7 +1181,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "파일/파일그룹 백업 - 데이터베이스의 전체 로그를 백업",
+        "why_correct": "파일/파일그룹 백업 - 데이터베이스의 전체 로그를 백업이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "풀 백업 - 데이터 전체를 백업하는 것이다. 은/는 올바르지 않습니다.",
+          "2": "트랜잭션 로그 백업 - 트랜잭션 로그만을 백업은/는 올바르지 않습니다.",
+          "3": "디퍼런셜 백업 - 마지막 풀 백업이후 변경된 은/는 올바르지 않습니다."
+        },
+        "key_concept": "NOS"
+      }
     },
     {
       "id": "na1_20110424_034",
@@ -920,7 +1217,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "접속자 MAC 주소",
+        "why_correct": "접속자 MAC 주소이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "TCP 접속 프로토콜 정보은/는 올바르지 않습니다.",
+          "2": "ICMP 송수신 통계은/는 올바르지 않습니다.",
+          "3": "UDP 대기용 Open 포트 상태은/는 올바르지 않습니다."
+        },
+        "key_concept": "Windows, NOS"
+      }
     },
     {
       "id": "na1_20110424_035",
@@ -947,7 +1253,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "3번이 올바른 설명",
+        "why_correct": "터미널 서비스이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "FTP 서비스은/는 올바르지 않습니다.",
+          "2": "원격 설치 서비스은/는 올바르지 않습니다.",
+          "4": "DHCP 서비스은/는 올바르지 않습니다."
+        },
+        "key_concept": "Windows, NOS"
+      }
     },
     {
       "id": "na1_20110424_036",
@@ -974,7 +1289,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "DNS 서비스는 Active Directory와 관련이 없다.",
+        "why_correct": "DNS 서비스는 Active Directory와 관련이 없다.이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "Windows 2000 Server는 고정 I은/는 올바르지 않습니다.",
+          "2": "DNS 서비스는 설치 시 자동으로 설치가 되지은/는 올바르지 않습니다.",
+          "3": "관리자 권한이 있는 계정으로 로그온 하여야 한은/는 올바르지 않습니다."
+        },
+        "key_concept": "DNS, NOS"
+      }
     },
     {
       "id": "na1_20110424_037",
@@ -1001,7 +1325,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "/etc/init.d/network restart",
+        "why_correct": "/etc/init.d/network restart이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "/etc/init.d/network start은/는 올바르지 않습니다.",
+          "3": "/etc/init.d/network stop은/는 올바르지 않습니다.",
+          "4": "/etc/init.d/network again은/는 올바르지 않습니다."
+        },
+        "key_concept": "Linux, NOS"
+      }
     },
     {
       "id": "na1_20110424_038",
@@ -1028,7 +1361,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "도메인(Domain) 방식",
+        "why_correct": "도메인(Domain) 방식이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "워크그룹(Workgroup)방식은/는 올바르지 않습니다.",
+          "3": "사용자그룹(Usergroup)방식은/는 올바르지 않습니다.",
+          "4": "System 방식은/는 올바르지 않습니다."
+        },
+        "key_concept": "Windows, NOS"
+      }
     },
     {
       "id": "na1_20110424_039",
@@ -1055,7 +1397,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "액티브 디렉터리에서 각종 보안 및 정책 관리의 최소 단",
+        "why_correct": "액티브 디렉터리에서 각종 보안 및 정책 관리의 최소 단이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "하나의 관리 단위로서 공통성을 가진 작업 그룹은/는 올바르지 않습니다.",
+          "2": "포리스트 내의 모든 도메인에 대한 개체 정보은/는 올바르지 않습니다.",
+          "3": "사용자나 컴퓨터 등 물리적으로 구분되는 독립 은/는 올바르지 않습니다."
+        },
+        "key_concept": "NOS"
+      }
     },
     {
       "id": "na1_20110424_040",
@@ -1082,7 +1433,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "동적 IP Address가 필요하다.",
+        "why_correct": "동적 IP Address가 필요하다.이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "DDNS는 새로운 호스트가 추가되거나, 수정,은/는 올바르지 않습니다.",
+          "2": "Windows 2000 Server에서는 기본은/는 올바르지 않습니다.",
+          "3": "DDNS 설치는 먼저 [시작] - [설정] -은/는 올바르지 않습니다."
+        },
+        "key_concept": "DNS, NOS"
+      }
     },
     {
       "id": "na1_20110424_041",
@@ -1109,7 +1469,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Bind를 이용하여 DNS를 구현한다.",
+        "why_correct": "Bind를 이용하여 DNS를 구현한다.이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "Apache를 이용하여 DHCP를 구현한다.은/는 올바르지 않습니다.",
+          "2": "Telnet을 이용하여 컴퓨터간의 파일을 전송은/는 올바르지 않습니다.",
+          "3": "PPP를 이용하여 전자우편을 전송한다.은/는 올바르지 않습니다."
+        },
+        "key_concept": "Linux, NOS"
+      }
     },
     {
       "id": "na1_20110424_042",
@@ -1136,7 +1505,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "모든 사용자에게 모든 권한을 부여하려면 권한을 ‘666’",
+        "why_correct": "모든 사용자에게 모든 권한을 부여하려면 권한을 ‘666’이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "파일의 그룹 소유권을 변경하기 위한 명령은 ‘은/는 올바르지 않습니다.",
+          "2": "파일의 접근모드를 변경하기 위한 명령은 ‘ch은/는 올바르지 않습니다.",
+          "4": "파일의 소유권을 변경하기 위한 명령은 ‘cho은/는 올바르지 않습니다."
+        },
+        "key_concept": "Linux, 장비 운용"
+      }
     },
     {
       "id": "na1_20110424_043",
@@ -1163,7 +1541,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "각각의 사용자계정에는 부여할 수 있으나 그룹계정에는",
+        "why_correct": "각각의 사용자계정에는 부여할 수 있으나 그룹계정에는이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "NTFS 파일 시스템으로 포맷되어 있으면 사용은/는 올바르지 않습니다.",
+          "2": "공유폴더 사용권한과 달리 파일과 폴더 각각에 은/는 올바르지 않습니다.",
+          "3": "사용자가 로컬로 로그온해서 자원을 액세스하거나은/는 올바르지 않습니다."
+        },
+        "key_concept": "Windows, 장비 운용"
+      }
     },
     {
       "id": "na1_20110424_044",
@@ -1190,7 +1577,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "한 개체에 대한 접근 제어 항목의 리스트로 위임 할 때",
+        "why_correct": "한 개체에 대한 접근 제어 항목의 리스트로 위임 할 때이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "사용자가 원하는 권한을 가질 수 있게 만들어 은/는 올바르지 않습니다.",
+          "3": "관리자가 해야 하는 일을 좀 더 편하게 하기위은/는 올바르지 않습니다.",
+          "4": "한 사용자에 대한 ACE(Access Cont은/는 올바르지 않습니다."
+        },
+        "key_concept": "Windows, 장비 운용"
+      }
     },
     {
       "id": "na1_20110424_045",
@@ -1217,7 +1613,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "2번이 올바른 설명",
+        "why_correct": "SAMBA이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "Winshare은/는 올바르지 않습니다.",
+          "3": "이 선택지는 틀렸습니다.",
+          "4": "NTlink은/는 올바르지 않습니다."
+        },
+        "key_concept": "Linux, 장비 운용"
+      }
     },
     {
       "id": "na1_20110424_046",
@@ -1244,7 +1649,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Fast SCSI-20은 비동기 전송 모드, Fast SCSI-40은 동",
+        "why_correct": "Fast SCSI-20은 비동기 전송 모드, Fast SCSI-40은 동이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "Wide SCSI는 16비트를 지원하며 병렬 은/는 올바르지 않습니다.",
+          "2": "Wide SCSI는 68핀 케이블을 사용한다.은/는 올바르지 않습니다.",
+          "3": "SCSI-3은 Fast SCSI-20과 Fas은/는 올바르지 않습니다."
+        },
+        "key_concept": "장비 운용"
+      }
     },
     {
       "id": "na1_20110424_047",
@@ -1271,7 +1685,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Router의 시각 설정 - time set [hh:mm:ss]",
+        "why_correct": "Router의 시각 설정 - time set [hh:mm:ss]이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "Router의 패스워드 설정 - enable 은/는 올바르지 않습니다.",
+          "2": "Router의 호스트 이름 설정 - hostn은/는 올바르지 않습니다.",
+          "3": "Router의 DNS서버 설정- ip name은/는 올바르지 않습니다."
+        },
+        "key_concept": "장비 운용"
+      }
     },
     {
       "id": "na1_20110424_048",
@@ -1298,7 +1721,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "4번이 올바른 설명",
+        "why_correct": "Bridge이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "Repeater은/는 올바르지 않습니다.",
+          "2": "Router은/는 올바르지 않습니다.",
+          "3": "Gateway은/는 올바르지 않습니다."
+        },
+        "key_concept": "장비 운용"
+      }
     },
     {
       "id": "na1_20110424_049",
@@ -1325,7 +1757,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "메시지 포맷 변환 기능",
+        "why_correct": "메시지 포맷 변환 기능이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "주소(Address) 구조 변환 기능은/는 올바르지 않습니다.",
+          "3": "스팸 메일 차단 기능은/는 올바르지 않습니다.",
+          "4": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "장비 운용"
+      }
     },
     {
       "id": "na1_20110424_050",
@@ -1352,7 +1793,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "4번이 올바른 설명",
+        "why_correct": "100m이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "이 선택지는 틀렸습니다.",
+          "2": "이 선택지는 틀렸습니다.",
+          "3": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "Ethernet, 장비 운용"
+      }
     },
     {
       "id": "na1_20110424_051",
@@ -1379,7 +1829,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "1번이 올바른 설명",
+        "why_correct": "무결성이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "이 선택지는 틀렸습니다.",
+          "3": "이 선택지는 틀렸습니다.",
+          "4": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "장비 운용"
+      }
     },
     {
       "id": "na1_20110424_052",
@@ -1406,7 +1865,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "CA의 공개키는 자동적으로 사용자에게 전달되지 않기",
+        "why_correct": "CA의 공개키는 자동적으로 사용자에게 전달되지 않기이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "PKI는 공개키 인증서에 바탕을 두고 구축되어은/는 올바르지 않습니다.",
+          "2": "CA(Certificate Authority)은/는 올바르지 않습니다.",
+          "3": "PKI는 사용자 공개키와 사용자 ID를 안전하은/는 올바르지 않습니다."
+        },
+        "key_concept": "보안"
+      }
     },
     {
       "id": "na1_20110424_053",
@@ -1433,7 +1901,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Windows NT에서부터 내장되어 변조와 가로채기 수준에",
+        "why_correct": "Windows NT에서부터 내장되어 변조와 가로채기 수준에이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "OSI 참조모델의 전송 계층아래에 적용되기 때은/는 올바르지 않습니다.",
+          "3": "IPsec는 인증헤더를 사용하고 보안 페이로드은/는 올바르지 않습니다.",
+          "4": "Windows 2000 Server의 IPse은/는 올바르지 않습니다."
+        },
+        "key_concept": "IP, 보안"
+      }
     },
     {
       "id": "na1_20110424_054",
@@ -1460,7 +1937,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "패킷 내의 데이터에 대한 공격 차단이 용이함",
+        "why_correct": "패킷 내의 데이터에 대한 공격 차단이 용이함이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "OSI 참조 모델의 3계층과 4계층에서 동작은/는 올바르지 않습니다.",
+          "2": "IP, TCP, UDP 헤더 내용을 분석은/는 올바르지 않습니다.",
+          "3": "하나의 스크리닝 라우터로 네트워크 전체를 동일은/는 올바르지 않습니다."
+        },
+        "key_concept": "보안"
+      }
     },
     {
       "id": "na1_20110424_055",
@@ -1487,7 +1973,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "VPN(Virtual Private Network)",
+        "why_correct": "VPN(Virtual Private Network)이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "패킷 필터링(Packet Filtering)은/는 올바르지 않습니다.",
+          "2": "Port Mirroring은/는 올바르지 않습니다.",
+          "4": "로깅(Logging)은/는 올바르지 않습니다."
+        },
+        "key_concept": "보안"
+      }
     },
     {
       "id": "na1_20110424_056",
@@ -1514,7 +2009,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "2번이 올바른 설명",
+        "why_correct": "SSL이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "이 선택지는 틀렸습니다.",
+          "3": "이 선택지는 틀렸습니다.",
+          "4": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "TCP, 보안"
+      }
     },
     {
       "id": "na1_20110424_057",
@@ -1541,7 +2045,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "워터마킹(Watermarking)",
+        "why_correct": "워터마킹(Watermarking)이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "공개키 기반구조(PKI)은/는 올바르지 않습니다.",
+          "2": "SSL(Secure Socket Layer)은/는 올바르지 않습니다.",
+          "4": "전자서명(Digital Signature)은/는 올바르지 않습니다."
+        },
+        "key_concept": "보안"
+      }
     },
     {
       "id": "na1_20110424_058",
@@ -1568,7 +2081,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "2005년 ISO/IEC 국제 블록암호알고리즘 표준으로 제정",
+        "why_correct": "2005년 ISO/IEC 국제 블록암호알고리즘 표준으로 제정이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "국제적 컨소시움에서 개발하였다.은/는 올바르지 않습니다.",
+          "2": "SPN 구조로 이루어져 있다.은/는 올바르지 않습니다.",
+          "3": "20 라운드를 거쳐 보안성을 높였다.은/는 올바르지 않습니다."
+        },
+        "key_concept": "보안"
+      }
     },
     {
       "id": "na1_20110424_059",
@@ -1595,7 +2117,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "전자우편 보안 서비스로, HTTP에서는 사용이 불가능하",
+        "why_correct": "전자우편 보안 서비스로, HTTP에서는 사용이 불가능하이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "X.509 형태의 S/MIME 인증서를 발행하은/는 올바르지 않습니다.",
+          "3": "전자 서명과 암호화를 동시에 사용할 수 있다.은/는 올바르지 않습니다.",
+          "4": "대칭키 암호 알고리즘을 사용하여 전자우편을 암은/는 올바르지 않습니다."
+        },
+        "key_concept": "보안"
+      }
     },
     {
       "id": "na1_20110424_060",
@@ -1622,7 +2153,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Copyleft",
+        "why_correct": "Copyleft이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "이 선택지는 틀렸습니다.",
+          "3": "이 선택지는 틀렸습니다.",
+          "4": "Copyright은/는 올바르지 않습니다."
+        },
+        "key_concept": "보안"
+      }
     }
   ]
 }

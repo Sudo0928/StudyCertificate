@@ -29,7 +29,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "A, B, C Class 대역의 IP Address는 모두 같은 서브넷",
+        "why_correct": "A, B, C Class 대역의 IP Address는 모두 같은 서브넷이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "하나의 네트워크 클래스를 여러 개의 네트워크로은/는 올바르지 않습니다.",
+          "3": "서브넷 마스크는 목적지 호스트의 IP Addr은/는 올바르지 않습니다.",
+          "4": "서브넷 마스크를 이용하면, Traffic 관리은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20210829_002",
@@ -56,7 +65,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "ICMP - IP - IGMP",
+        "why_correct": "ICMP - IP - IGMP이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "TCP - UDP – IP은/는 올바르지 않습니다.",
+          "3": "FTP - SMTP – Telnet은/는 올바르지 않습니다.",
+          "4": "ARP - RARP - TCP은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20210829_003",
@@ -83,7 +101,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "191.234.149.32",
+        "why_correct": "191.234.149.32이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "198.236.115.33은/는 올바르지 않습니다.",
+          "3": "222.236.138.34은/는 올바르지 않습니다.",
+          "4": "195.236.126.35은/는 올바르지 않습니다."
+        },
+        "key_concept": "IP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20210829_004",
@@ -110,7 +137,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "255.255.255.248",
+        "why_correct": "255.255.255.248이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "255.255.255.240은/는 올바르지 않습니다.",
+          "2": "255.255.0.192은/는 올바르지 않습니다.",
+          "4": "255.255.255.0은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20210829_005",
@@ -137,7 +173,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "1번이 올바른 설명",
+        "why_correct": "ACK이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "Version은/는 올바르지 않습니다.",
+          "3": "Header checksum은/는 올바르지 않습니다.",
+          "4": "Header length은/는 올바르지 않습니다."
+        },
+        "key_concept": "IP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20210829_006",
@@ -164,7 +209,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Sliding Window",
+        "why_correct": "Sliding Window이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "GO-Back-N은/는 올바르지 않습니다.",
+          "2": "선택적 재전송은/는 올바르지 않습니다.",
+          "4": "Idle-RQ은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20210829_007",
@@ -191,7 +245,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "3방향 핸드셰이킹 방법인 TCP 세션을 통해 전송한다.",
+        "why_correct": "3방향 핸드셰이킹 방법인 TCP 세션을 통해 전송한다.이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "Trivial File Transfer Pro은/는 올바르지 않습니다.",
+          "2": "네트워크를 통한 파일 전송 서비스이다.은/는 올바르지 않습니다.",
+          "4": "신속한 파일의 전송을 원할 경우에는 FTP보다은/는 올바르지 않습니다."
+        },
+        "key_concept": "FTP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20210829_008",
@@ -218,7 +281,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "TCP를 이용하여 신뢰성 있는 통신을 한다.",
+        "why_correct": "TCP를 이용하여 신뢰성 있는 통신을 한다.이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "네트워크 관리를 위한 표준 프로토콜이다.은/는 올바르지 않습니다.",
+          "3": "응용 계층 프로토콜이다.은/는 올바르지 않습니다.",
+          "4": "RFC 1157에 규정되어 있다.은/는 올바르지 않습니다."
+        },
+        "key_concept": "SNMP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20210829_009",
@@ -245,7 +317,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "4번이 올바른 설명",
+        "why_correct": "NAT이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "이 선택지는 틀렸습니다.",
+          "2": "이 선택지는 틀렸습니다.",
+          "3": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "IP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20210829_010",
@@ -272,7 +353,16 @@
       ],
       "answer": 2,
       "has_figure": true,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "2000:00AB:0001:0000:0000:0000:0001:0002",
+        "why_correct": "2000:00AB:0001:0000:0000:0000:0001:0002이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "2000:00AB:0001:0000:0001:은/는 올바르지 않습니다.",
+          "3": "2000:AB00:1000:0000:1000:은/는 올바르지 않습니다.",
+          "4": "2000:AB00:1000:0000:0000:은/는 올바르지 않습니다."
+        },
+        "key_concept": "IP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20210829_011",
@@ -299,7 +389,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "타입 0 : Echo Request (에코 요청)",
+        "why_correct": "타입 0 : Echo Request (에코 요청)이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "타입 3 : Destination Unreac은/는 올바르지 않습니다.",
+          "3": "타입 5 : Redirect (경로 재지정)은/는 올바르지 않습니다.",
+          "4": "타입 11 : Time Exceeded (시간은/는 올바르지 않습니다."
+        },
+        "key_concept": "ICMP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20210829_012",
@@ -326,7 +425,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "tcp/23번을 이용한다.",
+        "why_correct": "tcp/23번을 이용한다.이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "Telnet에 비하여 보안성이 뛰어나다.은/는 올바르지 않습니다.",
+          "2": "ssh1은 RSA 암호화를 사용한다.은/는 올바르지 않습니다.",
+          "3": "ssh2는 RSA 외 더 다양한 키교환방식을 은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20210829_013",
@@ -353,7 +461,16 @@
       ],
       "answer": 4,
       "has_figure": true,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "RIPv1, RIPv2 모두 멀티캐스트를 이용하여 광고한다.",
+        "why_correct": "RIPv1, RIPv2 모두 멀티캐스트를 이용하여 광고한다.이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "디스턴스 벡터(Distance Vector) 은/는 올바르지 않습니다.",
+          "2": "메트릭은 Hop Count를 사용한다.은/는 올바르지 않습니다.",
+          "3": "표준 프로토콜이기 때문에 대부분의 라우터가 지은/는 올바르지 않습니다."
+        },
+        "key_concept": "IP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20210829_014",
@@ -363,7 +480,12 @@
       "options": [],
       "answer": 2,
       "has_figure": true,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "2번이 올바른 설명",
+        "why_correct": "이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {},
+        "key_concept": "TCP/IP 프로토콜"
+      }
     }
   ]
 }

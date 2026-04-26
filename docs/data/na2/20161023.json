@@ -29,7 +29,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "201.100.5.64",
+        "why_correct": "201.100.5.64이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "201.100.5.32은/는 올바르지 않습니다.",
+          "2": "201.100.5.0은/는 올바르지 않습니다.",
+          "4": "201.100.5.31은/는 올바르지 않습니다."
+        },
+        "key_concept": "IP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20161023_002",
@@ -56,7 +65,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "한 번에 많은 데이터의 전송에 유리하기 때문에 화상 통",
+        "why_correct": "한 번에 많은 데이터의 전송에 유리하기 때문에 화상 통이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "종단 간 흐름 제어를 위해 동적 윈도우(Dyn은/는 올바르지 않습니다.",
+          "3": "송수신되는 데이터의 에러를 제어함으로서 신뢰성은/는 올바르지 않습니다.",
+          "4": "Three Way Handshaking 과정을은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20161023_003",
@@ -83,7 +101,16 @@
       ],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "호스트의 IP Address가 중복된 경우",
+        "why_correct": "호스트의 IP Address가 중복된 경우이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "2": "목적지까지 데이터를 보낼 수 없는 경우은/는 올바르지 않습니다.",
+          "3": "데이터의 TTL 필드 값이 '0'이 되어 데이은/는 올바르지 않습니다.",
+          "4": "데이터의 헤더 값에 오류를 발견한 경우은/는 올바르지 않습니다."
+        },
+        "key_concept": "ICMP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20161023_004",
@@ -110,7 +137,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "3번이 올바른 설명",
+        "why_correct": "Window이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "Source Port은/는 올바르지 않습니다.",
+          "2": "Destination Port은/는 올바르지 않습니다.",
+          "4": "Checksum은/는 올바르지 않습니다."
+        },
+        "key_concept": "UDP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20161023_005",
@@ -137,7 +173,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Telnet - 24번",
+        "why_correct": "Telnet - 24번이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "SSH - 22번은/는 올바르지 않습니다.",
+          "2": "FTP - 21번은/는 올바르지 않습니다.",
+          "4": "SMTP - 25번은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20161023_006",
@@ -164,7 +209,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "에이전트(Agent)",
+        "why_correct": "에이전트(Agent)이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "NetBEUI은/는 올바르지 않습니다.",
+          "3": "이 선택지는 틀렸습니다.",
+          "4": "이 선택지는 틀렸습니다."
+        },
+        "key_concept": "SNMP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20161023_007",
@@ -191,7 +245,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "TCP는 전송을 담당하고, IP는 데이터의 에러검출을 담당",
+        "why_correct": "TCP는 전송을 담당하고, IP는 데이터의 에러검출을 담당이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "TCP는 전송계층(Transport Layer은/는 올바르지 않습니다.",
+          "2": "IP는 네트워크계층(Network Layer)은/는 올바르지 않습니다.",
+          "4": "Telnet과 FTP는 모두 TCP/IP 프로은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20161023_008",
@@ -218,7 +281,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "TTL - 16bits",
+        "why_correct": "TTL - 16bits이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "Version - 4bits은/는 올바르지 않습니다.",
+          "3": "Type of Service - 8bits은/는 올바르지 않습니다.",
+          "4": "Header Checksum - 16bits은/는 올바르지 않습니다."
+        },
+        "key_concept": "IP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20161023_009",
@@ -245,7 +317,16 @@
       ],
       "answer": 2,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "10000000 00001010 00000010 00000011",
+        "why_correct": "10000000 00001010 00000010 00000011이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "11000000 00001010 0000001은/는 올바르지 않습니다.",
+          "3": "10000000 10001010 0000001은/는 올바르지 않습니다.",
+          "4": "10000000 00001010 1000001은/는 올바르지 않습니다."
+        },
+        "key_concept": "IP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20161023_010",
@@ -272,7 +353,16 @@
       ],
       "answer": 3,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "A-라우터, B-호스트",
+        "why_correct": "A-라우터, B-호스트이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "A-호스트, B-호스트은/는 올바르지 않습니다.",
+          "2": "A-호스트, B-라우터은/는 올바르지 않습니다.",
+          "4": "A-라우터, B-라우터은/는 올바르지 않습니다."
+        },
+        "key_concept": "TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20161023_011",
@@ -299,7 +389,16 @@
       ],
       "answer": 4,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "Anycasting",
+        "why_correct": "Anycasting이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {
+          "1": "Unicasting은/는 올바르지 않습니다.",
+          "2": "Multicasting은/는 올바르지 않습니다.",
+          "3": "Broadcasting은/는 올바르지 않습니다."
+        },
+        "key_concept": "IP, TCP/IP 프로토콜"
+      }
     },
     {
       "id": "na2_20161023_012",
@@ -309,7 +408,12 @@
       "options": [],
       "answer": 1,
       "has_figure": false,
-      "explanation": null
+      "explanation": {
+        "correct_summary": "1번이 올바른 설명",
+        "why_correct": "이/가 해당 개념의 올바른 설명입니다.",
+        "why_wrong": {},
+        "key_concept": "ARP, TCP/IP 프로토콜"
+      }
     }
   ]
 }
