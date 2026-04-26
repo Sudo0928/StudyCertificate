@@ -30,14 +30,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "201.100.5.64",
-        "why_correct": "201.100.5.64이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "201.100.5.68/28에서 Network ID는 201.100.5.64입니다.",
+        "why_correct": "/28 마스크는 255.255.255.240으로 마지막 옥텟에서 상위 4비트가 네트워크, 하위 4비트가 호스트입니다. 68 = 0100|0100이므로 네트워크 비트 = 0100 = 64, Network ID = 201.100.5.64입니다. 각 /28 서브넷 범위: .0-.15, .16-.31, .32-.47, .48-.63, .64-.79 순서입니다.",
         "why_wrong": {
-          "1": "201.100.5.32은/는 올바르지 않습니다.",
-          "2": "201.100.5.0은/는 올바르지 않습니다.",
-          "4": "201.100.5.31은/는 올바르지 않습니다."
+          "1": "201.100.5.32는 /28 서브넷에서 33~47 범위의 Network ID입니다. 68은 이 범위에 속하지 않습니다. 68은 .64-.79 범위의 서브넷에 속합니다.",
+          "2": "201.100.5.0은 /28 서브넷에서 0~15 범위의 Network ID입니다. 68은 이보다 훨씬 높은 값이므로 이 네트워크에 속하지 않습니다.",
+          "4": "201.100.5.31은 /28에서 Network ID가 아닌 201.100.5.16 서브넷의 브로드캐스트 주소입니다. 31은 0001|1111로 호스트 비트가 전부 1입니다."
         },
-        "key_concept": "IP, TCP/IP 프로토콜"
+        "key_concept": "/28, Network ID, 서브넷 계산"
       }
     },
     {
@@ -66,14 +66,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "한 번에 많은 데이터의 전송에 유리하기 때문에 화상 통",
-        "why_correct": "한 번에 많은 데이터의 전송에 유리하기 때문에 화상 통이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "TCP는 화상 통신(실시간 스트리밍)에 적합하지 않습니다. UDP가 더 적합합니다.",
+        "why_correct": "TCP는 오류 제어·재전송·흐름 제어로 전송 지연이 발생할 수 있습니다. 화상 통신처럼 실시간성이 중요한 서비스에서는 약간의 패킷 손실이 허용되고 낮은 지연이 중요하므로 UDP가 더 적합합니다.",
         "why_wrong": {
-          "1": "종단 간 흐름 제어를 위해 동적 윈도우(Dyn은/는 올바르지 않습니다.",
-          "3": "송수신되는 데이터의 에러를 제어함으로서 신뢰성은/는 올바르지 않습니다.",
-          "4": "Three Way Handshaking 과정을은/는 올바르지 않습니다."
+          "1": "TCP는 동적 슬라이딩 윈도우(Dynamic Sliding Window)로 수신 측 버퍼 상태에 따라 전송 속도를 조절하는 종단 간 흐름 제어를 제공합니다. 이 설명은 정확하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "3": "TCP는 체크섬, ACK, 재전송으로 데이터 오류를 제어하여 신뢰성 있는 전송을 보장합니다. 이 설명은 정확하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "4": "TCP는 SYN→SYN+ACK→ACK의 3-way handshake로 연결을 수립한 후 데이터를 교환합니다. 이 설명은 정확하므로 '옳지 않은 것'에 해당하지 않습니다."
         },
-        "key_concept": "TCP, TCP/IP 프로토콜"
+        "key_concept": "TCP, 화상 통신 부적합, UDP 비교"
       }
     },
     {
@@ -102,14 +102,14 @@
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "호스트의 IP Address가 중복된 경우",
-        "why_correct": "호스트의 IP Address가 중복된 경우이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "ICMP는 IP 주소 중복을 알리는 메시지를 제공하지 않습니다.",
+        "why_correct": "IP 주소 중복 감지는 ARP(Gratuitous ARP)를 사용하며 ICMP 메시지로 알리지 않습니다. ICMP 메시지 유형에는 목적지 도달 불가(Type 3), TTL 초과(Type 11), 파라미터 문제(Type 12), Echo Request/Reply(Type 8/0) 등이 있으나 IP 중복은 포함되지 않습니다.",
         "why_wrong": {
-          "2": "목적지까지 데이터를 보낼 수 없는 경우은/는 올바르지 않습니다.",
-          "3": "데이터의 TTL 필드 값이 '0'이 되어 데이은/는 올바르지 않습니다.",
-          "4": "데이터의 헤더 값에 오류를 발견한 경우은/는 올바르지 않습니다."
+          "2": "목적지까지 데이터를 보낼 수 없는 경우 ICMP Type 3(Destination Unreachable)을 발송합니다. 이는 실제 ICMP 메시지이므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "3": "TTL 필드 값이 0이 되면 라우터가 패킷을 폐기하고 ICMP Type 11(Time Exceeded)을 발신자에게 전송합니다. 이는 실제 ICMP 메시지이므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "4": "IP 헤더 값에 오류가 발견되면 ICMP Type 12(Parameter Problem)을 발송합니다. 이는 실제 ICMP 메시지이므로 '옳지 않은 것'에 해당하지 않습니다."
         },
-        "key_concept": "ICMP, TCP/IP 프로토콜"
+        "key_concept": "ICMP, IP 중복 감지 없음, ARP"
       }
     },
     {
@@ -138,14 +138,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "3번이 올바른 설명",
-        "why_correct": "Window이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Window는 UDP 헤더 필드가 아닙니다. Window는 TCP 헤더 필드입니다.",
+        "why_correct": "UDP 헤더는 Source Port(2B) + Destination Port(2B) + Length(2B) + Checksum(2B) = 8바이트 고정입니다. Window Size 필드는 TCP 헤더에 있으며 수신 측 버퍼 크기를 나타냅니다. UDP에는 흐름 제어(Window)가 없습니다.",
         "why_wrong": {
-          "1": "Source Port은/는 올바르지 않습니다.",
-          "2": "Destination Port은/는 올바르지 않습니다.",
-          "4": "Checksum은/는 올바르지 않습니다."
+          "1": "Source Port는 UDP 헤더의 첫 번째 2바이트 필드로 발신 측 포트 번호를 나타냅니다. UDP 헤더에 포함됩니다.",
+          "2": "Destination Port는 UDP 헤더의 두 번째 2바이트 필드로 수신 측 포트 번호를 나타냅니다. UDP 헤더에 포함됩니다.",
+          "4": "Checksum은 UDP 헤더의 마지막 2바이트 필드로 오류 검출에 사용됩니다. IPv4에서 선택적, IPv6에서 필수입니다. UDP 헤더에 포함됩니다."
         },
-        "key_concept": "UDP, TCP/IP 프로토콜"
+        "key_concept": "UDP 헤더, Window는 TCP 전용, 8바이트"
       }
     },
     {
@@ -174,14 +174,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "Telnet - 24번",
-        "why_correct": "Telnet - 24번이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Telnet의 Well-Known Port는 24번이 아닌 23번입니다.",
+        "why_correct": "Telnet은 원격 터미널 접속을 위한 TCP 23번 포트를 사용합니다. 24번은 Telnet의 공식 포트가 아닙니다. 포트 24는 다른 비공식 서비스에 사용될 수 있으나 표준 Well-Known Port가 아닙니다.",
         "why_wrong": {
-          "1": "SSH - 22번은/는 올바르지 않습니다.",
-          "2": "FTP - 21번은/는 올바르지 않습니다.",
-          "4": "SMTP - 25번은/는 올바르지 않습니다."
+          "1": "SSH(Secure Shell)는 암호화된 원격 접속을 위해 TCP 22번 포트를 사용합니다. 'SSH - 22번'은 정확한 매핑이므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "2": "FTP(File Transfer Protocol)는 제어 채널에 TCP 21번을 사용합니다. 'FTP - 21번'은 정확한 매핑이므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "4": "SMTP(Simple Mail Transfer Protocol)는 이메일 서버 간 전송에 TCP 25번을 사용합니다. 'SMTP - 25번'은 정확한 매핑이므로 '옳지 않은 것'에 해당하지 않습니다."
         },
-        "key_concept": "TCP/IP 프로토콜"
+        "key_concept": "Telnet 포트 23, Well-Known Port"
       }
     },
     {
@@ -210,14 +210,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "에이전트(Agent)",
-        "why_correct": "에이전트(Agent)이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "SNMP에서 네트워크 장치를 감시하는 요소는 에이전트(Agent)입니다.",
+        "why_correct": "SNMP Agent는 라우터·스위치 등 관리 대상 장치에 설치되어 MIB(Management Information Base) 데이터를 수집하고 NMS(Network Management Station)의 요청에 응답합니다. 또한 임계값 초과 시 TRAP을 NMS에 자동 전송합니다.",
         "why_wrong": {
-          "1": "NetBEUI은/는 올바르지 않습니다.",
-          "3": "이 선택지는 틀렸습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "1": "NetBEUI(NetBIOS Extended User Interface)는 Microsoft의 소규모 LAN용 프로토콜입니다. SNMP와 무관한 별개의 네트워크 프로토콜입니다.",
+          "3": "병목(Bottleneck)은 네트워크 성능 문제의 원인 지점을 의미하는 용어입니다. SNMP에서 장치를 감시하는 요소가 아닙니다.",
+          "4": "로그(Log)는 시스템 이벤트 기록입니다. SNMP에서 네트워크 장치를 실시간으로 감시하는 역할이 아닙니다."
         },
-        "key_concept": "SNMP, TCP/IP 프로토콜"
+        "key_concept": "SNMP Agent, MIB, NMS"
       }
     },
     {
@@ -246,14 +246,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "TCP는 전송을 담당하고, IP는 데이터의 에러검출을 담당",
-        "why_correct": "TCP는 전송을 담당하고, IP는 데이터의 에러검출을 담당이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "TCP는 전송을 담당하고 IP는 주소 지정·라우팅을 담당합니다. IP는 에러 검출을 담당하지 않습니다.",
+        "why_correct": "TCP/IP에서 TCP는 신뢰성 있는 종단 간 전송을 담당하고, IP는 패킷에 출발지·목적지 주소를 부착하고 최적 경로로 라우팅합니다. IP 헤더에 Header Checksum이 있지만 데이터 에러 검출(오류 제어)은 주로 TCP(Checksum + 재전송)나 상위 프로토콜이 담당합니다.",
         "why_wrong": {
-          "1": "TCP는 전송계층(Transport Layer은/는 올바르지 않습니다.",
-          "2": "IP는 네트워크계층(Network Layer)은/는 올바르지 않습니다.",
-          "4": "Telnet과 FTP는 모두 TCP/IP 프로은/는 올바르지 않습니다."
+          "1": "TCP는 OSI 4계층(전송 계층)에 해당하는 프로토콜입니다. TCP/IP 모델의 전송 계층에서 동작합니다. 이 설명은 정확하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "2": "IP(Internet Protocol)는 OSI 3계층(네트워크 계층)에 해당하는 프로토콜입니다. 패킷의 주소 지정과 라우팅을 담당합니다. 이 설명은 정확합니다.",
+          "4": "Telnet(원격 접속)과 FTP(파일 전송) 모두 TCP/IP 프로토콜 스택을 기반으로 동작하는 응용 계층 프로토콜입니다. 이 설명은 정확합니다."
         },
-        "key_concept": "TCP, TCP/IP 프로토콜"
+        "key_concept": "TCP 전송, IP 라우팅, ICMP 오류 제어"
       }
     },
     {
@@ -282,14 +282,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "TTL - 16bits",
-        "why_correct": "TTL - 16bits이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "IP TTL 필드는 16비트가 아닌 8비트입니다.",
+        "why_correct": "IPv4 헤더의 TTL(Time to Live) 필드는 8비트(0~255 범위)입니다. 패킷이 라우터를 거칠 때마다 1씩 감소하며 0이 되면 폐기됩니다. 16비트는 UDP/TCP Port 필드나 Header Checksum 등에 사용되는 크기입니다.",
         "why_wrong": {
-          "1": "Version - 4bits은/는 올바르지 않습니다.",
-          "3": "Type of Service - 8bits은/는 올바르지 않습니다.",
-          "4": "Header Checksum - 16bits은/는 올바르지 않습니다."
+          "1": "Version 필드는 4비트로 IP 프로토콜 버전을 나타냅니다. 'Version - 4bits'는 정확한 설명이므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "3": "Type of Service(ToS/DSCP) 필드는 8비트로 패킷 우선순위와 서비스 유형을 나타냅니다. 'Type of Service - 8bits'는 정확한 설명입니다.",
+          "4": "Header Checksum 필드는 16비트로 IP 헤더의 오류를 검출합니다. 'Header Checksum - 16bits'는 정확한 설명입니다."
         },
-        "key_concept": "IP, TCP/IP 프로토콜"
+        "key_concept": "IP TTL, 8비트, IP 헤더 필드"
       }
     },
     {
@@ -318,14 +318,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "10000000 00001010 00000010 00000011",
-        "why_correct": "10000000 00001010 00000010 00000011이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "128.10.2.3 → 10000000.00001010.00000010.00000011",
+        "why_correct": "128=2⁷=10000000, 10=8+2=00001010, 2=00000010, 3=2+1=00000011입니다. 각 옥텟을 8비트 이진수로 변환하면 선택지 2가 정확합니다.",
         "why_wrong": {
-          "1": "11000000 00001010 0000001은/는 올바르지 않습니다.",
-          "3": "10000000 10001010 0000001은/는 올바르지 않습니다.",
-          "4": "10000000 00001010 1000001은/는 올바르지 않습니다."
+          "1": "11000000=192로 첫 옥텟이 128이 아닌 192를 의미합니다. 11000000 00001010...은 192.10.2.3의 이진 표현입니다.",
+          "3": "두 번째 옥텟 10001010=138이므로 128.138.2.3의 이진 표현입니다. 10=00001010이므로 두 번째 옥텟 10001010은 잘못된 변환입니다.",
+          "4": "세 번째 옥텟 10000010=130이므로 128.10.130.3의 이진 표현입니다. 2=00000010이므로 세 번째 옥텟 10000010은 잘못된 변환입니다."
         },
-        "key_concept": "IP, TCP/IP 프로토콜"
+        "key_concept": "IP 주소 이진 변환, 128=10000000"
       }
     },
     {
@@ -354,14 +354,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "A-라우터, B-호스트",
-        "why_correct": "A-라우터, B-호스트이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "IGMP 쿼리는 라우터(A)가 호스트(B)에게 보내는 메시지입니다.",
+        "why_correct": "IGMP Query(쿼리) 메시지는 멀티캐스트 라우터가 자신의 링크에 연결된 호스트들에게 보내는 멤버십 확인 메시지입니다. 라우터는 어떤 호스트가 어떤 멀티캐스트 그룹에 가입되어 있는지 주기적으로 쿼리를 전송하고, 호스트는 Report(보고)로 응답합니다.",
         "why_wrong": {
-          "1": "A-호스트, B-호스트은/는 올바르지 않습니다.",
-          "2": "A-호스트, B-라우터은/는 올바르지 않습니다.",
-          "4": "A-라우터, B-라우터은/는 올바르지 않습니다."
+          "1": "A-호스트, B-호스트: IGMP 쿼리는 호스트 간에 교환되는 메시지가 아닙니다. 쿼리를 보내는 주체는 라우터입니다.",
+          "2": "A-호스트, B-라우터: 방향이 반대입니다. IGMP 쿼리는 라우터→호스트 방향입니다. 호스트가 라우터에게 보내는 것은 Report(멤버십 보고) 메시지입니다.",
+          "4": "A-라우터, B-라우터: IGMP 쿼리는 같은 서브넷의 라우터 간이 아닌 라우터에서 해당 링크의 호스트들에게 보내는 메시지입니다."
         },
-        "key_concept": "TCP/IP 프로토콜"
+        "key_concept": "IGMP 쿼리, 라우터→호스트, 멀티캐스트"
       }
     },
     {
@@ -390,14 +390,14 @@
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "Anycasting",
-        "why_correct": "Anycasting이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "IPv6에서만 제공되는 주소 유형은 Anycast입니다.",
+        "why_correct": "Anycast는 여러 장치에 동일한 주소를 할당하고, 패킷을 가장 가까운 Anycast 주소를 가진 장치 하나에만 전달하는 방식입니다. IPv6에서 공식적으로 도입된 새로운 주소 유형이며, IPv4에는 공식 Anycast 주소 유형이 없었습니다.",
         "why_wrong": {
-          "1": "Unicasting은/는 올바르지 않습니다.",
-          "2": "Multicasting은/는 올바르지 않습니다.",
-          "3": "Broadcasting은/는 올바르지 않습니다."
+          "1": "Unicast(단일 전송)는 IPv4와 IPv6 모두에서 지원합니다. 단일 발신자에서 단일 수신자로 전달하는 가장 일반적인 방식입니다.",
+          "2": "Multicast(다중 전송)는 IPv4(클래스 D, 224~239)와 IPv6 모두에서 지원합니다. 하나의 발신자가 여러 수신자 그룹에 동시 전달합니다.",
+          "3": "Broadcasting(브로드캐스트)은 IPv4에서는 지원하지만 IPv6에서는 제거되었습니다. IPv6는 브로드캐스트 대신 멀티캐스트(All-nodes: FF02::1)를 사용합니다. 따라서 '옳지 않은 것'에 해당하지 않습니다(IPv4에서 지원)."
         },
-        "key_concept": "IP, TCP/IP 프로토콜"
+        "key_concept": "Anycast, IPv6 전용, Unicast·Multicast 비교"
       }
     },
     {

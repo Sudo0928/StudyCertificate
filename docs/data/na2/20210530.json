@@ -30,14 +30,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "Class A는 최상위 3비트를 '110'으로 설정한다.",
-        "why_correct": "Class A는 최상위 3비트를 '110'으로 설정한다.이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Class A 최상위 비트는 '0' 1개, '110'은 Class C",
+        "why_correct": "IPv4 Class A는 최상위 1비트가 '0'이어서 0.0.0.0~127.255.255.255 범위입니다. '110'(3비트)은 Class C의 식별자입니다. Class B는 '10', Class D는 '1110', Class E는 '1111'입니다.",
         "why_wrong": {
-          "1": "모든 Network ID와 Host ID의 비은/는 올바르지 않습니다.",
-          "2": "Class B는 최상위 2비트를 '10'으로 은/는 올바르지 않습니다.",
-          "4": "'127.x.x.x' 형태의 IP Addres은/는 올바르지 않습니다."
+          "1": "모든 비트가 1인 Host ID는 브로드캐스트 주소로 예약되고, 모든 비트가 1인 Network ID는 사용 불가입니다. 이를 피하기 위해 all-1이 되어서는 안 된다는 설명은 올바릅니다.",
+          "2": "클래스 분류는 최상위 비트 패턴으로 결정됩니다. Class B는 최상위 2비트를 '10'으로 시작하여 128.0.0.0~191.255.255.255 범위를 갖습니다. 이 설명은 B클래스 주소 범위와 비트 패턴을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "4": "127.x.x.x 대역(특히 127.0.0.1)은 루프백(loopback) 주소로, 자기 자신을 목적지로 지정할 때 사용합니다. 실제 네트워크 인터페이스를 통해 전송되지 않고 내부 소프트웨어 스택에서 처리됩니다. 이 설명은 루프백 주소의 특징을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다."
         },
-        "key_concept": "IP, TCP/IP 프로토콜"
+        "key_concept": "IP 클래스, Class A '0', Class C '110'"
       }
     },
     {
@@ -66,14 +66,14 @@
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "4번이 올바른 설명",
-        "why_correct": "프레임이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "데이터 링크 계층의 데이터 단위는 프레임(Frame)",
+        "why_correct": "OSI 계층별 데이터 단위: 물리=비트, 데이터링크=프레임, 네트워크=패킷(데이터그램), 전송=세그먼트, 세션·표현·응용=메시지입니다.",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "2": "이 선택지는 틀렸습니다.",
-          "3": "이 선택지는 틀렸습니다."
+          "1": "메시지는 응용·표현·세션 계층에서 사용하는 데이터 단위입니다. 사용자 애플리케이션이 생성하는 원본 데이터를 가리킵니다.",
+          "2": "세그먼트는 전송 계층(TCP)의 데이터 단위입니다. TCP 헤더와 데이터를 합친 단위로, 포트 번호와 시퀀스 번호가 포함됩니다.",
+          "3": "데이터그램은 네트워크 계층(IP)의 데이터 단위를 가리키거나, UDP의 비연결형 전송 단위를 지칭합니다. 데이터 링크 계층이 아닙니다."
         },
-        "key_concept": "TCP, TCP/IP 프로토콜"
+        "key_concept": "데이터 링크 계층, 프레임, PDU"
       }
     },
     {
@@ -102,14 +102,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "한 번에 많은 데이터의 전송에 유리하기 때문에 화상 통",
-        "why_correct": "한 번에 많은 데이터의 전송에 유리하기 때문에 화상 통이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "TCP는 실시간 화상 통화보다 신뢰성 전송에 적합",
+        "why_correct": "TCP는 연결 수립, 오류 제어, 재전송, 흐름 제어 오버헤드가 커서 실시간 화상 통화처럼 지연이 민감한 서비스에는 부적합합니다. 화상 통화에는 UDP 기반 RTP가 적합합니다.",
         "why_wrong": {
-          "1": "종단 간 흐름 제어를 위해 동적 윈도우(Dyn은/는 올바르지 않습니다.",
-          "3": "송수신되는 데이터의 에러를 제어함으로서 신뢰성은/는 올바르지 않습니다.",
-          "4": "Three Way Handshaking 과정을은/는 올바르지 않습니다."
+          "1": "TCP는 동적 슬라이딩 윈도우(Dynamic Sliding Window)를 사용해 수신 측 버퍼 잔여 공간에 따라 송신 속도를 실시간으로 조절합니다. 이를 통해 수신자가 처리할 수 있는 만큼만 데이터가 전송됩니다. 종단 간 흐름 제어 기능에 대한 이 설명은 정확하므로 TCP가 제공하는 기능으로 '옳지 않은 것'에 해당하지 않습니다.",
+          "3": "TCP는 헤더의 체크섬 필드로 데이터 오류를 검출하고, ACK와 재전송(Retransmission) 메커니즘으로 유실된 세그먼트를 복구합니다. 이를 통해 신뢰성 있는 종단 간 전송을 보장합니다. 이 설명은 TCP의 오류 제어 기능을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "4": "TCP의 3-way handshake는 SYN(연결 요청) → SYN+ACK(응답) → ACK(확인) 순서로 연결을 수립한 후 데이터를 교환하는 방식입니다. 이 과정으로 양쪽 모두 연결 상태를 확인합니다. 이 설명은 TCP 연결 수립 절차를 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다."
         },
-        "key_concept": "TCP, TCP/IP 프로토콜"
+        "key_concept": "TCP, 화상통화 부적합, UDP RTP"
       }
     },
     {
@@ -138,14 +138,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "Destination Port - 선택적 필드로 사용하지 않을 때는",
-        "why_correct": "Destination Port - 선택적 필드로 사용하지 않을 때는이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "UDP Destination Port는 필수 필드, 선택적 필드가 아님",
+        "why_correct": "UDP 헤더의 Destination Port는 수신 측 애플리케이션을 식별하는 필수 필드입니다. '선택적으로 사용하지 않을 때는 0'이라는 설명은 Source Port에 해당하는 내용입니다. Source Port는 선택적으로 0이 될 수 있습니다.",
         "why_wrong": {
-          "1": "Source Port - 송신측 응용 프로세스은/는 올바르지 않습니다.",
-          "3": "Checksum - 오류 검사를 위한 필드은/는 올바르지 않습니다.",
-          "4": "Length - UDP 헤더와 데이터 부분을 은/는 올바르지 않습니다."
+          "1": "UDP의 Source Port는 데이터를 보내는 애플리케이션의 포트 번호를 담는 필드입니다. 수신자가 응답을 보낼 때 이 번호를 목적지로 사용합니다. 단방향 전송에서는 0으로 설정 가능한 선택적 필드입니다. 이 설명은 Source Port의 역할을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "3": "UDP의 Checksum 필드는 헤더와 데이터의 무결성을 검증합니다. IPv4에서는 선택적이지만 IPv6에서는 필수로 사용됩니다. 오류 검사 필드라는 설명은 Checksum의 역할을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "4": "UDP의 Length 필드는 UDP 헤더(8바이트 고정)와 데이터를 합산한 전체 데이터그램 길이를 바이트 단위로 나타냅니다. 최솟값은 헤더만 있는 8입니다. 이 설명은 Length 필드의 역할을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다."
         },
-        "key_concept": "UDP, TCP/IP 프로토콜"
+        "key_concept": "UDP 헤더, Destination Port 필수, Source Port 선택"
       }
     },
     {
@@ -174,14 +174,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "하드웨어 주소를 IP Address로 변환하기 위해서 사용한",
-        "why_correct": "하드웨어 주소를 IP Address로 변환하기 위해서 사용한이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "RARP는 MAC 주소를 IP 주소로 변환하는 역방향 ARP",
+        "why_correct": "RARP(Reverse ARP)는 MAC 주소(하드웨어 주소)는 알지만 IP 주소를 모르는 디스크리스 장치가 서버에 자신의 IP를 요청하는 프로토콜입니다. ARP의 반대 방향 변환입니다.",
         "why_wrong": {
-          "1": "TCP/IP 프로토콜에서 데이터의 전송 서비스은/는 올바르지 않습니다.",
-          "2": "TCP/IP 프로토콜의 IP에서 접속 없이 데은/는 올바르지 않습니다.",
-          "4": "IP에서의 오류(Error) 제어를 위하여 사은/는 올바르지 않습니다."
+          "1": "TCP/IP 프로토콜에서 데이터 전송 서비스(연결형)를 규정하는 것은 TCP(Transmission Control Protocol)입니다. RARP는 주소 변환 프로토콜로 데이터 전송 서비스와 다릅니다.",
+          "2": "접속 없이 데이터를 전송하는 것은 UDP(User Datagram Protocol)입니다. RARP는 비연결형 전송이 아닌 하드웨어 주소로 IP를 얻는 부트스트랩 프로토콜입니다.",
+          "4": "IP 오류 제어를 담당하는 것은 ICMP(Internet Control Message Protocol)입니다. ICMP는 오류 메시지와 네트워크 진단 기능을 제공하며 RARP와 다릅니다."
         },
-        "key_concept": "ARP, TCP/IP 프로토콜"
+        "key_concept": "RARP, MAC to IP, 역방향 변환"
       }
     },
     {
@@ -210,14 +210,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "2번이 올바른 설명",
-        "why_correct": "IGMP이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "IGMP는 인터넷 그룹 관리 프로토콜로 멀티캐스트 그룹 관리",
+        "why_correct": "IGMP(Internet Group Management Protocol)는 호스트가 멀티캐스트 그룹에 가입하거나 탈퇴함을 인근 라우터에 알리는 프로토콜입니다. 라우터는 IGMP로 어떤 서브넷에 어떤 그룹 구성원이 있는지 파악합니다.",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "3": "이 선택지는 틀렸습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "1": "ICMP(Internet Control Message Protocol)는 IP 통신 중 오류 보고와 네트워크 진단(ping, traceroute)을 위한 프로토콜입니다. 멀티캐스트 그룹 관리가 아닌 오류 메시지 전달이 목적입니다.",
+          "3": "EGP(Exterior Gateway Protocol)는 서로 다른 자율 시스템(AS) 간 라우팅 정보를 교환하는 프로토콜입니다. 현재는 BGP로 대체됐으며 멀티캐스트 그룹 관리와 무관합니다.",
+          "4": "IGP(Interior Gateway Protocol)는 단일 AS 내부에서 사용하는 라우팅 프로토콜(RIP, OSPF 등)의 총칭입니다. 멀티캐스트 그룹 가입 관리가 아닌 라우팅 정보 교환을 담당합니다."
         },
-        "key_concept": "TCP/IP 프로토콜"
+        "key_concept": "IGMP, 멀티캐스트, 그룹 가입"
       }
     },
     {
@@ -246,14 +246,14 @@
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "패킷의 살아 있는 시간(TTL, Time to Live)은 55초이다.",
-        "why_correct": "패킷의 살아 있는 시간(TTL, Time to Live)은 55초이다.이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "TTL은 홉 수(라우터 통과 횟수), 초 단위 시간이 아님",
+        "why_correct": "IP 헤더의 TTL(Time to Live)은 패킷이 거칠 수 있는 라우터 수를 나타내는 홉 카운트입니다. 라우터를 하나 지날 때마다 1 감소하며 0이 되면 폐기됩니다. 실제 시간(초)을 의미하지 않습니다.",
         "why_wrong": {
-          "1": "ping 명령어를 이용하여 목적지(www.ic은/는 올바르지 않습니다.",
-          "2": "ping 명령어를 이용하여 요청하고 응답받은 은/는 올바르지 않습니다.",
-          "3": "ping 명령어를 이용하여 요청하고 응답받은 은/는 올바르지 않습니다."
+          "1": "ping 명령은 ICMP Echo Request 패킷을 목적지에 보내고 Echo Reply를 기다려 연결성을 확인합니다. ping www.icqa.or.kr을 실행하면 해당 서버와 정상 통신되는지 응답 여부로 판단합니다. 이 설명은 ping 명령의 동작을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "2": "ping 응답 각 줄에서 'bytes=32'(Windows) 또는 데이터 크기가 표시됩니다. 이는 요청하고 응답받은 ICMP 데이터의 실제 바이트 크기를 나타냅니다. 이 설명은 ping 출력의 bytes 항목을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "3": "ping 통계의 Average 항목은 모든 ICMP 왕복 시간(RTT, Round Trip Time)의 평균값입니다. 이 값이 높으면 네트워크 지연이 크다는 것을 의미합니다. 이 설명은 ping 평균 시간의 의미를 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다."
         },
-        "key_concept": "TCP/IP 프로토콜"
+        "key_concept": "TTL, 홉 카운트, 초 아님"
       }
     },
     {
@@ -282,14 +282,14 @@
       "answer": 1,
       "has_figure": true,
       "explanation": {
-        "correct_summary": "기존 http보다 암호화된 SSL/TLS를 전달한다.",
-        "why_correct": "기존 http보다 암호화된 SSL/TLS를 전달한다.이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "HTTPS는 HTTP에 SSL/TLS 암호화를 추가한 보안 웹 프로토콜",
+        "why_correct": "HTTPS(HTTP Secure)는 HTTP 통신에 TLS/SSL 암호화를 추가하여 데이터 기밀성, 무결성, 서버 인증을 제공합니다. 포트 443(TCP)을 사용합니다.",
         "why_wrong": {
-          "2": "tcp/80번 포트를 사용한다.은/는 올바르지 않습니다.",
-          "3": "udp/443번 포트를 사용한다.은/는 올바르지 않습니다.",
-          "4": "인증이 필요하지 않아 사용하기가 간편하다.은/는 올바르지 않습니다."
+          "2": "포트 80은 HTTP(암호화 없는 일반 웹)의 기본 포트입니다. HTTPS는 TCP/443을 사용하며, 80과 443을 혼동하면 보안 설정 오류가 발생합니다.",
+          "3": "HTTPS는 TCP/443 포트를 사용합니다. UDP 기반이 아닙니다. HTTP/3(QUIC)은 UDP 기반이지만 일반적인 HTTPS는 TCP/443입니다.",
+          "4": "HTTPS의 핵심 기능 중 하나가 CA 서명 인증서를 통한 서버 신원 인증입니다. 인증 없이는 중간자 공격에 취약하므로 인증이 반드시 필요합니다."
         },
-        "key_concept": "HTTP, TCP/IP 프로토콜"
+        "key_concept": "HTTPS, TLS 암호화, TCP 443"
       }
     },
     {
@@ -318,14 +318,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "2번이 올바른 설명",
-        "why_correct": "tracert이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "tracert는 Windows에서 패킷 경로와 홉별 지연을 추적하는 명령",
+        "why_correct": "tracert(Windows)는 ICMP TTL 감소 방식으로 목적지까지 패킷이 거치는 각 라우터(홉)의 IP와 응답 시간을 표시합니다. 인터넷이 느린 원인이 어느 구간인지 찾는 데 사용합니다.",
         "why_wrong": {
-          "1": "nslookup은/는 올바르지 않습니다.",
-          "3": "이 선택지는 틀렸습니다.",
-          "4": "traceroute은/는 올바르지 않습니다."
+          "1": "nslookup은 DNS 서버에 질의해 도메인 이름 해석 결과를 확인하는 명령입니다. 네트워크 경로 추적이 아닌 DNS 조회 진단에 사용합니다.",
+          "3": "ping은 목적지까지 연결 가능 여부와 왕복 시간을 확인합니다. 중간 경로의 각 홉 정보는 표시하지 않아 어느 구간이 느린지 알 수 없습니다.",
+          "4": "traceroute는 Linux/Unix의 경로 추적 명령으로, Windows의 tracert와 동일한 기능입니다. Windows 환경에서는 tracert를 사용해야 합니다."
         },
-        "key_concept": "TCP/IP 프로토콜"
+        "key_concept": "tracert, 경로 추적, 홉별 지연"
       }
     },
     {
@@ -354,14 +354,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "IP Address를 효율적으로 관리하기 위한 서비스로 IP",
-        "why_correct": "IP Address를 효율적으로 관리하기 위한 서비스로 IP이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "DNS는 도메인-IP 변환 서비스, IP 할당 관리가 아님",
+        "why_correct": "DNS(Domain Name System)는 도메인 이름을 IP 주소로(정방향), IP를 도메인으로(역방향) 변환하는 분산 데이터베이스 시스템입니다. IP 주소를 효율적으로 관리하는 것은 DHCP나 IPAM의 역할입니다.",
         "why_wrong": {
-          "1": "도메인에 대하여 IP Address를 매핑한다은/는 올바르지 않습니다.",
-          "2": "IP Address를 도메인 이름으로 변환하는은/는 올바르지 않습니다.",
-          "4": "계층적 이름 구조를 갖는 분산형 데이터베이스로은/는 올바르지 않습니다."
+          "1": "DNS(Domain Name System)는 www.example.com 같은 도메인 이름을 IP 주소로 변환하는 정방향 조회를 제공합니다. 이는 DNS의 가장 기본적인 기능입니다. 도메인에 대하여 IP Address를 매핑한다는 설명은 정확하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "2": "DNS는 역방향 조회(Reverse DNS)도 지원합니다. PTR 레코드를 통해 IP 주소를 도메인 이름으로 변환할 수 있습니다. IP Address를 도메인 이름으로 변환하는 기능도 있다는 설명은 정확하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "4": "DNS는 루트 서버 → TLD 서버 → 권한 서버로 이어지는 계층적 트리 구조를 가지며, 각 도메인 영역이 분산 관리되는 분산형 데이터베이스입니다. 이 설명은 DNS 아키텍처를 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다."
         },
-        "key_concept": "DNS, TCP/IP 프로토콜"
+        "key_concept": "DNS, 도메인-IP 변환, DHCP와 차이"
       }
     },
     {
@@ -390,14 +390,14 @@
       "answer": 4,
       "has_figure": true,
       "explanation": {
-        "correct_summary": "4번이 올바른 설명",
-        "why_correct": "arp이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "ARP는 IP 주소를 MAC 주소로 변환해 물리 주소를 확인",
+        "why_correct": "ARP(Address Resolution Protocol)는 네트워크에서 특정 IP 주소를 가진 장치의 MAC 주소를 알아내는 프로토콜입니다. 허가되지 않은 IP를 가진 장치의 MAC을 ARP 캐시나 브로드캐스트로 확인할 때 사용합니다.",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "2": "이 선택지는 틀렸습니다.",
-          "3": "이 선택지는 틀렸습니다."
+          "1": "RARP는 MAC 주소를 알 때 IP 주소를 얻는 역방향 프로토콜로, IP 주소로 MAC을 찾는 ARP와 방향이 반대입니다.",
+          "2": "VLAN은 네트워크를 논리적으로 분리하는 기술입니다. 특정 IP-MAC 매핑을 찾아 장치를 특정하는 역할이 아닙니다.",
+          "3": "CDP(Cisco Discovery Protocol)는 Cisco 장비 간 인접 장비 정보를 교환하는 레이어 2 프로토콜입니다. IP 주소와 MAC 주소 매핑을 알아내는 기능이 없습니다."
         },
-        "key_concept": "IP, TCP/IP 프로토콜"
+        "key_concept": "ARP, IP to MAC, 물리 주소 확인"
       }
     },
     {
@@ -426,14 +426,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "2번이 올바른 설명",
-        "why_correct": "UTC이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "UTC는 TCP 헤더 플래그가 아님, 협정 세계시 약어",
+        "why_correct": "TCP 헤더의 제어 플래그는 URG, ACK, PSH, RST, SYN, FIN 6개입니다. UTC(Coordinated Universal Time)는 국제 협정 세계시의 약어로 TCP 플래그가 아닙니다.",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "3": "이 선택지는 틀렸습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "1": "URG(Urgent) 플래그는 긴급 데이터가 포함됐음을 나타냅니다. Urgent Pointer 필드와 함께 수신 측이 즉시 처리해야 하는 데이터를 표시합니다.",
+          "3": "ACK(Acknowledgment) 플래그는 수신 데이터에 대한 확인 응답을 나타냅니다. 3-way handshake 이후 모든 패킷에 설정됩니다.",
+          "4": "RST(Reset) 플래그는 연결을 강제로 초기화하거나 비정상 연결을 즉시 끊을 때 사용합니다. 포트가 닫혀 있거나 오류 상황에서 전송됩니다."
         },
-        "key_concept": "TCP, TCP/IP 프로토콜"
+        "key_concept": "TCP 플래그, UTC 아님, URG/ACK/RST"
       }
     },
     {
@@ -462,14 +462,14 @@
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "4번이 올바른 설명",
-        "why_correct": "CSMA/CA이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "IEEE 802.11(Wi-Fi)은 CSMA/CA를 사용하는 무선 LAN",
+        "why_correct": "IEEE 802.11(Wi-Fi) 무선 LAN은 충돌 감지가 어려운 무선 환경에서 CSMA/CA(Collision Avoidance)로 전송 전 채널 상태를 확인하고 충돌을 사전에 회피합니다.",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "2": "이 선택지는 틀렸습니다.",
-          "3": "CSMA/CD은/는 올바르지 않습니다."
+          "1": "ALOHA는 1970년대 하와이 대학에서 개발한 초기 무선 패킷 통신 방식입니다. 채널 감지 없이 전송 후 충돌을 감지하는 단순한 방식으로, 현대 Wi-Fi와 다릅니다.",
+          "2": "CDMA(Code Division Multiple Access)는 이동통신(2G, 3G)에서 사용하는 다중 접속 방식입니다. 고유 코드로 신호를 구분하며 Wi-Fi 802.11의 매체 접근 방식이 아닙니다.",
+          "3": "CSMA/CD(Collision Detection)는 유선 Ethernet(IEEE 802.3)의 매체 접근 방식입니다. 충돌을 감지한 후 재전송하는 방식으로 무선 환경에서는 사용하지 않습니다."
         },
-        "key_concept": "TCP/IP 프로토콜"
+        "key_concept": "IEEE 802.11, CSMA/CA, Wi-Fi"
       }
     },
     {
@@ -498,14 +498,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "netstat –an",
-        "why_correct": "netstat –an이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "netstat -an은 활성 연결과 포트를 숫자 형식으로 표시",
+        "why_correct": "netstat -an은 모든(-a) 연결과 포트를 숫자(-n) 형식으로 표시합니다. 특정 포트(443)를 사용하는 연결의 원격 IP 주소를 확인해 불법 접속 여부를 파악할 수 있습니다.",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "2": "tracert은/는 올바르지 않습니다.",
-          "4": "nslookup은/는 올바르지 않습니다."
+          "1": "ping은 목적지 IP로 ICMP Echo Request를 보내 연결성을 확인합니다. 특정 포트 사용 여부나 기존 연결 목록을 확인하는 기능이 없습니다.",
+          "2": "tracert는 목적지까지 경로를 추적합니다. 현재 서버에 연결된 세션의 포트와 IP 목록을 조회하는 기능이 아닙니다.",
+          "4": "nslookup은 DNS 조회 도구입니다. IP 주소 52.139.250.253의 도메인은 확인할 수 있지만 서버의 활성 연결(포트 443 사용 여부)은 조회할 수 없습니다."
         },
-        "key_concept": "IP, TCP/IP 프로토콜"
+        "key_concept": "netstat -an, 포트 확인, 연결 상태"
       }
     },
     {
@@ -534,14 +534,14 @@
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "SNMP(Simple Network Management Protocol)",
-        "why_correct": "SNMP(Simple Network Management Protocol)이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "SNMP는 네트워크 관리 프로토콜, 전자메일과 무관",
+        "why_correct": "SNMP(Simple Network Management Protocol)는 네트워크 장비 모니터링과 관리를 위한 프로토콜입니다. 전자메일 전송(SMTP)·수신(POP3/IMAP)·인코딩(MIME)과 전혀 다른 역할입니다.",
         "why_wrong": {
-          "1": "SMTP(Simple Mail Transfer은/는 올바르지 않습니다.",
-          "2": "MIME(Multi-purpose Intern은/는 올바르지 않습니다.",
-          "3": "POP3(Post Office Protocol은/는 올바르지 않습니다."
+          "1": "SMTP(Simple Mail Transfer Protocol)는 발신 메일 서버에서 수신 메일 서버로 이메일을 전달합니다. TCP 포트 25/587을 사용합니다.",
+          "2": "MIME(Multi-purpose Internet Mail Extensions)는 이메일에 텍스트 이외의 콘텐츠(첨부 파일, HTML, 이미지 등)를 담을 수 있도록 포맷을 확장하는 표준입니다.",
+          "3": "POP3(Post Office Protocol 3)는 이메일 클라이언트가 수신 서버에서 메일을 가져오는 프로토콜입니다. TCP 110 포트를 사용하며 메일을 로컬로 다운로드합니다."
         },
-        "key_concept": "TCP/IP 프로토콜"
+        "key_concept": "SNMP, 네트워크 관리, 이메일 아님"
       }
     },
     {
@@ -570,14 +570,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "5 - Echo Request",
-        "why_correct": "5 - Echo Request이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "ICMP Type 5는 Redirect, Echo Request는 Type 8",
+        "why_correct": "ICMP Type 5는 Redirect(경로 재지정)로, 라우터가 더 효율적인 경로를 발신자에게 알릴 때 사용합니다. Echo Request는 Type 8입니다. '5 - Echo Request'는 틀린 설명입니다.",
         "why_wrong": {
-          "1": "0 - Echo Reply은/는 올바르지 않습니다.",
-          "3": "13 - Timestamp Request은/는 올바르지 않습니다.",
-          "4": "17 - Address Mask Request은/는 올바르지 않습니다."
+          "1": "ICMP Type 0은 Echo Reply로, ping 명령 시 목적지 장치가 발신자에게 보내는 응답 메시지입니다. Echo Request(Type 8)에 대응하여 연결성을 확인합니다. 이 타입 번호와 설명은 정확하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "3": "ICMP Type 13은 Timestamp Request로, 원격 장치의 현재 시간 정보를 요청할 때 사용합니다. 응답은 Type 14(Timestamp Reply)로 반환됩니다. 현재는 거의 사용되지 않지만 타입 번호와 설명은 정확하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "4": "ICMP Type 17은 Address Mask Request로, 호스트가 자신이 속한 서브넷 마스크를 서버에 질의하는 메시지입니다. 현재는 DHCP로 대체되어 거의 사용되지 않지만 타입 번호와 설명은 정확하므로 '옳지 않은 것'에 해당하지 않습니다."
         },
-        "key_concept": "ICMP, 네트워크 일반"
+        "key_concept": "ICMP Type 5 Redirect, Type 8 Echo Request"
       }
     },
     {
@@ -606,14 +606,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "2번이 올바른 설명",
-        "why_correct": "4이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "C클래스 /26은 서브넷 비트 2개 → 최대 4개 서브넷",
+        "why_correct": "255.255.255.192는 /26으로 C클래스 기본 마스크(/24)에서 2비트를 서브넷으로 빌렸습니다. 2^2 = 4개의 서브넷이 생성됩니다. (단, 실제로는 RFC 1812에 따라 네트워크 주소와 브로드캐스트 서브넷을 사용할 수 있어 4개 모두 사용 가능합니다.)",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "3": "이 선택지는 틀렸습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "1": "2개는 서브넷 비트가 1개(2^1=2)일 때 생기는 서브넷 수입니다. 255.255.255.192는 2비트를 사용하므로 서브넷이 4개입니다.",
+          "3": "192는 255.255.255.192 마스크의 마지막 옥텟 값입니다. 서브넷 수와 관련이 없는 숫자를 혼동한 것입니다.",
+          "4": "1,024는 관련이 없는 숫자입니다. 서브넷 비트가 10개일 때 2^10=1,024 서브넷이 생기지만, /26에서의 서브넷 수가 아닙니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "서브넷 수, /26, 2비트 = 4개"
       }
     },
     {
@@ -642,14 +642,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "3번이 올바른 설명",
-        "why_correct": "흐름 제어이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "흐름 제어는 수신 측이 데이터 양과 속도를 제한하는 기능",
+        "why_correct": "흐름 제어(Flow Control)는 수신 측이 처리 능력을 초과하지 않도록 발신 측의 전송 속도를 조절하는 프로토콜 기능입니다. 슬라이딩 윈도우, XON/XOFF 등이 사용됩니다.",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "2": "이 선택지는 틀렸습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "1": "에러 제어(Error Control)는 전송 중 발생한 오류를 탐지하고 수정하는 기능입니다. ARQ(재전송), FEC(전진 오류 수정) 등이 있으며, 속도 제한이 아닌 데이터 무결성 보장이 목적입니다.",
+          "2": "순서 제어(Sequence Control)는 패킷이 도착한 순서가 뒤바뀌었을 때 올바른 순서로 재조립하는 기능입니다. 속도 제한이 아닌 데이터 순서 보장입니다.",
+          "4": "접속 제어(Access Control)는 네트워크 자원에 대한 접근 권한을 관리하는 기능입니다. 데이터 전송 속도 제한이 아닌 인증·인가 관련 기능입니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "흐름 제어, 전송 속도 제한, 슬라이딩 윈도우"
       }
     },
     {
@@ -678,14 +678,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "3번이 올바른 설명",
-        "why_correct": "VPN이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "VPN은 공용 네트워크를 통한 암호화 사설 터널 제공",
+        "why_correct": "VPN(Virtual Private Network)은 인터넷 같은 공용 네트워크에서 암호화 터널을 구성해 마치 전용 사설 네트워크처럼 안전하게 통신합니다. 원격 근무자가 사내망에 안전하게 접속하는 데 사용합니다.",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "2": "이 선택지는 틀렸습니다.",
-          "4": "Public Network은/는 올바르지 않습니다."
+          "1": "VLAN(Virtual LAN)은 물리적 네트워크를 논리적으로 분리하는 기술입니다. 보안 강화와 트래픽 격리가 목적이지만, 인터넷을 통해 암호화 터널을 구성하는 VPN과 다릅니다.",
+          "2": "NAT(Network Address Translation)는 사설 IP를 공인 IP로 변환하는 기술입니다. 내부 구조를 숨기는 효과는 있지만 데이터 암호화 터널을 구성하는 VPN과 기능이 다릅니다.",
+          "4": "Public Network는 인터넷처럼 누구나 접속 가능한 공용 네트워크를 가리킵니다. VPN은 이 공용 네트워크 위에 사설 터널을 구성하는 기술로 Public Network와 반대 개념입니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "VPN, 암호화 터널, 사설 네트워크"
       }
     },
     {
@@ -714,14 +714,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "TCP, UDP",
-        "why_correct": "TCP, UDP이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "전송 계층 프로토콜: TCP와 UDP",
+        "why_correct": "OSI 전송 계층(Layer 4)에서 동작하는 프로토콜은 TCP(연결형, 신뢰성)와 UDP(비연결형, 신속성)입니다. 두 프로토콜 모두 포트 번호로 애플리케이션을 식별합니다.",
         "why_wrong": {
-          "1": "ICMP, NetBEUI은/는 올바르지 않습니다.",
-          "2": "IP, TCP은/는 올바르지 않습니다.",
-          "4": "NetBEUI, IP은/는 올바르지 않습니다."
+          "1": "ICMP는 네트워크 계층(Layer 3) 프로토콜이고, NetBEUI는 Microsoft의 네트워크 프로토콜입니다. 둘 다 전송 계층에서 동작하지 않습니다.",
+          "2": "IP는 네트워크 계층(Layer 3) 프로토콜입니다. TCP는 전송 계층이 맞지만, IP와 묶으면 서로 다른 계층에 걸쳐 있어 전송 계층 프로토콜만의 묶음이 아닙니다.",
+          "4": "NetBEUI는 데이터 링크 계층(Layer 2)에서 동작하는 Microsoft 독점 프로토콜이고, IP는 네트워크 계층입니다. 모두 전송 계층이 아닙니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "전송 계층, TCP, UDP"
       }
     },
     {
@@ -750,14 +750,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "Presentation Layer",
-        "why_correct": "Presentation Layer이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "표현 계층(Layer 6)은 암호화·복호화, 인증, 압축 담당",
+        "why_correct": "OSI 표현 계층(Presentation Layer, Layer 6)은 데이터의 형식 변환, 암호화·복호화, 압축·해제, 문자 인코딩 변환을 담당합니다. SSL/TLS가 이 계층에서 동작합니다.",
         "why_wrong": {
-          "1": "Transport Layer은/는 올바르지 않습니다.",
-          "2": "Datalink Layer은/는 올바르지 않습니다.",
-          "4": "Application Layer은/는 올바르지 않습니다."
+          "1": "전송 계층(Transport Layer, Layer 4)은 종단 간 신뢰성 있는 데이터 전달, 흐름 제어, 오류 복구, 포트 번호로 애플리케이션 식별을 담당합니다. 암호화가 아닌 전송 신뢰성이 목적입니다.",
+          "2": "데이터 링크 계층(Layer 2)은 프레임 전송, MAC 주소 기반 전달, CRC 오류 감지, 흐름 제어를 담당합니다. 암호화·압축은 이 계층의 기능이 아닙니다.",
+          "4": "응용 계층(Application Layer, Layer 7)은 사용자와 직접 상호작용하는 HTTP, FTP, SMTP 등 애플리케이션 서비스를 제공합니다. 표현 계층보다 상위에서 사용자 인터페이스를 담당합니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "표현 계층, 암호화, 압축"
       }
     },
     {
@@ -786,14 +786,14 @@
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "Go-back-N ARQ",
-        "why_correct": "Go-back-N ARQ이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Go-Back-N ARQ는 오류 발생 프레임부터 이후 모두 재전송",
+        "why_correct": "Go-Back-N ARQ는 오류가 감지된 프레임으로 돌아가 해당 프레임부터 이후의 모든 프레임을 다시 전송합니다. 구현이 단순하지만 불필요한 재전송이 발생할 수 있습니다.",
         "why_wrong": {
-          "2": "Selective ARQ은/는 올바르지 않습니다.",
-          "3": "Adaptive ARQ은/는 올바르지 않습니다.",
-          "4": "Stop-and-Wait ARQ은/는 올바르지 않습니다."
+          "2": "Selective ARQ(Selective Repeat)는 오류가 발생한 프레임만 선택해 재전송합니다. 불필요한 재전송을 줄이지만 수신 측에 큰 버퍼가 필요합니다.",
+          "3": "Adaptive ARQ는 네트워크 오류율에 따라 프레임 크기를 동적으로 조절하는 방식입니다. 오류가 많으면 프레임을 작게, 적으면 크게 조절해 전송 효율을 최적화합니다.",
+          "4": "Stop-and-Wait ARQ는 프레임 하나를 보내고 ACK를 받을 때까지 기다리는 가장 단순한 방식입니다. 링크 활용률이 낮아 대역폭 낭비가 크지만 구현이 쉽습니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "Go-Back-N ARQ, 오류 프레임부터 재전송"
       }
     },
     {
@@ -822,14 +822,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "A, C, D, E",
-        "why_correct": "A, C, D, E이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "IPv6 일반 특징: 128비트 주소, IPSec 필수, SLAAC, 확장 헤더 등",
+        "why_correct": "IPv6의 주요 특징은 128비트 대용량 주소 공간, IPSec 보안 지원, SLAAC 자동 주소 설정, 확장 헤더로 유연한 옵션 처리, 헤더 간소화 등입니다. 선택지 A(128비트), C(IPSec), D(자동 설정), E(확장 헤더)가 해당됩니다.",
         "why_wrong": {
-          "1": "A, B, C, D은/는 올바르지 않습니다.",
-          "3": "B, C, D, E은/는 올바르지 않습니다.",
-          "4": "B, D, E, F은/는 올바르지 않습니다."
+          "1": "A, B, C, D 조합은 IPv6 특징이 아닌 항목(B)을 포함합니다. B에 해당하는 항목이 IPv6와 맞지 않아 정답이 될 수 없습니다.",
+          "3": "B, C, D, E 조합은 올바르지 않은 IPv6 특징(B)이 포함되어 있습니다. B 항목을 제외한 나머지가 정답입니다.",
+          "4": "B, D, E, F 조합 역시 B와 F가 IPv6 일반 특징에 해당하지 않아 틀린 조합입니다."
         },
-        "key_concept": "IP, 네트워크 일반"
+        "key_concept": "IPv6, 128비트, IPSec, SLAAC"
       }
     },
     {
@@ -858,14 +858,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "2번이 올바른 설명",
-        "why_correct": "스타형 구성이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "스타형은 중앙 허브/스위치에 모든 장치가 점대점 연결",
+        "why_correct": "스타형(Star Topology)은 모든 노드가 중앙 허브나 스위치에 개별 케이블로 점대점 연결됩니다. 한 노드에 장애가 생겨도 다른 노드에 영향이 없고 문제 진단이 쉽습니다.",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "3": "버스형 구성은/는 올바르지 않습니다.",
-          "4": "트리형 구성은/는 올바르지 않습니다."
+          "1": "링형(Ring Topology)은 각 노드가 양옆 노드와만 연결되어 원형을 이룹니다. 중앙 제어점 없이 데이터가 링을 따라 순환하며, 한 노드 장애 시 링 전체가 영향받습니다.",
+          "3": "버스형(Bus Topology)은 모든 노드가 하나의 공유 백본 케이블에 연결됩니다. 중앙 제어점 없이 케이블을 공유하며 케이블 단선 시 전체 통신이 중단됩니다.",
+          "4": "트리형(Tree Topology)은 스타형을 계층적으로 연결한 구조입니다. 최상단 루트에서 여러 하위 허브로 뻗어나가는 계층 구조로, 단순 스타형과 달리 계층이 있습니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "스타형, 중앙 허브, 점대점"
       }
     },
     {
@@ -894,14 +894,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "Wi-Fi Direct",
-        "why_correct": "Wi-Fi Direct이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Wi-Fi Direct는 AP 없이 장치 간 직접 무선 연결 기술",
+        "why_correct": "Wi-Fi Direct는 무선 공유기(AP) 없이 Wi-Fi 기기끼리 직접 P2P 연결을 가능하게 하는 기술입니다. 화면 미러링, 파일 전송, 프린터 연결 등에 사용됩니다.",
         "why_wrong": {
-          "1": "Software Defined Network은/는 올바르지 않습니다.",
-          "3": "이 선택지는 틀렸습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "1": "SDN(Software Defined Networking)은 네트워크 제어 평면을 소프트웨어로 중앙 집중 관리하는 기술입니다. 장치 간 직접 무선 연결 기술이 아닙니다.",
+          "3": "WiBro(Wireless Broadband)는 국내에서 개발된 이동 광대역 무선 인터넷 서비스입니다. 이동 중에도 고속 인터넷을 제공하며, 장치 간 직접 연결이 아닌 기지국 기반 통신입니다.",
+          "4": "WiMAX는 수 km 반경의 도시 규모 무선 광대역 인터넷(WMAN)입니다. 기지국 기반 인터넷 서비스로 장치 간 직접 P2P 연결 기술이 아닙니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "Wi-Fi Direct, P2P, AP 없이 직접 연결"
       }
     },
     {
@@ -930,14 +930,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "에지 컴퓨팅(Edge Computing)",
-        "why_correct": "에지 컴퓨팅(Edge Computing)이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "에지 컴퓨팅은 데이터를 발생 지점 근처에서 처리하는 분산 컴퓨팅",
+        "why_correct": "에지 컴퓨팅(Edge Computing)은 데이터를 중앙 클라우드가 아닌 IoT 기기나 네트워크 엣지(기지국, 로컬 서버)에서 처리합니다. 지연 감소, 대역폭 절약, 실시간 처리가 가능합니다.",
         "why_wrong": {
-          "1": "사물인터넷(IoT)은/는 올바르지 않습니다.",
-          "2": "유비쿼터스(Ubiquitous)은/는 올바르지 않습니다.",
-          "4": "신 클라이언트(Thin client)은/는 올바르지 않습니다."
+          "1": "사물인터넷(IoT)은 다양한 사물이 인터넷에 연결되어 데이터를 수집·교환하는 개념입니다. 에지 컴퓨팅은 IoT에서 생성된 데이터를 처리하는 방법론이지만, 두 개념은 다릅니다.",
+          "2": "유비쿼터스(Ubiquitous)는 언제 어디서나 네트워크에 접속할 수 있는 환경을 의미하는 개념입니다. 특정 처리 위치(엣지)를 지칭하는 에지 컴퓨팅과 다릅니다.",
+          "4": "씬 클라이언트(Thin Client)는 처리 능력이 최소화된 클라이언트로, 서버에서 대부분의 처리를 수행하는 서버-중심 컴퓨팅입니다. 엣지에서 처리하는 에지 컴퓨팅과 방향이 반대입니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "에지 컴퓨팅, 분산 처리, 지연 감소"
       }
     },
     {
@@ -966,14 +966,14 @@
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "WMN (Wireless Mesh Network)",
-        "why_correct": "WMN (Wireless Mesh Network)이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "WMN(무선 메시 네트워크)은 노드 간 다중 경로 메시 구조",
+        "why_correct": "WMN(Wireless Mesh Network)은 모든 노드가 서로 연결되어 여러 경로로 통신할 수 있는 메시 구조의 무선 네트워크입니다. 한 노드 장애 시 다른 경로로 통신을 유지하는 자가 치유(Self-healing) 특성이 있습니다.",
         "why_wrong": {
-          "2": "UWB (Ultra Wide Band)은/는 올바르지 않습니다.",
-          "3": "WPAN (Wireless Personal A은/는 올바르지 않습니다.",
-          "4": "CAN (Campus Area Network)은/는 올바르지 않습니다."
+          "2": "UWB(Ultra Wide Band)는 광대역 주파수를 사용해 짧은 거리에서 고속 데이터 전송이나 정밀 위치 추적에 쓰이는 무선 기술입니다. 메시 네트워크 구조가 아닌 근거리 통신 기술입니다.",
+          "3": "WPAN(Wireless Personal Area Network)은 개인 영역(10m 이내)의 무선 네트워크로 Bluetooth, Zigbee 등이 해당합니다. 메시 구조보다는 1:1 또는 소규모 통신에 사용됩니다.",
+          "4": "CAN(Campus Area Network)은 캠퍼스나 기업 단지처럼 여러 LAN을 연결하는 중간 규모 네트워크입니다. 메시 구조의 무선 네트워크가 아닌 LAN과 WAN 사이의 규모 개념입니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "WMN, 무선 메시, 자가 치유"
       }
     },
     {
@@ -1002,14 +1002,14 @@
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "1번이 올바른 설명",
-        "why_correct": "chage이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "chage는 사용자 패스워드 만료 기간을 변경하는 명령",
+        "why_correct": "chage(change age) 명령은 Linux에서 사용자 계정의 패스워드 만료 기간, 최소/최대 사용 기간, 경고 일수 등을 설정합니다. /etc/shadow 파일의 패스워드 에이징 정보를 변경합니다.",
         "why_wrong": {
-          "2": "이 선택지는 틀렸습니다.",
-          "3": "이 선택지는 틀렸습니다.",
-          "4": "usermod은/는 올바르지 않습니다."
+          "2": "chgrp(change group)은 파일이나 디렉터리의 소유 그룹을 변경하는 명령입니다. 패스워드 만료 기간과 관련이 없습니다.",
+          "3": "chmod(change mode)는 파일이나 디렉터리의 접근 권한(읽기, 쓰기, 실행)을 변경하는 명령입니다. 패스워드 정책 설정 명령이 아닙니다.",
+          "4": "usermod는 기존 사용자 계정의 속성(홈 디렉터리, 쉘, 그룹, 잠금 등)을 수정하는 명령입니다. 패스워드 에이징도 일부 가능하지만 전문 명령은 chage입니다."
         },
-        "key_concept": "Linux, 네트워크 OS"
+        "key_concept": "chage, 패스워드 만료, 에이징"
       }
     },
     {
@@ -1038,14 +1038,14 @@
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "롤링 클러스터 업그레이드",
-        "why_correct": "롤링 클러스터 업그레이드이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "롤링 클러스터 업그레이드는 서비스 중단 없이 Hyper-V 업그레이드",
+        "why_correct": "롤링 클러스터 업그레이드(Rolling Cluster Upgrade)는 Hyper-V 클러스터의 각 노드를 순차적으로 업그레이드하면서 서비스를 다른 노드로 이동시켜 무중단으로 업그레이드를 완료하는 기능입니다.",
         "why_wrong": {
-          "2": "중첩 가상화은/는 올바르지 않습니다.",
-          "3": "gpupdate은/는 올바르지 않습니다.",
-          "4": "NanoServer은/는 올바르지 않습니다."
+          "2": "중첩 가상화(Nested Virtualization)는 가상 머신 안에서 또 다른 가상 머신을 실행하는 기능입니다. 온라인 업그레이드가 아닌 중첩된 가상화 계층을 허용하는 기능입니다.",
+          "3": "gpupdate는 그룹 정책을 강제로 새로 고침하는 Windows 명령입니다. Hyper-V 클러스터 업그레이드와 관련이 없습니다.",
+          "4": "NanoServer는 Windows Server의 초경량 서버 옵션으로 원격 관리 전용입니다. 클러스터 온라인 업그레이드 기능이 아닙니다."
         },
-        "key_concept": "Windows, 네트워크 OS"
+        "key_concept": "롤링 클러스터 업그레이드, 무중단, Hyper-V"
       }
     },
     {
@@ -1074,14 +1074,14 @@
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "′icqa′는 디렉터리를 의미하며 하위 디렉터리의 개수는",
-        "why_correct": "′icqa′는 디렉터리를 의미하며 하위 디렉터리의 개수는이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "icqa가 디렉터리이면 하드링크 수는 내용에 따라 다름",
+        "why_correct": "ls -l 출력에서 하드링크 수(숫자 필드)가 특정 값을 나타낼 때, 디렉터리의 경우 빈 디렉터리는 2(자신+부모 참조)이며 하위 디렉터리 개수에 따라 달라집니다. 단순히 '하위 디렉터리 개수'라고만 하면 틀린 설명입니다.",
         "why_wrong": {
-          "1": "소유자 UID는 ′root′ 이다.은/는 올바르지 않습니다.",
-          "2": "소유자 GID는 ′root′ 이다.은/는 올바르지 않습니다.",
-          "3": "소유자는 모든 권한을 가지며, 그룹 사용자와 은/는 올바르지 않습니다."
+          "1": "ls -l 출력에서 세 번째 필드가 소유자 이름입니다. root로 표시되면 소유자 UID가 root임을 알 수 있습니다.",
+          "2": "ls -l 출력에서 네 번째 필드가 그룹 이름입니다. root로 표시되면 소유 그룹 GID가 root임을 알 수 있습니다.",
+          "3": "소유자 권한 rwx(7)는 읽기·쓰기·실행 모두 허용입니다. 그룹과 기타 권한이 r-x(5)이면 읽기·실행만 가능해, 소유자만 쓰기 권한을 추가로 가집니다."
         },
-        "key_concept": "Linux, 네트워크 OS"
+        "key_concept": "ls -l, 하드링크 수, 디렉터리"
       }
     },
     {
@@ -1110,14 +1110,14 @@
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "4번이 올바른 설명",
-        "why_correct": "SSTP이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "SSTP는 SSL 기반 VPN 프로토콜로 HTTPS 포트(443) 사용",
+        "why_correct": "SSTP(Secure Socket Tunneling Protocol)는 SSL/TLS를 사용하는 Microsoft VPN 프로토콜입니다. HTTPS(443번 포트)로 터널을 구성해 방화벽을 쉽게 통과하며, Windows에 기본 내장됩니다.",
         "why_wrong": {
-          "1": "RADIUS은/는 올바르지 않습니다.",
-          "2": "이 선택지는 틀렸습니다.",
-          "3": "이 선택지는 틀렸습니다."
+          "1": "RADIUS(Remote Authentication Dial-In User Service)는 VPN이나 무선 LAN 접속 시 사용자 인증, 권한 부여, 계정 관리(AAA)를 제공하는 서버 프로토콜입니다. VPN 터널링 프로토콜이 아닙니다.",
+          "2": "PPTP(Point-to-Point Tunneling Protocol)는 Microsoft가 개발한 초기 VPN 프로토콜입니다. TCP 1723 포트를 사용하고 구현이 단순하지만 보안 취약점이 있어 SSTP나 L2TP/IPSec으로 대체됩니다.",
+          "3": "L2TP(Layer 2 Tunneling Protocol)는 PPTP와 L2F를 결합한 VPN 프로토콜입니다. 단독으로는 암호화가 없어 IPSec과 함께 사용하며 UDP 1701 포트를 씁니다."
         },
-        "key_concept": "네트워크 OS"
+        "key_concept": "SSTP, SSL VPN, 443 포트"
       }
     },
     {
@@ -1146,14 +1146,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "2번이 올바른 설명",
-        "why_correct": "top이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "top은 Linux에서 실시간 프로세스와 시스템 자원을 모니터링",
+        "why_correct": "top 명령은 CPU 사용률, 메모리 사용량, 실행 중인 프로세스를 실시간으로 갱신해 표시합니다. 사용량이 많은 프로세스를 즉시 확인하고 kill 등의 관리 작업도 가능합니다.",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "3": "이 선택지는 틀렸습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "1": "ps(process status)는 현재 실행 중인 프로세스의 스냅샷을 표시합니다. 'ps aux'는 모든 프로세스를 보여주지만 실시간 갱신이 없습니다.",
+          "3": "kill 명령은 지정한 PID의 프로세스에 시그널(기본값 SIGTERM)을 보내 종료합니다. 프로세스를 모니터링하지 않고 종료하는 명령입니다.",
+          "4": "nice 명령은 프로세스의 실행 우선순위(nice 값 -20~19)를 설정합니다. 모니터링이 아닌 CPU 스케줄링 우선순위 조정에 사용합니다."
         },
-        "key_concept": "Linux, 네트워크 OS"
+        "key_concept": "top, 실시간 모니터링, 프로세스 관리"
       }
     },
     {
@@ -1182,14 +1182,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "영구적인 IP Address를 필요로 하는 웹 서버에 대해서는",
-        "why_correct": "영구적인 IP Address를 필요로 하는 웹 서버에 대해서는이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "DHCP는 영구 IP가 필요한 서버에는 적합하지 않음",
+        "why_correct": "DHCP는 IP를 임대(lease) 방식으로 동적 할당합니다. 웹 서버·메일 서버처럼 항상 같은 IP로 접속해야 하는 서비스는 고정 IP(static)가 필요하므로 DHCP 동적 할당은 적합하지 않습니다.",
         "why_wrong": {
-          "1": "클라이언트에게 자동으로 IP Address를 은/는 올바르지 않습니다.",
-          "2": "IP Address의 관리가 용이하다.은/는 올바르지 않습니다.",
-          "4": "사용자들이 자주 바뀌는 학교와 같은 환경에서 은/는 올바르지 않습니다."
+          "1": "DHCP는 클라이언트에게 IP, 서브넷 마스크, 게이트웨이, DNS를 자동으로 할당하므로 수동 설정 없이 네트워크 연결이 가능합니다. 올바른 장점입니다.",
+          "2": "DHCP 서버에서 할당된 IP 주소를 중앙에서 추적·관리할 수 있습니다. 어떤 장치가 어떤 IP를 사용 중인지 확인하고 임대 기간 관리가 가능합니다.",
+          "4": "학교·도서관처럼 사용자가 자주 바뀌는 환경에서 DHCP는 수동 IP 관리 없이 자동으로 IP를 할당·회수해 관리 부담을 크게 줄입니다."
         },
-        "key_concept": "DHCP, 네트워크 OS"
+        "key_concept": "DHCP, 동적 할당, 고정 IP 필요 서버"
       }
     },
     {
@@ -1218,14 +1218,14 @@
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "정방향 조회 영역은 도메인 주소를 IP 주소로 변환하는",
-        "why_correct": "정방향 조회 영역은 도메인 주소를 IP 주소로 변환하는이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "정방향 조회: 도메인→IP, 역방향 조회: IP→도메인",
+        "why_correct": "DNS 정방향 조회(Forward Lookup)는 도메인 이름을 IP 주소로 변환합니다. 역방향 조회(Reverse Lookup)는 IP 주소를 도메인 이름으로 변환하며, x.x.x.in-addr.arpa 형식을 사용합니다.",
         "why_wrong": {
-          "2": "정방향 조회 영역에서 이름은 ′x.x.x.in은/는 올바르지 않습니다.",
-          "3": "역방향 조회 영역은 도메인 주소를 IP 주소로은/는 올바르지 않습니다.",
-          "4": "역방향 조회 영역은 외부 질의에 대해 어떤 I은/는 올바르지 않습니다."
+          "2": "x.x.x.in-addr.arpa 형식은 역방향 조회 영역의 이름 형식입니다. 정방향이 아닌 역방향 조회에서 사용합니다.",
+          "3": "역방향 조회 영역은 IP 주소를 도메인으로 변환합니다. '도메인 주소를 IP 주소로 변환'은 정방향 조회의 설명으로 바뀐 것입니다.",
+          "4": "역방향 조회 영역은 외부 DNS 질의 응답이 아닌 IP-도메인 역방향 변환을 위한 것입니다."
         },
-        "key_concept": "DNS, 네트워크 OS"
+        "key_concept": "DNS 정방향/역방향, in-addr.arpa"
       }
     },
     {
@@ -1254,14 +1254,14 @@
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "1번이 올바른 설명",
-        "why_correct": "chown이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "chown은 파일 소유자 변경 명령으로 root만 실행 가능",
+        "why_correct": "chown(change owner)은 파일이나 디렉터리의 소유자(owner)를 변경하는 명령으로, 보안상 root 권한이 있어야 실행할 수 있습니다. 일반 사용자는 자신의 파일 소유권을 다른 사람에게 넘길 수 없습니다.",
         "why_wrong": {
-          "2": "이 선택지는 틀렸습니다.",
-          "3": "이 선택지는 틀렸습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "2": "pwd(Print Working Directory)는 현재 작업 디렉터리 경로를 출력하는 명령으로 일반 사용자도 사용할 수 있습니다.",
+          "3": "ls는 디렉터리 내용을 표시하는 명령으로 일반 사용자가 접근 권한이 있는 디렉터리는 누구나 볼 수 있습니다.",
+          "4": "rm은 파일이나 디렉터리를 삭제하는 명령으로, 자신이 소유한 파일은 일반 사용자도 삭제할 수 있습니다. root 전용 명령이 아닙니다."
         },
-        "key_concept": "Linux, 네트워크 OS"
+        "key_concept": "chown, root 전용, 소유자 변경"
       }
     },
     {
@@ -1290,14 +1290,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "/proc : 시스템 운영 중 파일의 크기가 변하는 파일들을",
-        "why_correct": "/proc : 시스템 운영 중 파일의 크기가 변하는 파일들을이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "/proc는 가상 파일 시스템으로 커널·프로세스 정보를 제공",
+        "why_correct": "/proc는 커널과 실행 중인 프로세스 정보를 파일처럼 접근할 수 있게 하는 가상 파일 시스템입니다. 디스크에 실제로 존재하지 않으며 메모리에서 동적으로 생성됩니다. '파일 크기가 변하는 파일들을 위한 공간'은 /var의 설명에 가깝습니다.",
         "why_wrong": {
-          "1": "/bin : 가장 기본적으로 사용하는 명령어가은/는 올바르지 않습니다.",
-          "2": "/etc : 각 시스템의 고유한 설정 파일들이은/는 올바르지 않습니다.",
-          "4": "/tmp : 임시 파일들을 위한 공간이다.은/는 올바르지 않습니다."
+          "1": "/bin 디렉터리는 ls, cp, mv, rm 등 시스템 기본 명령어의 실행 파일(binary)이 저장되는 위치입니다. 단일 사용자 모드나 복구 환경에서도 접근 가능한 필수 명령어들입니다. 이 설명은 /bin의 역할을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "2": "/etc 디렉터리는 시스템 전반의 설정 파일들이 저장되는 위치입니다. /etc/passwd(사용자 계정), /etc/hosts(호스트 이름), /etc/fstab(마운트 정보) 등 시스템 고유 설정이 위치합니다. 이 설명은 /etc의 역할을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "4": "/tmp 디렉터리는 응용 프로그램과 사용자가 임시 파일을 저장하는 공간으로, 재부팅 시 삭제되는 경우가 많습니다. 컴파일 중간 산출물, 세션 데이터 등이 저장됩니다. 이 설명은 /tmp의 역할을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다."
         },
-        "key_concept": "Linux, 네트워크 OS"
+        "key_concept": "/proc, 가상 파일 시스템, 커널 정보"
       }
     },
     {
@@ -1326,14 +1326,14 @@
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "httpd.conf",
-        "why_correct": "httpd.conf이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "httpd.conf는 Apache 웹 서버의 메인 설정 파일",
+        "why_correct": "httpd.conf는 Apache HTTP 서버의 핵심 설정 파일입니다. 디렉터리 리스팅 방지(Options -Indexes), 심볼릭 링크 사용 방지(Options -FollowSymLinks), SSI 비활성화, CGI 설정 등 서버 보안과 기능 설정이 모두 포함됩니다.",
         "why_wrong": {
-          "2": "httpd-default.conf은/는 올바르지 않습니다.",
-          "3": "httpd-vhosts.conf은/는 올바르지 않습니다.",
-          "4": "httpd-mpm.conf은/는 올바르지 않습니다."
+          "2": "httpd-default.conf는 서버 기본 동작(KeepAlive, Timeout, MaxKeepAliveRequests 등)을 정의하는 보조 설정 파일입니다. 디렉터리 접근 제어 설정의 메인 파일이 아닙니다.",
+          "3": "httpd-vhosts.conf는 가상 호스트 설정을 위한 보조 파일입니다. 여러 도메인을 하나의 서버에서 운영할 때 가상 호스트별 설정을 정의합니다.",
+          "4": "httpd-mpm.conf는 Multi-Processing Module 설정 파일로 Apache의 동시 연결 처리 방식(prefork, worker, event)을 설정합니다. 보안 설정 파일이 아닙니다."
         },
-        "key_concept": "네트워크 OS"
+        "key_concept": "Apache, httpd.conf, 서버 보안 설정"
       }
     },
     {
@@ -1362,14 +1362,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "3번이 올바른 설명",
-        "why_correct": "컨테이너이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "컨테이너는 Hyper-V보다 가볍고 빠른 OS 수준 가상화",
+        "why_correct": "Windows Server 2016에서 추가된 컨테이너(Windows Containers)는 커널을 공유하여 전체 OS를 가상화하는 Hyper-V보다 훨씬 가볍고 빠르게 생성·배포·삭제할 수 있습니다. Docker와 통합되어 마이크로서비스 환경에 적합합니다.",
         "why_wrong": {
-          "1": "액티브 디렉터리은/는 올바르지 않습니다.",
-          "2": "원격 데스크톱 서비스은/는 올바르지 않습니다.",
-          "4": "분산파일서비스은/는 올바르지 않습니다."
+          "1": "액티브 디렉터리(Active Directory)는 사용자 계정, 컴퓨터, 그룹 정책을 중앙 관리하는 디렉터리 서비스입니다. Windows 2000부터 있어온 기능으로 가상화 신기능이 아닙니다.",
+          "2": "원격 데스크톱 서비스(RDS)는 서버에서 응용 프로그램을 실행하고 클라이언트에 화면을 전송하는 서비스입니다. 오래된 기능으로 2016 신기능이 아닙니다.",
+          "4": "분산 파일 서비스(DFS)는 여러 서버에 분산된 공유 폴더를 하나의 네임스페이스로 통합하는 기능입니다. 가상화와 다른 스토리지 관리 기능입니다."
         },
-        "key_concept": "Windows, 네트워크 OS"
+        "key_concept": "컨테이너, 경량 가상화, Docker"
       }
     },
     {
@@ -1398,14 +1398,14 @@
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "1번이 올바른 설명",
-        "why_correct": "라운드 로빈이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "DNS 라운드 로빈은 동일 도메인에 복수 IP로 트래픽 분산",
+        "why_correct": "DNS 라운드 로빈은 같은 호스트 이름에 여러 IP를 등록하고 DNS 응답마다 순서를 달리해 요청을 여러 서버에 분산합니다. 별도 로드 밸런서 없이 간단한 부하 분산을 구현합니다.",
         "why_wrong": {
-          "2": "캐시플러그인은/는 올바르지 않습니다.",
-          "3": "이 선택지는 틀렸습니다.",
-          "4": "AzureAutoScaling은/는 올바르지 않습니다."
+          "2": "캐시 플러그인은 웹 서버에서 자주 요청하는 콘텐츠를 메모리에 캐시해 응답 속도를 높이는 기능입니다. DNS 부하 분산 방식이 아닙니다.",
+          "3": "캐시 서버는 DNS 응답을 일정 시간 캐시해 동일 질의에 빠르게 응답하는 서버입니다. 부하 분산이 아닌 응답 속도 향상이 목적입니다.",
+          "4": "Azure Auto Scaling은 Azure 클라우드의 트래픽에 따라 서버를 자동으로 추가하거나 제거하는 기능입니다. DNS 설정 방식이 아닙니다."
         },
-        "key_concept": "DNS, 장비 운용"
+        "key_concept": "DNS 라운드 로빈, 부하 분산, 복수 레코드"
       }
     },
     {
@@ -1434,14 +1434,14 @@
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "장애 조치 구성에서 필요한 만큼 물리적인 컴퓨터를 사",
-        "why_correct": "장애 조치 구성에서 필요한 만큼 물리적인 컴퓨터를 사이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Hyper-V는 필요에 따라 물리 컴퓨터를 추가할 수 없음",
+        "why_correct": "Hyper-V 가상화는 기존 물리 서버를 활용해 VM을 운용합니다. '장애 조치 구성에서 필요한 만큼 물리 컴퓨터를 사용한다'는 설명은 클라우드 탄력적 확장 개념으로, 온프레미스 Hyper-V의 기본 기능이 아닙니다.",
         "why_wrong": {
-          "1": "하드웨어 사용률을 높여 물리적인 서버의 운영 은/는 올바르지 않습니다.",
-          "2": "서버 작업을 실행하는데 필요한 하드웨어 양을 은/는 올바르지 않습니다.",
-          "3": "테스트 환경 재현 시간을 줄여 개발 및 테스트은/는 올바르지 않습니다."
+          "1": "가상화로 하나의 물리 서버에 여러 VM을 통합하면 하드웨어 사용률이 높아지고 물리적 서버 수와 운영 비용이 줄어듭니다.",
+          "2": "여러 서비스를 별도 VM으로 분리해 필요한 최소 사양 하드웨어를 공유하므로 전체 하드웨어 비용이 줄어듭니다.",
+          "3": "VM 스냅샷으로 다양한 소프트웨어 환경을 빠르게 재현하고 롤백할 수 있어 개발·테스트 효율성이 향상됩니다."
         },
-        "key_concept": "Windows, 장비 운용"
+        "key_concept": "Hyper-V, 가상화 장점, 물리 서버 통합"
       }
     },
     {
@@ -1470,14 +1470,14 @@
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "ReFS는 FAT32의 장점과 호환성을 최대한 유지한다.",
-        "why_correct": "ReFS는 FAT32의 장점과 호환성을 최대한 유지한다.이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "ReFS는 NTFS 계열로 FAT32와 호환성이 없음",
+        "why_correct": "ReFS(Resilient File System)는 NTFS를 기반으로 한 고신뢰성 파일 시스템으로 FAT32와 다른 구조를 가집니다. FAT32의 호환성을 유지하지 않으며, 오히려 NTFS에서 개선된 기능을 제공합니다.",
         "why_wrong": {
-          "1": "NTFS는 퍼미션을 사용할 수 있어서 접근 권은/는 올바르지 않습니다.",
-          "2": "NTFS는 파일 시스템의 암호화를 지원한다.은/는 올바르지 않습니다.",
-          "3": "ReFS는 데이터 오류를 자동으로 확인하고 수은/는 올바르지 않습니다."
+          "1": "NTFS(NT File System)는 파일과 폴더에 대해 사용자·그룹별로 읽기, 쓰기, 실행, 수정, 전체 제어 등 세밀한 접근 권한을 설정할 수 있는 퍼미션(ACL) 시스템을 지원합니다. 이 설명은 NTFS의 권한 관리 기능을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "2": "NTFS는 EFS(Encrypting File System)를 통해 파일 및 폴더 단위의 암호화를 지원합니다. 특정 사용자만 암호화된 파일에 접근할 수 있도록 보호합니다. 파일 시스템 암호화를 지원한다는 설명은 정확하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "3": "ReFS(Resilient File System)는 데이터 무결성 스트림(Integrity Streams)을 통해 디스크에 저장된 데이터가 손상됐는지 자동으로 검사하고, 미러링 스토리지와 함께 사용할 때 오류를 자동으로 수정합니다. 이 설명은 ReFS의 핵심 기능을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다."
         },
-        "key_concept": "Windows, 장비 운용"
+        "key_concept": "ReFS, NTFS 기반, FAT32 비호환"
       }
     },
     {
@@ -1506,14 +1506,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "Domain Local Group",
-        "why_correct": "Domain Local Group이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Domain Local Group은 같은 도메인 내 리소스 권한 부여용",
+        "why_correct": "Domain Local Group은 Active Directory에서 특정 도메인 내의 리소스(파일 서버, 프린터 등)에 접근 권한을 부여할 때 사용합니다. 같은 도메인은 물론 트러스트된 다른 도메인의 사용자도 구성원이 될 수 있습니다.",
         "why_wrong": {
-          "1": "Global Group은/는 올바르지 않습니다.",
-          "3": "Universal Group은/는 올바르지 않습니다.",
-          "4": "Organizational Unit은/는 올바르지 않습니다."
+          "1": "Global Group은 같은 도메인의 사용자를 묶어 다른 도메인 리소스에 접근 권한을 부여할 때 사용합니다. 도메인 간 경계를 넘어 리소스에 접근하는 방향이 Domain Local과 반대입니다.",
+          "3": "Universal Group은 포리스트 내 모든 도메인의 사용자를 구성원으로 포함할 수 있는 그룹입니다. 포리스트 전반의 리소스 접근에 사용되며 도메인 단위 관리와 다릅니다.",
+          "4": "OU(Organizational Unit, 조직 구성 단위)는 도메인 내 개체(사용자, 컴퓨터, 그룹)를 부서별로 구성하는 논리적 컨테이너입니다. 그룹 정책 적용 단위이며 권한 부여 그룹이 아닙니다."
         },
-        "key_concept": "Windows, 장비 운용"
+        "key_concept": "Domain Local Group, 리소스 권한, AD"
       }
     },
     {
@@ -1542,14 +1542,14 @@
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "′구독′을 통해 관리자는 로컬 시스템의 이벤트에 대한 주",
-        "why_correct": "′구독′을 통해 관리자는 로컬 시스템의 이벤트에 대한 주이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "이벤트 구독은 원격 컴퓨터 이벤트를 로컬에서 수집",
+        "why_correct": "Windows 이벤트 뷰어의 '구독(Subscription)' 기능은 원격 컴퓨터의 이벤트 로그를 로컬 시스템으로 수집하는 기능입니다. '로컬 시스템의 이벤트에 대한 주요 정보만 제공'이라는 설명이 틀렸습니다.",
         "why_wrong": {
-          "1": "′이 이벤트에 작업 연결′은 이벤트 발생 시 은/는 올바르지 않습니다.",
-          "2": "′현재 로그 필터링′을 통해 특정 이벤트 로그은/는 올바르지 않습니다.",
-          "3": "사용자 지정 보기를 XML로도 작성할 수 있다은/는 올바르지 않습니다."
+          "1": "이벤트 뷰어의 '이 이벤트에 작업 연결(Attach Task to This Event)' 기능을 사용하면 특정 이벤트가 발생할 때 프로그램 실행, 이메일 발송, 스크립트 실행 등 자동 작업을 트리거할 수 있습니다. 이 설명은 해당 기능을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "2": "이벤트 뷰어의 '현재 로그 필터링' 기능은 이벤트 수준(오류/경고/정보), 날짜 범위, 이벤트 ID, 소스, 키워드 등으로 원하는 이벤트만 골라 볼 수 있습니다. 이 설명은 필터링 기능을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "3": "이벤트 뷰어에서 사용자 지정 보기(Custom View)를 만들 때 XML 쿼리 편집기로 세밀한 필터 조건을 직접 작성할 수 있습니다. GUI로 설정하기 어려운 복합 조건을 XML로 표현 가능합니다. 이 설명은 정확하므로 '옳지 않은 것'에 해당하지 않습니다."
         },
-        "key_concept": "Windows, 장비 운용"
+        "key_concept": "이벤트 뷰어, 구독, 원격 이벤트 수집"
       }
     },
     {
@@ -1578,14 +1578,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "netstat - r",
-        "why_correct": "netstat - r이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "netstat -r은 라우팅 테이블을 표시",
+        "why_correct": "netstat -r(또는 -rn)은 현재 시스템의 라우팅 테이블을 표시합니다. 목적지 네트워크, 게이트웨이, 인터페이스, 메트릭 등의 정보를 확인할 수 있습니다.",
         "why_wrong": {
-          "1": "netstat – a은/는 올바르지 않습니다.",
-          "3": "netstat – n은/는 올바르지 않습니다.",
-          "4": "netstat - s은/는 올바르지 않습니다."
+          "1": "netstat -a는 모든 활성 연결(TCP, UDP)과 대기 포트를 표시합니다. 라우팅 테이블이 아닌 현재 연결 상태를 보여줍니다.",
+          "3": "netstat -n은 주소와 포트를 이름 대신 숫자로 표시합니다. 단독으로 사용하면 연결 목록을 숫자 형식으로 보여주며 라우팅 테이블은 아닙니다.",
+          "4": "netstat -s는 프로토콜별(TCP, UDP, ICMP 등) 통계(전송/수신 패킷 수, 오류 등)를 표시합니다. 라우팅 테이블이 아닌 프로토콜 통계입니다."
         },
-        "key_concept": "Windows, 장비 운용"
+        "key_concept": "netstat -r, 라우팅 테이블"
       }
     },
     {
@@ -1614,14 +1614,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "inetmgr.exe",
-        "why_correct": "inetmgr.exe이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "inetmgr.exe는 IIS(인터넷 정보 서비스) 관리자 실행 명령",
+        "why_correct": "inetmgr.exe(Internet Information Services Manager)는 IIS 관리 콘솔을 실행하는 명령입니다. 실행 대화상자(Win+R)에 입력하거나 명령 프롬프트에서 실행해 IIS를 관리할 수 있습니다.",
         "why_wrong": {
-          "1": "wf.msc은/는 올바르지 않습니다.",
-          "2": "msconfig은/는 올바르지 않습니다.",
-          "4": "dsac.exe은/는 올바르지 않습니다."
+          "1": "wf.msc는 Windows Firewall with Advanced Security(고급 보안 포함 Windows 방화벽) 관리 콘솔을 실행합니다. IIS 관리자가 아닌 방화벽 규칙을 설정합니다.",
+          "2": "msconfig는 Windows 시스템 구성 유틸리티로 부팅 옵션, 서비스, 시작 프로그램을 설정합니다. IIS 관리와 관련이 없습니다.",
+          "4": "dsac.exe는 Active Directory Administrative Center를 실행하는 명령입니다. AD 사용자·그룹·OU 관리에 사용하며 IIS 관리자와 다릅니다."
         },
-        "key_concept": "장비 운용"
+        "key_concept": "inetmgr.exe, IIS 관리자"
       }
     },
     {
@@ -1650,14 +1650,14 @@
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "Repeater",
-        "why_correct": "Repeater이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "리피터(Repeater)는 감쇠된 신호를 재생하는 네트워크 장비",
+        "why_correct": "리피터(Repeater)는 케이블을 통해 전송되면서 감쇠(약해진) 신호를 원래 강도로 증폭·재생(regenerate)하여 통신 거리를 연장합니다. OSI 1계층(물리 계층) 장비입니다.",
         "why_wrong": {
-          "1": "Gateway은/는 올바르지 않습니다.",
-          "2": "Router은/는 올바르지 않습니다.",
-          "3": "Bridge은/는 올바르지 않습니다."
+          "1": "게이트웨이(Gateway)는 서로 다른 프로토콜을 사용하는 네트워크 간 프로토콜 변환을 담당하는 장비입니다. 신호 재생이 아닌 네트워크 간 통신 중계가 목적입니다.",
+          "2": "라우터(Router)는 IP 주소를 기반으로 최적 경로를 계산해 패킷을 전달하는 Layer 3 장비입니다. 신호 재생보다는 경로 결정이 핵심 기능입니다.",
+          "3": "브리지(Bridge)는 MAC 주소 기반으로 서로 다른 LAN 세그먼트를 연결하는 Layer 2 장비입니다. 신호를 단순 증폭하는 것이 아닌 프레임을 필터링해 전달합니다."
         },
-        "key_concept": "장비 운용"
+        "key_concept": "리피터, 신호 재생, 물리 계층"
       }
     },
     {
@@ -1686,14 +1686,14 @@
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "광 케이블(Optical Cable)",
-        "why_correct": "광 케이블(Optical Cable)이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "코어+클래딩 구조로 빛을 전달하는 매체는 광 케이블",
+        "why_correct": "광 케이블(Optical Fiber Cable)은 굴절률이 높은 유리/플라스틱 코어(Core)와 굴절률이 낮은 클래딩(Cladding)으로 구성됩니다. 빛이 전반사를 반복하며 코어 내부에서만 전파되어 장거리 고속 전송이 가능합니다.",
         "why_wrong": {
-          "1": "이중 나선(Twisted Pair)은/는 올바르지 않습니다.",
-          "2": "동축 케이블(Coaxial Cable)은/는 올바르지 않습니다.",
-          "3": "2선식 개방 선로(Two-Wire Open L은/는 올바르지 않습니다."
+          "1": "이중 나선(Twisted Pair) 케이블은 절연된 구리 선 두 가닥을 꼬아 만든 전기 신호 전송 매체입니다. 코어·클래딩 구조가 없으며 전자기 간섭에 취약합니다.",
+          "2": "동축 케이블(Coaxial Cable)은 중심 구리 도체를 절연체, 금속 차폐층, 외피로 감싼 전기 신호 전송 매체입니다. 광신호가 아닌 전기 신호를 전달합니다.",
+          "3": "2선식 개방 선로(Two-Wire Open Lines)는 두 개의 평행 도체로 구성된 초기형 전송 선로입니다. 코어·클래딩이 없는 단순 구리 선 방식입니다."
         },
-        "key_concept": "장비 운용"
+        "key_concept": "광 케이블, 코어, 클래딩, 전반사"
       }
     },
     {
@@ -1722,14 +1722,14 @@
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "1번이 올바른 설명",
-        "why_correct": "MAC 주소이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "L2 스위치는 MAC 주소를 기반으로 프레임을 중계",
+        "why_correct": "L2 스위치(Layer 2 Switch)는 각 포트의 MAC 주소 테이블을 유지하고, 수신된 이더넷 프레임의 목적지 MAC 주소를 확인해 해당 포트로만 전달합니다. 불필요한 브로드캐스트를 줄이고 충돌 도메인을 분리합니다.",
         "why_wrong": {
-          "2": "이 선택지는 틀렸습니다.",
-          "3": "Post 주소은/는 올바르지 않습니다.",
-          "4": "URL 주소은/는 올바르지 않습니다."
+          "2": "IP 주소는 네트워크 계층(Layer 3) 정보입니다. L3 스위치나 라우터가 IP 주소를 기반으로 패킷을 라우팅합니다. L2 스위치는 IP를 인식하지 않습니다.",
+          "3": "Post 주소는 존재하지 않는 용어입니다. Port(포트) 번호는 전송 계층(Layer 4) 정보로 L4 스위치가 사용하며, L2 스위치의 중계 기준이 아닙니다.",
+          "4": "URL(Uniform Resource Locator)은 응용 계층(Layer 7)에서 웹 리소스를 식별하는 주소 형식입니다. L2 스위치는 응용 계층 정보를 처리하지 않습니다."
         },
-        "key_concept": "장비 운용"
+        "key_concept": "L2 스위치, MAC 주소, 프레임 중계"
       }
     },
     {
@@ -1758,14 +1758,14 @@
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "Memory 용량 증가",
-        "why_correct": "Memory 용량 증가이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "RAID는 디스크 용량·속도·안정성 향상, 메모리 용량과 무관",
+        "why_correct": "RAID(Redundant Array of Independent Disks)는 여러 디스크를 묶어 데이터를 분산·중복 저장하는 스토리지 기술입니다. 디스크 성능과 안정성을 높이지만 RAM 등 메모리 용량 증가와는 전혀 관련이 없습니다.",
         "why_wrong": {
-          "1": "여러 개의 Disk에 일부 중복된 데이터를 나은/는 올바르지 않습니다.",
-          "2": "read/write 속도를 증가은/는 올바르지 않습니다.",
-          "4": "데이터를 안전하게 백업은/는 올바르지 않습니다."
+          "1": "RAID는 여러 개의 디스크에 데이터를 분산 저장하고, RAID-1이나 RAID-5처럼 일부 중복 데이터(미러 또는 패리티)를 유지합니다. 디스크 하나가 고장 나더라도 나머지 디스크로 데이터를 복구할 수 있습니다. 이 설명은 RAID의 기본 동작을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "2": "RAID-0은 데이터를 여러 디스크에 동시에 병렬로 읽고 씁니다(스트라이핑). 단일 디스크에서 순차적으로 읽는 것보다 I/O 대역폭이 향상됩니다. read/write 속도를 증가시킨다는 설명은 RAID-0의 장점을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다.",
+          "4": "RAID-1(미러링), RAID-5(분산 패리티), RAID-6(이중 패리티) 등은 디스크 고장 시에도 데이터를 복구할 수 있는 중복 구조를 제공합니다. 데이터를 안전하게 보호한다는 설명은 이러한 RAID 레벨의 특징을 정확히 기술하므로 '옳지 않은 것'에 해당하지 않습니다."
         },
-        "key_concept": "RAID, 보안 개념"
+        "key_concept": "RAID, 디스크 안정성, 메모리 무관"
       }
     },
     {
@@ -1794,14 +1794,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "2번이 올바른 설명",
-        "why_correct": "Hub이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "허브(Hub)는 물리 계층에서 신호를 모든 포트로 재전달",
+        "why_correct": "허브(Hub)는 OSI 1계층(물리 계층)에서 동작하며 입력 신호를 전기적으로 재생(amplify)하여 연결된 모든 포트로 동시에 전달합니다. MAC 주소 인식 없이 단순 신호 분배를 합니다.",
         "why_wrong": {
-          "1": "Bridge은/는 올바르지 않습니다.",
-          "3": "L2 Switch은/는 올바르지 않습니다.",
-          "4": "Router은/는 올바르지 않습니다."
+          "1": "브리지(Bridge)는 OSI 2계층(데이터 링크 계층)에서 동작합니다. MAC 주소를 학습해 해당 포트로만 프레임을 전달하고 불필요한 트래픽을 차단합니다.",
+          "3": "L2 스위치는 OSI 2계층에서 동작하는 장비입니다. MAC 주소 테이블로 지능적인 프레임 전달을 하며 포트별 충돌 도메인을 분리합니다.",
+          "4": "라우터(Router)는 OSI 3계층(네트워크 계층)에서 동작합니다. IP 주소 기반 경로 결정으로 서로 다른 네트워크 간 패킷을 전달합니다."
         },
-        "key_concept": "보안 개념"
+        "key_concept": "허브, 물리 계층, 신호 재생"
       }
     }
   ]
