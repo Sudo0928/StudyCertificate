@@ -56,7 +56,7 @@
         },
         {
           "key": 3,
-          "text": "이웃 요청과 광고 메시지(Neighbor Solicitation and"
+          "text": "이웃 요청과 광고 메시지(Neighbor Solicitation and Advertisement)"
         },
         {
           "key": 4,
@@ -120,19 +120,19 @@
       "options": [
         {
           "key": 1,
-          "text": "종단 간 흐름 제어를 위해 동적 윈도우(Dynamic Sliding"
+          "text": "종단 간 흐름 제어를 위해 동적 윈도우(Dynamic Sliding Window) 방식을 사용한다."
         },
         {
           "key": 2,
-          "text": "한 번에 많은 데이터의 전송에 유리하기 때문에 화상 통"
+          "text": "한 번에 많은 데이터의 전송에 유리하기 때문에 화상 통 신과 같은 실시간 통신에 사용된다."
         },
         {
           "key": 3,
-          "text": "송수신되는 데이터의 에러를 제어함으로서 신뢰성 있는"
+          "text": "송수신되는 데이터의 에러를 제어함으로서 신뢰성 있는 데이터 전송을 보장한다."
         },
         {
           "key": 4,
-          "text": "Three Way Handshaking 과정을 통해 데이터를 주고받는"
+          "text": "Three Way Handshaking 과정을 통해 데이터를 주고받는 다."
         }
       ],
       "answer": 2,
@@ -268,11 +268,11 @@
         },
         {
           "key": 2,
-          "text": "원격 호스트까지의 패킷이 도달하는 왕복 시간을 측정할"
+          "text": "원격 호스트까지의 패킷이 도달하는 왕복 시간을 측정할 수 있다."
         },
         {
           "key": 3,
-          "text": "원격 호스트에 네트워크 오류가 있을 경우, 이를 확인하"
+          "text": "원격 호스트에 네트워크 오류가 있을 경우, 이를 확인하 고 오류를 정정해 준다."
         },
         {
           "key": 4,
@@ -408,15 +408,15 @@
       "options": [
         {
           "key": 1,
-          "text": "ping 명령어를 이용하여 목적지(www.icqa.or.kr)와 정상"
+          "text": "ping 명령어를 이용하여 목적지(www.icqa.or.kr)와 정상 적으로 통신되었음을 확인하였다."
         },
         {
           "key": 2,
-          "text": "ping 명령어를 이용하여 요청하고 응답받은 데이터의 사"
+          "text": "ping 명령어를 이용하여 요청하고 응답받은 데이터의 사 이즈는 32바이트이다."
         },
         {
           "key": 3,
-          "text": "ping 명령어를 이용하여 요청하고 응답받은 시간은 평균"
+          "text": "ping 명령어를 이용하여 요청하고 응답받은 시간은 평균 2ms 이다."
         },
         {
           "key": 4,
@@ -516,19 +516,19 @@
       "options": [
         {
           "key": 1,
-          "text": "Network Interface - Internet - Transport -"
+          "text": "Network Interface - Internet - Transport - Application"
         },
         {
           "key": 2,
-          "text": "Application - Network Interface - Internet -"
+          "text": "Application - Network Interface - Internet - Transport"
         },
         {
           "key": 3,
-          "text": "Transport - Application - Network Interface -"
+          "text": "Transport - Application - Network Interface - Internet"
         },
         {
           "key": 4,
-          "text": "Internet - Transport - Application - Network"
+          "text": "Internet - Transport - Application - Network Interface"
         }
       ],
       "answer": 1,
@@ -596,11 +596,11 @@
         },
         {
           "key": 3,
-          "text": "IP Address를 효율적으로 관리하기 위한 서비스로 IP"
+          "text": "IP Address를 효율적으로 관리하기 위한 서비스로 IP Address 및 Subnet Mask, Gateway Address를 자동으 로 할당해 준다."
         },
         {
           "key": 4,
-          "text": "계층적 이름 구조를 갖는 분산형 데이터베이스로 구성되"
+          "text": "계층적 이름 구조를 갖는 분산형 데이터베이스로 구성되 고 클라이언트·서버 모델을 사용한다."
         }
       ],
       "answer": 3,
@@ -636,7 +636,7 @@
         },
         {
           "key": 4,
-          "text": "Link의 관리기능"
+          "text": "Link의"
         }
       ],
       "answer": 3,
@@ -1009,7 +1009,8 @@
           "3": "A(Address) 레코드는 도메인 이름을 IPv4 주소로 직접 매핑하는 레코드입니다. 도메인→IP 변환이지 도메인→도메인 별칭 연결이 아닙니다.",
           "4": "PTR(Pointer) 레코드는 IP 주소를 도메인 이름으로 변환하는 역방향 조회에 사용됩니다. 별칭 연결이 아닌 역방향 매핑입니다."
         },
-        "key_concept": "CNAME, DNS 레코드, 별칭"
+        "key_concept": "CNAME, DNS 레코드, 별칭",
+        "historical_note": "Windows Server 2008 R2는 2020년 1월 지원이 종료되었습니다(확장 보안 업데이트는 2023년 1월 종료). 본 문항은 학습 참고용 자료입니다."
       }
     },
     {
@@ -1020,19 +1021,19 @@
       "options": [
         {
           "key": 1,
-          "text": "IIS 관리자를 통해 웹 사이트에 FTP 기능을 추가할 수"
+          "text": "IIS 관리자를 통해 웹 사이트에 FTP 기능을 추가할 수 있다."
         },
         {
           "key": 2,
-          "text": "특정 사용자별로 읽기와 쓰기 권한 조절이 가능해 익명"
+          "text": "특정 사용자별로 읽기와 쓰기 권한 조절이 가능해 익명 사용자도 쓰기가 가능하다."
         },
         {
           "key": 3,
-          "text": "폴더에 NTFS 쓰기 권한이 없더라도 FTP 쓰기 권한이"
+          "text": "폴더에 NTFS 쓰기 권한이 없더라도 FTP 쓰기 권한이 있으면 쓰기가 가능하다."
         },
         {
           "key": 4,
-          "text": "특정 IP주소나 서브넷에서의 접속을 허용하거나 막을 수"
+          "text": "특정 IP주소나 서브넷에서의 접속을 허용하거나 막을 수 있다."
         }
       ],
       "answer": 3,
@@ -1045,7 +1046,8 @@
           "2": "특정 사용자별로 읽기와 쓰기 권한 조절이 가능한 것은 IIS FTP의 실제 기능입니다. 익명 사용자, 특정 계정 그룹에 따라 권한을 다르게 설정할 수 있습니다.",
           "4": "특정 IP 주소나 서브넷에서의 접속 허용·차단은 IIS FTP의 실제 기능입니다. IP 주소 및 도메인 제한 기능으로 ACL(접근 제어 목록)을 설정합니다."
         },
-        "key_concept": "FTP, NTFS 권한, IIS, 파일 업로드"
+        "key_concept": "FTP, NTFS 권한, IIS, 파일 업로드",
+        "historical_note": "Windows Server 2008 R2는 2020년 1월 지원이 종료되었습니다(확장 보안 업데이트는 2023년 1월 종료). 본 문항은 학습 참고용 자료입니다."
       }
     },
     {
@@ -1060,7 +1062,7 @@
         },
         {
           "key": 2,
-          "text": "소유자와 같은 그룹을 제외한 다른 모든 사용자는 실행"
+          "text": "소유자와 같은 그룹을 제외한 다른 모든 사용자는 실행 권한만을 갖는다."
         },
         {
           "key": 3,
@@ -1225,7 +1227,8 @@
           "3": "PowerShell 스크립트(.ps1 파일)는 일반 텍스트 파일로 구성됩니다. 노트패드 등 텍스트 편집기로 작성할 수 있으며 사람이 읽을 수 있는 형태입니다.",
           "4": "PowerShell은 기본적으로 대소문자를 구분하지 않습니다. Get-ChildItem, get-childitem, GET-CHILDITEM 모두 동일하게 동작합니다."
         },
-        "key_concept": "PowerShell, DOS 호환, 하위 호환성"
+        "key_concept": "PowerShell, DOS 호환, 하위 호환성",
+        "historical_note": "Windows Server 2008 R2는 2020년 1월 지원이 종료되었습니다(확장 보안 업데이트는 2023년 1월 종료). 본 문항은 학습 참고용 자료입니다."
       }
     },
     {
@@ -1248,7 +1251,7 @@
         },
         {
           "key": 4,
-          "text": "일반적으로 암호의 길이 및 특수문자 등을 저장할 수 없"
+          "text": "일반적으로 암호의 길이 및 특수문자 등을 저장할 수 없 다."
         }
       ],
       "answer": 4,
@@ -1261,7 +1264,8 @@
           "2": "Administrator 계정은 이름 변경은 가능하지만 삭제할 수 없습니다. 보안상 이름을 바꾸는 것이 권장되며, 비활성화는 가능하지만 삭제는 불가입니다.",
           "3": "Administrator 계정은 Administrators 그룹의 구성원입니다. 이 그룹에 속한 계정은 시스템에 대한 완전한 제어 권한을 갖습니다."
         },
-        "key_concept": "Administrator, Windows 계정, 암호 설정"
+        "key_concept": "Administrator, Windows 계정, 암호 설정",
+        "historical_note": "Windows Server 2008 R2는 2020년 1월 지원이 종료되었습니다(확장 보안 업데이트는 2023년 1월 종료). 본 문항은 학습 참고용 자료입니다."
       }
     },
     {
@@ -1380,7 +1384,7 @@
       "options": [
         {
           "key": 1,
-          "text": "동적 콘텐츠의 HTTP 압축을 구성하는 인프라를 제공한"
+          "text": "동적 콘텐츠의 HTTP 압축을 구성하는 인프라를 제공한 다."
         },
         {
           "key": 2,
@@ -1405,7 +1409,8 @@
           "2": "TCP/IP 네트워크에 대한 이름을 확인(Name Resolution)하는 것은 DNS(Domain Name System)의 역할입니다. DHCP는 이름 해석이 아닌 IP 할당을 담당합니다.",
           "4": "사설 IP 주소를 공인 IP 주소로 변환하는 것은 NAT(Network Address Translation)의 기능입니다. 라우터나 방화벽에서 동작하며 DHCP와는 완전히 다른 역할입니다."
         },
-        "key_concept": "DHCP, IP 자동 할당, 네트워크 자원 관리"
+        "key_concept": "DHCP, IP 자동 할당, 네트워크 자원 관리",
+        "historical_note": "Windows Server 2008 R2는 2020년 1월 지원이 종료되었습니다(확장 보안 업데이트는 2023년 1월 종료). 본 문항은 학습 참고용 자료입니다."
       }
     },
     {
@@ -1441,7 +1446,8 @@
           "2": "iisstart.htm이 기본 문서 목록에 있지만, 다른 파일보다 낮은 우선순위로 설정되어 있어 선택되지 않습니다.",
           "3": "index.html이 기본 문서 목록에 있지만, 그림에서 보이는 순서에서 index.htm보다 낮은 우선순위에 있어 먼저 서비스되지 않습니다."
         },
-        "key_concept": "IIS, 기본 문서, Default Document 우선순위"
+        "key_concept": "IIS, 기본 문서, Default Document 우선순위",
+        "historical_note": "Windows Server 2008 R2는 2020년 1월 지원이 종료되었습니다(확장 보안 업데이트는 2023년 1월 종료). 본 문항은 학습 참고용 자료입니다."
       }
     },
     {
@@ -1456,7 +1462,7 @@
         },
         {
           "key": 2,
-          "text": "′ps afx′ 명령어를 실행시켜보면 데몬 프로그램의 활동"
+          "text": "′ps afx′ 명령어를 실행시켜보면 데몬 프로그램의 활동 을 확인할 수 있다."
         },
         {
           "key": 3,
@@ -1513,7 +1519,8 @@
           "3": "가상 컴퓨터 마법사에서 기존 VHD 파일에 연결하거나 새 VHD를 생성하여 VM의 저장 공간을 구성합니다. 이 항목은 마법사에 포함됩니다.",
           "4": "가상 컴퓨터 마법사에서 VM의 이름과 저장 위치(경로)를 지정합니다. 이 항목은 마법사의 첫 번째 단계에 포함됩니다."
         },
-        "key_concept": "Hyper-V, VM 마법사, 장애 조치 클러스터"
+        "key_concept": "Hyper-V, VM 마법사, 장애 조치 클러스터",
+        "historical_note": "Windows Server 2008 R2는 2020년 1월 지원이 종료되었습니다(확장 보안 업데이트는 2023년 1월 종료). 본 문항은 학습 참고용 자료입니다."
       }
     },
     {
@@ -1560,19 +1567,19 @@
       "options": [
         {
           "key": 1,
-          "text": "shutdown -r now 'Warning! After 5 minutes will be"
+          "text": "shutdown -r now 'Warning! After 5 minutes will be system shutdown!!'"
         },
         {
           "key": 2,
-          "text": "shutdown now 'Warning! After 5 minutes will be"
+          "text": "shutdown now 'Warning! After 5 minutes will be system shutdown!!'"
         },
         {
           "key": 3,
-          "text": "shutdown -r +5 'Warning! After 5 minutes will be"
+          "text": "shutdown -r +5 'Warning! After 5 minutes will be system shutdown!!'"
         },
         {
           "key": 4,
-          "text": "shutdown +5 'Warning! After 5 minutes will be"
+          "text": "shutdown +5 'Warning! After 5 minutes will be system shutdown!!'"
         }
       ],
       "answer": 3,
@@ -1621,7 +1628,8 @@
           "2": "보안 로그는 Windows 로그의 실제 항목으로, 성공·실패 로그인, 객체 접근 등 보안 관련 이벤트를 저장합니다. 이 설명은 올바릅니다.",
           "3": "시스템 로그는 Windows 로그의 실제 항목으로, Windows 컴포넌트(드라이버, 서비스 등)가 기록하는 이벤트를 저장합니다. 이 설명은 올바릅니다."
         },
-        "key_concept": "이벤트 뷰어, Windows 로그, 이벤트 심각도"
+        "key_concept": "이벤트 뷰어, Windows 로그, 이벤트 심각도",
+        "historical_note": "Windows Server 2008 R2는 2020년 1월 지원이 종료되었습니다(확장 보안 업데이트는 2023년 1월 종료). 본 문항은 학습 참고용 자료입니다."
       }
     },
     {
@@ -1704,19 +1712,19 @@
       "options": [
         {
           "key": 1,
-          "text": "Dummy Hub – 가격이 비싸고 기능이 많은 지능형 허브"
+          "text": "Dummy Hub – 가격이 비싸고 기능이 많은 지능형 허브 이다."
         },
         {
           "key": 2,
-          "text": "Passive Hub – Active Hub 보다 먼 거리를 연결할 수"
+          "text": "Passive Hub – Active Hub 보다 먼 거리를 연결할 수 있다."
         },
         {
           "key": 3,
-          "text": "Intelligent Hub – 망 관리 기능 등의 부가적인 기능이"
+          "text": "Intelligent Hub – 망 관리 기능 등의 부가적인 기능이 있다."
         },
         {
           "key": 4,
-          "text": "Active Hub - 전원 공급 장치가 따로 없어서 신호재생"
+          "text": "Active Hub - 전원 공급 장치가 따로 없어서 신호재생 이나 증폭이 불가능하다."
         }
       ],
       "answer": 3,
@@ -1776,11 +1784,11 @@
       "options": [
         {
           "key": 1,
-          "text": "네트워크 내에서 NIC는 유일한 MAC 주소를 가지고 있"
+          "text": "네트워크 내에서 NIC는 유일한 MAC 주소를 가지고 있 다."
         },
         {
           "key": 2,
-          "text": "일반적으로 컴퓨터의 NIC를 교체하는 경우에 이전에 사"
+          "text": "일반적으로 컴퓨터의 NIC를 교체하는 경우에 이전에 사 용하던 MAC 주소를 할당해야 한다."
         },
         {
           "key": 3,

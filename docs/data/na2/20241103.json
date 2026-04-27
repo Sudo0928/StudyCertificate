@@ -4,55 +4,1805 @@
   "label": "2024년 11월 03일",
   "total_questions": 50,
   "questions": [
-    {"id":"na2_20241103_001","number":1,"subject_id":"tcpip","text":"TCP/IP에서 데이터 링크층의 데이터 단위는?","options":[{"key":1,"text":"메시지"},{"key":2,"text":"세그먼트"},{"key":3,"text":"데이터그램"},{"key":4,"text":"프레임"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"데이터링크 계층 PDU = 프레임","why_correct":"계층별 PDU: 응용(메시지), 전송(세그먼트), 네트워크(패킷/데이터그램), 데이터링크(프레임), 물리(비트)입니다.","why_wrong":{"1":"메시지는 응용 계층의 데이터 단위입니다.","2":"세그먼트는 전송 계층(TCP)의 단위입니다.","3":"데이터그램은 네트워크 계층의 단위입니다."},"key_concept":"PDU, 데이터링크, 프레임"}},
-    {"id":"na2_20241103_002","number":2,"subject_id":"tcpip","text":"IP Address '11101011.10001111.11111100.11001111'가 속한 Class는?","options":[{"key":1,"text":"A Class"},{"key":2,"text":"B Class"},{"key":3,"text":"C Class"},{"key":4,"text":"D Class"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"1110으로 시작하면 Class D","why_correct":"11101011의 앞 4비트가 '1110'입니다. 클래스 구분: A=0xxx, B=10xx, C=110x, D=1110입니다. 1110=224-239 대역이 Class D입니다.","why_wrong":{"1":"Class A는 0으로 시작(0.0.0.0~127)입니다.","2":"Class B는 10으로 시작(128~191)입니다.","3":"Class C는 110으로 시작(192~223)입니다."},"key_concept":"IP 클래스, Class D, 1110"}},
-    {"id":"na2_20241103_003","number":3,"subject_id":"tcpip","text":"IPv6 헤더 형식에서, 네트워크 내에서 혼잡 상황이 발생되어 데이터그램을 버려야 하는 경우 참조되는 필드는?","options":[{"key":1,"text":"Version"},{"key":2,"text":"Priority"},{"key":3,"text":"Next Header"},{"key":4,"text":"Hop Limit"}],"answer":2,"has_figure":false,"explanation":{"correct_summary":"Priority 필드는 혼잡 시 패킷 폐기 우선순위","why_correct":"IPv6의 Priority(트래픽 클래스) 필드는 패킷의 우선순위를 나타내며, 혼잡 시 어떤 패킷을 먼저 폐기할지 결정하는 데 사용됩니다.","why_wrong":{"1":"Version은 IPv6 버전 번호입니다.","3":"Next Header는 다음 확장 헤더 유형입니다.","4":"Hop Limit은 TTL 역할입니다."},"key_concept":"IPv6, Priority, 혼잡 제어"}},
-    {"id":"na2_20241103_004","number":4,"subject_id":"tcpip","text":"IP 패킷은 네트워크 유형에 따라 전송량에 차이가 나기 때문에 적당한 크기로 분할하게 된다. 이때 기준이 되는 것은?","options":[{"key":1,"text":"TOS(Tape Operation System)"},{"key":2,"text":"MTU(Maximum Transmission Unit)"},{"key":3,"text":"TTL(Time-To-Live)"},{"key":4,"text":"Port Number"}],"answer":2,"has_figure":false,"explanation":{"correct_summary":"MTU는 패킷 분할 기준","why_correct":"MTU(Maximum Transmission Unit)는 네트워크에서 한 번에 전송할 수 있는 최대 패킷 크기입니다. IP는 MTU를 초과하는 패킷을 분할합니다.","why_wrong":{"1":"TOS는 서비스 유형 필드입니다.","3":"TTL은 패킷 생존 시간입니다.","4":"Port Number는 전송 계층 식별자입니다."},"key_concept":"MTU, 단편화, 패킷 크기"}},
-    {"id":"na2_20241103_005","number":5,"subject_id":"tcpip","text":"TCP 헤더 중에서 에러 제어를 위한 필드는?","options":[{"key":1,"text":"Offset"},{"key":2,"text":"Checksum"},{"key":3,"text":"Source Port"},{"key":4,"text":"Sequence Number"}],"answer":2,"has_figure":false,"explanation":{"correct_summary":"Checksum은 오류 검출 필드","why_correct":"TCP 헤더의 Checksum 필드는 전송 중 데이터 손상 여부를 검출하는 오류 제어 필드입니다.","why_wrong":{"1":"Offset(Urgent Pointer)은 긴급 데이터 위치입니다.","3":"Source Port는 출발지 포트 번호입니다.","4":"Sequence Number는 순서 번호입니다."},"key_concept":"TCP 헤더, Checksum, 오류 제어"}},
-    {"id":"na2_20241103_006","number":6,"subject_id":"tcpip","text":"ICMP 메시지 내용으로 옳지 않은 것은?","options":[{"key":1,"text":"호스트의 IP Address가 중복된 경우"},{"key":2,"text":"목적지까지 데이터를 보낼 수 없는 경우"},{"key":3,"text":"데이터의 TTL 필드 값이 '0'이 되어 데이터를 삭제할 경"},{"key":4,"text":"데이터의 헤더 값에 오류를 발견한 경우"}],"answer":1,"has_figure":false,"explanation":{"correct_summary":"IP 중복은 ICMP 메시지 아님","why_correct":"ICMP는 라우팅 오류, TTL 만료, 헤더 오류 등을 보고합니다. IP 주소 중복 감지는 ARP(Gratuitous ARP)가 담당하며 ICMP 메시지가 아닙니다.","why_wrong":{"2":"Destination Unreachable 메시지가 있습니다.","3":"Time Exceeded 메시지가 있습니다.","4":"Parameter Problem 메시지가 있습니다."},"key_concept":"ICMP, 오류 메시지, IP 중복"}},
-    {"id":"na2_20241103_007","number":7,"subject_id":"tcpip","text":"IGMP 프로토콜의 주된 기능은?","options":[{"key":1,"text":"네트워크 내에 발생된 오류에 관한 보고 기능"},{"key":2,"text":"대용량 파일을 전송하는 기능"},{"key":3,"text":"멀티캐스트 그룹에 가입한 네트워크 내의 호스트 관리"},{"key":4,"text":"호스트의 IP Address에 해당하는 호스트의 물리주소를 알"}],"answer":3,"has_figure":false,"explanation":{"correct_summary":"IGMP는 멀티캐스트 그룹 멤버십 관리","why_correct":"IGMP(Internet Group Management Protocol)는 호스트가 멀티캐스트 그룹에 가입·탈퇴하는 것을 라우터에 알리고 그룹 멤버십을 관리합니다.","why_wrong":{"1":"오류 보고는 ICMP의 기능입니다.","2":"파일 전송은 FTP/TFTP의 기능입니다.","4":"물리주소 변환은 ARP의 기능입니다."},"key_concept":"IGMP, 멀티캐스트, 그룹 관리"}},
-    {"id":"na2_20241103_008","number":8,"subject_id":"tcpip","text":"TCP/IP에서 Unicast의 의미는?","options":[{"key":1,"text":"메시지가 한 호스트에서 다른 여러 호스트로 전송되는 패"},{"key":2,"text":"메시지가 한 호스트에서 다른 한 호스트로 전송되는 패킷"},{"key":3,"text":"메시지가 한 호스트에서 망상의 다른 모든 호스트로 전송"},{"key":4,"text":"메시지가 한 호스트에서 망상의 특정 그룹 호스트들로 전"}],"answer":2,"has_figure":false,"explanation":{"correct_summary":"유니캐스트는 1:1 단일 전송","why_correct":"유니캐스트는 하나의 송신자가 하나의 수신자에게 메시지를 전송하는 일대일 통신 방식입니다.","why_wrong":{"1":"1:여러명은 멀티캐스트입니다.","3":"1:전체는 브로드캐스트입니다.","4":"1:특정그룹은 멀티캐스트입니다."},"key_concept":"유니캐스트, 1:1, 전송 방식"}},
-    {"id":"na2_20241103_009","number":9,"subject_id":"tcpip","text":"IP Address '127.0.0.1'이 의미하는 것은?","options":[{"key":1,"text":"모든 네트워크를 의미한다."},{"key":2,"text":"사설 IP Address를 의미한다."},{"key":3,"text":"특정한 네트워크의 모든 노드를 의미한다."},{"key":4,"text":"루프 백 테스트용이다."}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"127.0.0.1은 루프백 주소","why_correct":"127.0.0.1은 자기 자신을 가리키는 루프백(Loopback) 주소로, 네트워크 인터페이스 없이도 TCP/IP 스택을 테스트합니다.","why_wrong":{"1":"모든 네트워크는 0.0.0.0입니다.","2":"사설 IP는 10.x, 172.16-31.x, 192.168.x.x입니다.","3":"브로드캐스트 주소 설명입니다."},"key_concept":"루프백, 127.0.0.1, 테스트"}},
-    {"id":"na2_20241103_010","number":10,"subject_id":"tcpip","text":"TCP 3-Way Handshaking 연결 수립 절차의 3단계에서 사용되는 TCP 제어 Flag는?","options":[{"key":1,"text":"SYN"},{"key":2,"text":"RST"},{"key":3,"text":"SYN, ACK"},{"key":4,"text":"ACK"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"3-way 3단계는 클라이언트의 ACK","why_correct":"TCP 3-way: ①클라이언트→SYN ②서버→SYN+ACK ③클라이언트→ACK 순서입니다. 3단계는 ACK만 전송합니다.","why_wrong":{"1":"SYN은 1단계에서 사용됩니다.","2":"RST는 강제 연결 종료입니다.","3":"SYN+ACK는 2단계에서 사용됩니다."},"key_concept":"TCP, 3-way, ACK"}},
-    {"id":"na2_20241103_011","number":11,"subject_id":"tcpip","text":"SSH의 특징으로 옳지 않은 것은?","options":[{"key":1,"text":"Telnet에 비하여 보안성이 뛰어나다."},{"key":2,"text":"SSH-1은 RSA 암호화를 사용한다."},{"key":3,"text":"SSH-2는 RSA 외 더 다양한 키교환방식을 지원한다."},{"key":4,"text":"TCP/23번을 이용한다."}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"SSH는 포트 22, 포트 23은 Telnet","why_correct":"SSH는 TCP 포트 22를 사용합니다. 포트 23은 Telnet이 사용합니다.","why_wrong":{"1":"SSH는 Telnet보다 훨씬 보안성이 높습니다.","2":"SSH-1은 RSA 암호화를 사용합니다.","3":"SSH-2는 RSA, ECDSA 등 다양한 방식을 지원합니다."},"key_concept":"SSH, 포트 22, Telnet"}},
-    {"id":"na2_20241103_012","number":12,"subject_id":"tcpip","text":"불법 원격 접속 흔적 확인에 사용하는 명령어는?","options":[{"key":1,"text":"ping"},{"key":2,"text":"tracert"},{"key":3,"text":"netstat -an"},{"key":4,"text":"nslookup"}],"answer":3,"has_figure":false,"explanation":{"correct_summary":"netstat -an으로 모든 연결과 포트 확인","why_correct":"netstat -an은 모든 활성 연결과 수신 대기 포트를 IP/포트 번호로 표시하여 불법 접속 흔적을 확인할 수 있습니다.","why_wrong":{"1":"ping은 연결성 테스트입니다.","2":"tracert는 경로 추적입니다.","4":"nslookup은 DNS 조회입니다."},"key_concept":"netstat, -an, 연결 확인"}},
-    {"id":"na2_20241103_013","number":13,"subject_id":"tcpip","text":"SNMP 프로토콜의 기능으로 가장 올바른 것은?","options":[{"key":1,"text":"대규모 환경의 망 관리 기능"},{"key":2,"text":"네트워크 장비의 에러 보고 기능"},{"key":3,"text":"네트워크 장비의 관리 및 감시 기능"},{"key":4,"text":"호스트 간의 연결성 점검과 네트워크 혼잡 제어 기능"}],"answer":3,"has_figure":false,"explanation":{"correct_summary":"SNMP는 네트워크 장비 관리·감시","why_correct":"SNMP는 라우터, 스위치, 서버 등 네트워크 장비의 상태를 수집·모니터링하고 설정을 관리하는 표준 프로토콜입니다.","why_wrong":{"1":"대규모 전용이 아닌 일반 네트워크 관리입니다.","2":"에러 보고는 ICMP의 기능입니다.","4":"연결성 점검은 ping(ICMP) 기능입니다."},"key_concept":"SNMP, 장비 관리, 감시"}},
-    {"id":"na2_20241103_014","number":14,"subject_id":"tcpip","text":"HTTP와 HTTPS의 차이점에 대한 설명으로 올바른 것은?","options":[{"key":1,"text":"HTTP를 사용하면 데이터가 안전하게 전송되며, 사용자"},{"key":2,"text":"HTTP는 보안을 위해 '디지털 인증서'를 사용한다."},{"key":3,"text":"HTTP는 기본적으로 포트 번호 '80'을 사용하며, HTTPS"},{"key":4,"text":"HTTP는 웹 사이트의 신원을 검증하기 위해 'SSL/TLS'를"}],"answer":3,"has_figure":false,"explanation":{"correct_summary":"HTTP=80, HTTPS=443","why_correct":"HTTP는 기본 포트 80을 사용하고, HTTPS는 TLS/SSL 암호화를 적용하여 기본 포트 443을 사용합니다.","why_wrong":{"1":"HTTP는 암호화하지 않아 안전하지 않습니다.","2":"HTTP는 인증서 없이 동작합니다.","4":"SSL/TLS는 HTTPS가 사용합니다."},"key_concept":"HTTP 80, HTTPS 443, SSL/TLS"}},
-    {"id":"na2_20241103_015","number":15,"subject_id":"tcpip","text":"서브네팅 시 서브넷 마스크로 옳은 것은?","options":[{"key":1,"text":"255.255.255.128"},{"key":2,"text":"255.255.255.192"},{"key":3,"text":"255.255.255.224"},{"key":4,"text":"255.255.255.240"}],"answer":2,"has_figure":false,"explanation":{"correct_summary":"/26 마스크로 4개 서브넷, 62개 호스트","why_correct":"255.255.255.192(/26)는 C클래스에서 2비트를 서브넷으로 사용하여 4개 서브넷, 각 62개 호스트를 제공합니다.","why_wrong":{"1":"255.255.255.128(/25)는 2개 서브넷입니다.","3":"255.255.255.224(/27)는 8개 서브넷입니다.","4":"255.255.255.240(/28)는 16개 서브넷입니다."},"key_concept":"서브넷 마스크, /26, 서브넷"}},
-    {"id":"na2_20241103_016","number":16,"subject_id":"general","text":"파일 전송 프로토콜로 (A)에 들어가는 용어는?","options":[{"key":1,"text":"FTP(File Transfer Protocol)"},{"key":2,"text":"SFTP(SSH File Transfer Protocol)"},{"key":3,"text":"FRPS(FTP Secure)"},{"key":4,"text":"CMD"}],"answer":1,"has_figure":false,"explanation":{"correct_summary":"FTP는 표준 파일 전송 프로토콜","why_correct":"FTP(File Transfer Protocol)는 TCP를 기반으로 파일을 전송하는 가장 기본적인 파일 전송 프로토콜입니다.","why_wrong":{"2":"SFTP는 SSH 기반 보안 파일 전송입니다.","3":"FTPS는 FTP+SSL, FRPS는 없는 용어입니다.","4":"CMD는 명령 프롬프트입니다."},"key_concept":"FTP, 파일 전송, TCP"}},
-    {"id":"na2_20241103_017","number":17,"subject_id":"general","text":"호스트명-IP 매핑을 저장하는 로컬 파일 (A)는?","options":[{"key":1,"text":"/etc/deny"},{"key":2,"text":"/etc/hosts"},{"key":3,"text":"/etc/allow"},{"key":4,"text":"/etc/services"}],"answer":2,"has_figure":false,"explanation":{"correct_summary":"/etc/hosts는 로컬 호스트명 매핑 파일","why_correct":"/etc/hosts 파일은 DNS 질의 없이 호스트명과 IP 주소를 로컬에서 직접 매핑합니다.","why_wrong":{"1":"/etc/deny는 없는 파일입니다.","3":"/etc/allow도 없는 파일입니다.","4":"/etc/services는 서비스명과 포트를 매핑합니다."},"key_concept":"/etc/hosts, 호스트명, IP 매핑"}},
-    {"id":"na2_20241103_018","number":18,"subject_id":"general","text":"패킷 교환망의 특징으로 옳지 않은 것은?","options":[{"key":1,"text":"연결설정에 따라 가상회선과 데이터그램으로 분류된다."},{"key":2,"text":"메시지를 보다 짧은 길이의 패킷으로 나누어 전송한다."},{"key":3,"text":"망에 유입되는 데이터의 양이 많아질수록 전송속도가 빠"},{"key":4,"text":"블록킹 현상이 없다."}],"answer":3,"has_figure":false,"explanation":{"correct_summary":"데이터 증가 시 속도 빠름은 틀림, 오히려 지연","why_correct":"패킷 교환망에 데이터가 많아지면 큐잉 지연과 혼잡이 발생하여 전송 속도가 느려집니다.","why_wrong":{"1":"가상회선과 데이터그램 방식이 맞습니다.","2":"메시지를 패킷으로 분할하는 것이 맞습니다.","4":"패킷 교환은 블로킹 현상이 없습니다."},"key_concept":"패킷 교환, 혼잡, 속도"}},
-    {"id":"na2_20241103_019","number":19,"subject_id":"general","text":"Multiplexing 방법 중에서 전송할 데이터가 없더라도 타임 슬롯이 할당되어 대역폭의 낭비를 가져오는 방식은?","options":[{"key":1,"text":"TDM(Time Division Multiplexer)"},{"key":2,"text":"STDM(Statistical Time Division Multiplexer)"},{"key":3,"text":"FDM(Frequency Division Multiplex)"},{"key":4,"text":"FDMA(Frequency Division Multiple Access)"}],"answer":1,"has_figure":false,"explanation":{"correct_summary":"TDM은 고정 슬롯으로 대역폭 낭비","why_correct":"TDM은 각 채널에 고정 슬롯을 배분하므로 전송할 데이터가 없어도 슬롯이 낭비됩니다.","why_wrong":{"2":"STDM은 데이터 있을 때만 슬롯을 할당합니다.","3":"FDM은 주파수 분할 다중화입니다.","4":"FDMA는 주파수 기반 다중 접속입니다."},"key_concept":"TDM, 고정 슬롯, 낭비"}},
-    {"id":"na2_20241103_020","number":20,"subject_id":"general","text":"(A)안에 들어가는 용어 중 옳은 것은?","options":[{"key":1,"text":"WPAN"},{"key":2,"text":"LTE-M"},{"key":3,"text":"NB-IoT"},{"key":4,"text":"LAN"}],"answer":1,"has_figure":false,"explanation":{"correct_summary":"WPAN은 개인 근거리 무선 네트워크","why_correct":"WPAN(Wireless Personal Area Network)은 Bluetooth, Zigbee 등 개인 장치 간 단거리 무선 통신 기술입니다.","why_wrong":{"2":"LTE-M은 이동통신 기반 IoT입니다.","3":"NB-IoT는 협대역 IoT 기술입니다.","4":"LAN은 로컬 네트워크입니다."},"key_concept":"WPAN, 근거리, 무선"}},
-    {"id":"na2_20241103_021","number":21,"subject_id":"general","text":"다음의 (A)에 들어갈 알맞은 용어는?","options":[{"key":1,"text":"NFV (Network Functions Virtualization)"},{"key":2,"text":"WMN (Wireless Mesh Network)"},{"key":3,"text":"VPN (Virtual Private Network)"},{"key":4,"text":"CDN (Content Delivery Network)"}],"answer":1,"has_figure":false,"explanation":{"correct_summary":"NFV는 네트워크 기능 가상화","why_correct":"NFV(Network Functions Virtualization)는 전용 하드웨어 대신 소프트웨어로 방화벽, 로드밸런서 등 네트워크 기능을 구현하는 기술입니다.","why_wrong":{"2":"WMN은 무선 메시 네트워크입니다.","3":"VPN은 가상 사설 네트워크입니다.","4":"CDN은 콘텐츠 배포 네트워크입니다."},"key_concept":"NFV, 가상화, 소프트웨어"}},
-    {"id":"na2_20241103_022","number":22,"subject_id":"general","text":"OSI 7 Layer 중 세션계층의 역할로 옳지 않은 것은?","options":[{"key":1,"text":"대화 제어"},{"key":2,"text":"에러 제어"},{"key":3,"text":"연결 설정 종료"},{"key":4,"text":"동기화"}],"answer":2,"has_figure":false,"explanation":{"correct_summary":"에러 제어는 데이터링크/전송 계층 담당","why_correct":"세션 계층은 연결 설정·유지·종료, 대화 제어, 동기화를 담당합니다. 에러 제어는 데이터링크(Layer 2)나 전송(Layer 4) 계층의 기능입니다.","why_wrong":{"1":"대화 제어는 세션 계층 기능입니다.","3":"연결 설정·종료는 세션 계층 기능입니다.","4":"동기화는 세션 계층 기능입니다."},"key_concept":"세션 계층, 에러 제어, OSI"}},
-    {"id":"na2_20241103_023","number":23,"subject_id":"general","text":"FDDI(Fiber Distributed Data Interface)의 설명으로 옳지 않은 것은?","options":[{"key":1,"text":"광섬유를 사용하고 토큰 패싱 기술을 활용하는 한 개의"},{"key":2,"text":"물리계층의 PMD(Physical Medium Dependent)계층에서"},{"key":3,"text":"물리계층의 PHY(Physical Sublayer)계층은 부호화 및 고"},{"key":4,"text":"SMT(Station Management) 프로토콜은 네트워크 고장을"}],"answer":1,"has_figure":false,"explanation":{"correct_summary":"FDDI는 이중 링 구조, 단일 링 아님","why_correct":"FDDI는 주 링과 보조 링으로 구성된 이중 링(Dual Ring) 구조입니다. 단일 링이 아닙니다.","why_wrong":{"2":"PMD계층 설명이 맞습니다.","3":"PHY계층 설명이 맞습니다.","4":"SMT 프로토콜 설명이 맞습니다."},"key_concept":"FDDI, 이중 링, 광섬유"}},
-    {"id":"na2_20241103_024","number":24,"subject_id":"general","text":"VPN의 (A)에 들어가는 핵심 기술은?","options":[{"key":1,"text":"터널링"},{"key":2,"text":"접근 통제 기술"},{"key":3,"text":"방화벽 설정"},{"key":4,"text":"FTP"}],"answer":1,"has_figure":false,"explanation":{"correct_summary":"VPN의 핵심 기술은 터널링","why_correct":"VPN은 터널링 기술을 사용하여 공개 네트워크에서 암호화된 가상의 전용 경로를 생성합니다.","why_wrong":{"2":"접근 통제는 VPN의 부가 기능입니다.","3":"방화벽은 별도 보안 장비입니다.","4":"FTP는 파일 전송 프로토콜입니다."},"key_concept":"VPN, 터널링, 암호화"}},
-    {"id":"na2_20241103_025","number":25,"subject_id":"general","text":"소프트웨어로 제어되는 네트워킹 기술은?","options":[{"key":1,"text":"SDS (Software Defined Storage)"},{"key":2,"text":"SDN (Software Defined Networking)"},{"key":3,"text":"SNMP (Simple Network Management Protocol)"},{"key":4,"text":"CLI (Command Line Interface)"}],"answer":2,"has_figure":false,"explanation":{"correct_summary":"SDN은 소프트웨어 정의 네트워크","why_correct":"SDN은 네트워크 제어 평면을 소프트웨어로 분리하여 유연하고 동적인 네트워크 관리를 제공합니다.","why_wrong":{"1":"SDS는 소프트웨어 정의 스토리지입니다.","3":"SNMP는 네트워크 관리 프로토콜입니다.","4":"CLI는 명령줄 인터페이스입니다."},"key_concept":"SDN, 소프트웨어 정의, 네트워크"}},
-    {"id":"na2_20241103_026","number":26,"subject_id":"general","text":"클라우드 컴퓨팅의 특징으로 옳지 않은 것은?","options":[{"key":1,"text":"사용자는 필요한 만큼의 서버, 네트워크, 저장장치 등과"},{"key":2,"text":"사용자 요구에 따라 물리 자원과 가상 자원들이 동적으"},{"key":3,"text":"서비스 형태에 따라 적절한 미터링을 활용하여 자동으로"},{"key":4,"text":"제공자의 컴퓨팅 자원들은 다수의 사용자들을 지원하기"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"클라우드 자원은 단독이 아닌 공유 자원","why_correct":"클라우드 컴퓨팅은 자원 풀링(Resource Pooling)을 통해 다수의 사용자가 자원을 공유합니다. 단독 사용이 아닙니다.","why_wrong":{"1":"사용자 필요에 따른 자원 확보가 맞습니다.","2":"동적 자원 할당이 맞습니다.","3":"종량제 미터링이 맞습니다."},"key_concept":"클라우드, 자원 공유, 풀링"}},
-    {"id":"na2_20241103_027","number":27,"subject_id":"general","text":"메시 네트워크(Mesh Network)의 특징으로 옳지 않은 것은?","options":[{"key":1,"text":"노드의 이동이 자유롭기 때문에 네트워크 토폴로지가 동"},{"key":2,"text":"일대일 다중 홉 라우팅(Multihop Routing) 방식으로 전"},{"key":3,"text":"어떠한 중앙 제어나 표준 지원 서비스의 도움 없이 임시"},{"key":4,"text":"하나의 연결이 끊어져도 네트워크는 자동으로 다른 연결"}],"answer":3,"has_figure":false,"explanation":{"correct_summary":"메시는 중앙 제어 없이 구성 가능","why_correct":"메시 네트워크는 중앙 서버나 중앙 제어 없이도 노드 간 자율적으로 연결되어 네트워크를 구성할 수 있습니다.","why_wrong":{"1":"토폴로지가 동적으로 변화하는 것이 맞습니다.","2":"다중 홉 라우팅 방식이 맞습니다.","4":"자동 우회 연결이 맞습니다."},"key_concept":"메시, 자율, 중앙 없음"}},
-    {"id":"na2_20241103_028","number":28,"subject_id":"nos","text":"DHCP의 장점으로 옳지 않은 것은?","options":[{"key":1,"text":"클라이언트에게 자동으로 IP Address를 할당해 줄 수 있"},{"key":2,"text":"IP Address의 관리가 용이하다."},{"key":3,"text":"영구적인 IP Address를 필요로 하는 웹 서버에 대해서는"},{"key":4,"text":"사용자들이 자주 바뀌는 학교와 같은 환경에서 특히 유"}],"answer":3,"has_figure":false,"explanation":{"correct_summary":"웹 서버는 고정 IP 필요, DHCP 비적합","why_correct":"DHCP는 IP를 동적으로 할당하므로 영구 고정 IP가 필요한 웹 서버에는 적합하지 않습니다. 이것은 단점이지 장점이 아닙니다.","why_wrong":{"1":"자동 IP 할당이 장점입니다.","2":"중앙 관리로 IP 관리가 용이합니다.","4":"자주 바뀌는 환경에서 특히 유용합니다."},"key_concept":"DHCP, 고정 IP, 웹 서버"}},
-    {"id":"na2_20241103_029","number":29,"subject_id":"nos","text":"실제 도메인 이름과 연결되는 가상 도메인 이름의 DNS 레코드 형식은?","options":[{"key":1,"text":"CNAME"},{"key":2,"text":"MX"},{"key":3,"text":"A"},{"key":4,"text":"PTR"}],"answer":1,"has_figure":false,"explanation":{"correct_summary":"CNAME은 별칭 도메인 레코드","why_correct":"CNAME(Canonical Name) 레코드는 도메인의 별칭을 실제 도메인에 연결합니다. www.example.com → example.com처럼 사용됩니다.","why_wrong":{"2":"MX는 이메일 서버 레코드입니다.","3":"A는 도메인→IPv4 주소 매핑입니다.","4":"PTR는 역방향 조회 레코드입니다."},"key_concept":"CNAME, 별칭, DNS"}},
-    {"id":"na2_20241103_030","number":30,"subject_id":"nos","text":"Windows Server 2016에서 파일 및 프린터 서버를 위해 반드시 설치해야 하는 프로토콜은?","options":[{"key":1,"text":"TCP/IP"},{"key":2,"text":"SNMP"},{"key":3,"text":"SMTP"},{"key":4,"text":"IGMP"}],"answer":1,"has_figure":false,"explanation":{"correct_summary":"파일/프린터 공유의 기반은 TCP/IP","why_correct":"Windows 파일 및 프린터 공유 서비스는 TCP/IP 프로토콜을 기반으로 동작합니다. 가장 먼저 설치되어야 합니다.","why_wrong":{"2":"SNMP는 네트워크 관리 프로토콜입니다.","3":"SMTP는 이메일 전송 프로토콜입니다.","4":"IGMP는 멀티캐스트 관리 프로토콜입니다."},"key_concept":"TCP/IP, 파일 공유, 프린터"}},
-    {"id":"na2_20241103_031","number":31,"subject_id":"nos","text":"Windows Server 2016에서 사용하는 PowerShell에 대한 설명으로 옳지 않은 것은?","options":[{"key":1,"text":"기존 DOS 명령은 사용할 수 없다."},{"key":2,"text":"스크립트는 콘솔에서 대화형으로 사용될 수 있다."},{"key":3,"text":"스크립트는 텍스트로 구성된다."},{"key":4,"text":"대소문자를 구분하지 않는다."}],"answer":1,"has_figure":false,"explanation":{"correct_summary":"PowerShell은 기존 DOS 명령도 지원","why_correct":"PowerShell은 dir, cd, copy 등 기존 DOS 명령을 별칭(Alias)으로 지원합니다. 사용 불가하다는 것은 틀린 설명입니다.","why_wrong":{"2":"대화형 스크립트 실행이 가능합니다.","3":"스크립트는 텍스트(.ps1)로 작성됩니다.","4":"PowerShell은 대소문자를 구분하지 않습니다."},"key_concept":"PowerShell, DOS, 명령어"}},
-    {"id":"na2_20241103_032","number":32,"subject_id":"nos","text":"Linux 디렉터리 구성에 대한 설명으로 옳지 않은 것은?","options":[{"key":1,"text":"/tmp - 임시파일이 저장되는 디렉터리"},{"key":2,"text":"/boot - 시스템이 부팅될 때 부팅 가능한 커널 이미지"},{"key":3,"text":"/var - 시스템의 로그 파일과 메일이 저장되는 위치"},{"key":4,"text":"/usr - 사용자 계정이 위치하는 파티션 위치"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"/usr은 프로그램 저장소, 사용자 홈은 /home","why_correct":"/usr은 공유 프로그램과 라이브러리가 저장됩니다. 사용자 홈 디렉터리는 /home/사용자명에 위치합니다.","why_wrong":{"1":"/tmp는 임시 파일 디렉터리가 맞습니다.","2":"/boot는 커널 이미지 저장이 맞습니다.","3":"/var는 로그와 메일 저장이 맞습니다."},"key_concept":"/usr, /home, 디렉터리"}},
-    {"id":"na2_20241103_033","number":33,"subject_id":"nos","text":"Linux 시스템 부팅과 함께 자동으로 마운트되어야 할 항목이 정의되어 있는 파일은?","options":[{"key":1,"text":"/etc/fstab"},{"key":2,"text":"/usr/local"},{"key":3,"text":"/mount/cdrom"},{"key":4,"text":"/home/public_html"}],"answer":1,"has_figure":false,"explanation":{"correct_summary":"/etc/fstab은 파일시스템 자동 마운트 설정","why_correct":"/etc/fstab(File Systems Table)은 부팅 시 자동 마운트할 파일시스템과 옵션을 정의합니다.","why_wrong":{"2":"/usr/local은 로컬 프로그램 디렉터리입니다.","3":"/mount/cdrom은 마운트 경로입니다.","4":"/home/public_html은 홈 서브 디렉터리입니다."},"key_concept":"/etc/fstab, 자동 마운트, 파일시스템"}},
-    {"id":"na2_20241103_034","number":34,"subject_id":"nos","text":"Linux에서 프로세스와 관련된 명령어 설명 중 옳지 않은 것은?","options":[{"key":1,"text":"kill - 프로세스를 종료시키는 명령어"},{"key":2,"text":"nice - 프로세스의 우선순위를 변경하는 명령어"},{"key":3,"text":"pstree - 프로세스를 트리형태로 보여주는 명령어"},{"key":4,"text":"top - 가장 우선순위가 높은 프로세스를 보여주는 명령"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"top은 모든 프로세스를 CPU/메모리 순으로","why_correct":"top 명령은 CPU 사용률 기준 상위 프로세스를 실시간으로 보여주지만, '가장 우선순위 높은 하나만'이 아닌 전체 프로세스 목록을 보여줍니다.","why_wrong":{"1":"kill은 프로세스 종료 명령입니다.","2":"nice는 프로세스 우선순위 변경입니다.","3":"pstree는 트리 형태로 프로세스 표시입니다."},"key_concept":"top, 프로세스 목록, 실시간"}},
-    {"id":"na2_20241103_035","number":35,"subject_id":"nos","text":"Windows Server 2016에서 기본적으로 생성되는 계정이 아닌 것은?","options":[{"key":1,"text":"Administrator"},{"key":2,"text":"DefaultAccount"},{"key":3,"text":"Guest"},{"key":4,"text":"root"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"root는 Linux 계정, Windows에는 없음","why_correct":"Windows Server 2016의 기본 계정은 Administrator, DefaultAccount, Guest입니다. root는 Linux/Unix 시스템의 최고 관리자 계정입니다.","why_wrong":{"1":"Administrator는 Windows 기본 관리자입니다.","2":"DefaultAccount는 기본 생성 계정입니다.","3":"Guest는 기본 게스트 계정입니다."},"key_concept":"Windows 계정, root, Administrator"}},
-    {"id":"na2_20241103_036","number":36,"subject_id":"nos","text":"리소스 모니터에서 점검할 수 있는 항목이 아닌 것은?","options":[{"key":1,"text":"CPU"},{"key":2,"text":"Memory"},{"key":3,"text":"Network"},{"key":4,"text":"Firewall"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"방화벽은 리소스 모니터 항목 아님","why_correct":"리소스 모니터는 CPU, Memory, Disk, Network의 사용 현황을 보여줍니다. Firewall은 보안 도구로 리소스 모니터에 없습니다.","why_wrong":{"1":"CPU 사용률 확인 가능합니다.","2":"메모리 사용 현황 확인 가능합니다.","3":"네트워크 사용 현황 확인 가능합니다."},"key_concept":"리소스 모니터, CPU, Firewall"}},
-    {"id":"na2_20241103_037","number":37,"subject_id":"nos","text":"Linux 시스템에서 기존에 설정된 'crontab'을 삭제하려고 할 때 올바른 명령어는?","options":[{"key":1,"text":"crontab -u"},{"key":2,"text":"crontab -e"},{"key":3,"text":"crontab -l"},{"key":4,"text":"crontab -r"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"crontab -r로 크론 작업 삭제","why_correct":"crontab -r 옵션은 현재 사용자의 crontab 파일 전체를 삭제합니다.","why_wrong":{"1":"crontab -u는 사용자를 지정합니다.","2":"crontab -e는 편집합니다.","3":"crontab -l은 목록을 표시합니다."},"key_concept":"crontab, -r, 삭제"}},
-    {"id":"na2_20241103_038","number":38,"subject_id":"nos","text":"Apache httpd.conf에서 포트 번호를 변경하려면 어떤 옵션을 수정해야 하는가?","options":[{"key":1,"text":"KeepAlive"},{"key":2,"text":"DocumentRoot"},{"key":3,"text":"StartServers"},{"key":4,"text":"Listen"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"Listen으로 Apache 포트 변경","why_correct":"Apache의 Listen 지시문을 변경하여 웹서버 포트를 설정합니다. 기본값은 Listen 80입니다.","why_wrong":{"1":"KeepAlive는 연결 유지 설정입니다.","2":"DocumentRoot는 웹 루트 경로입니다.","3":"StartServers는 시작 시 프로세스 수입니다."},"key_concept":"Listen, Apache, 포트 변경"}},
-    {"id":"na2_20241103_039","number":39,"subject_id":"equipment","text":"Linux 시스템 비인가자의 로그인 시도 이력을 확인하기 위한 명령어는?","options":[{"key":1,"text":"lastb"},{"key":2,"text":"xferlog"},{"key":3,"text":"history"},{"key":4,"text":"pkill"}],"answer":1,"has_figure":false,"explanation":{"correct_summary":"lastb는 실패한 로그인 시도 기록 표시","why_correct":"lastb 명령은 /var/log/btmp 파일을 참조하여 실패한 로그인 시도 이력(날짜, 사용자, IP)을 보여줍니다.","why_wrong":{"2":"xferlog는 FTP 전송 로그입니다.","3":"history는 명령 실행 이력입니다.","4":"pkill은 프로세스를 종료합니다."},"key_concept":"lastb, 로그인 실패, 보안 감사"}},
-    {"id":"na2_20241103_040","number":40,"subject_id":"equipment","text":"IIS 관리자를 실행하기 위해 사용할 명령어는?","options":[{"key":1,"text":"wf.msc"},{"key":2,"text":"msconfig"},{"key":3,"text":"inetmgr.exe"},{"key":4,"text":"dsac.exe"}],"answer":3,"has_figure":false,"explanation":{"correct_summary":"inetmgr.exe는 IIS 관리자 실행 명령","why_correct":"inetmgr.exe는 Windows IIS(인터넷 정보 서비스) 관리자를 실행하는 명령입니다.","why_wrong":{"1":"wf.msc는 Windows 방화벽 설정입니다.","2":"msconfig는 시스템 구성 유틸리티입니다.","4":"dsac.exe는 Active Directory 관련입니다."},"key_concept":"IIS, inetmgr.exe, 관리자"}},
-    {"id":"na2_20241103_041","number":41,"subject_id":"equipment","text":"'sample'파일의 소유자 및 소유그룹이 아닌 사람에 대해 파일을 볼 수는 있지만 수정 및 실행을 못하도록 하는 명령어는?","options":[{"key":1,"text":"chmod 776 sample"},{"key":2,"text":"chmod 774 sample"},{"key":3,"text":"chmod 746 sample"},{"key":4,"text":"chmod 766 sample"}],"answer":2,"has_figure":false,"explanation":{"correct_summary":"chmod 774 = other에 읽기(4)만","why_correct":"774는 owner(7=rwx), group(7=rwx), other(4=r--)입니다. 소유자/그룹이 아닌 사람은 읽기만 가능합니다.","why_wrong":{"1":"776은 other에도 rw를 줍니다.","3":"746은 group에만 r을 줍니다.","4":"766은 other에 rw를 줍니다."},"key_concept":"chmod 774, other, 읽기 전용"}},
-    {"id":"na2_20241103_042","number":42,"subject_id":"equipment","text":"Linux BIND 서버 구축 시 '/etc/named.conf'에서 도메인의 zone 파일 위치를 지정하는 설정값은?","options":[{"key":1,"text":"directory '/var/named'"},{"key":2,"text":"linsten-on port 53 { any; }"},{"key":3,"text":"dump-file '/var/named/data/dump.db'"},{"key":4,"text":"allow-query { 192.168.0.0/24; }"}],"answer":1,"has_figure":false,"explanation":{"correct_summary":"directory는 zone 파일 위치 지정","why_correct":"named.conf의 'directory' 옵션은 BIND가 zone 파일을 찾을 기본 디렉터리를 지정합니다.","why_wrong":{"2":"listen-on은 수신 포트/인터페이스 설정입니다.","3":"dump-file은 dump 데이터 파일 경로입니다.","4":"allow-query는 질의 허용 대역 설정입니다."},"key_concept":"named.conf, directory, zone 파일"}},
-    {"id":"na2_20241103_043","number":43,"subject_id":"equipment","text":"Linux에서 DNS의 SOA 레코드에 대한 설명으로 옳지 않은 것은?","options":[{"key":1,"text":"Zone 파일은 항상 SOA로 시작한다."},{"key":2,"text":"해당 Zone에 대한 네임서버를 유지하기 위한 기본적인"},{"key":3,"text":"Refresh는 주 서버와 보조 서버의 동기 주기를 설정한"},{"key":4,"text":"TTL 값이 길면 DNS의 부하가 늘어난다."}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"TTL 길면 캐시 오래 유지 = DNS 부하 감소","why_correct":"TTL이 길면 클라이언트가 캐시를 오래 유지하므로 DNS 서버에 질의를 적게 보냅니다. DNS 부하가 줄어듭니다.","why_wrong":{"1":"Zone 파일은 SOA로 시작합니다.","2":"SOA는 기본 네임서버 유지 정보를 포함합니다.","3":"Refresh는 보조 서버 갱신 주기입니다."},"key_concept":"SOA, TTL, DNS 부하"}},
-    {"id":"na2_20241103_044","number":44,"subject_id":"equipment","text":"사이트와의 통신 상태를 점검할 때 사용하는 Linux 명령어는?","options":[{"key":1,"text":"who"},{"key":2,"text":"w"},{"key":3,"text":"finger"},{"key":4,"text":"ping"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"ping으로 네트워크 통신 상태 점검","why_correct":"ping은 ICMP Echo를 사용하여 특정 호스트와의 네트워크 연결 여부와 응답 시간을 점검합니다.","why_wrong":{"1":"who는 현재 로그인 사용자를 표시합니다.","2":"w는 사용자 활동 상태를 표시합니다.","3":"finger는 사용자 정보를 표시합니다."},"key_concept":"ping, ICMP, 통신 점검"}},
-    {"id":"na2_20241103_045","number":45,"subject_id":"equipment","text":"Linux에서 파티션 Type이 'SWAP'일 경우의 의미는?","options":[{"key":1,"text":"Linux가 실제로 자료를 저장하는데 사용되는 파티션이다."},{"key":2,"text":"Linux가 네트워킹 상태에서 쿠키를 저장하기 위한 파티"},{"key":3,"text":"메모리가 부족할 경우 하드 디스크의 일부분을 마치 메"},{"key":4,"text":"Utility 프로그램을 저장하는데 사용되는 파티션이다."}],"answer":3,"has_figure":false,"explanation":{"correct_summary":"SWAP은 가상 메모리 파티션","why_correct":"SWAP 파티션은 RAM이 부족할 때 하드 디스크의 일부를 가상 메모리처럼 사용하는 영역입니다.","why_wrong":{"1":"자료 저장은 일반 파티션(ext4 등)입니다.","2":"쿠키 저장과는 무관합니다.","4":"유틸리티 저장과는 무관합니다."},"key_concept":"SWAP, 가상 메모리, 파티션"}},
-    {"id":"na2_20241103_046","number":46,"subject_id":"equipment","text":"다음 설명의 (A)에 들어갈 알맞은 용어는?","options":[{"key":1,"text":"IP Masquerading"},{"key":2,"text":"Port Forwarding"},{"key":3,"text":"Dynamic Address Allocation"},{"key":4,"text":"Load Balancing"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"로드 밸런싱은 서버 부하 분산","why_correct":"Load Balancing은 네트워크 트래픽을 여러 서버에 분산하여 과부하를 방지하고 성능과 가용성을 높이는 기술입니다.","why_wrong":{"1":"IP Masquerading은 IP 주소 변환입니다.","2":"Port Forwarding은 포트 전달입니다.","3":"Dynamic Address Allocation은 동적 주소 할당입니다."},"key_concept":"Load Balancing, 분산, 서버"}},
-    {"id":"na2_20241103_047","number":47,"subject_id":"equipment","text":"Distance Vector 방식에 해당하지 않는 프로토콜은?","options":[{"key":1,"text":"IGRP"},{"key":2,"text":"RIP"},{"key":3,"text":"BGP"},{"key":4,"text":"OSPF"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"OSPF는 링크 스테이트, 거리 벡터 아님","why_correct":"OSPF는 링크 스테이트 알고리즘 기반 라우팅 프로토콜입니다. IGRP, RIP, BGP는 거리 벡터 방식입니다.","why_wrong":{"1":"IGRP는 Cisco 독자적 거리 벡터 프로토콜입니다.","2":"RIP는 홉 수 기반 거리 벡터 프로토콜입니다.","3":"BGP는 경로 벡터(거리 벡터 기반) 프로토콜입니다."},"key_concept":"OSPF, 링크 스테이트, 거리 벡터"}},
-    {"id":"na2_20241103_048","number":48,"subject_id":"equipment","text":"하나의 물리적 스위치를 부서별로 분리하고 3계층 장비를 통해서만 통신하도록 하는 기술은?","options":[{"key":1,"text":"VPN(Virtual Private Network)"},{"key":2,"text":"VLAN(Virtual Local Area Network)"},{"key":3,"text":"VCN(Virtual Cloud Network)"},{"key":4,"text":"IPS(Intrusion Prevention System)"}],"answer":2,"has_figure":false,"explanation":{"correct_summary":"VLAN은 스위치를 논리적으로 분리","why_correct":"VLAN은 하나의 물리적 스위치를 여러 논리적 네트워크로 분리합니다. 다른 VLAN 간 통신은 L3 장비(라우터)를 통해서만 가능합니다.","why_wrong":{"1":"VPN은 암호화 터널 기술입니다.","3":"VCN은 클라우드 가상 네트워크입니다.","4":"IPS는 침입 방지 시스템입니다."},"key_concept":"VLAN, 부서 분리, L3"}},
-    {"id":"na2_20241103_049","number":49,"subject_id":"security","text":"L2 스위치 네트워크의 다중 루프를 방지하기 위해 만들어진 기술은?","options":[{"key":1,"text":"VLAN(Virtual Local Area Network)"},{"key":2,"text":"Port Mirroring"},{"key":3,"text":"Store And Forward"},{"key":4,"text":"STP(Spanning Tree Protocol)"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"STP는 스위치 루프를 방지","why_correct":"STP(Spanning Tree Protocol)는 스위치 네트워크에서 루프를 감지하고 특정 포트를 차단하여 브로드캐스트 폭풍을 방지합니다.","why_wrong":{"1":"VLAN은 네트워크 분리 기술입니다.","2":"Port Mirroring은 트래픽 복사입니다.","3":"Store-and-Forward는 스위칭 방식입니다."},"key_concept":"STP, 루프 방지, 브로드캐스트"}},
-    {"id":"na2_20241103_050","number":50,"subject_id":"security","text":"아래 전송 선로 중 대역폭이 가장 넓은 전송매체는?","options":[{"key":1,"text":"Twist Pair 케이블"},{"key":2,"text":"Base Band 동축케이블"},{"key":3,"text":"CATV 동축케이블"},{"key":4,"text":"Fiber Optic 케이블"}],"answer":4,"has_figure":false,"explanation":{"correct_summary":"광섬유 케이블이 가장 넓은 대역폭","why_correct":"광섬유(Fiber Optic) 케이블은 빛을 이용하여 수 Tbps의 초고속 전송이 가능하며, 가장 넓은 대역폭을 제공합니다.","why_wrong":{"1":"Twisted Pair는 최대 10Gbps 수준입니다.","2":"동축 베이스밴드는 더 낮은 대역폭입니다.","3":"CATV 동축도 광섬유보다 대역폭이 좁습니다."},"key_concept":"광섬유, 대역폭, 전송 매체"}}
+    {
+      "id": "na2_20241103_001",
+      "number": 1,
+      "subject_id": "tcpip",
+      "text": "TCP/IP에서 데이터 링크층의 데이터 단위는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "메시지"
+        },
+        {
+          "key": 2,
+          "text": "세그먼트"
+        },
+        {
+          "key": 3,
+          "text": "데이터그램"
+        },
+        {
+          "key": 4,
+          "text": "프레임"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "데이터링크 계층 PDU = 프레임",
+        "why_correct": "계층별 PDU: 응용(메시지), 전송(세그먼트), 네트워크(패킷/데이터그램), 데이터링크(프레임), 물리(비트)입니다.",
+        "why_wrong": {
+          "1": "메시지는 응용 계층의 데이터 단위입니다.",
+          "2": "세그먼트는 전송 계층(TCP)의 단위입니다.",
+          "3": "데이터그램은 네트워크 계층의 단위입니다."
+        },
+        "key_concept": "PDU, 데이터링크, 프레임"
+      }
+    },
+    {
+      "id": "na2_20241103_002",
+      "number": 2,
+      "subject_id": "tcpip",
+      "text": "IP Address '11101011.10001111.11111100.11001111'가 속한 Class는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "A Class"
+        },
+        {
+          "key": 2,
+          "text": "B Class"
+        },
+        {
+          "key": 3,
+          "text": "C Class"
+        },
+        {
+          "key": 4,
+          "text": "D Class"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "1110으로 시작하면 Class D",
+        "why_correct": "11101011의 앞 4비트가 '1110'입니다. 클래스 구분: A=0xxx, B=10xx, C=110x, D=1110입니다. 1110=224-239 대역이 Class D입니다.",
+        "why_wrong": {
+          "1": "Class A는 0으로 시작(0.0.0.0~127)입니다.",
+          "2": "Class B는 10으로 시작(128~191)입니다.",
+          "3": "Class C는 110으로 시작(192~223)입니다."
+        },
+        "key_concept": "IP 클래스, Class D, 1110"
+      }
+    },
+    {
+      "id": "na2_20241103_003",
+      "number": 3,
+      "subject_id": "tcpip",
+      "text": "IPv6 헤더 형식에서, 네트워크 내에서 혼잡 상황이 발생되어 데이터그램을 버려야 하는 경우 참조되는 필드는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Version"
+        },
+        {
+          "key": 2,
+          "text": "Priority"
+        },
+        {
+          "key": 3,
+          "text": "Next Header"
+        },
+        {
+          "key": 4,
+          "text": "Hop Limit"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "Priority 필드는 혼잡 시 패킷 폐기 우선순위",
+        "why_correct": "IPv6의 Priority(트래픽 클래스) 필드는 패킷의 우선순위를 나타내며, 혼잡 시 어떤 패킷을 먼저 폐기할지 결정하는 데 사용됩니다.",
+        "why_wrong": {
+          "1": "Version은 IPv6 버전 번호입니다.",
+          "3": "Next Header는 다음 확장 헤더 유형입니다.",
+          "4": "Hop Limit은 TTL 역할입니다."
+        },
+        "key_concept": "IPv6, Priority, 혼잡 제어"
+      }
+    },
+    {
+      "id": "na2_20241103_004",
+      "number": 4,
+      "subject_id": "tcpip",
+      "text": "IP 패킷은 네트워크 유형에 따라 전송량에 차이가 나기 때문에 적당한 크기로 분할하게 된다. 이때 기준이 되는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TOS(Tape Operation System)"
+        },
+        {
+          "key": 2,
+          "text": "MTU(Maximum Transmission Unit)"
+        },
+        {
+          "key": 3,
+          "text": "TTL(Time-To-Live)"
+        },
+        {
+          "key": 4,
+          "text": "Port Number"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "MTU는 패킷 분할 기준",
+        "why_correct": "MTU(Maximum Transmission Unit)는 네트워크에서 한 번에 전송할 수 있는 최대 패킷 크기입니다. IP는 MTU를 초과하는 패킷을 분할합니다.",
+        "why_wrong": {
+          "1": "TOS는 서비스 유형 필드입니다.",
+          "3": "TTL은 패킷 생존 시간입니다.",
+          "4": "Port Number는 전송 계층 식별자입니다."
+        },
+        "key_concept": "MTU, 단편화, 패킷 크기"
+      }
+    },
+    {
+      "id": "na2_20241103_005",
+      "number": 5,
+      "subject_id": "tcpip",
+      "text": "TCP 헤더 중에서 에러 제어를 위한 필드는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Offset"
+        },
+        {
+          "key": 2,
+          "text": "Checksum"
+        },
+        {
+          "key": 3,
+          "text": "Source Port"
+        },
+        {
+          "key": 4,
+          "text": "Sequence Number"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "Checksum은 오류 검출 필드",
+        "why_correct": "TCP 헤더의 Checksum 필드는 전송 중 데이터 손상 여부를 검출하는 오류 제어 필드입니다.",
+        "why_wrong": {
+          "1": "Offset(Urgent Pointer)은 긴급 데이터 위치입니다.",
+          "3": "Source Port는 출발지 포트 번호입니다.",
+          "4": "Sequence Number는 순서 번호입니다."
+        },
+        "key_concept": "TCP 헤더, Checksum, 오류 제어"
+      }
+    },
+    {
+      "id": "na2_20241103_006",
+      "number": 6,
+      "subject_id": "tcpip",
+      "text": "ICMP 메시지 내용으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "호스트의 IP Address가 중복된 경우"
+        },
+        {
+          "key": 2,
+          "text": "목적지까지 데이터를 보낼 수 없는 경우"
+        },
+        {
+          "key": 3,
+          "text": "데이터의 TTL 필드 값이 '0'이 되어 데이터를 삭제할 경"
+        },
+        {
+          "key": 4,
+          "text": "데이터의 헤더 값에 오류를 발견한 경우"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "IP 중복은 ICMP 메시지 아님",
+        "why_correct": "ICMP는 라우팅 오류, TTL 만료, 헤더 오류 등을 보고합니다. IP 주소 중복 감지는 ARP(Gratuitous ARP)가 담당하며 ICMP 메시지가 아닙니다.",
+        "why_wrong": {
+          "2": "Destination Unreachable 메시지가 있습니다.",
+          "3": "Time Exceeded 메시지가 있습니다.",
+          "4": "Parameter Problem 메시지가 있습니다."
+        },
+        "key_concept": "ICMP, 오류 메시지, IP 중복"
+      }
+    },
+    {
+      "id": "na2_20241103_007",
+      "number": 7,
+      "subject_id": "tcpip",
+      "text": "IGMP 프로토콜의 주된 기능은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "네트워크 내에 발생된 오류에 관한 보고 기능"
+        },
+        {
+          "key": 2,
+          "text": "대용량 파일을 전송하는 기능"
+        },
+        {
+          "key": 3,
+          "text": "멀티캐스트 그룹에 가입한 네트워크 내의 호스트 관리"
+        },
+        {
+          "key": 4,
+          "text": "호스트의 IP Address에 해당하는 호스트의 물리주소를 알 려주는 기능"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "IGMP는 멀티캐스트 그룹 멤버십 관리",
+        "why_correct": "IGMP(Internet Group Management Protocol)는 호스트가 멀티캐스트 그룹에 가입·탈퇴하는 것을 라우터에 알리고 그룹 멤버십을 관리합니다.",
+        "why_wrong": {
+          "1": "오류 보고는 ICMP의 기능입니다.",
+          "2": "파일 전송은 FTP/TFTP의 기능입니다.",
+          "4": "물리주소 변환은 ARP의 기능입니다."
+        },
+        "key_concept": "IGMP, 멀티캐스트, 그룹 관리"
+      }
+    },
+    {
+      "id": "na2_20241103_008",
+      "number": 8,
+      "subject_id": "tcpip",
+      "text": "TCP/IP에서 Unicast의 의미는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "메시지가 한 호스트에서 다른 여러 호스트로 전송되는 패 킷"
+        },
+        {
+          "key": 2,
+          "text": "메시지가 한 호스트에서 다른 한 호스트로 전송되는 패킷"
+        },
+        {
+          "key": 3,
+          "text": "메시지가 한 호스트에서 망상의 다른 모든 호스트로 전송 되는 패킷"
+        },
+        {
+          "key": 4,
+          "text": "메시지가 한 호스트에서 망상의 특정 그룹 호스트들로 전 송되는 패킷"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "유니캐스트는 1:1 단일 전송",
+        "why_correct": "유니캐스트는 하나의 송신자가 하나의 수신자에게 메시지를 전송하는 일대일 통신 방식입니다.",
+        "why_wrong": {
+          "1": "1:여러명은 멀티캐스트입니다.",
+          "3": "1:전체는 브로드캐스트입니다.",
+          "4": "1:특정그룹은 멀티캐스트입니다."
+        },
+        "key_concept": "유니캐스트, 1:1, 전송 방식"
+      }
+    },
+    {
+      "id": "na2_20241103_009",
+      "number": 9,
+      "subject_id": "tcpip",
+      "text": "IP Address '127.0.0.1'이 의미하는 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "모든 네트워크를 의미한다."
+        },
+        {
+          "key": 2,
+          "text": "사설 IP Address를 의미한다."
+        },
+        {
+          "key": 3,
+          "text": "특정한 네트워크의 모든 노드를 의미한다."
+        },
+        {
+          "key": 4,
+          "text": "루프 백 테스트용이다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "127.0.0.1은 루프백 주소",
+        "why_correct": "127.0.0.1은 자기 자신을 가리키는 루프백(Loopback) 주소로, 네트워크 인터페이스 없이도 TCP/IP 스택을 테스트합니다.",
+        "why_wrong": {
+          "1": "모든 네트워크는 0.0.0.0입니다.",
+          "2": "사설 IP는 10.x, 172.16-31.x, 192.168.x.x입니다.",
+          "3": "브로드캐스트 주소 설명입니다."
+        },
+        "key_concept": "루프백, 127.0.0.1, 테스트"
+      }
+    },
+    {
+      "id": "na2_20241103_010",
+      "number": 10,
+      "subject_id": "tcpip",
+      "text": "TCP 3-Way Handshaking 연결 수립 절차의 3단계에서 사용되는 TCP 제어 Flag는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SYN"
+        },
+        {
+          "key": 2,
+          "text": "RST"
+        },
+        {
+          "key": 3,
+          "text": "SYN, ACK"
+        },
+        {
+          "key": 4,
+          "text": "ACK"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "3-way 3단계는 클라이언트의 ACK",
+        "why_correct": "TCP 3-way: ①클라이언트→SYN ②서버→SYN+ACK ③클라이언트→ACK 순서입니다. 3단계는 ACK만 전송합니다.",
+        "why_wrong": {
+          "1": "SYN은 1단계에서 사용됩니다.",
+          "2": "RST는 강제 연결 종료입니다.",
+          "3": "SYN+ACK는 2단계에서 사용됩니다."
+        },
+        "key_concept": "TCP, 3-way, ACK"
+      }
+    },
+    {
+      "id": "na2_20241103_011",
+      "number": 11,
+      "subject_id": "tcpip",
+      "text": "SSH의 특징으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Telnet에 비하여 보안성이 뛰어나다."
+        },
+        {
+          "key": 2,
+          "text": "SSH-1은 RSA 암호화를 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "SSH-2는 RSA 외 더 다양한 키교환방식을 지원한다."
+        },
+        {
+          "key": 4,
+          "text": "TCP/23번을 이용한다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "SSH는 포트 22, 포트 23은 Telnet",
+        "why_correct": "SSH는 TCP 포트 22를 사용합니다. 포트 23은 Telnet이 사용합니다.",
+        "why_wrong": {
+          "1": "SSH는 Telnet보다 훨씬 보안성이 높습니다.",
+          "2": "SSH-1은 RSA 암호화를 사용합니다.",
+          "3": "SSH-2는 RSA, ECDSA 등 다양한 방식을 지원합니다."
+        },
+        "key_concept": "SSH, 포트 22, Telnet"
+      }
+    },
+    {
+      "id": "na2_20241103_012",
+      "number": 12,
+      "subject_id": "tcpip",
+      "text": "불법 원격 접속 흔적 확인에 사용하는 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "ping"
+        },
+        {
+          "key": 2,
+          "text": "tracert"
+        },
+        {
+          "key": 3,
+          "text": "netstat -an"
+        },
+        {
+          "key": 4,
+          "text": "nslookup"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "netstat -an으로 모든 연결과 포트 확인",
+        "why_correct": "netstat -an은 모든 활성 연결과 수신 대기 포트를 IP/포트 번호로 표시하여 불법 접속 흔적을 확인할 수 있습니다.",
+        "why_wrong": {
+          "1": "ping은 연결성 테스트입니다.",
+          "2": "tracert는 경로 추적입니다.",
+          "4": "nslookup은 DNS 조회입니다."
+        },
+        "key_concept": "netstat, -an, 연결 확인"
+      }
+    },
+    {
+      "id": "na2_20241103_013",
+      "number": 13,
+      "subject_id": "tcpip",
+      "text": "SNMP 프로토콜의 기능으로 가장 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "대규모 환경의 망 관리 기능"
+        },
+        {
+          "key": 2,
+          "text": "네트워크 장비의 에러 보고 기능"
+        },
+        {
+          "key": 3,
+          "text": "네트워크 장비의 관리 및 감시 기능"
+        },
+        {
+          "key": 4,
+          "text": "호스트 간의 연결성 점검과 네트워크 혼잡 제어 기능"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "SNMP는 네트워크 장비 관리·감시",
+        "why_correct": "SNMP는 라우터, 스위치, 서버 등 네트워크 장비의 상태를 수집·모니터링하고 설정을 관리하는 표준 프로토콜입니다.",
+        "why_wrong": {
+          "1": "대규모 전용이 아닌 일반 네트워크 관리입니다.",
+          "2": "에러 보고는 ICMP의 기능입니다.",
+          "4": "연결성 점검은 ping(ICMP) 기능입니다."
+        },
+        "key_concept": "SNMP, 장비 관리, 감시"
+      }
+    },
+    {
+      "id": "na2_20241103_014",
+      "number": 14,
+      "subject_id": "tcpip",
+      "text": "HTTP와 HTTPS의 차이점에 대한 설명으로 올바른 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "HTTP를 사용하면 데이터가 안전하게 전송되며, 사용자 의 개인 정보를 보호할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "HTTP는 보안을 위해 '디지털 인증서'를 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "HTTP는 기본적으로 포트 번호 '80'을 사용하며, HTTPS"
+        },
+        {
+          "key": 4,
+          "text": "HTTP는 웹 사이트의 신원을 검증하기 위해 'SSL/TLS'를"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "HTTP=80, HTTPS=443",
+        "why_correct": "HTTP는 기본 포트 80을 사용하고, HTTPS는 TLS/SSL 암호화를 적용하여 기본 포트 443을 사용합니다.",
+        "why_wrong": {
+          "1": "HTTP는 암호화하지 않아 안전하지 않습니다.",
+          "2": "HTTP는 인증서 없이 동작합니다.",
+          "4": "SSL/TLS는 HTTPS가 사용합니다."
+        },
+        "key_concept": "HTTP 80, HTTPS 443, SSL/TLS"
+      }
+    },
+    {
+      "id": "na2_20241103_015",
+      "number": 15,
+      "subject_id": "tcpip",
+      "text": "서브네팅 시 서브넷 마스크로 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "255.255.255.128"
+        },
+        {
+          "key": 2,
+          "text": "255.255.255.192"
+        },
+        {
+          "key": 3,
+          "text": "255.255.255.224"
+        },
+        {
+          "key": 4,
+          "text": "255.255.255.240"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "/26 마스크로 4개 서브넷, 62개 호스트",
+        "why_correct": "255.255.255.192(/26)는 C클래스에서 2비트를 서브넷으로 사용하여 4개 서브넷, 각 62개 호스트를 제공합니다.",
+        "why_wrong": {
+          "1": "255.255.255.128(/25)는 2개 서브넷입니다.",
+          "3": "255.255.255.224(/27)는 8개 서브넷입니다.",
+          "4": "255.255.255.240(/28)는 16개 서브넷입니다."
+        },
+        "key_concept": "서브넷 마스크, /26, 서브넷"
+      }
+    },
+    {
+      "id": "na2_20241103_016",
+      "number": 16,
+      "subject_id": "general",
+      "text": "파일 전송 프로토콜로 (A)에 들어가는 용어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "FTP(File Transfer Protocol)"
+        },
+        {
+          "key": 2,
+          "text": "SFTP(SSH File Transfer Protocol)"
+        },
+        {
+          "key": 3,
+          "text": "FRPS(FTP Secure)"
+        },
+        {
+          "key": 4,
+          "text": "CMD"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "FTP는 표준 파일 전송 프로토콜",
+        "why_correct": "FTP(File Transfer Protocol)는 TCP를 기반으로 파일을 전송하는 가장 기본적인 파일 전송 프로토콜입니다.",
+        "why_wrong": {
+          "2": "SFTP는 SSH 기반 보안 파일 전송입니다.",
+          "3": "FTPS는 FTP+SSL, FRPS는 없는 용어입니다.",
+          "4": "CMD는 명령 프롬프트입니다."
+        },
+        "key_concept": "FTP, 파일 전송, TCP"
+      }
+    },
+    {
+      "id": "na2_20241103_017",
+      "number": 17,
+      "subject_id": "general",
+      "text": "호스트명-IP 매핑을 저장하는 로컬 파일 (A)는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "/etc/deny"
+        },
+        {
+          "key": 2,
+          "text": "/etc/hosts"
+        },
+        {
+          "key": 3,
+          "text": "/etc/allow"
+        },
+        {
+          "key": 4,
+          "text": "/etc/services"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "/etc/hosts는 로컬 호스트명 매핑 파일",
+        "why_correct": "/etc/hosts 파일은 DNS 질의 없이 호스트명과 IP 주소를 로컬에서 직접 매핑합니다.",
+        "why_wrong": {
+          "1": "/etc/deny는 없는 파일입니다.",
+          "3": "/etc/allow도 없는 파일입니다.",
+          "4": "/etc/services는 서비스명과 포트를 매핑합니다."
+        },
+        "key_concept": "/etc/hosts, 호스트명, IP 매핑"
+      }
+    },
+    {
+      "id": "na2_20241103_018",
+      "number": 18,
+      "subject_id": "general",
+      "text": "패킷 교환망의 특징으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "연결설정에 따라 가상회선과 데이터그램으로 분류된다."
+        },
+        {
+          "key": 2,
+          "text": "메시지를 보다 짧은 길이의 패킷으로 나누어 전송한다."
+        },
+        {
+          "key": 3,
+          "text": "망에 유입되는 데이터의 양이 많아질수록 전송속도가 빠 르다."
+        },
+        {
+          "key": 4,
+          "text": "블록킹 현상이 없다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "데이터 증가 시 속도 빠름은 틀림, 오히려 지연",
+        "why_correct": "패킷 교환망에 데이터가 많아지면 큐잉 지연과 혼잡이 발생하여 전송 속도가 느려집니다.",
+        "why_wrong": {
+          "1": "가상회선과 데이터그램 방식이 맞습니다.",
+          "2": "메시지를 패킷으로 분할하는 것이 맞습니다.",
+          "4": "패킷 교환은 블로킹 현상이 없습니다."
+        },
+        "key_concept": "패킷 교환, 혼잡, 속도"
+      }
+    },
+    {
+      "id": "na2_20241103_019",
+      "number": 19,
+      "subject_id": "general",
+      "text": "Multiplexing 방법 중에서 전송할 데이터가 없더라도 타임 슬롯이 할당되어 대역폭의 낭비를 가져오는 방식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TDM(Time Division Multiplexer)"
+        },
+        {
+          "key": 2,
+          "text": "STDM(Statistical Time Division Multiplexer)"
+        },
+        {
+          "key": 3,
+          "text": "FDM(Frequency Division Multiplex)"
+        },
+        {
+          "key": 4,
+          "text": "FDMA(Frequency Division Multiple Access)"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "TDM은 고정 슬롯으로 대역폭 낭비",
+        "why_correct": "TDM은 각 채널에 고정 슬롯을 배분하므로 전송할 데이터가 없어도 슬롯이 낭비됩니다.",
+        "why_wrong": {
+          "2": "STDM은 데이터 있을 때만 슬롯을 할당합니다.",
+          "3": "FDM은 주파수 분할 다중화입니다.",
+          "4": "FDMA는 주파수 기반 다중 접속입니다."
+        },
+        "key_concept": "TDM, 고정 슬롯, 낭비"
+      }
+    },
+    {
+      "id": "na2_20241103_020",
+      "number": 20,
+      "subject_id": "general",
+      "text": "(A)안에 들어가는 용어 중 옳은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "WPAN"
+        },
+        {
+          "key": 2,
+          "text": "LTE-M"
+        },
+        {
+          "key": 3,
+          "text": "NB-IoT"
+        },
+        {
+          "key": 4,
+          "text": "LAN"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "WPAN은 개인 근거리 무선 네트워크",
+        "why_correct": "WPAN(Wireless Personal Area Network)은 Bluetooth, Zigbee 등 개인 장치 간 단거리 무선 통신 기술입니다.",
+        "why_wrong": {
+          "2": "LTE-M은 이동통신 기반 IoT입니다.",
+          "3": "NB-IoT는 협대역 IoT 기술입니다.",
+          "4": "LAN은 로컬 네트워크입니다."
+        },
+        "key_concept": "WPAN, 근거리, 무선"
+      }
+    },
+    {
+      "id": "na2_20241103_021",
+      "number": 21,
+      "subject_id": "general",
+      "text": "다음의 (A)에 들어갈 알맞은 용어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "NFV (Network Functions Virtualization)"
+        },
+        {
+          "key": 2,
+          "text": "WMN (Wireless Mesh Network)"
+        },
+        {
+          "key": 3,
+          "text": "VPN (Virtual Private Network)"
+        },
+        {
+          "key": 4,
+          "text": "CDN (Content Delivery Network)"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "NFV는 네트워크 기능 가상화",
+        "why_correct": "NFV(Network Functions Virtualization)는 전용 하드웨어 대신 소프트웨어로 방화벽, 로드밸런서 등 네트워크 기능을 구현하는 기술입니다.",
+        "why_wrong": {
+          "2": "WMN은 무선 메시 네트워크입니다.",
+          "3": "VPN은 가상 사설 네트워크입니다.",
+          "4": "CDN은 콘텐츠 배포 네트워크입니다."
+        },
+        "key_concept": "NFV, 가상화, 소프트웨어"
+      }
+    },
+    {
+      "id": "na2_20241103_022",
+      "number": 22,
+      "subject_id": "general",
+      "text": "OSI 7 Layer 중 세션계층의 역할로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "대화 제어"
+        },
+        {
+          "key": 2,
+          "text": "에러 제어"
+        },
+        {
+          "key": 3,
+          "text": "연결 설정 종료"
+        },
+        {
+          "key": 4,
+          "text": "동기화"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "에러 제어는 데이터링크/전송 계층 담당",
+        "why_correct": "세션 계층은 연결 설정·유지·종료, 대화 제어, 동기화를 담당합니다. 에러 제어는 데이터링크(Layer 2)나 전송(Layer 4) 계층의 기능입니다.",
+        "why_wrong": {
+          "1": "대화 제어는 세션 계층 기능입니다.",
+          "3": "연결 설정·종료는 세션 계층 기능입니다.",
+          "4": "동기화는 세션 계층 기능입니다."
+        },
+        "key_concept": "세션 계층, 에러 제어, OSI"
+      }
+    },
+    {
+      "id": "na2_20241103_023",
+      "number": 23,
+      "subject_id": "general",
+      "text": "FDDI(Fiber Distributed Data Interface)의 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "광섬유를 사용하고 토큰 패싱 기술을 활용하는 한 개의 링 토폴로지를 가지는 기술이다."
+        },
+        {
+          "key": 2,
+          "text": "물리계층의 PMD(Physical Medium Dependent)계층에서 는 광섬유 종류별 각종 전송장비의 내역을 명시한다."
+        },
+        {
+          "key": 3,
+          "text": "물리계층의 PHY(Physical Sublayer)계층은 부호화 및 고 장난 노드의 처리방식을 제시한다."
+        },
+        {
+          "key": 4,
+          "text": "SMT(Station Management) 프로토콜은 네트워크 고장을 탐지하며, 고장이 발견되면 즉시 링 토폴로지를 재구성 한다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "FDDI는 이중 링 구조, 단일 링 아님",
+        "why_correct": "FDDI는 주 링과 보조 링으로 구성된 이중 링(Dual Ring) 구조입니다. 단일 링이 아닙니다.",
+        "why_wrong": {
+          "2": "PMD계층 설명이 맞습니다.",
+          "3": "PHY계층 설명이 맞습니다.",
+          "4": "SMT 프로토콜 설명이 맞습니다."
+        },
+        "key_concept": "FDDI, 이중 링, 광섬유"
+      }
+    },
+    {
+      "id": "na2_20241103_024",
+      "number": 24,
+      "subject_id": "general",
+      "text": "VPN의 (A)에 들어가는 핵심 기술은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "터널링"
+        },
+        {
+          "key": 2,
+          "text": "접근 통제 기술"
+        },
+        {
+          "key": 3,
+          "text": "방화벽 설정"
+        },
+        {
+          "key": 4,
+          "text": "FTP"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "VPN의 핵심 기술은 터널링",
+        "why_correct": "VPN은 터널링 기술을 사용하여 공개 네트워크에서 암호화된 가상의 전용 경로를 생성합니다.",
+        "why_wrong": {
+          "2": "접근 통제는 VPN의 부가 기능입니다.",
+          "3": "방화벽은 별도 보안 장비입니다.",
+          "4": "FTP는 파일 전송 프로토콜입니다."
+        },
+        "key_concept": "VPN, 터널링, 암호화"
+      }
+    },
+    {
+      "id": "na2_20241103_025",
+      "number": 25,
+      "subject_id": "general",
+      "text": "소프트웨어로 제어되는 네트워킹 기술은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "SDS (Software Defined Storage)"
+        },
+        {
+          "key": 2,
+          "text": "SDN (Software Defined Networking)"
+        },
+        {
+          "key": 3,
+          "text": "SNMP (Simple Network Management Protocol)"
+        },
+        {
+          "key": 4,
+          "text": "CLI (Command Line Interface)"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "SDN은 소프트웨어 정의 네트워크",
+        "why_correct": "SDN은 네트워크 제어 평면을 소프트웨어로 분리하여 유연하고 동적인 네트워크 관리를 제공합니다.",
+        "why_wrong": {
+          "1": "SDS는 소프트웨어 정의 스토리지입니다.",
+          "3": "SNMP는 네트워크 관리 프로토콜입니다.",
+          "4": "CLI는 명령줄 인터페이스입니다."
+        },
+        "key_concept": "SDN, 소프트웨어 정의, 네트워크"
+      }
+    },
+    {
+      "id": "na2_20241103_026",
+      "number": 26,
+      "subject_id": "general",
+      "text": "클라우드 컴퓨팅의 특징으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "사용자는 필요한 만큼의 서버, 네트워크, 저장장치 등과 같은 컴퓨팅 능력을 활용할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "사용자 요구에 따라 물리 자원과 가상 자원들이 동적으 로 할당/재할당 된다"
+        },
+        {
+          "key": 3,
+          "text": "서비스 형태에 따라 적절한 미터링을 활용하여 자동으로 자원의 사용을 제어하고 최적화한다."
+        },
+        {
+          "key": 4,
+          "text": "제공자의 컴퓨팅 자원들은 다수의 사용자들을 지원하기 위하여 단일임차인(single-tenant) 모델의 자원 풀(Pool)  형태로 운영된다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "클라우드 자원은 단독이 아닌 공유 자원",
+        "why_correct": "클라우드 컴퓨팅은 자원 풀링(Resource Pooling)을 통해 다수의 사용자가 자원을 공유합니다. 단독 사용이 아닙니다.",
+        "why_wrong": {
+          "1": "사용자 필요에 따른 자원 확보가 맞습니다.",
+          "2": "동적 자원 할당이 맞습니다.",
+          "3": "종량제 미터링이 맞습니다."
+        },
+        "key_concept": "클라우드, 자원 공유, 풀링"
+      }
+    },
+    {
+      "id": "na2_20241103_027",
+      "number": 27,
+      "subject_id": "general",
+      "text": "메시 네트워크(Mesh Network)의 특징으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "노드의 이동이 자유롭기 때문에 네트워크 토폴로지가 동 적으로 변한다."
+        },
+        {
+          "key": 2,
+          "text": "일대일 다중 홉 라우팅(Multihop Routing) 방식으로 전 달한다."
+        },
+        {
+          "key": 3,
+          "text": "어떠한 중앙 제어나 표준 지원 서비스의 도움 없이 임시 로 망을 구성할 수 없다."
+        },
+        {
+          "key": 4,
+          "text": "하나의 연결이 끊어져도 네트워크는 자동으로 다른 연결 로 메시지를 전송할 수 있다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "메시는 중앙 제어 없이 구성 가능",
+        "why_correct": "메시 네트워크는 중앙 서버나 중앙 제어 없이도 노드 간 자율적으로 연결되어 네트워크를 구성할 수 있습니다.",
+        "why_wrong": {
+          "1": "토폴로지가 동적으로 변화하는 것이 맞습니다.",
+          "2": "다중 홉 라우팅 방식이 맞습니다.",
+          "4": "자동 우회 연결이 맞습니다."
+        },
+        "key_concept": "메시, 자율, 중앙 없음"
+      }
+    },
+    {
+      "id": "na2_20241103_028",
+      "number": 28,
+      "subject_id": "nos",
+      "text": "DHCP의 장점으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "클라이언트에게 자동으로 IP Address를 할당해 줄 수 있 다."
+        },
+        {
+          "key": 2,
+          "text": "IP Address의 관리가 용이하다."
+        },
+        {
+          "key": 3,
+          "text": "영구적인 IP Address를 필요로 하는 웹 서버에 대해서는 동적인 주소를 제공한다."
+        },
+        {
+          "key": 4,
+          "text": "사용자들이 자주 바뀌는 학교와 같은 환경에서 특히 유 용하다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "웹 서버는 고정 IP 필요, DHCP 비적합",
+        "why_correct": "DHCP는 IP를 동적으로 할당하므로 영구 고정 IP가 필요한 웹 서버에는 적합하지 않습니다. 이것은 단점이지 장점이 아닙니다.",
+        "why_wrong": {
+          "1": "자동 IP 할당이 장점입니다.",
+          "2": "중앙 관리로 IP 관리가 용이합니다.",
+          "4": "자주 바뀌는 환경에서 특히 유용합니다."
+        },
+        "key_concept": "DHCP, 고정 IP, 웹 서버"
+      }
+    },
+    {
+      "id": "na2_20241103_029",
+      "number": 29,
+      "subject_id": "nos",
+      "text": "실제 도메인 이름과 연결되는 가상 도메인 이름의 DNS 레코드 형식은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "CNAME"
+        },
+        {
+          "key": 2,
+          "text": "MX"
+        },
+        {
+          "key": 3,
+          "text": "A"
+        },
+        {
+          "key": 4,
+          "text": "PTR"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "CNAME은 별칭 도메인 레코드",
+        "why_correct": "CNAME(Canonical Name) 레코드는 도메인의 별칭을 실제 도메인에 연결합니다. www.example.com → example.com처럼 사용됩니다.",
+        "why_wrong": {
+          "2": "MX는 이메일 서버 레코드입니다.",
+          "3": "A는 도메인→IPv4 주소 매핑입니다.",
+          "4": "PTR는 역방향 조회 레코드입니다."
+        },
+        "key_concept": "CNAME, 별칭, DNS"
+      }
+    },
+    {
+      "id": "na2_20241103_030",
+      "number": 30,
+      "subject_id": "nos",
+      "text": "Windows Server 2016에서 파일 및 프린터 서버를 위해 반드시 설치해야 하는 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "TCP/IP"
+        },
+        {
+          "key": 2,
+          "text": "SNMP"
+        },
+        {
+          "key": 3,
+          "text": "SMTP"
+        },
+        {
+          "key": 4,
+          "text": "IGMP"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "파일/프린터 공유의 기반은 TCP/IP",
+        "why_correct": "Windows 파일 및 프린터 공유 서비스는 TCP/IP 프로토콜을 기반으로 동작합니다. 가장 먼저 설치되어야 합니다.",
+        "why_wrong": {
+          "2": "SNMP는 네트워크 관리 프로토콜입니다.",
+          "3": "SMTP는 이메일 전송 프로토콜입니다.",
+          "4": "IGMP는 멀티캐스트 관리 프로토콜입니다."
+        },
+        "key_concept": "TCP/IP, 파일 공유, 프린터"
+      }
+    },
+    {
+      "id": "na2_20241103_031",
+      "number": 31,
+      "subject_id": "nos",
+      "text": "Windows Server 2016에서 사용하는 PowerShell에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "기존 DOS 명령은 사용할 수 없다."
+        },
+        {
+          "key": 2,
+          "text": "스크립트는 콘솔에서 대화형으로 사용될 수 있다."
+        },
+        {
+          "key": 3,
+          "text": "스크립트는 텍스트로 구성된다."
+        },
+        {
+          "key": 4,
+          "text": "대소문자를 구분하지 않는다."
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "PowerShell은 기존 DOS 명령도 지원",
+        "why_correct": "PowerShell은 dir, cd, copy 등 기존 DOS 명령을 별칭(Alias)으로 지원합니다. 사용 불가하다는 것은 틀린 설명입니다.",
+        "why_wrong": {
+          "2": "대화형 스크립트 실행이 가능합니다.",
+          "3": "스크립트는 텍스트(.ps1)로 작성됩니다.",
+          "4": "PowerShell은 대소문자를 구분하지 않습니다."
+        },
+        "key_concept": "PowerShell, DOS, 명령어"
+      }
+    },
+    {
+      "id": "na2_20241103_032",
+      "number": 32,
+      "subject_id": "nos",
+      "text": "Linux 디렉터리 구성에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "/tmp - 임시파일이 저장되는 디렉터리"
+        },
+        {
+          "key": 2,
+          "text": "/boot - 시스템이 부팅될 때 부팅 가능한 커널 이미지 파일을 담고 있는 디렉터리"
+        },
+        {
+          "key": 3,
+          "text": "/var - 시스템의 로그 파일과 메일이 저장되는 위치"
+        },
+        {
+          "key": 4,
+          "text": "/usr - 사용자 계정이 위치하는 파티션 위치"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "/usr은 프로그램 저장소, 사용자 홈은 /home",
+        "why_correct": "/usr은 공유 프로그램과 라이브러리가 저장됩니다. 사용자 홈 디렉터리는 /home/사용자명에 위치합니다.",
+        "why_wrong": {
+          "1": "/tmp는 임시 파일 디렉터리가 맞습니다.",
+          "2": "/boot는 커널 이미지 저장이 맞습니다.",
+          "3": "/var는 로그와 메일 저장이 맞습니다."
+        },
+        "key_concept": "/usr, /home, 디렉터리"
+      }
+    },
+    {
+      "id": "na2_20241103_033",
+      "number": 33,
+      "subject_id": "nos",
+      "text": "Linux 시스템 부팅과 함께 자동으로 마운트되어야 할 항목이 정의되어 있는 파일은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "/etc/fstab"
+        },
+        {
+          "key": 2,
+          "text": "/usr/local"
+        },
+        {
+          "key": 3,
+          "text": "/mount/cdrom"
+        },
+        {
+          "key": 4,
+          "text": "/home/public_html"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "/etc/fstab은 파일시스템 자동 마운트 설정",
+        "why_correct": "/etc/fstab(File Systems Table)은 부팅 시 자동 마운트할 파일시스템과 옵션을 정의합니다.",
+        "why_wrong": {
+          "2": "/usr/local은 로컬 프로그램 디렉터리입니다.",
+          "3": "/mount/cdrom은 마운트 경로입니다.",
+          "4": "/home/public_html은 홈 서브 디렉터리입니다."
+        },
+        "key_concept": "/etc/fstab, 자동 마운트, 파일시스템"
+      }
+    },
+    {
+      "id": "na2_20241103_034",
+      "number": 34,
+      "subject_id": "nos",
+      "text": "Linux에서 프로세스와 관련된 명령어 설명 중 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "kill - 프로세스를 종료시키는 명령어"
+        },
+        {
+          "key": 2,
+          "text": "nice - 프로세스의 우선순위를 변경하는 명령어"
+        },
+        {
+          "key": 3,
+          "text": "pstree - 프로세스를 트리형태로 보여주는 명령어"
+        },
+        {
+          "key": 4,
+          "text": "top - 가장 우선순위가 높은 프로세스를 보여주는 명령 어"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "top은 모든 프로세스를 CPU/메모리 순으로",
+        "why_correct": "top 명령은 CPU 사용률 기준 상위 프로세스를 실시간으로 보여주지만, '가장 우선순위 높은 하나만'이 아닌 전체 프로세스 목록을 보여줍니다.",
+        "why_wrong": {
+          "1": "kill은 프로세스 종료 명령입니다.",
+          "2": "nice는 프로세스 우선순위 변경입니다.",
+          "3": "pstree는 트리 형태로 프로세스 표시입니다."
+        },
+        "key_concept": "top, 프로세스 목록, 실시간"
+      }
+    },
+    {
+      "id": "na2_20241103_035",
+      "number": 35,
+      "subject_id": "nos",
+      "text": "Windows Server 2016에서 기본적으로 생성되는 계정이 아닌 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Administrator"
+        },
+        {
+          "key": 2,
+          "text": "DefaultAccount"
+        },
+        {
+          "key": 3,
+          "text": "Guest"
+        },
+        {
+          "key": 4,
+          "text": "root"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "root는 Linux 계정, Windows에는 없음",
+        "why_correct": "Windows Server 2016의 기본 계정은 Administrator, DefaultAccount, Guest입니다. root는 Linux/Unix 시스템의 최고 관리자 계정입니다.",
+        "why_wrong": {
+          "1": "Administrator는 Windows 기본 관리자입니다.",
+          "2": "DefaultAccount는 기본 생성 계정입니다.",
+          "3": "Guest는 기본 게스트 계정입니다."
+        },
+        "key_concept": "Windows 계정, root, Administrator"
+      }
+    },
+    {
+      "id": "na2_20241103_036",
+      "number": 36,
+      "subject_id": "nos",
+      "text": "리소스 모니터에서 점검할 수 있는 항목이 아닌 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "CPU"
+        },
+        {
+          "key": 2,
+          "text": "Memory"
+        },
+        {
+          "key": 3,
+          "text": "Network"
+        },
+        {
+          "key": 4,
+          "text": "Firewall"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "방화벽은 리소스 모니터 항목 아님",
+        "why_correct": "리소스 모니터는 CPU, Memory, Disk, Network의 사용 현황을 보여줍니다. Firewall은 보안 도구로 리소스 모니터에 없습니다.",
+        "why_wrong": {
+          "1": "CPU 사용률 확인 가능합니다.",
+          "2": "메모리 사용 현황 확인 가능합니다.",
+          "3": "네트워크 사용 현황 확인 가능합니다."
+        },
+        "key_concept": "리소스 모니터, CPU, Firewall"
+      }
+    },
+    {
+      "id": "na2_20241103_037",
+      "number": 37,
+      "subject_id": "nos",
+      "text": "Linux 시스템에서 기존에 설정된 'crontab'을 삭제하려고 할 때 올바른 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "crontab -u"
+        },
+        {
+          "key": 2,
+          "text": "crontab -e"
+        },
+        {
+          "key": 3,
+          "text": "crontab -l"
+        },
+        {
+          "key": 4,
+          "text": "crontab -r"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "crontab -r로 크론 작업 삭제",
+        "why_correct": "crontab -r 옵션은 현재 사용자의 crontab 파일 전체를 삭제합니다.",
+        "why_wrong": {
+          "1": "crontab -u는 사용자를 지정합니다.",
+          "2": "crontab -e는 편집합니다.",
+          "3": "crontab -l은 목록을 표시합니다."
+        },
+        "key_concept": "crontab, -r, 삭제"
+      }
+    },
+    {
+      "id": "na2_20241103_038",
+      "number": 38,
+      "subject_id": "nos",
+      "text": "Apache httpd.conf에서 포트 번호를 변경하려면 어떤 옵션을 수정해야 하는가?",
+      "options": [
+        {
+          "key": 1,
+          "text": "KeepAlive"
+        },
+        {
+          "key": 2,
+          "text": "DocumentRoot"
+        },
+        {
+          "key": 3,
+          "text": "StartServers"
+        },
+        {
+          "key": 4,
+          "text": "Listen"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "Listen으로 Apache 포트 변경",
+        "why_correct": "Apache의 Listen 지시문을 변경하여 웹서버 포트를 설정합니다. 기본값은 Listen 80입니다.",
+        "why_wrong": {
+          "1": "KeepAlive는 연결 유지 설정입니다.",
+          "2": "DocumentRoot는 웹 루트 경로입니다.",
+          "3": "StartServers는 시작 시 프로세스 수입니다."
+        },
+        "key_concept": "Listen, Apache, 포트 변경"
+      }
+    },
+    {
+      "id": "na2_20241103_039",
+      "number": 39,
+      "subject_id": "equipment",
+      "text": "Linux 시스템 비인가자의 로그인 시도 이력을 확인하기 위한 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "lastb"
+        },
+        {
+          "key": 2,
+          "text": "xferlog"
+        },
+        {
+          "key": 3,
+          "text": "history"
+        },
+        {
+          "key": 4,
+          "text": "pkill"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "lastb는 실패한 로그인 시도 기록 표시",
+        "why_correct": "lastb 명령은 /var/log/btmp 파일을 참조하여 실패한 로그인 시도 이력(날짜, 사용자, IP)을 보여줍니다.",
+        "why_wrong": {
+          "2": "xferlog는 FTP 전송 로그입니다.",
+          "3": "history는 명령 실행 이력입니다.",
+          "4": "pkill은 프로세스를 종료합니다."
+        },
+        "key_concept": "lastb, 로그인 실패, 보안 감사"
+      }
+    },
+    {
+      "id": "na2_20241103_040",
+      "number": 40,
+      "subject_id": "equipment",
+      "text": "IIS 관리자를 실행하기 위해 사용할 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "wf.msc"
+        },
+        {
+          "key": 2,
+          "text": "msconfig"
+        },
+        {
+          "key": 3,
+          "text": "inetmgr.exe"
+        },
+        {
+          "key": 4,
+          "text": "dsac.exe"
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "inetmgr.exe는 IIS 관리자 실행 명령",
+        "why_correct": "inetmgr.exe는 Windows IIS(인터넷 정보 서비스) 관리자를 실행하는 명령입니다.",
+        "why_wrong": {
+          "1": "wf.msc는 Windows 방화벽 설정입니다.",
+          "2": "msconfig는 시스템 구성 유틸리티입니다.",
+          "4": "dsac.exe는 Active Directory 관련입니다."
+        },
+        "key_concept": "IIS, inetmgr.exe, 관리자"
+      }
+    },
+    {
+      "id": "na2_20241103_041",
+      "number": 41,
+      "subject_id": "equipment",
+      "text": "'sample'파일의 소유자 및 소유그룹이 아닌 사람에 대해 파일을 볼 수는 있지만 수정 및 실행을 못하도록 하는 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "chmod 776 sample"
+        },
+        {
+          "key": 2,
+          "text": "chmod 774 sample"
+        },
+        {
+          "key": 3,
+          "text": "chmod 746 sample"
+        },
+        {
+          "key": 4,
+          "text": "chmod 766 sample"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "chmod 774 = other에 읽기(4)만",
+        "why_correct": "774는 owner(7=rwx), group(7=rwx), other(4=r--)입니다. 소유자/그룹이 아닌 사람은 읽기만 가능합니다.",
+        "why_wrong": {
+          "1": "776은 other에도 rw를 줍니다.",
+          "3": "746은 group에만 r을 줍니다.",
+          "4": "766은 other에 rw를 줍니다."
+        },
+        "key_concept": "chmod 774, other, 읽기 전용"
+      }
+    },
+    {
+      "id": "na2_20241103_042",
+      "number": 42,
+      "subject_id": "equipment",
+      "text": "Linux BIND 서버 구축 시 '/etc/named.conf'에서 도메인의 zone 파일 위치를 지정하는 설정값은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "directory '/var/named'"
+        },
+        {
+          "key": 2,
+          "text": "linsten-on port 53 { any; }"
+        },
+        {
+          "key": 3,
+          "text": "dump-file '/var/named/data/dump.db'"
+        },
+        {
+          "key": 4,
+          "text": "allow-query { 192.168.0.0/24; }"
+        }
+      ],
+      "answer": 1,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "directory는 zone 파일 위치 지정",
+        "why_correct": "named.conf의 'directory' 옵션은 BIND가 zone 파일을 찾을 기본 디렉터리를 지정합니다.",
+        "why_wrong": {
+          "2": "listen-on은 수신 포트/인터페이스 설정입니다.",
+          "3": "dump-file은 dump 데이터 파일 경로입니다.",
+          "4": "allow-query는 질의 허용 대역 설정입니다."
+        },
+        "key_concept": "named.conf, directory, zone 파일"
+      }
+    },
+    {
+      "id": "na2_20241103_043",
+      "number": 43,
+      "subject_id": "equipment",
+      "text": "Linux에서 DNS의 SOA 레코드에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Zone 파일은 항상 SOA로 시작한다."
+        },
+        {
+          "key": 2,
+          "text": "해당 Zone에 대한 네임서버를 유지하기 위한 기본적인 자료가 저장된다."
+        },
+        {
+          "key": 3,
+          "text": "Refresh는 주 서버와 보조 서버의 동기 주기를 설정한 다."
+        },
+        {
+          "key": 4,
+          "text": "TTL 값이 길면 DNS의 부하가 늘어난다."
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "TTL 길면 캐시 오래 유지 = DNS 부하 감소",
+        "why_correct": "TTL이 길면 클라이언트가 캐시를 오래 유지하므로 DNS 서버에 질의를 적게 보냅니다. DNS 부하가 줄어듭니다.",
+        "why_wrong": {
+          "1": "Zone 파일은 SOA로 시작합니다.",
+          "2": "SOA는 기본 네임서버 유지 정보를 포함합니다.",
+          "3": "Refresh는 보조 서버 갱신 주기입니다."
+        },
+        "key_concept": "SOA, TTL, DNS 부하"
+      }
+    },
+    {
+      "id": "na2_20241103_044",
+      "number": 44,
+      "subject_id": "equipment",
+      "text": "사이트와의 통신 상태를 점검할 때 사용하는 Linux 명령어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "who"
+        },
+        {
+          "key": 2,
+          "text": "w"
+        },
+        {
+          "key": 3,
+          "text": "finger"
+        },
+        {
+          "key": 4,
+          "text": "ping"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "ping으로 네트워크 통신 상태 점검",
+        "why_correct": "ping은 ICMP Echo를 사용하여 특정 호스트와의 네트워크 연결 여부와 응답 시간을 점검합니다.",
+        "why_wrong": {
+          "1": "who는 현재 로그인 사용자를 표시합니다.",
+          "2": "w는 사용자 활동 상태를 표시합니다.",
+          "3": "finger는 사용자 정보를 표시합니다."
+        },
+        "key_concept": "ping, ICMP, 통신 점검"
+      }
+    },
+    {
+      "id": "na2_20241103_045",
+      "number": 45,
+      "subject_id": "equipment",
+      "text": "Linux에서 파티션 Type이 'SWAP'일 경우의 의미는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Linux가 실제로 자료를 저장하는데 사용되는 파티션이다."
+        },
+        {
+          "key": 2,
+          "text": "Linux가 네트워킹 상태에서 쿠키를 저장하기 위한 파티 션이다."
+        },
+        {
+          "key": 3,
+          "text": "메모리가 부족할 경우 하드 디스크의 일부분을 마치 메 모리인 것처럼 사용하는 파티션이다."
+        },
+        {
+          "key": 4,
+          "text": "Utility 프로그램을 저장하는데 사용되는 파티션이다."
+        }
+      ],
+      "answer": 3,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "SWAP은 가상 메모리 파티션",
+        "why_correct": "SWAP 파티션은 RAM이 부족할 때 하드 디스크의 일부를 가상 메모리처럼 사용하는 영역입니다.",
+        "why_wrong": {
+          "1": "자료 저장은 일반 파티션(ext4 등)입니다.",
+          "2": "쿠키 저장과는 무관합니다.",
+          "4": "유틸리티 저장과는 무관합니다."
+        },
+        "key_concept": "SWAP, 가상 메모리, 파티션"
+      }
+    },
+    {
+      "id": "na2_20241103_046",
+      "number": 46,
+      "subject_id": "equipment",
+      "text": "다음 설명의 (A)에 들어갈 알맞은 용어는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IP Masquerading"
+        },
+        {
+          "key": 2,
+          "text": "Port Forwarding"
+        },
+        {
+          "key": 3,
+          "text": "Dynamic Address Allocation"
+        },
+        {
+          "key": 4,
+          "text": "Load Balancing"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "로드 밸런싱은 서버 부하 분산",
+        "why_correct": "Load Balancing은 네트워크 트래픽을 여러 서버에 분산하여 과부하를 방지하고 성능과 가용성을 높이는 기술입니다.",
+        "why_wrong": {
+          "1": "IP Masquerading은 IP 주소 변환입니다.",
+          "2": "Port Forwarding은 포트 전달입니다.",
+          "3": "Dynamic Address Allocation은 동적 주소 할당입니다."
+        },
+        "key_concept": "Load Balancing, 분산, 서버"
+      }
+    },
+    {
+      "id": "na2_20241103_047",
+      "number": 47,
+      "subject_id": "equipment",
+      "text": "Distance Vector 방식에 해당하지 않는 프로토콜은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "IGRP"
+        },
+        {
+          "key": 2,
+          "text": "RIP"
+        },
+        {
+          "key": 3,
+          "text": "BGP"
+        },
+        {
+          "key": 4,
+          "text": "OSPF"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "OSPF는 링크 스테이트, 거리 벡터 아님",
+        "why_correct": "OSPF는 링크 스테이트 알고리즘 기반 라우팅 프로토콜입니다. IGRP, RIP, BGP는 거리 벡터 방식입니다.",
+        "why_wrong": {
+          "1": "IGRP는 Cisco 독자적 거리 벡터 프로토콜입니다.",
+          "2": "RIP는 홉 수 기반 거리 벡터 프로토콜입니다.",
+          "3": "BGP는 경로 벡터(거리 벡터 기반) 프로토콜입니다."
+        },
+        "key_concept": "OSPF, 링크 스테이트, 거리 벡터"
+      }
+    },
+    {
+      "id": "na2_20241103_048",
+      "number": 48,
+      "subject_id": "equipment",
+      "text": "하나의 물리적 스위치를 부서별로 분리하고 3계층 장비를 통해서만 통신하도록 하는 기술은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "VPN(Virtual Private Network)"
+        },
+        {
+          "key": 2,
+          "text": "VLAN(Virtual Local Area Network)"
+        },
+        {
+          "key": 3,
+          "text": "VCN(Virtual Cloud Network)"
+        },
+        {
+          "key": 4,
+          "text": "IPS(Intrusion Prevention System)"
+        }
+      ],
+      "answer": 2,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "VLAN은 스위치를 논리적으로 분리",
+        "why_correct": "VLAN은 하나의 물리적 스위치를 여러 논리적 네트워크로 분리합니다. 다른 VLAN 간 통신은 L3 장비(라우터)를 통해서만 가능합니다.",
+        "why_wrong": {
+          "1": "VPN은 암호화 터널 기술입니다.",
+          "3": "VCN은 클라우드 가상 네트워크입니다.",
+          "4": "IPS는 침입 방지 시스템입니다."
+        },
+        "key_concept": "VLAN, 부서 분리, L3"
+      }
+    },
+    {
+      "id": "na2_20241103_049",
+      "number": 49,
+      "subject_id": "security",
+      "text": "L2 스위치 네트워크의 다중 루프를 방지하기 위해 만들어진 기술은?",
+      "options": [
+        {
+          "key": 1,
+          "text": "VLAN(Virtual Local Area Network)"
+        },
+        {
+          "key": 2,
+          "text": "Port Mirroring"
+        },
+        {
+          "key": 3,
+          "text": "Store And Forward"
+        },
+        {
+          "key": 4,
+          "text": "STP(Spanning Tree Protocol)"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "STP는 스위치 루프를 방지",
+        "why_correct": "STP(Spanning Tree Protocol)는 스위치 네트워크에서 루프를 감지하고 특정 포트를 차단하여 브로드캐스트 폭풍을 방지합니다.",
+        "why_wrong": {
+          "1": "VLAN은 네트워크 분리 기술입니다.",
+          "2": "Port Mirroring은 트래픽 복사입니다.",
+          "3": "Store-and-Forward는 스위칭 방식입니다."
+        },
+        "key_concept": "STP, 루프 방지, 브로드캐스트"
+      }
+    },
+    {
+      "id": "na2_20241103_050",
+      "number": 50,
+      "subject_id": "security",
+      "text": "아래 전송 선로 중 대역폭이 가장 넓은 전송매체는?",
+      "options": [
+        {
+          "key": 1,
+          "text": "Twist Pair 케이블"
+        },
+        {
+          "key": 2,
+          "text": "Base Band 동축케이블"
+        },
+        {
+          "key": 3,
+          "text": "CATV 동축케이블"
+        },
+        {
+          "key": 4,
+          "text": "Fiber Optic 케이블"
+        }
+      ],
+      "answer": 4,
+      "has_figure": false,
+      "explanation": {
+        "correct_summary": "광섬유 케이블이 가장 넓은 대역폭",
+        "why_correct": "광섬유(Fiber Optic) 케이블은 빛을 이용하여 수 Tbps의 초고속 전송이 가능하며, 가장 넓은 대역폭을 제공합니다.",
+        "why_wrong": {
+          "1": "Twisted Pair는 최대 10Gbps 수준입니다.",
+          "2": "동축 베이스밴드는 더 낮은 대역폭입니다.",
+          "3": "CATV 동축도 광섬유보다 대역폭이 좁습니다."
+        },
+        "key_concept": "광섬유, 대역폭, 전송 매체"
+      }
+    }
   ]
 }

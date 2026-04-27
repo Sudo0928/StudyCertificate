@@ -48,19 +48,19 @@
       "options": [
         {
           "key": 1,
-          "text": "데이터가 DNS서버 존으로부터 나오기 전에 현재 남은 시"
+          "text": "데이터가 DNS서버 존으로부터 나오기 전에 현재 남은 시 간이다."
         },
         {
           "key": 2,
-          "text": "데이터가 DNS서버 캐시로부터 나오기 전에 현재 남은 시"
+          "text": "데이터가 DNS서버 캐시로부터 나오기 전에 현재 남은 시 간이다."
         },
         {
           "key": 3,
-          "text": "패킷이 DNS서버 존으로부터 나오기 전에 현재 남은 시간"
+          "text": "패킷이 DNS서버 존으로부터 나오기 전에 현재 남은 시간 이다."
         },
         {
           "key": 4,
-          "text": "패킷이 DNS서버 네임서버 레코드로부터 나오기 전에 현"
+          "text": "패킷이 DNS서버 네임서버 레코드로부터 나오기 전에 현 재 남은 시간이다."
         }
       ],
       "answer": 2,
@@ -232,15 +232,15 @@
         },
         {
           "key": 2,
-          "text": "TCP/IP 프로토콜의 IP에서 접속 없이 데이터의 전송을 수"
+          "text": "TCP/IP 프로토콜의 IP에서 접속 없이 데이터의 전송을 수 행하는 기능을 규정한다."
         },
         {
           "key": 3,
-          "text": "하드웨어 주소를 IP Address로 변환하기 위해서 사용한"
+          "text": "하드웨어 주소를 IP Address로 변환하기 위해서 사용한 다."
         },
         {
           "key": 4,
-          "text": "IP에서의 오류(Error) 제어를 위하여 사용되며, 시작 지 호"
+          "text": "IP에서의 오류(Error) 제어를 위하여 사용되며, 시작 지 호 스트의 라우팅 실패를 보고한다."
         }
       ],
       "answer": 3,
@@ -272,11 +272,11 @@
         },
         {
           "key": 3,
-          "text": "5 - 대체경로(Redirect)를 알리기 위해 라우터에 사용한"
+          "text": "5 - 대체경로(Redirect)를 알리기 위해 라우터에 사용한 다."
         },
         {
           "key": 4,
-          "text": "17 - Address Mask Request 장비의 서브넷 마스크를"
+          "text": "17 - Address Mask Request 장비의 서브넷 마스크를 요구하는데 사용된다."
         }
       ],
       "answer": 1,
@@ -308,11 +308,11 @@
         },
         {
           "key": 3,
-          "text": "멀티 캐스트 그룹에 가입한 네트워크 내의 호스트 관리"
+          "text": "멀티 캐스트 그룹에 가입한 네트워크 내의 호스트 관리 기능"
         },
         {
           "key": 4,
-          "text": "호스트의 IP Address에 해당하는 호스트의 물리주소를 알"
+          "text": "호스트의 IP Address에 해당하는 호스트의 물리주소를 알 려주는 기능"
         }
       ],
       "answer": 3,
@@ -372,19 +372,19 @@
       "options": [
         {
           "key": 1,
-          "text": "Network Interface - Internet - Transport -"
+          "text": "Network Interface - Internet - Transport - Application"
         },
         {
           "key": 2,
-          "text": "Application - Network Interface - Internet -"
+          "text": "Application - Network Interface - Internet - Transport"
         },
         {
           "key": 3,
-          "text": "Transport - Application - Network Interface -"
+          "text": "Transport - Application - Network Interface - Internet"
         },
         {
           "key": 4,
-          "text": "Internet - Transport - Application - Network"
+          "text": "Internet - Transport - Application - Network Interface"
         }
       ],
       "answer": 1,
@@ -408,7 +408,7 @@
       "options": [
         {
           "key": 1,
-          "text": "TFTP는 단순화된 파일을 전송을 위한 프로토콜이며 기"
+          "text": "TFTP는 단순화된 파일을 전송을 위한 프로토콜이며 기 본포트는 25번이다."
         },
         {
           "key": 2,
@@ -416,11 +416,11 @@
         },
         {
           "key": 3,
-          "text": "TFTP의 단점은 UDP방식으로 Data 전송시 데이터 손실"
+          "text": "TFTP의 단점은 UDP방식으로 Data 전송시 데이터 손실 가능성이 있다."
         },
         {
           "key": 4,
-          "text": "FTP는 대량의 데이터를 고속전송을 위해 UDP을 사용한"
+          "text": "FTP는 대량의 데이터를 고속전송을 위해 UDP을 사용한 다."
         }
       ],
       "answer": 3,
@@ -600,7 +600,7 @@
         },
         {
           "key": 4,
-          "text": "TCP 계층에서만 체크섬 계산 및 검증 서비스가 제공된"
+          "text": "TCP 계층에서만 체크섬 계산 및 검증 서비스가 제공된 다."
         }
       ],
       "answer": 1,
@@ -708,7 +708,7 @@
         },
         {
           "key": 4,
-          "text": "Link의 관리기능"
+          "text": "Link의"
         }
       ],
       "answer": 3,
@@ -732,15 +732,15 @@
       "options": [
         {
           "key": 1,
-          "text": "패킷과 함께 오류제어를 함으로서 고품질/고신뢰성 통신"
+          "text": "패킷과 함께 오류제어를 함으로서 고품질/고신뢰성 통신 이 가능하다."
         },
         {
           "key": 2,
-          "text": "패킷을 전송 시에만 전송로를 사용하므로 설비 이용 효"
+          "text": "패킷을 전송 시에만 전송로를 사용하므로 설비 이용 효 율이 높다."
         },
         {
           "key": 3,
-          "text": "패킷교환의 방식으로는 연결형인 가상회선방식과 비연결"
+          "text": "패킷교환의 방식으로는 연결형인 가상회선방식과 비연결 형인 데이터그램(Datagram) 두 가지가 있다."
         },
         {
           "key": 4,
@@ -840,19 +840,19 @@
       "options": [
         {
           "key": 1,
-          "text": "CSMA/CD 방식은 링형 통신망인 이더넷에서 주로 사용"
+          "text": "CSMA/CD 방식은 링형 통신망인 이더넷에서 주로 사용 한다."
         },
         {
           "key": 2,
-          "text": "CSMA/CD 방식은 반송파의 존재 여부와 상관없이 데이"
+          "text": "CSMA/CD 방식은 반송파의 존재 여부와 상관없이 데이 터를 전송한다."
         },
         {
           "key": 3,
-          "text": "CSMA/CD 방식은 반송파가 감지되지 않으면 컴퓨터가"
+          "text": "CSMA/CD 방식은 반송파가 감지되지 않으면 컴퓨터가 전송매체를 사용하지 않는 것으로 판단하여 데이터를 전 송한다."
         },
         {
           "key": 4,
-          "text": "CSMA/CD 방식은 통신량이 많아지면 채널이용율이 높아"
+          "text": "CSMA/CD 방식은 통신량이 많아지면 채널이용율이 높아 져서 지연시간을 예측할 수 있다."
         }
       ],
       "answer": 3,
@@ -984,11 +984,11 @@
       "options": [
         {
           "key": 1,
-          "text": "새 호스트(A or AAA)는 호스트 이름에 대한 IP 주소를"
+          "text": "새 호스트(A or AAA)는 호스트 이름에 대한 IP 주소를 등록하는 것이다."
         },
         {
           "key": 2,
-          "text": "새 포인터(PTR)는 IP 주소에 대한 FQDN을 등록하는 것"
+          "text": "새 포인터(PTR)는 IP 주소에 대한 FQDN을 등록하는 것 이다."
         },
         {
           "key": 3,
@@ -1308,19 +1308,19 @@
       "options": [
         {
           "key": 1,
-          "text": "EFS는 윈도우즈 시스템의 파일에만 암호화 기술을 적용"
+          "text": "EFS는 윈도우즈 시스템의 파일에만 암호화 기술을 적용 한다."
         },
         {
           "key": 2,
-          "text": "EFS는 인증서 파일의 확장자로 CER, P7B, PFX, SST"
+          "text": "EFS는 인증서 파일의 확장자로 CER, P7B, PFX, SST 형식을 지원한다."
         },
         {
           "key": 3,
-          "text": "EFS는 개인키를 보호하는 방법으로 암호만을 사용할 수"
+          "text": "EFS는 개인키를 보호하는 방법으로 암호만을 사용할 수 있다."
         },
         {
           "key": 4,
-          "text": "EFS는 사용자만 동일하면 윈도우즈 시스템을 다시 설치"
+          "text": "EFS는 사용자만 동일하면 윈도우즈 시스템을 다시 설치 해도 암호화된 파일을 열 수 있다."
         }
       ],
       "answer": 2,
@@ -1596,19 +1596,19 @@
       "options": [
         {
           "key": 1,
-          "text": "IP 주소: 사이트가 사용할 IP 주소를 기록하며, 한 컴퓨"
+          "text": "IP 주소: 사이트가 사용할 IP 주소를 기록하며, 한 컴퓨 터에 2개 이상의 IP가 할당된 경우는 IP의 접속 순서를  지정"
         },
         {
           "key": 2,
-          "text": "TCP 포트: 웹서버 시스템의 물리적인 시리얼 포트 번호"
+          "text": "TCP 포트: 웹서버 시스템의 물리적인 시리얼 포트 번호 를 지정"
         },
         {
           "key": 3,
-          "text": "연결 수 제한: 웹서버에 연결할 수 있는 연결 수 제한을"
+          "text": "연결 수 제한: 웹서버에 연결할 수 있는 연결 수 제한을 지정"
         },
         {
           "key": 4,
-          "text": "연결 시간 제한: 웹서버에 접속한 후 일정 시간 동안 움"
+          "text": "연결 시간 제한: 웹서버에 접속한 후 일정 시간 동안 움 직임이 없으면 세션을 끊도록 지정"
         }
       ],
       "answer": 2,

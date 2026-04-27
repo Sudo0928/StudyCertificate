@@ -12,19 +12,19 @@
       "options": [
         {
           "key": 1,
-          "text": "Network ID는 '192.0.0 ~ 223.255.255'이고, Host ID는"
+          "text": "Network ID는 '192.0.0 ~ 223.255.255'이고, Host ID는 '1 ~ 254'이다."
         },
         {
           "key": 2,
-          "text": "IP Address가 203.240.155.32 인 경우, Network ID는"
+          "text": "IP Address가 203.240.155.32 인 경우, Network ID는 203.240, Host ID는 155.32가 된다."
         },
         {
           "key": 3,
-          "text": "통신망의 관리자는 Host ID '0', '255'를 제외하고, 254개"
+          "text": "통신망의 관리자는 Host ID '0', '255'를 제외하고, 254개 의 호스트를 구성할 수 있다."
         },
         {
           "key": 4,
-          "text": "Host ID가 255일 때는 메시지가 네트워크 전체로 브로드"
+          "text": "Host ID가 255일 때는 메시지가 네트워크 전체로 브로드 캐스트 된다."
         }
       ],
       "answer": 2,
@@ -46,10 +46,22 @@
       "subject_id": "tcpip",
       "text": "‘xxx.yyy.zzz’ 서버에 접속하기 위해 'telnet xxx.yyy.zzz:5555' 라고 명령을 입력했다. 여기서 '5555'의 의미는?",
       "options": [
-        {"key": 1, "text": "포트 번호"},
-        {"key": 2, "text": "사용자 번호"},
-        {"key": 3, "text": "이더넷 주소"},
-        {"key": 4, "text": "IP Address"}
+        {
+          "key": 1,
+          "text": "포트 번호"
+        },
+        {
+          "key": 2,
+          "text": "사용자 번호"
+        },
+        {
+          "key": 3,
+          "text": "이더넷 주소"
+        },
+        {
+          "key": 4,
+          "text": "IP Address"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -70,10 +82,22 @@
       "subject_id": "tcpip",
       "text": "DNS에서 사용될 때 TTL(Time to Live)의 설명으로 올바른 것은?",
       "options": [
-        {"key": 1, "text": "데이터가 DNS서버 존으로부터 나오기 전에 현재 남은 시"},
-        {"key": 2, "text": "데이터가 DNS서버 캐시로부터 나오기 전에 현재 남은 시"},
-        {"key": 3, "text": "패킷이 DNS서버 존으로부터 나오기 전에 현재 남은 시간"},
-        {"key": 4, "text": "패킷이 DNS서버 네임서버 레코드로부터 나오기 전에 현"}
+        {
+          "key": 1,
+          "text": "데이터가 DNS서버 존으로부터 나오기 전에 현재 남은 시 간이다."
+        },
+        {
+          "key": 2,
+          "text": "데이터가 DNS서버 캐시로부터 나오기 전에 현재 남은 시 간이다."
+        },
+        {
+          "key": 3,
+          "text": "패킷이 DNS서버 존으로부터 나오기 전에 현재 남은 시간 이다."
+        },
+        {
+          "key": 4,
+          "text": "패킷이 DNS서버 네임서버 레코드로부터 나오기 전에 현 재 남은 시간이다."
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -94,10 +118,22 @@
       "subject_id": "tcpip",
       "text": "패킷 전송의 최적 경로를 위해 다른 라우터들로부터 정보를 수집하는데, 최대 홉이 15를 넘지 못하는 프로토콜은?",
       "options": [
-        {"key": 1, "text": "RIP"},
-        {"key": 2, "text": "OSPF"},
-        {"key": 3, "text": "IGP"},
-        {"key": 4, "text": "EGP"}
+        {
+          "key": 1,
+          "text": "RIP"
+        },
+        {
+          "key": 2,
+          "text": "OSPF"
+        },
+        {
+          "key": 3,
+          "text": "IGP"
+        },
+        {
+          "key": 4,
+          "text": "EGP"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -118,10 +154,22 @@
       "subject_id": "tcpip",
       "text": "'255.255.255.224'인 서브넷에 최대 할당 가능한 호스트 수 는?",
       "options": [
-        {"key": 1, "text": "4개"},
-        {"key": 2, "text": "8개"},
-        {"key": 3, "text": "16개"},
-        {"key": 4, "text": "32개"}
+        {
+          "key": 1,
+          "text": "4개"
+        },
+        {
+          "key": 2,
+          "text": "8개"
+        },
+        {
+          "key": 3,
+          "text": "16개"
+        },
+        {
+          "key": 4,
+          "text": "32개"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -142,10 +190,22 @@
       "subject_id": "tcpip",
       "text": "TCP(Transmission Control Protocol)에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "네트워크에서 송신측과 수신측간에 신뢰성 있는 전송을"},
-        {"key": 2, "text": "연결지향(Connection Oriented)이다."},
-        {"key": 3, "text": "송신측은 데이터를 패킷으로 나누어 일련번호, 수신측 주"},
-        {"key": 4, "text": "수신측은 수신된 데이터의 에러를 검사하여 에러가 있으"}
+        {
+          "key": 1,
+          "text": "네트워크에서 송신측과 수신측간에 신뢰성 있는 전송을 확인한다."
+        },
+        {
+          "key": 2,
+          "text": "연결지향(Connection Oriented)이다."
+        },
+        {
+          "key": 3,
+          "text": "송신측은 데이터를 패킷으로 나누어 일련번호, 수신측 주 소, 에러검출코드를 추가한다."
+        },
+        {
+          "key": 4,
+          "text": "수신측은 수신된 데이터의 에러를 검사하여 에러가 있으 면 스스로 수정한다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -166,10 +226,22 @@
       "subject_id": "tcpip",
       "text": "UDP 패킷의 헤더에 속하지 않는 것은?",
       "options": [
-        {"key": 1, "text": "Source Port"},
-        {"key": 2, "text": "Destination Port"},
-        {"key": 3, "text": "Window"},
-        {"key": 4, "text": "Checksum"}
+        {
+          "key": 1,
+          "text": "Source Port"
+        },
+        {
+          "key": 2,
+          "text": "Destination Port"
+        },
+        {
+          "key": 3,
+          "text": "Window"
+        },
+        {
+          "key": 4,
+          "text": "Checksum"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -190,10 +262,22 @@
       "subject_id": "tcpip",
       "text": "SNMP에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "사용자가 네트워크 문제점을 발견하기 전에 시스템 관리"},
-        {"key": 2, "text": "데이터 전송은 UDP를 사용한다."},
-        {"key": 3, "text": "IP에서의 오류 제어를 위하여 사용되며, 시작지 호스트의"},
-        {"key": 4, "text": "네트워크 장비로부터 데이터를 수집하여 네트워크 관리를"}
+        {
+          "key": 1,
+          "text": "사용자가 네트워크 문제점을 발견하기 전에 시스템 관리 프로그램이 문제점을 발견할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "데이터 전송은 UDP를 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "IP에서의 오류 제어를 위하여 사용되며, 시작지 호스트의 라우팅 실패를 보고한다."
+        },
+        {
+          "key": 4,
+          "text": "네트워크 장비로부터 데이터를 수집하여 네트워크 관리를 지원하고 성능을 향상시킨다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -214,10 +298,22 @@
       "subject_id": "tcpip",
       "text": "DNS(Domain Name System)에 대한 설명으로 옳지 않은 것 은?",
       "options": [
-        {"key": 1, "text": "DNS는 IP Address 체계를 따른다."},
-        {"key": 2, "text": "DNS는 인터넷 표준 이름을 IP 주소로 맵핑시킨다."},
-        {"key": 3, "text": "DNS는 정적인 구조를 가지므로 네트워크상의 호스트 변"},
-        {"key": 4, "text": "동적 DNS는 호스트가 추가되거나, 삭제될 때 DNS 데이"}
+        {
+          "key": 1,
+          "text": "DNS는 IP Address 체계를 따른다."
+        },
+        {
+          "key": 2,
+          "text": "DNS는 인터넷 표준 이름을 IP 주소로 맵핑시킨다."
+        },
+        {
+          "key": 3,
+          "text": "DNS는 정적인 구조를 가지므로 네트워크상의 호스트 변 화에 즉각 대응한다."
+        },
+        {
+          "key": 4,
+          "text": "동적 DNS는 호스트가 추가되거나, 삭제될 때 DNS 데이 터베이스를 자동으로 갱신한다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -238,10 +334,22 @@
       "subject_id": "tcpip",
       "text": "프로토콜의 기본적인 기능 중, 송신기에서 발생된 정보의 정확한 전송을 위해 사용자 정보의 앞, 뒤 부분에 헤더와 트레일러를 부가하는 과정은?",
       "options": [
-        {"key": 1, "text": "캡슐화(Encapsulation)"},
-        {"key": 2, "text": "동기화(Synchronization)"},
-        {"key": 3, "text": "다중화(Multiplexing)"},
-        {"key": 4, "text": "주소지정(Addressing)"}
+        {
+          "key": 1,
+          "text": "캡슐화(Encapsulation)"
+        },
+        {
+          "key": 2,
+          "text": "동기화(Synchronization)"
+        },
+        {
+          "key": 3,
+          "text": "다중화(Multiplexing)"
+        },
+        {
+          "key": 4,
+          "text": "주소지정(Addressing)"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -262,10 +370,22 @@
       "subject_id": "tcpip",
       "text": "IPv6 주소 체계의 종류로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "Unicast 주소"},
-        {"key": 2, "text": "Anycast 주소"},
-        {"key": 3, "text": "Multicast 주소"},
-        {"key": 4, "text": "Broadcast 주소"}
+        {
+          "key": 1,
+          "text": "Unicast 주소"
+        },
+        {
+          "key": 2,
+          "text": "Anycast 주소"
+        },
+        {
+          "key": 3,
+          "text": "Multicast 주소"
+        },
+        {
+          "key": 4,
+          "text": "Broadcast 주소"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -286,10 +406,22 @@
       "subject_id": "tcpip",
       "text": "Telnet에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "Telnet은 네트워크 가상 단말(NVT)의 표준 단말 타입을"},
-        {"key": 2, "text": "원격에 있는 호스트에 접속할 수 있도록 해주는 프로토"},
-        {"key": 3, "text": "명령형식은 Telnet '도메인 이름'(또는 IP Address)이다."},
-        {"key": 4, "text": "로컬 네트워크에서만 적용된 프로토콜이다."}
+        {
+          "key": 1,
+          "text": "Telnet은 네트워크 가상 단말(NVT)의 표준 단말 타입을 정의한다."
+        },
+        {
+          "key": 2,
+          "text": "원격에 있는 호스트에 접속할 수 있도록 해주는 프로토 콜이다."
+        },
+        {
+          "key": 3,
+          "text": "명령형식은 Telnet '도메인 이름'(또는 IP Address)이다."
+        },
+        {
+          "key": 4,
+          "text": "로컬 네트워크에서만 적용된 프로토콜이다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -310,10 +442,22 @@
       "subject_id": "tcpip",
       "text": "멀티캐스트 라우터에서 멀티캐스트 그룹을 유지할 수 있도 록 메시지를 관리하는 프로토콜은?",
       "options": [
-        {"key": 1, "text": "ARP"},
-        {"key": 2, "text": "ICMP"},
-        {"key": 3, "text": "IGMP"},
-        {"key": 4, "text": "FTP"}
+        {
+          "key": 1,
+          "text": "ARP"
+        },
+        {
+          "key": 2,
+          "text": "ICMP"
+        },
+        {
+          "key": 3,
+          "text": "IGMP"
+        },
+        {
+          "key": 4,
+          "text": "FTP"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -334,10 +478,22 @@
       "subject_id": "tcpip",
       "text": "TCP/IP 프로토콜 중에서 IP 계층의 한 부분으로 에러 메시 지와 같은 상태 정보를 알려주는 프로토콜은?",
       "options": [
-        {"key": 1, "text": "ICMP(Internet Control Message Protocol)"},
-        {"key": 2, "text": "ARP(Address Resolution Protocol)"},
-        {"key": 3, "text": "RARP(Reverse Address Resolution Protocol)"},
-        {"key": 4, "text": "UDP(User Datagram Protocol)"}
+        {
+          "key": 1,
+          "text": "ICMP(Internet Control Message Protocol)"
+        },
+        {
+          "key": 2,
+          "text": "ARP(Address Resolution Protocol)"
+        },
+        {
+          "key": 3,
+          "text": "RARP(Reverse Address Resolution Protocol)"
+        },
+        {
+          "key": 4,
+          "text": "UDP(User Datagram Protocol)"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -358,10 +514,22 @@
       "subject_id": "tcpip",
       "text": "RARP에 대한 설명 중 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "RFC 951에 기술된 BOOTP에 의해 대체되고 있다."},
-        {"key": 2, "text": "RFC 903에 명시되어 있다."},
-        {"key": 3, "text": "하드웨어 주소를 IP Address로 변환하기 위해서 사용한"},
-        {"key": 4, "text": "ARP와 동일한 패킷형식을 사용하기 때문에 오퍼레이션"}
+        {
+          "key": 1,
+          "text": "RFC 951에 기술된 BOOTP에 의해 대체되고 있다."
+        },
+        {
+          "key": 2,
+          "text": "RFC 903에 명시되어 있다."
+        },
+        {
+          "key": 3,
+          "text": "하드웨어 주소를 IP Address로 변환하기 위해서 사용한 다."
+        },
+        {
+          "key": 4,
+          "text": "ARP와 동일한 패킷형식을 사용하기 때문에 오퍼레이션 도 같은 코드를 사용한다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -382,10 +550,22 @@
       "subject_id": "general",
       "text": "IP 프로토콜의 헤더 체크섬(Checksum)에 대한 설명 중 올 바른 것은?",
       "options": [
-        {"key": 1, "text": "체크섬 필드를 '0'으로 하여 계산한다."},
-        {"key": 2, "text": "네트워크에서 존재하는 시간을 나타낸다."},
-        {"key": 3, "text": "데이터 그램의 총 길이를 나타낸다."},
-        {"key": 4, "text": "IP 헤더에 대해서만 포함되며 데이터 필드를 포함한다."}
+        {
+          "key": 1,
+          "text": "체크섬 필드를 '0'으로 하여 계산한다."
+        },
+        {
+          "key": 2,
+          "text": "네트워크에서 존재하는 시간을 나타낸다."
+        },
+        {
+          "key": 3,
+          "text": "데이터 그램의 총 길이를 나타낸다."
+        },
+        {
+          "key": 4,
+          "text": "IP 헤더에 대해서만 포함되며 데이터 필드를 포함한다."
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -406,10 +586,22 @@
       "subject_id": "general",
       "text": "IP에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "32bit 주소 체계를 갖는 IPv4의 주소 부족으로 IPv6가 등"},
-        {"key": 2, "text": "IPv4에서는 Flow Labeling 기능과 인증, 프라이버시를"},
-        {"key": 3, "text": "IPv6에서는 Next Header가 있어서 확장된 헤더를 가리"},
-        {"key": 4, "text": "IPv6에서는 근원지와 목적지 주소할당을 위해 128bit를"}
+        {
+          "key": 1,
+          "text": "32bit 주소 체계를 갖는 IPv4의 주소 부족으로 IPv6가 등 장했다."
+        },
+        {
+          "key": 2,
+          "text": "IPv4에서는 Flow Labeling 기능과 인증, 프라이버시를 제공한다."
+        },
+        {
+          "key": 3,
+          "text": "IPv6에서는 Next Header가 있어서 확장된 헤더를 가리 키도록 하고 있다."
+        },
+        {
+          "key": 4,
+          "text": "IPv6에서는 근원지와 목적지 주소할당을 위해 128bit를 가진다."
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -430,10 +622,22 @@
       "subject_id": "general",
       "text": "OSI 7 Layer 중 세션계층의 역할로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "대화 제어"},
-        {"key": 2, "text": "에러 제어"},
-        {"key": 3, "text": "연결 설정 종료"},
-        {"key": 4, "text": "동기화"}
+        {
+          "key": 1,
+          "text": "대화 제어"
+        },
+        {
+          "key": 2,
+          "text": "에러 제어"
+        },
+        {
+          "key": 3,
+          "text": "연결 설정 종료"
+        },
+        {
+          "key": 4,
+          "text": "동기화"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -454,10 +658,22 @@
       "subject_id": "general",
       "text": "시분할 다중화(TDM) 방법에 대한 설명으로 옳지 않은 것 은?",
       "options": [
-        {"key": 1, "text": "디지털 전송에 쓰인다."},
-        {"key": 2, "text": "동기식 방법과 비동기식 방법이 있다."},
-        {"key": 3, "text": "주파수 편이 변복조(FSK)의 역할을 수행한다."},
-        {"key": 4, "text": "T1 다중화는 시분할 다중화 방법이다."}
+        {
+          "key": 1,
+          "text": "디지털 전송에 쓰인다."
+        },
+        {
+          "key": 2,
+          "text": "동기식 방법과 비동기식 방법이 있다."
+        },
+        {
+          "key": 3,
+          "text": "주파수 편이 변복조(FSK)의 역할을 수행한다."
+        },
+        {
+          "key": 4,
+          "text": "T1 다중화는 시분할 다중화 방법이다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -478,10 +694,22 @@
       "subject_id": "general",
       "text": "성형 토폴로지의 특징으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "중앙 제어 노드가 통신상의 모든 제어를 관리한다."},
-        {"key": 2, "text": "설치가 용이하나 비용이 많이 든다."},
-        {"key": 3, "text": "중앙 제어노드 작동불능 시 전체 네트워크가 정지한다."},
-        {"key": 4, "text": "모든 장치를 직접 쌍으로 연결할 수 있다."}
+        {
+          "key": 1,
+          "text": "중앙 제어 노드가 통신상의 모든 제어를 관리한다."
+        },
+        {
+          "key": 2,
+          "text": "설치가 용이하나 비용이 많이 든다."
+        },
+        {
+          "key": 3,
+          "text": "중앙 제어노드 작동불능 시 전체 네트워크가 정지한다."
+        },
+        {
+          "key": 4,
+          "text": "모든 장치를 직접 쌍으로 연결할 수 있다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -502,10 +730,22 @@
       "subject_id": "general",
       "text": "데이터 전송 제어 절차로 올바른 것은?",
       "options": [
-        {"key": 1, "text": "회선 연결 --> 링크 설정 --> 데이터 전송 --> 링크"},
-        {"key": 2, "text": "회선 연결 --> 링크 설정 --> 데이터 전송 --> 회선"},
-        {"key": 3, "text": "링크 설정 --> 회선 연결 --> 데이터 전송 --> 링크"},
-        {"key": 4, "text": "링크 설정 --> 회선 연결 --> 데이터 전송 --> 회선"}
+        {
+          "key": 1,
+          "text": "회선 연결 --> 링크 설정 --> 데이터 전송 --> 링크 해제 --> 회선 해제"
+        },
+        {
+          "key": 2,
+          "text": "회선 연결 --> 링크 설정 --> 데이터 전송 --> 회선 해제 --> 링크 해제"
+        },
+        {
+          "key": 3,
+          "text": "링크 설정 --> 회선 연결 --> 데이터 전송 --> 링크 해제 --> 회선 해제"
+        },
+        {
+          "key": 4,
+          "text": "링크 설정 --> 회선 연결 --> 데이터 전송 --> 회선 해제 --> 링크 해제"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -526,10 +766,22 @@
       "subject_id": "general",
       "text": "MAC방식으로 라운드 로빈기법을 사용하는 방식은?",
       "options": [
-        {"key": 1, "text": "CSMA/CD"},
-        {"key": 2, "text": "Token Ring"},
-        {"key": 3, "text": "CSMA"},
-        {"key": 4, "text": "DQDB"}
+        {
+          "key": 1,
+          "text": "CSMA/CD"
+        },
+        {
+          "key": 2,
+          "text": "Token Ring"
+        },
+        {
+          "key": 3,
+          "text": "CSMA"
+        },
+        {
+          "key": 4,
+          "text": "DQDB"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -550,10 +802,22 @@
       "subject_id": "general",
       "text": "펄스 부호 변조(PCM)의 3단계 과정을 순서대로 올바르게 나열한 것은?",
       "options": [
-        {"key": 1, "text": "부호화 → 양자화 → 표본화"},
-        {"key": 2, "text": "양자화 → 표본화 → 부호화"},
-        {"key": 3, "text": "부호화 → 표본화 → 양자화"},
-        {"key": 4, "text": "표본화 → 양자화 → 부호화"}
+        {
+          "key": 1,
+          "text": "부호화 → 양자화 → 표본화"
+        },
+        {
+          "key": 2,
+          "text": "양자화 → 표본화 → 부호화"
+        },
+        {
+          "key": 3,
+          "text": "부호화 → 표본화 → 양자화"
+        },
+        {
+          "key": 4,
+          "text": "표본화 → 양자화 → 부호화"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -574,10 +838,22 @@
       "subject_id": "general",
       "text": "전송 장애 중 원래 신호가 다른 형태로 일그러지는 현상은?",
       "options": [
-        {"key": 1, "text": "감쇠"},
-        {"key": 2, "text": "지연 왜곡"},
-        {"key": 3, "text": "잡음"},
-        {"key": 4, "text": "누화"}
+        {
+          "key": 1,
+          "text": "감쇠"
+        },
+        {
+          "key": 2,
+          "text": "지연 왜곡"
+        },
+        {
+          "key": 3,
+          "text": "잡음"
+        },
+        {
+          "key": 4,
+          "text": "누화"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -598,10 +874,22 @@
       "subject_id": "general",
       "text": "메시지 교환망과 비교했을 때, 회선 교환망에 대한 설명 중 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "연결이 설정되면 데이터의 지연이 적다."},
-        {"key": 2, "text": "소용량 데이터 전송에 적합하다."},
-        {"key": 3, "text": "대화식/실시간 통신이 가능하다."},
-        {"key": 4, "text": "초기의 연결설정이 복잡하다."}
+        {
+          "key": 1,
+          "text": "연결이 설정되면 데이터의 지연이 적다."
+        },
+        {
+          "key": 2,
+          "text": "소용량 데이터 전송에 적합하다."
+        },
+        {
+          "key": 3,
+          "text": "대화식/실시간 통신이 가능하다."
+        },
+        {
+          "key": 4,
+          "text": "초기의 연결설정이 복잡하다."
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -622,10 +910,22 @@
       "subject_id": "general",
       "text": "데이터 흐름 제어(Flow Control)와 관련 없는 것은?",
       "options": [
-        {"key": 1, "text": "Stop and Wait"},
-        {"key": 2, "text": "XON/OFF"},
-        {"key": 3, "text": "Loop/Echo"},
-        {"key": 4, "text": "Sliding Window"}
+        {
+          "key": 1,
+          "text": "Stop and Wait"
+        },
+        {
+          "key": 2,
+          "text": "XON/OFF"
+        },
+        {
+          "key": 3,
+          "text": "Loop/Echo"
+        },
+        {
+          "key": 4,
+          "text": "Sliding Window"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -646,10 +946,22 @@
       "subject_id": "general",
       "text": "OSI 7 Layer를 하위 계층에서 상위 계층으로 순서대로 바르 게 나열한 것은?",
       "options": [
-        {"key": 1, "text": "물리 → 데이터 링크 → 전송 → 네트워크 → 세션 →"},
-        {"key": 2, "text": "데이터 링크 → 물리 → 전송 → 네트워크 → 세션 →"},
-        {"key": 3, "text": "전송 → 데이터 링크 → 네트워크 → 물리 → 세션 →"},
-        {"key": 4, "text": "물리 → 데이터 링크 → 네트워크 → 전송 → 세션 →"}
+        {
+          "key": 1,
+          "text": "물리 → 데이터 링크 → 전송 → 네트워크 → 세션 → 표현 → 응용"
+        },
+        {
+          "key": 2,
+          "text": "데이터 링크 → 물리 → 전송 → 네트워크 → 세션 → 응용 → 표현"
+        },
+        {
+          "key": 3,
+          "text": "전송 → 데이터 링크 → 네트워크 → 물리 → 세션 → 표현 → 응용"
+        },
+        {
+          "key": 4,
+          "text": "물리 → 데이터 링크 → 네트워크 → 전송 → 세션 → 표현 → 응용"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -670,10 +982,22 @@
       "subject_id": "nos",
       "text": "Linux 디렉터리 구성에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "/tmp - 임시파일이 저장되는 디렉터리"},
-        {"key": 2, "text": "/boot - 시스템이 부팅 될 때 부팅 가능한 커널 이미지"},
-        {"key": 3, "text": "/var - 시스템의 로그 파일과 메일이 저장되는 위치"},
-        {"key": 4, "text": "/usr - 사용자 계정이 위치하는 파티션 위치"}
+        {
+          "key": 1,
+          "text": "/tmp - 임시파일이 저장되는 디렉터리"
+        },
+        {
+          "key": 2,
+          "text": "/boot - 시스템이 부팅 될 때 부팅 가능한 커널 이미지 파일을 담고 있는 디렉터리"
+        },
+        {
+          "key": 3,
+          "text": "/var - 시스템의 로그 파일과 메일이 저장되는 위치"
+        },
+        {
+          "key": 4,
+          "text": "/usr - 사용자 계정이 위치하는 파티션 위치"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -694,10 +1018,22 @@
       "subject_id": "nos",
       "text": "Linux 시스템에서 사용자가 내린 명령어를 Kernel에 전달해 주는 역할을 하는 것은?",
       "options": [
-        {"key": 1, "text": "System Program"},
-        {"key": 2, "text": "Loader"},
-        {"key": 3, "text": "Shell"},
-        {"key": 4, "text": "Directory"}
+        {
+          "key": 1,
+          "text": "System Program"
+        },
+        {
+          "key": 2,
+          "text": "Loader"
+        },
+        {
+          "key": 3,
+          "text": "Shell"
+        },
+        {
+          "key": 4,
+          "text": "Directory"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -718,10 +1054,22 @@
       "subject_id": "nos",
       "text": "Linux 설치 시 Swap 영역에 대한 설명 중 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "RAM의 부족한 용량을 보충하기 위해 하드디스크의 일정"},
-        {"key": 2, "text": "일반적으로 실제 메모리의 두 배 정도면 적당하다."},
-        {"key": 3, "text": "시스템을 모니터링 한 결과 Swap이 많이 일어나면 메모"},
-        {"key": 4, "text": "한번 설정한 Swap은 추가가 불가능하므로 신중을 기해"}
+        {
+          "key": 1,
+          "text": "RAM의 부족한 용량을 보충하기 위해 하드디스크의 일정 부분을 지정하여 RAM처럼 사용한다."
+        },
+        {
+          "key": 2,
+          "text": "일반적으로 실제 메모리의 두 배 정도면 적당하다."
+        },
+        {
+          "key": 3,
+          "text": "시스템을 모니터링 한 결과 Swap이 많이 일어나면 메모 리를 증설해야 한다."
+        },
+        {
+          "key": 4,
+          "text": "한번 설정한 Swap은 추가가 불가능하므로 신중을 기해 크기를 결정해야 한다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -742,10 +1090,22 @@
       "subject_id": "nos",
       "text": "Linux의 퍼미션(Permission)에 대한 설명 중 옳지 않은 것 은?",
       "options": [
-        {"key": 1, "text": "파일의 그룹 소유권을 변경하기 위한 명령은 'chgrp'이"},
-        {"key": 2, "text": "파일의 접근모드를 변경하기 위한 명령은 'chmod'이다."},
-        {"key": 3, "text": "모든 사용자에게 모든 권한을 부여하려면 권한을 '666'"},
-        {"key": 4, "text": "파일의 소유권을 변경하기 위한 명령은 'chown'이다."}
+        {
+          "key": 1,
+          "text": "파일의 그룹 소유권을 변경하기 위한 명령은 'chgrp'이 다."
+        },
+        {
+          "key": 2,
+          "text": "파일의 접근모드를 변경하기 위한 명령은 'chmod'이다."
+        },
+        {
+          "key": 3,
+          "text": "모든 사용자에게 모든 권한을 부여하려면 권한을 '666' 으로 변경한다."
+        },
+        {
+          "key": 4,
+          "text": "파일의 소유권을 변경하기 위한 명령은 'chown'이다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -766,10 +1126,22 @@
       "subject_id": "nos",
       "text": "Linux 시스템에서 'ping' 이라는 파일을 표준 입력으로 받아 서 만들어라\"에 대한 명령어 형식으로 올바른 것은? 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 2급 ◐ 2015년 10월 25일 필기 기출문제",
       "options": [
-        {"key": 1, "text": "cat >ping"},
-        {"key": 2, "text": "cat ping"},
-        {"key": 3, "text": "cat - ping"},
-        {"key": 4, "text": "cat <ping"}
+        {
+          "key": 1,
+          "text": "cat >ping"
+        },
+        {
+          "key": 2,
+          "text": "cat ping"
+        },
+        {
+          "key": 3,
+          "text": "cat - ping"
+        },
+        {
+          "key": 4,
+          "text": "cat <ping"
+        }
       ],
       "answer": 1,
       "has_figure": true,
@@ -790,10 +1162,22 @@
       "subject_id": "nos",
       "text": "Linux에서 사용되는 'free' 명령어에 대한 설명 중 올바른 것은?",
       "options": [
-        {"key": 1, "text": "사용 중인 메모리, 사용 가능한 메모리 용량을 알 수 있"},
-        {"key": 2, "text": "패스워드 없이 사용하는 유저를 알 수 있다."},
-        {"key": 3, "text": "디렉터리의 사용량을 알 수 있다."},
-        {"key": 4, "text": "사용 가능한 파일 시스템의 양을 알 수 있다."}
+        {
+          "key": 1,
+          "text": "사용 중인 메모리, 사용 가능한 메모리 용량을 알 수 있 다."
+        },
+        {
+          "key": 2,
+          "text": "패스워드 없이 사용하는 유저를 알 수 있다."
+        },
+        {
+          "key": 3,
+          "text": "디렉터리의 사용량을 알 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "사용 가능한 파일 시스템의 양을 알 수 있다."
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -814,10 +1198,22 @@
       "subject_id": "nos",
       "text": "Linux DNS의 SOA(Start Of Authority) 레코드에 대한 설명 으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "Zone 파일은 항상 SOA로 시작한다."},
-        {"key": 2, "text": "해당 Zone에 대한 네임서버를 유지하기 위한 기본적인"},
-        {"key": 3, "text": "Refresh는 주 서버와 보조 서버의 동기 주기를 설정한"},
-        {"key": 4, "text": "TTL 값이 길면 DNS의 부하가 늘어난다."}
+        {
+          "key": 1,
+          "text": "Zone 파일은 항상 SOA로 시작한다."
+        },
+        {
+          "key": 2,
+          "text": "해당 Zone에 대한 네임서버를 유지하기 위한 기본적인 자료가 저장된다."
+        },
+        {
+          "key": 3,
+          "text": "Refresh는 주 서버와 보조 서버의 동기 주기를 설정한 다."
+        },
+        {
+          "key": 4,
+          "text": "TTL 값이 길면 DNS의 부하가 늘어난다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -838,10 +1234,22 @@
       "subject_id": "nos",
       "text": "Linux와 다른 이기종의 파일 시스템이나 프린터를 공유하기 위해 설치하는 서버 및 클라이언트 프로그램은?",
       "options": [
-        {"key": 1, "text": "삼바(SAMBA)"},
-        {"key": 2, "text": "아파치(Apache)"},
-        {"key": 3, "text": "샌드메일(Sendmail)"},
-        {"key": 4, "text": "바인드(BIND)"}
+        {
+          "key": 1,
+          "text": "삼바(SAMBA)"
+        },
+        {
+          "key": 2,
+          "text": "아파치(Apache)"
+        },
+        {
+          "key": 3,
+          "text": "샌드메일(Sendmail)"
+        },
+        {
+          "key": 4,
+          "text": "바인드(BIND)"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -862,10 +1270,22 @@
       "subject_id": "nos",
       "text": "Windows 2008 R2 Server를 원격으로 관리하고자 한다. 데 이터를 암호화하여 전송할 수 있는 원격관리 서버는?",
       "options": [
-        {"key": 1, "text": "Telnet 서버"},
-        {"key": 2, "text": "WINS 서버"},
-        {"key": 3, "text": "Exchange 서버"},
-        {"key": 4, "text": "SSH 서버"}
+        {
+          "key": 1,
+          "text": "Telnet 서버"
+        },
+        {
+          "key": 2,
+          "text": "WINS 서버"
+        },
+        {
+          "key": 3,
+          "text": "Exchange 서버"
+        },
+        {
+          "key": 4,
+          "text": "SSH 서버"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -886,10 +1306,22 @@
       "subject_id": "nos",
       "text": "Windows 2008 R2 Server의 DNS서버 설정에서 호스트이름 을 IP주소로 해석해 주는 것은?",
       "options": [
-        {"key": 1, "text": "정방향 조회"},
-        {"key": 2, "text": "역방향 조회"},
-        {"key": 3, "text": "조건부 전달"},
-        {"key": 4, "text": "보조 영역"}
+        {
+          "key": 1,
+          "text": "정방향 조회"
+        },
+        {
+          "key": 2,
+          "text": "역방향 조회"
+        },
+        {
+          "key": 3,
+          "text": "조건부 전달"
+        },
+        {
+          "key": 4,
+          "text": "보조 영역"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -910,10 +1342,22 @@
       "subject_id": "nos",
       "text": "Windows 2008 R2 Server의 백업에 관한 설명으로 옳지 않 은 것은?",
       "options": [
-        {"key": 1, "text": "완전 서버 백업(bare-metal backup)이 가능하다."},
-        {"key": 2, "text": "다른 하드웨어에 서버를 복구 할 수 있다."},
-        {"key": 3, "text": "자기 테이프 백업을 지원한다."},
-        {"key": 4, "text": "네트워크 공유나 로컬하드드라이브의 백업을 지원한다."}
+        {
+          "key": 1,
+          "text": "완전 서버 백업(bare-metal backup)이 가능하다."
+        },
+        {
+          "key": 2,
+          "text": "다른 하드웨어에 서버를 복구 할 수 있다."
+        },
+        {
+          "key": 3,
+          "text": "자기 테이프 백업을 지원한다."
+        },
+        {
+          "key": 4,
+          "text": "네트워크 공유나 로컬하드드라이브의 백업을 지원한다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -934,10 +1378,22 @@
       "subject_id": "equipment",
       "text": "Windows 2008 R2 Server와 UNIX 운영체제 사이의 사용자 파일 전송을 지원하여 Windows와 UNIX가 혼용된 엔터프라 이즈 환경에서 파일 공유를 제공하는 서비스는?",
       "options": [
-        {"key": 1, "text": "NFS"},
-        {"key": 2, "text": "DNS"},
-        {"key": 3, "text": "NTFS"},
-        {"key": 4, "text": "DHCP"}
+        {
+          "key": 1,
+          "text": "NFS"
+        },
+        {
+          "key": 2,
+          "text": "DNS"
+        },
+        {
+          "key": 3,
+          "text": "NTFS"
+        },
+        {
+          "key": 4,
+          "text": "DHCP"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -958,10 +1414,22 @@
       "subject_id": "equipment",
       "text": "Windows 2008 R2 Sever에서 지원하는 Hyper-V에 대한 설 명으로 옳지 않는 것은?",
       "options": [
-        {"key": 1, "text": "하드웨어 사용율을 높여준다"},
-        {"key": 2, "text": "서버 가용성이 줄어든다"},
-        {"key": 3, "text": "유지비용을 줄일 수 있다."},
-        {"key": 4, "text": "개발 및 테스트 효율성을 향상시킨다."}
+        {
+          "key": 1,
+          "text": "하드웨어 사용율을 높여준다"
+        },
+        {
+          "key": 2,
+          "text": "서버 가용성이 줄어든다"
+        },
+        {
+          "key": 3,
+          "text": "유지비용을 줄일 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "개발 및 테스트 효율성을 향상시킨다."
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -982,10 +1450,22 @@
       "subject_id": "equipment",
       "text": "Windows 2008 R2 Server의 보안 이벤트 감사에 관한 설명 으로 옳지 않은 것은? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
       "options": [
-        {"key": 1, "text": "권한 사용 이벤트는 사용자 권한이 작업을 수행하는데"},
-        {"key": 2, "text": "프로세스 추적은 응용프로그램이 추적되고 있는 동작을"},
-        {"key": 3, "text": "시스템 이벤트는 컴퓨터가 재시작되거나 보안에 영향을"},
-        {"key": 4, "text": "디렉토리 서비스 이벤트는 디렉토리 서비스 이벤트의 사"}
+        {
+          "key": 1,
+          "text": "권한 사용 이벤트는 사용자 권한이 작업을 수행하는데 사용될 때 감사한다."
+        },
+        {
+          "key": 2,
+          "text": "프로세스 추적은 응용프로그램이 추적되고 있는 동작을 할 때 감사한다."
+        },
+        {
+          "key": 3,
+          "text": "시스템 이벤트는 컴퓨터가 재시작되거나 보안에 영향을 주는 기타 이벤트가 발생할 때 감사한다."
+        },
+        {
+          "key": 4,
+          "text": "디렉토리 서비스 이벤트는 디렉토리 서비스 이벤트의 사 용여부 경우만 감사한다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -1006,10 +1486,22 @@
       "subject_id": "equipment",
       "text": "Windows 2008 R2 Server의 보안템플릿에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "보안 관련한 설정들을 미리 정의해 놓은 템플릿이다."},
-        {"key": 2, "text": "모든 그룹 정책에서 ‘가져오기’ 하여 적용할 수 있다."},
-        {"key": 3, "text": "보안템플릿은 그룹정책의 컴퓨터구성에만 적용되고 사용"},
-        {"key": 4, "text": "무선네트워크, 공개 키, 소프트웨어 제한, 그리고 IP 보"}
+        {
+          "key": 1,
+          "text": "보안 관련한 설정들을 미리 정의해 놓은 템플릿이다."
+        },
+        {
+          "key": 2,
+          "text": "모든 그룹 정책에서 ‘가져오기’ 하여 적용할 수 있다."
+        },
+        {
+          "key": 3,
+          "text": "보안템플릿은 그룹정책의 컴퓨터구성에만 적용되고 사용 자 구성에는 적용되지 않는다."
+        },
+        {
+          "key": 4,
+          "text": "무선네트워크, 공개 키, 소프트웨어 제한, 그리고 IP 보 안에 적용되는 정책과 같이 몇몇 보안 설정들도 보안템 플릿에 포함된다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -1030,10 +1522,22 @@
       "subject_id": "equipment",
       "text": "Windows 2008 R2 Sever에서 ‘netstat’ 명령으로 표시되지 않는 IPv4 통계정보는?",
       "options": [
-        {"key": 1, "text": "IP"},
-        {"key": 2, "text": "TCP"},
-        {"key": 3, "text": "UDP"},
-        {"key": 4, "text": "NNTP"}
+        {
+          "key": 1,
+          "text": "IP"
+        },
+        {
+          "key": 2,
+          "text": "TCP"
+        },
+        {
+          "key": 3,
+          "text": "UDP"
+        },
+        {
+          "key": 4,
+          "text": "NNTP"
+        }
       ],
       "answer": 4,
       "has_figure": true,
@@ -1054,10 +1558,22 @@
       "subject_id": "equipment",
       "text": "Windows 2008 R2 Server에서 사용되는 기본 공유와 설명 으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "ADMIN$ : 시스템을 원격 관리하는 동안 사용되는 공유"},
-        {"key": 2, "text": "IPC$ : 원격 관리를 수행하거나，공유 리소스를 확인할"},
-        {"key": 3, "text": "SYSVOL : Active Directory의 개체와 데이터를 저장하는"},
-        {"key": 4, "text": "PUBLlC : 팩스를 보낼 때 팩스 클라이언트에 의해 사용"}
+        {
+          "key": 1,
+          "text": "ADMIN$ : 시스템을 원격 관리하는 동안 사용되는 공유 이다.."
+        },
+        {
+          "key": 2,
+          "text": "IPC$ : 원격 관리를 수행하거나，공유 리소스를 확인할 때 프로그램에 의해 사용된다."
+        },
+        {
+          "key": 3,
+          "text": "SYSVOL : Active Directory의 개체와 데이터를 저장하는 데 사용된다."
+        },
+        {
+          "key": 4,
+          "text": "PUBLlC : 팩스를 보낼 때 팩스 클라이언트에 의해 사용 된다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -1078,10 +1594,22 @@
       "subject_id": "equipment",
       "text": "Windows 2008 R2 Server의 Active Directory 서비스 중에 서 디렉터리 데이터를 저장하고, 사용자 로그온 프로세스, 인증 및 디렉터리 검색을 포함하여 사용자와 도메인 간의 통신을 관리하는 서비스는?",
       "options": [
-        {"key": 1, "text": "AD 인증서 서비스"},
-        {"key": 2, "text": "AD 도메인서비스"},
-        {"key": 3, "text": "AD Federation서비스"},
-        {"key": 4, "text": "AD Rights Management 서비스"}
+        {
+          "key": 1,
+          "text": "AD 인증서 서비스"
+        },
+        {
+          "key": 2,
+          "text": "AD 도메인서비스"
+        },
+        {
+          "key": 3,
+          "text": "AD Federation서비스"
+        },
+        {
+          "key": 4,
+          "text": "AD Rights Management 서비스"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -1102,10 +1630,22 @@
       "subject_id": "equipment",
       "text": "RAID에 대한 설명으로 올바른 것은?",
       "options": [
-        {"key": 1, "text": "RAID는 여러 개의 디스크로 구성된 디스크 배열을 의미"},
-        {"key": 2, "text": "RAID는 레벨 0 ~ 4 까지 모두 5개의 규약이 있다."},
-        {"key": 3, "text": "'레벨 0'은 미러 모드라고 하는데 하나의 데이터를 여러"},
-        {"key": 4, "text": "레벨의 의미는 데이터 입출력 속도가 빨라지는 단계에"}
+        {
+          "key": 1,
+          "text": "RAID는 여러 개의 디스크로 구성된 디스크 배열을 의미 한다."
+        },
+        {
+          "key": 2,
+          "text": "RAID는 레벨 0 ~ 4 까지 모두 5개의 규약이 있다."
+        },
+        {
+          "key": 3,
+          "text": "'레벨 0'은 미러 모드라고 하는데 하나의 데이터를 여러 드라이브에 나누어 저장하는 기술이다."
+        },
+        {
+          "key": 4,
+          "text": "레벨의 의미는 데이터 입출력 속도가 빨라지는 단계에 따라 구분한다."
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -1126,10 +1666,22 @@
       "subject_id": "equipment",
       "text": "Hub가 사용하는 OSI 계층은?",
       "options": [
-        {"key": 1, "text": "물리 계층"},
-        {"key": 2, "text": "세션 계층"},
-        {"key": 3, "text": "트랜스포트 계층"},
-        {"key": 4, "text": "애플리케이션 계층"}
+        {
+          "key": 1,
+          "text": "물리 계층"
+        },
+        {
+          "key": 2,
+          "text": "세션 계층"
+        },
+        {
+          "key": 3,
+          "text": "트랜스포트 계층"
+        },
+        {
+          "key": 4,
+          "text": "애플리케이션 계층"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -1150,10 +1702,22 @@
       "subject_id": "equipment",
       "text": "대역폭이 가장 커서 다양한 서비스가 가능한 전송 매체는?",
       "options": [
-        {"key": 1, "text": "동축 케이블"},
-        {"key": 2, "text": "Open Wire"},
-        {"key": 3, "text": "Wire Pair"},
-        {"key": 4, "text": "광섬유"}
+        {
+          "key": 1,
+          "text": "동축 케이블"
+        },
+        {
+          "key": 2,
+          "text": "Open Wire"
+        },
+        {
+          "key": 3,
+          "text": "Wire Pair"
+        },
+        {
+          "key": 4,
+          "text": "광섬유"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -1174,10 +1738,22 @@
       "subject_id": "security",
       "text": "네트워크 장비인 라우터에 대한 설명 중 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "TCP/IP의 트래픽 경로제어를 한다."},
-        {"key": 2, "text": "네트워크를 분리하는데 사용할 수 있다."},
-        {"key": 3, "text": "트래픽상의 모든 신호의 재생과 유효거리를 확장한다."},
-        {"key": 4, "text": "OSI 7 Layer에서 네트워크 계층의 서비스를 한다."}
+        {
+          "key": 1,
+          "text": "TCP/IP의 트래픽 경로제어를 한다."
+        },
+        {
+          "key": 2,
+          "text": "네트워크를 분리하는데 사용할 수 있다."
+        },
+        {
+          "key": 3,
+          "text": "트래픽상의 모든 신호의 재생과 유효거리를 확장한다."
+        },
+        {
+          "key": 4,
+          "text": "OSI 7 Layer에서 네트워크 계층의 서비스를 한다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -1198,10 +1774,22 @@
       "subject_id": "security",
       "text": "Star Topology에서 동시에 두 개 이상의 Connection을 할 수 있는 장치로, 연결된 각 포트마다 전용 대역폭 할당이 가능하여, 연결된 장치의 수에 따라 주고받는 데이터의 속 도가 낮아지지 않고, 속도를 보장할 수 있는 것은?",
       "options": [
-        {"key": 1, "text": "Switching Hub"},
-        {"key": 2, "text": "Repeater"},
-        {"key": 3, "text": "Dummy Hub"},
-        {"key": 4, "text": "Bridge"}
+        {
+          "key": 1,
+          "text": "Switching Hub"
+        },
+        {
+          "key": 2,
+          "text": "Repeater"
+        },
+        {
+          "key": 3,
+          "text": "Dummy Hub"
+        },
+        {
+          "key": 4,
+          "text": "Bridge"
+        }
       ],
       "answer": 1,
       "has_figure": false,

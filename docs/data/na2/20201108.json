@@ -164,11 +164,11 @@
         },
         {
           "key": 3,
-          "text": "5 - 대체경로(Redirect)를 알리기 위해 라우터에 사용한"
+          "text": "5 - 대체경로(Redirect)를 알리기 위해 라우터에 사용한 다."
         },
         {
           "key": 4,
-          "text": "17 - Address Mask Request 장비의 서브넷 마스크를"
+          "text": "17 - Address Mask Request 장비의 서브넷 마스크를 요구하는데 사용된다."
         }
       ],
       "answer": 1,
@@ -228,7 +228,7 @@
       "options": [
         {
           "key": 1,
-          "text": "메시지가 한 호스트에서 다른 여러 호스트로 전송되는 패"
+          "text": "메시지가 한 호스트에서 다른 여러 호스트로 전송되는 패 킷"
         },
         {
           "key": 2,
@@ -236,11 +236,11 @@
         },
         {
           "key": 3,
-          "text": "메시지가 한 호스트에서 망상의 다른 모든 호스트로 전송"
+          "text": "메시지가 한 호스트에서 망상의 다른 모든 호스트로 전송 되는 패킷"
         },
         {
           "key": 4,
-          "text": "메시지가 한 호스트에서 망상의 특정 그룹 호스트들로 전"
+          "text": "메시지가 한 호스트에서 망상의 특정 그룹 호스트들로 전 송되는 패킷"
         }
       ],
       "answer": 2,
@@ -516,11 +516,11 @@
       "options": [
         {
           "key": 1,
-          "text": "Source Port : 출발지의 포트번호를 표시한다. 출발지가"
+          "text": "Source Port : 출발지의 포트번호를 표시한다. 출발지가 클라이언트일 경우 일반적으로 1024미만으로 설정된다."
         },
         {
           "key": 2,
-          "text": "Destination Port : 목적지의 포트번호를 표시한다. 목적"
+          "text": "Destination Port : 목적지의 포트번호를 표시한다. 목적 지가 서버일 경우 일반적으로 1024이상으로 설정된다."
         },
         {
           "key": 3,
@@ -528,7 +528,7 @@
         },
         {
           "key": 4,
-          "text": "Checksum : 헤더와 데이터의 에러를 확인하기 위한 필"
+          "text": "Checksum : 헤더와 데이터의 에러를 확인하기 위한 필 드이다."
         }
       ],
       "answer": 4,
@@ -757,7 +757,8 @@
           "2": "IP는 네트워크 계층(Layer 3) 프로토콜입니다. TCP는 전송 계층이 맞지만 IP와 묶으면 서로 다른 계층에 걸쳐 있어 전송 계층만의 조합이 아닙니다.",
           "4": "NetBEUI는 데이터링크 계층에서 동작하고, IP는 네트워크 계층입니다. 둘 다 전송 계층 프로토콜이 아닙니다."
         },
-        "key_concept": "전송 계층, TCP, UDP"
+        "key_concept": "전송 계층, TCP, UDP",
+        "historical_note": "NetBEUI는 Windows 9x/NT 시대의 비라우팅 LAN 프로토콜로 현재는 사용되지 않습니다(Vista부터 OS에서 제거)."
       }
     },
     {
@@ -776,11 +777,11 @@
         },
         {
           "key": 3,
-          "text": "하나의 단말장치가 고장나면 전체 통신망에 영향을 줄"
+          "text": "하나의 단말장치가 고장나면 전체 통신망에 영향을 줄 수 있다."
         },
         {
           "key": 4,
-          "text": "각 단말 장치는 중앙 컴퓨터를 통하여 데이터를 교환한"
+          "text": "각 단말 장치는 중앙 컴퓨터를 통하여 데이터를 교환한 다."
         }
       ],
       "answer": 3,
@@ -1092,19 +1093,19 @@
       "options": [
         {
           "key": 1,
-          "text": "shutdown -r now 'Warning! After 5 minutes will be"
+          "text": "shutdown -r now 'Warning! After 5 minutes will be system shutdown!!'"
         },
         {
           "key": 2,
-          "text": "shutdown now 'Warning! After 5 minutes will be"
+          "text": "shutdown now 'Warning! After 5 minutes will be system shutdown!!'"
         },
         {
           "key": 3,
-          "text": "shutdown -r +5 'Warning! After 5 minutes will be"
+          "text": "shutdown -r +5 'Warning! After 5 minutes will be system shutdown!!'"
         },
         {
           "key": 4,
-          "text": "shutdown +5 'Warning! After 5 minutes will be"
+          "text": "shutdown +5 'Warning! After 5 minutes will be system shutdown!!'"
         }
       ],
       "answer": 3,
@@ -1136,11 +1137,11 @@
         },
         {
           "key": 3,
-          "text": "책임자 : 해당 영역을 관리하는 사람의 전자 메일 주소"
+          "text": "책임자 : 해당 영역을 관리하는 사람의 전자 메일 주소 다. webmaster@icqa.or.kr 형식으로 기입한다."
         },
         {
           "key": 4,
-          "text": "새로 고침 간격 : 보조 서버에게 주 서버의 변경을 검사"
+          "text": "새로 고침 간격 : 보조 서버에게 주 서버의 변경을 검사 하기 전에 대기하는 시간이다."
         }
       ],
       "answer": 3,
@@ -1164,7 +1165,7 @@
       "options": [
         {
           "key": 1,
-          "text": "동적 콘텐츠의 HTTP 압축을 구성하는 인프라를 제공한"
+          "text": "동적 콘텐츠의 HTTP 압축을 구성하는 인프라를 제공한 다."
         },
         {
           "key": 2,
@@ -1200,19 +1201,19 @@
       "options": [
         {
           "key": 1,
-          "text": "502 (Service Unvailable) : 클라이언트 요청 내용에는"
+          "text": "502 (Service Unvailable) : 클라이언트 요청 내용에는 이상이 없지만, 서버측에서 클라이언트의 요청을 서비스 할 준비가 되지 않은 경우"
         },
         {
           "key": 2,
-          "text": "501 (Not Implemented) : 클라이언트의 서비스 요청 내"
+          "text": "501 (Not Implemented) : 클라이언트의 서비스 요청 내 용 중에서 일부 명령을 수행할 수 없을 경우"
         },
         {
           "key": 3,
-          "text": "503 (Bad Request) : 게이트웨이의 경로를 잘못 지정해"
+          "text": "503 (Bad Request) : 게이트웨이의 경로를 잘못 지정해 서 발생된 경우"
         },
         {
           "key": 4,
-          "text": "500 (Internal Server Error) : 서버에 보낸 요청 메시지"
+          "text": "500 (Internal Server Error) : 서버에 보낸 요청 메시지 형식을 서버가 해석하지 못한 경우"
         }
       ],
       "answer": 2,
@@ -1312,7 +1313,7 @@
         },
         {
           "key": 2,
-          "text": "′ps afx′ 명령어를 실행시켜보면 데몬 프로그램의 활동"
+          "text": "′ps afx′ 명령어를 실행시켜보면 데몬 프로그램의 활동 을 확인할 수 있다."
         },
         {
           "key": 3,
@@ -1668,7 +1669,7 @@
       "options": [
         {
           "key": 1,
-          "text": "유선랜에 비하여 일정거리 내에서 이동성에 대한 자유로"
+          "text": "유선랜에 비하여 일정거리 내에서 이동성에 대한 자유로 움이 보장된다."
         },
         {
           "key": 2,
@@ -1676,11 +1677,11 @@
         },
         {
           "key": 3,
-          "text": "무선랜은 주파수, 속도 및 통신방식에 따라 ′IEEE"
+          "text": "무선랜은 주파수, 속도 및 통신방식에 따라 ′IEEE 802.11 a/b/g/n′ 등으로 정의 되어있다."
         },
         {
           "key": 4,
-          "text": "동일한 Access Point를 사용할 경우 주변 환경에 의한"
+          "text": "동일한 Access Point를 사용할 경우 주변 환경에 의한 전송속도 영향은 없다."
         }
       ],
       "answer": 4,
@@ -1776,15 +1777,15 @@
       "options": [
         {
           "key": 1,
-          "text": "각 라우터는 인터네트워크 상의 모든 라우터와 자신의"
+          "text": "각 라우터는 인터네트워크 상의 모든 라우터와 자신의 이웃에 대한 지식을 공유한다."
         },
         {
           "key": 2,
-          "text": "각 라우터는 정확히 같은 링크 상태 데이터베이스를 갖"
+          "text": "각 라우터는 정확히 같은 링크 상태 데이터베이스를 갖 는다."
         },
         {
           "key": 3,
-          "text": "최단 경로 트리와 라우팅 테이블은 각 라우터마다 다르"
+          "text": "최단 경로 트리와 라우팅 테이블은 각 라우터마다 다르 다."
         },
         {
           "key": 4,

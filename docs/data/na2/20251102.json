@@ -10,10 +10,22 @@
       "subject_id": "tcpip",
       "text": "TLS를 통해 애플리케이션 계층 데이터를 암호화하여 보호하며, 기본 포트가 443으로 지정된 프로토콜은?",
       "options": [
-        {"key": 1, "text": "HTTPS"},
-        {"key": 2, "text": "HTTP"},
-        {"key": 3, "text": "FTP"},
-        {"key": 4, "text": "SSH"}
+        {
+          "key": 1,
+          "text": "HTTPS"
+        },
+        {
+          "key": 2,
+          "text": "HTTP"
+        },
+        {
+          "key": 3,
+          "text": "FTP"
+        },
+        {
+          "key": 4,
+          "text": "SSH"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -34,10 +46,22 @@
       "subject_id": "tcpip",
       "text": "IPv6 주소 'a184:0a01:0000:0000:cd8c:1000:317b:00ff'를 생략하여 표기한 것으로 알맞은 것은?",
       "options": [
-        {"key": 1, "text": "a184:a1::cd8c:1:317b:ff"},
-        {"key": 2, "text": "a184:a01::cd8c:1000:317b:ff"},
-        {"key": 3, "text": "a184:a01:0:0:cd8c:10:317b:0ff"},
-        {"key": 4, "text": "a184:a01:cd8c:1000:317b:ff"}
+        {
+          "key": 1,
+          "text": "a184:a1::cd8c:1:317b:ff"
+        },
+        {
+          "key": 2,
+          "text": "a184:a01::cd8c:1000:317b:ff"
+        },
+        {
+          "key": 3,
+          "text": "a184:a01:0:0:cd8c:10:317b:0ff"
+        },
+        {
+          "key": 4,
+          "text": "a184:a01:cd8c:1000:317b:ff"
+        }
       ],
       "answer": 2,
       "has_figure": true,
@@ -58,10 +82,22 @@
       "subject_id": "tcpip",
       "text": "UDP 계열 프로토콜로, 원격 관리에 필요한 정보와 서버상태를 관리하는 것은?",
       "options": [
-        {"key": 1, "text": "FTP"},
-        {"key": 2, "text": "DHCP"},
-        {"key": 3, "text": "BOOTP"},
-        {"key": 4, "text": "SNMP"}
+        {
+          "key": 1,
+          "text": "FTP"
+        },
+        {
+          "key": 2,
+          "text": "DHCP"
+        },
+        {
+          "key": 3,
+          "text": "BOOTP"
+        },
+        {
+          "key": 4,
+          "text": "SNMP"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -82,10 +118,22 @@
       "subject_id": "tcpip",
       "text": "ICMP(Internet Control Message Protocol)에 대한 설명 중 올바른 것은?",
       "options": [
-        {"key": 1, "text": "예외적으로 발생되는 이벤트에 대해 이를 알릴 수 있도록"},
-        {"key": 2, "text": "비대칭 프로토콜이고 TTL(Time To Live)를 제공한다."},
-        {"key": 3, "text": "네트워크 간 장비들의 오류 상황에 대해 공유할 수 있는"},
-        {"key": 4, "text": "호스트의 물리적 주소를 제공한다."}
+        {
+          "key": 1,
+          "text": "예외적으로 발생되는 이벤트에 대해 이를 알릴 수 있도록 지원하는 프로토콜이 없다."
+        },
+        {
+          "key": 2,
+          "text": "비대칭 프로토콜이고 TTL(Time To Live)를 제공한다."
+        },
+        {
+          "key": 3,
+          "text": "네트워크 간 장비들의 오류 상황에 대해 공유할 수 있는 기능이 있다."
+        },
+        {
+          "key": 4,
+          "text": "호스트의 물리적 주소를 제공한다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -106,10 +154,22 @@
       "subject_id": "tcpip",
       "text": "TCP Header의 flag 값 중 3-way handshake의 첫 번째 단계인 세션 성립 요청 패킷에 설정되는 flag 값은?",
       "options": [
-        {"key": 1, "text": "RST"},
-        {"key": 2, "text": "ACK"},
-        {"key": 3, "text": "URG"},
-        {"key": 4, "text": "SYN"}
+        {
+          "key": 1,
+          "text": "RST"
+        },
+        {
+          "key": 2,
+          "text": "ACK"
+        },
+        {
+          "key": 3,
+          "text": "URG"
+        },
+        {
+          "key": 4,
+          "text": "SYN"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -130,10 +190,22 @@
       "subject_id": "tcpip",
       "text": "A기업은 네트워크 주소 '210.212.100.0'과 서브넷 마스크 '255.255.255.224'인 네트워크를 사용한다. 방화벽 규칙에서 브로드캐스트 트래픽을 차단하려고 한다. 차단 대상 IP로 가장 적절한 것은?",
       "options": [
-        {"key": 1, "text": "210.212.100.30"},
-        {"key": 2, "text": "210.212.100.31"},
-        {"key": 3, "text": "210.212.100.32"},
-        {"key": 4, "text": "210.212.100.0"}
+        {
+          "key": 1,
+          "text": "210.212.100.30"
+        },
+        {
+          "key": 2,
+          "text": "210.212.100.31"
+        },
+        {
+          "key": 3,
+          "text": "210.212.100.32"
+        },
+        {
+          "key": 4,
+          "text": "210.212.100.0"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -154,10 +226,22 @@
       "subject_id": "tcpip",
       "text": "회사 내 네트워크를 구축하면서 IPv6를 적용하려고 한다. IPv4에 비해 IPv6에서 새롭게 도입된 기능은?",
       "options": [
-        {"key": 1, "text": "체크섬(Checksums)"},
-        {"key": 2, "text": "복잡한 헤더(Complicated header)"},
-        {"key": 3, "text": "선택적 IPsec(Optional IPsec)"},
-        {"key": 4, "text": "자동 설정(Autoconfiguration, SLAAC)"}
+        {
+          "key": 1,
+          "text": "체크섬(Checksums)"
+        },
+        {
+          "key": 2,
+          "text": "복잡한 헤더(Complicated header)"
+        },
+        {
+          "key": 3,
+          "text": "선택적 IPsec(Optional IPsec)"
+        },
+        {
+          "key": 4,
+          "text": "자동 설정(Autoconfiguration, SLAAC)"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -178,10 +262,22 @@
       "subject_id": "tcpip",
       "text": "IP Address '127.0.0.1'이 의미하는 것은?",
       "options": [
-        {"key": 1, "text": "모든 네트워크를 의미한다."},
-        {"key": 2, "text": "사설 IP Address를 의미한다."},
-        {"key": 3, "text": "특정 네트워크의 모든 노드를 의미한다."},
-        {"key": 4, "text": "루프백(Loopback) 테스트용이다."}
+        {
+          "key": 1,
+          "text": "모든 네트워크를 의미한다."
+        },
+        {
+          "key": 2,
+          "text": "사설 IP Address를 의미한다."
+        },
+        {
+          "key": 3,
+          "text": "특정 네트워크의 모든 노드를 의미한다."
+        },
+        {
+          "key": 4,
+          "text": "루프백(Loopback) 테스트용이다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -202,10 +298,22 @@
       "subject_id": "tcpip",
       "text": "TCP에서 사용하는 흐름 제어 방식은?",
       "options": [
-        {"key": 1, "text": "GO-Back-N"},
-        {"key": 2, "text": "선택적 재전송(Selective Repeat)"},
-        {"key": 3, "text": "슬라이딩 윈도우(Sliding Window)"},
-        {"key": 4, "text": "Stop-and-Wait(Idle RQ)"}
+        {
+          "key": 1,
+          "text": "GO-Back-N"
+        },
+        {
+          "key": 2,
+          "text": "선택적 재전송(Selective Repeat)"
+        },
+        {
+          "key": 3,
+          "text": "슬라이딩 윈도우(Sliding Window)"
+        },
+        {
+          "key": 4,
+          "text": "Stop-and-Wait(Idle RQ)"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -226,10 +334,22 @@
       "subject_id": "tcpip",
       "text": "IPv4 헤더에 포함되지 않는 필드는?",
       "options": [
-        {"key": 1, "text": "ACK(확인 응답)"},
-        {"key": 2, "text": "Version(버전)"},
-        {"key": 3, "text": "Header Checksum(헤더 체크섬)"},
-        {"key": 4, "text": "Header Length(IHL, 헤더 길이)"}
+        {
+          "key": 1,
+          "text": "ACK(확인 응답)"
+        },
+        {
+          "key": 2,
+          "text": "Version(버전)"
+        },
+        {
+          "key": 3,
+          "text": "Header Checksum(헤더 체크섬)"
+        },
+        {
+          "key": 4,
+          "text": "Header Length(IHL, 헤더 길이)"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -250,10 +370,22 @@
       "subject_id": "tcpip",
       "text": "DNS에서 TTL(Time to Live)에 대한 설명으로 올바른 것은?",
       "options": [
-        {"key": 1, "text": "데이터가 DNS 서버 존(zone)으로부터 나오기 전에 현"},
-        {"key": 2, "text": "데이터가 DNS 서버 캐시에서 만료되기까지 남은 시간이"},
-        {"key": 3, "text": "패킷이 DNS 서버 존으로부터 나오기 전에 현재 남은 시"},
-        {"key": 4, "text": "패킷이 DNS 서버 네임 서버 레코드로부터 나오기 전에"}
+        {
+          "key": 1,
+          "text": "데이터가 DNS 서버 존(zone)으로부터 나오기 전에 현"
+        },
+        {
+          "key": 2,
+          "text": "데이터가 DNS 서버 캐시에서 만료되기까지 남은 시간이 다."
+        },
+        {
+          "key": 3,
+          "text": "패킷이 DNS 서버 존으로부터 나오기 전에 현재 남은 시 간이다."
+        },
+        {
+          "key": 4,
+          "text": "패킷이 DNS 서버 네임 서버 레코드로부터 나오기 전에 현재 남은 시간이다."
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -274,10 +406,22 @@
       "subject_id": "tcpip",
       "text": "UDP에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "TCP에 비해 신뢰성이 떨어진다."},
-        {"key": 2, "text": "사용자 데이터그램(Datagram)이라고 하는 데이터 단위"},
-        {"key": 3, "text": "UDP가 제공하는 오류검사는 홀수 패리티와 짝수 패리티"},
-        {"key": 4, "text": "UDP가 제공하는 서비스는 비연결형 데이터 전달서비스"}
+        {
+          "key": 1,
+          "text": "TCP에 비해 신뢰성이 떨어진다."
+        },
+        {
+          "key": 2,
+          "text": "사용자 데이터그램(Datagram)이라고 하는 데이터 단위 (Unit)를 송신지의 응용 프로세스에서 수신지의 응용 프 로세스로 전송한다."
+        },
+        {
+          "key": 3,
+          "text": "UDP가 제공하는 오류검사는 홀수 패리티와 짝수 패리티 가 있다."
+        },
+        {
+          "key": 4,
+          "text": "UDP가 제공하는 서비스는 비연결형 데이터 전달서비스 (Connectionless Data Delivery Service)이다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -298,10 +442,22 @@
       "subject_id": "tcpip",
       "text": "신규 단말이 부팅 시 IP가 없는 상태에서 스위치 포트에 연결됐다. 네트워크는 IPv4를 사용하며 중앙에서 주소를 자동 분배한다. MAC 주소를 기반으로 IP를 자동 부여하는 데 주로 쓰이는 기술은?",
       "options": [
-        {"key": 1, "text": "RARP"},
-        {"key": 2, "text": "ARP"},
-        {"key": 3, "text": "ICMP"},
-        {"key": 4, "text": "DHCP"}
+        {
+          "key": 1,
+          "text": "RARP"
+        },
+        {
+          "key": 2,
+          "text": "ARP"
+        },
+        {
+          "key": 3,
+          "text": "ICMP"
+        },
+        {
+          "key": 4,
+          "text": "DHCP"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -322,10 +478,22 @@
       "subject_id": "tcpip",
       "text": "TCP/IP에서 Broadcast의 의미는?",
       "options": [
-        {"key": 1, "text": "메시지를 한 호스트에서 다른 한 호스트로 전송하는 것"},
-        {"key": 2, "text": "메시지를 한 호스트에서 망상의 특정 그룹 호스트들로"},
-        {"key": 3, "text": "메시지를 한 호스트에서 망상의 모든 호스트들로 전송하"},
-        {"key": 4, "text": "메시지를 한 호스트에서 가장 가까이 있는 특정 그룹 호"}
+        {
+          "key": 1,
+          "text": "메시지를 한 호스트에서 다른 한 호스트로 전송하는 것"
+        },
+        {
+          "key": 2,
+          "text": "메시지를 한 호스트에서 망상의 특정 그룹 호스트들로 전송하는 것"
+        },
+        {
+          "key": 3,
+          "text": "메시지를 한 호스트에서 망상의 모든 호스트들로 전송하 는 것"
+        },
+        {
+          "key": 4,
+          "text": "메시지를 한 호스트에서 가장 가까이 있는 특정 그룹 호 스트들로 전송하는 것"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -346,10 +514,22 @@
       "subject_id": "tcpip",
       "text": "OSPF(Open Shortest Path First)에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "AS 내부 경로 정보 교환에 사용되는 링크 스테이트 라우"},
-        {"key": 2, "text": "Hello 패킷으로 이웃 라우터의 정상 동작을 확인한다."},
-        {"key": 3, "text": "비용이 가장 낮은 단일 경로만 사용하며 다른 경로는 배"},
-        {"key": 4, "text": "일반적으로 IP 버전에 따라 사용하는 OSPF 버전이 다르"}
+        {
+          "key": 1,
+          "text": "AS 내부 경로 정보 교환에 사용되는 링크 스테이트 라우 팅 프로토콜이다."
+        },
+        {
+          "key": 2,
+          "text": "Hello 패킷으로 이웃 라우터의 정상 동작을 확인한다."
+        },
+        {
+          "key": 3,
+          "text": "비용이 가장 낮은 단일 경로만 사용하며 다른 경로는 배 제한다."
+        },
+        {
+          "key": 4,
+          "text": "일반적으로 IP 버전에 따라 사용하는 OSPF 버전이 다르 다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -370,10 +550,22 @@
       "subject_id": "general",
       "text": "사내 스트리밍 서비스가 IPv4 멀티캐스트로 배포된다. 클라이언트 PC가 채널을 바꿀 때마다 스위치/라우터에 그룹 가입·탈퇴 신호가 전달되어 트래픽이 즉시 조정된다. 이때 사용되는 프로토콜은?",
       "options": [
-        {"key": 1, "text": "ICMP"},
-        {"key": 2, "text": "IGMP"},
-        {"key": 3, "text": "ARP"},
-        {"key": 4, "text": "RARP"}
+        {
+          "key": 1,
+          "text": "ICMP"
+        },
+        {
+          "key": 2,
+          "text": "IGMP"
+        },
+        {
+          "key": 3,
+          "text": "ARP"
+        },
+        {
+          "key": 4,
+          "text": "RARP"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -394,10 +586,22 @@
       "subject_id": "general",
       "text": "Ping에 대한 설명 중 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "ICMP(인터넷 프로토콜군) 기반의 진단용 응용 프로그램"},
-        {"key": 2, "text": "원격 호스트까지 왕복 지연 시간(RTT)을 측정할 수 있"},
-        {"key": 3, "text": "원격 호스트의 네트워크 오류를 확인하고 오류를 정정해"},
-        {"key": 4, "text": "원격 호스트와의 연결 상태를 진단할 수 있다."}
+        {
+          "key": 1,
+          "text": "ICMP(인터넷 프로토콜군) 기반의 진단용 응용 프로그램 이다."
+        },
+        {
+          "key": 2,
+          "text": "원격 호스트까지 왕복 지연 시간(RTT)을 측정할 수 있 다."
+        },
+        {
+          "key": 3,
+          "text": "원격 호스트의 네트워크 오류를 확인하고 오류를 정정해 준다."
+        },
+        {
+          "key": 4,
+          "text": "원격 호스트와의 연결 상태를 진단할 수 있다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -418,10 +622,22 @@
       "subject_id": "general",
       "text": "OSI 7계층 중 데이터 링크 계층의 기능으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "통신 프로토콜을 정의한 OSI 7계층 중 세 번째 계층에"},
-        {"key": 2, "text": "비트열을 프레임화한다."},
-        {"key": 3, "text": "전송 과정의 오류를 검출한다."},
-        {"key": 4, "text": "흐름 제어를 통해 데이터 링크 개체 간 트래픽을 제어한"}
+        {
+          "key": 1,
+          "text": "통신 프로토콜을 정의한 OSI 7계층 중 세 번째 계층에 해당한다."
+        },
+        {
+          "key": 2,
+          "text": "비트열을 프레임화한다."
+        },
+        {
+          "key": 3,
+          "text": "전송 과정의 오류를 검출한다."
+        },
+        {
+          "key": 4,
+          "text": "흐름 제어를 통해 데이터 링크 개체 간 트래픽을 제어한 다."
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -442,10 +658,22 @@
       "subject_id": "general",
       "text": "패킷 교환망의 특징으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "연결 설정 방식에 따라 가상 회선과 데이터그램으로 분"},
-        {"key": 2, "text": "메시지를 더 짧은 길이의 패킷으로 분할하여 전송한다."},
-        {"key": 3, "text": "망에 유입되는 데이터의 양이 많아질수록 전송 속도가"},
-        {"key": 4, "text": "회선 차단(호 차단)과 같은 블로킹 현상이 없다."}
+        {
+          "key": 1,
+          "text": "연결 설정 방식에 따라 가상 회선과 데이터그램으로 분 류된다."
+        },
+        {
+          "key": 2,
+          "text": "메시지를 더 짧은 길이의 패킷으로 분할하여 전송한다."
+        },
+        {
+          "key": 3,
+          "text": "망에 유입되는 데이터의 양이 많아질수록 전송 속도가 빨라진다."
+        },
+        {
+          "key": 4,
+          "text": "회선 차단(호 차단)과 같은 블로킹 현상이 없다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -466,10 +694,22 @@
       "subject_id": "general",
       "text": "다음은 화상 회의를 하기 위한 기술에 관한 내용이다. (A) 안에 들어가는 용어 중 옳은 것은?",
       "options": [
-        {"key": 1, "text": "IRC (Internet Relay Chat)"},
-        {"key": 2, "text": "HEVC/H.265 (High Efficiency Video Coding)"},
-        {"key": 3, "text": "MIME (Multipurpose Internet Mail Extensions)"},
-        {"key": 4, "text": "SIP (Session Initiation Protocol)"}
+        {
+          "key": 1,
+          "text": "IRC (Internet Relay Chat)"
+        },
+        {
+          "key": 2,
+          "text": "HEVC/H.265 (High Efficiency Video Coding)"
+        },
+        {
+          "key": 3,
+          "text": "MIME (Multipurpose Internet Mail Extensions)"
+        },
+        {
+          "key": 4,
+          "text": "SIP (Session Initiation Protocol)"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -490,10 +730,22 @@
       "subject_id": "general",
       "text": "네트워크 계층의 데이터 단위를 나타내는 용어는? 최강 자격증 전자문제집 CBT : www.comcbt.com",
       "options": [
-        {"key": 1, "text": "세그먼트"},
-        {"key": 2, "text": "패킷"},
-        {"key": 3, "text": "프레임"},
-        {"key": 4, "text": "비트"}
+        {
+          "key": 1,
+          "text": "세그먼트"
+        },
+        {
+          "key": 2,
+          "text": "패킷"
+        },
+        {
+          "key": 3,
+          "text": "프레임"
+        },
+        {
+          "key": 4,
+          "text": "비트"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -514,10 +766,22 @@
       "subject_id": "general",
       "text": "VPN에 대한 설명으로 (A)에 알맞은 용어는?",
       "options": [
-        {"key": 1, "text": "PPTP"},
-        {"key": 2, "text": "L2TP"},
-        {"key": 3, "text": "IPsec"},
-        {"key": 4, "text": "SSL/TLS"}
+        {
+          "key": 1,
+          "text": "PPTP"
+        },
+        {
+          "key": 2,
+          "text": "L2TP"
+        },
+        {
+          "key": 3,
+          "text": "IPsec"
+        },
+        {
+          "key": 4,
+          "text": "SSL/TLS"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -538,10 +802,22 @@
       "subject_id": "general",
       "text": "에러제어 기법 중 자동 재전송 기법으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "Stop and Wait ARQ"},
-        {"key": 2, "text": "Go-Back N ARQ"},
-        {"key": 3, "text": "Forward Error Correction(FEC)"},
-        {"key": 4, "text": "Selective Repeat ARQ"}
+        {
+          "key": 1,
+          "text": "Stop and Wait ARQ"
+        },
+        {
+          "key": 2,
+          "text": "Go-Back N ARQ"
+        },
+        {
+          "key": 3,
+          "text": "Forward Error Correction(FEC)"
+        },
+        {
+          "key": 4,
+          "text": "Selective Repeat ARQ"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -562,10 +838,22 @@
       "subject_id": "general",
       "text": "다음 중 하나의 물리적인 스위치를 논리적인 방법을 사용하여 여러 개의 스위치로 분리하는 기술은?",
       "options": [
-        {"key": 1, "text": "STM"},
-        {"key": 2, "text": "ATM"},
-        {"key": 3, "text": "ALOHA"},
-        {"key": 4, "text": "VLAN"}
+        {
+          "key": 1,
+          "text": "STM"
+        },
+        {
+          "key": 2,
+          "text": "ATM"
+        },
+        {
+          "key": 3,
+          "text": "ALOHA"
+        },
+        {
+          "key": 4,
+          "text": "VLAN"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -586,10 +874,22 @@
       "subject_id": "general",
       "text": "IEEE 802.11 표준 중 OFDMA·DL/UL MU-MIMO로 고해상도 스트리밍·AR/VR·온라인 게임 등을 안정적으로 처리할 수 있는 표준은?",
       "options": [
-        {"key": 1, "text": "IEEE 802.11n"},
-        {"key": 2, "text": "IEEE 802.11ac"},
-        {"key": 3, "text": "IEEE 802.11ad"},
-        {"key": 4, "text": "IEEE 802.11ax"}
+        {
+          "key": 1,
+          "text": "IEEE 802.11n"
+        },
+        {
+          "key": 2,
+          "text": "IEEE 802.11ac"
+        },
+        {
+          "key": 3,
+          "text": "IEEE 802.11ad"
+        },
+        {
+          "key": 4,
+          "text": "IEEE 802.11ax"
+        }
       ],
       "answer": 4,
       "has_figure": true,
@@ -610,10 +910,22 @@
       "subject_id": "general",
       "text": "1000BASE-T 규격에 대한 설명으로 틀린 것은?",
       "options": [
-        {"key": 1, "text": "최대 전송 속도는 1000 Kb/s이다."},
-        {"key": 2, "text": "스위치 중심의 스타형 토폴로지가 일반적이다."},
-        {"key": 3, "text": "전송 매체는 UTP(비차폐 꼬임쌍선)이다."},
-        {"key": 4, "text": "주로 이더넷(IEEE 802.3ab)에서 사용된다."}
+        {
+          "key": 1,
+          "text": "최대 전송 속도는 1000 Kb/s이다."
+        },
+        {
+          "key": 2,
+          "text": "스위치 중심의 스타형 토폴로지가 일반적이다."
+        },
+        {
+          "key": 3,
+          "text": "전송 매체는 UTP(비차폐 꼬임쌍선)이다."
+        },
+        {
+          "key": 4,
+          "text": "주로 이더넷(IEEE 802.3ab)에서 사용된다."
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -634,10 +946,22 @@
       "subject_id": "general",
       "text": "서버리스 컴퓨팅에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "클라우드 서비스 제공자가 인프라를 관리하므로, 직접적"},
-        {"key": 2, "text": "실제 배포된 서비스의 코드가 실행되는 시점에 사용한"},
-        {"key": 3, "text": "필요에 따라 컴퓨팅 자원이 자동으로 확장·축소(오토스케"},
-        {"key": 4, "text": "서버리스 컴퓨팅에서는 사용자가 서버 인스턴스 프로비"}
+        {
+          "key": 1,
+          "text": "클라우드 서비스 제공자가 인프라를 관리하므로, 직접적 인 서버 관리를 하지 않아도 된다."
+        },
+        {
+          "key": 2,
+          "text": "실제 배포된 서비스의 코드가 실행되는 시점에 사용한 자원량에 따라 요금이 계산된다."
+        },
+        {
+          "key": 3,
+          "text": "필요에 따라 컴퓨팅 자원이 자동으로 확장·축소(오토스케 일링)된다."
+        },
+        {
+          "key": 4,
+          "text": "서버리스 컴퓨팅에서는 사용자가 서버 인스턴스 프로비 저닝과 OS 패치를 직접 관리해야 한다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -658,10 +982,22 @@
       "subject_id": "nos",
       "text": "Linux에서 'find' 명령어의 주요 옵션에 대한 설명으로 올바른 것은?",
       "options": [
-        {"key": 1, "text": "'-name'은 지정한 사용자 이름에 해당하는 파일이나 디"},
-        {"key": 2, "text": "'-type'은 지정한 디렉터리 종류에 해당하는 디렉터리"},
-        {"key": 3, "text": "'-perm'은 지정한 소유자의 권한만을 고려하여 파일이나"},
-        {"key": 4, "text": "'-exec'은 찾은 파일에 대한 삭제 등의 추가적인 명령을"}
+        {
+          "key": 1,
+          "text": "'-name'은 지정한 사용자 이름에 해당하는 파일이나 디"
+        },
+        {
+          "key": 2,
+          "text": "'-type'은 지정한 디렉터리 종류에 해당하는 디렉터리"
+        },
+        {
+          "key": 3,
+          "text": "'-perm'은 지정한 소유자의 권한만을 고려하여 파일이나"
+        },
+        {
+          "key": 4,
+          "text": "'-exec'은 찾은 파일에 대한 삭제 등의 추가적인 명령을"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -682,10 +1018,22 @@
       "subject_id": "nos",
       "text": "Windows Server 2022의 Hyper-V에 대한 특징으로 옳은 것은?",
       "options": [
-        {"key": 1, "text": "가상 컴퓨터를 다른 서버로 복제할 수 없다."},
-        {"key": 2, "text": "가상 하드 디스크를 실행 중에도 다른 저장소로 이동할"},
-        {"key": 3, "text": "하나의 물리 서버에는 하나의 가상 컴퓨터만 사용할 수"},
-        {"key": 4, "text": "가상 컴퓨터를 사용할수록 물리 서버의 하드웨어 자원"}
+        {
+          "key": 1,
+          "text": "가상 컴퓨터를 다른 서버로 복제할 수 없다."
+        },
+        {
+          "key": 2,
+          "text": "가상 하드 디스크를 실행 중에도 다른 저장소로 이동할 수 있다."
+        },
+        {
+          "key": 3,
+          "text": "하나의 물리 서버에는 하나의 가상 컴퓨터만 사용할 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "가상 컴퓨터를 사용할수록 물리 서버의 하드웨어 자원 사용률은 낮아진다."
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -706,10 +1054,22 @@
       "subject_id": "nos",
       "text": "Linux에서 파일 속성을 확인하여 'i' 속성이 설정되어 쓰기 및 삭제가 불가한 것을 확인하는 명령어 (A)는?",
       "options": [
-        {"key": 1, "text": "file"},
-        {"key": 2, "text": "stat"},
-        {"key": 3, "text": "lsattr"},
-        {"key": 4, "text": "lsblk"}
+        {
+          "key": 1,
+          "text": "file"
+        },
+        {
+          "key": 2,
+          "text": "stat"
+        },
+        {
+          "key": 3,
+          "text": "lsattr"
+        },
+        {
+          "key": 4,
+          "text": "lsblk"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -730,10 +1090,22 @@
       "subject_id": "nos",
       "text": "Linux 시스템에서 기존에 설정된 'crontab'을 삭제하려고 할 때 올바른 명령어는?",
       "options": [
-        {"key": 1, "text": "crontab -u"},
-        {"key": 2, "text": "crontab -e"},
-        {"key": 3, "text": "crontab -l"},
-        {"key": 4, "text": "crontab -r"}
+        {
+          "key": 1,
+          "text": "crontab -u"
+        },
+        {
+          "key": 2,
+          "text": "crontab -e"
+        },
+        {
+          "key": 3,
+          "text": "crontab -l"
+        },
+        {
+          "key": 4,
+          "text": "crontab -r"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -754,10 +1126,22 @@
       "subject_id": "nos",
       "text": "Linux의 가상 파일시스템으로 동작 중인 프로세스의 상태 정보, 하드웨어 정보, 시스템 정보 등을 확인할 수 있는 디렉터리로 올바른 것은?",
       "options": [
-        {"key": 1, "text": "/boot"},
-        {"key": 2, "text": "/etc"},
-        {"key": 3, "text": "/proc"},
-        {"key": 4, "text": "/lib"}
+        {
+          "key": 1,
+          "text": "/boot"
+        },
+        {
+          "key": 2,
+          "text": "/etc"
+        },
+        {
+          "key": 3,
+          "text": "/proc"
+        },
+        {
+          "key": 4,
+          "text": "/lib"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -778,10 +1162,22 @@
       "subject_id": "nos",
       "text": "DNS에서 지원하는 레코드 형식 중 역방향조회에 사용되는 레코드는?",
       "options": [
-        {"key": 1, "text": "A"},
-        {"key": 2, "text": "AAAA"},
-        {"key": 3, "text": "PTR"},
-        {"key": 4, "text": "SOA"}
+        {
+          "key": 1,
+          "text": "A"
+        },
+        {
+          "key": 2,
+          "text": "AAAA"
+        },
+        {
+          "key": 3,
+          "text": "PTR"
+        },
+        {
+          "key": 4,
+          "text": "SOA"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -802,10 +1198,22 @@
       "subject_id": "nos",
       "text": "Linux Apache 웹서버에 사용자가 접속한 뒤 80초 동안 추가 요청이 없으면 연결을 종료하도록 'httpd.conf'에서 설정하는 옵션은?",
       "options": [
-        {"key": 1, "text": "Timeout 80"},
-        {"key": 2, "text": "KeepAlive On"},
-        {"key": 3, "text": "KeepAliveTimeout 80"},
-        {"key": 4, "text": "MaxKeepAliveRequests 80"}
+        {
+          "key": 1,
+          "text": "Timeout 80"
+        },
+        {
+          "key": 2,
+          "text": "KeepAlive On"
+        },
+        {
+          "key": 3,
+          "text": "KeepAliveTimeout 80"
+        },
+        {
+          "key": 4,
+          "text": "MaxKeepAliveRequests 80"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -826,10 +1234,22 @@
       "subject_id": "nos",
       "text": "Linux 시스템에서 Apache 웹서버를 구동 시 Well-known port를 사용할 때의 주의사항으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "Well-known port를 통해 Apache 웹서버를 실행할 시"},
-        {"key": 2, "text": "일반 사용자 계정에서 Apache 웹서버를 실행할 때, 실"},
-        {"key": 3, "text": "Well-known port를 변경할 때, 다른 서비스와 충돌되지"},
-        {"key": 4, "text": "Well-known port는 1부터 1023 까지의 숫자를 사용한"}
+        {
+          "key": 1,
+          "text": "Well-known port를 통해 Apache 웹서버를 실행할 시 관리자 권한이 필요하다."
+        },
+        {
+          "key": 2,
+          "text": "일반 사용자 계정에서 Apache 웹서버를 실행할 때, 실 행 명령어 앞에 ′su′를 추가한다."
+        },
+        {
+          "key": 3,
+          "text": "Well-known port를 변경할 때, 다른 서비스와 충돌되지 않는 번호를 사용하여야 한다."
+        },
+        {
+          "key": 4,
+          "text": "Well-known port는 1부터 1023 까지의 숫자를 사용한 다."
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -850,10 +1270,22 @@
       "subject_id": "nos",
       "text": "Linux에서 'sample'파일의 소유자 및 소유그룹이 아닌 사람에 대해 파일을 볼 수는 있지만 수정 및 실행을 못하도록 하는 명령어는?",
       "options": [
-        {"key": 1, "text": "chmod 776 sample"},
-        {"key": 2, "text": "chmod 774 sample"},
-        {"key": 3, "text": "chmod 746 sample"},
-        {"key": 4, "text": "chmod 766 sample"}
+        {
+          "key": 1,
+          "text": "chmod 776 sample"
+        },
+        {
+          "key": 2,
+          "text": "chmod 774 sample"
+        },
+        {
+          "key": 3,
+          "text": "chmod 746 sample"
+        },
+        {
+          "key": 4,
+          "text": "chmod 766 sample"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -874,10 +1306,22 @@
       "subject_id": "nos",
       "text": "다음 중 (ㄱ), (ㄴ)에 들어갈 말로 알맞은 것은?",
       "options": [
-        {"key": 1, "text": "ㄱ: 21, ㄴ : 1024"},
-        {"key": 2, "text": "ㄱ: 21, ㄴ : 20"},
-        {"key": 3, "text": "ㄱ: 20, ㄴ : 21"},
-        {"key": 4, "text": "ㄱ: 20, ㄴ : 1024"}
+        {
+          "key": 1,
+          "text": "ㄱ: 21, ㄴ : 1024"
+        },
+        {
+          "key": 2,
+          "text": "ㄱ: 21, ㄴ : 20"
+        },
+        {
+          "key": 3,
+          "text": "ㄱ: 20, ㄴ : 21"
+        },
+        {
+          "key": 4,
+          "text": "ㄱ: 20, ㄴ : 1024"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -898,10 +1342,22 @@
       "subject_id": "nos",
       "text": "Windows Server 2022에서 이전에 종료 또는 재부팅된 기록을 확인할 수 있는 항목은?",
       "options": [
-        {"key": 1, "text": "성능모니터"},
-        {"key": 2, "text": "이벤트뷰어"},
-        {"key": 3, "text": "로컬보안정책"},
-        {"key": 4, "text": "그룹정책편집기"}
+        {
+          "key": 1,
+          "text": "성능모니터"
+        },
+        {
+          "key": 2,
+          "text": "이벤트뷰어"
+        },
+        {
+          "key": 3,
+          "text": "로컬보안정책"
+        },
+        {
+          "key": 4,
+          "text": "그룹정책편집기"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -922,10 +1378,22 @@
       "subject_id": "equipment",
       "text": "Linux에서 현재 사용 디렉터리 위치에 상관없이 자신의 HOME Directory로 이동하는 명령은?",
       "options": [
-        {"key": 1, "text": "cd HOME"},
-        {"key": 2, "text": "cd /"},
-        {"key": 3, "text": "cd ../HOME"},
-        {"key": 4, "text": "cd ~"}
+        {
+          "key": 1,
+          "text": "cd HOME"
+        },
+        {
+          "key": 2,
+          "text": "cd /"
+        },
+        {
+          "key": 3,
+          "text": "cd ../HOME"
+        },
+        {
+          "key": 4,
+          "text": "cd ~"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -946,10 +1414,22 @@
       "subject_id": "equipment",
       "text": "tracert와 동일한 경로 정보를 보여주며 홉 사이의 시간 정보를 저장하는 네트워크 명령어는?",
       "options": [
-        {"key": 1, "text": "ping"},
-        {"key": 2, "text": "nslookup"},
-        {"key": 3, "text": "pathping"},
-        {"key": 4, "text": "nbtstat"}
+        {
+          "key": 1,
+          "text": "ping"
+        },
+        {
+          "key": 2,
+          "text": "nslookup"
+        },
+        {
+          "key": 3,
+          "text": "pathping"
+        },
+        {
+          "key": 4,
+          "text": "nbtstat"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -970,10 +1450,22 @@
       "subject_id": "equipment",
       "text": "Windows Server 2022에서 IIS가 제공하는 기능으로 올바른 것은?",
       "options": [
-        {"key": 1, "text": "요청 필터링(Request Filtering)을 통해 특정 요청을 차"},
-        {"key": 2, "text": "IIS는 HTTPS 프로토콜을 지원하지 않는다."},
-        {"key": 3, "text": "IIS는 PHP 스크립트를 실행할 수 없다."},
-        {"key": 4, "text": "응용 프로그램 풀(App Pool)은 하나의 웹 사이트만 호스"}
+        {
+          "key": 1,
+          "text": "요청 필터링(Request Filtering)을 통해 특정 요청을 차 단할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "IIS는 HTTPS 프로토콜을 지원하지 않는다."
+        },
+        {
+          "key": 3,
+          "text": "IIS는 PHP 스크립트를 실행할 수 없다."
+        },
+        {
+          "key": 4,
+          "text": "응용 프로그램 풀(App Pool)은 하나의 웹 사이트만 호스 팅할 수 있다."
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -994,10 +1486,22 @@
       "subject_id": "equipment",
       "text": "DNSSEC(DNS 보안 확장)에 대한 설명으로 올바른 것은?",
       "options": [
-        {"key": 1, "text": "DNSSEC는 DNS 서버의 성능을 향상시키는 캐싱 메커니"},
-        {"key": 2, "text": "DNSSEC를 사용하면 DNS 쿼리 응답의 무결성과 출처"},
-        {"key": 3, "text": "DNSSEC는 Windows Server 2022에서 지원되지 않는"},
-        {"key": 4, "text": "DNSSEC를 활성화하면 모든 DNS 쿼리가 자동으로 암호"}
+        {
+          "key": 1,
+          "text": "DNSSEC는 DNS 서버의 성능을 향상시키는 캐싱 메커니 즘이다."
+        },
+        {
+          "key": 2,
+          "text": "DNSSEC를 사용하면 DNS 쿼리 응답의 무결성과 출처 인증을 제공할 수 있다."
+        },
+        {
+          "key": 3,
+          "text": "DNSSEC는 Windows Server 2022에서 지원되지 않는 다."
+        },
+        {
+          "key": 4,
+          "text": "DNSSEC를 활성화하면 모든 DNS 쿼리가 자동으로 암호 화된다."
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -1018,10 +1522,22 @@
       "subject_id": "equipment",
       "text": "Windows Server 2022에서 DHCP 서버 운영에 대한 설명으로 올바른 것은?",
       "options": [
-        {"key": 1, "text": "DHCP 서버는 반드시 Active Directory 환경에서만 구성"},
-        {"key": 2, "text": "DHCP 서버는 IP 주소를 자동으로 할당하기 위해 반드시"},
-        {"key": 3, "text": "DHCP 클라이언트는 부팅 시 IP 할당을 위해 DHCP 서"},
-        {"key": 4, "text": "DHCP 서버의 기본 포트는 53번이며, DNS와 동일하다."}
+        {
+          "key": 1,
+          "text": "DHCP 서버는 반드시 Active Directory 환경에서만 구성 할 수 있다."
+        },
+        {
+          "key": 2,
+          "text": "DHCP 서버는 IP 주소를 자동으로 할당하기 위해 반드시 정적 IP 풀을 사용해야 한다."
+        },
+        {
+          "key": 3,
+          "text": "DHCP 클라이언트는 부팅 시 IP 할당을 위해 DHCP 서 버를 찾는 브로드캐스트를 전송한다."
+        },
+        {
+          "key": 4,
+          "text": "DHCP 서버의 기본 포트는 53번이며, DNS와 동일하다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -1042,10 +1558,22 @@
       "subject_id": "equipment",
       "text": "다음 지문에서 설명하는 명령어로 옳은 것은?",
       "options": [
-        {"key": 1, "text": "pgrep python"},
-        {"key": 2, "text": "ps -ef | grep python"},
-        {"key": 3, "text": "ss -tulpn | grep python"},
-        {"key": 4, "text": "top -b -n 1"}
+        {
+          "key": 1,
+          "text": "pgrep python"
+        },
+        {
+          "key": 2,
+          "text": "ps -ef | grep python"
+        },
+        {
+          "key": 3,
+          "text": "ss -tulpn | grep python"
+        },
+        {
+          "key": 4,
+          "text": "top -b -n 1"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -1066,10 +1594,22 @@
       "subject_id": "equipment",
       "text": "Windows Server 2022에서 netstat로 열린 포트와 연관된 실행 파일(프로세스)을 확인하려고 한다. 어떤 옵션을 사용해야 하는가?",
       "options": [
-        {"key": 1, "text": "netstat -b"},
-        {"key": 2, "text": "netstat -p"},
-        {"key": 3, "text": "netstat -a"},
-        {"key": 4, "text": "netstat -n"}
+        {
+          "key": 1,
+          "text": "netstat -b"
+        },
+        {
+          "key": 2,
+          "text": "netstat -p"
+        },
+        {
+          "key": 3,
+          "text": "netstat -a"
+        },
+        {
+          "key": 4,
+          "text": "netstat -n"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -1090,10 +1630,22 @@
       "subject_id": "equipment",
       "text": "아래 지문에 해당하는 RAID 방식은?",
       "options": [
-        {"key": 1, "text": "Linear RAID"},
-        {"key": 2, "text": "RAID 0"},
-        {"key": 3, "text": "RAID 1"},
-        {"key": 4, "text": "RAID 5"}
+        {
+          "key": 1,
+          "text": "Linear RAID"
+        },
+        {
+          "key": 2,
+          "text": "RAID 0"
+        },
+        {
+          "key": 3,
+          "text": "RAID 1"
+        },
+        {
+          "key": 4,
+          "text": "RAID 5"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -1114,10 +1666,22 @@
       "subject_id": "equipment",
       "text": "게이트웨이(Gateway)에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "게이트웨이는 L2 스위치와 같이 프레임만 중계한다."},
-        {"key": 2, "text": "두 개의 완전히 다른 네트워크 사이의 데이터 형식을 변"},
-        {"key": 3, "text": "데이터 변환의 기능을 가지고 있어 네트워크 내의 병목"},
-        {"key": 4, "text": "프로토콜이 다른 네트워크 환경들을 연결할 수 있는 기"}
+        {
+          "key": 1,
+          "text": "게이트웨이는 L2 스위치와 같이 프레임만 중계한다."
+        },
+        {
+          "key": 2,
+          "text": "두 개의 완전히 다른 네트워크 사이의 데이터 형식을 변 환하는 장치이다."
+        },
+        {
+          "key": 3,
+          "text": "데이터 변환의 기능을 가지고 있어 네트워크 내의 병목 현상을 일으키는 지점이 될 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "프로토콜이 다른 네트워크 환경들을 연결할 수 있는 기 능을 제공한다."
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -1138,10 +1702,22 @@
       "subject_id": "equipment",
       "text": "L4 스위치의 기본 기능이 아닌 것은?",
       "options": [
-        {"key": 1, "text": "서버의 상태를 확인하는 헬스 체크(Health Check) 기능"},
-        {"key": 2, "text": "알고리즘에 따른 분산 처리"},
-        {"key": 3, "text": "NAT(Network Address Translation)"},
-        {"key": 4, "text": "애플리케이션(Application) 계층의 보안 기능 제공"}
+        {
+          "key": 1,
+          "text": "서버의 상태를 확인하는 헬스 체크(Health Check) 기능"
+        },
+        {
+          "key": 2,
+          "text": "알고리즘에 따른 분산 처리"
+        },
+        {
+          "key": 3,
+          "text": "NAT(Network Address Translation)"
+        },
+        {
+          "key": 4,
+          "text": "애플리케이션(Application) 계층의 보안 기능 제공"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -1162,10 +1738,22 @@
       "subject_id": "security",
       "text": "NAT(Network Address Translation)에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "정적 NAT는 내부 사설 IP를 공인 IP와 1:1로 매핑하는"},
-        {"key": 2, "text": "NAT는 프레임 단위로 처리되는 데이터 링크 계층(L2)의"},
-        {"key": 3, "text": "PAT(포트 주소 변환)은 다수의 사설 IP가 하나의 공인"},
-        {"key": 4, "text": "NAT는 내부 주소 구조를 외부에 직접 노출하지 않아 보"}
+        {
+          "key": 1,
+          "text": "정적 NAT는 내부 사설 IP를 공인 IP와 1:1로 매핑하는 방식이다."
+        },
+        {
+          "key": 2,
+          "text": "NAT는 프레임 단위로 처리되는 데이터 링크 계층(L2)의 주소 변환 기술이다."
+        },
+        {
+          "key": 3,
+          "text": "PAT(포트 주소 변환)은 다수의 사설 IP가 하나의 공인 IP의 서로 다른 포트로 매핑되어 인터넷 접속을 공유할  수 있다."
+        },
+        {
+          "key": 4,
+          "text": "NAT는 내부 주소 구조를 외부에 직접 노출하지 않아 보 안상 이점을 제공한다."
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -1186,10 +1774,22 @@
       "subject_id": "security",
       "text": "다음 (A) 안에 들어가는 용어 중 옳은 것은?",
       "options": [
-        {"key": 1, "text": "L2 Switch"},
-        {"key": 2, "text": "IP 공유기"},
-        {"key": 3, "text": "UPS"},
-        {"key": 4, "text": "PoE Switch"}
+        {
+          "key": 1,
+          "text": "L2 Switch"
+        },
+        {
+          "key": 2,
+          "text": "IP 공유기"
+        },
+        {
+          "key": 3,
+          "text": "UPS"
+        },
+        {
+          "key": 4,
+          "text": "PoE Switch"
+        }
       ],
       "answer": 4,
       "has_figure": false,

@@ -84,19 +84,19 @@
       "options": [
         {
           "key": 1,
-          "text": "종단 간 흐름 제어를 위해 동적 윈도우(Dynamic Sliding"
+          "text": "종단 간 흐름 제어를 위해 동적 윈도우(Dynamic Sliding Window) 방식을 사용한다."
         },
         {
           "key": 2,
-          "text": "한 번에 많은 데이터의 전송에 유리하기 때문에 화상 통"
+          "text": "한 번에 많은 데이터의 전송에 유리하기 때문에 화상 통 신과 같은 실시간 통신에 사용된다."
         },
         {
           "key": 3,
-          "text": "송수신되는 데이터의 에러를 제어함으로서 신뢰성 있는"
+          "text": "송수신되는 데이터의 에러를 제어함으로서 신뢰성 있는 데이터 전송을 보장한다."
         },
         {
           "key": 4,
-          "text": "Three Way Handshaking 과정을 통해 데이터를 주고받는"
+          "text": "Three Way Handshaking 과정을 통해 데이터를 주고받는 다."
         }
       ],
       "answer": 2,
@@ -124,7 +124,7 @@
         },
         {
           "key": 2,
-          "text": "Destination Port - 선택적 필드로 사용하지 않을 때는"
+          "text": "Destination Port - 선택적 필드로 사용하지 않을 때는 Zero로 채워지는 필드"
         },
         {
           "key": 3,
@@ -132,7 +132,7 @@
         },
         {
           "key": 4,
-          "text": "Length - UDP 헤더와 데이터 부분을 포함한 데이터 그"
+          "text": "Length - UDP 헤더와 데이터 부분을 포함한 데이터 그 램의 길이를 나타내는 필드"
         }
       ],
       "answer": 2,
@@ -444,7 +444,7 @@
       "options": [
         {
           "key": 1,
-          "text": "예외적으로 발생되는 이벤트에 대해 이를 알릴 수 있도"
+          "text": "예외적으로 발생되는 이벤트에 대해 이를 알릴 수 있도 록 지원하는 프로토콜이 없다."
         },
         {
           "key": 2,
@@ -452,7 +452,7 @@
         },
         {
           "key": 3,
-          "text": "네트워크 망간 장비들의 오류 상황에 대해 공유할 수 있"
+          "text": "네트워크 망간 장비들의 오류 상황에 대해 공유할 수 있 는 기능이 있다."
         },
         {
           "key": 4,
@@ -560,7 +560,7 @@
         },
         {
           "key": 3,
-          "text": "Ethernet 구현에서 대부분의 IP는 Ethernet V2 프레임의"
+          "text": "Ethernet 구현에서 대부분의 IP는 Ethernet V2 프레임의 형식이며 1500 바이트의 값을 가진다."
         },
         {
           "key": 4,
@@ -588,19 +588,19 @@
       "options": [
         {
           "key": 1,
-          "text": "하나의 호스트가 네트워크 내의 정해진 호스트 그룹으로"
+          "text": "하나의 호스트가 네트워크 내의 정해진 호스트 그룹으로 메시지를 보내는 것"
         },
         {
           "key": 2,
-          "text": "하나의 호스트가 네트워크 내의 모든 호스트에게 메시지"
+          "text": "하나의 호스트가 네트워크 내의 모든 호스트에게 메시지 를 보내는 것"
         },
         {
           "key": 3,
-          "text": "하나의 호스트가 네트워크 내의 하나의 호스트로 메시지"
+          "text": "하나의 호스트가 네트워크 내의 하나의 호스트로 메시지 를 보내는 것"
         },
         {
           "key": 4,
-          "text": "하나의 호스트가 다시 자기 자신에게 메시지를 보내는"
+          "text": "하나의 호스트가 다시 자기 자신에게 메시지를 보내는 것"
         }
       ],
       "answer": 1,
@@ -804,19 +804,19 @@
       "options": [
         {
           "key": 1,
-          "text": "단일모드(Single-mode)는 가격이 비싸고 고속전송에 유"
+          "text": "단일모드(Single-mode)는 가격이 비싸고 고속전송에 유 리하고 광섬유 접속이 상대적으로 쉬우므로 다중모드 (Multi-mode)에 비해 단거리 전송에 유리하다."
         },
         {
           "key": 2,
-          "text": "Optical Fiber Cable은 코어와 클래딩의 굴절률 차이에"
+          "text": "Optical Fiber Cable은 코어와 클래딩의 굴절률 차이에 의한 전반사 효과를 이용한 매체이다. 따라서 너무 작은  반경으로 케이블을 휘거나 접으면 매체의 특성상 통신회 선으로 성능이 떨어지거나 없어진다."
         },
         {
           "key": 3,
-          "text": "Optical Fiber Cable을 사용하는 경우 일반적으로 발광"
+          "text": "Optical Fiber Cable을 사용하는 경우 일반적으로 발광 부와 수광부로 구성된 단방향 통신으로 구성되며, 양방 향 통신을 하기 위해서는 2회선 이상이 필요하다."
         },
         {
           "key": 4,
-          "text": "Optical Fiber Cable은 구조상 전기적인 신호가 아닌 광"
+          "text": "Optical Fiber Cable은 구조상 전기적인 신호가 아닌 광 신호를 기반으로 동작하기 때문에 회사 내에 있는 프로 토타입 작업실 및 테스트실 환경에서 발생하는 다양한  전자기장 잡음에 영향을 받지 않는다."
         }
       ],
       "answer": 1,
@@ -852,7 +852,7 @@
         },
         {
           "key": 4,
-          "text": "운용 보존국 (OMC, Operation and Maintenance"
+          "text": "운용 보존국 (OMC, Operation and Maintenance Center)"
         }
       ],
       "answer": 2,
@@ -984,19 +984,19 @@
       "options": [
         {
           "key": 1,
-          "text": "shutdown -r now 'Warning! After 5 minutes will be"
+          "text": "shutdown -r now 'Warning! After 5 minutes will be system shutdown!!'"
         },
         {
           "key": 2,
-          "text": "shutdown now 'Warning! After 5 minutes will be"
+          "text": "shutdown now 'Warning! After 5 minutes will be system shutdown!!'"
         },
         {
           "key": 3,
-          "text": "shutdown -r +5 'Warning! After 5 minutes will be"
+          "text": "shutdown -r +5 'Warning! After 5 minutes will be system shutdown!!'"
         },
         {
           "key": 4,
-          "text": "shutdown +5 'Warning! After 5 minutes will be"
+          "text": "shutdown +5 'Warning! After 5 minutes will be system shutdown!!'"
         }
       ],
       "answer": 3,
@@ -1096,7 +1096,7 @@
         },
         {
           "key": 2,
-          "text": "소유자와 같은 그룹을 제외한 다른 모든 사용자는 실행"
+          "text": "소유자와 같은 그룹을 제외한 다른 모든 사용자는 실행 권한만을 갖는다."
         },
         {
           "key": 3,
@@ -1416,19 +1416,19 @@
       "options": [
         {
           "key": 1,
-          "text": "′listen-on′은 네임 서버에 접속이 허용된 컴퓨터의 IP주"
+          "text": "′listen-on′은 네임 서버에 접속이 허용된 컴퓨터의 IP주 소와 포트를 설정한다."
         },
         {
           "key": 2,
-          "text": "′directory′는 네임 서버의 환경설정 파일이 위치하는 절"
+          "text": "′directory′는 네임 서버의 환경설정 파일이 위치하는 절 대경로를 설정한다."
         },
         {
           "key": 3,
-          "text": "′dump-file′은 도매인 정보의 오류 정보를 출력할 때 사"
+          "text": "′dump-file′은 도매인 정보의 오류 정보를 출력할 때 사 용하는 파일을 설정한다."
         },
         {
           "key": 4,
-          "text": "′allow-query′는 클라이언트에 대한 도메인 이름 요청의"
+          "text": "′allow-query′는 클라이언트에 대한 도메인 이름 요청의 허용 여부를 설정한다."
         }
       ],
       "answer": 1,
@@ -1488,19 +1488,19 @@
       "options": [
         {
           "key": 1,
-          "text": "Administrators 그룹은 모든 권한을 가지는 그룹으로서"
+          "text": "Administrators 그룹은 모든 권한을 가지는 그룹으로서 일반사용자를 이 그룹에 소속시키면 Administrator와 동 일한 권한을 갖는다."
         },
         {
           "key": 2,
-          "text": "Backup Operators 그룹은 파일을 백업하고 복구할 수"
+          "text": "Backup Operators 그룹은 파일을 백업하고 복구할 수 있는 권한을 갖는다."
         },
         {
           "key": 3,
-          "text": "Guests 그룹은 로그인할 때 임시 프로필을 만들고 로그"
+          "text": "Guests 그룹은 로그인할 때 임시 프로필을 만들고 로그 아웃하면 삭제되고, 기본적으로는 사용하지 않도록 설정 하는 그룹이다."
         },
         {
           "key": 4,
-          "text": "Users 그룹은 사용자 계정을 생성하면 기본적으로 소속"
+          "text": "Users 그룹은 사용자 계정을 생성하면 기본적으로 소속 되는 그룹으로 시스템 수준의 변경의 권한을 갖는다."
         }
       ],
       "answer": 4,

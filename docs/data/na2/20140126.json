@@ -10,10 +10,22 @@
       "subject_id": "tcpip",
       "text": "인터넷에서 멀티캐스트를 위하여 사용되는 프로토콜은?",
       "options": [
-        {"key": 1, "text": "IGMP"},
-        {"key": 2, "text": "ICMP"},
-        {"key": 3, "text": "SMTP"},
-        {"key": 4, "text": "DNS"}
+        {
+          "key": 1,
+          "text": "IGMP"
+        },
+        {
+          "key": 2,
+          "text": "ICMP"
+        },
+        {
+          "key": 3,
+          "text": "SMTP"
+        },
+        {
+          "key": 4,
+          "text": "DNS"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -34,10 +46,22 @@
       "subject_id": "tcpip",
       "text": "라우팅 프로토콜 중 네트워크 거리를 계산할 때 홉(Hop)의 총계만을 사용하는 것은?",
       "options": [
-        {"key": 1, "text": "SNMP"},
-        {"key": 2, "text": "RIP"},
-        {"key": 3, "text": "SMB"},
-        {"key": 4, "text": "OSPF"}
+        {
+          "key": 1,
+          "text": "SNMP"
+        },
+        {
+          "key": 2,
+          "text": "RIP"
+        },
+        {
+          "key": 3,
+          "text": "SMB"
+        },
+        {
+          "key": 4,
+          "text": "OSPF"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -58,10 +82,22 @@
       "subject_id": "tcpip",
       "text": "다음은 각각의 HOST에 입력한 IP Address를 보여준다. 잘못 입력된 IP Address는?",
       "options": [
-        {"key": 1, "text": "210.182.73.37"},
-        {"key": 2, "text": "211.75.217.13"},
-        {"key": 3, "text": "127.0.256.1"},
-        {"key": 4, "text": "203.234.12.1"}
+        {
+          "key": 1,
+          "text": "210.182.73.37"
+        },
+        {
+          "key": 2,
+          "text": "211.75.217.13"
+        },
+        {
+          "key": 3,
+          "text": "127.0.256.1"
+        },
+        {
+          "key": 4,
+          "text": "203.234.12.1"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -82,10 +118,22 @@
       "subject_id": "tcpip",
       "text": "네트워크에서 호스트나 라우터, 다른 컴퓨터나 장치들을 감시 하고 관리하기 위한 목적으로 사용되는 응용 계층 표준 프로 토콜은?",
       "options": [
-        {"key": 1, "text": "SLIP-PPP(Serial Line Internet Protocol, Point to Point"},
-        {"key": 2, "text": "SNMP(Simple Network Management Protocol)"},
-        {"key": 3, "text": "SMTP(Simple Mail Transfer Protocol)"},
-        {"key": 4, "text": "SDP(Session Description Protocol)"}
+        {
+          "key": 1,
+          "text": "SLIP-PPP(Serial Line Internet Protocol, Point to Point Protocol)"
+        },
+        {
+          "key": 2,
+          "text": "SNMP(Simple Network Management Protocol)"
+        },
+        {
+          "key": 3,
+          "text": "SMTP(Simple Mail Transfer Protocol)"
+        },
+        {
+          "key": 4,
+          "text": "SDP(Session Description Protocol)"
+        }
       ],
       "answer": 2,
       "has_figure": true,
@@ -106,10 +154,22 @@
       "subject_id": "tcpip",
       "text": "C Class의 네트워크 주소가 '192.168.10.0' 이고, 서브넷 마 스크가 '255.255.255.240' 일 때, 최대 사용 가능한 호스트 수는? (단, 네트워크 주소와 브로드캐스트 호스트는 제외한 다.)",
       "options": [
-        {"key": 1, "text": "10개"},
-        {"key": 2, "text": "14개"},
-        {"key": 3, "text": "26개"},
-        {"key": 4, "text": "32개"}
+        {
+          "key": 1,
+          "text": "10개"
+        },
+        {
+          "key": 2,
+          "text": "14개"
+        },
+        {
+          "key": 3,
+          "text": "26개"
+        },
+        {
+          "key": 4,
+          "text": "32개"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -130,10 +190,22 @@
       "subject_id": "tcpip",
       "text": "SMTP에 대한 설명 중 올바른 것은?",
       "options": [
-        {"key": 1, "text": "인터넷을 통해 파일을 송/수신하기 위한 프로토콜"},
-        {"key": 2, "text": "인터넷 전자 우편을 위한 프로토콜"},
-        {"key": 3, "text": "하이퍼 텍스트 문서를 전송하기 위한 프로토콜"},
-        {"key": 4, "text": "원격 접속을 하기 위한 프로토콜"}
+        {
+          "key": 1,
+          "text": "인터넷을 통해 파일을 송/수신하기 위한 프로토콜"
+        },
+        {
+          "key": 2,
+          "text": "인터넷 전자 우편을 위한 프로토콜"
+        },
+        {
+          "key": 3,
+          "text": "하이퍼 텍스트 문서를 전송하기 위한 프로토콜"
+        },
+        {
+          "key": 4,
+          "text": "원격 접속을 하기 위한 프로토콜"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -154,10 +226,22 @@
       "subject_id": "tcpip",
       "text": "TCP/IP 계층 모델 중 트랜스포트 계층에서 제공하는 프로토 콜은?",
       "options": [
-        {"key": 1, "text": "SNMP"},
-        {"key": 2, "text": "Telnet"},
-        {"key": 3, "text": "UDP"},
-        {"key": 4, "text": "FTP"}
+        {
+          "key": 1,
+          "text": "SNMP"
+        },
+        {
+          "key": 2,
+          "text": "Telnet"
+        },
+        {
+          "key": 3,
+          "text": "UDP"
+        },
+        {
+          "key": 4,
+          "text": "FTP"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -178,10 +262,22 @@
       "subject_id": "tcpip",
       "text": "Rsh, Rlogin, Telnet 등을 대체하기 위해 설계되었으며, 원격 에 있는 호스트를 안전하게 액세스하기 위한 유닉스 기반의 명령어 프로토콜은?",
       "options": [
-        {"key": 1, "text": "SSL"},
-        {"key": 2, "text": "IMAP"},
-        {"key": 3, "text": "SSH"},
-        {"key": 4, "text": "SNMP"}
+        {
+          "key": 1,
+          "text": "SSL"
+        },
+        {
+          "key": 2,
+          "text": "IMAP"
+        },
+        {
+          "key": 3,
+          "text": "SSH"
+        },
+        {
+          "key": 4,
+          "text": "SNMP"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -202,10 +298,22 @@
       "subject_id": "tcpip",
       "text": "IP Address를 물리적 네트워크 주소로 변환시켜주는 Protocol은?",
       "options": [
-        {"key": 1, "text": "TCP"},
-        {"key": 2, "text": "ARP"},
-        {"key": 3, "text": "DHCP"},
-        {"key": 4, "text": "WINS"}
+        {
+          "key": 1,
+          "text": "TCP"
+        },
+        {
+          "key": 2,
+          "text": "ARP"
+        },
+        {
+          "key": 3,
+          "text": "DHCP"
+        },
+        {
+          "key": 4,
+          "text": "WINS"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -226,10 +334,22 @@
       "subject_id": "tcpip",
       "text": "FTP에 관한 설명 중 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "Anonymous FTP는 공개 FTP로 누구나 이용이 가능하"},
-        {"key": 2, "text": "Mirroring FTP는 이용자 분산을 목적으로 Anonymous"},
-        {"key": 3, "text": "'mget' 명령어를 이용하며 여러 개의 파일을 FTP 서버로"},
-        {"key": 4, "text": "/pub 디렉터리는 Anonymous FTP 이용 시 모든 이용자"}
+        {
+          "key": 1,
+          "text": "Anonymous FTP는 공개 FTP로 누구나 이용이 가능하 다."
+        },
+        {
+          "key": 2,
+          "text": "Mirroring FTP는 이용자 분산을 목적으로 Anonymous FTP의 파일을 복사한 FTP 서버이다."
+        },
+        {
+          "key": 3,
+          "text": "'mget' 명령어를 이용하며 여러 개의 파일을 FTP 서버로 올릴 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "/pub 디렉터리는 Anonymous FTP 이용 시 모든 이용자 가 검색 가능하다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -250,10 +370,22 @@
       "subject_id": "tcpip",
       "text": "IP 데이터그램 전달을 위한 주소 형태 중 IPv4와 비교하여 IPv6에서만 제공되는 서비스는?",
       "options": [
-        {"key": 1, "text": "Unicasting"},
-        {"key": 2, "text": "Multicasting"},
-        {"key": 3, "text": "Broadcasting"},
-        {"key": 4, "text": "Anycasting"}
+        {
+          "key": 1,
+          "text": "Unicasting"
+        },
+        {
+          "key": 2,
+          "text": "Multicasting"
+        },
+        {
+          "key": 3,
+          "text": "Broadcasting"
+        },
+        {
+          "key": 4,
+          "text": "Anycasting"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -274,10 +406,22 @@
       "subject_id": "tcpip",
       "text": "Telnet 접속 방법으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "Telnet [도메인이름]"},
-        {"key": 2, "text": "Telnet [포트번호]"},
-        {"key": 3, "text": "Telnet [서버이름]"},
-        {"key": 4, "text": "Telnet [IP_Address]"}
+        {
+          "key": 1,
+          "text": "Telnet [도메인이름]"
+        },
+        {
+          "key": 2,
+          "text": "Telnet [포트번호]"
+        },
+        {
+          "key": 3,
+          "text": "Telnet [서버이름]"
+        },
+        {
+          "key": 4,
+          "text": "Telnet [IP_Address]"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -298,10 +442,22 @@
       "subject_id": "tcpip",
       "text": "프로토콜과 일반적으로 사용되는(Well Known) 포트번호의 연결이 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "FTP : 21번"},
-        {"key": 2, "text": "Telnet : 23번"},
-        {"key": 3, "text": "HTTP : 180번"},
-        {"key": 4, "text": "SMTP : 25번"}
+        {
+          "key": 1,
+          "text": "FTP : 21번"
+        },
+        {
+          "key": 2,
+          "text": "Telnet : 23번"
+        },
+        {
+          "key": 3,
+          "text": "HTTP : 180번"
+        },
+        {
+          "key": 4,
+          "text": "SMTP : 25번"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -322,10 +478,22 @@
       "subject_id": "tcpip",
       "text": "ICMP의 기능으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "에러 보고 기능"},
-        {"key": 2, "text": "도착 가능 검사 기능"},
-        {"key": 3, "text": "혼잡 제어 기능"},
-        {"key": 4, "text": "송신측 경로 변경 기능"}
+        {
+          "key": 1,
+          "text": "에러 보고 기능"
+        },
+        {
+          "key": 2,
+          "text": "도착 가능 검사 기능"
+        },
+        {
+          "key": 3,
+          "text": "혼잡 제어 기능"
+        },
+        {
+          "key": 4,
+          "text": "송신측 경로 변경 기능"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -346,10 +514,22 @@
       "subject_id": "tcpip",
       "text": "IPv6는 IPng(IP next generation), 차세대 인터넷 프로토콜 이라고 불리고 있다. IPv6 주소 필드 bit 수는?",
       "options": [
-        {"key": 1, "text": "32bit"},
-        {"key": 2, "text": "64bit"},
-        {"key": 3, "text": "128bit"},
-        {"key": 4, "text": "256bit"}
+        {
+          "key": 1,
+          "text": "32bit"
+        },
+        {
+          "key": 2,
+          "text": "64bit"
+        },
+        {
+          "key": 3,
+          "text": "128bit"
+        },
+        {
+          "key": 4,
+          "text": "256bit"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -370,10 +550,22 @@
       "subject_id": "general",
       "text": "사설 IP주소를 공인 IP주소로 바꿔주는데 사용하는 통신망 의 주소 변환 기술로, 공인 IP주소를 절약하고, 내부 사설망 을 이용하여 인터넷에 연결하므로 보안을 강화할 수 있는 것은?",
       "options": [
-        {"key": 1, "text": "DHCP"},
-        {"key": 2, "text": "ARP"},
-        {"key": 3, "text": "BOOTP"},
-        {"key": 4, "text": "NAT"}
+        {
+          "key": 1,
+          "text": "DHCP"
+        },
+        {
+          "key": 2,
+          "text": "ARP"
+        },
+        {
+          "key": 3,
+          "text": "BOOTP"
+        },
+        {
+          "key": 4,
+          "text": "NAT"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -394,10 +586,22 @@
       "subject_id": "general",
       "text": "IP의 체크섬(Checksum)에 대한 설명으로 올바른 것은?",
       "options": [
-        {"key": 1, "text": "IP Header의 완전성을 검사한다."},
-        {"key": 2, "text": "IP Header와 데이터의 완전성을 검사한다."},
-        {"key": 3, "text": "데이터의 완전성을 검사한다."},
-        {"key": 4, "text": "TCP 계층에서만 체크섬 계산 및 검증 서비스가 제공된"}
+        {
+          "key": 1,
+          "text": "IP Header의 완전성을 검사한다."
+        },
+        {
+          "key": 2,
+          "text": "IP Header와 데이터의 완전성을 검사한다."
+        },
+        {
+          "key": 3,
+          "text": "데이터의 완전성을 검사한다."
+        },
+        {
+          "key": 4,
+          "text": "TCP 계층에서만 체크섬 계산 및 검증 서비스가 제공된 다."
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -418,10 +622,22 @@
       "subject_id": "general",
       "text": "CSMA/CD에 기반한 네트워킹 기술은?",
       "options": [
-        {"key": 1, "text": "Token Ring"},
-        {"key": 2, "text": "FDDI"},
-        {"key": 3, "text": "Ethernet"},
-        {"key": 4, "text": "Token Bus"}
+        {
+          "key": 1,
+          "text": "Token Ring"
+        },
+        {
+          "key": 2,
+          "text": "FDDI"
+        },
+        {
+          "key": 3,
+          "text": "Ethernet"
+        },
+        {
+          "key": 4,
+          "text": "Token Bus"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -442,10 +658,22 @@
       "subject_id": "general",
       "text": "HDLC(High-level Data Link Control)에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "문자중심의 데이터 링크 프로토콜이다."},
-        {"key": 2, "text": "Go-Back-N ARQ 에러 방식을 사용한다."},
-        {"key": 3, "text": "통신 동작 모드는 NRM, ARM, ABM이 있다."},
-        {"key": 4, "text": "프레임 형식에는 I-Frame, S-Frame, U-Frame이 있다."}
+        {
+          "key": 1,
+          "text": "문자중심의 데이터 링크 프로토콜이다."
+        },
+        {
+          "key": 2,
+          "text": "Go-Back-N ARQ 에러 방식을 사용한다."
+        },
+        {
+          "key": 3,
+          "text": "통신 동작 모드는 NRM, ARM, ABM이 있다."
+        },
+        {
+          "key": 4,
+          "text": "프레임 형식에는 I-Frame, S-Frame, U-Frame이 있다."
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -466,10 +694,22 @@
       "subject_id": "general",
       "text": "시분할 다중화(TDM) 방법에 대한 설명으로 옳지 않은 것 은?",
       "options": [
-        {"key": 1, "text": "디지털 전송에 쓰인다."},
-        {"key": 2, "text": "동기식 방법과 비동기식 방법이 있다."},
-        {"key": 3, "text": "주파수 편이 변복조(FSK)의 역할을 수행한다."},
-        {"key": 4, "text": "T1 다중화는 시분할 다중화 방법이다."}
+        {
+          "key": 1,
+          "text": "디지털 전송에 쓰인다."
+        },
+        {
+          "key": 2,
+          "text": "동기식 방법과 비동기식 방법이 있다."
+        },
+        {
+          "key": 3,
+          "text": "주파수 편이 변복조(FSK)의 역할을 수행한다."
+        },
+        {
+          "key": 4,
+          "text": "T1 다중화는 시분할 다중화 방법이다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -490,10 +730,22 @@
       "subject_id": "general",
       "text": "Bus Topology의 설명 중 올바른 것은?",
       "options": [
-        {"key": 1, "text": "문제가 발생한 위치를 파악하기가 쉽다."},
-        {"key": 2, "text": "각 스테이션이 중앙스위치에 연결된다."},
-        {"key": 3, "text": "터미네이터(Terminator)가 시그널의 반사를 방지하기 위"},
-        {"key": 4, "text": "Token Passing 기법을 사용한다."}
+        {
+          "key": 1,
+          "text": "문제가 발생한 위치를 파악하기가 쉽다."
+        },
+        {
+          "key": 2,
+          "text": "각 스테이션이 중앙스위치에 연결된다."
+        },
+        {
+          "key": 3,
+          "text": "터미네이터(Terminator)가 시그널의 반사를 방지하기 위 해 사용된다."
+        },
+        {
+          "key": 4,
+          "text": "Token Passing 기법을 사용한다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -514,10 +766,22 @@
       "subject_id": "general",
       "text": "OSI 모델에서 데이터 전환과 암호, 압축, 그래픽 명령어 해 석 기능을 가지는 계층은?",
       "options": [
-        {"key": 1, "text": "Application Layer"},
-        {"key": 2, "text": "Transport Layer"},
-        {"key": 3, "text": "Session Layer"},
-        {"key": 4, "text": "Presentation Layer"}
+        {
+          "key": 1,
+          "text": "Application Layer"
+        },
+        {
+          "key": 2,
+          "text": "Transport Layer"
+        },
+        {
+          "key": 3,
+          "text": "Session Layer"
+        },
+        {
+          "key": 4,
+          "text": "Presentation Layer"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -538,10 +802,22 @@
       "subject_id": "general",
       "text": "패킷 교환망의 특징으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "연결설정에 따라 가상회선과 데이터그램으로 분류된다."},
-        {"key": 2, "text": "메시지를 보다 짧은 길이의 패킷으로 나누어 전송한다."},
-        {"key": 3, "text": "망에 유입되는 데이터의 양이 많아질수록 전송속도가 빠"},
-        {"key": 4, "text": "블록킹 현상이 없다."}
+        {
+          "key": 1,
+          "text": "연결설정에 따라 가상회선과 데이터그램으로 분류된다."
+        },
+        {
+          "key": 2,
+          "text": "메시지를 보다 짧은 길이의 패킷으로 나누어 전송한다."
+        },
+        {
+          "key": 3,
+          "text": "망에 유입되는 데이터의 양이 많아질수록 전송속도가 빠 르다."
+        },
+        {
+          "key": 4,
+          "text": "블록킹 현상이 없다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -562,10 +838,22 @@
       "subject_id": "general",
       "text": "광통신의 특징으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "전송 손실이 아주 적다."},
-        {"key": 2, "text": "주파수가 마이크로파보다 수만 배 높은 광파를 사용하므"},
-        {"key": 3, "text": "비전도체(유리)이므로 습기에 영향을 받지 않고 타전자파"},
-        {"key": 4, "text": "광섬유케이블은 무겁고 굵어서 포설하기가 용이하지 않"}
+        {
+          "key": 1,
+          "text": "전송 손실이 아주 적다."
+        },
+        {
+          "key": 2,
+          "text": "주파수가 마이크로파보다 수만 배 높은 광파를 사용하므 로 매우 많은 정보량을 장거리 전송할 수 있다."
+        },
+        {
+          "key": 3,
+          "text": "비전도체(유리)이므로 습기에 영향을 받지 않고 타전자파 나 고압선 전류 유도에 대한 방해를 전혀 받지 않아 송 전선에 광섬유케이블을 함께 실어 실제 전송할 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "광섬유케이블은 무겁고 굵어서 포설하기가 용이하지 않 다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -586,10 +874,22 @@
       "subject_id": "general",
       "text": "PCM 방식에서 아날로그 신호의 디지털 신호 생성 과정으로 올바른 것은?",
       "options": [
-        {"key": 1, "text": "아날로그신호 - 표본화 - 부호화 - 양자화 - 디지털신"},
-        {"key": 2, "text": "아날로그신호 - 표본화 - 양자화 - 부호화 - 디지털신"},
-        {"key": 3, "text": "아날로그신호 - 양자화 - 표본화 - 부호화 - 디지털신"},
-        {"key": 4, "text": "아날로그신호 - 양자화 - 부호화 - 표본화 - 디지털신"}
+        {
+          "key": 1,
+          "text": "아날로그신호 - 표본화 - 부호화 - 양자화 - 디지털신 호"
+        },
+        {
+          "key": 2,
+          "text": "아날로그신호 - 표본화 - 양자화 - 부호화 - 디지털신 호"
+        },
+        {
+          "key": 3,
+          "text": "아날로그신호 - 양자화 - 표본화 - 부호화 - 디지털신 호"
+        },
+        {
+          "key": 4,
+          "text": "아날로그신호 - 양자화 - 부호화 - 표본화 - 디지털신 호"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -610,10 +910,22 @@
       "subject_id": "general",
       "text": "무선 랜의 구성 방식 중 무선 랜카드를 가진 컴퓨터간의 네 트워크를 구성하여 작동하는 방식은?",
       "options": [
-        {"key": 1, "text": "Infrastructure 방식"},
-        {"key": 2, "text": "AD Hoc 방식"},
-        {"key": 3, "text": "AP 방식"},
-        {"key": 4, "text": "CDMA 방식"}
+        {
+          "key": 1,
+          "text": "Infrastructure 방식"
+        },
+        {
+          "key": 2,
+          "text": "AD Hoc 방식"
+        },
+        {
+          "key": 3,
+          "text": "AP 방식"
+        },
+        {
+          "key": 4,
+          "text": "CDMA 방식"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -634,10 +946,22 @@
       "subject_id": "general",
       "text": "데이터 에러를 정정할 수 있는 기술은?",
       "options": [
-        {"key": 1, "text": "CRC"},
-        {"key": 2, "text": "Hamming 코드"},
-        {"key": 3, "text": "단일 패리티 비트"},
-        {"key": 4, "text": "LRC"}
+        {
+          "key": 1,
+          "text": "CRC"
+        },
+        {
+          "key": 2,
+          "text": "Hamming 코드"
+        },
+        {
+          "key": 3,
+          "text": "단일 패리티 비트"
+        },
+        {
+          "key": 4,
+          "text": "LRC"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -658,10 +982,22 @@
       "subject_id": "nos",
       "text": "Windows 2003 Server의 IIS(Internet Information Server)에 서 설정 가능한 서비스로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "TELNET"},
-        {"key": 2, "text": "FTP"},
-        {"key": 3, "text": "NNTP"},
-        {"key": 4, "text": "WWW"}
+        {
+          "key": 1,
+          "text": "TELNET"
+        },
+        {
+          "key": 2,
+          "text": "FTP"
+        },
+        {
+          "key": 3,
+          "text": "NNTP"
+        },
+        {
+          "key": 4,
+          "text": "WWW"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -682,10 +1018,22 @@
       "subject_id": "nos",
       "text": "Windows 2003 Server의 IIS로 가상 FTP 사이트를 구성할 경우에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "FTP 서비스를 이용할 수 있는 포트 번호는 10~100번으"},
-        {"key": 2, "text": "서로 다른 IP를 구성하여 각각의 도메인에 따른 가상"},
-        {"key": 3, "text": "NTFS 파일 시스템을 사용하지 않을 경우 파일 및 디렉"},
-        {"key": 4, "text": "동시 사용자 수를 제한 할 수 있고, 사용자 라이선스에"}
+        {
+          "key": 1,
+          "text": "FTP 서비스를 이용할 수 있는 포트 번호는 10~100번으 로 제한된다."
+        },
+        {
+          "key": 2,
+          "text": "서로 다른 IP를 구성하여 각각의 도메인에 따른 가상 FTP 서비스를 제공할 수 있다."
+        },
+        {
+          "key": 3,
+          "text": "NTFS 파일 시스템을 사용하지 않을 경우 파일 및 디렉 터리에 대한 보안에 취약성이 있다."
+        },
+        {
+          "key": 4,
+          "text": "동시 사용자 수를 제한 할 수 있고, 사용자 라이선스에 대한 제약은 받지 않는다."
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -706,10 +1054,22 @@
       "subject_id": "nos",
       "text": "Windows 2003 Server에서 DHCP(Dynamic Host Configuration Protocol) 서버의 주요 기능은?",
       "options": [
-        {"key": 1, "text": "서브넷을 통해 IP Address 정보를 라우팅 한다."},
-        {"key": 2, "text": "로컬 서브넷에 있는 컴퓨터에 IP Address 정보를 할당하"},
-        {"key": 3, "text": "NetBIOS 이름을 IP Address로 해석한다."},
-        {"key": 4, "text": "IP Address를 FQDN(Fully Qualified Domain Names)으"}
+        {
+          "key": 1,
+          "text": "서브넷을 통해 IP Address 정보를 라우팅 한다."
+        },
+        {
+          "key": 2,
+          "text": "로컬 서브넷에 있는 컴퓨터에 IP Address 정보를 할당하 고 유지한다."
+        },
+        {
+          "key": 3,
+          "text": "NetBIOS 이름을 IP Address로 해석한다."
+        },
+        {
+          "key": 4,
+          "text": "IP Address를 FQDN(Fully Qualified Domain Names)으 로 해석한다."
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -730,10 +1090,22 @@
       "subject_id": "nos",
       "text": "Windows 2003 Server에서 DNS에 대한 설명으로 옳지 않 은 것은?",
       "options": [
-        {"key": 1, "text": "DNS는 IP 네트워크에서 이름 확인을 위한 기본적인 역"},
-        {"key": 2, "text": "도메인 네임 공간 계층 구조의 맨 위쪽에는 루트 도메인"},
-        {"key": 3, "text": "정방향(Forward) 조회 쿼리(Query)는 IP주소로 컴퓨터이"},
-        {"key": 4, "text": "DNS 클라이언트가 DNS 서버에 보내는 쿼리는 대부분"}
+        {
+          "key": 1,
+          "text": "DNS는 IP 네트워크에서 이름 확인을 위한 기본적인 역 할을 하는 분산 데이터베이스 시스템이다."
+        },
+        {
+          "key": 2,
+          "text": "도메인 네임 공간 계층 구조의 맨 위쪽에는 루트 도메인 이 있으며 마침표(.)로 표시된다."
+        },
+        {
+          "key": 3,
+          "text": "정방향(Forward) 조회 쿼리(Query)는 IP주소로 컴퓨터이 름을 조회하는 것이다."
+        },
+        {
+          "key": 4,
+          "text": "DNS 클라이언트가 DNS 서버에 보내는 쿼리는 대부분 재귀 쿼리(Recursive Query)이다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -754,10 +1126,22 @@
       "subject_id": "nos",
       "text": "Windows 2003 Server에서 네임서버를 구축하기 위해 반드 시 필요한 사항으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "NAT(Network Address Translation)"},
-        {"key": 2, "text": "공인 IP Address"},
-        {"key": 3, "text": "InterNIC 이나 KRNIC에 등록된 도메인 명"},
-        {"key": 4, "text": "Linux, Windows 2003 Server, Unix가 설치된 시스템"}
+        {
+          "key": 1,
+          "text": "NAT(Network Address Translation)"
+        },
+        {
+          "key": 2,
+          "text": "공인 IP Address"
+        },
+        {
+          "key": 3,
+          "text": "InterNIC 이나 KRNIC에 등록된 도메인 명"
+        },
+        {
+          "key": 4,
+          "text": "Linux, Windows 2003 Server, Unix가 설치된 시스템"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -778,10 +1162,22 @@
       "subject_id": "nos",
       "text": "Windows 2003 Server에서 감사정책을 설정하고 기록을 남 길 수 있는 그룹은?",
       "options": [
-        {"key": 1, "text": "Administrators"},
-        {"key": 2, "text": "Security Operators"},
-        {"key": 3, "text": "Backup Operators"},
-        {"key": 4, "text": "Audit Operators"}
+        {
+          "key": 1,
+          "text": "Administrators"
+        },
+        {
+          "key": 2,
+          "text": "Security Operators"
+        },
+        {
+          "key": 3,
+          "text": "Backup Operators"
+        },
+        {
+          "key": 4,
+          "text": "Audit Operators"
+        }
       ],
       "answer": 1,
       "has_figure": false,
@@ -802,10 +1198,22 @@
       "subject_id": "nos",
       "text": "Windows 2003 Server의 Active Directory 기능으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "정보 보안"},
-        {"key": 2, "text": "정책 기반 관리"},
-        {"key": 3, "text": "확장성"},
-        {"key": 4, "text": "DNS와의 분리"}
+        {
+          "key": 1,
+          "text": "정보 보안"
+        },
+        {
+          "key": 2,
+          "text": "정책 기반 관리"
+        },
+        {
+          "key": 3,
+          "text": "확장성"
+        },
+        {
+          "key": 4,
+          "text": "DNS와의 분리"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -826,10 +1234,22 @@
       "subject_id": "nos",
       "text": "Windows 2003 Server에서 사용되는 가상 메모리에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "하드디스크의 일부를 메모리처럼 사용하는 방법이다."},
-        {"key": 2, "text": "서버의 성능에 영향을 미친다."},
-        {"key": 3, "text": "각 드라이브 별로 필요한 크기만큼 가상메모리를 설정할"},
-        {"key": 4, "text": "가상 메모리로 사용할 드라이브는 가상 메모리의 크기만"}
+        {
+          "key": 1,
+          "text": "하드디스크의 일부를 메모리처럼 사용하는 방법이다."
+        },
+        {
+          "key": 2,
+          "text": "서버의 성능에 영향을 미친다."
+        },
+        {
+          "key": 3,
+          "text": "각 드라이브 별로 필요한 크기만큼 가상메모리를 설정할 수 있다."
+        },
+        {
+          "key": 4,
+          "text": "가상 메모리로 사용할 드라이브는 가상 메모리의 크기만 큼 파티션을 별도로 생성하여 관리해야 한다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -850,10 +1270,22 @@
       "subject_id": "nos",
       "text": "Windows 2003 Server에서 사용하는 NTFS 시스템에 대한 설명 중 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "Windows NT부터 지원하기 시작한 NTFS 파일시스템은"},
-        {"key": 2, "text": "FAT에서 NTFS로 바꿀 경우 다시 포맷을 하지 않아도"},
-        {"key": 3, "text": "FAT에 비해 성능이나 확장성 및 보안성이 개선되었다."},
-        {"key": 4, "text": "영문자 64자 이상 긴 파일 이름을 지원하지 않는다."}
+        {
+          "key": 1,
+          "text": "Windows NT부터 지원하기 시작한 NTFS 파일시스템은 다중 사용자에 대한 효과적인 접근제어가 가능하도록 설 계되어 있다."
+        },
+        {
+          "key": 2,
+          "text": "FAT에서 NTFS로 바꿀 경우 다시 포맷을 하지 않아도 가능하다."
+        },
+        {
+          "key": 3,
+          "text": "FAT에 비해 성능이나 확장성 및 보안성이 개선되었다."
+        },
+        {
+          "key": 4,
+          "text": "영문자 64자 이상 긴 파일 이름을 지원하지 않는다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -865,7 +1297,8 @@
           "2": "Windows의 'convert' 명령으로 FAT 볼륨을 NTFS로 무손실 변환할 수 있어 다시 포맷할 필요가 없다는 설명은 옳습니다.",
           "3": "NTFS는 ACL 기반 보안, 저널링, 압축, 암호화(EFS) 등을 지원해 FAT보다 성능·확장성·보안성이 개선된 파일 시스템이라는 평가에 부합합니다."
         },
-        "key_concept": "NTFS 255자"
+        "key_concept": "NTFS 255자",
+        "historical_note": "Windows NT 계열은 2004년 12월(NT 4.0 기준) 지원이 종료되었습니다. 본 문항은 학습 참고용 자료입니다."
       }
     },
     {
@@ -874,10 +1307,22 @@
       "subject_id": "nos",
       "text": "Linux 시스템에서 특정 서비스를 제공하는 Daemon이 살아 있는지 확인할 때 사용하는 명령어는?",
       "options": [
-        {"key": 1, "text": "daemon"},
-        {"key": 2, "text": "fsck"},
-        {"key": 3, "text": "men"},
-        {"key": 4, "text": "ps"}
+        {
+          "key": 1,
+          "text": "daemon"
+        },
+        {
+          "key": 2,
+          "text": "fsck"
+        },
+        {
+          "key": 3,
+          "text": "men"
+        },
+        {
+          "key": 4,
+          "text": "ps"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -898,10 +1343,22 @@
       "subject_id": "nos",
       "text": "Windows 2003 Server에서 'netstat' 명령이 제공하는 정보 로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "인터페이스의 구성 정보"},
-        {"key": 2, "text": "라우팅 테이블"},
-        {"key": 3, "text": "IP 패킷이 목적지에 도착하기 위해 방문하는 게이트웨이"},
-        {"key": 4, "text": "네트워크 인터페이스의 상태 정보"}
+        {
+          "key": 1,
+          "text": "인터페이스의 구성 정보"
+        },
+        {
+          "key": 2,
+          "text": "라우팅 테이블"
+        },
+        {
+          "key": 3,
+          "text": "IP 패킷이 목적지에 도착하기 위해 방문하는 게이트웨이 의 순서 정보"
+        },
+        {
+          "key": 4,
+          "text": "네트워크 인터페이스의 상태 정보"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -922,10 +1379,22 @@
       "subject_id": "equipment",
       "text": "Linux에서 파일의 접근 권한 변경 시 사용되는 명령어는?",
       "options": [
-        {"key": 1, "text": "umount"},
-        {"key": 2, "text": "greb"},
-        {"key": 3, "text": "ifconfig"},
-        {"key": 4, "text": "chmod"}
+        {
+          "key": 1,
+          "text": "umount"
+        },
+        {
+          "key": 2,
+          "text": "greb"
+        },
+        {
+          "key": 3,
+          "text": "ifconfig"
+        },
+        {
+          "key": 4,
+          "text": "chmod"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -946,10 +1415,22 @@
       "subject_id": "equipment",
       "text": "Linux에서 사용되는 어플리케이션 및 환경 설정에 필요한 설정 파일들과 ‘passwd’ 파일을 포함하고 있는 디렉터리는?",
       "options": [
-        {"key": 1, "text": "/bin"},
-        {"key": 2, "text": "/home"},
-        {"key": 3, "text": "/etc"},
-        {"key": 4, "text": "/root"}
+        {
+          "key": 1,
+          "text": "/bin"
+        },
+        {
+          "key": 2,
+          "text": "/home"
+        },
+        {
+          "key": 3,
+          "text": "/etc"
+        },
+        {
+          "key": 4,
+          "text": "/root"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -970,10 +1451,22 @@
       "subject_id": "equipment",
       "text": "Linux 시스템을 웹 서버로 운영하려고 한다. 이때 웹 서버로 운영하기 위해 설치해야 할 것은?",
       "options": [
-        {"key": 1, "text": "BIND"},
-        {"key": 2, "text": "Apache"},
-        {"key": 3, "text": "MySQL"},
-        {"key": 4, "text": "Samba"}
+        {
+          "key": 1,
+          "text": "BIND"
+        },
+        {
+          "key": 2,
+          "text": "Apache"
+        },
+        {
+          "key": 3,
+          "text": "MySQL"
+        },
+        {
+          "key": 4,
+          "text": "Samba"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -994,10 +1487,22 @@
       "subject_id": "equipment",
       "text": "Linux DNS의 SOA(Start Of Authority) 레코드에 대한 설명 으로 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "Zone 파일은 항상 SOA로 시작한다."},
-        {"key": 2, "text": "해당 Zone에 대한 네임서버를 유지하기 위한 기본적인"},
-        {"key": 3, "text": "Refresh는 주 서버와 보조 서버의 동기 주기를 설정한"},
-        {"key": 4, "text": "TTL 값이 길면 DNS의 부하가 늘어난다."}
+        {
+          "key": 1,
+          "text": "Zone 파일은 항상 SOA로 시작한다."
+        },
+        {
+          "key": 2,
+          "text": "해당 Zone에 대한 네임서버를 유지하기 위한 기본적인 자료가 저장된다."
+        },
+        {
+          "key": 3,
+          "text": "Refresh는 주 서버와 보조 서버의 동기 주기를 설정한 다."
+        },
+        {
+          "key": 4,
+          "text": "TTL 값이 길면 DNS의 부하가 늘어난다."
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -1018,10 +1523,22 @@
       "subject_id": "equipment",
       "text": "Linux 시스템에 좀비 프로세스가 많이 생겨 시스템을 재부 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com 팅하려고 한다. 현재 Linux 시스템에 접속해 있는 사용자에 게 메시지를 전달하고, 5분 후에 시스템을 재부팅시키는 명 령어는?",
       "options": [
-        {"key": 1, "text": "shutdown -r now 'Warning! After 5 minutes will be"},
-        {"key": 2, "text": "shutdown now 'Warning! After 5 minutes will be"},
-        {"key": 3, "text": "shutdown -r +5 'Warning! After 5 minutes will be"},
-        {"key": 4, "text": "shutdown +5 'Warning! After 5 minutes will be"}
+        {
+          "key": 1,
+          "text": "shutdown -r now 'Warning! After 5 minutes will be system shutdown!!'"
+        },
+        {
+          "key": 2,
+          "text": "shutdown now 'Warning! After 5 minutes will be system shutdown!!'"
+        },
+        {
+          "key": 3,
+          "text": "shutdown -r +5 'Warning! After 5 minutes will be system shutdown!!'"
+        },
+        {
+          "key": 4,
+          "text": "shutdown +5 'Warning! After 5 minutes will be system shutdown!!'"
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -1042,10 +1559,22 @@
       "subject_id": "equipment",
       "text": "Windows 2003 Server에서 www.icqa.or.kr의 IP Address를 얻기 위한 콘솔 명령어는?",
       "options": [
-        {"key": 1, "text": "ipconfig www.icqa.or.kr"},
-        {"key": 2, "text": "netstat www.icqa.or.kr"},
-        {"key": 3, "text": "find www.icqa.or.kr"},
-        {"key": 4, "text": "nslookup www.icqa.or.kr"}
+        {
+          "key": 1,
+          "text": "ipconfig www.icqa.or.kr"
+        },
+        {
+          "key": 2,
+          "text": "netstat www.icqa.or.kr"
+        },
+        {
+          "key": 3,
+          "text": "find www.icqa.or.kr"
+        },
+        {
+          "key": 4,
+          "text": "nslookup www.icqa.or.kr"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -1066,10 +1595,22 @@
       "subject_id": "equipment",
       "text": "Linux에서 명령어 'mv -i file1 file2'의 의미는?",
       "options": [
-        {"key": 1, "text": "파일이 지워지기 전에 백업파일을 만든다."},
-        {"key": 2, "text": "'file2'가 존재 하더라도 강제로 삭제한다."},
-        {"key": 3, "text": "'file2'가 존재할 경우 덮어 쓸 것인가를 물어본다."},
-        {"key": 4, "text": "파일 옮기기 전의 과정을 보여준다."}
+        {
+          "key": 1,
+          "text": "파일이 지워지기 전에 백업파일을 만든다."
+        },
+        {
+          "key": 2,
+          "text": "'file2'가 존재 하더라도 강제로 삭제한다."
+        },
+        {
+          "key": 3,
+          "text": "'file2'가 존재할 경우 덮어 쓸 것인가를 물어본다."
+        },
+        {
+          "key": 4,
+          "text": "파일 옮기기 전의 과정을 보여준다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -1090,10 +1631,22 @@
       "subject_id": "equipment",
       "text": "이기종간의 네트워크 특성을 상호 변환하여 호환성이 있는 정보 전송을 가능하게 해주는 기기로 OSI 7 Layer의 세션, 표현, 응용 계층 등을 연결하는 장치는?",
       "options": [
-        {"key": 1, "text": "Repeater"},
-        {"key": 2, "text": "Bridge"},
-        {"key": 3, "text": "Router"},
-        {"key": 4, "text": "Gateway"}
+        {
+          "key": 1,
+          "text": "Repeater"
+        },
+        {
+          "key": 2,
+          "text": "Bridge"
+        },
+        {
+          "key": 3,
+          "text": "Router"
+        },
+        {
+          "key": 4,
+          "text": "Gateway"
+        }
       ],
       "answer": 4,
       "has_figure": true,
@@ -1114,10 +1667,22 @@
       "subject_id": "equipment",
       "text": "선로의 명칭 중 10BASE-T의 '10' 이 의미하는 것은?",
       "options": [
-        {"key": 1, "text": "접속할 수 있는 단말의 수가 10대이다."},
-        {"key": 2, "text": "배선 할 수 있는 케이블의 길이가 10M이다."},
-        {"key": 3, "text": "데이터 전송속도가 10Mbps이다."},
-        {"key": 4, "text": "케이블의 굵기가 10mm이다."}
+        {
+          "key": 1,
+          "text": "접속할 수 있는 단말의 수가 10대이다."
+        },
+        {
+          "key": 2,
+          "text": "배선 할 수 있는 케이블의 길이가 10M이다."
+        },
+        {
+          "key": 3,
+          "text": "데이터 전송속도가 10Mbps이다."
+        },
+        {
+          "key": 4,
+          "text": "케이블의 굵기가 10mm이다."
+        }
       ],
       "answer": 3,
       "has_figure": false,
@@ -1138,10 +1703,22 @@
       "subject_id": "equipment",
       "text": "RAID의 구성에서 미러링모드 구성이라고도 하며 디스크에 있는 모든 데이터는 동시에 다른 디스크에도 백업되어 하나 의 디스크가 손상되어도 다른 디스크의 데이터를 사용할 수 있게 한 RAID 구성은?",
       "options": [
-        {"key": 1, "text": "RAID 0"},
-        {"key": 2, "text": "RAID 1"},
-        {"key": 3, "text": "RAID 2"},
-        {"key": 4, "text": "RAID 3"}
+        {
+          "key": 1,
+          "text": "RAID 0"
+        },
+        {
+          "key": 2,
+          "text": "RAID 1"
+        },
+        {
+          "key": 3,
+          "text": "RAID 2"
+        },
+        {
+          "key": 4,
+          "text": "RAID 3"
+        }
       ],
       "answer": 2,
       "has_figure": false,
@@ -1162,10 +1739,22 @@
       "subject_id": "security",
       "text": "다음 중 네트워크 장비인 Router가 속하는 계층은?",
       "options": [
-        {"key": 1, "text": "Application Layer"},
-        {"key": 2, "text": "Presentation Layer"},
-        {"key": 3, "text": "Transport Layer"},
-        {"key": 4, "text": "Network Layer"}
+        {
+          "key": 1,
+          "text": "Application Layer"
+        },
+        {
+          "key": 2,
+          "text": "Presentation Layer"
+        },
+        {
+          "key": 3,
+          "text": "Transport Layer"
+        },
+        {
+          "key": 4,
+          "text": "Network Layer"
+        }
       ],
       "answer": 4,
       "has_figure": false,
@@ -1186,10 +1775,22 @@
       "subject_id": "security",
       "text": "다음 Routing Protocol에 대한 설명 중 옳지 않은 것은?",
       "options": [
-        {"key": 1, "text": "Static Routing은 대규모 네트워크에 적합하다."},
-        {"key": 2, "text": "Dynamic Routing은 대규모 네트워크에 적합하다."},
-        {"key": 3, "text": "Dynamic Routing Protocol에는 RIP, OSPF 등이 있다."},
-        {"key": 4, "text": "코넷에서 사용하는 Routing Protocol은 BGP이다."}
+        {
+          "key": 1,
+          "text": "Static Routing은 대규모 네트워크에 적합하다."
+        },
+        {
+          "key": 2,
+          "text": "Dynamic Routing은 대규모 네트워크에 적합하다."
+        },
+        {
+          "key": 3,
+          "text": "Dynamic Routing Protocol에는 RIP, OSPF 등이 있다."
+        },
+        {
+          "key": 4,
+          "text": "코넷에서 사용하는 Routing Protocol은 BGP이다."
+        }
       ],
       "answer": 1,
       "has_figure": false,
