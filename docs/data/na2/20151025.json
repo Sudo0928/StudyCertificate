@@ -30,14 +30,14 @@
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "IP Address가 203.240.155.32 인 경우, Network ID는",
-        "why_correct": "IP Address가 203.240.155.32 인 경우, Network ID는이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "C클래스 203.240.155.32의 Network ID는 203.240.155, Host ID는 32",
+        "why_correct": "C클래스에서 앞 3옥텟이 Network ID, 마지막 1옥텟이 Host ID입니다. 따라서 IP 203.240.155.32의 Network ID는 203.240.155이고 Host ID는 32가 되며, 선택지 2는 이를 잘못 기술하여 정답(옳지 않은 것)이 됩니다.",
         "why_wrong": {
-          "1": "Network ID는 '192.0.0 ~ 22은/는 올바르지 않습니다.",
-          "3": "통신망의 관리자는 Host ID '0', '2은/는 올바르지 않습니다.",
-          "4": "Host ID가 255일 때는 메시지가 네트워은/는 올바르지 않습니다."
+          "1": "C클래스 주소 범위는 첫 옥텟이 192~223인 192.0.0.0 ~ 223.255.255.255이며, Host ID 부분은 마지막 1옥텟(8비트)을 사용합니다. 이 설명은 C클래스의 정의와 일치하므로 옳은 설명입니다.",
+          "3": "C클래스 하나의 네트워크에서 Host ID 0(네트워크 주소)과 255(브로드캐스트 주소)는 시스템이 예약하므로 사용할 수 없고, 1~254까지 254개의 호스트만 할당 가능합니다. 표준에 부합하는 옳은 설명입니다.",
+          "4": "Host ID의 모든 비트가 1(예: x.x.x.255)일 때는 해당 서브넷 안의 모든 호스트로 향하는 디렉티드 브로드캐스트 주소가 됩니다. 일반 IP 주소 체계의 정의와 일치하는 옳은 설명입니다."
         },
-        "key_concept": "IP, TCP/IP 프로토콜"
+        "key_concept": "C클래스, Network ID, Host ID"
       }
     },
     {
@@ -46,34 +46,22 @@
       "subject_id": "tcpip",
       "text": "‘xxx.yyy.zzz’ 서버에 접속하기 위해 'telnet xxx.yyy.zzz:5555' 라고 명령을 입력했다. 여기서 '5555'의 의미는?",
       "options": [
-        {
-          "key": 1,
-          "text": "포트 번호"
-        },
-        {
-          "key": 2,
-          "text": "사용자 번호"
-        },
-        {
-          "key": 3,
-          "text": "이더넷 주소"
-        },
-        {
-          "key": 4,
-          "text": "IP Address"
-        }
+        {"key": 1, "text": "포트 번호"},
+        {"key": 2, "text": "사용자 번호"},
+        {"key": 3, "text": "이더넷 주소"},
+        {"key": 4, "text": "IP Address"}
       ],
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "1번이 올바른 설명",
-        "why_correct": "포트 번호이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "주소 뒤 콜론 다음 숫자는 TCP 포트 번호",
+        "why_correct": "포트 번호는 한 호스트에서 동작하는 여러 서비스를 구분하는 16비트 식별자입니다. 'host:port' 형식에서 콜론 뒤의 5555는 접속할 TCP 포트 번호를 의미하며, Telnet 기본 포트(23) 대신 5555번에서 동작 중인 서비스에 연결하라는 지시입니다.",
         "why_wrong": {
-          "2": "사용자 번호은/는 올바르지 않습니다.",
-          "3": "이더넷 주소은/는 올바르지 않습니다.",
-          "4": "IP Address은/는 올바르지 않습니다."
+          "2": "사용자 번호(UID)는 운영체제가 사용자를 구별하기 위해 내부적으로 사용하는 정수로 /etc/passwd에 저장됩니다. 네트워크 접속 명령의 주소 뒤에 붙는 값과는 무관합니다.",
+          "3": "이더넷 주소(MAC)는 'XX:XX:XX:XX:XX:XX' 형태의 48비트 16진수로 NIC에 부여되는 물리 주소입니다. 같은 LAN에서만 의미가 있으며 telnet 명령의 인자로 쓰이지 않습니다.",
+          "4": "IP Address는 점으로 구분된 4개의 10진수(IPv4)로, 콜론 앞의 'xxx.yyy.zzz' 부분이 이미 IP 또는 도메인 이름에 해당합니다. 콜론 뒤의 5555는 IP가 아니라 그 주소의 어떤 포트로 갈지 지정하는 값입니다."
         },
-        "key_concept": "TCP/IP 프로토콜"
+        "key_concept": "TCP 포트, host:port 표기"
       }
     },
     {
@@ -82,34 +70,22 @@
       "subject_id": "tcpip",
       "text": "DNS에서 사용될 때 TTL(Time to Live)의 설명으로 올바른 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "데이터가 DNS서버 존으로부터 나오기 전에 현재 남은 시"
-        },
-        {
-          "key": 2,
-          "text": "데이터가 DNS서버 캐시로부터 나오기 전에 현재 남은 시"
-        },
-        {
-          "key": 3,
-          "text": "패킷이 DNS서버 존으로부터 나오기 전에 현재 남은 시간"
-        },
-        {
-          "key": 4,
-          "text": "패킷이 DNS서버 네임서버 레코드로부터 나오기 전에 현"
-        }
+        {"key": 1, "text": "데이터가 DNS서버 존으로부터 나오기 전에 현재 남은 시"},
+        {"key": 2, "text": "데이터가 DNS서버 캐시로부터 나오기 전에 현재 남은 시"},
+        {"key": 3, "text": "패킷이 DNS서버 존으로부터 나오기 전에 현재 남은 시간"},
+        {"key": 4, "text": "패킷이 DNS서버 네임서버 레코드로부터 나오기 전에 현"}
       ],
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "데이터가 DNS서버 캐시로부터 나오기 전에 현재 남은 시",
-        "why_correct": "데이터가 DNS서버 캐시로부터 나오기 전에 현재 남은 시이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "DNS TTL은 캐시된 레코드가 만료되기까지 남은 시간",
+        "why_correct": "DNS의 TTL(Time To Live)은 권한 서버가 응답한 레코드를 다른 DNS 서버나 클라이언트가 캐시에 보관할 수 있는 시간(초)을 의미합니다. 이 값이 0이 되면 캐시는 만료되어 권한 서버에 다시 질의해야 합니다.",
         "why_wrong": {
-          "1": "데이터가 DNS서버 존으로부터 나오기 전에 현은/는 올바르지 않습니다.",
-          "3": "패킷이 DNS서버 존으로부터 나오기 전에 현재은/는 올바르지 않습니다.",
-          "4": "패킷이 DNS서버 네임서버 레코드로부터 나오기은/는 올바르지 않습니다."
+          "1": "DNS의 존(Zone) 파일은 권한 데이터가 저장되는 원본일 뿐 자체적으로 만료가 일어나는 곳이 아닙니다. TTL은 존이 아닌 캐시에 적용되는 카운트다운 값이므로 '존으로부터 나오기 전 남은 시간'이라는 표현은 맞지 않습니다.",
+          "3": "DNS TTL은 패킷이 아닌 DNS 레코드(데이터) 단위에 적용되는 값입니다. IP 헤더의 TTL이 패킷이 라우터를 거치는 홉 수를 제한하는 것과 혼동한 설명입니다.",
+          "4": "TTL은 네임서버 레코드(NS 레코드)에만 한정된 값이 아니라 모든 DNS 리소스 레코드(A, AAAA, MX, CNAME 등)에 공통으로 적용됩니다. 또한 TTL의 기준은 '레코드로부터 나오기 전'이 아니라 '캐시에 머무를 수 있는 동안'입니다."
         },
-        "key_concept": "DNS, TCP/IP 프로토콜"
+        "key_concept": "DNS TTL, 캐시 만료"
       }
     },
     {
@@ -118,34 +94,22 @@
       "subject_id": "tcpip",
       "text": "패킷 전송의 최적 경로를 위해 다른 라우터들로부터 정보를 수집하는데, 최대 홉이 15를 넘지 못하는 프로토콜은?",
       "options": [
-        {
-          "key": 1,
-          "text": "RIP"
-        },
-        {
-          "key": 2,
-          "text": "OSPF"
-        },
-        {
-          "key": 3,
-          "text": "IGP"
-        },
-        {
-          "key": 4,
-          "text": "EGP"
-        }
+        {"key": 1, "text": "RIP"},
+        {"key": 2, "text": "OSPF"},
+        {"key": 3, "text": "IGP"},
+        {"key": 4, "text": "EGP"}
       ],
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "1번이 올바른 설명",
-        "why_correct": "RIP이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "RIP은 거리 벡터 라우팅, 최대 홉 카운트 15",
+        "why_correct": "RIP(Routing Information Protocol)은 거리 벡터 알고리즘 기반의 IGP로, 인접 라우터끼리 30초마다 라우팅 테이블을 교환합니다. 무한 카운트 문제를 막기 위해 홉 수를 15로 제한하고, 16홉 이상은 도달 불가(unreachable)로 간주합니다.",
         "why_wrong": {
-          "2": "이 선택지는 틀렸습니다.",
-          "3": "이 선택지는 틀렸습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "2": "OSPF(Open Shortest Path First)는 링크 상태 라우팅 프로토콜로 Dijkstra 알고리즘으로 최단 경로를 계산합니다. 비용(Cost) 기반이며 홉 수 제한이 없어 대규모 네트워크에 적합합니다.",
+          "3": "IGP(Interior Gateway Protocol)는 같은 자율 시스템(AS) 내부에서 사용되는 라우팅 프로토콜의 분류명입니다. RIP, OSPF, EIGRP 등이 IGP에 속하며, 그 자체로 특정 홉 제한을 가진 단일 프로토콜이 아닙니다.",
+          "4": "EGP(Exterior Gateway Protocol)는 서로 다른 AS 사이에서 동작하는 라우팅 프로토콜의 분류명입니다. 대표적인 EGP가 BGP이며, 홉 수 15 제한 같은 거리 벡터식 제약과는 무관합니다."
         },
-        "key_concept": "TCP/IP 프로토콜"
+        "key_concept": "RIP, 거리 벡터, 홉 카운트 15"
       }
     },
     {
@@ -154,34 +118,22 @@
       "subject_id": "tcpip",
       "text": "'255.255.255.224'인 서브넷에 최대 할당 가능한 호스트 수 는?",
       "options": [
-        {
-          "key": 1,
-          "text": "4개"
-        },
-        {
-          "key": 2,
-          "text": "8개"
-        },
-        {
-          "key": 3,
-          "text": "16개"
-        },
-        {
-          "key": 4,
-          "text": "32개"
-        }
+        {"key": 1, "text": "4개"},
+        {"key": 2, "text": "8개"},
+        {"key": 3, "text": "16개"},
+        {"key": 4, "text": "32개"}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "4번이 올바른 설명",
-        "why_correct": "32개이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "255.255.255.224(/27)는 호스트 비트 5개로 2^5=32",
+        "why_correct": "서브넷 마스크 255.255.255.224는 이진수로 끝 5비트가 0이므로 호스트 비트가 5개입니다. 호스트 비트 수만큼 2의 거듭제곱(2^5 = 32)을 한 값이 한 서브넷이 가지는 IP 개수이며, 시험에서는 이 32개를 '최대 할당 가능 호스트 수'로 답합니다(실제 사용 가능한 호스트는 네트워크/브로드캐스트 주소를 뺀 30개).",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "2": "이 선택지는 틀렸습니다.",
-          "3": "이 선택지는 틀렸습니다."
+          "1": "4개는 호스트 비트가 2개일 때(2^2)로, /30(255.255.255.252) 서브넷에 해당합니다. 224 마스크보다 호스트 비트가 훨씬 적어 답이 될 수 없습니다.",
+          "2": "8개는 호스트 비트가 3개(2^3)인 /29(255.255.255.248) 서브넷에 해당합니다. 224 마스크의 호스트 비트(5개)와 일치하지 않습니다.",
+          "3": "16개는 호스트 비트가 4개(2^4)인 /28(255.255.255.240) 서브넷의 IP 개수입니다. 마스크 224(/27)는 이보다 한 비트 더 호스트로 사용하므로 IP 개수는 두 배가 됩니다."
         },
-        "key_concept": "TCP/IP 프로토콜"
+        "key_concept": "서브넷 마스크, /27, 호스트 비트"
       }
     },
     {
@@ -190,34 +142,22 @@
       "subject_id": "tcpip",
       "text": "TCP(Transmission Control Protocol)에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "네트워크에서 송신측과 수신측간에 신뢰성 있는 전송을"
-        },
-        {
-          "key": 2,
-          "text": "연결지향(Connection Oriented)이다."
-        },
-        {
-          "key": 3,
-          "text": "송신측은 데이터를 패킷으로 나누어 일련번호, 수신측 주"
-        },
-        {
-          "key": 4,
-          "text": "수신측은 수신된 데이터의 에러를 검사하여 에러가 있으"
-        }
+        {"key": 1, "text": "네트워크에서 송신측과 수신측간에 신뢰성 있는 전송을"},
+        {"key": 2, "text": "연결지향(Connection Oriented)이다."},
+        {"key": 3, "text": "송신측은 데이터를 패킷으로 나누어 일련번호, 수신측 주"},
+        {"key": 4, "text": "수신측은 수신된 데이터의 에러를 검사하여 에러가 있으"}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "수신측은 수신된 데이터의 에러를 검사하여 에러가 있으",
-        "why_correct": "수신측은 수신된 데이터의 에러를 검사하여 에러가 있으이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "TCP는 에러 시 단순 폐기가 아니라 ACK 미송신 → 재전송",
+        "why_correct": "TCP는 수신측에서 체크섬 오류가 감지되면 해당 세그먼트에 대해 ACK를 보내지 않거나 중복 ACK를 보내, 송신측 타이머가 만료되면 재전송하도록 합니다. '에러가 있으면 그냥 처리한다/무시한다'는 식의 설명은 신뢰성 보장이라는 TCP의 핵심 동작과 어긋납니다.",
         "why_wrong": {
-          "1": "네트워크에서 송신측과 수신측간에 신뢰성 있는 은/는 올바르지 않습니다.",
-          "2": "연결지향(Connection Oriented)은/는 올바르지 않습니다.",
-          "3": "송신측은 데이터를 패킷으로 나누어 일련번호, 은/는 올바르지 않습니다."
+          "1": "TCP는 3-way 핸드셰이크, 시퀀스 번호, ACK, 재전송, 흐름 제어를 통해 데이터의 무결성과 순서를 보장하는 신뢰성 있는 전송 프로토콜입니다. 옳은 설명입니다.",
+          "2": "TCP는 데이터 전송 전 SYN/SYN-ACK/ACK로 연결을 설정하고, FIN으로 종료하는 연결 지향(Connection Oriented) 방식입니다. UDP와 구별되는 가장 큰 특징이므로 옳은 설명입니다.",
+          "3": "TCP 송신측은 응용 데이터를 세그먼트로 분할한 뒤 각 세그먼트에 시퀀스 번호와 IP 헤더의 출발지/목적지 주소·포트 등을 함께 캡슐화하여 전송합니다. 옳은 설명입니다."
         },
-        "key_concept": "TCP, TCP/IP 프로토콜"
+        "key_concept": "TCP, 신뢰성, ACK, 재전송"
       }
     },
     {
@@ -226,34 +166,22 @@
       "subject_id": "tcpip",
       "text": "UDP 패킷의 헤더에 속하지 않는 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "Source Port"
-        },
-        {
-          "key": 2,
-          "text": "Destination Port"
-        },
-        {
-          "key": 3,
-          "text": "Window"
-        },
-        {
-          "key": 4,
-          "text": "Checksum"
-        }
+        {"key": 1, "text": "Source Port"},
+        {"key": 2, "text": "Destination Port"},
+        {"key": 3, "text": "Window"},
+        {"key": 4, "text": "Checksum"}
       ],
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "3번이 올바른 설명",
-        "why_correct": "Window이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Window는 TCP 흐름 제어 필드, UDP 헤더에 없음",
+        "why_correct": "UDP 헤더는 Source Port, Destination Port, Length, Checksum 4개 필드(총 8바이트)뿐입니다. Window는 수신 버퍼 여유분을 알리는 TCP 흐름 제어 전용 필드로, 비연결·비신뢰성 프로토콜인 UDP에는 흐름 제어 자체가 없어 존재하지 않습니다.",
         "why_wrong": {
-          "1": "Source Port은/는 올바르지 않습니다.",
-          "2": "Destination Port은/는 올바르지 않습니다.",
-          "4": "Checksum은/는 올바르지 않습니다."
+          "1": "Source Port는 송신측 애플리케이션 포트 번호를 담는 UDP 헤더 첫 2바이트 필드입니다. 수신측이 응답을 보낼 때 이 번호를 목적지 포트로 사용합니다.",
+          "2": "Destination Port는 수신측 애플리케이션을 식별하는 UDP 헤더 필드입니다. DNS 53, DHCP 67/68 같은 well-known 포트가 여기에 들어갑니다.",
+          "4": "Checksum은 UDP 데이터그램 전체(헤더+데이터)와 의사 헤더에 대한 무결성 검사 값입니다. IPv4에서는 선택, IPv6에서는 필수로 UDP 헤더의 마지막 2바이트를 차지합니다."
         },
-        "key_concept": "UDP, TCP/IP 프로토콜"
+        "key_concept": "UDP 헤더, Window, TCP 흐름 제어"
       }
     },
     {
@@ -262,34 +190,22 @@
       "subject_id": "tcpip",
       "text": "SNMP에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "사용자가 네트워크 문제점을 발견하기 전에 시스템 관리"
-        },
-        {
-          "key": 2,
-          "text": "데이터 전송은 UDP를 사용한다."
-        },
-        {
-          "key": 3,
-          "text": "IP에서의 오류 제어를 위하여 사용되며, 시작지 호스트의"
-        },
-        {
-          "key": 4,
-          "text": "네트워크 장비로부터 데이터를 수집하여 네트워크 관리를"
-        }
+        {"key": 1, "text": "사용자가 네트워크 문제점을 발견하기 전에 시스템 관리"},
+        {"key": 2, "text": "데이터 전송은 UDP를 사용한다."},
+        {"key": 3, "text": "IP에서의 오류 제어를 위하여 사용되며, 시작지 호스트의"},
+        {"key": 4, "text": "네트워크 장비로부터 데이터를 수집하여 네트워크 관리를"}
       ],
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "IP에서의 오류 제어를 위하여 사용되며, 시작지 호스트의",
-        "why_correct": "IP에서의 오류 제어를 위하여 사용되며, 시작지 호스트의이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "IP 오류 제어는 ICMP의 역할, SNMP는 장비 관리용",
+        "why_correct": "'IP에서의 오류 제어, 출발지 호스트로 오류 보고'는 ICMP(Internet Control Message Protocol)의 정의입니다. SNMP는 OID/MIB 기반으로 네트워크 장비의 상태와 통계를 수집·제어하는 응용 계층 관리 프로토콜이므로, ICMP의 기능을 SNMP의 것으로 적은 이 선택지는 옳지 않습니다.",
         "why_wrong": {
-          "1": "사용자가 네트워크 문제점을 발견하기 전에 시스은/는 올바르지 않습니다.",
-          "2": "데이터 전송은 UDP를 사용한다.은/는 올바르지 않습니다.",
-          "4": "네트워크 장비로부터 데이터를 수집하여 네트워크은/는 올바르지 않습니다."
+          "1": "SNMP는 관리자가 trap 알람과 polling으로 장비 이상을 미리 감지해, 사용자가 장애를 체감하기 전에 선제적 대응을 하도록 돕습니다. SNMP의 일반적 용도와 일치하는 옳은 설명입니다.",
+          "2": "SNMP는 효율과 가벼운 메시지 교환을 위해 UDP를 사용합니다. Get/Set/GetNext는 161번, Trap은 162번 포트를 씁니다.",
+          "4": "SNMP의 핵심 목적이 라우터·스위치·서버 같은 네트워크 장비에서 MIB 객체 값을 수집해 네트워크 관리(NMS)를 수행하는 것이므로 옳은 설명입니다."
         },
-        "key_concept": "SNMP, TCP/IP 프로토콜"
+        "key_concept": "SNMP vs ICMP, 장비 관리"
       }
     },
     {
@@ -298,34 +214,22 @@
       "subject_id": "tcpip",
       "text": "DNS(Domain Name System)에 대한 설명으로 옳지 않은 것 은?",
       "options": [
-        {
-          "key": 1,
-          "text": "DNS는 IP Address 체계를 따른다."
-        },
-        {
-          "key": 2,
-          "text": "DNS는 인터넷 표준 이름을 IP 주소로 맵핑시킨다."
-        },
-        {
-          "key": 3,
-          "text": "DNS는 정적인 구조를 가지므로 네트워크상의 호스트 변"
-        },
-        {
-          "key": 4,
-          "text": "동적 DNS는 호스트가 추가되거나, 삭제될 때 DNS 데이"
-        }
+        {"key": 1, "text": "DNS는 IP Address 체계를 따른다."},
+        {"key": 2, "text": "DNS는 인터넷 표준 이름을 IP 주소로 맵핑시킨다."},
+        {"key": 3, "text": "DNS는 정적인 구조를 가지므로 네트워크상의 호스트 변"},
+        {"key": 4, "text": "동적 DNS는 호스트가 추가되거나, 삭제될 때 DNS 데이"}
       ],
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "DNS는 정적인 구조를 가지므로 네트워크상의 호스트 변",
-        "why_correct": "DNS는 정적인 구조를 가지므로 네트워크상의 호스트 변이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "DNS는 분산·동적 시스템, 정적 구조라는 설명은 틀림",
+        "why_correct": "DNS는 루트→TLD→권한 서버로 이어지는 분산 데이터베이스이며, 캐싱과 TTL, 영역 전송(Zone Transfer), 동적 갱신(DDNS) 등으로 호스트 변화에 적응합니다. '정적 구조라 호스트 변화에 대응 못 한다'는 설명은 DNS의 실제 동작과 반대이므로 정답(옳지 않은 것)이 됩니다.",
         "why_wrong": {
-          "1": "DNS는 IP Address 체계를 따른다.은/는 올바르지 않습니다.",
-          "2": "DNS는 인터넷 표준 이름을 IP 주소로 맵핑은/는 올바르지 않습니다.",
-          "4": "동적 DNS는 호스트가 추가되거나, 삭제될 때은/는 올바르지 않습니다."
+          "1": "DNS의 최종 응답은 IPv4 32비트, IPv6 128비트 IP 주소 체계를 그대로 따릅니다. 즉 도메인 이름을 IP 주소로 매핑하는 구조이므로 '체계를 따른다'는 옳은 설명입니다.",
+          "2": "DNS의 본래 목적이 사람이 기억하기 쉬운 인터넷 표준 도메인 이름(www.example.com 등)을 IP 주소로 변환해 주는 것이므로 옳은 설명입니다.",
+          "4": "동적 DNS(DDNS, RFC 2136)는 클라이언트가 IP를 받자마자 DNS 서버에 자동으로 등록하거나 갱신하여, 호스트 추가·삭제·IP 변경을 실시간 반영합니다. 옳은 설명입니다."
         },
-        "key_concept": "DNS, TCP/IP 프로토콜"
+        "key_concept": "DNS, 분산 구조, 동적 갱신"
       }
     },
     {
@@ -334,34 +238,22 @@
       "subject_id": "tcpip",
       "text": "프로토콜의 기본적인 기능 중, 송신기에서 발생된 정보의 정확한 전송을 위해 사용자 정보의 앞, 뒤 부분에 헤더와 트레일러를 부가하는 과정은?",
       "options": [
-        {
-          "key": 1,
-          "text": "캡슐화(Encapsulation)"
-        },
-        {
-          "key": 2,
-          "text": "동기화(Synchronization)"
-        },
-        {
-          "key": 3,
-          "text": "다중화(Multiplexing)"
-        },
-        {
-          "key": 4,
-          "text": "주소지정(Addressing)"
-        }
+        {"key": 1, "text": "캡슐화(Encapsulation)"},
+        {"key": 2, "text": "동기화(Synchronization)"},
+        {"key": 3, "text": "다중화(Multiplexing)"},
+        {"key": 4, "text": "주소지정(Addressing)"}
       ],
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "캡슐화(Encapsulation)",
-        "why_correct": "캡슐화(Encapsulation)이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "캡슐화는 데이터에 헤더/트레일러를 붙여 PDU를 만드는 과정",
+        "why_correct": "캡슐화(Encapsulation)는 상위 계층의 데이터(PDU)에 해당 계층의 제어 정보(헤더, 필요 시 트레일러)를 덧붙여 자기 계층의 PDU를 만드는 과정입니다. OSI/TCP-IP 모델의 각 계층에서 수행되며, 수신측에서는 역캡슐화(Decapsulation)로 헤더를 차례로 제거합니다.",
         "why_wrong": {
-          "2": "동기화(Synchronization)은/는 올바르지 않습니다.",
-          "3": "다중화(Multiplexing)은/는 올바르지 않습니다.",
-          "4": "주소지정(Addressing)은/는 올바르지 않습니다."
+          "2": "동기화(Synchronization)는 송수신측이 같은 시점·비트 경계를 인식하도록 타이밍을 맞추는 기능입니다. 헤더/트레일러를 붙이는 작업과는 직접적인 관계가 없습니다.",
+          "3": "다중화(Multiplexing)는 여러 사용자의 데이터를 하나의 전송 채널에 시분할/주파수분할 등으로 합쳐 보내는 기술입니다. 데이터 자체에 헤더를 붙이는 캡슐화와는 다른 개념입니다.",
+          "4": "주소지정(Addressing)은 출발지·목적지 식별자(IP, MAC, 포트 등)를 부여하는 기능으로, 캡슐화 과정에서 헤더 안의 한 항목으로 채워질 뿐, 헤더와 트레일러 전체를 부가하는 행위 자체는 아닙니다."
         },
-        "key_concept": "TCP/IP 프로토콜"
+        "key_concept": "캡슐화, 헤더, 트레일러"
       }
     },
     {
@@ -370,34 +262,22 @@
       "subject_id": "tcpip",
       "text": "IPv6 주소 체계의 종류로 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "Unicast 주소"
-        },
-        {
-          "key": 2,
-          "text": "Anycast 주소"
-        },
-        {
-          "key": 3,
-          "text": "Multicast 주소"
-        },
-        {
-          "key": 4,
-          "text": "Broadcast 주소"
-        }
+        {"key": 1, "text": "Unicast 주소"},
+        {"key": 2, "text": "Anycast 주소"},
+        {"key": 3, "text": "Multicast 주소"},
+        {"key": 4, "text": "Broadcast 주소"}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "Broadcast 주소",
-        "why_correct": "Broadcast 주소이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "IPv6는 Broadcast를 폐지하고 Multicast로 대체",
+        "why_correct": "IPv6는 IPv4의 브로드캐스트가 모든 호스트에 부담을 주는 문제를 해소하기 위해 Broadcast 자체를 없애고, 그 역할을 모든 노드를 가리키는 잘 알려진 멀티캐스트 그룹(ff02::1 등)으로 대체했습니다. 따라서 IPv6의 정식 주소 종류 목록에 Broadcast는 포함되지 않습니다.",
         "why_wrong": {
-          "1": "Unicast 주소은/는 올바르지 않습니다.",
-          "2": "Anycast 주소은/는 올바르지 않습니다.",
-          "3": "Multicast 주소은/는 올바르지 않습니다."
+          "1": "Unicast는 단일 인터페이스를 식별해 1:1 통신에 사용하는 IPv6 주소입니다. 글로벌 유니캐스트, 링크 로컬 등 여러 범위로 나뉩니다.",
+          "2": "Anycast는 동일 주소를 여러 인터페이스에 부여하고, 라우팅 관점에서 가장 가까운(또는 비용이 낮은) 노드에만 전달하는 IPv6 주소입니다. 서비스 분산에 활용됩니다.",
+          "3": "Multicast는 특정 그룹에 가입한 여러 인터페이스에게 한 번의 전송으로 데이터를 보내는 IPv6 주소(ff00::/8)입니다. 라우팅·스트리밍 등에 사용됩니다."
         },
-        "key_concept": "IP, TCP/IP 프로토콜"
+        "key_concept": "IPv6, Unicast/Anycast/Multicast"
       }
     },
     {
@@ -406,34 +286,22 @@
       "subject_id": "tcpip",
       "text": "Telnet에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "Telnet은 네트워크 가상 단말(NVT)의 표준 단말 타입을"
-        },
-        {
-          "key": 2,
-          "text": "원격에 있는 호스트에 접속할 수 있도록 해주는 프로토"
-        },
-        {
-          "key": 3,
-          "text": "명령형식은 Telnet '도메인 이름'(또는 IP Address)이다."
-        },
-        {
-          "key": 4,
-          "text": "로컬 네트워크에서만 적용된 프로토콜이다."
-        }
+        {"key": 1, "text": "Telnet은 네트워크 가상 단말(NVT)의 표준 단말 타입을"},
+        {"key": 2, "text": "원격에 있는 호스트에 접속할 수 있도록 해주는 프로토"},
+        {"key": 3, "text": "명령형식은 Telnet '도메인 이름'(또는 IP Address)이다."},
+        {"key": 4, "text": "로컬 네트워크에서만 적용된 프로토콜이다."}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "로컬 네트워크에서만 적용된 프로토콜이다.",
-        "why_correct": "로컬 네트워크에서만 적용된 프로토콜이다.이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Telnet은 인터넷 전반에서 동작하는 원격 접속 프로토콜",
+        "why_correct": "Telnet은 IP로 도달 가능한 모든 호스트에 TCP 23번으로 접속할 수 있는 응용 계층 프로토콜이라, 로컬 LAN뿐 아니라 인터넷을 통해 전 세계 어디든 사용할 수 있습니다. '로컬 네트워크에서만 적용된다'는 설명은 사실과 달라 정답이 됩니다.",
         "why_wrong": {
-          "1": "Telnet은 네트워크 가상 단말(NVT)의 은/는 올바르지 않습니다.",
-          "2": "원격에 있는 호스트에 접속할 수 있도록 해주는은/는 올바르지 않습니다.",
-          "3": "명령형식은 Telnet '도메인 이름'(또는 은/는 올바르지 않습니다."
+          "1": "Telnet은 다양한 OS·터미널 차이를 흡수하기 위해 NVT(Network Virtual Terminal)라는 가상 단말 표준을 정의해 사용합니다. 옳은 설명입니다.",
+          "2": "Telnet의 본 기능은 원격 호스트에 텍스트 기반으로 로그인하여 명령을 실행하게 해주는 원격 접속(remote login) 프로토콜이므로 옳은 설명입니다.",
+          "3": "Telnet 클라이언트는 일반적으로 'telnet 도메인 이름' 또는 'telnet IP주소 [포트]' 형태로 호출합니다. 표준 사용법과 일치하는 옳은 설명입니다."
         },
-        "key_concept": "TCP/IP 프로토콜"
+        "key_concept": "Telnet, 원격 접속, NVT"
       }
     },
     {
@@ -442,34 +310,22 @@
       "subject_id": "tcpip",
       "text": "멀티캐스트 라우터에서 멀티캐스트 그룹을 유지할 수 있도 록 메시지를 관리하는 프로토콜은?",
       "options": [
-        {
-          "key": 1,
-          "text": "ARP"
-        },
-        {
-          "key": 2,
-          "text": "ICMP"
-        },
-        {
-          "key": 3,
-          "text": "IGMP"
-        },
-        {
-          "key": 4,
-          "text": "FTP"
-        }
+        {"key": 1, "text": "ARP"},
+        {"key": 2, "text": "ICMP"},
+        {"key": 3, "text": "IGMP"},
+        {"key": 4, "text": "FTP"}
       ],
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "3번이 올바른 설명",
-        "why_correct": "IGMP이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "IGMP는 호스트와 멀티캐스트 라우터의 그룹 관리 프로토콜",
+        "why_correct": "IGMP(Internet Group Management Protocol)는 호스트가 자신이 속한 멀티캐스트 그룹의 가입(Join)·탈퇴(Leave)를 라우터에 알리고, 라우터가 어느 인터페이스로 어떤 그룹의 트래픽을 전달해야 하는지 추적하도록 해주는 프로토콜입니다. IPTV·스트리밍 등 멀티캐스트 서비스의 기본 인프라입니다.",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "2": "이 선택지는 틀렸습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "1": "ARP(Address Resolution Protocol)는 동일 네트워크에서 IP 주소에 대응하는 MAC 주소를 알아내는 데이터 링크 보조 프로토콜입니다. 그룹 관리 기능은 없습니다.",
+          "2": "ICMP(Internet Control Message Protocol)는 도달 불가, TTL 초과 같은 IP 계층의 오류·진단 메시지를 전달하는 프로토콜로 ping의 기반입니다. 멀티캐스트 그룹 가입/탈퇴 관리는 하지 않습니다.",
+          "4": "FTP(File Transfer Protocol)는 TCP 21/20 포트로 파일을 송수신하는 응용 프로토콜입니다. 라우터의 그룹 관리와 전혀 다른 영역입니다."
         },
-        "key_concept": "TCP/IP 프로토콜"
+        "key_concept": "IGMP, 멀티캐스트, 그룹 관리"
       }
     },
     {
@@ -478,34 +334,22 @@
       "subject_id": "tcpip",
       "text": "TCP/IP 프로토콜 중에서 IP 계층의 한 부분으로 에러 메시 지와 같은 상태 정보를 알려주는 프로토콜은?",
       "options": [
-        {
-          "key": 1,
-          "text": "ICMP(Internet Control Message Protocol)"
-        },
-        {
-          "key": 2,
-          "text": "ARP(Address Resolution Protocol)"
-        },
-        {
-          "key": 3,
-          "text": "RARP(Reverse Address Resolution Protocol)"
-        },
-        {
-          "key": 4,
-          "text": "UDP(User Datagram Protocol)"
-        }
+        {"key": 1, "text": "ICMP(Internet Control Message Protocol)"},
+        {"key": 2, "text": "ARP(Address Resolution Protocol)"},
+        {"key": 3, "text": "RARP(Reverse Address Resolution Protocol)"},
+        {"key": 4, "text": "UDP(User Datagram Protocol)"}
       ],
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "ICMP(Internet Control Message Protocol)",
-        "why_correct": "ICMP(Internet Control Message Protocol)이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "ICMP는 IP 계층의 오류·상태 보고 프로토콜",
+        "why_correct": "ICMP는 IP 헤더 안에 캡슐화되어 IP 계층 일부로 동작하며, 목적지 도달 불가(Type 3), TTL 초과(Type 11), Echo Request/Reply(Type 8/0) 등 네트워크 오류와 진단 정보를 발신지로 알립니다. ping과 traceroute가 ICMP를 활용합니다.",
         "why_wrong": {
-          "2": "ARP(Address Resolution Pr은/는 올바르지 않습니다.",
-          "3": "RARP(Reverse Address Reso은/는 올바르지 않습니다.",
-          "4": "UDP(User Datagram Protoco은/는 올바르지 않습니다."
+          "2": "ARP는 같은 LAN에서 IP 주소를 MAC 주소로 변환하기 위한 프로토콜입니다. 오류 상태 보고가 아니라 주소 해석을 담당합니다.",
+          "3": "RARP는 ARP의 반대 방향으로 MAC 주소만 아는 디스크리스 단말이 자신의 IP를 받아오기 위해 사용한 옛 프로토콜입니다. 상태/오류 메시지 기능은 없습니다.",
+          "4": "UDP는 비연결·비신뢰성 전송 계층 프로토콜로 응용 데이터를 빠르게 전달합니다. IP 계층의 에러 보고와는 계층과 역할이 모두 다릅니다."
         },
-        "key_concept": "TCP, TCP/IP 프로토콜"
+        "key_concept": "ICMP, IP 계층 오류"
       }
     },
     {
@@ -514,34 +358,22 @@
       "subject_id": "tcpip",
       "text": "RARP에 대한 설명 중 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "RFC 951에 기술된 BOOTP에 의해 대체되고 있다."
-        },
-        {
-          "key": 2,
-          "text": "RFC 903에 명시되어 있다."
-        },
-        {
-          "key": 3,
-          "text": "하드웨어 주소를 IP Address로 변환하기 위해서 사용한"
-        },
-        {
-          "key": 4,
-          "text": "ARP와 동일한 패킷형식을 사용하기 때문에 오퍼레이션"
-        }
+        {"key": 1, "text": "RFC 951에 기술된 BOOTP에 의해 대체되고 있다."},
+        {"key": 2, "text": "RFC 903에 명시되어 있다."},
+        {"key": 3, "text": "하드웨어 주소를 IP Address로 변환하기 위해서 사용한"},
+        {"key": 4, "text": "ARP와 동일한 패킷형식을 사용하기 때문에 오퍼레이션"}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "ARP와 동일한 패킷형식을 사용하기 때문에 오퍼레이션",
-        "why_correct": "ARP와 동일한 패킷형식을 사용하기 때문에 오퍼레이션이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "RARP는 ARP와 패킷 형식은 같지만 Operation 코드는 다름",
+        "why_correct": "ARP와 RARP는 동일한 패킷 형식(Hardware Type, Protocol Type, HLEN, PLEN, Operation, 주소 필드 등)을 공유하지만, Operation 필드 값으로 동작을 구분합니다. ARP는 1(Request)/2(Reply), RARP는 3(Request)/4(Reply)로 서로 다르므로, '오퍼레이션 코드까지 동일하다'는 식의 설명은 옳지 않습니다.",
         "why_wrong": {
-          "1": "RFC 951에 기술된 BOOTP에 의해 대체은/는 올바르지 않습니다.",
-          "2": "RFC 903에 명시되어 있다.은/는 올바르지 않습니다.",
-          "3": "하드웨어 주소를 IP Address로 변환하기은/는 올바르지 않습니다."
+          "1": "RARP는 기능이 제한적이어서 RFC 951의 BOOTP, 이후 DHCP로 대체되었습니다. 표준 변천을 그대로 기술한 옳은 설명입니다.",
+          "2": "RARP는 1984년 RFC 903에서 정의된 프로토콜입니다. 표준 문서 번호가 정확한 옳은 설명입니다.",
+          "3": "RARP는 알고 있는 하드웨어(MAC) 주소로 자신의 IP 주소를 알아내려는 디스크리스 장비를 위해 만들어졌습니다. 하드웨어 주소 → IP 주소 매핑이라는 정의와 일치하는 옳은 설명입니다."
         },
-        "key_concept": "ARP, TCP/IP 프로토콜"
+        "key_concept": "RARP, ARP 패킷 형식, Operation 코드"
       }
     },
     {
@@ -550,34 +382,22 @@
       "subject_id": "general",
       "text": "IP 프로토콜의 헤더 체크섬(Checksum)에 대한 설명 중 올 바른 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "체크섬 필드를 '0'으로 하여 계산한다."
-        },
-        {
-          "key": 2,
-          "text": "네트워크에서 존재하는 시간을 나타낸다."
-        },
-        {
-          "key": 3,
-          "text": "데이터 그램의 총 길이를 나타낸다."
-        },
-        {
-          "key": 4,
-          "text": "IP 헤더에 대해서만 포함되며 데이터 필드를 포함한다."
-        }
+        {"key": 1, "text": "체크섬 필드를 '0'으로 하여 계산한다."},
+        {"key": 2, "text": "네트워크에서 존재하는 시간을 나타낸다."},
+        {"key": 3, "text": "데이터 그램의 총 길이를 나타낸다."},
+        {"key": 4, "text": "IP 헤더에 대해서만 포함되며 데이터 필드를 포함한다."}
       ],
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "체크섬 필드를 '0'으로 하여 계산한다.",
-        "why_correct": "체크섬 필드를 '0'으로 하여 계산한다.이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "IP 헤더 체크섬은 체크섬 필드를 0으로 두고 계산",
+        "why_correct": "IP 헤더 체크섬은 송신측이 헤더의 체크섬 필드를 0으로 설정한 뒤 헤더 전체를 16비트 단위로 1의 보수 합산을 수행하고, 그 결과의 1의 보수를 다시 그 자리에 채워 넣는 방식으로 계산합니다. 수신측은 같은 방식으로 합산해 결과가 모두 1이면 무결한 것으로 판정합니다.",
         "why_wrong": {
-          "2": "네트워크에서 존재하는 시간을 나타낸다.은/는 올바르지 않습니다.",
-          "3": "데이터 그램의 총 길이를 나타낸다.은/는 올바르지 않습니다.",
-          "4": "IP 헤더에 대해서만 포함되며 데이터 필드를 은/는 올바르지 않습니다."
+          "2": "네트워크에서 패킷이 존재할 수 있는 홉/시간을 제한하는 필드는 IP 헤더의 TTL(Time to Live)입니다. 체크섬과 위치·역할이 다른 별도 필드입니다.",
+          "3": "데이터그램의 전체 길이(헤더+데이터)는 IP 헤더의 Total Length 필드가 표현합니다. 무결성 검사값을 담는 체크섬과 혼동한 설명입니다.",
+          "4": "IP 헤더 체크섬은 IP 헤더에만 적용되고 데이터(페이로드)는 포함하지 않습니다. 데이터 부분의 무결성은 TCP/UDP 자체의 체크섬이 담당합니다."
         },
-        "key_concept": "IP, 네트워크 일반"
+        "key_concept": "IP 체크섬, 1의 보수 합산"
       }
     },
     {
@@ -586,34 +406,22 @@
       "subject_id": "general",
       "text": "IP에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "32bit 주소 체계를 갖는 IPv4의 주소 부족으로 IPv6가 등"
-        },
-        {
-          "key": 2,
-          "text": "IPv4에서는 Flow Labeling 기능과 인증, 프라이버시를"
-        },
-        {
-          "key": 3,
-          "text": "IPv6에서는 Next Header가 있어서 확장된 헤더를 가리"
-        },
-        {
-          "key": 4,
-          "text": "IPv6에서는 근원지와 목적지 주소할당을 위해 128bit를"
-        }
+        {"key": 1, "text": "32bit 주소 체계를 갖는 IPv4의 주소 부족으로 IPv6가 등"},
+        {"key": 2, "text": "IPv4에서는 Flow Labeling 기능과 인증, 프라이버시를"},
+        {"key": 3, "text": "IPv6에서는 Next Header가 있어서 확장된 헤더를 가리"},
+        {"key": 4, "text": "IPv6에서는 근원지와 목적지 주소할당을 위해 128bit를"}
       ],
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "IPv4에서는 Flow Labeling 기능과 인증, 프라이버시를",
-        "why_correct": "IPv4에서는 Flow Labeling 기능과 인증, 프라이버시를이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Flow Label·기본 인증/프라이버시는 IPv6 신규 기능",
+        "why_correct": "Flow Label 필드(20비트)와 IPsec(인증·암호화) 필수 지원은 IPv6에서 새로 도입된 기능입니다. IPv4에는 Flow Label 필드가 없고 IPsec도 선택 사항이므로, 'IPv4가 Flow Labeling과 인증/프라이버시를 제공한다'는 설명은 사실과 반대이고 옳지 않습니다.",
         "why_wrong": {
-          "1": "32bit 주소 체계를 갖는 IPv4의 주소 은/는 올바르지 않습니다.",
-          "3": "IPv6에서는 Next Header가 있어서 은/는 올바르지 않습니다.",
-          "4": "IPv6에서는 근원지와 목적지 주소할당을 위해은/는 올바르지 않습니다."
+          "1": "IPv4의 32비트 주소(약 43억 개)는 인터넷 사용자 폭증으로 고갈에 이르러, 128비트 IPv6가 그 후속으로 표준화되었습니다. 옳은 설명입니다.",
+          "3": "IPv6는 기본 40바이트 고정 헤더를 단순화한 대신, 옵션을 'Next Header' 체인으로 연결되는 확장 헤더(Routing, Fragment, IPsec 등)로 분리해 표현합니다. 옳은 설명입니다.",
+          "4": "IPv6는 출발지·목적지 주소를 각각 128비트로 표현해 주소 공간을 IPv4 대비 2^96배 늘렸습니다. 옳은 설명입니다."
         },
-        "key_concept": "IP, 네트워크 일반"
+        "key_concept": "IPv6 Flow Label, IPsec"
       }
     },
     {
@@ -622,34 +430,22 @@
       "subject_id": "general",
       "text": "OSI 7 Layer 중 세션계층의 역할로 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "대화 제어"
-        },
-        {
-          "key": 2,
-          "text": "에러 제어"
-        },
-        {
-          "key": 3,
-          "text": "연결 설정 종료"
-        },
-        {
-          "key": 4,
-          "text": "동기화"
-        }
+        {"key": 1, "text": "대화 제어"},
+        {"key": 2, "text": "에러 제어"},
+        {"key": 3, "text": "연결 설정 종료"},
+        {"key": 4, "text": "동기화"}
       ],
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "2번이 올바른 설명",
-        "why_correct": "에러 제어이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "에러 제어는 데이터 링크/전송 계층 기능",
+        "why_correct": "에러 제어(오류 제어)는 프레임 수준에서 데이터 링크 계층(Layer 2), 세그먼트 수준에서 전송 계층(Layer 4)이 담당합니다. 세션 계층(Layer 5)은 응용 사이의 대화 제어, 동기점, 세션 설정·해제만 책임지므로 '에러 제어'는 세션 계층의 역할이 아닙니다.",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "3": "연결 설정 종료은/는 올바르지 않습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "1": "대화 제어(Dialog Control)는 양 끝단 응용이 한 번에 누가 보내고 누가 받을지(반/전이중) 결정하도록 토큰을 관리하는 세션 계층의 핵심 기능입니다.",
+          "3": "세션의 설정(Establish), 유지(Maintain), 종료(Release) 자체가 세션 계층의 정의이며, 응용 간 논리적 연결을 관리하는 옳은 역할 설명입니다.",
+          "4": "동기화(Synchronization)는 긴 전송 중간에 체크포인트(동기점)를 두어 장애 시 그 지점부터 재개하는 세션 계층 기능입니다. 옳은 역할입니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "OSI 세션 계층, 대화 제어, 동기화"
       }
     },
     {
@@ -658,34 +454,22 @@
       "subject_id": "general",
       "text": "시분할 다중화(TDM) 방법에 대한 설명으로 옳지 않은 것 은?",
       "options": [
-        {
-          "key": 1,
-          "text": "디지털 전송에 쓰인다."
-        },
-        {
-          "key": 2,
-          "text": "동기식 방법과 비동기식 방법이 있다."
-        },
-        {
-          "key": 3,
-          "text": "주파수 편이 변복조(FSK)의 역할을 수행한다."
-        },
-        {
-          "key": 4,
-          "text": "T1 다중화는 시분할 다중화 방법이다."
-        }
+        {"key": 1, "text": "디지털 전송에 쓰인다."},
+        {"key": 2, "text": "동기식 방법과 비동기식 방법이 있다."},
+        {"key": 3, "text": "주파수 편이 변복조(FSK)의 역할을 수행한다."},
+        {"key": 4, "text": "T1 다중화는 시분할 다중화 방법이다."}
       ],
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "주파수 편이 변복조(FSK)의 역할을 수행한다.",
-        "why_correct": "주파수 편이 변복조(FSK)의 역할을 수행한다.이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "FSK는 변조 방식, TDM은 다중화 방식 — 서로 다른 개념",
+        "why_correct": "FSK(Frequency Shift Keying)는 디지털 데이터를 두 가지 이상 주파수 변화로 표현하는 변조(Modulation) 방식이고, TDM(Time Division Multiplexing)은 하나의 회선을 시간 슬롯으로 나누어 여러 채널을 합쳐 보내는 다중화(Multiplexing) 기법입니다. 다중화가 변조 역할을 하지 않으므로 이 설명은 옳지 않습니다.",
         "why_wrong": {
-          "1": "디지털 전송에 쓰인다.은/는 올바르지 않습니다.",
-          "2": "동기식 방법과 비동기식 방법이 있다.은/는 올바르지 않습니다.",
-          "4": "T1 다중화는 시분할 다중화 방법이다.은/는 올바르지 않습니다."
+          "1": "TDM은 본질적으로 디지털 신호를 정해진 시간 슬롯에 차곡차곡 채워 보내는 디지털 전송 기술이므로 옳은 설명입니다.",
+          "2": "동기식 TDM(STDM)은 슬롯을 고정 할당하고, 비동기식(통계적, 통계 시분할 다중화) TDM은 데이터가 있는 사용자에게만 동적으로 슬롯을 줍니다. 두 종류가 모두 존재하는 옳은 설명입니다.",
+          "4": "T1은 24개 음성 채널(64kbps × 24)을 시간 슬롯으로 묶어 1.544Mbps로 전송하는 대표적인 동기식 TDM 회선입니다. 옳은 설명입니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "TDM 다중화, FSK 변조"
       }
     },
     {
@@ -694,34 +478,22 @@
       "subject_id": "general",
       "text": "성형 토폴로지의 특징으로 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "중앙 제어 노드가 통신상의 모든 제어를 관리한다."
-        },
-        {
-          "key": 2,
-          "text": "설치가 용이하나 비용이 많이 든다."
-        },
-        {
-          "key": 3,
-          "text": "중앙 제어노드 작동불능 시 전체 네트워크가 정지한다."
-        },
-        {
-          "key": 4,
-          "text": "모든 장치를 직접 쌍으로 연결할 수 있다."
-        }
+        {"key": 1, "text": "중앙 제어 노드가 통신상의 모든 제어를 관리한다."},
+        {"key": 2, "text": "설치가 용이하나 비용이 많이 든다."},
+        {"key": 3, "text": "중앙 제어노드 작동불능 시 전체 네트워크가 정지한다."},
+        {"key": 4, "text": "모든 장치를 직접 쌍으로 연결할 수 있다."}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "모든 장치를 직접 쌍으로 연결할 수 있다.",
-        "why_correct": "모든 장치를 직접 쌍으로 연결할 수 있다.이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "장치 간 직접 쌍 연결은 메쉬(Mesh) 토폴로지 특징",
+        "why_correct": "성형(Star)은 모든 노드가 중앙 허브/스위치를 통해서만 통신하는 구조입니다. 모든 장치가 1:1 전용 링크로 직접 연결되는 형태는 완전 메쉬(Full Mesh) 토폴로지의 특징이므로, 이 항목은 성형의 설명으로 옳지 않습니다.",
         "why_wrong": {
-          "1": "중앙 제어 노드가 통신상의 모든 제어를 관리한은/는 올바르지 않습니다.",
-          "2": "설치가 용이하나 비용이 많이 든다.은/는 올바르지 않습니다.",
-          "3": "중앙 제어노드 작동불능 시 전체 네트워크가 정은/는 올바르지 않습니다."
+          "1": "성형의 중앙 노드(허브/스위치)가 모든 트래픽을 중계·제어한다는 점은 정의 그대로의 옳은 설명입니다.",
+          "2": "각 장치마다 중앙으로 가는 별도 케이블이 필요하지만 배선이 단순하고 장애 격리가 쉬워 설치는 용이하지만 케이블·포트 비용이 늘어난다는 평가도 옳은 설명입니다.",
+          "3": "성형의 가장 큰 단점은 중앙 노드가 단일 장애점(SPOF)이 되어 그것이 멈추면 전체 네트워크가 마비된다는 점입니다. 옳은 설명입니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "성형 토폴로지, SPOF, 메쉬"
       }
     },
     {
@@ -730,34 +502,22 @@
       "subject_id": "general",
       "text": "데이터 전송 제어 절차로 올바른 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "회선 연결 --> 링크 설정 --> 데이터 전송 --> 링크"
-        },
-        {
-          "key": 2,
-          "text": "회선 연결 --> 링크 설정 --> 데이터 전송 --> 회선"
-        },
-        {
-          "key": 3,
-          "text": "링크 설정 --> 회선 연결 --> 데이터 전송 --> 링크"
-        },
-        {
-          "key": 4,
-          "text": "링크 설정 --> 회선 연결 --> 데이터 전송 --> 회선"
-        }
+        {"key": 1, "text": "회선 연결 --> 링크 설정 --> 데이터 전송 --> 링크"},
+        {"key": 2, "text": "회선 연결 --> 링크 설정 --> 데이터 전송 --> 회선"},
+        {"key": 3, "text": "링크 설정 --> 회선 연결 --> 데이터 전송 --> 링크"},
+        {"key": 4, "text": "링크 설정 --> 회선 연결 --> 데이터 전송 --> 회선"}
       ],
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "회선 연결 --> 링크 설정 --> 데이터 전송 --> 링크",
-        "why_correct": "회선 연결 --> 링크 설정 --> 데이터 전송 --> 링크이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "회선 연결→링크 설정→데이터 전송→링크 해제→회선 해제",
+        "why_correct": "데이터 전송 제어 절차는 ①회선 연결(물리 회선 확립) → ②링크 설정(데이터 링크 프로토콜 협상) → ③데이터 전송 → ④링크 해제 → ⑤회선 해제 순으로 진행됩니다. 즉 물리 계층이 먼저 확보된 위에서 링크 계층이 동작하고, 종료 시에는 역순으로 해제합니다.",
         "why_wrong": {
-          "2": "회선 연결 --> 링크 설정 --> 데이터 전은/는 올바르지 않습니다.",
-          "3": "링크 설정 --> 회선 연결 --> 데이터 전은/는 올바르지 않습니다.",
-          "4": "링크 설정 --> 회선 연결 --> 데이터 전은/는 올바르지 않습니다."
+          "2": "회선 연결과 링크 설정 순서는 맞지만 종료 단계에서 회선을 먼저 해제하면 그 위의 링크 해제 절차를 깨끗이 마칠 수 없습니다. 해제는 반드시 링크 해제 → 회선 해제 순이어야 합니다.",
+          "3": "물리 회선이 없는 상태에서 데이터 링크 프로토콜만 먼저 협상할 수 없습니다. 링크 설정이 회선 연결보다 앞서는 순서는 계층 의존 관계를 위반합니다.",
+          "4": "선후 관계가 두 부분 모두 잘못된 순서입니다. 링크 설정이 회선 연결보다 먼저 올 수 없고, 종료에서도 회선 해제가 링크 해제보다 먼저일 수 없습니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "전송 제어 절차, 회선/링크"
       }
     },
     {
@@ -766,34 +526,22 @@
       "subject_id": "general",
       "text": "MAC방식으로 라운드 로빈기법을 사용하는 방식은?",
       "options": [
-        {
-          "key": 1,
-          "text": "CSMA/CD"
-        },
-        {
-          "key": 2,
-          "text": "Token Ring"
-        },
-        {
-          "key": 3,
-          "text": "CSMA"
-        },
-        {
-          "key": 4,
-          "text": "DQDB"
-        }
+        {"key": 1, "text": "CSMA/CD"},
+        {"key": 2, "text": "Token Ring"},
+        {"key": 3, "text": "CSMA"},
+        {"key": 4, "text": "DQDB"}
       ],
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "Token Ring",
-        "why_correct": "Token Ring이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "토큰 링은 토큰을 순환시키는 라운드 로빈 방식",
+        "why_correct": "Token Ring(IEEE 802.5)은 링을 따라 토큰(Token)이라는 짧은 프레임이 한 방향으로 순환하고, 토큰을 잡은 노드만 일정 시간 데이터를 보낸 뒤 토큰을 다음 노드에 넘기는 결정론적 라운드 로빈(Round Robin) 방식의 매체 접근 제어를 사용합니다. 충돌이 발생하지 않습니다.",
         "why_wrong": {
-          "1": "CSMA/CD은/는 올바르지 않습니다.",
-          "3": "이 선택지는 틀렸습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "1": "CSMA/CD(IEEE 802.3, Ethernet)는 채널이 비었는지 감지한 뒤 전송하고 충돌이 감지되면 임의 대기 후 재시도하는 경쟁(Contention) 방식입니다. 라운드 로빈식 순서가 정해진 접근이 아닙니다.",
+          "3": "CSMA(Carrier Sense Multiple Access)는 채널 감지 후 전송하는 일반 경쟁 방식의 통칭으로, 정해진 차례 없이 누가 먼저 보낼지가 불확실합니다. 라운드 로빈과는 거리가 멉니다.",
+          "4": "DQDB(IEEE 802.6)는 두 개의 단방향 버스에 분산 큐를 두어 전송 권한을 결정하는 MAN용 프로토콜입니다. 토큰을 순환시키는 라운드 로빈 방식과는 메커니즘이 다릅니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "Token Ring, 라운드 로빈, MAC"
       }
     },
     {
@@ -802,34 +550,22 @@
       "subject_id": "general",
       "text": "펄스 부호 변조(PCM)의 3단계 과정을 순서대로 올바르게 나열한 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "부호화 → 양자화 → 표본화"
-        },
-        {
-          "key": 2,
-          "text": "양자화 → 표본화 → 부호화"
-        },
-        {
-          "key": 3,
-          "text": "부호화 → 표본화 → 양자화"
-        },
-        {
-          "key": 4,
-          "text": "표본화 → 양자화 → 부호화"
-        }
+        {"key": 1, "text": "부호화 → 양자화 → 표본화"},
+        {"key": 2, "text": "양자화 → 표본화 → 부호화"},
+        {"key": 3, "text": "부호화 → 표본화 → 양자화"},
+        {"key": 4, "text": "표본화 → 양자화 → 부호화"}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "표본화 → 양자화 → 부호화",
-        "why_correct": "표본화 → 양자화 → 부호화이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "PCM 순서: 표본화 → 양자화 → 부호화",
+        "why_correct": "PCM(Pulse Code Modulation)은 ①표본화(Sampling): 연속 아날로그 신호를 일정 주기로 샘플링 → ②양자화(Quantization): 각 샘플 값을 정해진 레벨로 근사 → ③부호화(Encoding): 양자화된 값을 디지털 비트열로 표현 순서로 진행됩니다. 이 절차로 음성 등을 디지털 신호로 변환합니다.",
         "why_wrong": {
-          "1": "부호화 → 양자화 → 표본화은/는 올바르지 않습니다.",
-          "2": "양자화 → 표본화 → 부호화은/는 올바르지 않습니다.",
-          "3": "부호화 → 표본화 → 양자화은/는 올바르지 않습니다."
+          "1": "부호화부터 시작하면 부호화할 디지털 값이 아직 존재하지 않습니다. 표본화로 샘플을 얻고 양자화한 뒤에야 부호화가 가능하므로 순서가 완전히 거꾸로입니다.",
+          "2": "양자화는 표본 값을 정해진 레벨로 매핑하는 단계라 표본화가 선행되어야 합니다. 양자화→표본화 순서는 입력이 없는 상태에서 매핑부터 하라는 셈이라 성립하지 않습니다.",
+          "3": "표본화 다음에는 양자화가 와야 디지털화가 진행됩니다. 부호화→표본화→양자화는 부호화 후 다시 표본화·양자화로 돌아가는 비논리적 흐름입니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "PCM, 표본화/양자화/부호화"
       }
     },
     {
@@ -838,34 +574,22 @@
       "subject_id": "general",
       "text": "전송 장애 중 원래 신호가 다른 형태로 일그러지는 현상은?",
       "options": [
-        {
-          "key": 1,
-          "text": "감쇠"
-        },
-        {
-          "key": 2,
-          "text": "지연 왜곡"
-        },
-        {
-          "key": 3,
-          "text": "잡음"
-        },
-        {
-          "key": 4,
-          "text": "누화"
-        }
+        {"key": 1, "text": "감쇠"},
+        {"key": 2, "text": "지연 왜곡"},
+        {"key": 3, "text": "잡음"},
+        {"key": 4, "text": "누화"}
       ],
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "2번이 올바른 설명",
-        "why_correct": "지연 왜곡이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "지연 왜곡은 주파수별 전파 속도 차이로 파형이 일그러짐",
+        "why_correct": "지연 왜곡(Delay Distortion)은 매체 안에서 주파수마다 전달 속도가 달라, 동시에 출발한 성분이 서로 다른 시각에 도착해 합쳐지면서 원 신호 파형이 뭉개지는 현상입니다. 디지털 전송에서는 인접 심볼이 겹쳐 ISI(심볼 간 간섭)를 유발합니다.",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "3": "이 선택지는 틀렸습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "1": "감쇠(Attenuation)는 거리·매체에 비례해 신호 세기가 약해지는 현상입니다. 파형의 모양이 바뀌는 것이 아니라 진폭만 줄어드는 것이라 '다른 형태로 일그러진다'는 정의와 일치하지 않습니다.",
+          "3": "잡음(Noise)은 외부 전자기 영향이나 매체 내부 열적 요인 때문에 원하지 않는 신호가 더해지는 현상입니다. 원 신호가 일정한 형태로 변형되는 게 아니라 무작위 성분이 섞이는 것이라 지연 왜곡과 구분됩니다.",
+          "4": "누화(Crosstalk)는 옆 회선의 신호가 결합·유도되어 자기 회선에 새 신호로 끼어드는 간섭 현상입니다. UTP에서 발생하는 NEXT/FEXT가 대표적이며, 자기 신호의 형태 변형을 가리키는 지연 왜곡과는 원인이 다릅니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "지연 왜곡, ISI"
       }
     },
     {
@@ -874,34 +598,22 @@
       "subject_id": "general",
       "text": "메시지 교환망과 비교했을 때, 회선 교환망에 대한 설명 중 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "연결이 설정되면 데이터의 지연이 적다."
-        },
-        {
-          "key": 2,
-          "text": "소용량 데이터 전송에 적합하다."
-        },
-        {
-          "key": 3,
-          "text": "대화식/실시간 통신이 가능하다."
-        },
-        {
-          "key": 4,
-          "text": "초기의 연결설정이 복잡하다."
-        }
+        {"key": 1, "text": "연결이 설정되면 데이터의 지연이 적다."},
+        {"key": 2, "text": "소용량 데이터 전송에 적합하다."},
+        {"key": 3, "text": "대화식/실시간 통신이 가능하다."},
+        {"key": 4, "text": "초기의 연결설정이 복잡하다."}
       ],
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "소용량 데이터 전송에 적합하다.",
-        "why_correct": "소용량 데이터 전송에 적합하다.이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "회선 교환은 대용량·연속 트래픽에 유리, 소용량은 비효율",
+        "why_correct": "회선 교환은 통신 시간 동안 전용 회선을 점유하므로 짧은 통신을 자주 하는 소용량 데이터에는 회선 자원이 낭비되어 비효율적입니다. 그런 트래픽 특성에는 메시지 교환·패킷 교환이 더 적합하므로 '회선 교환이 소용량 전송에 적합'이라는 설명은 옳지 않습니다.",
         "why_wrong": {
-          "1": "연결이 설정되면 데이터의 지연이 적다.은/는 올바르지 않습니다.",
-          "3": "대화식/실시간 통신이 가능하다.은/는 올바르지 않습니다.",
-          "4": "초기의 연결설정이 복잡하다.은/는 올바르지 않습니다."
+          "1": "회선이 사전에 확립되면 그 뒤로는 매 노드에서 경로 결정·저장이 필요 없어 전송 지연이 작고 일정합니다. 회선 교환의 일반적 장점에 부합하는 옳은 설명입니다.",
+          "3": "회선 교환은 일정한 대역폭과 낮은 지연 덕에 음성 통화 같은 대화식·실시간 통신에 적합합니다. 옳은 설명입니다.",
+          "4": "회선 교환은 데이터 송수신 전에 발신지부터 목적지까지의 전용 경로를 설정해야 하므로 호 설정(Call Setup) 단계가 별도로 필요해 초기 연결 절차가 복잡합니다. 옳은 설명입니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "회선 교환 vs 메시지 교환"
       }
     },
     {
@@ -910,34 +622,22 @@
       "subject_id": "general",
       "text": "데이터 흐름 제어(Flow Control)와 관련 없는 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "Stop and Wait"
-        },
-        {
-          "key": 2,
-          "text": "XON/OFF"
-        },
-        {
-          "key": 3,
-          "text": "Loop/Echo"
-        },
-        {
-          "key": 4,
-          "text": "Sliding Window"
-        }
+        {"key": 1, "text": "Stop and Wait"},
+        {"key": 2, "text": "XON/OFF"},
+        {"key": 3, "text": "Loop/Echo"},
+        {"key": 4, "text": "Sliding Window"}
       ],
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "Loop/Echo",
-        "why_correct": "Loop/Echo이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Loop/Echo는 오류 검출 방식, 흐름 제어와 무관",
+        "why_correct": "Loop/Echo(에코 검사)는 송신 데이터를 수신측이 그대로 되돌려 보내 송신측이 비교해 오류 여부를 판정하는 오류 검출 기법입니다. 송수신 속도 차이를 조절하는 흐름 제어(Flow Control)와는 목적과 동작 방식이 다릅니다.",
         "why_wrong": {
-          "1": "Stop and Wait은/는 올바르지 않습니다.",
-          "2": "XON/OFF은/는 올바르지 않습니다.",
-          "4": "Sliding Window은/는 올바르지 않습니다."
+          "1": "Stop-and-Wait는 한 프레임을 보낸 뒤 ACK를 받을 때까지 다음 프레임을 보내지 않는 가장 단순한 흐름 제어 기법입니다.",
+          "2": "XON/XOFF는 수신측이 처리에 부담을 느끼면 XOFF로 송신을 멈추고, 여유가 생기면 XON으로 재개시키는 흐름 제어 신호 기법입니다.",
+          "4": "Sliding Window는 ACK 없이 보낼 수 있는 프레임 수(윈도우 크기)를 동적으로 조정해 처리량과 흐름을 동시에 관리하는 대표적인 흐름 제어 기법입니다(TCP에서도 사용)."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "흐름 제어, Loop/Echo"
       }
     },
     {
@@ -946,34 +646,22 @@
       "subject_id": "general",
       "text": "OSI 7 Layer를 하위 계층에서 상위 계층으로 순서대로 바르 게 나열한 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "물리 → 데이터 링크 → 전송 → 네트워크 → 세션 →"
-        },
-        {
-          "key": 2,
-          "text": "데이터 링크 → 물리 → 전송 → 네트워크 → 세션 →"
-        },
-        {
-          "key": 3,
-          "text": "전송 → 데이터 링크 → 네트워크 → 물리 → 세션 →"
-        },
-        {
-          "key": 4,
-          "text": "물리 → 데이터 링크 → 네트워크 → 전송 → 세션 →"
-        }
+        {"key": 1, "text": "물리 → 데이터 링크 → 전송 → 네트워크 → 세션 →"},
+        {"key": 2, "text": "데이터 링크 → 물리 → 전송 → 네트워크 → 세션 →"},
+        {"key": 3, "text": "전송 → 데이터 링크 → 네트워크 → 물리 → 세션 →"},
+        {"key": 4, "text": "물리 → 데이터 링크 → 네트워크 → 전송 → 세션 →"}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "물리 → 데이터 링크 → 네트워크 → 전송 → 세션 →",
-        "why_correct": "물리 → 데이터 링크 → 네트워크 → 전송 → 세션 →이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "OSI 하위→상위: 물리·데이터링크·네트워크·전송·세션·표현·응용",
+        "why_correct": "OSI 7계층은 하위부터 ①물리(Physical) → ②데이터 링크(Data Link) → ③네트워크(Network) → ④전송(Transport) → ⑤세션(Session) → ⑥표현(Presentation) → ⑦응용(Application) 순입니다. 4번 보기가 이 순서를 그대로 따르고 있습니다.",
         "why_wrong": {
-          "1": "물리 → 데이터 링크 → 전송 → 네트워크 →은/는 올바르지 않습니다.",
-          "2": "데이터 링크 → 물리 → 전송 → 네트워크 →은/는 올바르지 않습니다.",
-          "3": "전송 → 데이터 링크 → 네트워크 → 물리 →은/는 올바르지 않습니다."
+          "1": "전송(4)이 네트워크(3)보다 먼저 나오는 잘못된 순서입니다. 네트워크 계층이 IP 라우팅을 담당해야 그 위에서 전송 계층(TCP/UDP)이 동작할 수 있습니다.",
+          "2": "데이터 링크(2)가 물리(1)보다 먼저 나오는 잘못된 순서입니다. 물리 계층의 비트 전송이 먼저 가능해야 프레임을 다루는 데이터 링크 계층이 의미를 갖습니다.",
+          "3": "전송 계층(4)을 가장 아래에 두고 네트워크와 물리 계층을 그 사이에 끼운 완전히 뒤섞인 배열입니다. 어떤 OSI 모델도 이 순서를 따르지 않습니다."
         },
-        "key_concept": "네트워크 일반"
+        "key_concept": "OSI 7계층 순서"
       }
     },
     {
@@ -982,34 +670,22 @@
       "subject_id": "nos",
       "text": "Linux 디렉터리 구성에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "/tmp - 임시파일이 저장되는 디렉터리"
-        },
-        {
-          "key": 2,
-          "text": "/boot - 시스템이 부팅 될 때 부팅 가능한 커널 이미지"
-        },
-        {
-          "key": 3,
-          "text": "/var - 시스템의 로그 파일과 메일이 저장되는 위치"
-        },
-        {
-          "key": 4,
-          "text": "/usr - 사용자 계정이 위치하는 파티션 위치"
-        }
+        {"key": 1, "text": "/tmp - 임시파일이 저장되는 디렉터리"},
+        {"key": 2, "text": "/boot - 시스템이 부팅 될 때 부팅 가능한 커널 이미지"},
+        {"key": 3, "text": "/var - 시스템의 로그 파일과 메일이 저장되는 위치"},
+        {"key": 4, "text": "/usr - 사용자 계정이 위치하는 파티션 위치"}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "/usr - 사용자 계정이 위치하는 파티션 위치",
-        "why_correct": "/usr - 사용자 계정이 위치하는 파티션 위치이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "사용자 계정 홈은 /home, /usr는 시스템 프로그램·라이브러리",
+        "why_correct": "/usr(Unix System Resources)는 시스템 공유 프로그램(/usr/bin), 라이브러리(/usr/lib), 헤더, 매뉴얼 등을 모아두는 디렉터리입니다. 사용자 계정의 홈 디렉터리는 /home에 위치하므로 '/usr가 사용자 계정 위치'라는 설명은 사실과 어긋납니다.",
         "why_wrong": {
-          "1": "/tmp - 임시파일이 저장되는 디렉터리은/는 올바르지 않습니다.",
-          "2": "/boot - 시스템이 부팅 될 때 부팅 가능은/는 올바르지 않습니다.",
-          "3": "/var - 시스템의 로그 파일과 메일이 저장은/는 올바르지 않습니다."
+          "1": "/tmp는 모든 사용자가 쓸 수 있는 임시 파일 저장소이며 보통 재부팅 또는 일정 시간이 지나면 정리되도록 운영됩니다. 옳은 설명입니다.",
+          "2": "/boot는 부트로더(GRUB), 커널 이미지(vmlinuz), 초기 RAM 디스크(initramfs) 등 부팅에 필요한 파일을 보관하는 디렉터리이므로 옳은 설명입니다.",
+          "3": "/var는 가변 데이터(로그 /var/log, 메일 큐 /var/mail, 스풀 /var/spool 등)를 보관하기 위한 디렉터리로, 로그·메일이 저장된다는 설명과 정확히 일치합니다."
         },
-        "key_concept": "Linux, 네트워크 OS"
+        "key_concept": "FHS, /usr vs /home"
       }
     },
     {
@@ -1018,34 +694,22 @@
       "subject_id": "nos",
       "text": "Linux 시스템에서 사용자가 내린 명령어를 Kernel에 전달해 주는 역할을 하는 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "System Program"
-        },
-        {
-          "key": 2,
-          "text": "Loader"
-        },
-        {
-          "key": 3,
-          "text": "Shell"
-        },
-        {
-          "key": 4,
-          "text": "Directory"
-        }
+        {"key": 1, "text": "System Program"},
+        {"key": 2, "text": "Loader"},
+        {"key": 3, "text": "Shell"},
+        {"key": 4, "text": "Directory"}
       ],
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "3번이 올바른 설명",
-        "why_correct": "Shell이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Shell은 사용자 명령을 해석해 커널 시스템 콜로 전달",
+        "why_correct": "Shell(bash, zsh, sh 등)은 사용자가 입력한 명령어 문자열을 해석(parsing)해서 적절한 시스템 콜과 프로세스 생성 호출을 통해 커널에 작업을 요청하는 명령 인터프리터입니다. 사용자와 커널 사이의 표준 인터페이스 역할을 합니다.",
         "why_wrong": {
-          "1": "System Program은/는 올바르지 않습니다.",
-          "2": "Loader은/는 올바르지 않습니다.",
-          "4": "Directory은/는 올바르지 않습니다."
+          "1": "System Program은 운영체제와 함께 제공되는 ls·cp·grep 같은 일반 유틸리티들의 묶음을 가리킵니다. 사용자 명령을 해석해 커널에 넘기는 인터프리터 역할은 셸이 따로 담당합니다.",
+          "2": "Loader는 디스크에 있는 실행 파일을 메모리에 적재하고 실행 가능하도록 준비하는 시스템 컴포넌트입니다. 사용자 명령 해석이나 입력 처리는 하지 않습니다.",
+          "4": "Directory는 파일을 계층적으로 묶어 관리하기 위한 파일 시스템의 폴더 개념일 뿐, 명령어를 받아 커널에 전달하는 실행 주체가 아닙니다."
         },
-        "key_concept": "Linux, 네트워크 OS"
+        "key_concept": "Shell, 명령 인터프리터"
       }
     },
     {
@@ -1054,34 +718,22 @@
       "subject_id": "nos",
       "text": "Linux 설치 시 Swap 영역에 대한 설명 중 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "RAM의 부족한 용량을 보충하기 위해 하드디스크의 일정"
-        },
-        {
-          "key": 2,
-          "text": "일반적으로 실제 메모리의 두 배 정도면 적당하다."
-        },
-        {
-          "key": 3,
-          "text": "시스템을 모니터링 한 결과 Swap이 많이 일어나면 메모"
-        },
-        {
-          "key": 4,
-          "text": "한번 설정한 Swap은 추가가 불가능하므로 신중을 기해"
-        }
+        {"key": 1, "text": "RAM의 부족한 용량을 보충하기 위해 하드디스크의 일정"},
+        {"key": 2, "text": "일반적으로 실제 메모리의 두 배 정도면 적당하다."},
+        {"key": 3, "text": "시스템을 모니터링 한 결과 Swap이 많이 일어나면 메모"},
+        {"key": 4, "text": "한번 설정한 Swap은 추가가 불가능하므로 신중을 기해"}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "한번 설정한 Swap은 추가가 불가능하므로 신중을 기해",
-        "why_correct": "한번 설정한 Swap은 추가가 불가능하므로 신중을 기해이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Swap은 운영 중에도 파일·파티션으로 추가 가능",
+        "why_correct": "Linux의 Swap은 설치 후에도 자유롭게 추가할 수 있습니다. 새 파티션을 만들어 mkswap·swapon으로 등록하거나, dd로 swap 파일을 생성해 활성화하는 두 가지 방법이 모두 가능하므로 '한번 설정하면 추가가 불가능하다'는 설명은 사실이 아닙니다.",
         "why_wrong": {
-          "1": "RAM의 부족한 용량을 보충하기 위해 하드디스은/는 올바르지 않습니다.",
-          "2": "일반적으로 실제 메모리의 두 배 정도면 적당하은/는 올바르지 않습니다.",
-          "3": "시스템을 모니터링 한 결과 Swap이 많이 일은/는 올바르지 않습니다."
+          "1": "Swap은 RAM이 부족할 때 잘 사용되지 않는 페이지를 디스크의 Swap 영역으로 옮겨 가용 메모리를 늘리는 가상 메모리 기법입니다. 옳은 설명입니다.",
+          "2": "전통적으로 RAM의 1~2배 정도를 Swap으로 잡는 가이드가 통용되었으며, 시험에서도 보편적인 권장사항으로 사용됩니다. 옳은 설명입니다.",
+          "3": "Swap 사용량이 지속적으로 높다면 RAM이 부족하다는 신호이며, 디스크는 RAM보다 훨씬 느려 성능이 크게 떨어지므로 메모리 증설을 검토해야 한다는 설명은 옳습니다."
         },
-        "key_concept": "Linux, 네트워크 OS"
+        "key_concept": "Swap, mkswap/swapon"
       }
     },
     {
@@ -1090,34 +742,22 @@
       "subject_id": "nos",
       "text": "Linux의 퍼미션(Permission)에 대한 설명 중 옳지 않은 것 은?",
       "options": [
-        {
-          "key": 1,
-          "text": "파일의 그룹 소유권을 변경하기 위한 명령은 'chgrp'이"
-        },
-        {
-          "key": 2,
-          "text": "파일의 접근모드를 변경하기 위한 명령은 'chmod'이다."
-        },
-        {
-          "key": 3,
-          "text": "모든 사용자에게 모든 권한을 부여하려면 권한을 '666'"
-        },
-        {
-          "key": 4,
-          "text": "파일의 소유권을 변경하기 위한 명령은 'chown'이다."
-        }
+        {"key": 1, "text": "파일의 그룹 소유권을 변경하기 위한 명령은 'chgrp'이"},
+        {"key": 2, "text": "파일의 접근모드를 변경하기 위한 명령은 'chmod'이다."},
+        {"key": 3, "text": "모든 사용자에게 모든 권한을 부여하려면 권한을 '666'"},
+        {"key": 4, "text": "파일의 소유권을 변경하기 위한 명령은 'chown'이다."}
       ],
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "모든 사용자에게 모든 권한을 부여하려면 권한을 '666'",
-        "why_correct": "모든 사용자에게 모든 권한을 부여하려면 권한을 '666'이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "모든 권한(rwxrwxrwx)은 777, 666은 실행 권한 없는 rw-rw-rw-",
+        "why_correct": "Linux 파일 권한은 r=4, w=2, x=1을 더해 표현합니다. 모든 사용자에게 읽기·쓰기·실행을 모두 주려면 4+2+1=7을 세 번 적용한 777이어야 하며, 666(rw-rw-rw-)은 실행 권한이 빠진 상태이므로 이 설명은 옳지 않습니다.",
         "why_wrong": {
-          "1": "파일의 그룹 소유권을 변경하기 위한 명령은 '은/는 올바르지 않습니다.",
-          "2": "파일의 접근모드를 변경하기 위한 명령은 'ch은/는 올바르지 않습니다.",
-          "4": "파일의 소유권을 변경하기 위한 명령은 'cho은/는 올바르지 않습니다."
+          "1": "chgrp(change group)은 파일의 그룹 소유권을 변경하는 명령입니다(예: chgrp dev file). 표준 사용법과 일치하는 옳은 설명입니다.",
+          "2": "chmod(change mode)는 파일·디렉터리의 접근 권한(rwx 비트)을 변경하는 명령입니다(예: chmod 755 script.sh). 옳은 설명입니다.",
+          "4": "chown(change owner)은 파일의 사용자 소유자를 바꾸는 명령이며 'chown user:group file' 형태로 그룹까지 함께 변경할 수 있습니다. 옳은 설명입니다."
         },
-        "key_concept": "Linux, 네트워크 OS"
+        "key_concept": "Linux 퍼미션, 777"
       }
     },
     {
@@ -1126,34 +766,22 @@
       "subject_id": "nos",
       "text": "Linux 시스템에서 'ping' 이라는 파일을 표준 입력으로 받아 서 만들어라\"에 대한 명령어 형식으로 올바른 것은? 기출문제 전자문제집 CBT : www.comcbt.com 네트워크관리사 2급 ◐ 2015년 10월 25일 필기 기출문제",
       "options": [
-        {
-          "key": 1,
-          "text": "cat >ping"
-        },
-        {
-          "key": 2,
-          "text": "cat ping"
-        },
-        {
-          "key": 3,
-          "text": "cat - ping"
-        },
-        {
-          "key": 4,
-          "text": "cat <ping"
-        }
+        {"key": 1, "text": "cat >ping"},
+        {"key": 2, "text": "cat ping"},
+        {"key": 3, "text": "cat - ping"},
+        {"key": 4, "text": "cat <ping"}
       ],
       "answer": 1,
       "has_figure": true,
       "explanation": {
-        "correct_summary": "cat >ping",
-        "why_correct": "cat >ping이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "표준 입력 → 새 파일은 cat > 파일명 (출력 리다이렉션)",
+        "why_correct": "`cat > ping`은 cat이 키보드(표준 입력)에서 받은 내용을 표준 출력으로 내보내고, '>' 출력 리다이렉션이 그 출력을 'ping' 파일로 저장하라고 지시합니다. 결과적으로 표준 입력으로부터 ping 파일을 새로 만드는 효과가 됩니다.",
         "why_wrong": {
-          "2": "cat ping은/는 올바르지 않습니다.",
-          "3": "cat - ping은/는 올바르지 않습니다.",
-          "4": "cat <ping은/는 올바르지 않습니다."
+          "2": "`cat ping`은 인자로 지정된 ping 파일을 열어 그 내용을 화면에 출력하는 명령입니다. 새 파일을 만드는 것이 아니라 기존 파일을 읽어 보여주는 동작입니다.",
+          "3": "`cat - ping`에서 '-'는 표준 입력을 가리키는 의미로, 표준 입력과 ping 파일을 차례로 이어붙여 화면으로 출력합니다. 출력을 파일로 저장하는 리다이렉션이 없으므로 ping 파일을 새로 만들지 않습니다.",
+          "4": "`cat < ping`은 입력 리다이렉션으로 ping 파일을 cat의 표준 입력으로 연결합니다. 즉 ping 파일을 읽어 화면에 출력하는 동작이라, '표준 입력으로 받아 ping 파일을 만든다'는 요구와 정반대입니다."
         },
-        "key_concept": "Linux, 네트워크 OS"
+        "key_concept": "리다이렉션, > vs <"
       }
     },
     {
@@ -1162,34 +790,22 @@
       "subject_id": "nos",
       "text": "Linux에서 사용되는 'free' 명령어에 대한 설명 중 올바른 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "사용 중인 메모리, 사용 가능한 메모리 용량을 알 수 있"
-        },
-        {
-          "key": 2,
-          "text": "패스워드 없이 사용하는 유저를 알 수 있다."
-        },
-        {
-          "key": 3,
-          "text": "디렉터리의 사용량을 알 수 있다."
-        },
-        {
-          "key": 4,
-          "text": "사용 가능한 파일 시스템의 양을 알 수 있다."
-        }
+        {"key": 1, "text": "사용 중인 메모리, 사용 가능한 메모리 용량을 알 수 있"},
+        {"key": 2, "text": "패스워드 없이 사용하는 유저를 알 수 있다."},
+        {"key": 3, "text": "디렉터리의 사용량을 알 수 있다."},
+        {"key": 4, "text": "사용 가능한 파일 시스템의 양을 알 수 있다."}
       ],
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "사용 중인 메모리, 사용 가능한 메모리 용량을 알 수 있",
-        "why_correct": "사용 중인 메모리, 사용 가능한 메모리 용량을 알 수 있이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "free는 RAM/Swap 사용량과 가용량을 출력하는 명령",
+        "why_correct": "free 명령은 시스템의 물리 메모리(RAM)와 Swap 공간에 대해 total, used, free, shared, buff/cache, available 컬럼을 출력합니다. 따라서 '사용 중인 메모리'와 '사용 가능한 메모리 용량'을 한눈에 확인하는 용도로 쓰입니다.",
         "why_wrong": {
-          "2": "패스워드 없이 사용하는 유저를 알 수 있다.은/는 올바르지 않습니다.",
-          "3": "디렉터리의 사용량을 알 수 있다.은/는 올바르지 않습니다.",
-          "4": "사용 가능한 파일 시스템의 양을 알 수 있다.은/는 올바르지 않습니다."
+          "2": "패스워드가 없는 사용자(빈 패스워드 계정)는 /etc/shadow의 두 번째 필드를 검사해 알아냅니다(예: `awk -F: '($2==\"\"){print $1}' /etc/shadow`). free 명령과는 무관합니다.",
+          "3": "디렉터리의 사용량은 du(disk usage)로 확인합니다. free는 메모리 통계만 보여주므로 디스크 용량 측정과는 다릅니다.",
+          "4": "파일 시스템의 사용 가능 용량은 df(disk free) 명령으로 조회합니다. 이름이 비슷해 혼동되지만 free는 메모리, df는 디스크 파일 시스템을 다룹니다."
         },
-        "key_concept": "Linux, 네트워크 OS"
+        "key_concept": "free, 메모리 통계"
       }
     },
     {
@@ -1198,34 +814,22 @@
       "subject_id": "nos",
       "text": "Linux DNS의 SOA(Start Of Authority) 레코드에 대한 설명 으로 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "Zone 파일은 항상 SOA로 시작한다."
-        },
-        {
-          "key": 2,
-          "text": "해당 Zone에 대한 네임서버를 유지하기 위한 기본적인"
-        },
-        {
-          "key": 3,
-          "text": "Refresh는 주 서버와 보조 서버의 동기 주기를 설정한"
-        },
-        {
-          "key": 4,
-          "text": "TTL 값이 길면 DNS의 부하가 늘어난다."
-        }
+        {"key": 1, "text": "Zone 파일은 항상 SOA로 시작한다."},
+        {"key": 2, "text": "해당 Zone에 대한 네임서버를 유지하기 위한 기본적인"},
+        {"key": 3, "text": "Refresh는 주 서버와 보조 서버의 동기 주기를 설정한"},
+        {"key": 4, "text": "TTL 값이 길면 DNS의 부하가 늘어난다."}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "TTL 값이 길면 DNS의 부하가 늘어난다.",
-        "why_correct": "TTL 값이 길면 DNS의 부하가 늘어난다.이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "TTL이 길수록 캐시가 오래 유지되어 DNS 부하는 감소",
+        "why_correct": "TTL이 크면 다른 DNS 캐시가 응답을 더 오래 보관해 권한 서버로 들어오는 질의 횟수가 줄어듭니다. 따라서 TTL이 길면 DNS 부하가 감소하므로 '길면 부하가 늘어난다'는 설명은 인과관계가 반대로 된 옳지 않은 진술입니다.",
         "why_wrong": {
-          "1": "Zone 파일은 항상 SOA로 시작한다.은/는 올바르지 않습니다.",
-          "2": "해당 Zone에 대한 네임서버를 유지하기 위한은/는 올바르지 않습니다.",
-          "3": "Refresh는 주 서버와 보조 서버의 동기 은/는 올바르지 않습니다."
+          "1": "BIND의 zone 파일은 반드시 첫 레코드로 SOA를 두어 권한 정보를 선언해야 합니다. 표준 형식과 일치하는 옳은 설명입니다.",
+          "2": "SOA 레코드는 주 네임서버, 관리자 메일, 시리얼, Refresh/Retry/Expire/Minimum TTL 등 zone을 운영하기 위한 기본 메타데이터를 담습니다. 옳은 설명입니다.",
+          "3": "SOA의 Refresh 값은 보조(Secondary) DNS가 주(Primary) DNS의 시리얼을 확인하러 오는 주기를 초 단위로 정의합니다. 표준 의미 그대로의 옳은 설명입니다."
         },
-        "key_concept": "DNS, 네트워크 OS"
+        "key_concept": "SOA, TTL과 DNS 부하"
       }
     },
     {
@@ -1234,34 +838,22 @@
       "subject_id": "nos",
       "text": "Linux와 다른 이기종의 파일 시스템이나 프린터를 공유하기 위해 설치하는 서버 및 클라이언트 프로그램은?",
       "options": [
-        {
-          "key": 1,
-          "text": "삼바(SAMBA)"
-        },
-        {
-          "key": 2,
-          "text": "아파치(Apache)"
-        },
-        {
-          "key": 3,
-          "text": "샌드메일(Sendmail)"
-        },
-        {
-          "key": 4,
-          "text": "바인드(BIND)"
-        }
+        {"key": 1, "text": "삼바(SAMBA)"},
+        {"key": 2, "text": "아파치(Apache)"},
+        {"key": 3, "text": "샌드메일(Sendmail)"},
+        {"key": 4, "text": "바인드(BIND)"}
       ],
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "삼바(SAMBA)",
-        "why_correct": "삼바(SAMBA)이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "SAMBA는 SMB/CIFS 구현체, Linux↔Windows 파일/프린터 공유",
+        "why_correct": "SAMBA는 Microsoft의 SMB/CIFS 프로토콜을 Unix 계열에서 구현한 오픈소스 소프트웨어로, Linux 서버를 Windows 클라이언트가 보는 파일/프린터 공유 서버로 동작시키거나 그 반대로 Linux가 Windows 공유에 접근할 수 있게 해 줍니다.",
         "why_wrong": {
-          "2": "아파치(Apache)은/는 올바르지 않습니다.",
-          "3": "샌드메일(Sendmail)은/는 올바르지 않습니다.",
-          "4": "바인드(BIND)은/는 올바르지 않습니다."
+          "2": "Apache는 HTTP 요청을 처리하는 웹 서버 소프트웨어입니다. 웹 콘텐츠를 제공할 뿐 SMB/CIFS 같은 파일·프린터 공유 기능과는 관계가 없습니다.",
+          "3": "Sendmail은 SMTP 기반의 MTA로 메일을 송수신·중계하는 서버입니다. 이메일 처리 전용이라 파일 시스템 공유와 직접 연관이 없습니다.",
+          "4": "BIND(Berkeley Internet Name Domain)는 가장 널리 쓰이는 DNS 서버 구현체입니다. 도메인 이름 해석 서비스만 제공하며 파일/프린터 공유 기능은 가지고 있지 않습니다."
         },
-        "key_concept": "Linux, 네트워크 OS"
+        "key_concept": "SAMBA, SMB/CIFS"
       }
     },
     {
@@ -1270,34 +862,22 @@
       "subject_id": "nos",
       "text": "Windows 2008 R2 Server를 원격으로 관리하고자 한다. 데 이터를 암호화하여 전송할 수 있는 원격관리 서버는?",
       "options": [
-        {
-          "key": 1,
-          "text": "Telnet 서버"
-        },
-        {
-          "key": 2,
-          "text": "WINS 서버"
-        },
-        {
-          "key": 3,
-          "text": "Exchange 서버"
-        },
-        {
-          "key": 4,
-          "text": "SSH 서버"
-        }
+        {"key": 1, "text": "Telnet 서버"},
+        {"key": 2, "text": "WINS 서버"},
+        {"key": 3, "text": "Exchange 서버"},
+        {"key": 4, "text": "SSH 서버"}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "4번이 올바른 설명",
-        "why_correct": "SSH 서버이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "SSH는 원격 명령·전송을 암호화하는 보안 셸 프로토콜",
+        "why_correct": "SSH(Secure Shell)는 클라이언트와 서버 간 인증·세션 키 교환 후 AES, ChaCha20 등의 대칭키 암호화로 모든 데이터를 보호합니다. 따라서 Windows 서버를 원격 관리할 때 명령과 자격 증명이 평문으로 노출되지 않으므로 보안 원격 관리에 적합합니다.",
         "why_wrong": {
-          "1": "Telnet 서버은/는 올바르지 않습니다.",
-          "2": "WINS 서버은/는 올바르지 않습니다.",
-          "3": "Exchange 서버은/는 올바르지 않습니다."
+          "1": "Telnet은 모든 통신을 평문으로 전송하기 때문에 도청·세션 가로채기에 취약합니다. 보안이 필요한 원격 관리 환경에서는 사용하지 않는 것이 권장됩니다.",
+          "2": "WINS(Windows Internet Name Service)는 NetBIOS 이름을 IP 주소로 매핑하는 이름 해석 서비스입니다. 원격 관리 채널과는 무관합니다.",
+          "3": "Exchange는 Microsoft의 메일/그룹웨어 서버 제품입니다. 메일·일정·연락처 서비스를 제공할 뿐 시스템 원격 관리를 위한 서버가 아닙니다."
         },
-        "key_concept": "Windows, 네트워크 OS"
+        "key_concept": "SSH, 원격 관리, 암호화"
       }
     },
     {
@@ -1306,34 +886,22 @@
       "subject_id": "nos",
       "text": "Windows 2008 R2 Server의 DNS서버 설정에서 호스트이름 을 IP주소로 해석해 주는 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "정방향 조회"
-        },
-        {
-          "key": 2,
-          "text": "역방향 조회"
-        },
-        {
-          "key": 3,
-          "text": "조건부 전달"
-        },
-        {
-          "key": 4,
-          "text": "보조 영역"
-        }
+        {"key": 1, "text": "정방향 조회"},
+        {"key": 2, "text": "역방향 조회"},
+        {"key": 3, "text": "조건부 전달"},
+        {"key": 4, "text": "보조 영역"}
       ],
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "1번이 올바른 설명",
-        "why_correct": "정방향 조회이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "정방향 조회: 호스트 이름 → IP 주소(A/AAAA 레코드)",
+        "why_correct": "정방향 조회 영역(Forward Lookup Zone)은 'name → IP' 매핑을 담당합니다. 도메인 이름에 대해 IPv4 A 레코드, IPv6 AAAA 레코드, 별칭 CNAME 등을 등록해 호스트 이름을 IP 주소로 해석해 주므로 이 문제의 정의와 일치합니다.",
         "why_wrong": {
-          "2": "역방향 조회은/는 올바르지 않습니다.",
-          "3": "조건부 전달은/는 올바르지 않습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "2": "역방향 조회 영역(Reverse Lookup Zone)은 정반대로 IP → 이름을 해석하는 영역으로, PTR 레코드를 사용합니다. 호스트 이름을 IP로 변환하는 기능이 아닙니다.",
+          "3": "조건부 전달자(Conditional Forwarder)는 특정 도메인에 대한 질의를 미리 지정된 다른 DNS 서버로 보내는 라우팅 설정입니다. 이름 해석 자체가 아니라 질의 전달 정책입니다.",
+          "4": "보조 영역(Secondary Zone)은 주 DNS의 영역 데이터를 복제해 읽기 전용으로 보유하는 백업/부하 분산 영역입니다. 이름 해석의 방향성과는 다른 개념입니다."
         },
-        "key_concept": "IP, 네트워크 OS"
+        "key_concept": "Forward Lookup, A 레코드"
       }
     },
     {
@@ -1342,34 +910,22 @@
       "subject_id": "nos",
       "text": "Windows 2008 R2 Server의 백업에 관한 설명으로 옳지 않 은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "완전 서버 백업(bare-metal backup)이 가능하다."
-        },
-        {
-          "key": 2,
-          "text": "다른 하드웨어에 서버를 복구 할 수 있다."
-        },
-        {
-          "key": 3,
-          "text": "자기 테이프 백업을 지원한다."
-        },
-        {
-          "key": 4,
-          "text": "네트워크 공유나 로컬하드드라이브의 백업을 지원한다."
-        }
+        {"key": 1, "text": "완전 서버 백업(bare-metal backup)이 가능하다."},
+        {"key": 2, "text": "다른 하드웨어에 서버를 복구 할 수 있다."},
+        {"key": 3, "text": "자기 테이프 백업을 지원한다."},
+        {"key": 4, "text": "네트워크 공유나 로컬하드드라이브의 백업을 지원한다."}
       ],
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "자기 테이프 백업을 지원한다.",
-        "why_correct": "자기 테이프 백업을 지원한다.이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Windows Server Backup은 자기 테이프를 지원하지 않음",
+        "why_correct": "Windows Server 2008 R2의 기본 백업 도구인 Windows Server Backup은 로컬 디스크, 외장 디스크, 네트워크 공유, DVD 매체에 백업을 저장할 수 있지만 자기 테이프(Tape) 매체로의 백업은 지원하지 않습니다. 따라서 '자기 테이프 백업 지원' 설명은 사실과 다릅니다.",
         "why_wrong": {
-          "1": "완전 서버 백업(bare-metal backu은/는 올바르지 않습니다.",
-          "2": "다른 하드웨어에 서버를 복구 할 수 있다.은/는 올바르지 않습니다.",
-          "4": "네트워크 공유나 로컬하드드라이브의 백업을 지원은/는 올바르지 않습니다."
+          "1": "Windows Server 2008 R2는 운영체제와 시스템 상태, 응용 프로그램까지 통째로 복원 가능한 베어메탈(bare-metal) 백업/복구 기능을 제공합니다. 옳은 설명입니다.",
+          "2": "베어메탈 복구를 통해 원본 서버와 다른 하드웨어에서도 시스템을 복원할 수 있어, 하드웨어 교체 시 마이그레이션이 가능합니다. 옳은 설명입니다.",
+          "4": "네트워크 공유(UNC 경로)나 로컬 하드 드라이브를 백업 대상으로 지정해 저장할 수 있는 것은 Windows Server Backup의 기본 지원 시나리오에 속합니다. 옳은 설명입니다."
         },
-        "key_concept": "Windows, 네트워크 OS"
+        "key_concept": "Windows Server Backup, 테이프 미지원"
       }
     },
     {
@@ -1378,34 +934,22 @@
       "subject_id": "equipment",
       "text": "Windows 2008 R2 Server와 UNIX 운영체제 사이의 사용자 파일 전송을 지원하여 Windows와 UNIX가 혼용된 엔터프라 이즈 환경에서 파일 공유를 제공하는 서비스는?",
       "options": [
-        {
-          "key": 1,
-          "text": "NFS"
-        },
-        {
-          "key": 2,
-          "text": "DNS"
-        },
-        {
-          "key": 3,
-          "text": "NTFS"
-        },
-        {
-          "key": 4,
-          "text": "DHCP"
-        }
+        {"key": 1, "text": "NFS"},
+        {"key": 2, "text": "DNS"},
+        {"key": 3, "text": "NTFS"},
+        {"key": 4, "text": "DHCP"}
       ],
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "1번이 올바른 설명",
-        "why_correct": "NFS이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "NFS는 Unix 계열 표준 파일 공유, Windows에서도 역할 제공",
+        "why_correct": "NFS(Network File System)는 Unix/Linux의 표준 분산 파일 시스템 프로토콜이며, Windows Server 2008 R2는 'Services for NFS' 역할을 통해 NFS 서버/클라이언트를 모두 제공합니다. 그래서 Windows와 Unix가 혼재된 환경에서 양쪽이 같은 파일을 공유하기에 적합합니다.",
         "why_wrong": {
-          "2": "이 선택지는 틀렸습니다.",
-          "3": "이 선택지는 틀렸습니다.",
-          "4": "이 선택지는 틀렸습니다."
+          "2": "DNS는 도메인 이름을 IP 주소로 변환하는 이름 해석 서비스로, 파일 공유 기능과는 무관합니다.",
+          "3": "NTFS는 Windows의 로컬 파일 시스템 형식(저널링·권한 관리 등)을 가리키는 이름이지 네트워크 파일 공유 프로토콜이 아닙니다.",
+          "4": "DHCP는 IP 주소·서브넷 마스크·게이트웨이 등을 자동 할당하는 프로토콜입니다. 호스트 구성을 돕는 역할이며 파일 공유 자체와는 다른 영역입니다."
         },
-        "key_concept": "Windows, 장비 운용"
+        "key_concept": "NFS, Windows Services for NFS"
       }
     },
     {
@@ -1414,34 +958,22 @@
       "subject_id": "equipment",
       "text": "Windows 2008 R2 Sever에서 지원하는 Hyper-V에 대한 설 명으로 옳지 않는 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "하드웨어 사용율을 높여준다"
-        },
-        {
-          "key": 2,
-          "text": "서버 가용성이 줄어든다"
-        },
-        {
-          "key": 3,
-          "text": "유지비용을 줄일 수 있다."
-        },
-        {
-          "key": 4,
-          "text": "개발 및 테스트 효율성을 향상시킨다."
-        }
+        {"key": 1, "text": "하드웨어 사용율을 높여준다"},
+        {"key": 2, "text": "서버 가용성이 줄어든다"},
+        {"key": 3, "text": "유지비용을 줄일 수 있다."},
+        {"key": 4, "text": "개발 및 테스트 효율성을 향상시킨다."}
       ],
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "서버 가용성이 줄어든다",
-        "why_correct": "서버 가용성이 줄어든다이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "Hyper-V는 라이브 마이그레이션·클러스터링으로 가용성 향상",
+        "why_correct": "Hyper-V는 라이브 마이그레이션, 페일오버 클러스터링, 스냅샷, 빠른 재배포 등으로 오히려 서비스 가용성을 높이는 방향으로 설계된 가상화 플랫폼입니다. '가용성이 줄어든다'는 설명은 반대 방향의 진술이라 옳지 않습니다.",
         "why_wrong": {
-          "1": "하드웨어 사용율을 높여준다은/는 올바르지 않습니다.",
-          "3": "유지비용을 줄일 수 있다.은/는 올바르지 않습니다.",
-          "4": "개발 및 테스트 효율성을 향상시킨다.은/는 올바르지 않습니다."
+          "1": "여러 VM을 한 물리 서버에 통합하면 유휴 자원을 공유 사용해 CPU·메모리·스토리지의 평균 사용률이 높아집니다. 가상화의 일반적 효과와 일치하는 옳은 설명입니다.",
+          "3": "물리 서버 수가 줄어 하드웨어 구입비, 전력·냉각 비용, 데이터센터 공간이 절감되므로 운영·유지 비용 절감 효과가 있습니다. 옳은 설명입니다.",
+          "4": "스냅샷, 빠른 VM 복제, 격리된 테스트 환경 제공으로 개발·테스트 효율을 높여주는 것은 Hyper-V의 잘 알려진 장점입니다. 옳은 설명입니다."
         },
-        "key_concept": "Windows, 장비 운용"
+        "key_concept": "Hyper-V, 가용성, 가상화"
       }
     },
     {
@@ -1450,34 +982,22 @@
       "subject_id": "equipment",
       "text": "Windows 2008 R2 Server의 보안 이벤트 감사에 관한 설명 으로 옳지 않은 것은? 최강 자격증 ◑ 전자문제집 CBT : www.comcbt.com",
       "options": [
-        {
-          "key": 1,
-          "text": "권한 사용 이벤트는 사용자 권한이 작업을 수행하는데"
-        },
-        {
-          "key": 2,
-          "text": "프로세스 추적은 응용프로그램이 추적되고 있는 동작을"
-        },
-        {
-          "key": 3,
-          "text": "시스템 이벤트는 컴퓨터가 재시작되거나 보안에 영향을"
-        },
-        {
-          "key": 4,
-          "text": "디렉토리 서비스 이벤트는 디렉토리 서비스 이벤트의 사"
-        }
+        {"key": 1, "text": "권한 사용 이벤트는 사용자 권한이 작업을 수행하는데"},
+        {"key": 2, "text": "프로세스 추적은 응용프로그램이 추적되고 있는 동작을"},
+        {"key": 3, "text": "시스템 이벤트는 컴퓨터가 재시작되거나 보안에 영향을"},
+        {"key": 4, "text": "디렉토리 서비스 이벤트는 디렉토리 서비스 이벤트의 사"}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "디렉토리 서비스 이벤트는 디렉토리 서비스 이벤트의 사",
-        "why_correct": "디렉토리 서비스 이벤트는 디렉토리 서비스 이벤트의 사이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "디렉터리 서비스 감사는 AD 객체 접근을 기록하는 도메인 컨트롤러용",
+        "why_correct": "디렉터리 서비스(액세스) 감사는 Active Directory 도메인 컨트롤러에서 AD 객체(사용자·그룹·OU 등)에 대한 접근·변경을 추적하기 위한 정책입니다. 따라서 단순히 '디렉토리 서비스 이벤트의 사용자' 같은 일반 설명으로 묶으면 정의를 잘못 적은 것이 되어 옳지 않은 보기가 됩니다.",
         "why_wrong": {
-          "1": "권한 사용 이벤트는 사용자 권한이 작업을 수행은/는 올바르지 않습니다.",
-          "2": "프로세스 추적은 응용프로그램이 추적되고 있는 은/는 올바르지 않습니다.",
-          "3": "시스템 이벤트는 컴퓨터가 재시작되거나 보안에 은/는 올바르지 않습니다."
+          "1": "권한 사용(Privilege Use) 감사는 사용자가 시스템 종료, 감사 정책 변경 같은 특수 권한을 행사할 때 그 사실을 기록합니다. 설명의 일반적 방향과 일치하는 옳은 보기입니다.",
+          "2": "프로세스 추적(Process Tracking) 감사는 응용프로그램의 시작/종료, 핸들 중복, 간접 객체 액세스 등 프로세스 단위 동작을 기록합니다. 옳은 설명입니다.",
+          "3": "시스템 이벤트(System Events) 감사는 재시작, 종료, 보안 로그 초기화 등 보안에 영향을 주는 시스템 사건을 기록합니다. 옳은 설명입니다."
         },
-        "key_concept": "Windows, 장비 운용"
+        "key_concept": "보안 감사, 디렉터리 서비스 감사"
       }
     },
     {
@@ -1486,34 +1006,22 @@
       "subject_id": "equipment",
       "text": "Windows 2008 R2 Server의 보안템플릿에 대한 설명으로 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "보안 관련한 설정들을 미리 정의해 놓은 템플릿이다."
-        },
-        {
-          "key": 2,
-          "text": "모든 그룹 정책에서 ‘가져오기’ 하여 적용할 수 있다."
-        },
-        {
-          "key": 3,
-          "text": "보안템플릿은 그룹정책의 컴퓨터구성에만 적용되고 사용"
-        },
-        {
-          "key": 4,
-          "text": "무선네트워크, 공개 키, 소프트웨어 제한, 그리고 IP 보"
-        }
+        {"key": 1, "text": "보안 관련한 설정들을 미리 정의해 놓은 템플릿이다."},
+        {"key": 2, "text": "모든 그룹 정책에서 ‘가져오기’ 하여 적용할 수 있다."},
+        {"key": 3, "text": "보안템플릿은 그룹정책의 컴퓨터구성에만 적용되고 사용"},
+        {"key": 4, "text": "무선네트워크, 공개 키, 소프트웨어 제한, 그리고 IP 보"}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "무선네트워크, 공개 키, 소프트웨어 제한, 그리고 IP 보",
-        "why_correct": "무선네트워크, 공개 키, 소프트웨어 제한, 그리고 IP 보이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "무선·공개키·소프트웨어 제한·IP 보안은 GPO 별도 영역, 보안 템플릿 .inf의 범위 밖",
+        "why_correct": "Windows 보안 템플릿(.inf)은 계정 정책, 로컬 정책, 이벤트 로그, 제한된 그룹, 시스템 서비스, 레지스트리·파일 시스템 권한만 다룹니다. 무선 네트워크 정책, 공개 키 정책, 소프트웨어 제한 정책, IP 보안 정책은 그룹 정책의 별도 노드에서 관리되므로 보안 템플릿의 범위가 아닙니다.",
         "why_wrong": {
-          "1": "보안 관련한 설정들을 미리 정의해 놓은 템플릿은/는 올바르지 않습니다.",
-          "2": "모든 그룹 정책에서 ‘가져오기’ 하여 적용할 은/는 올바르지 않습니다.",
-          "3": "보안템플릿은 그룹정책의 컴퓨터구성에만 적용되고은/는 올바르지 않습니다."
+          "1": "보안 템플릿은 패스워드 정책·계정 잠금·감사 정책 같은 보안 관련 설정을 미리 정의해 놓은 .inf 파일이라는 설명과 일치하므로 옳습니다.",
+          "2": "보안 템플릿은 모든 그룹 정책 객체(GPO)에서 '보안 설정 → 보안 템플릿 가져오기' 메뉴로 불러와 적용할 수 있어 옳은 설명입니다.",
+          "3": "보안 템플릿의 설정 값은 GPO의 '컴퓨터 구성 → Windows 설정 → 보안 설정'에 해당하므로 컴퓨터 구성에만 적용된다는 설명은 옳습니다."
         },
-        "key_concept": "Windows, 장비 운용"
+        "key_concept": "보안 템플릿, .inf, GPO"
       }
     },
     {
@@ -1522,34 +1030,22 @@
       "subject_id": "equipment",
       "text": "Windows 2008 R2 Sever에서 ‘netstat’ 명령으로 표시되지 않는 IPv4 통계정보는?",
       "options": [
-        {
-          "key": 1,
-          "text": "IP"
-        },
-        {
-          "key": 2,
-          "text": "TCP"
-        },
-        {
-          "key": 3,
-          "text": "UDP"
-        },
-        {
-          "key": 4,
-          "text": "NNTP"
-        }
+        {"key": 1, "text": "IP"},
+        {"key": 2, "text": "TCP"},
+        {"key": 3, "text": "UDP"},
+        {"key": 4, "text": "NNTP"}
       ],
       "answer": 4,
       "has_figure": true,
       "explanation": {
-        "correct_summary": "4번이 올바른 설명",
-        "why_correct": "NNTP이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "netstat -s는 IP/ICMP/TCP/UDP 통계만, NNTP는 응용 계층",
+        "why_correct": "netstat -s는 운영체제 커널이 관리하는 네트워크 계층(IP, ICMP)과 전송 계층(TCP, UDP) 통계만 보여줍니다. NNTP(Network News Transfer Protocol)는 응용 계층 프로토콜로 커널 통계 항목에 포함되지 않으므로 netstat 출력에 나타나지 않습니다.",
         "why_wrong": {
-          "1": "이 선택지는 틀렸습니다.",
-          "2": "이 선택지는 틀렸습니다.",
-          "3": "이 선택지는 틀렸습니다."
+          "1": "IP 통계(수신/전송 패킷 수, 폐기, 분할/재조립 등)는 netstat -s 출력의 'IPv4 Statistics' 섹션에 표시됩니다.",
+          "2": "TCP 통계(연결 시도, ACTIVE/PASSIVE 오픈, 재전송, 연결 실패 등)는 'TCP Statistics for IPv4' 섹션에 표시됩니다.",
+          "3": "UDP 통계(수신/전송 데이터그램, 포트 없음 등)는 'UDP Statistics for IPv4' 섹션에 표시됩니다."
         },
-        "key_concept": "IP, 장비 운용"
+        "key_concept": "netstat -s, NNTP"
       }
     },
     {
@@ -1558,34 +1054,22 @@
       "subject_id": "equipment",
       "text": "Windows 2008 R2 Server에서 사용되는 기본 공유와 설명 으로 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "ADMIN$ : 시스템을 원격 관리하는 동안 사용되는 공유"
-        },
-        {
-          "key": 2,
-          "text": "IPC$ : 원격 관리를 수행하거나，공유 리소스를 확인할"
-        },
-        {
-          "key": 3,
-          "text": "SYSVOL : Active Directory의 개체와 데이터를 저장하는"
-        },
-        {
-          "key": 4,
-          "text": "PUBLlC : 팩스를 보낼 때 팩스 클라이언트에 의해 사용"
-        }
+        {"key": 1, "text": "ADMIN$ : 시스템을 원격 관리하는 동안 사용되는 공유"},
+        {"key": 2, "text": "IPC$ : 원격 관리를 수행하거나，공유 리소스를 확인할"},
+        {"key": 3, "text": "SYSVOL : Active Directory의 개체와 데이터를 저장하는"},
+        {"key": 4, "text": "PUBLlC : 팩스를 보낼 때 팩스 클라이언트에 의해 사용"}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "PUBLlC : 팩스를 보낼 때 팩스 클라이언트에 의해 사용",
-        "why_correct": "PUBLlC : 팩스를 보낼 때 팩스 클라이언트에 의해 사용이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "팩스 공유는 FAX$, PUBLIC은 팩스용이 아님",
+        "why_correct": "Windows에서 팩스 클라이언트가 사용하는 기본 공유는 FAX$이며, PUBLIC은 'C:\\Users\\Public' 같이 모든 사용자가 공유하는 공개 폴더 개념입니다. 따라서 'PUBLIC이 팩스 공유'라고 설명한 보기는 잘못된 매칭이라 정답이 됩니다.",
         "why_wrong": {
-          "1": "ADMIN$ : 시스템을 원격 관리하는 동안 은/는 올바르지 않습니다.",
-          "2": "IPC$ : 원격 관리를 수행하거나，공유 리소은/는 올바르지 않습니다.",
-          "3": "SYSVOL : Active Directory은/는 올바르지 않습니다."
+          "1": "ADMIN$는 %SystemRoot%(보통 C:\\Windows)를 가리키는 관리용 숨김 공유로, 원격 관리 도구가 시스템에 접근할 때 사용합니다. 정의에 부합하는 옳은 설명입니다.",
+          "2": "IPC$는 명명된 파이프 통신을 위한 공유로, 원격 관리·공유 리소스 열거(net view 등)에 사용됩니다. 표준 정의와 일치하는 옳은 설명입니다.",
+          "3": "SYSVOL은 도메인 컨트롤러가 그룹 정책 템플릿(GPT), 로그온 스크립트 등을 다른 DC와 복제하기 위해 사용하는 공유입니다. 옳은 설명입니다."
         },
-        "key_concept": "Windows, 장비 운용"
+        "key_concept": "관리 공유, FAX$ vs PUBLIC"
       }
     },
     {
@@ -1594,34 +1078,22 @@
       "subject_id": "equipment",
       "text": "Windows 2008 R2 Server의 Active Directory 서비스 중에 서 디렉터리 데이터를 저장하고, 사용자 로그온 프로세스, 인증 및 디렉터리 검색을 포함하여 사용자와 도메인 간의 통신을 관리하는 서비스는?",
       "options": [
-        {
-          "key": 1,
-          "text": "AD 인증서 서비스"
-        },
-        {
-          "key": 2,
-          "text": "AD 도메인서비스"
-        },
-        {
-          "key": 3,
-          "text": "AD Federation서비스"
-        },
-        {
-          "key": 4,
-          "text": "AD Rights Management 서비스"
-        }
+        {"key": 1, "text": "AD 인증서 서비스"},
+        {"key": 2, "text": "AD 도메인서비스"},
+        {"key": 3, "text": "AD Federation서비스"},
+        {"key": 4, "text": "AD Rights Management 서비스"}
       ],
       "answer": 2,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "AD 도메인서비스",
-        "why_correct": "AD 도메인서비스이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "AD DS가 디렉터리 저장·로그온·인증의 핵심 서비스",
+        "why_correct": "AD DS(Active Directory Domain Services)는 LDAP 기반으로 사용자·컴퓨터·그룹 등 디렉터리 객체를 저장하고, Kerberos를 통한 사용자 로그온/인증, 디렉터리 검색, 도메인 간 신뢰·통신을 관리하는 Active Directory의 핵심 역할입니다.",
         "why_wrong": {
-          "1": "AD 인증서 서비스은/는 올바르지 않습니다.",
-          "3": "AD Federation서비스은/는 올바르지 않습니다.",
-          "4": "AD Rights Management 서비스은/는 올바르지 않습니다."
+          "1": "AD CS(Certificate Services)는 PKI 인프라로 디지털 인증서를 발급·관리합니다. 사용자 로그온 자체보다는 인증서를 통한 추가적 신원 보증을 제공하는 역할입니다.",
+          "3": "AD FS(Federation Services)는 서로 다른 조직·시스템 간에 연합 인증과 SSO를 제공하는 클레임 기반 서비스입니다. 자체 도메인의 디렉터리 저장소가 아닙니다.",
+          "4": "AD RMS(Rights Management Services)는 문서·이메일에 사용 권한과 만료 정책을 묶어 데이터 자체를 보호하는 정보 보호 서비스입니다. 디렉터리 저장·로그온 관리는 담당하지 않습니다."
         },
-        "key_concept": "Windows, 장비 운용"
+        "key_concept": "AD DS, 로그온/인증"
       }
     },
     {
@@ -1630,34 +1102,22 @@
       "subject_id": "equipment",
       "text": "RAID에 대한 설명으로 올바른 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "RAID는 여러 개의 디스크로 구성된 디스크 배열을 의미"
-        },
-        {
-          "key": 2,
-          "text": "RAID는 레벨 0 ~ 4 까지 모두 5개의 규약이 있다."
-        },
-        {
-          "key": 3,
-          "text": "'레벨 0'은 미러 모드라고 하는데 하나의 데이터를 여러"
-        },
-        {
-          "key": 4,
-          "text": "레벨의 의미는 데이터 입출력 속도가 빨라지는 단계에"
-        }
+        {"key": 1, "text": "RAID는 여러 개의 디스크로 구성된 디스크 배열을 의미"},
+        {"key": 2, "text": "RAID는 레벨 0 ~ 4 까지 모두 5개의 규약이 있다."},
+        {"key": 3, "text": "'레벨 0'은 미러 모드라고 하는데 하나의 데이터를 여러"},
+        {"key": 4, "text": "레벨의 의미는 데이터 입출력 속도가 빨라지는 단계에"}
       ],
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "RAID는 여러 개의 디스크로 구성된 디스크 배열을 의미",
-        "why_correct": "RAID는 여러 개의 디스크로 구성된 디스크 배열을 의미이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "RAID는 여러 디스크를 하나의 논리 단위로 묶는 디스크 배열",
+        "why_correct": "RAID(Redundant Array of Independent Disks)는 여러 개의 물리 디스크를 하나의 논리적 저장 장치로 묶어 성능, 용량, 가용성을 높이는 기술입니다. 따라서 '여러 개의 디스크로 구성된 배열'이라는 설명이 정확합니다.",
         "why_wrong": {
-          "2": "RAID는 레벨 0 ~ 4 까지 모두 5개의 은/는 올바르지 않습니다.",
-          "3": "'레벨 0'은 미러 모드라고 하는데 하나의 데은/는 올바르지 않습니다.",
-          "4": "레벨의 의미는 데이터 입출력 속도가 빨라지는 은/는 올바르지 않습니다."
+          "2": "표준 RAID 레벨은 0~6까지 정의되어 있고, 그 외에도 RAID 10·50·60 같은 결합 형태가 사용됩니다. '레벨 0~4 5개'라는 설명은 실제 표준 범위와 다릅니다.",
+          "3": "RAID 0은 데이터를 여러 디스크에 분산 저장하는 스트라이핑(Striping) 방식으로 속도는 빠르지만 패리티가 없어 한 디스크가 죽으면 데이터가 모두 손실됩니다. 미러링은 RAID 1의 특성이라 '레벨 0=미러'라는 설명은 틀립니다.",
+          "4": "RAID 레벨은 입출력 속도의 단계가 아니라 스트라이핑·미러링·패리티를 어떻게 조합하는지에 따른 분류입니다. 높은 번호일수록 속도가 빨라진다는 의미가 아닙니다."
         },
-        "key_concept": "RAID, 장비 운용"
+        "key_concept": "RAID, 디스크 배열"
       }
     },
     {
@@ -1666,34 +1126,22 @@
       "subject_id": "equipment",
       "text": "Hub가 사용하는 OSI 계층은?",
       "options": [
-        {
-          "key": 1,
-          "text": "물리 계층"
-        },
-        {
-          "key": 2,
-          "text": "세션 계층"
-        },
-        {
-          "key": 3,
-          "text": "트랜스포트 계층"
-        },
-        {
-          "key": 4,
-          "text": "애플리케이션 계층"
-        }
+        {"key": 1, "text": "물리 계층"},
+        {"key": 2, "text": "세션 계층"},
+        {"key": 3, "text": "트랜스포트 계층"},
+        {"key": 4, "text": "애플리케이션 계층"}
       ],
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "1번이 올바른 설명",
-        "why_correct": "물리 계층이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "허브는 비트 신호만 재생·중계하는 물리 계층 장치",
+        "why_correct": "허브(Hub)는 들어온 전기 신호를 모든 포트로 단순히 복제·증폭해 내보내는 멀티포트 리피터입니다. MAC 주소를 해석하지 않고 비트 단위로만 동작하므로 OSI 모델의 가장 낮은 1계층(물리 계층)에 해당합니다.",
         "why_wrong": {
-          "2": "이 선택지는 틀렸습니다.",
-          "3": "트랜스포트 계층은/는 올바르지 않습니다.",
-          "4": "애플리케이션 계층은/는 올바르지 않습니다."
+          "2": "세션 계층(5계층)은 응용 사이의 세션을 관리하는 소프트웨어적 기능을 다루므로, 비트 단위로 신호를 처리하는 허브의 동작과 계층이 다릅니다.",
+          "3": "트랜스포트 계층(4계층)은 TCP/UDP 같은 전송 프로토콜이 동작하는 계층입니다. 허브는 포트 번호를 해석하지 못해 이 계층의 역할을 수행할 수 없습니다.",
+          "4": "애플리케이션 계층(7계층)은 HTTP, FTP 등 응용 프로토콜이 동작하는 계층입니다. 허브는 응용 데이터의 의미를 전혀 다루지 못합니다."
         },
-        "key_concept": "장비 운용"
+        "key_concept": "허브, 물리 계층"
       }
     },
     {
@@ -1702,34 +1150,22 @@
       "subject_id": "equipment",
       "text": "대역폭이 가장 커서 다양한 서비스가 가능한 전송 매체는?",
       "options": [
-        {
-          "key": 1,
-          "text": "동축 케이블"
-        },
-        {
-          "key": 2,
-          "text": "Open Wire"
-        },
-        {
-          "key": 3,
-          "text": "Wire Pair"
-        },
-        {
-          "key": 4,
-          "text": "광섬유"
-        }
+        {"key": 1, "text": "동축 케이블"},
+        {"key": 2, "text": "Open Wire"},
+        {"key": 3, "text": "Wire Pair"},
+        {"key": 4, "text": "광섬유"}
       ],
       "answer": 4,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "4번이 올바른 설명",
-        "why_correct": "광섬유이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "광섬유는 광 신호 사용으로 가장 큰 대역폭",
+        "why_correct": "광섬유(Fiber Optic)는 빛(광)을 이용해 데이터를 전송하므로 수십 Tbps 단위의 대역폭이 가능하고, 전자기 간섭에 강하며 감쇠도 매우 적어 장거리 대용량 전송에 사용됩니다. 다양한 통신·방송 서비스를 한 매체에 실어 보낼 수 있습니다.",
         "why_wrong": {
-          "1": "동축 케이블은/는 올바르지 않습니다.",
-          "2": "Open Wire은/는 올바르지 않습니다.",
-          "3": "Wire Pair은/는 올바르지 않습니다."
+          "1": "동축 케이블은 수백 MHz~수 GHz 수준의 대역폭으로 케이블 TV·구형 Ethernet에 사용됩니다. 광섬유보다 한참 낮은 대역폭이라 '가장 크다'고 말할 수 없습니다.",
+          "2": "Open Wire(나선)는 두 개의 도선을 절연 없이 공중에 띄워 사용하는 가장 원시적인 전송 매체로, 외부 잡음에 매우 취약하고 대역폭도 제일 낮은 수준입니다.",
+          "3": "Wire Pair(트위스티드 페어, UTP/STP)는 카테고리에 따라 수십 Mbps~10 Gbps 정도 지원합니다. 일반 LAN 배선에는 충분하지만 광섬유의 대역폭에는 미치지 못합니다."
         },
-        "key_concept": "장비 운용"
+        "key_concept": "전송 매체, 광섬유 대역폭"
       }
     },
     {
@@ -1738,34 +1174,22 @@
       "subject_id": "security",
       "text": "네트워크 장비인 라우터에 대한 설명 중 옳지 않은 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "TCP/IP의 트래픽 경로제어를 한다."
-        },
-        {
-          "key": 2,
-          "text": "네트워크를 분리하는데 사용할 수 있다."
-        },
-        {
-          "key": 3,
-          "text": "트래픽상의 모든 신호의 재생과 유효거리를 확장한다."
-        },
-        {
-          "key": 4,
-          "text": "OSI 7 Layer에서 네트워크 계층의 서비스를 한다."
-        }
+        {"key": 1, "text": "TCP/IP의 트래픽 경로제어를 한다."},
+        {"key": 2, "text": "네트워크를 분리하는데 사용할 수 있다."},
+        {"key": 3, "text": "트래픽상의 모든 신호의 재생과 유효거리를 확장한다."},
+        {"key": 4, "text": "OSI 7 Layer에서 네트워크 계층의 서비스를 한다."}
       ],
       "answer": 3,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "트래픽상의 모든 신호의 재생과 유효거리를 확장한다.",
-        "why_correct": "트래픽상의 모든 신호의 재생과 유효거리를 확장한다.이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "신호 재생·거리 확장은 리피터/허브의 1계층 기능",
+        "why_correct": "전기 신호를 단순히 재생해서 유효 전송 거리를 늘려주는 것은 OSI 1계층의 리피터·허브 기능입니다. 라우터는 IP 패킷의 목적지 주소를 해석해 경로를 결정하는 3계층 장비라서, '신호를 재생해 거리를 늘려준다'는 정의는 라우터의 역할이 아닙니다.",
         "why_wrong": {
-          "1": "TCP/IP의 트래픽 경로제어를 한다.은/는 올바르지 않습니다.",
-          "2": "네트워크를 분리하는데 사용할 수 있다.은/는 올바르지 않습니다.",
-          "4": "OSI 7 Layer에서 네트워크 계층의 서비은/는 올바르지 않습니다."
+          "1": "라우터의 핵심 기능은 라우팅 테이블을 보고 TCP/IP 패킷의 다음 홉을 결정·전달하는 경로 제어이므로 옳은 설명입니다.",
+          "2": "라우터는 인터페이스마다 서로 다른 IP 네트워크를 두고 브로드캐스트 도메인을 분리하기 때문에 네트워크를 논리적으로 나누는 데 사용됩니다. 옳은 설명입니다.",
+          "4": "라우터는 IP 헤더를 해석해 동작하므로 OSI 3계층(네트워크 계층)에서 서비스를 제공한다는 설명은 정확합니다."
         },
-        "key_concept": "보안 개념"
+        "key_concept": "라우터 vs 리피터, 3계층"
       }
     },
     {
@@ -1774,34 +1198,22 @@
       "subject_id": "security",
       "text": "Star Topology에서 동시에 두 개 이상의 Connection을 할 수 있는 장치로, 연결된 각 포트마다 전용 대역폭 할당이 가능하여, 연결된 장치의 수에 따라 주고받는 데이터의 속 도가 낮아지지 않고, 속도를 보장할 수 있는 것은?",
       "options": [
-        {
-          "key": 1,
-          "text": "Switching Hub"
-        },
-        {
-          "key": 2,
-          "text": "Repeater"
-        },
-        {
-          "key": 3,
-          "text": "Dummy Hub"
-        },
-        {
-          "key": 4,
-          "text": "Bridge"
-        }
+        {"key": 1, "text": "Switching Hub"},
+        {"key": 2, "text": "Repeater"},
+        {"key": 3, "text": "Dummy Hub"},
+        {"key": 4, "text": "Bridge"}
       ],
       "answer": 1,
       "has_figure": false,
       "explanation": {
-        "correct_summary": "Switching Hub",
-        "why_correct": "Switching Hub이/가 해당 개념의 올바른 설명입니다.",
+        "correct_summary": "스위칭 허브는 포트별 전용 대역폭과 동시 다중 통신 지원",
+        "why_correct": "스위칭 허브(Layer 2 스위치)는 MAC 주소 테이블을 학습해 프레임을 목적지 포트로만 전달하며, 각 포트가 독립된 충돌 도메인을 갖습니다. 따라서 여러 쌍의 통신이 동시에 일어나도 각 포트가 자신의 전용 대역폭을 그대로 사용할 수 있습니다.",
         "why_wrong": {
-          "2": "Repeater은/는 올바르지 않습니다.",
-          "3": "Dummy Hub은/는 올바르지 않습니다.",
-          "4": "Bridge은/는 올바르지 않습니다."
+          "2": "리피터(Repeater)는 약해진 전기 신호를 증폭·재생해 전송 거리를 늘리는 1계층 장치입니다. 포트별 스위칭이나 전용 대역폭 보장 기능이 없습니다.",
+          "3": "더미 허브(Dummy Hub)는 모든 포트가 하나의 충돌 도메인을 공유하므로, 연결된 단말 수가 늘면 대역폭을 나눠 쓰게 되어 속도가 저하됩니다.",
+          "4": "브리지(Bridge)는 두 개 정도의 LAN 세그먼트를 MAC 기반으로 연결·분할하는 2계층 장치입니다. 다포트 환경에서 포트별 전용 대역폭을 동시 다중으로 제공하는 스위칭 허브의 기능과는 다릅니다."
         },
-        "key_concept": "보안 개념"
+        "key_concept": "스위칭 허브, 전용 대역폭"
       }
     }
   ]
